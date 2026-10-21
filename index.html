@@ -257,20 +257,6 @@
   </main>
 </div>
 
-<footer>
-  <div class="wrap foot">
-    <div>
-      <h5>Catalog free internet sources se aata hai</h5>
-      <p>Is site ka catalog do jagah se aata hai: ek <strong>Google Sheet</strong> se curate kiya hua (<code>data/movies.json</code>), aur ek <strong>Wikidata</strong> se automatically collect kiya hua (<code>data/catalog.json</code> — roz ek GitHub Action se refresh hota hai). Dono free hain, koi API key nahi chahiye. Neeche embedded demo titles fallback ke liye hain.</p>
-      <div class="note">Real banane ke liye: TMDB API key (free) se titles, genres, language, posters — aur JustWatch/Streaming Availability se "kahan dekho". Dubbed-Hindi aur Gujarati-natak ka data manually curate karna padega.</div>
-    </div>
-    <div>
-      <h5>Categories covered</h5>
-      <div class="legend" id="legend"></div>
-      <div class="note">Sab watch-links legal platforms (JioHotstar, Prime Video, Netflix, ShemarooMe, JOJO, MX Player) aur JustWatch search par le jaate hain. Koi piracy link nahi.</div>
-    </div>
-  </div>
-</footer>
 
 <script>
 const CATS = {
@@ -537,7 +523,7 @@ document.getElementById('shareBtn').addEventListener('click',async ev=>{
 
 /* ---- legend ---- */
 const legend=document.getElementById('legend');
-Object.values(CATS).forEach(v=>{
+if(legend) Object.values(CATS).forEach(v=>{
   const s=document.createElement('span');
   s.className='pill';
   s.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
