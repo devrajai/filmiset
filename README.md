@@ -36,6 +36,9 @@ posters/                          # compressed poster images (~19 KB each, store
 scripts/sheet_to_json.py          # Google Sheet (Catalog tab) -> data/movies.json
 scripts/fetch_data.py             # Wikidata (free, no key) -> data/catalog.json
 scripts/download_posters.py       # download + compress posters -> posters/
+scripts/fetch_youtube.py          # YouTube channel RSS (free, no key) -> data/youtube.json
+channels.txt                      # the YouTube channels to collect from
+data/youtube.json                 # trailers / promos collected from those channels
 .github/workflows/update-data.yml # daily job that refreshes data/catalog.json
 ```
 
@@ -83,6 +86,26 @@ python3 scripts/download_posters.py            # resumes; skips images already o
 
 > **Pipeline order:** `fetch_data.py` (Wikidata, incl. upcoming films) -> `download_posters.py`
 > (compress + localise posters). Run both, then commit.
+
+
+## YouTube channels (free, no key)
+`scripts/fetch_youtube.py` reads `channels.txt` and pulls each channel's latest videos from its
+public **RSS feed** (`youtube.com/feeds/videos.xml`) — no API key, no quota. A handle (`@Name`)
+is resolved to a channel id automatically. Each video becomes a card with its thumbnail and a
+**Watch on YouTube** button, tagged with a red **YouTube** badge and filterable via *Source →
+YouTube*.
+
+Add channels to `channels.txt`:
+```
+# handle-or-channel-id | category | original-language | display name
+ShemarooGujarati | gujarati-movie | Gujarati | Shemaroo Gujarati
+GoldminesTelefilms | south-dubbed | Hindi | Goldmines
+```
+Then run:
+```
+python3 scripts/fetch_youtube.py
+python3 scripts/download_posters.py     # localise + compress the thumbnails
+```
 
 ## Run locally
 ```

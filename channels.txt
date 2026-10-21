@@ -1,0 +1,8 @@
+# YouTube channels to collect from — FREE, no API key (uses each channel's RSS feed).
+# Format:  handle-or-channel-id | category | original-language | display name
+# Categories: gujarati-movie | gujarati-natak | hindi | south-dubbed | english-dubbed | korean-dubbed
+# Add your own channels below (one per line). Lines starting with # are ignored.
+
+ShemarooGujarati | gujarati-movie | Gujarati | Shemaroo Gujarati
+shemaroome       | gujarati-movie | Gujarati | ShemarooMe
+GoldminesTelefilms | south-dubbed | Hindi | Goldmines

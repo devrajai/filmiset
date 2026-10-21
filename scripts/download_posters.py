@@ -33,7 +33,7 @@ def slug_for(url, used):
 
 def collect_urls():
     urls = []
-    for f in ("data/catalog.json", "data/movies.json"):
+    for f in ("data/catalog.json", "data/movies.json", "data/youtube.json"):
         if not os.path.exists(f):
             continue
         for m in json.load(open(f, encoding="utf-8")):
@@ -106,7 +106,7 @@ def main():
     print(f"  ok={ok} cached={cached} fail={fail}")
 
     # rewrite data files
-    for f in ("data/catalog.json", "data/movies.json"):
+    for f in ("data/catalog.json", "data/movies.json", "data/youtube.json"):
         if not os.path.exists(f):
             continue
         data = json.load(open(f, encoding="utf-8"))

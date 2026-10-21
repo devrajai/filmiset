@@ -20,13 +20,15 @@ jobs:
         run: pip install pillow
       - name: Fetch free movie data (Wikidata, no API key)
         run: python3 scripts/fetch_data.py --out data/catalog.json
+      - name: Collect from YouTube channels (RSS, no key)
+        run: python3 scripts/fetch_youtube.py
       - name: Download + compress posters locally
         run: python3 scripts/download_posters.py --workers 2 --delay 0.35
       - name: Commit if changed
         run: |
           git config user.name "filmiset-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json posters
+          git add data/catalog.json data/youtube.json posters
           if git diff --staged --quiet; then
             echo "no changes today"
           else
