@@ -20,6 +20,11 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 - Har title par: year, genres, mood tags, available audio (Hindi dub included), OTT platforms
 - **"Where to watch"** button -> JustWatch India search (100% legal)
 
+
+> The **Catalog** sheet also has an **Occasion Tags** column (Diwali, Holi, Weekend, …). The
+> site uses those tags when present, and falls back to a mood/genre mapping when a row is blank —
+> so you can edit the festival picks yourself without touching any code.
+
 ## Structure
 ```
 index.html                 # the whole site (HTML + CSS + JS)
