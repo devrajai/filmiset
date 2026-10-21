@@ -39,6 +39,10 @@
     min-height:100vh; -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:1300px;margin:0 auto}
+  .only-mobile{display:none}
+  .rail-head{display:none}
+  .backdrop{display:none}
+  .more-wrap{grid-column:1/-1;display:flex;justify-content:center;padding:14px 0 0}
 
   /* top bar */
   .topbar{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 86%,transparent);
@@ -162,9 +166,21 @@
   .legend .pill{cursor:default;font-size:11.5px;padding:5px 10px}
 
   @media (max-width:900px){
-    .layout{grid-template-columns:1fr;gap:20px;padding-top:18px}
-    .rail{position:static;flex-direction:column;gap:16px}
+    .layout{grid-template-columns:1fr;gap:20px;padding-top:16px}
     .foot{grid-template-columns:1fr}
+    .only-mobile{display:inline-flex}
+    .rail{position:fixed;left:0;right:0;bottom:0;top:auto;max-height:82vh;overflow-y:auto;
+      background:var(--bg);border-top:1px solid var(--line);border-radius:18px 18px 0 0;
+      padding:16px 18px 30px;gap:18px;transform:translateY(112%);transition:transform .26s ease;
+      z-index:80;box-shadow:0 -12px 40px rgba(0,0,0,.28)}
+    body.filters-open .rail{transform:translateY(0)}
+    body.filters-open{overflow:hidden}
+    .rail-head{display:flex;align-items:center;justify-content:space-between;gap:12px;
+      position:sticky;top:-16px;background:var(--bg);padding:6px 0 12px;margin-top:-6px;z-index:2}
+    .rail-head span{font-family:var(--font-display);font-size:17px;font-weight:600}
+    .backdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:70;
+      opacity:0;pointer-events:none;transition:opacity .26s}
+    body.filters-open .backdrop{opacity:1;pointer-events:auto}
   }
   @media (max-width:560px){
     .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
@@ -177,6 +193,8 @@
 </head>
 <body>
 
+<div class="backdrop" id="backdrop"></div>
+
 <header class="topbar">
   <div class="wrap topbar-in">
     <div class="brand">
@@ -188,13 +206,15 @@
       <input id="q" type="text" placeholder="Search a title — 3 Idiots, RRR, Bluffmaster…" autocomplete="off">
       <button id="qclear" class="qclear" aria-label="Clear search" hidden>×</button>
     </div>
+    <button id="filtersBtn" class="hbtn only-mobile" title="Filters">Filters <b id="filterCount"></b></button>
     <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
     <button id="shareBtn" class="hbtn" title="Share this view">Share</button>
   </div>
 </header>
 
 <div class="wrap layout">
-  <aside class="rail">
+  <aside class="rail" id="rail">
+    <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
     <div class="rail-block"><h6>Category</h6><div class="chips" id="catRow"></div></div>
     <div class="rail-block"><h6>Mood</h6><div class="chips" id="moodRow"></div></div>
     <div class="rail-block"><h6>Type</h6><div class="chips" id="typeRow"></div></div>
@@ -315,6 +335,8 @@ const DEMO = [
 
 const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'all', dub:false, src:'all', savedOnly:false, q:''};
 const CUR_YEAR = new Date().getFullYear();
+const PAGE = 60;                 // render this many cards at a time (fast on mobile)
+let shownLimit = PAGE, lastKey = '';
 
 /* watchlist (persisted in this browser) */
 const watchlist = new Set(JSON.parse(localStorage.getItem('filmiset_watchlist')||'[]'));
@@ -446,6 +468,22 @@ srcRow.addEventListener('click',e=>{
   const b=e.target.closest('.pill'); if(!b)return;
   srcRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
   b.classList.add('on'); state.src=b.dataset.src; render();
+});
+
+/* mobile filter drawer */
+function openFilters(){ document.body.classList.add('filters-open'); }
+function closeFilters(){ document.body.classList.remove('filters-open'); }
+document.getElementById('filtersBtn').addEventListener('click',openFilters);
+document.getElementById('filtersClose').addEventListener('click',closeFilters);
+document.getElementById('backdrop').addEventListener('click',closeFilters);
+function updateFilterCount(){
+  const n = activeFilters().length;
+  const c = document.getElementById('filterCount'); if(c) c.textContent = n ? n : '';
+  const fb = document.getElementById('filtersBtn'); if(fb) fb.classList.toggle('on', n>0);
+}
+/* "Load more" */
+document.addEventListener('click',e=>{
+  if(e.target.closest('#moreBtn')){ shownLimit += PAGE; render(); }
 });
 
 document.getElementById('q').addEventListener('input',e=>{
@@ -585,9 +623,13 @@ function render(){
   let label = state.cat==='all' ? 'All titles' : CATS[state.cat].label;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
-  resCount.textContent = out.length+' title'+(out.length===1?'':'s');
+  const key = JSON.stringify([state.cat,[...state.moods].sort(),state.type,state.era,state.occasion,state.rel,state.dub,state.src,state.savedOnly,state.q]);
+  if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
+  const shown = out.slice(0, shownLimit);
+  resCount.textContent = (shown.length<out.length ? shown.length+' of '+out.length : out.length)+' title'+(out.length===1?'':'s');
   syncUrl();
   updateSavedBtn();
+  updateFilterCount();
 
   if(!out.length){
     const act=activeFilters();
@@ -600,7 +642,7 @@ function render(){
     return;
   }
 
-  grid.innerHTML = out.map((d,i)=>{
+  grid.innerHTML = shown.map((d,i)=>{
     const c=CATS[d.cat];
     const isUp = d.status==='upcoming';
     const isYT = d.src==='youtube';
@@ -632,7 +674,9 @@ function render(){
                 + '</a>'))
       + '</div>'
     + '</article>';
-  }).join('');
+  }).join('') + (out.length > shownLimit
+      ? '<div class="more-wrap"><button class="hbtn" id="moreBtn">Load more ('+(out.length-shownLimit)+' more)</button></div>'
+      : '');
 }
 
 let DATA = DEMO.slice();
