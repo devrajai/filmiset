@@ -215,7 +215,7 @@
   <section class="hero">
     <div class="eyebrow">catalog from a google sheet · static site on github pages</div>
     <h2>Kya dekhein? Mood bolo, <em>hum dikha denge.</em></h2>
-    <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
+    <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Mood, festival ya weekend — apne mauke ke hisaab se pick karo. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
     <div class="stats">
       <div class="stat"><b id="s-total">0</b><span>TITLES</span></div>
       <div class="stat"><b>6</b><span>CATEGORIES</span></div>
@@ -236,6 +236,9 @@
 
     <div class="flabel">04 — Era</div>
     <div class="row" id="eraRow"></div>
+
+    <div class="flabel">05 — Festival / Occasion</div>
+    <div class="row scroll" id="occRow"></div>
   </section>
 
   <div class="resultbar">
@@ -332,7 +335,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix']},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', q:''};
 
 /* ---- build filter UI ---- */
 const catRow = document.getElementById('catRow');
@@ -389,6 +392,28 @@ eraRow.addEventListener('click',e=>{
   b.classList.add('on'); state.era=b.dataset.era; render();
 });
 
+/* Occasion -> mood/genre mapping. Match if a title has ANY listed mood or genre. */
+const OCCASIONS = [
+  {k:'diwali',       label:'Diwali',           moods:['Family','Feel-Good','Comedy'],     genres:['Musical','Devotional','Family']},
+  {k:'holi',         label:'Holi',             moods:['Comedy','Feel-Good','Romantic'],   genres:[]},
+  {k:'weekend',      label:'Weekend',          moods:['Action','Thriller','Comedy'],      genres:[]},
+  {k:'familynight',  label:'Family Night',     moods:['Family','Feel-Good'],              genres:['Family','Musical']},
+  {k:'independence', label:'Independence Day', moods:['Emotional','Action'],              genres:['Historical','Social']},
+  {k:'newyear',      label:'New Year',         moods:['Feel-Good','Comedy','Romantic'],   genres:[]},
+  {k:'rainy',        label:'Rainy Day',        moods:['Romantic','Nostalgic','Emotional'],genres:[]},
+];
+const occRow=document.getElementById('occRow');
+[['all','All occasions']].concat(OCCASIONS.map(o=>[o.k,o.label])).forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(k==='all'?' on':''); b.dataset.occ=k; b.textContent=label;
+  occRow.appendChild(b);
+});
+occRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  occRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.occasion=b.dataset.occ; render();
+});
+
 document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();render();});
 
 /* ---- legend ---- */
@@ -418,12 +443,18 @@ function render(){
     if(state.type!=='all' && d.type!==state.type) return false;
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
+    if(state.occasion!=='all'){
+      const oc=OCCASIONS.find(o=>o.k===state.occasion);
+      if(oc && !(d.m.some(m=>oc.moods.includes(m)) || d.g.some(g=>oc.genres.includes(g)))) return false;
+    }
     if(state.moods.size && ![...state.moods].every(m=>d.m.includes(m))) return false;
     if(state.q && !d.t.toLowerCase().includes(state.q)) return false;
     return true;
   });
 
-  resTitle.textContent = state.cat==='all' ? 'All titles' : CATS[state.cat].label;
+  let label = state.cat==='all' ? 'All titles' : CATS[state.cat].label;
+  if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
+  resTitle.textContent = label;
   resCount.textContent = out.length+' title'+(out.length===1?'':'s');
 
   if(!out.length){
