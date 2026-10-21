@@ -2,7 +2,7 @@
 """fetch_data.py — build data/catalog.json from FREE, no-key internet sources.
 
 Sources (no API key, no sign-up):
-  * Wikidata Query Service (SPARQL)      -> title, year, genres, description
+  * Wikidata Query Service (SPARQL)      -> title, year, release date, genres, description
     https://query.wikidata.org
   * Wikipedia page-images API            -> posters (incl. non-free, pilicense=any)
     https://en.wikipedia.org/w/api.php
@@ -11,9 +11,10 @@ Sources (no API key, no sign-up):
 Usage
   python3 scripts/fetch_data.py                       # all languages -> data/catalog.json
   python3 scripts/fetch_data.py --langs Hindi,Tamil
-  python3 scripts/fetch_data.py --no-posters          # skip the poster step
+  python3 scripts/fetch_data.py --no-posters
 """
 import argparse, json, os, sys, time, urllib.parse, urllib.request
+from datetime import datetime, timedelta
 
 WIKIDATA = "https://query.wikidata.org/sparql"
 WIKI_API = "https://en.wikipedia.org/w/api.php"
@@ -57,35 +58,57 @@ def sparql(query):
     return _get_json(WIKIDATA + "?format=json&query=" + urllib.parse.quote(query), timeout=95)
 
 
+def _sel(cfg):
+    """genre SELECT clause + OPTIONAL clause (skipped for very large languages)."""
+    if cfg["genres"]:
+        return (' (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres)',
+                'OPTIONAL { ?film wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }')
+    return "", ""
+
+
 def query_lang(cfg, limit):
-    extra_sel = ' (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres)' if cfg["genres"] else ''
-    extra_opt = ('OPTIONAL { ?film wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }'
-                 if cfg["genres"] else '')
+    sel, opt = _sel(cfg)
     return f"""
-SELECT ?filmLabel ?year ?image ?articleTitle{extra_sel} (SAMPLE(?desc) AS ?description) WHERE {{
+SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d){sel} (SAMPLE(?desc) AS ?description) WHERE {{
   ?film wdt:P31 wd:Q11424 ; wdt:P577 ?date ; wdt:P364 wd:{cfg['qid']} .
   BIND(YEAR(?date) AS ?year)
   FILTER(?year >= {cfg['min_year']} && ?year <= 2026)
-  {extra_opt}
+  {opt}
   OPTIONAL {{ ?film wdt:P18 ?image }}
   OPTIONAL {{ ?film schema:description ?desc . FILTER(lang(?desc)="en") }}
   OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
 }}
-GROUP BY ?filmLabel ?year ?image ?articleTitle
+GROUP BY ?filmLabel ?image ?articleTitle
+LIMIT {limit}
+"""
+
+
+def query_recent(cfg, limit, days):
+    """Films released in the last `days` days — guarantees fresh content."""
+    sel, opt = _sel(cfg)
+    cutoff = (datetime.utcnow() - timedelta(days=days)).strftime("%Y-%m-%dT00:00:00Z")
+    return f"""
+SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d){sel} WHERE {{
+  ?film wdt:P31 wd:Q11424 ; wdt:P577 ?date ; wdt:P364 wd:{cfg['qid']} .
+  FILTER(?date > "{cutoff}"^^xsd:dateTime && ?date < NOW())
+  {opt}
+  OPTIONAL {{ ?film wdt:P18 ?image }}
+  OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}
+GROUP BY ?filmLabel ?image ?articleTitle
 LIMIT {limit}
 """
 
 
 def query_upcoming(cfg, limit):
-    extra_sel = ' (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres)' if cfg["genres"] else ''
-    extra_opt = ('OPTIONAL { ?film wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }'
-                 if cfg["genres"] else '')
+    sel, opt = _sel(cfg)
     return f"""
-SELECT ?filmLabel ?date ?image ?articleTitle{extra_sel} WHERE {{
+SELECT ?filmLabel ?date ?image ?articleTitle{sel} WHERE {{
   ?film wdt:P31 wd:Q11424 ; wdt:P577 ?date ; wdt:P364 wd:{cfg['qid']} .
   FILTER(?date > NOW() && ?date < "2029-01-01"^^xsd:dateTime)
-  {extra_opt}
+  {opt}
   OPTIONAL {{ ?film wdt:P18 ?image }}
   OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
@@ -93,32 +116,6 @@ SELECT ?filmLabel ?date ?image ?articleTitle{extra_sel} WHERE {{
 GROUP BY ?filmLabel ?date ?image ?articleTitle
 LIMIT {limit}
 """
-
-
-def fetch_upcoming(lang, cfg, limit):
-    data = sparql(query_upcoming(cfg, limit))
-    out = []
-    for r in data["results"]["bindings"]:
-        title = r.get("filmLabel", {}).get("value", "").strip()
-        if not title or title.startswith("Q"):
-            continue
-        date = r.get("date", {}).get("value", "")[:10]
-        year = int(date[:4]) if date[:4].isdigit() else ""
-        genres = norm_genres(r.get("genres", {}).get("value", ""))
-        if lang == "Hindi":
-            audio = ["Hindi"]
-        elif cfg["cat"] == "gujarati-movie":
-            audio = [cfg["orig"]]
-        else:
-            audio = ["Hindi (dub)", cfg["orig"]]
-        out.append({
-            "t": title, "y": year, "cat": cfg["cat"], "type": "Movie",
-            "g": genres, "m": moods_for(genres), "a": audio, "o": [],
-            "poster": commons_url(r.get("image", {}).get("value", "")),
-            "status": "upcoming", "date": date, "src": "wikidata",
-            "_wiki": r.get("articleTitle", {}).get("value", "").strip(),
-        })
-    return out
 
 
 def norm_genres(raw):
@@ -149,6 +146,27 @@ def commons_url(image):
     return image + ("&" if "?" in image else "?") + "width=400"
 
 
+def audio_for(lang, cfg):
+    if lang == "Hindi":
+        return ["Hindi"]
+    if cfg["cat"] == "gujarati-movie":
+        return [cfg["orig"]]
+    return ["Hindi (dub)", cfg["orig"]]
+
+
+def row_to_movie(lang, cfg, title, date, image, genres, desc, wiki, status):
+    y = int(date[:4]) if date[:4].isdigit() else ""
+    m = {
+        "t": title, "y": y, "cat": cfg["cat"], "type": "Movie",
+        "g": genres, "m": moods_for(genres), "a": audio_for(lang, cfg), "o": [],
+        "poster": commons_url(image), "src": "wikidata", "status": status,
+        "date": date, "_wiki": wiki,
+    }
+    if desc:
+        m["note"] = desc[:160]
+    return m
+
+
 def fetch_lang(lang, cfg, limit):
     data = sparql(query_lang(cfg, limit))
     out = []
@@ -156,23 +174,45 @@ def fetch_lang(lang, cfg, limit):
         title = r.get("filmLabel", {}).get("value", "").strip()
         if not title or title.startswith("Q"):
             continue
-        y = r.get("year", {}).get("value")
-        genres = norm_genres(r.get("genres", {}).get("value", ""))
-        desc = r.get("description", {}).get("value", "").strip()
-        if lang == "Hindi":
-            audio = ["Hindi"]
-        elif cfg["cat"] == "gujarati-movie":
-            audio = [cfg["orig"]]
-        else:
-            audio = ["Hindi (dub)", cfg["orig"]]
-        out.append({
-            "t": title, "y": int(y) if y and y.isdigit() else y,
-            "cat": cfg["cat"], "type": "Movie",
-            "g": genres, "m": moods_for(genres), "a": audio, "o": [],
-            "poster": commons_url(r.get("image", {}).get("value", "")),
-            "note": desc[:160], "src": "wikidata", "status": "released",
-            "_wiki": r.get("articleTitle", {}).get("value", "").strip(),
-        })
+        out.append(row_to_movie(
+            lang, cfg, title,
+            r.get("d", {}).get("value", "")[:10],
+            r.get("image", {}).get("value", ""),
+            norm_genres(r.get("genres", {}).get("value", "")),
+            r.get("description", {}).get("value", "").strip(),
+            r.get("articleTitle", {}).get("value", "").strip(), "released"))
+    return out
+
+
+def fetch_recent(lang, cfg, limit, days):
+    data = sparql(query_recent(cfg, limit, days))
+    out = []
+    for r in data["results"]["bindings"]:
+        title = r.get("filmLabel", {}).get("value", "").strip()
+        if not title or title.startswith("Q"):
+            continue
+        out.append(row_to_movie(
+            lang, cfg, title,
+            r.get("d", {}).get("value", "")[:10],
+            r.get("image", {}).get("value", ""),
+            norm_genres(r.get("genres", {}).get("value", "")),
+            "", r.get("articleTitle", {}).get("value", "").strip(), "released"))
+    return out
+
+
+def fetch_upcoming(lang, cfg, limit):
+    data = sparql(query_upcoming(cfg, limit))
+    out = []
+    for r in data["results"]["bindings"]:
+        title = r.get("filmLabel", {}).get("value", "").strip()
+        if not title or title.startswith("Q"):
+            continue
+        out.append(row_to_movie(
+            lang, cfg, title,
+            r.get("date", {}).get("value", "")[:10],
+            r.get("image", {}).get("value", ""),
+            norm_genres(r.get("genres", {}).get("value", "")),
+            "", r.get("articleTitle", {}).get("value", "").strip(), "upcoming"))
     return out
 
 
@@ -228,6 +268,8 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--merge", action="store_true")
     ap.add_argument("--no-posters", action="store_true")
+    ap.add_argument("--recent-days", type=int, default=150)
+    ap.add_argument("--recent-limit", type=int, default=40)
     ap.add_argument("--upcoming-limit", type=int, default=30)
     args = ap.parse_args()
 
@@ -238,33 +280,38 @@ def main():
         except Exception:
             existing = []
 
+    langs = [l.strip() for l in args.langs.split(",") if l.strip() and l.strip() in LANGS]
+
     print("Fetching from Wikidata (free, no key)…")
     collected = []
-    for lang in [l.strip() for l in args.langs.split(",") if l.strip()]:
-        if lang not in LANGS:
-            print(f"  ? unknown language {lang}", file=sys.stderr)
-            continue
+    for lang in langs:
         cfg = LANGS[lang]
-        limit = args.limit or cfg["limit"]
         try:
-            got = fetch_lang(lang, cfg, limit)
+            got = fetch_lang(lang, cfg, args.limit or cfg["limit"])
             collected += got
             print(f"  {lang:10s} -> {len(got)} films")
         except Exception as e:
             print(f"  ! {lang}: {type(e).__name__} {e}", file=sys.stderr)
 
+    print(f"Fetching recent releases (last {args.recent_days} days)…")
+    for lang in langs:
+        try:
+            got = fetch_recent(lang, LANGS[lang], args.recent_limit, args.recent_days)
+            collected += got
+            print(f"  {lang:10s} -> {len(got)} recent")
+        except Exception as e:
+            print(f"  ! {lang} recent: {type(e).__name__}", file=sys.stderr)
+
     print("Fetching upcoming films…")
     upcoming = []
-    for lang in [l.strip() for l in args.langs.split(",") if l.strip()]:
-        if lang not in LANGS:
-            continue
+    for lang in langs:
         try:
             got = fetch_upcoming(lang, LANGS[lang], args.upcoming_limit)
             upcoming += got
             print(f"  {lang:10s} -> {len(got)} upcoming")
         except Exception as e:
             print(f"  ! {lang} upcoming: {type(e).__name__}", file=sys.stderr)
-    upcoming.sort(key=lambda m: m.get("date", "9999"))   # keep the earliest date per title
+    upcoming.sort(key=lambda m: m.get("date", "9999"))
     collected += upcoming
 
     movies = dedupe(existing + collected)
@@ -277,7 +324,9 @@ def main():
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(movies, f, ensure_ascii=False, indent=1)
-    print(f"wrote {len(movies)} titles -> {args.out}")
+
+    dated = sum(1 for m in movies if m.get("date"))
+    print(f"wrote {len(movies)} titles -> {args.out}  ({dated} with release dates)")
 
 
 if __name__ == "__main__":

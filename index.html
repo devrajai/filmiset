@@ -215,12 +215,12 @@
 <div class="wrap layout">
   <aside class="rail" id="rail">
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
+    <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
     <div class="rail-block"><h6>Category</h6><div class="chips" id="catRow"></div></div>
     <div class="rail-block"><h6>Mood</h6><div class="chips" id="moodRow"></div></div>
     <div class="rail-block"><h6>Type</h6><div class="chips" id="typeRow"></div></div>
     <div class="rail-block"><h6>Era</h6><div class="chips" id="eraRow"></div></div>
     <div class="rail-block"><h6>Festival / Occasion</h6><div class="chips" id="occRow"></div></div>
-    <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
     <div class="rail-block"><h6>Audio</h6><div class="chips" id="audRow"></div></div>
     <div class="rail-block"><h6>Source</h6><div class="chips" id="srcRow"></div></div>
   </aside>
@@ -333,8 +333,14 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'all', dub:false, src:'all', savedOnly:false, q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'latest', dub:false, src:'all', savedOnly:false, q:''};
 const CUR_YEAR = new Date().getFullYear();
+const _now = new Date();
+const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
+const CUR_YM = _ym(_now.getFullYear(), _now.getMonth());
+const _prevM = new Date(_now.getFullYear(), _now.getMonth()-1, 1);
+const PREV_YM = _ym(_prevM.getFullYear(), _prevM.getMonth());
+const REL_LABEL = {latest:'Latest', month:'This month', lastmonth:'Last month', year:'This year', upcoming:'Upcoming'};
 const PAGE = 60;                 // render this many cards at a time (fast on mobile)
 let shownLimit = PAGE, lastKey = '';
 
@@ -435,7 +441,7 @@ occRow.addEventListener('click',e=>{
 });
 
 const relRow=document.getElementById('relRow');
-[['all','All'],['new','New ('+CUR_YEAR+')'],['upcoming','Upcoming']].forEach(([k,label])=>{
+[['latest','Latest'],['month','This month'],['lastmonth','Last month'],['year','This year'],['upcoming','Upcoming'],['all','All']].forEach(([k,label])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.rel===k?' on':''); b.dataset.rel=k; b.textContent=label;
   relRow.appendChild(b);
@@ -544,7 +550,7 @@ function syncUrl(){
   if(state.type!=='all') p.set('type',state.type);
   if(state.era!=='all') p.set('era',state.era);
   if(state.occasion!=='all') p.set('occ',state.occasion);
-  if(state.rel!=='all') p.set('rel',state.rel);
+  if(state.rel!=='latest') p.set('rel',state.rel);
   if(state.dub) p.set('dub','1');
   if(state.src!=='all') p.set('src',state.src);
   if(state.q) p.set('q',state.q);
@@ -564,8 +570,7 @@ function activeFilters(){
   if(state.type!=='all') a.push(state.type);
   if(state.era!=='all') a.push(state.era==='classic' ? 'Classic (pre-2000)' : 'Modern (2000+)');
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) a.push(oc.label); }
-  if(state.rel==='upcoming') a.push('Upcoming');
-  if(state.rel==='new') a.push('New ('+CUR_YEAR+')');
+  if(state.rel!=='all' && state.rel!=='latest') a.push(REL_LABEL[state.rel]||state.rel);
   if(state.dub) a.push('Hindi Dubbed');
   if(state.src==='youtube') a.push('YouTube');
   if(state.src==='catalogue') a.push('Catalogue');
@@ -579,12 +584,12 @@ function setPillRow(id, attr, val){
 }
 function clearAllFilters(){
   state.cat='all'; state.moods.clear(); state.type='all'; state.era='all';
-  state.occasion='all'; state.rel='all'; state.dub=false; state.src='all'; state.savedOnly=false; state.q='';
+  state.occasion='all'; state.rel='latest'; state.dub=false; state.src='all'; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
-  setPillRow('relRow','rel','all'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
+  setPillRow('relRow','rel','latest'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
   document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
   render();
 }
@@ -601,8 +606,14 @@ function render(){
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
     if(state.savedOnly && !watchlist.has(d.t)) return false;
-    if(state.rel==='upcoming' && d.status!=='upcoming') return false;
-    if(state.rel==='new' && !(d.status!=='upcoming' && Number(d.y) >= CUR_YEAR)) return false;
+    if(state.rel!=='all' && state.src!=='youtube'){
+      const ym=(d.date||'').slice(0,7);
+      if(state.rel==='latest'){ if(!(ym===CUR_YM || ym===PREV_YM || d.status==='upcoming')) return false; }
+      else if(state.rel==='month'){ if(ym!==CUR_YM) return false; }
+      else if(state.rel==='lastmonth'){ if(ym!==PREV_YM) return false; }
+      else if(state.rel==='year'){ if(d.status==='upcoming' || !(Number(d.y) >= CUR_YEAR)) return false; }
+      else if(state.rel==='upcoming'){ if(d.status!=='upcoming') return false; }
+    }
     if(state.dub && !(d.a||[]).some(x=>/hindi \(dub\)/i.test(x))) return false;
     if(state.src==='youtube' && d.src!=='youtube') return false;
     if(state.src==='catalogue' && d.src==='youtube') return false;
@@ -618,9 +629,17 @@ function render(){
     return true;
   });
 
-  if(state.rel==='upcoming') out.sort((a,b)=>String(a.date||'9999').localeCompare(String(b.date||'9999')));
+  out.sort((a,b)=>{
+    const ad=String(a.date||''), bd=String(b.date||'');
+    const au=a.status==='upcoming', bu=b.status==='upcoming';
+    if(state.rel==='upcoming') return (ad||'9999').localeCompare(bd||'9999');
+    if(au!==bu) return au ? 1 : -1;                  // released first, upcoming last
+    if(au) return (ad||'9999').localeCompare(bd||'9999');   // soonest first
+    return bd.localeCompare(ad);                      // newest first
+  });
 
   let label = state.cat==='all' ? 'All titles' : CATS[state.cat].label;
+  if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat==='all' ? ' releases' : ' · '+CATS[state.cat].label);
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
   const key = JSON.stringify([state.cat,[...state.moods].sort(),state.type,state.era,state.occasion,state.rel,state.dub,state.src,state.savedOnly,state.q]);
@@ -661,7 +680,7 @@ function render(){
       + '</div>'
       + '<div class="cardbody">'
         + '<h4>'+d.t+'</h4>'
-        + '<div class="meta">'+d.y+' · '+(isYT && d.channel ? d.channel+' · ' : '')+(isUp && d.date ? fmtDate(d.date)+' · ' : '')+d.g.join(', ')+'</div>'
+        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
         + '<div class="ott">'+otts+'</div>'
