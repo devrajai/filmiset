@@ -2,21 +2,23 @@
 """fetch_data.py — build data/catalog.json from FREE, no-key internet sources.
 
 Sources (no API key, no sign-up):
-  * Wikidata Query Service (SPARQL)   -> title, year, genres, description, poster
+  * Wikidata Query Service (SPARQL)      -> title, year, genres, description
     https://query.wikidata.org
-  * Wikimedia Commons (poster images) -> the browser loads them at runtime
+  * Wikipedia page-images API            -> posters (incl. non-free, pilicense=any)
+    https://en.wikipedia.org/w/api.php
+  * Wikimedia Commons (Wikidata P18)     -> fallback poster when Wikipedia has none
 
 Usage
   python3 scripts/fetch_data.py                       # all languages -> data/catalog.json
-  python3 scripts/fetch_data.py --langs Hindi,Tamil   # subset
-  python3 scripts/fetch_data.py --langs English --merge
+  python3 scripts/fetch_data.py --langs Hindi,Tamil
+  python3 scripts/fetch_data.py --no-posters          # skip the poster step
 """
 import argparse, json, os, sys, time, urllib.parse, urllib.request
 
 WIKIDATA = "https://query.wikidata.org/sparql"
+WIKI_API = "https://en.wikipedia.org/w/api.php"
 UA = "FilmiSetBot/1.0 (https://github.com/devrajai/filmiset) python-urllib"
 
-# language -> config.  'genres' off = skip the expensive genre join (big languages).
 LANGS = {
     "Hindi":     {"qid": "Q1568", "cat": "hindi",          "orig": "Hindi",     "limit": 120, "min_year": 1930, "genres": True},
     "Gujarati":  {"qid": "Q5137", "cat": "gujarati-movie", "orig": "Gujarati",  "limit": 120, "min_year": 1930, "genres": True},
@@ -38,19 +40,21 @@ GENRE_MOOD = [
 ]
 
 
-def sparql(query, retries=3, timeout=95):
-    url = WIKIDATA + "?format=json&query=" + urllib.parse.quote(query)
+def _get_json(url, retries=3, timeout=60):
     last = None
     for i in range(retries):
         try:
-            req = urllib.request.Request(url, headers={
-                "User-Agent": UA, "Accept": "application/sparql-results+json"})
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return json.loads(r.read().decode("utf-8"))
         except Exception as e:
             last = e
-            time.sleep(3 * (i + 1))
+            time.sleep(2 * (i + 1))
     raise last
+
+
+def sparql(query):
+    return _get_json(WIKIDATA + "?format=json&query=" + urllib.parse.quote(query), timeout=95)
 
 
 def query_lang(cfg, limit):
@@ -58,16 +62,17 @@ def query_lang(cfg, limit):
     extra_opt = ('OPTIONAL { ?film wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }'
                  if cfg["genres"] else '')
     return f"""
-SELECT ?filmLabel ?year ?image{extra_sel} (SAMPLE(?desc) AS ?description) WHERE {{
+SELECT ?filmLabel ?year ?image ?articleTitle{extra_sel} (SAMPLE(?desc) AS ?description) WHERE {{
   ?film wdt:P31 wd:Q11424 ; wdt:P577 ?date ; wdt:P364 wd:{cfg['qid']} .
   BIND(YEAR(?date) AS ?year)
   FILTER(?year >= {cfg['min_year']} && ?year <= 2026)
   {extra_opt}
   OPTIONAL {{ ?film wdt:P18 ?image }}
   OPTIONAL {{ ?film schema:description ?desc . FILTER(lang(?desc)="en") }}
+  OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
 }}
-GROUP BY ?filmLabel ?year ?image
+GROUP BY ?filmLabel ?year ?image ?articleTitle
 LIMIT {limit}
 """
 
@@ -94,7 +99,7 @@ def moods_for(genres):
     return moods[:3]
 
 
-def poster_url(image):
+def commons_url(image):
     if not image:
         return ""
     return image + ("&" if "?" in image else "?") + "width=400"
@@ -120,8 +125,9 @@ def fetch_lang(lang, cfg, limit):
             "t": title, "y": int(y) if y and y.isdigit() else y,
             "cat": cfg["cat"], "type": "Movie",
             "g": genres, "m": moods_for(genres), "a": audio, "o": [],
-            "poster": poster_url(r.get("image", {}).get("value", "")),
+            "poster": commons_url(r.get("image", {}).get("value", "")),
             "note": desc[:160], "src": "wikidata",
+            "_wiki": r.get("articleTitle", {}).get("value", "").strip(),
         })
     return out
 
@@ -137,12 +143,47 @@ def dedupe(movies):
     return uniq
 
 
+def attach_posters(movies):
+    """Fill 'poster' from the Wikipedia page-image (works for non-free posters too)."""
+    titles = sorted({m["_wiki"] for m in movies if m.get("_wiki")})
+    found = {}
+    for i in range(0, len(titles), 50):
+        batch = titles[i:i + 50]
+        url = (WIKI_API + "?action=query&format=json&prop=pageimages&piprop=thumbnail"
+               "&pithumbsize=400&pilicense=any&titles=" + urllib.parse.quote("|".join(batch)))
+        try:
+            q = _get_json(url).get("query", {})
+        except Exception as e:
+            print(f"  ! pageimages batch: {type(e).__name__}", file=sys.stderr)
+            continue
+        norm = {n["from"]: n["to"] for n in q.get("normalized", [])}
+        redir = {r["from"]: r["to"] for r in q.get("redirects", [])}
+        by_title = {}
+        for p in q.get("pages", {}).values():
+            thumb = (p.get("thumbnail") or {}).get("source")
+            if thumb:
+                by_title[p["title"]] = thumb.split("?")[0]
+        for t in batch:
+            key = redir.get(norm.get(t, t), norm.get(t, t))
+            if key in by_title:
+                found[t] = by_title[key]
+    hit = 0
+    for m in movies:
+        w = m.get("_wiki")
+        if w and w in found:
+            m["poster"] = found[w]
+            hit += 1
+    print(f"  posters: {hit}/{len(movies)} from Wikipedia")
+    return movies
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="data/catalog.json")
     ap.add_argument("--langs", default=",".join(LANGS))
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--merge", action="store_true")
+    ap.add_argument("--no-posters", action="store_true")
     args = ap.parse_args()
 
     existing = []
@@ -168,6 +209,12 @@ def main():
             print(f"  ! {lang}: {type(e).__name__} {e}", file=sys.stderr)
 
     movies = dedupe(existing + collected)
+    if not args.no_posters:
+        print("Fetching posters from Wikipedia…")
+        attach_posters(movies)
+    for m in movies:
+        m.pop("_wiki", None)
+
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(movies, f, ensure_ascii=False, indent=1)
