@@ -30,8 +30,10 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 index.html                        # the whole site (HTML + CSS + JS)
 data/movies.json                  # curated catalog (from the Google Sheet)
 data/catalog.json                 # auto-collected catalog (Wikidata) — refreshed daily
+posters/                          # compressed poster images (~19 KB each, stored locally)
 scripts/sheet_to_json.py          # Google Sheet (Catalog tab) -> data/movies.json
 scripts/fetch_data.py             # Wikidata (free, no key) -> data/catalog.json
+scripts/download_posters.py       # download + compress posters -> posters/
 .github/workflows/update-data.yml # daily job that refreshes data/catalog.json
 ```
 
@@ -45,7 +47,7 @@ the file directly with `file://` — it still renders the demo data.
    - **Published CSV (no credentials):** in Sheets, `File -> Share -> Publish to web`,
      pick the *Catalog* sheet, choose **CSV**, copy the link, then
      ```
-     python3 scripts/sheet_to_json.py --url "https://docs.google.com/.../pub"
+     python3 scripts/sheet_to_json.py --url "https://docs.google.com/.../pub?gid=0&single=true&output=csv"
      ```
    - **Downloaded CSV:** `File -> Download -> CSV`, then
      ```
@@ -68,6 +70,14 @@ Sources used: Wikidata Query Service (titles, years, genres, descriptions) and W
 Commons (poster images, loaded by the browser). OTT availability and Hindi-dub flags are not
 available from a free no-key source, so those stay curated in the Google Sheet.
 
+
+## Posters (stored locally, compressed)
+Posters are downloaded once and stored in `posters/` — resized to 300px wide and
+re-encoded as JPEG (~19 KB each), so the site does not hotlink Wikipedia/Wikimedia
+(which is discouraged and rate-limited). Refresh them with:
+```
+python3 scripts/download_posters.py            # resumes; skips images already on disk
+```
 ## Run locally
 ```
 python3 -m http.server 8000   # then open http://localhost:8000

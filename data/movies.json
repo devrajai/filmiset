@@ -23,7 +23,7 @@
    "Rainy Day"
   ],
   "note": "Ketan Mehta classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/0/05/BhavniBhavai.jpg"
+  "poster": "posters/bhavnibhavai.jpg"
  },
  {
   "t": "Mena Gurjari",
@@ -77,7 +77,7 @@
    "Rainy Day"
   ],
   "note": "Blockbuster Gujarati film",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/0/00/Desh_Re_Joya_Dada_Pardesh_Joya_poster.jpg"
+  "poster": "posters/desh-re-joya-dada-pardesh-joya-poster.jpg"
  },
  {
   "t": "Mughal-e-Azam",
@@ -103,7 +103,7 @@
    "Rainy Day"
   ],
   "note": "Epic classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/1/16/Mughal-e-Azam.jpg"
+  "poster": "posters/mughal-e-azam.jpg"
  },
  {
   "t": "Sholay",
@@ -130,7 +130,7 @@
    "Rainy Day"
   ],
   "note": "Evergreen Hindi classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/5/52/Sholay-poster.jpg"
+  "poster": "posters/sholay-poster.jpg"
  },
  {
   "t": "Pyaasa",
@@ -158,7 +158,7 @@
    "Rainy Day"
   ],
   "note": "Guru Dutt classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/9/93/Pyaasa_poster.jpg"
+  "poster": "posters/pyaasa-poster.jpg"
  },
  {
   "t": "Anand",
@@ -187,7 +187,7 @@
    "Rainy Day"
   ],
   "note": "Feel-good classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/3/3e/Anand_2004_poster.jpg"
+  "poster": "posters/anand-2004-poster.jpg"
  },
  {
   "t": "Mayabazar",
@@ -214,7 +214,7 @@
    "Rainy Day"
   ],
   "note": "Telugu classic, Hindi dub",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/b/bb/Mayabazar.jpg"
+  "poster": "posters/mayabazar.jpg"
  },
  {
   "t": "Parasakthi",
@@ -239,7 +239,7 @@
    "Rainy Day"
   ],
   "note": "Tamil classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/f/fa/Parasakthi_2026_poster.jpg"
+  "poster": "posters/parasakthi-2026-poster.jpg"
  },
  {
   "t": "The Godfather",
@@ -263,7 +263,7 @@
    "Weekend"
   ],
   "note": "Hollywood classic, Hindi dub",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
+  "poster": "posters/godfather-ver1.jpg"
  },
  {
   "t": "Oldboy",
@@ -288,7 +288,7 @@
    "Weekend"
   ],
   "note": "Korean classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/6/67/Oldboykoreanposter.jpg"
+  "poster": "posters/oldboykoreanposter.jpg"
  },
  {
   "t": "Bluffmaster Gujjubhai",
@@ -342,7 +342,7 @@
    "Rainy Day"
   ],
   "note": "Early Gujarati classic",
-  "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Narshinh_Mehta_1932_the_first_Gujarati_film_poster.jpg/500px-Narshinh_Mehta_1932_the_first_Gujarati_film_poster.jpg"
+  "poster": "posters/500px-narshinh-mehta-1932-the-first-gujarati-fil.jpg"
  },
  {
   "t": "Kariyavar",
@@ -389,7 +389,7 @@
    "Rainy Day"
   ],
   "note": "Based on Pannalal Patel's novel",
-  "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Cover_of_Manvini_Bhavai.svg/500px-Cover_of_Manvini_Bhavai.svg.png"
+  "poster": "posters/500px-cover-of-manvini-bhavai-svg.jpg"
  },
  {
   "t": "Alam Ara",
@@ -413,7 +413,7 @@
    "Rainy Day"
   ],
   "note": "First Indian talkie",
-  "poster": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Alam_Ara_poster%2C_1931.jpg"
+  "poster": "posters/alam-ara-poster-1931.jpg"
  },
  {
   "t": "Achhut Kanya",
@@ -464,7 +464,7 @@
    "Rainy Day"
   ],
   "note": "1940s blockbuster",
-  "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Kismet_1943.jpg/500px-Kismet_1943.jpg"
+  "poster": "posters/500px-kismet-1943.jpg"
  },
  {
   "t": "Do Bigha Zamin",
@@ -489,7 +489,7 @@
    "Rainy Day"
   ],
   "note": "Bimal Roy classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/8/84/Do_Bigha_Zamin.jpg"
+  "poster": "posters/do-bigha-zamin.jpg"
  },
  {
   "t": "Mother India",
@@ -516,7 +516,7 @@
    "Rainy Day"
   ],
   "note": "Landmark Hindi classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/2/20/Mother_India_poster.jpg"
+  "poster": "posters/mother-india-poster.jpg"
  },
  {
   "t": "Guide",
@@ -544,7 +544,7 @@
    "Rainy Day"
   ],
   "note": "Dev Anand classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/4/43/Guide_1965_film_poster.jpg"
+  "poster": "posters/guide-1965-film-poster.jpg"
  },
  {
   "t": "Deewaar",
@@ -571,7 +571,7 @@
    "Rainy Day"
   ],
   "note": "Salim-Javed classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/c/c7/Deewaar_poster.jpg"
+  "poster": "posters/deewaar-poster.jpg"
  },
  {
   "t": "Chupke Chupke",
@@ -599,7 +599,7 @@
    "New Year"
   ],
   "note": "Hrishikesh Mukherjee comedy",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/0/09/Chupke_Chupke_1975.jpg"
+  "poster": "posters/chupke-chupke-1975.jpg"
  },
  {
   "t": "Gol Maal",
@@ -627,7 +627,7 @@
    "New Year"
   ],
   "note": "Comedy classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/3/36/Gol_Maal_poster.jpg"
+  "poster": "posters/gol-maal-poster.jpg"
  },
  {
   "t": "Mr. India",
@@ -655,7 +655,7 @@
    "Independence Day"
   ],
   "note": "Iconic Hindi film",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/d/d7/Mr._India_%281987_film%29_poster.jpg"
+  "poster": "posters/mr-india-1987-film-poster.jpg"
  },
  {
   "t": "Qayamat Se Qayamat Tak",
@@ -682,7 +682,7 @@
    "Rainy Day"
   ],
   "note": "Romantic classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/1/14/Qayamat_Se_Qayamat_Tak.jpg"
+  "poster": "posters/qayamat-se-qayamat-tak.jpg"
  },
  {
   "t": "Hum Aapke Hain Koun",
@@ -711,7 +711,7 @@
    "New Year"
   ],
   "note": "Family musical",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/8/87/Hum_Aapke_Hain_Koun.._poster.jpg"
+  "poster": "posters/hum-aapke-hain-koun-poster.jpg"
  },
  {
   "t": "Dilwale Dulhania Le Jayenge",
@@ -738,7 +738,7 @@
    "Rainy Day"
   ],
   "note": "Evergreen romance",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/8/80/Dilwale_Dulhania_Le_Jayenge_poster.jpg"
+  "poster": "posters/dilwale-dulhania-le-jayenge-poster.jpg"
  },
  {
   "t": "Andaz Apna Apna",
@@ -766,7 +766,7 @@
    "New Year"
   ],
   "note": "Cult comedy",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/1/15/Andaz_Apna_Apna.jpg"
+  "poster": "posters/andaz-apna-apna.jpg"
  },
  {
   "t": "Patala Bhairavi",
@@ -846,7 +846,7 @@
    "Rainy Day"
   ],
   "note": "Telugu classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/6/64/Sagara_Sangamam.jpg"
+  "poster": "posters/sagara-sangamam.jpg"
  },
  {
   "t": "Nayakan",
@@ -873,7 +873,7 @@
    "Rainy Day"
   ],
   "note": "Mani Ratnam classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/d/d0/Nayakan_poster.jpg"
+  "poster": "posters/nayakan-poster.jpg"
  },
  {
   "t": "Thalapathi",
@@ -900,7 +900,7 @@
    "Rainy Day"
   ],
   "note": "Mani Ratnam classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/b/b3/Thalapathi_poster.jpg"
+  "poster": "posters/thalapathi-poster.jpg"
  },
  {
   "t": "Anniyan",
@@ -926,7 +926,7 @@
    "Independence Day"
   ],
   "note": "Shankar thriller",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/1/16/Anniyan_poster.jpg"
+  "poster": "posters/anniyan-poster.jpg"
  },
  {
   "t": "Ghilli",
@@ -951,7 +951,7 @@
    "Independence Day"
   ],
   "note": "Vijay action film",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/1/13/Ghilli_poster.jpg"
+  "poster": "posters/ghilli-poster.jpg"
  },
  {
   "t": "Enthiran (Robot)",
@@ -1001,7 +1001,7 @@
    "Rainy Day"
   ],
   "note": "Hollywood epic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/0/0a/Ben-Hur_2016_poster.png"
+  "poster": "posters/ben-hur-2016-poster.jpg"
  },
  {
   "t": "The Sound of Music",
@@ -1029,7 +1029,7 @@
    "New Year"
   ],
   "note": "Family classic",
-  "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Sound_of_music.jpg/500px-Sound_of_music.jpg"
+  "poster": "posters/500px-sound-of-music.jpg"
  },
  {
   "t": "Jaws",
@@ -1054,7 +1054,7 @@
    "Weekend"
   ],
   "note": "Spielberg classic",
-  "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Jaws_movie_poster.jpg/500px-Jaws_movie_poster.jpg"
+  "poster": "posters/500px-jaws-movie-poster.jpg"
  },
  {
   "t": "Star Wars",
@@ -1081,7 +1081,7 @@
    "Rainy Day"
   ],
   "note": "Sci-fi classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg"
+  "poster": "posters/starwarsmovieposter1977.jpg"
  },
  {
   "t": "E.T.",
@@ -1109,7 +1109,7 @@
    "Rainy Day"
   ],
   "note": "Family classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/6/66/E_t_the_extra_terrestrial_ver3.jpg"
+  "poster": "posters/e-t-the-extra-terrestrial-ver3.jpg"
  },
  {
   "t": "Terminator 2",
@@ -1134,7 +1134,7 @@
    "Independence Day"
   ],
   "note": "Action classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/5/5e/Terminator_2-Judgment_Day.png"
+  "poster": "posters/terminator-2-judgment-day.jpg"
  },
  {
   "t": "Jurassic Park",
@@ -1160,7 +1160,7 @@
    "Independence Day"
   ],
   "note": "Spielberg classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg"
+  "poster": "posters/jurassic-park-poster.jpg"
  },
  {
   "t": "Titanic",
@@ -1188,7 +1188,7 @@
    "Rainy Day"
   ],
   "note": "Romantic epic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png"
+  "poster": "posters/titanic-1997-film-poster.jpg"
  },
  {
   "t": "My Sassy Girl",
@@ -1217,7 +1217,7 @@
    "Rainy Day"
   ],
   "note": "Korean rom-com",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/8/88/My_Sassy_Girl_Movie_Poster.jpg"
+  "poster": "posters/my-sassy-girl-movie-poster.jpg"
  },
  {
   "t": "Memories of Murder",
@@ -1242,7 +1242,7 @@
    "Weekend"
   ],
   "note": "Bong Joon-ho classic",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/0/01/Salinui-chueok-south-korean-movie-poster-md.jpg"
+  "poster": "posters/salinui-chueok-south-korean-movie-poster-md.jpg"
  },
  {
   "t": "The Host",
@@ -1292,6 +1292,6 @@
    "Independence Day"
   ],
   "note": "Korean zombie hit",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/9/95/Train_to_Busan.jpg"
+  "poster": "posters/train-to-busan.jpg"
  }
 ]
