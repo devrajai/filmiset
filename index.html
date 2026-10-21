@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FilmiSet — Kya Dekhein? (Demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#15100c;
+    --bg-2:#1b1510;
+    --surface:#211a14;
+    --surface-2:#2a2119;
+    --border:rgba(255,255,255,0.09);
+    --border-strong:rgba(255,255,255,0.16);
+    --text:#f6efe4;
+    --text-dim:#b6a695;
+    --text-faint:#8a7b6c;
+    --accent:#e8a33d;
+    --accent-2:#c2410c;
+    --accent-dim:rgba(232,163,61,0.14);
+    --radius:14px;
+    --font-display:"Bricolage Grotesque",system-ui,sans-serif;
+    --font-body:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;
+    --font-mono:"JetBrains Mono",ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#faf6f0;
+      --bg-2:#f3ece2;
+      --surface:#ffffff;
+      --surface-2:#f6efe5;
+      --border:rgba(60,40,20,0.10);
+      --border-strong:rgba(60,40,20,0.20);
+      --text:#2a1f16;
+      --text-dim:#6b5b4a;
+      --text-faint:#94836f;
+      --accent:#b8761a;
+      --accent-2:#b03a0d;
+      --accent-dim:rgba(184,118,26,0.12);
+    }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--font-body);
+    background:
+      radial-gradient(1200px 600px at 12% -8%, rgba(232,163,61,0.10), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(194,65,12,0.08), transparent 55%),
+      var(--bg);
+    color:var(--text);
+    line-height:1.5;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:40;
+    backdrop-filter:blur(14px);
+    background:color-mix(in srgb, var(--bg) 82%, transparent);
+    border-bottom:1px solid var(--border);
+  }
+  .bar{display:flex;align-items:center;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:11px;margin-right:auto}
+  .logo{
+    width:38px;height:38px;border-radius:11px;flex:none;
+    background:linear-gradient(150deg,var(--accent),var(--accent-2));
+    display:grid;place-items:center;color:#1a1006;font-family:var(--font-display);
+    font-weight:800;font-size:20px;box-shadow:0 6px 18px rgba(232,163,61,0.28);
+  }
+  .brand h1{font-family:var(--font-display);font-size:21px;font-weight:800;letter-spacing:-0.02em}
+  .brand span{display:block;font-size:11.5px;color:var(--text-faint);font-weight:500;letter-spacing:0.02em}
+  .search{position:relative;flex:1 1 260px;max-width:380px}
+  .search input{
+    width:100%;padding:11px 14px 11px 38px;border-radius:11px;
+    background:var(--surface);border:1px solid var(--border);
+    color:var(--text);font-family:var(--font-body);font-size:14px;outline:none;
+    transition:border-color .18s, background .18s;
+  }
+  .search input:focus{border-color:var(--accent);background:var(--surface-2)}
+  .search input::placeholder{color:var(--text-faint)}
+  .search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);opacity:.5}
+
+  /* ---------- hero ---------- */
+  .hero{padding:40px 0 24px}
+  .eyebrow{
+    font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1.5px;background:var(--accent);display:inline-block}
+  .hero h2{
+    font-family:var(--font-display);font-weight:800;letter-spacing:-0.03em;
+    font-size:clamp(30px,5.4vw,52px);line-height:1.02;max-width:16ch;
+  }
+  .hero h2 em{font-style:normal;color:var(--accent)}
+  .hero p{margin-top:14px;max-width:60ch;color:var(--text-dim);font-size:15.5px}
+  .stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+  .stat{
+    background:var(--surface);border:1px solid var(--border);border-radius:12px;
+    padding:10px 15px;min-width:110px;
+  }
+  .stat b{font-family:var(--font-display);font-size:22px;font-weight:800;display:block;line-height:1}
+  .stat span{font-size:11.5px;color:var(--text-faint);font-family:var(--font-mono);letter-spacing:.04em}
+
+  /* ---------- filters ---------- */
+  .filters{padding:8px 0 6px}
+  .flabel{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--text-faint);margin:20px 0 10px;
+  }
+  .row{display:flex;gap:8px;flex-wrap:wrap}
+  .row.scroll{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;-ms-overflow-style:none;scrollbar-width:none}
+  .row.scroll::-webkit-scrollbar{display:none}
+  .pill{
+    font-family:var(--font-body);font-size:13px;font-weight:600;cursor:pointer;
+    padding:8px 14px;border-radius:999px;border:1px solid var(--border);
+    background:var(--surface);color:var(--text-dim);white-space:nowrap;
+    transition:all .16s;user-select:none;
+  }
+  .pill:hover{border-color:var(--border-strong);color:var(--text)}
+  .pill .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;vertical-align:middle}
+  .pill.on{background:var(--accent-dim);border-color:var(--accent);color:var(--text)}
+  .pill.on .dot{box-shadow:0 0 0 3px var(--accent-dim)}
+
+  /* ---------- results ---------- */
+  .resultbar{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:26px 0 14px;flex-wrap:wrap}
+  .resultbar h3{font-family:var(--font-display);font-size:17px;font-weight:700}
+  .resultbar .count{font-family:var(--font-mono);font-size:12.5px;color:var(--text-faint)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:18px;padding-bottom:50px}
+  .card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    overflow:hidden;display:flex;flex-direction:column;
+    transition:transform .2s, border-color .2s, box-shadow .2s;
+    animation:fadeUp .5s both;
+  }
+  .card:hover{transform:translateY(-4px);border-color:var(--border-strong);box-shadow:0 16px 34px rgba(0,0,0,0.35)}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){.card{animation:none}.card:hover{transform:none}}
+  .poster{position:relative;aspect-ratio:2/3;display:grid;place-items:center;overflow:hidden}
+  .poster .mono{font-family:var(--font-display);font-weight:800;font-size:46px;color:rgba(255,255,255,0.92);text-shadow:0 3px 14px rgba(0,0,0,0.4);z-index:1}
+  .poster::after{content:"";position:absolute;inset:0;background:
+    repeating-linear-gradient(115deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 16px);}
+  .type-badge{
+    position:absolute;top:10px;left:10px;z-index:2;
+    font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+    background:rgba(0,0,0,0.55);color:#fff;padding:4px 8px;border-radius:6px;backdrop-filter:blur(4px);
+  }
+  .lang-badge{
+    position:absolute;top:10px;right:10px;z-index:2;
+    font-family:var(--font-mono);font-size:10px;background:rgba(0,0,0,0.55);
+    color:#fff;padding:4px 8px;border-radius:6px;backdrop-filter:blur(4px);
+  }
+  .cardbody{padding:13px 13px 15px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .cardbody h4{font-family:var(--font-display);font-size:15.5px;font-weight:700;line-height:1.22;letter-spacing:-0.01em}
+  .meta{font-size:12px;color:var(--text-faint);font-family:var(--font-mono)}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:10.5px;padding:3px 8px;border-radius:6px;background:var(--surface-2);color:var(--text-dim);border:1px solid var(--border)}
+  .tag.mood{background:var(--accent-dim);color:var(--accent);border-color:transparent;font-weight:600}
+  .tag.audio{background:transparent;border-color:var(--border-strong);color:var(--text-dim)}
+  .ott{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:4px}
+  .ott span{font-size:10.5px;font-weight:600;color:var(--text-dim);background:var(--surface-2);border:1px solid var(--border);padding:4px 8px;border-radius:7px}
+  .watch{
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    margin-top:11px;padding:10px;border-radius:10px;text-decoration:none;
+    background:var(--accent);color:#1a1006;font-weight:700;font-size:13px;
+    transition:filter .16s;
+  }
+  .watch:hover{filter:brightness(1.08)}
+  .empty{
+    grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--text-dim);
+    border:1px dashed var(--border-strong);border-radius:var(--radius);
+  }
+  .empty b{display:block;font-family:var(--font-display);font-size:18px;color:var(--text);margin-bottom:6px}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--border);background:var(--bg-2);padding:30px 0 40px}
+  .foot{display:grid;grid-template-columns:1.3fr 1fr;gap:26px}
+  @media(max-width:720px){.foot{grid-template-columns:1fr}}
+  .foot h5{font-family:var(--font-display);font-size:14px;font-weight:700;margin-bottom:9px}
+  .foot p{font-size:13px;color:var(--text-dim)}
+  .foot .note{font-size:12px;color:var(--text-faint);font-family:var(--font-mono);margin-top:12px;line-height:1.6}
+  .legend{display:flex;flex-wrap:wrap;gap:8px}
+  .legend .pill{cursor:default;font-size:12px;padding:6px 11px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="brand">
+      <div class="logo">F</div>
+      <div>
+        <h1>FilmiSet</h1>
+        <span>mood · language · where to watch</span>
+      </div>
+    </div>
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+      <input id="q" type="text" placeholder="Search a title — 3 Idiots, RRR, Bluffmaster…" autocomplete="off">
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow">demo build · sample data · no api key needed</div>
+    <h2>Kya dekhein? Mood bolo, <em>hum dikha denge.</em></h2>
+    <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
+    <div class="stats">
+      <div class="stat"><b id="s-total">0</b><span>TITLES</span></div>
+      <div class="stat"><b>6</b><span>CATEGORIES</span></div>
+      <div class="stat"><b>10</b><span>MOOD TAGS</span></div>
+      <div class="stat"><b>100%</b><span>LEGAL LINKS</span></div>
+    </div>
+  </section>
+
+  <section class="filters">
+    <div class="flabel">01 — Category</div>
+    <div class="row scroll" id="catRow"></div>
+
+    <div class="flabel">02 — Mood</div>
+    <div class="row" id="moodRow"></div>
+
+    <div class="flabel">03 — Type</div>
+    <div class="row" id="typeRow"></div>
+  </section>
+
+  <div class="resultbar">
+    <h3 id="resTitle">All titles</h3>
+    <div class="count" id="resCount"></div>
+  </div>
+
+  <section class="grid" id="grid"></section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <h5>Ye demo hai — real data nahi</h5>
+      <p>Yeh ek working prototype hai jo concept dikhata hai. Isme ~40 titles ka <strong>sample data</strong> embedded hai (TMDB se nahi aaya). Aapke paas API key nahi hai, isliye demo bina key chalta hai.</p>
+      <div class="note">Real banane ke liye: TMDB API key (free) se titles, genres, language, posters — aur JustWatch/Streaming Availability se "kahan dekho". Dubbed-Hindi aur Gujarati-natak ka data manually curate karna padega.</div>
+    </div>
+    <div>
+      <h5>Categories covered</h5>
+      <div class="legend" id="legend"></div>
+      <div class="note">Sab watch-links legal platforms (JioHotstar, Prime Video, Netflix, ShemarooMe, JOJO, MX Player) aur JustWatch search par le jaate hain. Koi piracy link nahi.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const CATS = {
+  'gujarati-movie':  {label:'Gujarati Movies',        color:'#e8a33d'},
+  'gujarati-natak':  {label:'Gujarati Natak',          color:'#d97706'},
+  'hindi':           {label:'Hindi',                   color:'#c2410c'},
+  'south-dubbed':    {label:'South · Hindi Dubbed',    color:'#65a30d'},
+  'english-dubbed':  {label:'English · Hindi Dubbed',  color:'#0891b2'},
+  'korean-dubbed':   {label:'Korean · Hindi Dubbed',   color:'#be123c'},
+};
+
+const MOODS = ['Feel-Good','Comedy','Romantic','Thriller','Mystery','Action','Emotional','Horror','Nostalgic','Family'];
+
+const DATA = [
+  // --- Gujarati Movies ---
+  {t:'Chhello Divas',y:2015,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Comedy','Nostalgic'],a:['Gujarati'],o:['ShemarooMe','JioHotstar']},
+  {t:'Chaal Jeevi Laiye',y:2019,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Emotional','Family'],a:['Gujarati'],o:['ShemarooMe','JioHotstar']},
+  {t:'Hellaro',y:2019,cat:'gujarati-movie',type:'Movie',g:['Drama'],m:['Emotional','Nostalgic'],a:['Gujarati'],o:['JioHotstar','ShemarooMe']},
+  {t:'Fakt Purusho Maate',y:2024,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Comedy','Feel-Good'],a:['Gujarati'],o:['JOJO','ShemarooMe']},
+  {t:'Vash',y:2023,cat:'gujarati-movie',type:'Movie',g:['Thriller','Horror'],m:['Thriller','Horror'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Love Ni Bhavai',y:2017,cat:'gujarati-movie',type:'Movie',g:['Romance','Comedy'],m:['Romantic','Feel-Good'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Kamthaan',y:2024,cat:'gujarati-movie',type:'Movie',g:['Comedy','Crime'],m:['Comedy','Thriller'],a:['Gujarati'],o:['ShemarooMe']},
+
+  // --- Gujarati Natak ---
+  {t:'Bluffmaster Gujjubhai',y:2025,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Comedy','Feel-Good'],a:['Gujarati'],o:['ShemarooMe','JOJO']},
+  {t:'Vaat Vaat Ma',y:2024,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Comedy'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Sada Che Ni Bus',y:2024,cat:'gujarati-natak',type:'Natak',g:['Drama'],m:['Emotional','Family'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Naadi Dosh',y:2022,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Comedy','Family'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Ok Boss',y:2024,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Comedy','Feel-Good'],a:['Gujarati'],o:['ShemarooMe','JOJO']},
+  {t:'Mummy Ni Dhamaal, Pappa Ni Kamaa',y:2026,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Family','Comedy'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Tuition',y:2023,cat:'gujarati-natak',type:'Natak',g:['Drama'],m:['Emotional'],a:['Gujarati'],o:['ShemarooMe']},
+
+  // --- Hindi ---
+  {t:'3 Idiots',y:2009,cat:'hindi',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Comedy','Nostalgic'],a:['Hindi'],o:['Prime Video','Netflix']},
+  {t:'Dangal',y:2016,cat:'hindi',type:'Movie',g:['Drama','Sport'],m:['Emotional','Family'],a:['Hindi'],o:['JioHotstar','Netflix']},
+  {t:'Andhadhun',y:2018,cat:'hindi',type:'Movie',g:['Thriller','Mystery','Comedy'],m:['Thriller','Mystery'],a:['Hindi'],o:['Prime Video','JioHotstar']},
+  {t:'Gully Boy',y:2019,cat:'hindi',type:'Movie',g:['Drama','Music'],m:['Emotional'],a:['Hindi'],o:['Prime Video','JioHotstar']},
+  {t:'Zindagi Na Milegi Dobara',y:2011,cat:'hindi',type:'Movie',g:['Drama','Comedy'],m:['Feel-Good','Nostalgic'],a:['Hindi'],o:['Prime Video','JioHotstar']},
+  {t:'Queen',y:2014,cat:'hindi',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Emotional'],a:['Hindi'],o:['Netflix','JioHotstar']},
+  {t:'Tumbbad',y:2018,cat:'hindi',type:'Movie',g:['Horror','Mystery'],m:['Horror','Mystery'],a:['Hindi'],o:['Prime Video','JioHotstar']},
+  {t:'Drishyam',y:2015,cat:'hindi',type:'Movie',g:['Thriller','Mystery'],m:['Thriller','Mystery'],a:['Hindi'],o:['JioHotstar']},
+
+  // --- South · Hindi Dubbed ---
+  {t:'KGF: Chapter 1',y:2018,cat:'south-dubbed',type:'Movie',g:['Action','Drama'],m:['Action'],a:['Hindi (dub)','Kannada'],o:['Prime Video','JioHotstar']},
+  {t:'Baahubali: The Beginning',y:2015,cat:'south-dubbed',type:'Movie',g:['Action','Fantasy'],m:['Action','Emotional'],a:['Hindi (dub)','Telugu'],o:['JioHotstar','Prime Video']},
+  {t:'RRR',y:2022,cat:'south-dubbed',type:'Movie',g:['Action','Drama'],m:['Action','Emotional'],a:['Hindi (dub)','Telugu'],o:['Netflix','JioHotstar']},
+  {t:'Jailer',y:2023,cat:'south-dubbed',type:'Movie',g:['Action','Thriller'],m:['Action'],a:['Hindi (dub)','Tamil'],o:['Prime Video']},
+  {t:'Vikram',y:2022,cat:'south-dubbed',type:'Movie',g:['Action','Thriller'],m:['Action','Thriller'],a:['Hindi (dub)','Tamil'],o:['JioHotstar']},
+  {t:'Kantara',y:2022,cat:'south-dubbed',type:'Movie',g:['Action','Drama'],m:['Action','Nostalgic'],a:['Hindi (dub)','Kannada'],o:['Netflix']},
+  {t:'Ponniyin Selvan: Part 1',y:2022,cat:'south-dubbed',type:'Movie',g:['Action','Drama'],m:['Action','Emotional'],a:['Hindi (dub)','Tamil'],o:['Prime Video']},
+  {t:'Lokah Chapter 1: Chandra',y:2025,cat:'south-dubbed',type:'Movie',g:['Fantasy','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Malayalam'],o:['JioHotstar']},
+  {t:'Thudarum',y:2025,cat:'south-dubbed',type:'Movie',g:['Thriller','Drama'],m:['Thriller','Emotional'],a:['Hindi (dub)','Malayalam'],o:['JioHotstar']},
+  {t:'Mirai',y:2025,cat:'south-dubbed',type:'Movie',g:['Action','Fantasy'],m:['Action'],a:['Hindi (dub)','Telugu'],o:['JioHotstar']},
+
+  // --- English · Hindi Dubbed ---
+  {t:'Inception',y:2010,cat:'english-dubbed',type:'Movie',g:['Thriller','Sci-Fi'],m:['Thriller','Mystery'],a:['Hindi (dub)','English'],o:['JioHotstar','Prime Video']},
+  {t:'Interstellar',y:2014,cat:'english-dubbed',type:'Movie',g:['Sci-Fi','Drama'],m:['Emotional','Mystery'],a:['Hindi (dub)','English'],o:['JioHotstar','Prime Video']},
+  {t:'The Dark Knight',y:2008,cat:'english-dubbed',type:'Movie',g:['Action','Thriller'],m:['Action','Thriller'],a:['Hindi (dub)','English'],o:['JioHotstar']},
+  {t:'Avengers: Endgame',y:2019,cat:'english-dubbed',type:'Movie',g:['Action','Fantasy'],m:['Action'],a:['Hindi (dub)','English'],o:['JioHotstar']},
+  {t:'Spider-Man: No Way Home',y:2021,cat:'english-dubbed',type:'Movie',g:['Action','Adventure'],m:['Action','Feel-Good'],a:['Hindi (dub)','English'],o:['JioHotstar']},
+  {t:'John Wick',y:2014,cat:'english-dubbed',type:'Movie',g:['Action','Thriller'],m:['Action'],a:['Hindi (dub)','English'],o:['Prime Video']},
+
+  // --- Korean · Hindi Dubbed ---
+  {t:'Itaewon Class',y:2020,cat:'korean-dubbed',type:'Series',g:['Drama','Romance'],m:['Emotional'],a:['Hindi (dub)','Korean'],o:['MX Player','Netflix']},
+  {t:'Goblin',y:2016,cat:'korean-dubbed',type:'Series',g:['Fantasy','Romance'],m:['Romantic','Emotional'],a:['Hindi (dub)','Korean'],o:['MX Player']},
+  {t:'Crash Landing on You',y:2019,cat:'korean-dubbed',type:'Series',g:['Romance','Comedy'],m:['Romantic','Feel-Good'],a:['Hindi (dub)','Korean'],o:['Netflix']},
+  {t:'Doctor Stranger',y:2014,cat:'korean-dubbed',type:'Series',g:['Thriller','Romance'],m:['Thriller'],a:['Hindi (dub)','Korean'],o:['MX Player']},
+  {t:'Room No. 9',y:2018,cat:'korean-dubbed',type:'Series',g:['Mystery','Thriller'],m:['Mystery','Thriller'],a:['Hindi (dub)','Korean'],o:['MX Player']},
+  {t:'Vincenzo',y:2021,cat:'korean-dubbed',type:'Series',g:['Crime','Comedy'],m:['Thriller','Comedy'],a:['Hindi (dub)','Korean'],o:['Netflix']},
+  {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix']},
+];
+
+const state = {cat:'all', moods:new Set(), type:'all', q:''};
+
+/* ---- build filter UI ---- */
+const catRow = document.getElementById('catRow');
+const allPill = document.createElement('button');
+allPill.className='pill on'; allPill.dataset.cat='all'; allPill.textContent='All titles';
+catRow.appendChild(allPill);
+Object.entries(CATS).forEach(([k,v])=>{
+  const b=document.createElement('button');
+  b.className='pill'; b.dataset.cat=k;
+  b.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
+  catRow.appendChild(b);
+});
+catRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  catRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.cat=b.dataset.cat; render();
+});
+
+const moodRow=document.getElementById('moodRow');
+MOODS.forEach(m=>{
+  const b=document.createElement('button');
+  b.className='pill'; b.dataset.mood=m; b.textContent=m;
+  moodRow.appendChild(b);
+});
+moodRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  b.classList.toggle('on');
+  b.classList.contains('on')?state.moods.add(b.dataset.mood):state.moods.delete(b.dataset.mood);
+  render();
+});
+
+const typeRow=document.getElementById('typeRow');
+['all','Movie','Natak','Series'].forEach(t=>{
+  const b=document.createElement('button');
+  b.className='pill'+(t==='all'?' on':''); b.dataset.type=t;
+  b.textContent = t==='all'?'All types':t+'s';
+  typeRow.appendChild(b);
+});
+typeRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  typeRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.type=b.dataset.type; render();
+});
+
+document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();render();});
+
+/* ---- legend ---- */
+const legend=document.getElementById('legend');
+Object.values(CATS).forEach(v=>{
+  const s=document.createElement('span');
+  s.className='pill';
+  s.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
+  legend.appendChild(s);
+});
+
+/* ---- helpers ---- */
+function initials(t){
+  const w=t.replace(/[^\w\s]/g,'').split(/\s+/).filter(Boolean);
+  return (w[0]?.[0]||'')+(w[1]?.[0]||'');
+}
+function justwatch(t){return 'https://www.justwatch.com/in/search?q='+encodeURIComponent(t);}
+
+/* ---- render ---- */
+const grid=document.getElementById('grid');
+const resCount=document.getElementById('resCount');
+const resTitle=document.getElementById('resTitle');
+
+function render(){
+  const out=DATA.filter(d=>{
+    if(state.cat!=='all' && d.cat!==state.cat) return false;
+    if(state.type!=='all' && d.type!==state.type) return false;
+    if(state.moods.size && ![...state.moods].every(m=>d.m.includes(m))) return false;
+    if(state.q && !d.t.toLowerCase().includes(state.q)) return false;
+    return true;
+  });
+
+  resTitle.textContent = state.cat==='all' ? 'All titles' : CATS[state.cat].label;
+  resCount.textContent = out.length+' title'+(out.length===1?'':'s');
+
+  if(!out.length){
+    grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>Filters thoda kam karke dekhiye — ya mood hata dijiye.</div>';
+    return;
+  }
+
+  grid.innerHTML = out.map((d,i)=>{
+    const c=CATS[d.cat];
+    const grad='linear-gradient(150deg,'+c.color+' 0%, color-mix(in srgb,'+c.color+' 45%, #120c07) 100%)';
+    const audio = d.a.map(x=>'<span class="tag audio">'+x+'</span>').join('');
+    const moods = d.m.slice(0,3).map(x=>'<span class="tag mood">'+x+'</span>').join('');
+    const otts  = d.o.map(x=>'<span>'+x+'</span>').join('');
+    return '<article class="card" style="animation-delay:'+(Math.min(i,12)*35)+'ms">'
+      + '<div class="poster" style="background:'+grad+'">'
+        + '<span class="type-badge">'+d.type+'</span>'
+        + '<span class="lang-badge">'+c.label.split(' · ')[0]+'</span>'
+        + '<span class="mono">'+initials(d.t)+'</span>'
+      + '</div>'
+      + '<div class="cardbody">'
+        + '<h4>'+d.t+'</h4>'
+        + '<div class="meta">'+d.y+' · '+d.g.join(', ')+'</div>'
+        + '<div class="tags">'+moods+'</div>'
+        + '<div class="tags">'+audio+'</div>'
+        + '<div class="ott">'+otts+'</div>'
+        + '<a class="watch" href="'+justwatch(d.t)+'" target="_blank" rel="noopener">Where to watch'
+          + '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>'
+        + '</a>'
+      + '</div>'
+    + '</article>';
+  }).join('');
+}
+
+document.getElementById('s-total').textContent = DATA.length;
+render();
+</script>
+</body>
+</html>
