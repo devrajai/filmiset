@@ -154,6 +154,12 @@
     font-family:var(--font-mono);font-size:10px;background:rgba(0,0,0,0.55);
     color:#fff;padding:4px 8px;border-radius:6px;backdrop-filter:blur(4px);
   }
+  .classic-badge{
+    position:absolute;bottom:10px;left:10px;z-index:3;
+    font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+    background:var(--accent);color:#1a1006;padding:4px 9px;border-radius:6px;font-weight:700;
+    box-shadow:0 2px 8px rgba(0,0,0,0.35);
+  }
   .cardbody{padding:13px 13px 15px;display:flex;flex-direction:column;gap:9px;flex:1}
   .cardbody h4{font-family:var(--font-display);font-size:15.5px;font-weight:700;line-height:1.22;letter-spacing:-0.01em}
   .meta{font-size:12px;color:var(--text-faint);font-family:var(--font-mono)}
@@ -213,7 +219,7 @@
     <div class="stats">
       <div class="stat"><b id="s-total">0</b><span>TITLES</span></div>
       <div class="stat"><b>6</b><span>CATEGORIES</span></div>
-      <div class="stat"><b>10</b><span>MOOD TAGS</span></div>
+      <div class="stat"><b id="s-classic">0</b><span>CLASSICS (pre-2000)</span></div>
       <div class="stat"><b>100%</b><span>LEGAL LINKS</span></div>
     </div>
   </section>
@@ -227,6 +233,9 @@
 
     <div class="flabel">03 — Type</div>
     <div class="row" id="typeRow"></div>
+
+    <div class="flabel">04 — Era</div>
+    <div class="row" id="eraRow"></div>
   </section>
 
   <div class="resultbar">
@@ -323,7 +332,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix']},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', q:''};
 
 /* ---- build filter UI ---- */
 const catRow = document.getElementById('catRow');
@@ -368,6 +377,18 @@ typeRow.addEventListener('click',e=>{
   b.classList.add('on'); state.type=b.dataset.type; render();
 });
 
+const eraRow=document.getElementById('eraRow');
+[['all','All eras'],['classic','Classic (pre-2000)'],['modern','Modern (2000+)']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(k==='all'?' on':''); b.dataset.era=k; b.textContent=label;
+  eraRow.appendChild(b);
+});
+eraRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  eraRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.era=b.dataset.era; render();
+});
+
 document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();render();});
 
 /* ---- legend ---- */
@@ -395,6 +416,8 @@ function render(){
   const out=DATA.filter(d=>{
     if(state.cat!=='all' && d.cat!==state.cat) return false;
     if(state.type!=='all' && d.type!==state.type) return false;
+    if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
+    if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
     if(state.moods.size && ![...state.moods].every(m=>d.m.includes(m))) return false;
     if(state.q && !d.t.toLowerCase().includes(state.q)) return false;
     return true;
@@ -419,6 +442,7 @@ function render(){
         + '<span class="type-badge">'+d.type+'</span>'
         + '<span class="lang-badge">'+c.label.split(' · ')[0]+'</span>'
         + '<span class="mono">'+initials(d.t)+'</span>'
+        + (Number(d.y) < 2000 ? '<span class="classic-badge">Classic</span>' : '')
       + '</div>'
       + '<div class="cardbody">'
         + '<h4>'+d.t+'</h4>'
@@ -438,6 +462,7 @@ let DATA = DEMO.slice();
 
 function boot(){
   document.getElementById('s-total').textContent = DATA.length;
+  document.getElementById('s-classic').textContent = DATA.filter(d => Number(d.y) < 2000).length;
   render();
 }
 
