@@ -184,10 +184,20 @@
   }
   @media (max-width:560px){
     .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .hero h2{font-size:31px}
-    .hero p{font-size:14px}
-    .topbar-in{padding:11px 16px}
-    .layout{padding:16px 16px 50px}
+    .hero{padding:0}
+    .eyebrow{font-size:9.5px;margin-bottom:8px}
+    .hero h2{font-size:23px;max-width:none;line-height:1.02}
+    .hero p{display:none}
+    .stats{margin-top:12px;gap:7px}
+    .stat{padding:7px 11px;min-width:0;border-radius:10px}
+    .stat b{font-size:17px}
+    .stat span{font-size:8.5px}
+    .stat-opt{display:none}
+    .resultbar{margin:16px 0 12px}
+    .topbar-in{padding:9px 14px;gap:8px}
+    .hbtn{padding:7px 11px;font-size:12px}
+    .wordmark{font-size:18px}
+    .layout{padding:12px 16px 50px}
   }
 </style>
 </head>
@@ -234,7 +244,7 @@
         <div class="stat"><b id="s-total">0</b><span>TITLES</span></div>
         <div class="stat"><b>6</b><span>CATEGORIES</span></div>
         <div class="stat"><b id="s-classic">0</b><span>CLASSICS (pre-2000)</span></div>
-        <div class="stat"><b>100%</b><span>LEGAL LINKS</span></div>
+        <div class="stat stat-opt"><b>100%</b><span>LEGAL LINKS</span></div>
       </div>
     </section>
 
@@ -333,7 +343,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'latest', dub:false, src:'all', savedOnly:false, q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', savedOnly:false, q:''};
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
 const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
@@ -550,7 +560,7 @@ function syncUrl(){
   if(state.type!=='all') p.set('type',state.type);
   if(state.era!=='all') p.set('era',state.era);
   if(state.occasion!=='all') p.set('occ',state.occasion);
-  if(state.rel!=='latest') p.set('rel',state.rel);
+  if(state.rel!=='month') p.set('rel',state.rel);
   if(state.dub) p.set('dub','1');
   if(state.src!=='all') p.set('src',state.src);
   if(state.q) p.set('q',state.q);
@@ -570,7 +580,7 @@ function activeFilters(){
   if(state.type!=='all') a.push(state.type);
   if(state.era!=='all') a.push(state.era==='classic' ? 'Classic (pre-2000)' : 'Modern (2000+)');
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) a.push(oc.label); }
-  if(state.rel!=='all' && state.rel!=='latest') a.push(REL_LABEL[state.rel]||state.rel);
+  if(state.rel!=='all' && state.rel!=='month') a.push(REL_LABEL[state.rel]||state.rel);
   if(state.dub) a.push('Hindi Dubbed');
   if(state.src==='youtube') a.push('YouTube');
   if(state.src==='catalogue') a.push('Catalogue');
@@ -584,12 +594,12 @@ function setPillRow(id, attr, val){
 }
 function clearAllFilters(){
   state.cat='all'; state.moods.clear(); state.type='all'; state.era='all';
-  state.occasion='all'; state.rel='latest'; state.dub=false; state.src='all'; state.savedOnly=false; state.q='';
+  state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
-  setPillRow('relRow','rel','latest'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
+  setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
   document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
   render();
 }
@@ -606,7 +616,8 @@ function render(){
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
     if(state.savedOnly && !watchlist.has(d.t)) return false;
-    if(state.rel!=='all' && state.src!=='youtube'){
+    if(state.src!=='youtube' && state.rel!=='all'){
+      if(d.src==='youtube') return false;              // videos aren't movie releases
       const ym=(d.date||'').slice(0,7);
       if(state.rel==='latest'){ if(!(ym===CUR_YM || ym===PREV_YM || d.status==='upcoming')) return false; }
       else if(state.rel==='month'){ if(ym!==CUR_YM) return false; }
