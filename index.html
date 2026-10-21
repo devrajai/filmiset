@@ -55,6 +55,12 @@
   .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
   .search input::placeholder{color:var(--faint)}
   .search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);opacity:.45}
+  .qclear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:26px;height:26px;
+    border-radius:50%;border:none;background:var(--surface-2);color:var(--muted);font-size:16px;line-height:1;
+    cursor:pointer;display:grid;place-items:center}
+  .qclear:hover{color:var(--ink)}
+  [hidden]{display:none !important}
+  .empty .hbtn{margin-top:16px}
   .hbtn{font-family:var(--font-body);font-size:12.5px;font-weight:600;cursor:pointer;padding:9px 14px;
     border-radius:11px;border:1px solid var(--line);background:var(--surface);color:var(--muted);transition:.15s;white-space:nowrap}
   .hbtn:hover{border-color:var(--line-2);color:var(--ink)}
@@ -172,6 +178,7 @@
     <div class="search">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
       <input id="q" type="text" placeholder="Search a title — 3 Idiots, RRR, Bluffmaster…" autocomplete="off">
+      <button id="qclear" class="qclear" aria-label="Clear search" hidden>×</button>
     </div>
     <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
     <button id="shareBtn" class="hbtn" title="Share this view">Share</button>
@@ -390,7 +397,15 @@ occRow.addEventListener('click',e=>{
   b.classList.add('on'); state.occasion=b.dataset.occ; render();
 });
 
-document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();render();});
+document.getElementById('q').addEventListener('input',e=>{
+  state.q=e.target.value.trim().toLowerCase();
+  var qc=document.getElementById('qclear'); if(qc) qc.hidden = !e.target.value;
+  render();
+});
+document.getElementById('qclear').addEventListener('click',()=>{
+  var q=document.getElementById('q'); q.value=''; state.q='';
+  document.getElementById('qclear').hidden=true; q.focus(); render();
+});
 
 /* watchlist toggle + save buttons (delegated) */
 document.getElementById('savedBtn').addEventListener('click',()=>{ state.savedOnly=!state.savedOnly; render(); });
@@ -449,6 +464,31 @@ function updateSavedBtn(){
   document.getElementById('savedCount').textContent = watchlist.size;
   document.getElementById('savedBtn').classList.toggle('on', state.savedOnly);
 }
+function activeFilters(){
+  const a=[];
+  if(state.q) a.push('search "'+state.q+'"');
+  if(state.cat!=='all') a.push(CATS[state.cat] ? CATS[state.cat].label : state.cat);
+  if(state.type!=='all') a.push(state.type);
+  if(state.era!=='all') a.push(state.era==='classic' ? 'Classic (pre-2000)' : 'Modern (2000+)');
+  if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) a.push(oc.label); }
+  if(state.moods.size) a.push([...state.moods].join(', '));
+  if(state.savedOnly) a.push('Saved only');
+  return a;
+}
+function setPillRow(id, attr, val){
+  const r=document.getElementById(id); if(!r) return;
+  r.querySelectorAll('.pill').forEach(p=>p.classList.toggle('on', p.dataset[attr]===val));
+}
+function clearAllFilters(){
+  state.cat='all'; state.moods.clear(); state.type='all'; state.era='all';
+  state.occasion='all'; state.savedOnly=false; state.q='';
+  const q=document.getElementById('q'); if(q) q.value='';
+  const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
+  setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
+  setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
+  document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
+  render();
+}
 
 /* ---- render ---- */
 const grid=document.getElementById('grid');
@@ -482,7 +522,13 @@ function render(){
   updateSavedBtn();
 
   if(!out.length){
-    grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>Filters thoda kam karke dekhiye — ya mood hata dijiye.</div>';
+    const act=activeFilters();
+    const why = act.length
+      ? 'Active filters: <strong>'+act.join(' · ')+'</strong>. Inhe hata ke dekhiye — search saare titles par chalta hai, sirf active category par nahi.'
+      : 'Is search ke liye kuch nahi mila. Spelling check kijiye ya doosra naam try kijiye.';
+    grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>'+why
+      + (act.length ? '<br><button class="hbtn" id="clearAllBtn">Saare filters clear karein</button>' : '')+'</div>';
+    const ca=document.getElementById('clearAllBtn'); if(ca) ca.onclick=clearAllFilters;
     return;
   }
 
