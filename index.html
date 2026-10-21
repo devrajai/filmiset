@@ -144,6 +144,7 @@
   .poster .mono{font-family:var(--font-display);font-weight:800;font-size:46px;color:rgba(255,255,255,0.92);text-shadow:0 3px 14px rgba(0,0,0,0.4);z-index:1}
   .poster::after{content:"";position:absolute;inset:0;background:
     repeating-linear-gradient(115deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 16px);}
+  .poster-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
   .type-badge{
     position:absolute;top:10px;left:10px;z-index:2;
     font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
@@ -230,7 +231,7 @@
 
 <main class="wrap">
   <section class="hero">
-    <div class="eyebrow">catalog from a google sheet · static site on github pages</div>
+    <div class="eyebrow">live catalog · google sheet + wikidata · refreshed daily</div>
     <h2>Kya dekhein? Mood bolo, <em>hum dikha denge.</em></h2>
     <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Mood, festival ya weekend — apne mauke ke hisaab se pick karo. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
     <div class="stats">
@@ -269,8 +270,8 @@
 <footer>
   <div class="wrap foot">
     <div>
-      <h5>Catalog Google Sheet se aata hai</h5>
-      <p>Is site ka catalog ek <strong>Google Sheet</strong> (old &amp; classic movies collection) se aata hai — <code>data/movies.json</code> ke through load hota hai. Sheet update karo, JSON dobara banao, aur site khud refresh ho jaati hai. Neeche embedded demo titles fallback ke liye hain.</p>
+      <h5>Catalog free internet sources se aata hai</h5>
+      <p>Is site ka catalog do jagah se aata hai: ek <strong>Google Sheet</strong> se curate kiya hua (<code>data/movies.json</code>), aur ek <strong>Wikidata</strong> se automatically collect kiya hua (<code>data/catalog.json</code> — roz ek GitHub Action se refresh hota hai). Dono free hain, koi API key nahi chahiye. Neeche embedded demo titles fallback ke liye hain.</p>
       <div class="note">Real banane ke liye: TMDB API key (free) se titles, genres, language, posters — aur JustWatch/Streaming Availability se "kahan dekho". Dubbed-Hindi aur Gujarati-natak ka data manually curate karna padega.</div>
     </div>
     <div>
@@ -551,6 +552,7 @@ function render(){
     const otts  = d.o.map(x=>'<span>'+x+'</span>').join('');
     return '<article class="card" style="animation-delay:'+(Math.min(i,12)*35)+'ms">'
       + '<div class="poster" style="background:'+grad+'">'
+        + (d.poster ? '<img class="poster-img" src="'+d.poster+'" alt="" loading="lazy" onerror="this.remove()">' : '')
         + '<span class="type-badge">'+d.type+'</span>'
         + '<span class="lang-badge">'+c.label.split(' · ')[0]+'</span>'
         + '<span class="mono">'+initials(d.t)+'</span>'
@@ -579,18 +581,27 @@ function boot(){
   render();
 }
 
-/* Curated catalog exported from the Google Sheet (data/movies.json).
-   Falls back to embedded demo data if the fetch fails (e.g. opened via file://). */
-fetch('data/movies.json')
-  .then(r => r.ok ? r.json() : null)
-  .then(curated => {
-    if (Array.isArray(curated) && curated.length) {
-      const seen = new Set(DEMO.map(d => d.t.toLowerCase()));
-      DATA = DEMO.concat(curated.filter(c => c.t && !seen.has(c.t.toLowerCase())));
-    }
-    boot();
-  })
-  .catch(boot);
+function mergeSets(list){
+  const seen = new Set(DATA.map(d => (d.t||'').toLowerCase()));
+  (list||[]).forEach(c => {
+    if(!c || !c.t) return;
+    const k = c.t.toLowerCase();
+    if(seen.has(k)) return;
+    seen.add(k); DATA.push(c);
+  });
+}
+
+/* data/movies.json  = curated catalog (from the Google Sheet)
+   data/catalog.json = auto-collected catalog (Wikidata, refreshed daily by a GitHub Action)
+   Both are optional — the embedded demo set is the fallback. */
+Promise.all([
+  fetch('data/movies.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/catalog.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto]) => {
+  mergeSets(curated);
+  mergeSets(auto);
+  boot();
+}).catch(boot);
 </script>
 </body>
 </html>
