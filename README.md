@@ -5,11 +5,11 @@ Mood, language aur **"where to watch"** ke hisaab se movie discovery site.
 Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek **Google Sheet** se aata hai.
 
 ## Categories
+- Bollywood (Hindi cinema)
+- Hollywood (English cinema)
 - Gujarati Movies
 - Gujarati Natak
-- Hindi
 - South (Hindi Dubbed)
-- English (Hindi Dubbed)
 - Korean (Hindi Dubbed)
 
 ## Features
