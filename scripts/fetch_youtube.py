@@ -52,9 +52,22 @@ def clean(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+JUNK = re.compile(r"(watch now|subscribe|#shorts|\bshorts\b|live stream|giveaway|"
+                  r"full video|link in description|comment below)", re.I)
+# looks like a person's name (actors often end up as the "movie name")
+PERSON = re.compile(r"^[A-Z][a-z]+(?:[,&]? (?:[A-Z][a-z]+)){1,4}$")
+SIGNAL = re.compile(r"(trailer|teaser|movie|film|review|series|natak|cinema|story|recap|explain)", re.I)
+
+
 def extract_name(title):
     """Best-effort movie name from a YouTube video title."""
     t = clean(title)
+    # review-style:  "<Movie> Movie Review" / "<Movie> Honest Review: ..."
+    m = re.search(r"^(.*?)\s*[-–|:]?\s*(?:movie\s+)?(?:honest\s+|public\s+|full\s+|first\s+)?review\b", t, re.I)
+    if m:
+        cand = re.sub(r"\s+(movie|film|picture)$", "", m.group(1).strip(" -–|,."), flags=re.I)
+        if 3 <= len(cand) <= 60:
+            return cand[:70]
     segs = [clean(x) for x in t.split("|") if clean(x)]
     if not segs:
         return t[:80]
@@ -97,7 +110,13 @@ def fetch_channel(handle, cat, lang, label, limit):
         vid = vm.group(1)
         published = pm.group(1)[:10] if pm else ""
         raw_title = clean(tm.group(1))
+        if JUNK.search(raw_title):
+            continue
         name = extract_name(raw_title)
+        if len(name) < 4:
+            continue
+        if PERSON.match(name) and not SIGNAL.search(raw_title):
+            continue
         upcoming = bool(re.search(r"\b(trailer|teaser|first look|motion poster|coming soon|announcement)\b",
                                   raw_title, re.I))
         out.append({

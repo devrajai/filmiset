@@ -3,6 +3,9 @@
 # Categories: gujarati-movie | gujarati-natak | hindi | south-dubbed | english-dubbed | korean-dubbed
 # Add your own channels below (one per line). Lines starting with # are ignored.
 
-ShemarooGujarati | gujarati-movie | Gujarati | Shemaroo Gujarati
-shemaroome       | gujarati-movie | Gujarati | ShemarooMe
-GoldminesTelefilms | south-dubbed | Hindi | Goldmines
+ShemarooGujarati   | gujarati-movie | Gujarati | Shemaroo Gujarati
+shemaroome         | gujarati-movie | Gujarati | ShemarooMe
+GoldminesTelefilms | south-dubbed   | Hindi    | Goldmines
+yogiboltahai       | hindi          | Hindi    | Yogi Bolta Hai
+filmiindian        | hindi          | Hindi    | Filmi Indian
+abhikareview       | hindi          | Hindi    | Abhi Ka Review
