@@ -207,7 +207,7 @@
 
 <main class="wrap">
   <section class="hero">
-    <div class="eyebrow">demo build · sample data · no api key needed</div>
+    <div class="eyebrow">catalog from a google sheet · static site on github pages</div>
     <h2>Kya dekhein? Mood bolo, <em>hum dikha denge.</em></h2>
     <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
     <div class="stats">
@@ -240,8 +240,8 @@
 <footer>
   <div class="wrap foot">
     <div>
-      <h5>Ye demo hai — real data nahi</h5>
-      <p>Yeh ek working prototype hai jo concept dikhata hai. Isme ~40 titles ka <strong>sample data</strong> embedded hai (TMDB se nahi aaya). Aapke paas API key nahi hai, isliye demo bina key chalta hai.</p>
+      <h5>Catalog Google Sheet se aata hai</h5>
+      <p>Is site ka catalog ek <strong>Google Sheet</strong> (old &amp; classic movies collection) se aata hai — <code>data/movies.json</code> ke through load hota hai. Sheet update karo, JSON dobara banao, aur site khud refresh ho jaati hai. Neeche embedded demo titles fallback ke liye hain.</p>
       <div class="note">Real banane ke liye: TMDB API key (free) se titles, genres, language, posters — aur JustWatch/Streaming Availability se "kahan dekho". Dubbed-Hindi aur Gujarati-natak ka data manually curate karna padega.</div>
     </div>
     <div>
@@ -264,7 +264,7 @@ const CATS = {
 
 const MOODS = ['Feel-Good','Comedy','Romantic','Thriller','Mystery','Action','Emotional','Horror','Nostalgic','Family'];
 
-const DATA = [
+const DEMO = [
   // --- Gujarati Movies ---
   {t:'Chhello Divas',y:2015,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Comedy','Nostalgic'],a:['Gujarati'],o:['ShemarooMe','JioHotstar']},
   {t:'Chaal Jeevi Laiye',y:2019,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Emotional','Family'],a:['Gujarati'],o:['ShemarooMe','JioHotstar']},
@@ -434,8 +434,25 @@ function render(){
   }).join('');
 }
 
-document.getElementById('s-total').textContent = DATA.length;
-render();
+let DATA = DEMO.slice();
+
+function boot(){
+  document.getElementById('s-total').textContent = DATA.length;
+  render();
+}
+
+/* Curated catalog exported from the Google Sheet (data/movies.json).
+   Falls back to embedded demo data if the fetch fails (e.g. opened via file://). */
+fetch('data/movies.json')
+  .then(r => r.ok ? r.json() : null)
+  .then(curated => {
+    if (Array.isArray(curated) && curated.length) {
+      const seen = new Set(DEMO.map(d => d.t.toLowerCase()));
+      DATA = DEMO.concat(curated.filter(c => c.t && !seen.has(c.t.toLowerCase())));
+    }
+    boot();
+  })
+  .catch(boot);
 </script>
 </body>
 </html>
