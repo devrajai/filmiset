@@ -144,6 +144,7 @@
     border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:12.5px;
     text-decoration:none;transition:.15s}
   .watch:hover{filter:brightness(1.06)}
+  .watch.soon{background:var(--surface-2);color:var(--muted);cursor:default;border:1px dashed var(--line-2)}
   .empty{grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--muted);
     border:1px dashed var(--line-2);border-radius:var(--radius)}
   .empty b{display:block;font-family:var(--font-display);font-size:19px;color:var(--ink);margin-bottom:6px}
@@ -598,9 +599,11 @@ function render(){
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
         + '<div class="ott">'+otts+'</div>'
-        + '<a class="watch" href="'+justwatch(d.t)+'" target="_blank" rel="noopener">Where to watch'
-          + '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>'
-        + '</a>'
+        + (isUp
+            ? '<div class="watch soon">Releasing '+(d.date?fmtDate(d.date):'soon')+'</div>'
+            : '<a class="watch" href="'+justwatch(d.t)+'" target="_blank" rel="noopener">Where to watch'
+              + '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>'
+              + '</a>')
       + '</div>'
     + '</article>';
   }).join('');
