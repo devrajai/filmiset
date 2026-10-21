@@ -1,1014 +1,1256 @@
 [
-{
-"t": "Bhavni Bhavai",
-"y": 1980,
-"cat": "gujarati-movie",
-"type": "Movie",
-"g": [
-"Drama",
-"Social"
-],
-"m": [
-"Emotional",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Ketan Mehta classic"
-},
-{
-"t": "Mena Gurjari",
-"y": 1975,
-"cat": "gujarati-movie",
-"type": "Movie",
-"g": [
-"Musical",
-"Folk"
-],
-"m": [
-"Nostalgic",
-"Family"
-],
-"a": [
-"Original only"
-],
-"o": [
-"ShemarooMe"
-],
-"note": "Evergreen Gujarati film"
-},
-{
-"t": "Desh Re Joya Dada Pardesh Joya",
-"y": 1998,
-"cat": "gujarati-movie",
-"type": "Movie",
-"g": [
-"Drama",
-"Family"
-],
-"m": [
-"Emotional",
-"Family"
-],
-"a": [
-"Original only"
-],
-"o": [
-"ShemarooMe"
-],
-"note": "Blockbuster Gujarati film"
-},
-{
-"t": "Mughal-e-Azam",
-"y": 1960,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama",
-"Historical"
-],
-"m": [
-"Emotional",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Epic classic"
-},
-{
-"t": "Sholay",
-"y": 1975,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Action",
-"Drama"
-],
-"m": [
-"Action",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Evergreen Hindi classic"
-},
-{
-"t": "Pyaasa",
-"y": 1957,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama",
-"Musical"
-],
-"m": [
-"Emotional",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Guru Dutt classic"
-},
-{
-"t": "Anand",
-"y": 1971,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama"
-],
-"m": [
-"Emotional",
-"Feel-Good"
-],
-"a": [
-"Original only"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Feel-good classic"
-},
-{
-"t": "Mayabazar",
-"y": 1957,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Fantasy",
-"Drama"
-],
-"m": [
-"Family",
-"Nostalgic"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"YouTube"
-],
-"note": "Telugu classic, Hindi dub"
-},
-{
-"t": "Parasakthi",
-"y": 1952,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Drama",
-"Social"
-],
-"m": [
-"Emotional"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"YouTube"
-],
-"note": "Tamil classic"
-},
-{
-"t": "The Godfather",
-"y": 1972,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Crime",
-"Drama"
-],
-"m": [
-"Thriller"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Hollywood classic, Hindi dub"
-},
-{
-"t": "Oldboy",
-"y": 2003,
-"cat": "korean-dubbed",
-"type": "Movie",
-"g": [
-"Thriller",
-"Mystery"
-],
-"m": [
-"Thriller",
-"Mystery"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"Prime Video"
-],
-"note": "Korean classic"
-},
-{
-"t": "Bluffmaster Gujjubhai",
-"y": 2025,
-"cat": "gujarati-natak",
-"type": "Natak",
-"g": [
-"Comedy"
-],
-"m": [
-"Comedy",
-"Feel-Good"
-],
-"a": [
-"Original only"
-],
-"o": [
-"ShemarooMe"
-],
-"note": "Popular Gujarati natak"
-},
-{
-"t": "Narsinh Mehta",
-"y": 1932,
-"cat": "gujarati-movie",
-"type": "Movie",
-"g": [
-"Devotional",
-"Biopic"
-],
-"m": [
-"Nostalgic",
-"Emotional"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Early Gujarati classic"
-},
-{
-"t": "Kariyavar",
-"y": 1968,
-"cat": "gujarati-movie",
-"type": "Movie",
-"g": [
-"Drama"
-],
-"m": [
-"Emotional"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Gujarati classic"
-},
-{
-"t": "Manvini Bhavai",
-"y": 1993,
-"cat": "gujarati-movie",
-"type": "Movie",
-"g": [
-"Drama"
-],
-"m": [
-"Emotional"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Based on Pannalal Patel's novel"
-},
-{
-"t": "Alam Ara",
-"y": 1931,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama",
-"Fantasy"
-],
-"m": [
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "First Indian talkie"
-},
-{
-"t": "Achhut Kanya",
-"y": 1936,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama",
-"Social"
-],
-"m": [
-"Emotional",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Early Hindi classic"
-},
-{
-"t": "Kismet",
-"y": 1943,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama",
-"Thriller"
-],
-"m": [
-"Thriller",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "1940s blockbuster"
-},
-{
-"t": "Do Bigha Zamin",
-"y": 1953,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama",
-"Social"
-],
-"m": [
-"Emotional"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Bimal Roy classic"
-},
-{
-"t": "Mother India",
-"y": 1957,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama"
-],
-"m": [
-"Emotional",
-"Family"
-],
-"a": [
-"Original only"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Landmark Hindi classic"
-},
-{
-"t": "Guide",
-"y": 1965,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama",
-"Musical"
-],
-"m": [
-"Emotional",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Dev Anand classic"
-},
-{
-"t": "Deewaar",
-"y": 1975,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Action",
-"Crime"
-],
-"m": [
-"Action",
-"Emotional"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Salim-Javed classic"
-},
-{
-"t": "Chupke Chupke",
-"y": 1975,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Comedy"
-],
-"m": [
-"Comedy",
-"Feel-Good"
-],
-"a": [
-"Original only"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Hrishikesh Mukherjee comedy"
-},
-{
-"t": "Gol Maal",
-"y": 1979,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Comedy"
-],
-"m": [
-"Comedy",
-"Feel-Good"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Comedy classic"
-},
-{
-"t": "Mr. India",
-"y": 1987,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Sci-Fi",
-"Action"
-],
-"m": [
-"Action",
-"Family"
-],
-"a": [
-"Original only"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Iconic Hindi film"
-},
-{
-"t": "Qayamat Se Qayamat Tak",
-"y": 1988,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Romance",
-"Drama"
-],
-"m": [
-"Romantic",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Romantic classic"
-},
-{
-"t": "Hum Aapke Hain Koun",
-"y": 1994,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Drama",
-"Musical",
-"Family"
-],
-"m": [
-"Family",
-"Feel-Good"
-],
-"a": [
-"Original only"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Family musical"
-},
-{
-"t": "Dilwale Dulhania Le Jayenge",
-"y": 1995,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Romance",
-"Drama"
-],
-"m": [
-"Romantic",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Evergreen romance"
-},
-{
-"t": "Andaz Apna Apna",
-"y": 1994,
-"cat": "hindi",
-"type": "Movie",
-"g": [
-"Comedy"
-],
-"m": [
-"Comedy",
-"Feel-Good"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Cult comedy"
-},
-{
-"t": "Patala Bhairavi",
-"y": 1951,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Fantasy",
-"Adventure"
-],
-"m": [
-"Family",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Telugu classic (Hindi dub verify)"
-},
-{
-"t": "Shankarabharanam",
-"y": 1980,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Drama",
-"Musical"
-],
-"m": [
-"Emotional",
-"Nostalgic"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Telugu classic"
-},
-{
-"t": "Sagara Sangamam",
-"y": 1983,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Drama",
-"Musical"
-],
-"m": [
-"Emotional"
-],
-"a": [
-"Original only"
-],
-"o": [
-"YouTube"
-],
-"note": "Telugu classic"
-},
-{
-"t": "Nayakan",
-"y": 1987,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Crime",
-"Drama"
-],
-"m": [
-"Action",
-"Emotional"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"Prime Video"
-],
-"note": "Mani Ratnam classic"
-},
-{
-"t": "Thalapathi",
-"y": 1991,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Action",
-"Drama"
-],
-"m": [
-"Action",
-"Emotional"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"Prime Video"
-],
-"note": "Mani Ratnam classic"
-},
-{
-"t": "Anniyan",
-"y": 2005,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Action",
-"Thriller"
-],
-"m": [
-"Action",
-"Thriller"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Shankar thriller"
-},
-{
-"t": "Ghilli",
-"y": 2004,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Action",
-"Sport"
-],
-"m": [
-"Action"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Vijay action film"
-},
-{
-"t": "Enthiran (Robot)",
-"y": 2010,
-"cat": "south-dubbed",
-"type": "Movie",
-"g": [
-"Sci-Fi",
-"Action"
-],
-"m": [
-"Action"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Rajinikanth sci-fi"
-},
-{
-"t": "Ben-Hur",
-"y": 1959,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Drama",
-"Historical"
-],
-"m": [
-"Emotional",
-"Nostalgic"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"Prime Video"
-],
-"note": "Hollywood epic"
-},
-{
-"t": "The Sound of Music",
-"y": 1965,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Musical",
-"Drama"
-],
-"m": [
-"Family",
-"Feel-Good"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Family classic"
-},
-{
-"t": "Jaws",
-"y": 1975,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Thriller",
-"Horror"
-],
-"m": [
-"Thriller",
-"Horror"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"Prime Video"
-],
-"note": "Spielberg classic"
-},
-{
-"t": "Star Wars",
-"y": 1977,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Sci-Fi",
-"Adventure"
-],
-"m": [
-"Action",
-"Nostalgic"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Sci-fi classic"
-},
-{
-"t": "E.T.",
-"y": 1982,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Sci-Fi",
-"Family"
-],
-"m": [
-"Family",
-"Emotional"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Family classic"
-},
-{
-"t": "Terminator 2",
-"y": 1991,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Action",
-"Sci-Fi"
-],
-"m": [
-"Action"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"Prime Video"
-],
-"note": "Action classic"
-},
-{
-"t": "Jurassic Park",
-"y": 1993,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Adventure",
-"Sci-Fi"
-],
-"m": [
-"Action",
-"Thriller"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Spielberg classic"
-},
-{
-"t": "Titanic",
-"y": 1997,
-"cat": "english-dubbed",
-"type": "Movie",
-"g": [
-"Romance",
-"Drama"
-],
-"m": [
-"Romantic",
-"Emotional"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"JioHotstar"
-],
-"note": "Romantic epic"
-},
-{
-"t": "My Sassy Girl",
-"y": 2001,
-"cat": "korean-dubbed",
-"type": "Movie",
-"g": [
-"Romance",
-"Comedy"
-],
-"m": [
-"Romantic",
-"Comedy"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"MX Player"
-],
-"note": "Korean rom-com"
-},
-{
-"t": "Memories of Murder",
-"y": 2003,
-"cat": "korean-dubbed",
-"type": "Movie",
-"g": [
-"Crime",
-"Thriller"
-],
-"m": [
-"Thriller",
-"Mystery"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Bong Joon-ho classic"
-},
-{
-"t": "The Host",
-"y": 2006,
-"cat": "korean-dubbed",
-"type": "Movie",
-"g": [
-"Horror",
-"Sci-Fi"
-],
-"m": [
-"Horror",
-"Thriller"
-],
-"a": [
-"Original only"
-],
-"o": [
-"Prime Video"
-],
-"note": "Korean monster film"
-},
-{
-"t": "Train to Busan",
-"y": 2016,
-"cat": "korean-dubbed",
-"type": "Movie",
-"g": [
-"Horror",
-"Action"
-],
-"m": [
-"Horror",
-"Action"
-],
-"a": [
-"Hindi dub + Original"
-],
-"o": [
-"Prime Video"
-],
-"note": "Korean zombie hit"
-}
+ {
+  "t": "Bhavni Bhavai",
+  "y": 1980,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Social"
+  ],
+  "m": [
+   "Emotional",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Ketan Mehta classic"
+ },
+ {
+  "t": "Mena Gurjari",
+  "y": 1975,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Musical",
+   "Folk"
+  ],
+  "m": [
+   "Nostalgic",
+   "Family"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "ShemarooMe"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Rainy Day"
+  ],
+  "note": "Evergreen Gujarati film"
+ },
+ {
+  "t": "Desh Re Joya Dada Pardesh Joya",
+  "y": 1998,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family"
+  ],
+  "m": [
+   "Emotional",
+   "Family"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "ShemarooMe"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Blockbuster Gujarati film"
+ },
+ {
+  "t": "Mughal-e-Azam",
+  "y": 1960,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Historical"
+  ],
+  "m": [
+   "Emotional",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Epic classic"
+ },
+ {
+  "t": "Sholay",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Evergreen Hindi classic"
+ },
+ {
+  "t": "Pyaasa",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical"
+  ],
+  "m": [
+   "Emotional",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Guru Dutt classic"
+ },
+ {
+  "t": "Anand",
+  "y": 1971,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional",
+   "Feel-Good"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Diwali",
+   "Holi",
+   "Family Night",
+   "Independence Day",
+   "New Year",
+   "Rainy Day"
+  ],
+  "note": "Feel-good classic"
+ },
+ {
+  "t": "Mayabazar",
+  "y": 1957,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy",
+   "Drama"
+  ],
+  "m": [
+   "Family",
+   "Nostalgic"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Rainy Day"
+  ],
+  "note": "Telugu classic, Hindi dub"
+ },
+ {
+  "t": "Parasakthi",
+  "y": 1952,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Social"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Tamil classic"
+ },
+ {
+  "t": "The Godfather",
+  "y": 1972,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [
+   "Thriller"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Weekend"
+  ],
+  "note": "Hollywood classic, Hindi dub"
+ },
+ {
+  "t": "Oldboy",
+  "y": 2003,
+  "cat": "korean-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Mystery"
+  ],
+  "m": [
+   "Thriller",
+   "Mystery"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend"
+  ],
+  "note": "Korean classic"
+ },
+ {
+  "t": "Bluffmaster Gujjubhai",
+  "y": 2025,
+  "cat": "gujarati-natak",
+  "type": "Natak",
+  "g": [
+   "Comedy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "ShemarooMe"
+  ],
+  "occ": [
+   "Diwali",
+   "Holi",
+   "Weekend",
+   "Family Night",
+   "New Year"
+  ],
+  "note": "Popular Gujarati natak"
+ },
+ {
+  "t": "Narsinh Mehta",
+  "y": 1932,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Devotional",
+   "Biopic"
+  ],
+  "m": [
+   "Nostalgic",
+   "Emotional"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Diwali",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Early Gujarati classic"
+ },
+ {
+  "t": "Kariyavar",
+  "y": 1968,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Gujarati classic"
+ },
+ {
+  "t": "Manvini Bhavai",
+  "y": 1993,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Based on Pannalal Patel's novel"
+ },
+ {
+  "t": "Alam Ara",
+  "y": 1931,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Rainy Day"
+  ],
+  "note": "First Indian talkie"
+ },
+ {
+  "t": "Achhut Kanya",
+  "y": 1936,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Social"
+  ],
+  "m": [
+   "Emotional",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Early Hindi classic"
+ },
+ {
+  "t": "Kismet",
+  "y": 1943,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Weekend",
+   "Rainy Day"
+  ],
+  "note": "1940s blockbuster"
+ },
+ {
+  "t": "Do Bigha Zamin",
+  "y": 1953,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Social"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Bimal Roy classic"
+ },
+ {
+  "t": "Mother India",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional",
+   "Family"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Landmark Hindi classic"
+ },
+ {
+  "t": "Guide",
+  "y": 1965,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical"
+  ],
+  "m": [
+   "Emotional",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Dev Anand classic"
+ },
+ {
+  "t": "Deewaar",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Salim-Javed classic"
+ },
+ {
+  "t": "Chupke Chupke",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Diwali",
+   "Holi",
+   "Weekend",
+   "Family Night",
+   "New Year"
+  ],
+  "note": "Hrishikesh Mukherjee comedy"
+ },
+ {
+  "t": "Gol Maal",
+  "y": 1979,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Diwali",
+   "Holi",
+   "Weekend",
+   "Family Night",
+   "New Year"
+  ],
+  "note": "Comedy classic"
+ },
+ {
+  "t": "Mr. India",
+  "y": 1987,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Action"
+  ],
+  "m": [
+   "Action",
+   "Family"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Diwali",
+   "Weekend",
+   "Family Night",
+   "Independence Day"
+  ],
+  "note": "Iconic Hindi film"
+ },
+ {
+  "t": "Qayamat Se Qayamat Tak",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Holi",
+   "New Year",
+   "Rainy Day"
+  ],
+  "note": "Romantic classic"
+ },
+ {
+  "t": "Hum Aapke Hain Koun",
+  "y": 1994,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Family"
+  ],
+  "m": [
+   "Family",
+   "Feel-Good"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Diwali",
+   "Holi",
+   "Family Night",
+   "New Year"
+  ],
+  "note": "Family musical"
+ },
+ {
+  "t": "Dilwale Dulhania Le Jayenge",
+  "y": 1995,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Holi",
+   "New Year",
+   "Rainy Day"
+  ],
+  "note": "Evergreen romance"
+ },
+ {
+  "t": "Andaz Apna Apna",
+  "y": 1994,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Diwali",
+   "Holi",
+   "Weekend",
+   "Family Night",
+   "New Year"
+  ],
+  "note": "Cult comedy"
+ },
+ {
+  "t": "Patala Bhairavi",
+  "y": 1951,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Family",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Rainy Day"
+  ],
+  "note": "Telugu classic (Hindi dub verify)"
+ },
+ {
+  "t": "Shankarabharanam",
+  "y": 1980,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical"
+  ],
+  "m": [
+   "Emotional",
+   "Nostalgic"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Telugu classic"
+ },
+ {
+  "t": "Sagara Sangamam",
+  "y": 1983,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Telugu classic"
+ },
+ {
+  "t": "Nayakan",
+  "y": 1987,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Mani Ratnam classic"
+ },
+ {
+  "t": "Thalapathi",
+  "y": 1991,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Mani Ratnam classic"
+ },
+ {
+  "t": "Anniyan",
+  "y": 2005,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [
+   "Action",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day"
+  ],
+  "note": "Shankar thriller"
+ },
+ {
+  "t": "Ghilli",
+  "y": 2004,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Sport"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day"
+  ],
+  "note": "Vijay action film"
+ },
+ {
+  "t": "Enthiran (Robot)",
+  "y": 2010,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day"
+  ],
+  "note": "Rajinikanth sci-fi"
+ },
+ {
+  "t": "Ben-Hur",
+  "y": 1959,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Historical"
+  ],
+  "m": [
+   "Emotional",
+   "Nostalgic"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Hollywood epic"
+ },
+ {
+  "t": "The Sound of Music",
+  "y": 1965,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Musical",
+   "Drama"
+  ],
+  "m": [
+   "Family",
+   "Feel-Good"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Diwali",
+   "Holi",
+   "Family Night",
+   "New Year"
+  ],
+  "note": "Family classic"
+ },
+ {
+  "t": "Jaws",
+  "y": 1975,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Horror"
+  ],
+  "m": [
+   "Thriller",
+   "Horror"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend"
+  ],
+  "note": "Spielberg classic"
+ },
+ {
+  "t": "Star Wars",
+  "y": 1977,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Adventure"
+  ],
+  "m": [
+   "Action",
+   "Nostalgic"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Sci-fi classic"
+ },
+ {
+  "t": "E.T.",
+  "y": 1982,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Family"
+  ],
+  "m": [
+   "Family",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Diwali",
+   "Family Night",
+   "Independence Day",
+   "Rainy Day"
+  ],
+  "note": "Family classic"
+ },
+ {
+  "t": "Terminator 2",
+  "y": 1991,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day"
+  ],
+  "note": "Action classic"
+ },
+ {
+  "t": "Jurassic Park",
+  "y": 1993,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day"
+  ],
+  "note": "Spielberg classic"
+ },
+ {
+  "t": "Titanic",
+  "y": 1997,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "occ": [
+   "Holi",
+   "Independence Day",
+   "New Year",
+   "Rainy Day"
+  ],
+  "note": "Romantic epic"
+ },
+ {
+  "t": "My Sassy Girl",
+  "y": 2001,
+  "cat": "korean-dubbed",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Comedy"
+  ],
+  "m": [
+   "Romantic",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "MX Player"
+  ],
+  "occ": [
+   "Diwali",
+   "Holi",
+   "Weekend",
+   "New Year",
+   "Rainy Day"
+  ],
+  "note": "Korean rom-com"
+ },
+ {
+  "t": "Memories of Murder",
+  "y": 2003,
+  "cat": "korean-dubbed",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Mystery"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend"
+  ],
+  "note": "Bong Joon-ho classic"
+ },
+ {
+  "t": "The Host",
+  "y": 2006,
+  "cat": "korean-dubbed",
+  "type": "Movie",
+  "g": [
+   "Horror",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Horror",
+   "Thriller"
+  ],
+  "a": [
+   "Original only"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend"
+  ],
+  "note": "Korean monster film"
+ },
+ {
+  "t": "Train to Busan",
+  "y": 2016,
+  "cat": "korean-dubbed",
+  "type": "Movie",
+  "g": [
+   "Horror",
+   "Action"
+  ],
+  "m": [
+   "Horror",
+   "Action"
+  ],
+  "a": [
+   "Hindi dub + Original"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "occ": [
+   "Weekend",
+   "Independence Day"
+  ],
+  "note": "Korean zombie hit"
+ }
 ]
