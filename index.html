@@ -190,6 +190,21 @@
   .foot p{font-size:13px;color:var(--text-dim)}
   .foot .note{font-size:12px;color:var(--text-faint);font-family:var(--font-mono);margin-top:12px;line-height:1.6}
   .legend{display:flex;flex-wrap:wrap;gap:8px}
+  .hbtn{
+    font-family:var(--font-body);font-size:13px;font-weight:600;cursor:pointer;
+    padding:9px 14px;border-radius:11px;border:1px solid var(--border);
+    background:var(--surface);color:var(--text-dim);transition:all .16s;white-space:nowrap;
+  }
+  .hbtn:hover{border-color:var(--border-strong);color:var(--text)}
+  .hbtn.on{background:var(--accent-dim);border-color:var(--accent);color:var(--text)}
+  .hbtn b{font-family:var(--font-mono);font-size:11px;color:var(--accent);margin-left:2px}
+  .save-btn{
+    position:absolute;bottom:10px;right:10px;z-index:4;width:32px;height:32px;border-radius:9px;
+    cursor:pointer;border:1px solid rgba(255,255,255,0.25);background:rgba(0,0,0,0.5);color:#fff;
+    font-size:15px;line-height:1;display:grid;place-items:center;backdrop-filter:blur(4px);transition:all .15s;
+  }
+  .save-btn:hover{background:rgba(0,0,0,0.72)}
+  .save-btn.on{background:var(--accent);color:#1a1006;border-color:var(--accent)}
   .legend .pill{cursor:default;font-size:12px;padding:6px 11px}
 </style>
 </head>
@@ -208,6 +223,8 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
       <input id="q" type="text" placeholder="Search a title — 3 Idiots, RRR, Bluffmaster…" autocomplete="off">
     </div>
+    <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
+    <button id="shareBtn" class="hbtn" title="Share this view">Share</button>
   </div>
 </header>
 
@@ -335,16 +352,32 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix']},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', savedOnly:false, q:''};
+
+/* watchlist (persisted in this browser) */
+const watchlist = new Set(JSON.parse(localStorage.getItem('filmiset_watchlist')||'[]'));
+function persistWatchlist(){ try{ localStorage.setItem('filmiset_watchlist', JSON.stringify([...watchlist])); }catch(e){} }
+
+/* restore filters from the URL so a shared link reopens the same view */
+(function readUrl(){
+  const p=new URLSearchParams(location.search);
+  if(p.get('cat')) state.cat=p.get('cat');
+  if(p.get('type')) state.type=p.get('type');
+  if(p.get('era')) state.era=p.get('era');
+  if(p.get('occ')) state.occasion=p.get('occ');
+  if(p.get('q')){ state.q=p.get('q').toLowerCase(); document.getElementById('q').value=p.get('q'); }
+  if(p.get('moods')) p.get('moods').split('|').filter(Boolean).forEach(m=>state.moods.add(m));
+  if(p.get('saved')==='1') state.savedOnly=true;
+})();
 
 /* ---- build filter UI ---- */
 const catRow = document.getElementById('catRow');
 const allPill = document.createElement('button');
-allPill.className='pill on'; allPill.dataset.cat='all'; allPill.textContent='All titles';
+allPill.className='pill'+(state.cat==='all'?' on':''); allPill.dataset.cat='all'; allPill.textContent='All titles';
 catRow.appendChild(allPill);
 Object.entries(CATS).forEach(([k,v])=>{
   const b=document.createElement('button');
-  b.className='pill'; b.dataset.cat=k;
+  b.className='pill'+(state.cat===k?' on':''); b.dataset.cat=k;
   b.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
   catRow.appendChild(b);
 });
@@ -357,7 +390,7 @@ catRow.addEventListener('click',e=>{
 const moodRow=document.getElementById('moodRow');
 MOODS.forEach(m=>{
   const b=document.createElement('button');
-  b.className='pill'; b.dataset.mood=m; b.textContent=m;
+  b.className='pill'+(state.moods.has(m)?' on':''); b.dataset.mood=m; b.textContent=m;
   moodRow.appendChild(b);
 });
 moodRow.addEventListener('click',e=>{
@@ -370,7 +403,7 @@ moodRow.addEventListener('click',e=>{
 const typeRow=document.getElementById('typeRow');
 ['all','Movie','Natak','Series'].forEach(t=>{
   const b=document.createElement('button');
-  b.className='pill'+(t==='all'?' on':''); b.dataset.type=t;
+  b.className='pill'+(state.type===t?' on':''); b.dataset.type=t;
   b.textContent = t==='all'?'All types':t+'s';
   typeRow.appendChild(b);
 });
@@ -383,7 +416,7 @@ typeRow.addEventListener('click',e=>{
 const eraRow=document.getElementById('eraRow');
 [['all','All eras'],['classic','Classic (pre-2000)'],['modern','Modern (2000+)']].forEach(([k,label])=>{
   const b=document.createElement('button');
-  b.className='pill'+(k==='all'?' on':''); b.dataset.era=k; b.textContent=label;
+  b.className='pill'+(state.era===k?' on':''); b.dataset.era=k; b.textContent=label;
   eraRow.appendChild(b);
 });
 eraRow.addEventListener('click',e=>{
@@ -405,7 +438,7 @@ const OCCASIONS = [
 const occRow=document.getElementById('occRow');
 [['all','All occasions']].concat(OCCASIONS.map(o=>[o.k,o.label])).forEach(([k,label])=>{
   const b=document.createElement('button');
-  b.className='pill'+(k==='all'?' on':''); b.dataset.occ=k; b.textContent=label;
+  b.className='pill'+(state.occasion===k?' on':''); b.dataset.occ=k; b.textContent=label;
   occRow.appendChild(b);
 });
 occRow.addEventListener('click',e=>{
@@ -415,6 +448,29 @@ occRow.addEventListener('click',e=>{
 });
 
 document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();render();});
+
+/* watchlist toggle + save buttons (delegated) */
+document.getElementById('savedBtn').addEventListener('click',()=>{ state.savedOnly=!state.savedOnly; render(); });
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.save-btn'); if(!b) return;
+  const t=b.dataset.title;
+  if(watchlist.has(t)) watchlist.delete(t); else watchlist.add(t);
+  persistWatchlist();
+  b.classList.toggle('on', watchlist.has(t));
+  b.textContent = watchlist.has(t)?'♥':'♡';
+  updateSavedBtn();
+  if(state.savedOnly) render();
+});
+
+/* share */
+document.getElementById('shareBtn').addEventListener('click',async ev=>{
+  const btn=ev.currentTarget, url=location.href;
+  try{
+    if(navigator.share){ await navigator.share({title:'FilmiSet', text:'Kya dekhein? FilmiSet par dekho:', url}); return; }
+    await navigator.clipboard.writeText(url);
+    const old=btn.textContent; btn.textContent='Link copied'; setTimeout(()=>btn.textContent=old,1500);
+  }catch(e){}
+});
 
 /* ---- legend ---- */
 const legend=document.getElementById('legend');
@@ -431,6 +487,25 @@ function initials(t){
   return (w[0]?.[0]||'')+(w[1]?.[0]||'');
 }
 function justwatch(t){return 'https://www.justwatch.com/in/search?q='+encodeURIComponent(t);}
+function deriveOcc(d){
+  return OCCASIONS.filter(o=>d.m.some(m=>o.moods.includes(m)) || d.g.some(g=>o.genres.includes(g))).map(o=>o.label);
+}
+function syncUrl(){
+  const p=new URLSearchParams();
+  if(state.cat!=='all') p.set('cat',state.cat);
+  if(state.type!=='all') p.set('type',state.type);
+  if(state.era!=='all') p.set('era',state.era);
+  if(state.occasion!=='all') p.set('occ',state.occasion);
+  if(state.q) p.set('q',state.q);
+  if(state.moods.size) p.set('moods',[...state.moods].join('|'));
+  if(state.savedOnly) p.set('saved','1');
+  const qs=p.toString();
+  history.replaceState(null,'',qs?('?'+qs):location.pathname);
+}
+function updateSavedBtn(){
+  document.getElementById('savedCount').textContent = watchlist.size;
+  document.getElementById('savedBtn').classList.toggle('on', state.savedOnly);
+}
 
 /* ---- render ---- */
 const grid=document.getElementById('grid');
@@ -443,9 +518,13 @@ function render(){
     if(state.type!=='all' && d.type!==state.type) return false;
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
+    if(state.savedOnly && !watchlist.has(d.t)) return false;
     if(state.occasion!=='all'){
       const oc=OCCASIONS.find(o=>o.k===state.occasion);
-      if(oc && !(d.m.some(m=>oc.moods.includes(m)) || d.g.some(g=>oc.genres.includes(g)))) return false;
+      if(oc){
+        const list=(d.occ && d.occ.length) ? d.occ : deriveOcc(d);
+        if(!list.includes(oc.label)) return false;
+      }
     }
     if(state.moods.size && ![...state.moods].every(m=>d.m.includes(m))) return false;
     if(state.q && !d.t.toLowerCase().includes(state.q)) return false;
@@ -456,6 +535,8 @@ function render(){
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
   resCount.textContent = out.length+' title'+(out.length===1?'':'s');
+  syncUrl();
+  updateSavedBtn();
 
   if(!out.length){
     grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>Filters thoda kam karke dekhiye — ya mood hata dijiye.</div>';
@@ -474,6 +555,7 @@ function render(){
         + '<span class="lang-badge">'+c.label.split(' · ')[0]+'</span>'
         + '<span class="mono">'+initials(d.t)+'</span>'
         + (Number(d.y) < 2000 ? '<span class="classic-badge">Classic</span>' : '')
+        + '<button class="save-btn'+(watchlist.has(d.t)?' on':'')+'" data-title="'+d.t.replace(/"/g,'&quot;')+'" aria-label="Save to watchlist">'+(watchlist.has(d.t)?'♥':'♡')+'</button>'
       + '</div>'
       + '<div class="cardbody">'
         + '<h4>'+d.t+'</h4>'
