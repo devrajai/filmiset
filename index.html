@@ -350,7 +350,7 @@ const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
 const CUR_YM = _ym(_now.getFullYear(), _now.getMonth());
 const _prevM = new Date(_now.getFullYear(), _now.getMonth()-1, 1);
 const PREV_YM = _ym(_prevM.getFullYear(), _prevM.getMonth());
-const REL_LABEL = {latest:'Latest', month:'This month', lastmonth:'Last month', year:'This year', upcoming:'Upcoming'};
+const REL_LABEL = {latest:'Last 2 months', month:'This month', lastmonth:'Last month', year:'This year', upcoming:'Upcoming'};
 const PAGE = 60;                 // render this many cards at a time (fast on mobile)
 let shownLimit = PAGE, lastKey = '';
 
@@ -451,7 +451,7 @@ occRow.addEventListener('click',e=>{
 });
 
 const relRow=document.getElementById('relRow');
-[['latest','Latest'],['month','This month'],['lastmonth','Last month'],['year','This year'],['upcoming','Upcoming'],['all','All']].forEach(([k,label])=>{
+[['month','This month'],['latest','Last 2 months'],['lastmonth','Last month'],['year','This year'],['upcoming','Upcoming'],['all','All']].forEach(([k,label])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.rel===k?' on':''); b.dataset.rel=k; b.textContent=label;
   relRow.appendChild(b);
