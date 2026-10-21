@@ -52,6 +52,7 @@ def rows_to_movies(rows):
             "m": split_multi(r.get("Mood Tags")),
             "a": split_multi(r.get("Available Audio")),
             "o": split_multi(r.get("OTT Platforms")),
+            "occ": split_multi(r.get("Occasion Tags")),
             "note": (r.get("Notes") or "").strip(),
         })
     return out
