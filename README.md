@@ -16,6 +16,7 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 - Mood filters (Feel-Good, Comedy, Romantic, Thriller, Mystery, Action, Emotional, Horror, Nostalgic, Family)
 - Type filter (Movie / Natak / Series) + live search
 - Era filter (Classic pre-2000 / Modern) + a "Classic" badge on old titles
+- Festival / Occasion filter (Diwali, Holi, Weekend, Family Night, Independence Day, New Year, Rainy Day)
 - Har title par: year, genres, mood tags, available audio (Hindi dub included), OTT platforms
 - **"Where to watch"** button -> JustWatch India search (100% legal)
 
