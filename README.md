@@ -17,6 +17,8 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 - Type filter (Movie / Natak / Series) + live search
 - Era filter (Classic pre-2000 / Modern) + a "Classic" badge on old titles
 - Festival / Occasion filter (Diwali, Holi, Weekend, Family Night, Independence Day, New Year, Rainy Day)
+- Release filter — **New (this year)** and **Upcoming** (with release dates, sorted by date)
+- **Hindi Dubbed** filter — shows every title with a Hindi dub, regardless of original language
 - Har title par: year, genres, mood tags, available audio (Hindi dub included), OTT platforms
 - **"Where to watch"** button -> JustWatch India search (100% legal)
 
@@ -78,6 +80,10 @@ re-encoded as JPEG (~19 KB each), so the site does not hotlink Wikipedia/Wikimed
 ```
 python3 scripts/download_posters.py            # resumes; skips images already on disk
 ```
+
+> **Pipeline order:** `fetch_data.py` (Wikidata, incl. upcoming films) -> `download_posters.py`
+> (compress + localise posters). Run both, then commit.
+
 ## Run locally
 ```
 python3 -m http.server 8000   # then open http://localhost:8000
