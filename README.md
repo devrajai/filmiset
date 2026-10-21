@@ -27,9 +27,12 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 
 ## Structure
 ```
-index.html                 # the whole site (HTML + CSS + JS)
-data/movies.json           # catalog, generated from the Google Sheet
-scripts/sheet_to_json.py   # Google Sheet (Catalog tab) -> data/movies.json
+index.html                        # the whole site (HTML + CSS + JS)
+data/movies.json                  # curated catalog (from the Google Sheet)
+data/catalog.json                 # auto-collected catalog (Wikidata) — refreshed daily
+scripts/sheet_to_json.py          # Google Sheet (Catalog tab) -> data/movies.json
+scripts/fetch_data.py             # Wikidata (free, no key) -> data/catalog.json
+.github/workflows/update-data.yml # daily job that refreshes data/catalog.json
 ```
 
 The site fetches `data/movies.json` on load and merges it with a small embedded
@@ -49,6 +52,21 @@ the file directly with `file://` — it still renders the demo data.
      python3 scripts/sheet_to_json.py --csv ~/Downloads/FilmiSet.csv
      ```
 3. Commit the updated `data/movies.json`. The site picks it up automatically.
+
+## Auto-refreshed catalog (free, no API key)
+`scripts/fetch_data.py` pulls real film data from **Wikidata** (free, no key, no sign-up) and
+writes `data/catalog.json`. A GitHub Action (`.github/workflows/update-data.yml`) runs it every
+day at 08:00 IST and commits the result — so the site keeps itself current with zero effort.
+
+Run it by hand:
+```
+python3 scripts/fetch_data.py --out data/catalog.json      # all languages
+python3 scripts/fetch_data.py --langs Hindi,Gujarati       # just some
+```
+
+Sources used: Wikidata Query Service (titles, years, genres, descriptions) and Wikimedia
+Commons (poster images, loaded by the browser). OTT availability and Hindi-dub flags are not
+available from a free no-key source, so those stay curated in the Google Sheet.
 
 ## Run locally
 ```
