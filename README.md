@@ -40,6 +40,7 @@ scripts/sheet_to_json.py          # Google Sheet (Catalog tab) -> data/movies.js
 scripts/fetch_data.py             # Wikidata (free, no key) -> data/catalog.json
 scripts/download_posters.py       # download + compress posters -> posters/
 scripts/fetch_youtube.py          # YouTube channel RSS (free, no key) -> data/youtube.json
+scripts/fetch_ott.py              # TMDB watch-providers -> fills each title's OTT list
 channels.txt                      # the YouTube channels to collect from
 data/youtube.json                 # trailers / promos collected from those channels
 .github/workflows/update-data.yml # daily job that refreshes data/catalog.json
@@ -109,6 +110,22 @@ Then run:
 python3 scripts/fetch_youtube.py
 python3 scripts/download_posters.py     # localise + compress the thumbnails
 ```
+
+
+## OTT availability (TMDB — optional, free key)
+Every card already links to **JustWatch** for "where to watch". To also fill the
+**OTT Platform** filter for *all* titles, add a free TMDB key:
+
+1. Create a free account at themoviedb.org -> **Settings -> API** -> copy the **API Key (v3)**.
+2. In this GitHub repo: **Settings -> Secrets and variables -> Actions -> New repository secret**,
+   name it `TMDB_API_KEY`, paste the key.
+3. The daily workflow will now fill OTT info automatically (or run it by hand):
+   ```
+   TMDB_API_KEY=xxxx python3 scripts/fetch_ott.py --region IN
+   ```
+
+Without the key the step is skipped and the site keeps working — OTT info then comes
+only from the curated Google Sheet (OTT Platforms column) and YouTube.
 
 ## Run locally
 ```
