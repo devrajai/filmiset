@@ -18,33 +18,33 @@ WIKI_API = "https://en.wikipedia.org/w/api.php"
 UA = "FilmiSetBot/1.0 (https://github.com/devrajai/filmiset) python-urllib"
 
 LANGS = {
-    "Hindi":     {"qid": "Q1568", "cat": "hindi",          "orig": "Hindi",     "limit": 120, "min_year": 1930, "genres": True},
-    "Gujarati":  {"qid": "Q5137", "cat": "gujarati-movie", "orig": "Gujarati",  "limit": 120, "min_year": 1930, "genres": True},
-    "Tamil":     {"qid": "Q5885", "cat": "south-dubbed",   "orig": "Tamil",     "limit": 100, "min_year": 1930, "genres": True},
-    "Telugu":    {"qid": "Q8097", "cat": "south-dubbed",   "orig": "Telugu",    "limit": 100, "min_year": 1930, "genres": True},
-    "Malayalam": {"qid": "Q36236","cat": "south-dubbed",   "orig": "Malayalam", "limit": 100, "min_year": 1930, "genres": True},
-    "Kannada":   {"qid": "Q33673","cat": "south-dubbed",   "orig": "Kannada",   "limit": 100, "min_year": 1930, "genres": True},
-    "Korean":    {"qid": "Q9176", "cat": "korean-dubbed",  "orig": "Korean",    "limit": 100, "min_year": 1930, "genres": True},
-    "English":   {"qid": "Q1860", "cat": "english-dubbed", "orig": "English",   "limit": 80,  "min_year": 2005, "genres": False},
+    "Hindi":     {"qid": "Q1568", "cat": "hindi",          "orig": "Hindi",     "limit": 400, "min_year": 1930, "genres": True},
+    "Gujarati":  {"qid": "Q5137", "cat": "gujarati-movie", "orig": "Gujarati",  "limit": 400, "min_year": 1930, "genres": True},
+    "Tamil":     {"qid": "Q5885", "cat": "south-dubbed",   "orig": "Tamil",     "limit": 300, "min_year": 1930, "genres": True},
+    "Telugu":    {"qid": "Q8097", "cat": "south-dubbed",   "orig": "Telugu",    "limit": 300, "min_year": 1930, "genres": True},
+    "Malayalam": {"qid": "Q36236","cat": "south-dubbed",   "orig": "Malayalam", "limit": 300, "min_year": 1930, "genres": True},
+    "Kannada":   {"qid": "Q33673","cat": "south-dubbed",   "orig": "Kannada",   "limit": 300, "min_year": 1930, "genres": True},
+    "Korean":    {"qid": "Q9176", "cat": "korean-dubbed",  "orig": "Korean",    "limit": 300, "min_year": 1930, "genres": True},
+    "English":   {"qid": "Q1860", "cat": "english-dubbed", "orig": "English",   "limit": 300, "min_year": 1930, "genres": False},
 }
 
 # non-language film collections
 COLLECTIONS = {
-    "Anime":     {"cat": "anime", "cats": ["anime", "animation"], "limit": 220, "audio": ["Japanese"],
+    "Anime":     {"cat": "anime", "cats": ["anime", "animation"], "limit": 500, "audio": ["Japanese"],
                   "where": "?film wdt:P31 wd:Q202866 ; wdt:P364 wd:Q5287 ."},
-    "Animation": {"cat": "animation", "cats": ["animation"], "limit": 220, "audio": [],
+    "Animation": {"cat": "animation", "cats": ["animation"], "limit": 500, "audio": [],
                   "where": "?film wdt:P31 wd:Q202866 ."},
 }
 
 # web / TV series (type = Series)
 SERIES = {
-    "India":   {"cat": "hindi",          "limit": 70, "audio": ["Hindi"],
+    "India":   {"cat": "hindi",          "limit": 200, "audio": ["Hindi"],
                 "where": "?s wdt:P31/wdt:P279* wd:Q5398426 ; wdt:P495 wd:Q668 ."},
-    "Korea":   {"cat": "korean-dubbed",  "limit": 60, "audio": ["Hindi (dub)", "Korean"],
+    "Korea":   {"cat": "korean-dubbed",  "limit": 200, "audio": ["Hindi (dub)", "Korean"],
                 "where": "?s wdt:P31/wdt:P279* wd:Q5398426 ; wdt:P495 wd:Q884 ."},
-    "USA":     {"cat": "english-dubbed", "limit": 60, "audio": ["Hindi (dub)", "English"],
+    "USA":     {"cat": "english-dubbed", "limit": 200, "audio": ["Hindi (dub)", "English"],
                 "where": "?s wdt:P31/wdt:P279* wd:Q5398426 ; wdt:P495 wd:Q30 ."},
-    "AnimeTV": {"cat": "anime", "cats": ["anime", "animation"], "limit": 60, "audio": ["Hindi (dub)", "Japanese"],
+    "AnimeTV": {"cat": "anime", "cats": ["anime", "animation"], "limit": 200, "audio": ["Hindi (dub)", "Japanese"],
                 "where": "?s wdt:P31/wdt:P279* wd:Q63952888 ."},
 }
 
