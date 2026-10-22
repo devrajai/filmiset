@@ -145,10 +145,14 @@ def main():
 
     key = (os.environ.get("TMDB_API_KEY") or os.environ.get("TMDBKEY") or "").strip()
     if not key:
-        print("TMDB_API_KEY not set — skipping TMDB discovery (site keeps working).")
-        return
-
-    rows = dedupe(collect(key, args.region, args.pages))
+        print("TMDB_API_KEY not set — writing an empty file (site keeps working).")
+        rows = []
+    else:
+        try:
+            rows = dedupe(collect(key, args.region, args.pages))
+        except Exception as e:
+            print(f"TMDB discover failed: {type(e).__name__} {e}", file=sys.stderr)
+            rows = []
     print(f"collected {len(rows)} TMDB titles")
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     json.dump(rows, open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

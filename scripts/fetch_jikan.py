@@ -111,11 +111,9 @@ def main():
     try:
         rows = dedupe(collect(args.pages))
     except Exception as e:
-        print(f"Jikan unavailable ({type(e).__name__}) — skipping anime source.", file=sys.stderr)
-        return
+        print(f"Jikan unavailable ({type(e).__name__}) — writing an empty file.", file=sys.stderr)
+        rows = []
     print(f"collected {len(rows)} anime from Jikan")
-    if not rows:
-        return
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     json.dump(rows, open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"wrote {args.out}")
