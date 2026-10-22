@@ -11,6 +11,8 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 - Gujarati Natak
 - South (Hindi Dubbed)
 - Korean (Hindi Dubbed)
+- Anime (Japanese animation)
+- Animation (all animated films)
 
 ## Features
 - Mood filters (Feel-Good, Comedy, Romantic, Thriller, Mystery, Action, Emotional, Horror, Nostalgic, Family)
@@ -19,6 +21,7 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 - Festival / Occasion filter (Diwali, Holi, Weekend, Family Night, Independence Day, New Year, Rainy Day)
 - Release filter — **New (this year)** and **Upcoming** (with release dates, sorted by date)
 - **Hindi Dubbed** filter — shows every title with a Hindi dub, regardless of original language
+- **OTT Platform** filter (Netflix, Prime Video, JioHotstar, ZEE5, SonyLIV, HBO Max, Apple TV+, Crunchyroll, …)
 - Har title par: year, genres, mood tags, available audio (Hindi dub included), OTT platforms
 - **"Where to watch"** button -> JustWatch India search (100% legal)
 

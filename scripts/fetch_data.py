@@ -31,6 +31,14 @@ LANGS = {
     "English":   {"qid": "Q1860", "cat": "english-dubbed", "orig": "English",   "limit": 80,  "min_year": 2005, "genres": False},
 }
 
+# extra collections that are not language-based
+COLLECTIONS = {
+    "Anime":     {"cat": "anime", "cats": ["anime", "animation"], "limit": 220, "audio": ["Japanese"],
+                  "where": "?film wdt:P31 wd:Q202866 ; wdt:P364 wd:Q5287 ."},
+    "Animation": {"cat": "animation", "cats": ["animation"], "limit": 220, "audio": [],
+                  "where": "?film wdt:P31 wd:Q202866 ."},
+}
+
 GENRE_MOOD = [
     ("comedy", "Comedy"), ("drama", "Emotional"), ("action", "Action"),
     ("thriller", "Thriller"), ("mystery", "Mystery"), ("romance", "Romantic"),
@@ -216,6 +224,46 @@ def fetch_upcoming(lang, cfg, limit):
     return out
 
 
+def query_collection(cfg, limit):
+    return f"""
+SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres) WHERE {{
+  {cfg['where']}
+  ?film wdt:P577 ?date .
+  BIND(YEAR(?date) AS ?year)
+  FILTER(?year >= 1950 && ?year <= 2026)
+  OPTIONAL {{ ?film wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }}
+  OPTIONAL {{ ?film wdt:P18 ?image }}
+  OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}
+GROUP BY ?filmLabel ?image ?articleTitle
+LIMIT {limit}
+"""
+
+
+def fetch_collection(cfg, limit):
+    data = sparql(query_collection(cfg, limit))
+    out = []
+    for r in data["results"]["bindings"]:
+        title = r.get("filmLabel", {}).get("value", "").strip()
+        if not title or title.startswith("Q"):
+            continue
+        date = r.get("d", {}).get("value", "")[:10]
+        y = int(date[:4]) if date[:4].isdigit() else ""
+        genres = norm_genres(r.get("genres", {}).get("value", ""))
+        if "Animation" not in genres:
+            genres = (["Animation"] + genres)[:3]
+        out.append({
+            "t": title, "y": y, "cat": cfg["cat"], "type": "Movie",
+            "g": genres, "m": moods_for(genres) or ["Family"], "a": list(cfg.get("audio", [])),
+            "o": [], "poster": commons_url(r.get("image", {}).get("value", "")),
+            "src": "wikidata", "status": "released", "date": date,
+            "cats": list(cfg.get("cats", [cfg["cat"]])),
+            "_wiki": r.get("articleTitle", {}).get("value", "").strip(),
+        })
+    return out
+
+
 def dedupe(movies):
     seen, uniq = set(), []
     for m in movies:
@@ -284,6 +332,13 @@ def main():
 
     print("Fetching from Wikidata (free, no key)…")
     collected = []
+    for name, cfg in COLLECTIONS.items():
+        try:
+            got = fetch_collection(cfg, cfg["limit"])
+            collected += got
+            print(f"  {name:10s} -> {len(got)}")
+        except Exception as e:
+            print(f"  ! {name}: {type(e).__name__} {e}", file=sys.stderr)
     for lang in langs:
         cfg = LANGS[lang]
         try:

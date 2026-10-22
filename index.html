@@ -227,6 +227,7 @@
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
     <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
     <div class="rail-block"><h6>Category</h6><div class="chips" id="catRow"></div></div>
+    <div class="rail-block"><h6>OTT Platform</h6><div class="chips" id="ottRow"></div></div>
     <div class="rail-block"><h6>Mood</h6><div class="chips" id="moodRow"></div></div>
     <div class="rail-block"><h6>Type</h6><div class="chips" id="typeRow"></div></div>
     <div class="rail-block"><h6>Era</h6><div class="chips" id="eraRow"></div></div>
@@ -260,6 +261,8 @@ const CATS = {
   'south-dubbed':    {label:'South · Hindi Dubbed',    color:'#65a30d'},
   'english-dubbed':  {label:'Hollywood',               color:'#0891b2'},
   'korean-dubbed':   {label:'Korean · Hindi Dubbed',   color:'#be123c'},
+  'anime':           {label:'Anime',                   color:'#a21caf'},
+  'animation':       {label:'Animation',               color:'#1d4ed8'},
 };
 
 const MOODS = ['Feel-Good','Comedy','Romantic','Thriller','Mystery','Action','Emotional','Horror','Nostalgic','Family'];
@@ -323,7 +326,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', savedOnly:false, q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:'all', savedOnly:false, q:''};
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
 const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
@@ -348,6 +351,7 @@ function persistWatchlist(){ try{ localStorage.setItem('filmiset_watchlist', JSO
   if(p.get('rel')) state.rel=p.get('rel');
   if(p.get('dub')==='1') state.dub=true;
   if(p.get('src')) state.src=p.get('src');
+  if(p.get('ott')) state.ott=p.get('ott');
   if(p.get('q')){ state.q=p.get('q').toLowerCase(); document.getElementById('q').value=p.get('q'); }
   if(p.get('moods')) p.get('moods').split('|').filter(Boolean).forEach(m=>state.moods.add(m));
   if(p.get('saved')==='1') state.savedOnly=true;
@@ -367,7 +371,30 @@ Object.entries(CATS).forEach(([k,v])=>{
 catRow.addEventListener('click',e=>{
   const b=e.target.closest('.pill'); if(!b)return;
   catRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
-  b.classList.add('on'); state.cat=b.dataset.cat; render();
+  b.classList.add('on'); state.cat=b.dataset.cat;
+  // browsing a category -> show the whole category, not just this month
+  if(state.cat!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* OTT platform filter */
+const OTTS = ['Netflix','Prime Video','JioHotstar','ZEE5','SonyLIV','HBO Max','Apple TV+','Crunchyroll',
+              'MX Player','YouTube','Aha','Sun NXT','ShemarooMe','JOJO'];
+const JW_SLUG = {'Netflix':'netflix','Prime Video':'amazon-prime-video','JioHotstar':'hotstar','ZEE5':'zee5',
+  'SonyLIV':'sonyliv','HBO Max':'hbo-max','Apple TV+':'apple-tv-plus','Crunchyroll':'crunchyroll',
+  'MX Player':'mx-player','YouTube':'youtube','Aha':'aha','Sun NXT':'sun-nxt','ShemarooMe':'shemaroome','JOJO':'jojo'};
+const ottRow=document.getElementById('ottRow');
+[['all','All OTT']].concat(OTTS.map(o=>[o,o])).forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.ott===k?' on':''); b.dataset.ott=k; b.textContent=label;
+  ottRow.appendChild(b);
+});
+ottRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  ottRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.ott=b.dataset.ott;
+  if(state.ott!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
 });
 
 const moodRow=document.getElementById('moodRow');
@@ -543,6 +570,7 @@ function syncUrl(){
   if(state.rel!=='month') p.set('rel',state.rel);
   if(state.dub) p.set('dub','1');
   if(state.src!=='all') p.set('src',state.src);
+  if(state.ott!=='all') p.set('ott',state.ott);
   if(state.q) p.set('q',state.q);
   if(state.moods.size) p.set('moods',[...state.moods].join('|'));
   if(state.savedOnly) p.set('saved','1');
@@ -564,6 +592,7 @@ function activeFilters(){
   if(state.dub) a.push('Hindi Dubbed');
   if(state.src==='youtube') a.push('YouTube');
   if(state.src==='catalogue') a.push('Catalogue');
+  if(state.ott!=='all') a.push(state.ott);
   if(state.moods.size) a.push([...state.moods].join(', '));
   if(state.savedOnly) a.push('Saved only');
   return a;
@@ -574,12 +603,12 @@ function setPillRow(id, attr, val){
 }
 function clearAllFilters(){
   state.cat='all'; state.moods.clear(); state.type='all'; state.era='all';
-  state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.savedOnly=false; state.q='';
+  state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott='all'; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
-  setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
+  setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all'); setPillRow('ottRow','ott','all');
   document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
   render();
 }
@@ -591,7 +620,7 @@ const resTitle=document.getElementById('resTitle');
 
 function render(){
   const out=DATA.filter(d=>{
-    if(state.cat!=='all' && d.cat!==state.cat) return false;
+    if(state.cat!=='all' && d.cat!==state.cat && !(d.cats||[]).includes(state.cat)) return false;
     if(state.type!=='all' && d.type!==state.type) return false;
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
@@ -608,6 +637,7 @@ function render(){
     if(state.dub && !(d.a||[]).some(x=>/hindi \(dub\)/i.test(x))) return false;
     if(state.src==='youtube' && d.src!=='youtube') return false;
     if(state.src==='catalogue' && d.src==='youtube') return false;
+    if(state.ott!=='all' && !(d.o||[]).includes(state.ott)) return false;
     if(state.occasion!=='all'){
       const oc=OCCASIONS.find(o=>o.k===state.occasion);
       if(oc){
@@ -646,8 +676,11 @@ function render(){
     const why = act.length
       ? 'Active filters: <strong>'+act.join(' · ')+'</strong>. Inhe hata ke dekhiye — search saare titles par chalta hai, sirf active category par nahi.'
       : 'Is search ke liye kuch nahi mila. Spelling check kijiye ya doosra naam try kijiye.';
+    const jw = state.ott!=='all'
+      ? '<br><a class="hbtn" style="display:inline-block;margin-top:10px;text-decoration:none" target="_blank" rel="noopener" href="https://www.justwatch.com/in/provider/'+(JW_SLUG[state.ott]||'')+'">Browse '+state.ott+' on JustWatch ↗</a>'
+      : '';
     grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>'+why
-      + (act.length ? '<br><button class="hbtn" id="clearAllBtn">Saare filters clear karein</button>' : '')+'</div>';
+      + (act.length ? '<br><button class="hbtn" id="clearAllBtn">Saare filters clear karein</button>' : '')+jw+'</div>';
     const ca=document.getElementById('clearAllBtn'); if(ca) ca.onclick=clearAllFilters;
     return;
   }
