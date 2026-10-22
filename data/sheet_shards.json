@@ -12,7 +12,7 @@
   ],
   "shards": [
     {
-      "name": "Catalogue",
+      "name": "Catalogue (Wikidata + TMDB + curated)",
       "kind": "full",
       "sheet_id": "1xMUhlRF2iKVUPXBk2KnCcmI3uUBcPj4pEWEurdNkWj0",
       "tab": "All Titles",
@@ -45,6 +45,34 @@
       "sheet_id": "1NuvsYtVLiroVPax0Kgj98KayyMJ4BRs9_-4aohnGPRI",
       "tab": "Titles",
       "rows": 45000
+    },
+    {
+      "name": "IMDb E",
+      "kind": "imdb",
+      "sheet_id": "1ibX7RsnLhkwI0flfASbAEs10umk7u9qkxaBQ6TTf3Yo",
+      "tab": "Titles",
+      "rows": 220000
+    },
+    {
+      "name": "IMDb F",
+      "kind": "imdb",
+      "sheet_id": "1_5naGZw9_jmLiUj6y6KMh5HawRa7G_HNPe5KBPwDGCk",
+      "tab": "Titles",
+      "rows": 220000
+    },
+    {
+      "name": "IMDb G",
+      "kind": "imdb",
+      "sheet_id": "1tdGRzUix3lMAtFe-g0SNuyEUzp3gbO1lrLTYLzcernA",
+      "tab": "Titles",
+      "rows": 220000
+    },
+    {
+      "name": "IMDb H",
+      "kind": "imdb",
+      "sheet_id": "1opxe-6aEL5qODT4XYFX0a-H9sjuNSU8kh6kM3uXDMxU",
+      "tab": "Titles",
+      "rows": 220000
     }
   ],
   "master": {
@@ -61,9 +89,9 @@
     "sheets_for_15m_at_8_cols": 12
   },
   "totals": {
-    "shards": 5,
-    "rows": 122405,
-    "cells": 1000885
+    "shards": 9,
+    "rows": 1002405,
+    "cells": 8040885
   },
   "folder": {
     "name": "FilmiSet — Data (Sheets)",
