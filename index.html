@@ -158,6 +158,26 @@
   .empty{grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--muted);
     border:1px dashed var(--line-2);border-radius:var(--radius)}
   .empty b{display:block;font-family:var(--font-display);font-size:19px;color:var(--ink);margin-bottom:6px}
+  .vibe{display:flex;align-items:center;gap:14px;margin:0 0 18px;padding:12px;border:1px solid var(--line);
+    border-radius:var(--radius);background:var(--surface)}
+  .vibe img{width:54px;height:80px;object-fit:cover;border-radius:8px;flex:none}
+  .vibe .vt{flex:1;min-width:0}
+  .vibe .vt span{font-family:var(--font-mono);font-size:10px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}
+  .vibe .vt b{font-family:var(--font-display);font-size:17px;display:block;margin-top:2px}
+  .vibe .vt p{font-size:13px;color:var(--muted);margin-top:3px}
+  .cardacts{display:flex;gap:6px;margin-top:8px}
+  .mini{flex:1;font-family:var(--font-body);font-size:11.5px;font-weight:600;cursor:pointer;padding:7px 8px;
+    border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--muted);transition:.15s}
+  .mini:hover{border-color:var(--line-2);color:var(--ink)}
+  .mini.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+  .modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:18px;background:rgba(0,0,0,.55)}
+  .modal .box{background:var(--bg);border:1px solid var(--line);border-radius:18px;max-width:520px;width:100%;
+    max-height:86vh;overflow:auto;padding:18px}
+  .modal .box img{width:100%;max-height:300px;object-fit:cover;border-radius:12px}
+  .modal h3{font-family:var(--font-display);font-size:22px;margin:12px 0 4px}
+  .modal .m{font-family:var(--font-mono);font-size:11px;color:var(--faint)}
+  .modal p{font-size:14px;color:var(--muted);margin-top:10px}
+  .modal .row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
 
   footer{border-top:1px solid var(--line);background:var(--bg-2);margin-top:10px}
   .foot{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;padding:34px 22px 46px}
@@ -206,6 +226,7 @@
 <body>
 
 <div class="backdrop" id="backdrop"></div>
+<div class="modal" id="modal" hidden></div>
 
 <header class="topbar">
   <div class="wrap topbar-in">
@@ -221,6 +242,7 @@
     <button id="filtersBtn" class="hbtn only-mobile" title="Filters">Filters <b id="filterCount"></b></button>
     <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
     <button id="shareBtn" class="hbtn" title="Share this view">Share</button>
+    <button id="surpriseBtn" class="hbtn" title="Random pick">Surprise me</button>
   </div>
 </header>
 
@@ -239,6 +261,10 @@
     <div class="rail-block"><h6>Audio</h6><div class="chips" id="audRow"></div></div>
     <div class="rail-block"><h6>Source</h6><div class="chips" id="srcRow"></div></div>
     <div class="rail-block"><h6>Sort</h6><div class="chips" id="sortRow"></div></div>
+    <div class="rail-block"><h6>Watching with</h6><div class="chips" id="compRow"></div></div>
+    <div class="rail-block"><h6>How much time</h6><div class="chips" id="rtRow"></div></div>
+    <div class="rail-block"><h6>Quality</h6><div class="chips" id="qualRow"></div></div>
+    <div class="rail-block"><h6>Library</h6><div class="chips" id="libRow"></div></div>
   </aside>
 
   <main class="content">
@@ -247,6 +273,8 @@
       <h2>Kya dekhein? Mood bolo, <em>hum dikha denge.</em></h2>
       <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Mood, festival ya weekend — apne mauke ke hisaab se pick karo. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
     </section>
+
+    <div class="vibe" id="vibe" hidden></div>
 
     <div class="resultbar">
       <h3 id="resTitle">All titles</h3>
@@ -331,7 +359,8 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:'all', coll:'all', fr:'all', sort:'new', savedOnly:false, q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:'all', coll:'all', fr:'all', sort:'new', rt:'all', gems:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const FAMILY_CERTS = ['U','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
 const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
@@ -345,6 +374,9 @@ let shownLimit = PAGE, lastKey = '';
 /* watchlist (persisted in this browser) */
 const watchlist = new Set(JSON.parse(localStorage.getItem('filmiset_watchlist')||'[]'));
 function persistWatchlist(){ try{ localStorage.setItem('filmiset_watchlist', JSON.stringify([...watchlist])); }catch(e){} }
+/* titles marked as already seen */
+const watched = new Set(JSON.parse(localStorage.getItem('filmiset_watched')||'[]'));
+function persistWatched(){ try{ localStorage.setItem('filmiset_watched', JSON.stringify([...watched])); }catch(e){} }
 
 /* restore filters from the URL so a shared link reopens the same view */
 (function readUrl(){
@@ -360,6 +392,11 @@ function persistWatchlist(){ try{ localStorage.setItem('filmiset_watchlist', JSO
   if(p.get('coll')) state.coll=p.get('coll');
   if(p.get('fr')) state.fr=p.get('fr');
   if(p.get('sort')) state.sort=p.get('sort');
+  if(p.get('rt')) state.rt=p.get('rt');
+  if(p.get('comp')) state.company=p.get('comp');
+  if(p.get('gems')==='1') state.gems=true;
+  if(p.get('safe')==='1') state.safe=true;
+  if(p.get('hidew')==='0') state.hideWatched=false;
   if(p.get('q')){ state.q=p.get('q').toLowerCase(); document.getElementById('q').value=p.get('q'); }
   if(p.get('moods')) p.get('moods').split('|').filter(Boolean).forEach(m=>state.moods.add(m));
   if(p.get('saved')==='1') state.savedOnly=true;
@@ -474,6 +511,62 @@ frRow.addEventListener('click',e=>{
   if(state.fr!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
   render();
 });
+
+/* Watching with */
+const compRow=document.getElementById('compRow');
+[['all','Anyone'],['solo','Solo'],['family','Family'],['date','Date night'],['friends','Friends'],['kids','With kids']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.company===k?' on':''); b.dataset.comp=k; b.textContent=label;
+  compRow.appendChild(b);
+});
+compRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  compRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.company=b.dataset.comp;
+  if(state.company!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* How much time do I have */
+const rtRow=document.getElementById('rtRow');
+[['all','Any length'],['u90','Under 1½ hr'],['u120','Under 2 hrs'],['p120','2 hrs +']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.rt===k?' on':''); b.dataset.rt=k; b.textContent=label;
+  rtRow.appendChild(b);
+});
+rtRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  rtRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.rt=b.dataset.rt;
+  if(state.rt!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* Quality toggles */
+const qualRow=document.getElementById('qualRow');
+[['gems','Hidden gems'],['safe','Family-safe']].forEach(([k,label])=>{
+  const on=(k==='gems'? state.gems : state.safe);
+  const b=document.createElement('button');
+  b.className='pill'+(on?' on':''); b.dataset.qual=k; b.textContent=label;
+  qualRow.appendChild(b);
+});
+qualRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  const k=b.dataset.qual;
+  if(k==='gems') state.gems=!state.gems; else state.safe=!state.safe;
+  b.classList.toggle('on', k==='gems'? state.gems : state.safe);
+  if((state.gems||state.safe) && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* Library */
+const libRow=document.getElementById('libRow');
+(function(){
+  const b=document.createElement('button');
+  b.className='pill'+(state.hideWatched?' on':''); b.textContent='Hide watched';
+  libRow.appendChild(b);
+  libRow.addEventListener('click',()=>{ state.hideWatched=!state.hideWatched; b.classList.toggle('on', state.hideWatched); render(); });
+})();
 
 const moodRow=document.getElementById('moodRow');
 MOODS.forEach(m=>{
@@ -636,6 +729,65 @@ function initials(t){
 }
 function justwatch(t){return 'https://www.justwatch.com/in/search?q='+encodeURIComponent(t);}
 function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}); }catch(e){ return iso; } }
+function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
+
+/* ---- title modal (Surprise me / Aaj ka vibe / details) ---- */
+function openModal(d){
+  const up=d.status==='upcoming';
+  const avail=(d.o&&d.o.length)? 'Available on '+d.o.join(' · ') : 'OTT info not listed';
+  const m=document.getElementById('modal');
+  m.innerHTML='<div class="box">'
+    + (d.poster? '<img src="'+d.poster+'" alt="" onerror="this.remove()">':'')
+    + '<h3>'+d.t+'</h3>'
+    + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(d.rt?' · '+d.rt+' min':'')+(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':'')+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
+    + '<div class="m" style="margin-top:6px">'+[(d.g||[]).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
+    + (d.note? '<p>'+d.note+'</p>':'')
+    + '<div class="row">'
+      + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">Watch trailer</a>':'')
+      + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
+      + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
+      + '<button class="hbtn" data-mclose="1">Close</button>'
+    + '</div></div>';
+  m.hidden=false;
+}
+function closeModal(){ document.getElementById('modal').hidden=true; }
+document.getElementById('modal').addEventListener('click',e=>{
+  const m=document.getElementById('modal');
+  if(e.target===m){ closeModal(); return; }
+  const sv=e.target.closest('[data-msave]');
+  if(sv){ const t=sv.dataset.msave; if(watchlist.has(t))watchlist.delete(t); else watchlist.add(t); persistWatchlist(); sv.textContent=watchlist.has(t)?'\u2665 Saved':'\u2661 Save'; updateSavedBtn(); return; }
+  const sn=e.target.closest('[data-mseen]');
+  if(sn){ const t=sn.dataset.mseen; if(watched.has(t))watched.delete(t); else watched.add(t); persistWatched(); sn.textContent=watched.has(t)?'\u2713 Seen':'Mark seen'; return; }
+  if(e.target.closest('[data-mclose]')) closeModal();
+});
+document.getElementById('surpriseBtn').addEventListener('click',()=>{
+  const pool=DATA.filter(d=>!(state.hideWatched && watched.has(d.t)));
+  if(pool.length) openModal(pool[Math.floor(Math.random()*pool.length)]);
+});
+/* ---- Aaj ka vibe : one popular pick that changes every day ---- */
+function renderVibe(){
+  const pool=DATA.filter(d=>d.poster && (d.pop||0)>0).sort((a,b)=>(b.pop||0)-(a.pop||0)).slice(0,500);
+  if(!pool.length) return;
+  const d=pool[Math.floor(Date.now()/86400000) % pool.length];
+  const el=document.getElementById('vibe');
+  el.hidden=false;
+  el.innerHTML=(d.poster?'<img src="'+d.poster+'" alt="">':'')
+    + '<div class="vt"><span>Aaj ka vibe</span><b>'+d.t+'</b>'
+    + '<p>'+[(d.date?fmtDate(d.date):d.y),(d.g||[]).join(', '),(d.rtg?'\u2605 '+d.rtg:'')].filter(Boolean).join(' · ')+'</p></div>'
+    + '<button class="hbtn" data-vibe="'+esc(d.t)+'">Details</button>';
+  const vb=el.querySelector('[data-vibe]'); if(vb) vb.onclick=()=>openModal(d);
+}
+/* card actions: mark seen + more like this */
+document.addEventListener('click',e=>{
+  const s=e.target.closest('[data-seen]');
+  if(s){ const t=s.dataset.seen; if(watched.has(t))watched.delete(t); else watched.add(t); persistWatched();
+    s.classList.toggle('on', watched.has(t)); s.textContent=watched.has(t)?'\u2713 Seen':'Mark seen';
+    if(state.hideWatched) render(); return; }
+  const mo=e.target.closest('[data-more]');
+  if(mo){ const d=DATA.find(x=>x.t===mo.dataset.more);
+    if(d && d.g && d.g.length){ state.gq=d.g[0]; render(); window.scrollTo({top:0,behavior:'smooth'}); }
+    return; }
+});
 function deriveOcc(d){
   return OCCASIONS.filter(o=>d.m.some(m=>o.moods.includes(m)) || d.g.some(g=>o.genres.includes(g))).map(o=>o.label);
 }
@@ -652,6 +804,11 @@ function syncUrl(){
   if(state.coll!=='all') p.set('coll',state.coll);
   if(state.fr!=='all') p.set('fr',state.fr);
   if(state.sort!=='new') p.set('sort',state.sort);
+  if(state.rt!=='all') p.set('rt',state.rt);
+  if(state.company!=='all') p.set('comp',state.company);
+  if(state.gems) p.set('gems','1');
+  if(state.safe) p.set('safe','1');
+  if(!state.hideWatched) p.set('hidew','0');
   if(state.q) p.set('q',state.q);
   if(state.moods.size) p.set('moods',[...state.moods].join('|'));
   if(state.savedOnly) p.set('saved','1');
@@ -676,6 +833,11 @@ function activeFilters(){
   if(state.ott!=='all') a.push(state.ott);
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) a.push(co.label); }
   if(state.fr!=='all') a.push(state.fr);
+  if(state.gq) a.push('genre: '+state.gq);
+  if(state.rt!=='all') a.push({u90:'under 1½ hr',u120:'under 2 hrs',p120:'2 hrs +'}[state.rt]||state.rt);
+  if(state.gems) a.push('Hidden gems');
+  if(state.safe) a.push('Family-safe');
+  if(state.company!=='all') a.push('with '+state.company);
   if(state.moods.size) a.push([...state.moods].join(', '));
   if(state.savedOnly) a.push('Saved only');
   return a;
@@ -687,7 +849,8 @@ function setPillRow(id, attr, val){
 function clearAllFilters(){
   state.cat='all'; state.moods.clear(); state.type='all'; state.era='all';
   state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott='all';
-  state.coll='all'; state.fr='all'; state.sort='new'; state.savedOnly=false; state.q='';
+  state.coll='all'; state.fr='all'; state.sort='new'; state.rt='all'; state.gems=false; state.safe=false;
+  state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
@@ -695,6 +858,8 @@ function clearAllFilters(){
   setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
   setPillRow('ottRow','ott','all'); setPillRow('collRow','coll','all');
   setPillRow('frRow','fr','all'); setPillRow('sortRow','sort','new');
+  setPillRow('compRow','comp','all'); setPillRow('rtRow','rt','all');
+  document.querySelectorAll('#qualRow .pill').forEach(p=>p.classList.remove('on'));
   document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
   render();
 }
@@ -729,6 +894,17 @@ function render(){
       if(co && co.g){ const gl=(d.g||[]).join(' ').toLowerCase(); if(!co.g.some(k=>gl.includes(k))) return false; }
     }
     if(state.fr!=='all' && d.franchise!==state.fr) return false;
+    if(state.gq && !(d.g||[]).join(' ').toLowerCase().includes(state.gq.toLowerCase())) return false;
+    if(state.rt!=='all'){ const r=Number(d.rt||0); if(!r) return false;
+      if(state.rt==='u90' && !(r<=90)) return false; if(state.rt==='u120' && !(r<=120)) return false; if(state.rt==='p120' && !(r>120)) return false; }
+    if(state.gems && !((Number(d.rtg||0)>=7) && (Number(d.vot||0)>0) && (Number(d.vot||0)<5000))) return false;
+    if(state.safe && !(d.cert && FAMILY_CERTS.indexOf(d.cert)>=0)) return false;
+    if(state.company!=='all'){
+      const gm=(d.g||[]).join(' ').toLowerCase(), mm=(d.m||[]).join(' ').toLowerCase();
+      const map={solo:['thriller','mystery','emotional','drama'],family:['family','feel-good'],date:['romantic','romance','feel-good'],friends:['comedy','action'],kids:['family','animation','animation']};
+      if(!(map[state.company]||[]).some(k=>gm.includes(k)||mm.includes(k))) return false;
+    }
+    if(state.hideWatched && watched.has(d.t)) return false;
     if(state.occasion!=='all'){
       const oc=OCCASIONS.find(o=>o.k===state.occasion);
       if(oc){
@@ -757,6 +933,7 @@ function render(){
   if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat==='all' ? ' releases' : ' · '+CATS[state.cat].label);
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) label = (state.coll==='popular' ? 'Most Popular' : 'Top '+co.label); }
   if(state.fr!=='all') label = state.fr + ' — in sequence';
+  if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
   const key = JSON.stringify([state.cat,[...state.moods].sort(),state.type,state.era,state.occasion,state.rel,state.dub,state.src,state.ott,state.coll,state.fr,state.sort,state.savedOnly,state.q]);
@@ -796,7 +973,7 @@ function render(){
       + '</div>'
       + '<div class="cardbody">'
         + '<h4>'+d.t+'</h4>'
-        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
+        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.rtg?' · \u2605'+d.rtg:'')+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
         + (d.trailer
@@ -806,6 +983,10 @@ function render(){
               : ((d.o && d.o.length)
                 ? '<div class="watch avail">Available on '+d.o.join(' · ')+'</div>'
                 : '<div class="watch none">OTT info not listed</div>')))
+        + '<div class="cardacts">'
+          + '<button class="mini'+(watched.has(d.t)?' on':'')+'" data-seen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
+          + '<button class="mini" data-more="'+esc(d.t)+'">More like this</button>'
+        + '</div>'
       + '</div>'
     + '</article>';
   }).join('') + (out.length > shownLimit
@@ -819,6 +1000,7 @@ function boot(){
   const st=document.getElementById('s-total'); if(st) st.textContent = DATA.length;
   const sc=document.getElementById('s-classic'); if(sc) sc.textContent = DATA.filter(d => Number(d.y) < 2000).length;
   render();
+  renderVibe();
 }
 
 function normKey(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]/g,''); }
