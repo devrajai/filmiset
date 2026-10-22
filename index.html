@@ -153,6 +153,8 @@
     text-decoration:none;transition:.15s}
   .watch:hover{filter:brightness(1.06)}
   .watch.soon{background:var(--surface-2);color:var(--muted);cursor:default;border:1px dashed var(--line-2)}
+  .watch.avail{background:var(--ink);color:var(--bg);cursor:default}
+  .watch.none{background:transparent;border:1px dashed var(--line-2);color:var(--faint);cursor:default}
   .empty{grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--muted);
     border:1px dashed var(--line-2);border-radius:var(--radius)}
   .empty b{display:block;font-family:var(--font-display);font-size:19px;color:var(--ink);margin-bottom:6px}
@@ -678,11 +680,8 @@ function render(){
     const why = act.length
       ? 'Active filters: <strong>'+act.join(' · ')+'</strong>. Inhe hata ke dekhiye — search saare titles par chalta hai, sirf active category par nahi.'
       : 'Is search ke liye kuch nahi mila. Spelling check kijiye ya doosra naam try kijiye.';
-    const jw = state.ott!=='all'
-      ? '<br><a class="hbtn" style="display:inline-block;margin-top:10px;text-decoration:none" target="_blank" rel="noopener" href="https://www.justwatch.com/in/provider/'+(JW_SLUG[state.ott]||'')+'">Browse '+state.ott+' on JustWatch ↗</a>'
-      : '';
     grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>'+why
-      + (act.length ? '<br><button class="hbtn" id="clearAllBtn">Saare filters clear karein</button>' : '')+jw+'</div>';
+      + (act.length ? '<br><button class="hbtn" id="clearAllBtn">Saare filters clear karein</button>' : '')+'</div>';
     const ca=document.getElementById('clearAllBtn'); if(ca) ca.onclick=clearAllFilters;
     return;
   }
@@ -694,7 +693,6 @@ function render(){
     const grad='linear-gradient(150deg,'+c.color+' 0%, color-mix(in srgb,'+c.color+' 45%, #120c07) 100%)';
     const audio = d.a.map(x=>'<span class="tag audio">'+x+'</span>').join('');
     const moods = d.m.slice(0,3).map(x=>'<span class="tag mood">'+x+'</span>').join('');
-    const otts  = d.o.map(x=>'<span>'+x+'</span>').join('');
     return '<article class="card" style="animation-delay:'+(Math.min(i,12)*35)+'ms">'
       + '<div class="poster" style="background:'+grad+'">'
         + (d.poster ? '<img class="poster-img" src="'+d.poster+'" alt="" loading="lazy" onerror="this.remove()">' : '')
@@ -709,14 +707,13 @@ function render(){
         + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
-        + '<div class="ott">'+otts+'</div>'
         + (d.trailer
             ? '<a class="watch yt" href="'+d.trailer+'" target="_blank" rel="noopener">Watch on YouTube</a>'
             : (isUp
               ? '<div class="watch soon">Releasing '+(d.date?fmtDate(d.date):'soon')+'</div>'
-              : '<a class="watch" href="'+justwatch(d.t)+'" target="_blank" rel="noopener">Where to watch'
-                + '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>'
-                + '</a>'))
+              : ((d.o && d.o.length)
+                ? '<div class="watch avail">Available on '+d.o.join(' · ')+'</div>'
+                : '<div class="watch none">OTT info not listed</div>')))
       + '</div>'
     + '</article>';
   }).join('') + (out.length > shownLimit
