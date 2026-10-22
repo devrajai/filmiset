@@ -14,6 +14,8 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 - Anime (Japanese animation)
 - Animation (all animated films)
 
+Titles are both **movies** and **web / TV series** (Type filter).
+
 ## Features
 - Mood filters (Feel-Good, Comedy, Romantic, Thriller, Mystery, Action, Emotional, Horror, Nostalgic, Family)
 - Type filter (Movie / Natak / Series) + live search
@@ -22,6 +24,8 @@ Ek single-file static site — koi build step nahi, koi API key nahi. Catalog ek
 - Release filter — **New (this year)** and **Upcoming** (with release dates, sorted by date)
 - **Hindi Dubbed** filter — shows every title with a Hindi dub, regardless of original language
 - **OTT Platform** filter (Netflix, Prime Video, JioHotstar, ZEE5, SonyLIV, HBO Max, Apple TV+, Crunchyroll, …)
+- **Collections** — Heist, Suspense & Mystery, Thriller, Crime, Horror, Teen, Romance, Sci-Fi, Action, Comedy, 18+ (Adult), Most Popular
+- **Sort** — Newest / Most popular (popularity from Wikidata sitelinks)
 - Har title par: year, genres, mood tags, available audio (Hindi dub included), OTT platforms
 - **"Where to watch"** button -> JustWatch India search (100% legal)
 
@@ -111,6 +115,13 @@ python3 scripts/fetch_youtube.py
 python3 scripts/download_posters.py     # localise + compress the thumbnails
 ```
 
+
+
+## Backups (no downloads needed)
+The whole catalogue is backed up automatically:
+* **Google Sheet** — tabs *Full Catalog* (all titles + OTT + popularity) and *OTT Summary*.
+* **Google Drive** — `FilmiSet-backup.xlsx` (same workbook, refreshed by the workflow).
+* **Repo** — `data/*.json` plus `data/filmiset-backup.xlsx`, committed daily.
 
 ## OTT availability (TMDB — optional, free key)
 Every card already links to **JustWatch** for "where to watch". To also fill the

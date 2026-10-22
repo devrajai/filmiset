@@ -230,12 +230,14 @@
     <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
     <div class="rail-block"><h6>Category</h6><div class="chips" id="catRow"></div></div>
     <div class="rail-block"><h6>OTT Platform</h6><div class="chips" id="ottRow"></div></div>
+    <div class="rail-block"><h6>Collections</h6><div class="chips" id="collRow"></div></div>
     <div class="rail-block"><h6>Mood</h6><div class="chips" id="moodRow"></div></div>
     <div class="rail-block"><h6>Type</h6><div class="chips" id="typeRow"></div></div>
     <div class="rail-block"><h6>Era</h6><div class="chips" id="eraRow"></div></div>
     <div class="rail-block"><h6>Festival / Occasion</h6><div class="chips" id="occRow"></div></div>
     <div class="rail-block"><h6>Audio</h6><div class="chips" id="audRow"></div></div>
     <div class="rail-block"><h6>Source</h6><div class="chips" id="srcRow"></div></div>
+    <div class="rail-block"><h6>Sort</h6><div class="chips" id="sortRow"></div></div>
   </aside>
 
   <main class="content">
@@ -328,7 +330,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:'all', savedOnly:false, q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:'all', coll:'all', sort:'new', savedOnly:false, q:''};
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
 const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
@@ -354,11 +356,13 @@ function persistWatchlist(){ try{ localStorage.setItem('filmiset_watchlist', JSO
   if(p.get('dub')==='1') state.dub=true;
   if(p.get('src')) state.src=p.get('src');
   if(p.get('ott')) state.ott=p.get('ott');
+  if(p.get('coll')) state.coll=p.get('coll');
+  if(p.get('sort')) state.sort=p.get('sort');
   if(p.get('q')){ state.q=p.get('q').toLowerCase(); document.getElementById('q').value=p.get('q'); }
   if(p.get('moods')) p.get('moods').split('|').filter(Boolean).forEach(m=>state.moods.add(m));
   if(p.get('saved')==='1') state.savedOnly=true;
   // a shared link that pins a category/OTT should show the whole set, not just this month
-  if(!p.get('rel') && ((state.cat!=='all') || (state.ott!=='all'))) state.rel='all';
+  if(!p.get('rel') && ((state.cat!=='all') || (state.ott!=='all') || (state.coll!=='all'))) state.rel='all';
 })();
 
 /* ---- build filter UI ---- */
@@ -399,6 +403,50 @@ ottRow.addEventListener('click',e=>{
   b.classList.add('on'); state.ott=b.dataset.ott;
   if(state.ott!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
   render();
+});
+
+/* Collections (genre-based) + Sort */
+const COLLECTIONS = [
+  {k:'heist',    label:'Heist',              g:['heist','robbery','caper','burglar','larceny','getaway']},
+  {k:'suspense', label:'Suspense & Mystery', g:['suspense','mystery']},
+  {k:'thriller', label:'Thriller',           g:['thriller']},
+  {k:'crime',    label:'Crime',              g:['crime']},
+  {k:'horror',   label:'Horror',             g:['horror']},
+  {k:'teen',     label:'Teen',               g:['teen','coming-of-age','coming of age','high school','young adult']},
+  {k:'romance',  label:'Romance',            g:['romance','romantic']},
+  {k:'scifi',    label:'Sci-Fi',             g:['science fiction','sci-fi','sci fi']},
+  {k:'action',   label:'Action',             g:['action']},
+  {k:'comedy',   label:'Comedy',             g:['comedy']},
+  {k:'adult',    label:'18+ (Adult)',        g:['erotic','adult','pornographic']},
+  {k:'popular',  label:'Most Popular',       g:null},
+];
+const collRow=document.getElementById('collRow');
+[['all','All collections']].concat(COLLECTIONS.map(c=>[c.k,c.label])).forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.coll===k?' on':''); b.dataset.coll=k; b.textContent=label;
+  collRow.appendChild(b);
+});
+collRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  collRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.coll=b.dataset.coll;
+  if(state.coll!=='all'){
+    if(state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+    state.sort='pop'; setPillRow('sortRow','sort','pop');
+  }
+  render();
+});
+
+const sortRow=document.getElementById('sortRow');
+[['new','Newest'],['pop','Most popular']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.sort===k?' on':''); b.dataset.sort=k; b.textContent=label;
+  sortRow.appendChild(b);
+});
+sortRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  sortRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.sort=b.dataset.sort; render();
 });
 
 const moodRow=document.getElementById('moodRow');
@@ -575,6 +623,8 @@ function syncUrl(){
   if(state.dub) p.set('dub','1');
   if(state.src!=='all') p.set('src',state.src);
   if(state.ott!=='all') p.set('ott',state.ott);
+  if(state.coll!=='all') p.set('coll',state.coll);
+  if(state.sort!=='new') p.set('sort',state.sort);
   if(state.q) p.set('q',state.q);
   if(state.moods.size) p.set('moods',[...state.moods].join('|'));
   if(state.savedOnly) p.set('saved','1');
@@ -597,6 +647,7 @@ function activeFilters(){
   if(state.src==='youtube') a.push('YouTube');
   if(state.src==='catalogue') a.push('Catalogue');
   if(state.ott!=='all') a.push(state.ott);
+  if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) a.push(co.label); }
   if(state.moods.size) a.push([...state.moods].join(', '));
   if(state.savedOnly) a.push('Saved only');
   return a;
@@ -607,12 +658,14 @@ function setPillRow(id, attr, val){
 }
 function clearAllFilters(){
   state.cat='all'; state.moods.clear(); state.type='all'; state.era='all';
-  state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott='all'; state.savedOnly=false; state.q='';
+  state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott='all';
+  state.coll='all'; state.sort='new'; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
-  setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all'); setPillRow('ottRow','ott','all');
+  setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
+  setPillRow('ottRow','ott','all'); setPillRow('collRow','coll','all'); setPillRow('sortRow','sort','new');
   document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
   render();
 }
@@ -642,6 +695,10 @@ function render(){
     if(state.src==='youtube' && d.src!=='youtube') return false;
     if(state.src==='catalogue' && d.src==='youtube') return false;
     if(state.ott!=='all' && !(d.o||[]).includes(state.ott)) return false;
+    if(state.coll!=='all'){
+      const co=COLLECTIONS.find(c=>c.k===state.coll);
+      if(co && co.g){ const gl=(d.g||[]).join(' ').toLowerCase(); if(!co.g.some(k=>gl.includes(k))) return false; }
+    }
     if(state.occasion!=='all'){
       const oc=OCCASIONS.find(o=>o.k===state.occasion);
       if(oc){
@@ -654,10 +711,12 @@ function render(){
     return true;
   });
 
+  const byPop = state.sort==='pop' || state.coll==='popular';
   out.sort((a,b)=>{
     const ad=String(a.date||''), bd=String(b.date||'');
     const au=a.status==='upcoming', bu=b.status==='upcoming';
     if(state.rel==='upcoming') return (ad||'9999').localeCompare(bd||'9999');
+    if(byPop){ const pa=a.pop||0, pb=b.pop||0; if(pb!==pa) return pb-pa; return bd.localeCompare(ad); }
     if(au!==bu) return au ? 1 : -1;                  // released first, upcoming last
     if(au) return (ad||'9999').localeCompare(bd||'9999');   // soonest first
     return bd.localeCompare(ad);                      // newest first
@@ -665,9 +724,10 @@ function render(){
 
   let label = state.cat==='all' ? 'All titles' : CATS[state.cat].label;
   if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat==='all' ? ' releases' : ' · '+CATS[state.cat].label);
+  if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) label = (state.coll==='popular' ? 'Most Popular' : 'Top '+co.label); }
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
-  const key = JSON.stringify([state.cat,[...state.moods].sort(),state.type,state.era,state.occasion,state.rel,state.dub,state.src,state.savedOnly,state.q]);
+  const key = JSON.stringify([state.cat,[...state.moods].sort(),state.type,state.era,state.occasion,state.rel,state.dub,state.src,state.ott,state.coll,state.sort,state.savedOnly,state.q]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, shownLimit);
   resCount.textContent = (shown.length<out.length ? shown.length+' of '+out.length : out.length)+' title'+(out.length===1?'':'s');
