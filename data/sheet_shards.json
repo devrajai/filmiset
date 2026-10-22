@@ -32,5 +32,18 @@
       "tab": "Titles",
       "rows": 15000
     }
-  ]
+  ],
+  "master": {
+    "name": "FilmiSet — MASTER INDEX (all shards)",
+    "sheet_id": "1ZonhzqGrArw0aISB9lgeY04MJ5YIJJDsBEOj7UIMn5c",
+    "tab": "Index",
+    "url": "https://docs.google.com/spreadsheets/d/1ZonhzqGrArw0aISB9lgeY04MJ5YIJJDsBEOj7UIMn5c/edit"
+  },
+  "capacity": {
+    "cells_per_spreadsheet": 10000000,
+    "titles_per_sheet_at_10_cols": 1000000,
+    "titles_per_sheet_at_8_cols": 1250000,
+    "sheets_for_15m_at_10_cols": 15,
+    "sheets_for_15m_at_8_cols": 12
+  }
 }
