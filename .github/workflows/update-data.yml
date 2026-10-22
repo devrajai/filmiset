@@ -33,7 +33,7 @@ jobs:
       - name: Add IMDb ratings (free IMDb datasets)
         run: python3 scripts/fetch_imdb.py
       - name: IMDb full catalogue (11.6M titles, free datasets)
-        run: python3 scripts/fetch_imdb_catalog.py --top 1000000
+        run: python3 scripts/fetch_imdb_catalog.py --top 2500000
       - name: Download + compress posters locally
         run: python3 scripts/download_posters.py --workers 2 --delay 0.35
       - name: Build Excel backup
