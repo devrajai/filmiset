@@ -1,0 +1,98 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Extract script and check with Node
+        run: |
+          python3 - <<'PYEOF'
+import re
+import sys
+
+try:
+    with open('index.html', 'r', encoding='utf-8') as f:
+        content = f.read()
+except FileNotFoundError:
+    print("Error: index.html not found.")
+    sys.exit(1)
+
+matches = re.findall(r'<script(?:[^>]*)>(.*?)</script>', content, re.DOTALL)
+if not matches:
+    print("Error: No <script> block found in index.html.")
+    sys.exit(1)
+
+script_content = "\n".join(matches)
+with open('temp_script.js', 'w', encoding='utf-8') as f:
+    f.write(script_content)
+PYEOF
+          node --check temp_script.js
+
+      - name: Validate JSON and posters
+        run: |
+          python3 - <<'PYEOF'
+import json
+import os
+import sys
+
+errors = 0
+data_dir = 'data'
+posters_dir = 'posters'
+req_keys = {'t', 'cat', 'type', 'g', 'm', 'a', 'o'}
+
+if not os.path.exists(data_dir):
+    print("Data directory not found.")
+    sys.exit(1)
+
+for filename in os.listdir(data_dir):
+    if not filename.endswith('.json'):
+        continue
+
+    filepath = os.path.join(data_dir, filename)
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"Error parsing {filepath}: {e}")
+        errors += 1
+        continue
+
+    if isinstance(data, list):
+        for i, row in enumerate(data):
+            missing = req_keys - set(row.keys())
+            if missing:
+                print(f"{filepath} row {i} missing keys: {missing}")
+                errors += 1
+
+            if 'poster' in row and row['poster']:
+                poster_path = row['poster']
+                if not poster_path.startswith('http') and not os.path.exists(poster_path):
+                    print(f"{filepath} row {i} referenced missing local poster: {poster_path}")
+                    errors += 1
+
+if errors > 0:
+    print(f"Validation failed with {errors} errors.")
+    sys.exit(1)
+else:
+    print("All JSON files validated successfully.")
+PYEOF

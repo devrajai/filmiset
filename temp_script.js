@@ -1,0 +1,793 @@
+
+const CATS = {
+  'gujarati-movie':  {label:'Gujarati Movies',        color:'#e8a33d'},
+  'gujarati-natak':  {label:'Gujarati Natak',          color:'#d97706'},
+  'hindi':           {label:'Bollywood',               color:'#c2410c'},
+  'south-dubbed':    {label:'South · Hindi Dubbed',    color:'#65a30d'},
+  'english-dubbed':  {label:'Hollywood',               color:'#0891b2'},
+  'korean-dubbed':   {label:'Korean · Hindi Dubbed',   color:'#be123c'},
+  'anime':           {label:'Anime',                   color:'#a21caf'},
+  'animation':       {label:'Animation',               color:'#1d4ed8'},
+};
+
+const MOODS = ['Feel-Good','Comedy','Romantic','Thriller','Mystery','Action','Emotional','Horror','Nostalgic','Family'];
+
+const DEMO = [
+  // --- Gujarati Movies ---
+  {t:'Chhello Divas',y:2015,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Comedy','Nostalgic'],a:['Gujarati'],o:['ShemarooMe','JioHotstar'],poster:'posters/chhello-divas-gujarati-film-poster.jpg'},
+  {t:'Chaal Jeevi Laiye',y:2019,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Emotional','Family'],a:['Gujarati'],o:['ShemarooMe','JioHotstar'],poster:'posters/chaal-jeevi-laiye-poster.jpg'},
+  {t:'Hellaro',y:2019,cat:'gujarati-movie',type:'Movie',g:['Drama'],m:['Emotional','Nostalgic'],a:['Gujarati'],o:['JioHotstar','ShemarooMe'],poster:'posters/hellaro-film-poster.jpg'},
+  {t:'Fakt Purusho Maate',y:2024,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Comedy','Feel-Good'],a:['Gujarati'],o:['JOJO','ShemarooMe'],poster:'posters/fakt-purusho-maate-official-poster.jpg'},
+  {t:'Vash',y:2023,cat:'gujarati-movie',type:'Movie',g:['Thriller','Horror'],m:['Thriller','Horror'],a:['Gujarati'],o:['ShemarooMe'],poster:'posters/vash-film-poster.jpg'},
+  {t:'Love Ni Bhavai',y:2017,cat:'gujarati-movie',type:'Movie',g:['Romance','Comedy'],m:['Romantic','Feel-Good'],a:['Gujarati'],o:['ShemarooMe'],poster:'posters/love-ni-bhavai-poster.jpg'},
+  {t:'Kamthaan',y:2024,cat:'gujarati-movie',type:'Movie',g:['Comedy','Crime'],m:['Comedy','Thriller'],a:['Gujarati'],o:['ShemarooMe'],poster:'posters/kamthaan-poster.jpg'},
+
+  // --- Gujarati Natak ---
+  {t:'Bluffmaster Gujjubhai',y:2025,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Comedy','Feel-Good'],a:['Gujarati'],o:['ShemarooMe','JOJO']},
+  {t:'Vaat Vaat Ma',y:2024,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Comedy'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Sada Che Ni Bus',y:2024,cat:'gujarati-natak',type:'Natak',g:['Drama'],m:['Emotional','Family'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Naadi Dosh',y:2022,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Comedy','Family'],a:['Gujarati'],o:['ShemarooMe'],poster:'posters/naadi-dosh.jpg'},
+  {t:'Ok Boss',y:2024,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Comedy','Feel-Good'],a:['Gujarati'],o:['ShemarooMe','JOJO']},
+  {t:'Mummy Ni Dhamaal, Pappa Ni Kamaa',y:2026,cat:'gujarati-natak',type:'Natak',g:['Comedy'],m:['Family','Comedy'],a:['Gujarati'],o:['ShemarooMe']},
+  {t:'Tuition',y:2023,cat:'gujarati-natak',type:'Natak',g:['Drama'],m:['Emotional'],a:['Gujarati'],o:['ShemarooMe']},
+
+  // --- Hindi ---
+  {t:'3 Idiots',y:2009,cat:'hindi',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Comedy','Nostalgic'],a:['Hindi'],o:['Prime Video','Netflix'],poster:'posters/3-idiots-poster.jpg'},
+  {t:'Dangal',y:2016,cat:'hindi',type:'Movie',g:['Drama','Sport'],m:['Emotional','Family'],a:['Hindi'],o:['JioHotstar','Netflix'],poster:'posters/dangal-poster.jpg'},
+  {t:'Andhadhun',y:2018,cat:'hindi',type:'Movie',g:['Thriller','Mystery','Comedy'],m:['Thriller','Mystery'],a:['Hindi'],o:['Prime Video','JioHotstar'],poster:'posters/andhadhun-poster.jpg'},
+  {t:'Gully Boy',y:2019,cat:'hindi',type:'Movie',g:['Drama','Music'],m:['Emotional'],a:['Hindi'],o:['Prime Video','JioHotstar'],poster:'posters/gully-boy-poster.jpg'},
+  {t:'Zindagi Na Milegi Dobara',y:2011,cat:'hindi',type:'Movie',g:['Drama','Comedy'],m:['Feel-Good','Nostalgic'],a:['Hindi'],o:['Prime Video','JioHotstar'],poster:'posters/zindagi-na-milegi-dobara.jpg'},
+  {t:'Queen',y:2014,cat:'hindi',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Emotional'],a:['Hindi'],o:['Netflix','JioHotstar'],poster:'posters/queenmovieposter7thmarch.jpg'},
+  {t:'Tumbbad',y:2018,cat:'hindi',type:'Movie',g:['Horror','Mystery'],m:['Horror','Mystery'],a:['Hindi'],o:['Prime Video','JioHotstar'],poster:'posters/tumbbad-poster.jpg'},
+  {t:'Drishyam',y:2015,cat:'hindi',type:'Movie',g:['Thriller','Mystery'],m:['Thriller','Mystery'],a:['Hindi'],o:['JioHotstar'],poster:'posters/drishyammovie.jpg'},
+
+  // --- South · Hindi Dubbed ---
+  {t:'KGF: Chapter 1',y:2018,cat:'south-dubbed',type:'Movie',g:['Action','Drama'],m:['Action'],a:['Hindi (dub)','Kannada'],o:['Prime Video','JioHotstar'],poster:'posters/k-g-f-chapter-1-poster.jpg'},
+  {t:'Baahubali: The Beginning',y:2015,cat:'south-dubbed',type:'Movie',g:['Action','Fantasy'],m:['Action','Emotional'],a:['Hindi (dub)','Telugu'],o:['JioHotstar','Prime Video'],poster:'posters/baahubali-the-beginning-poster.jpg'},
+  {t:'RRR',y:2022,cat:'south-dubbed',type:'Movie',g:['Action','Drama'],m:['Action','Emotional'],a:['Hindi (dub)','Telugu'],o:['Netflix','JioHotstar'],poster:'posters/rrr-poster.jpg'},
+  {t:'Jailer',y:2023,cat:'south-dubbed',type:'Movie',g:['Action','Thriller'],m:['Action'],a:['Hindi (dub)','Tamil'],o:['Prime Video'],poster:'posters/jailer-2023-tamil-film-poster.jpg'},
+  {t:'Vikram',y:2022,cat:'south-dubbed',type:'Movie',g:['Action','Thriller'],m:['Action','Thriller'],a:['Hindi (dub)','Tamil'],o:['JioHotstar'],poster:'posters/vikram-2022-poster.jpg'},
+  {t:'Kantara',y:2022,cat:'south-dubbed',type:'Movie',g:['Action','Drama'],m:['Action','Nostalgic'],a:['Hindi (dub)','Kannada'],o:['Netflix'],poster:'posters/kantara-poster.jpg'},
+  {t:'Ponniyin Selvan: Part 1',y:2022,cat:'south-dubbed',type:'Movie',g:['Action','Drama'],m:['Action','Emotional'],a:['Hindi (dub)','Tamil'],o:['Prime Video']},
+  {t:'Lokah Chapter 1: Chandra',y:2025,cat:'south-dubbed',type:'Movie',g:['Fantasy','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Malayalam'],o:['JioHotstar'],poster:'posters/lokah-chapter-1-chandra-poster.jpg'},
+  {t:'Thudarum',y:2025,cat:'south-dubbed',type:'Movie',g:['Thriller','Drama'],m:['Thriller','Emotional'],a:['Hindi (dub)','Malayalam'],o:['JioHotstar'],poster:'posters/thudarum-film.jpg'},
+  {t:'Mirai',y:2025,cat:'south-dubbed',type:'Movie',g:['Action','Fantasy'],m:['Action'],a:['Hindi (dub)','Telugu'],o:['JioHotstar'],poster:'posters/mirai-2025-film-poster.jpg'},
+
+  // --- English · Hindi Dubbed ---
+  {t:'Inception',y:2010,cat:'english-dubbed',type:'Movie',g:['Thriller','Sci-Fi'],m:['Thriller','Mystery'],a:['Hindi (dub)','English'],o:['JioHotstar','Prime Video'],poster:'posters/inception-2010-theatrical-poster.jpg'},
+  {t:'Interstellar',y:2014,cat:'english-dubbed',type:'Movie',g:['Sci-Fi','Drama'],m:['Emotional','Mystery'],a:['Hindi (dub)','English'],o:['JioHotstar','Prime Video'],poster:'posters/interstellar-film-poster.jpg'},
+  {t:'The Dark Knight',y:2008,cat:'english-dubbed',type:'Movie',g:['Action','Thriller'],m:['Action','Thriller'],a:['Hindi (dub)','English'],o:['JioHotstar'],poster:'posters/the-dark-knight-2008-film.jpg'},
+  {t:'Avengers: Endgame',y:2019,cat:'english-dubbed',type:'Movie',g:['Action','Fantasy'],m:['Action'],a:['Hindi (dub)','English'],o:['JioHotstar'],poster:'posters/avengers-endgame-poster.jpg'},
+  {t:'Spider-Man: No Way Home',y:2021,cat:'english-dubbed',type:'Movie',g:['Action','Adventure'],m:['Action','Feel-Good'],a:['Hindi (dub)','English'],o:['JioHotstar'],poster:'posters/spider-man-no-way-home-poster.jpg'},
+  {t:'John Wick',y:2014,cat:'english-dubbed',type:'Movie',g:['Action','Thriller'],m:['Action'],a:['Hindi (dub)','English'],o:['Prime Video'],poster:'posters/john-wick-teaserposter.jpg'},
+
+  // --- Korean · Hindi Dubbed ---
+  {t:'Itaewon Class',y:2020,cat:'korean-dubbed',type:'Series',g:['Drama','Romance'],m:['Emotional'],a:['Hindi (dub)','Korean'],o:['MX Player','Netflix'],poster:'posters/itaewon-class.jpg'},
+  {t:'Goblin',y:2016,cat:'korean-dubbed',type:'Series',g:['Fantasy','Romance'],m:['Romantic','Emotional'],a:['Hindi (dub)','Korean'],o:['MX Player'],poster:'posters/theprincessandthegoblin1991poster.jpg'},
+  {t:'Crash Landing on You',y:2019,cat:'korean-dubbed',type:'Series',g:['Romance','Comedy'],m:['Romantic','Feel-Good'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/crash-landing-on-you-poster.jpg'},
+  {t:'Doctor Stranger',y:2014,cat:'korean-dubbed',type:'Series',g:['Thriller','Romance'],m:['Thriller'],a:['Hindi (dub)','Korean'],o:['MX Player'],poster:'posters/doctor-stranger.jpg'},
+  {t:'Room No. 9',y:2018,cat:'korean-dubbed',type:'Series',g:['Mystery','Thriller'],m:['Mystery','Thriller'],a:['Hindi (dub)','Korean'],o:['MX Player'],poster:'posters/room-no-9.jpg'},
+  {t:'Vincenzo',y:2021,cat:'korean-dubbed',type:'Series',g:['Crime','Comedy'],m:['Thriller','Comedy'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/500px-vincenzo-natali-cfc-25th-anniversary-celeb.jpg'},
+  {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
+];
+
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
+const CUR_YEAR = new Date().getFullYear();
+const _now = new Date();
+const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
+const CUR_YM = _ym(_now.getFullYear(), _now.getMonth());
+const _prevM = new Date(_now.getFullYear(), _now.getMonth()-1, 1);
+const PREV_YM = _ym(_prevM.getFullYear(), _prevM.getMonth());
+const REL_LABEL = {latest:'Last 2 months', month:'This month', lastmonth:'Last month', year:'This year', upcoming:'Upcoming'};
+const PAGE = 60;                 // render this many cards at a time (fast on mobile)
+let shownLimit = PAGE, lastKey = '';
+
+/* watchlist (persisted in this browser) */
+const watchlist = new Set(JSON.parse(localStorage.getItem('filmiset_watchlist')||'[]'));
+function persistWatchlist(){ try{ localStorage.setItem('filmiset_watchlist', JSON.stringify([...watchlist])); }catch(e){} }
+/* titles marked as already seen */
+const watched = new Set(JSON.parse(localStorage.getItem('filmiset_watched')||'[]'));
+function persistWatched(){ try{ localStorage.setItem('filmiset_watched', JSON.stringify([...watched])); }catch(e){} }
+
+/* restore filters from the URL so a shared link reopens the same view */
+(function readUrl(){
+  const p=new URLSearchParams(location.search);
+  if(p.get('cat')) p.get('cat').split(',').filter(Boolean).forEach(v=>state.cat.add(v));
+  if(p.get('type')) p.get('type').split(',').filter(Boolean).forEach(v=>state.type.add(v));
+  if(p.get('era')) state.era=p.get('era');
+  if(p.get('occ')) state.occasion=p.get('occ');
+  if(p.get('rel')) state.rel=p.get('rel');
+  if(p.get('dub')==='1') state.dub=true;
+  if(p.get('src')) state.src=p.get('src');
+  if(p.get('ott')) p.get('ott').split(',').filter(Boolean).forEach(v=>state.ott.add(v));
+  if(p.get('coll')) state.coll=p.get('coll');
+  if(p.get('fr')) state.fr=p.get('fr');
+  if(p.get('sort')) state.sort=p.get('sort');
+  if(p.get('rt')) state.rt=p.get('rt');
+  if(p.get('comp')) state.company=p.get('comp');
+  if(p.get('gems')==='1') state.gems=true;
+  if(p.get('safe')==='1') state.safe=true;
+  if(p.get('hidew')==='0') state.hideWatched=false;
+  if(p.get('q')){ state.q=p.get('q').toLowerCase(); document.getElementById('q').value=p.get('q'); }
+  if(p.get('moods')) p.get('moods').split('|').filter(Boolean).forEach(m=>state.moods.add(m));
+  if(p.get('saved')==='1') state.savedOnly=true;
+  // a shared link that pins a category/OTT should show the whole set, not just this month
+  if(!p.get('rel') && (state.cat.size || state.ott.size || (state.coll!=='all') || (state.fr!=='all'))) state.rel='all';
+})();
+
+/* ---- build filter UI ---- */
+const catRow = document.getElementById('catRow');
+const allPill = document.createElement('button');
+allPill.className='pill'+(state.cat.size?'':' on'); allPill.dataset.cat='all'; allPill.textContent='All titles';
+catRow.appendChild(allPill);
+Object.entries(CATS).forEach(([k,v])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.cat.has(k)?' on':''); b.dataset.cat=k;
+  b.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
+  catRow.appendChild(b);
+});
+catRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  const k=b.dataset.cat;
+  if(k==='all') state.cat.clear();
+  else if(state.cat.has(k)) state.cat.delete(k);
+  else state.cat.add(k);
+  syncRow('catRow','cat',state.cat);
+  if(state.cat.size && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* OTT platform filter */
+const OTTS = ['Netflix','Prime Video','JioHotstar','ZEE5','SonyLIV','HBO Max','Apple TV+','Crunchyroll',
+              'MX Player','YouTube','Aha','Sun NXT','ShemarooMe','JOJO'];
+const JW_SLUG = {'Netflix':'netflix','Prime Video':'amazon-prime-video','JioHotstar':'hotstar','ZEE5':'zee5',
+  'SonyLIV':'sonyliv','HBO Max':'hbo-max','Apple TV+':'apple-tv-plus','Crunchyroll':'crunchyroll',
+  'MX Player':'mx-player','YouTube':'youtube','Aha':'aha','Sun NXT':'sun-nxt','ShemarooMe':'shemaroome','JOJO':'jojo'};
+const ottRow=document.getElementById('ottRow');
+[['all','All OTT']].concat(OTTS.map(o=>[o,o])).forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+((k==='all' ? !state.ott.size : state.ott.has(k))?' on':''); b.dataset.ott=k; b.textContent=label;
+  ottRow.appendChild(b);
+});
+ottRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  const k=b.dataset.ott;
+  if(k==='all') state.ott.clear();
+  else if(state.ott.has(k)) state.ott.delete(k);
+  else state.ott.add(k);
+  syncRow('ottRow','ott',state.ott);
+  if(state.ott.size && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* Collections (genre-based) + Sort */
+const COLLECTIONS = [
+  {k:'heist',    label:'Heist',              g:['heist','robbery','caper','burglar','larceny','getaway']},
+  {k:'suspense', label:'Suspense & Mystery', g:['suspense','mystery']},
+  {k:'thriller', label:'Thriller',           g:['thriller']},
+  {k:'crime',    label:'Crime',              g:['crime']},
+  {k:'horror',   label:'Horror',             g:['horror']},
+  {k:'teen',     label:'Teen',               g:['teen','coming-of-age','coming of age','high school','young adult']},
+  {k:'romance',  label:'Romance',            g:['romance','romantic']},
+  {k:'scifi',    label:'Sci-Fi',             g:['science fiction','sci-fi','sci fi']},
+  {k:'action',   label:'Action',             g:['action']},
+  {k:'comedy',   label:'Comedy',             g:['comedy']},
+  {k:'adult',    label:'18+ (Adult)',        g:['erotic','adult','pornographic']},
+  {k:'popular',  label:'Most Popular',       g:null},
+];
+const collRow=document.getElementById('collRow');
+[['all','All collections']].concat(COLLECTIONS.map(c=>[c.k,c.label])).forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.coll===k?' on':''); b.dataset.coll=k; b.textContent=label;
+  collRow.appendChild(b);
+});
+collRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  collRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.coll=b.dataset.coll;
+  if(state.coll!=='all'){
+    if(state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+    state.sort='pop'; setPillRow('sortRow','sort','pop');
+  }
+  render();
+});
+
+const sortRow=document.getElementById('sortRow');
+[['new','Newest'],['pop','Most popular']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.sort===k?' on':''); b.dataset.sort=k; b.textContent=label;
+  sortRow.appendChild(b);
+});
+sortRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  sortRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.sort=b.dataset.sort; render();
+});
+
+/* Franchises — always shown in release order (= story sequence) */
+const FRANCHISES = [
+  ['Marvel Cinematic Universe','Marvel (MCU)'], ['DC Extended Universe','DC'],
+  ['James Bond','James Bond'], ['Fast & Furious','Fast & Furious'],
+  ['Harry Potter','Harry Potter'], ['Star Wars','Star Wars'],
+  ['Mission: Impossible','Mission: Impossible'], ['Jurassic Park','Jurassic Park'],
+  ['Transformers','Transformers'], ['Pirates of the Caribbean','Pirates'],
+  ['The Hunger Games','Hunger Games'], ['The Twilight Saga','Twilight'],
+  ['Fifty Shades','Fifty Shades'], ['The Lord of the Rings','Lord of the Rings'],
+];
+const frRow=document.getElementById('frRow');
+[['all','All franchises']].concat(FRANCHISES).forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.fr===k?' on':''); b.dataset.fr=k; b.textContent=label;
+  frRow.appendChild(b);
+});
+frRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  frRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.fr=b.dataset.fr;
+  if(state.fr!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* Watching with */
+const compRow=document.getElementById('compRow');
+[['all','Anyone'],['solo','Solo'],['family','Family'],['date','Date night'],['friends','Friends'],['kids','With kids']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.company===k?' on':''); b.dataset.comp=k; b.textContent=label;
+  compRow.appendChild(b);
+});
+compRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  compRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.company=b.dataset.comp;
+  if(state.company!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* How much time do I have */
+const rtRow=document.getElementById('rtRow');
+[['all','Any length'],['u90','Under 1½ hr'],['u120','Under 2 hrs'],['p120','2 hrs +']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.rt===k?' on':''); b.dataset.rt=k; b.textContent=label;
+  rtRow.appendChild(b);
+});
+rtRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  rtRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.rt=b.dataset.rt;
+  if(state.rt!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* Quality toggles */
+const qualRow=document.getElementById('qualRow');
+[['gems','Hidden gems'],['safe','Family-safe']].forEach(([k,label])=>{
+  const on=(k==='gems'? state.gems : state.safe);
+  const b=document.createElement('button');
+  b.className='pill'+(on?' on':''); b.dataset.qual=k; b.textContent=label;
+  qualRow.appendChild(b);
+});
+qualRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  const k=b.dataset.qual;
+  if(k==='gems') state.gems=!state.gems; else state.safe=!state.safe;
+  b.classList.toggle('on', k==='gems'? state.gems : state.safe);
+  if((state.gems||state.safe) && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
+});
+
+/* Library */
+const libRow=document.getElementById('libRow');
+(function(){
+  const b=document.createElement('button');
+  b.className='pill'+(state.hideWatched?' on':''); b.textContent='Hide watched';
+  libRow.appendChild(b);
+  libRow.addEventListener('click',()=>{ state.hideWatched=!state.hideWatched; b.classList.toggle('on', state.hideWatched); render(); });
+})();
+
+const moodRow=document.getElementById('moodRow');
+MOODS.forEach(m=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.moods.has(m)?' on':''); b.dataset.mood=m; b.textContent=m;
+  moodRow.appendChild(b);
+});
+moodRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  b.classList.toggle('on');
+  b.classList.contains('on')?state.moods.add(b.dataset.mood):state.moods.delete(b.dataset.mood);
+  render();
+});
+
+const typeRow=document.getElementById('typeRow');
+['all','Movie','Natak','Series'].forEach(t=>{
+  const b=document.createElement('button');
+  b.className='pill'+((t==='all' ? !state.type.size : state.type.has(t))?' on':''); b.dataset.type=t;
+  b.textContent = t==='all'?'All types':t+'s';
+  typeRow.appendChild(b);
+});
+typeRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  const k=b.dataset.type;
+  if(k==='all') state.type.clear();
+  else if(state.type.has(k)) state.type.delete(k);
+  else state.type.add(k);
+  syncRow('typeRow','type',state.type);
+  render();
+});
+
+const eraRow=document.getElementById('eraRow');
+[['all','All eras'],['classic','Classic (pre-2000)'],['modern','Modern (2000+)']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.era===k?' on':''); b.dataset.era=k; b.textContent=label;
+  eraRow.appendChild(b);
+});
+eraRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  eraRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.era=b.dataset.era; render();
+});
+
+/* Occasion -> mood/genre mapping. Match if a title has ANY listed mood or genre. */
+const OCCASIONS = [
+  {k:'diwali',       label:'Diwali',           moods:['Family','Feel-Good','Comedy'],     genres:['Musical','Devotional','Family']},
+  {k:'holi',         label:'Holi',             moods:['Comedy','Feel-Good','Romantic'],   genres:[]},
+  {k:'weekend',      label:'Weekend',          moods:['Action','Thriller','Comedy'],      genres:[]},
+  {k:'familynight',  label:'Family Night',     moods:['Family','Feel-Good'],              genres:['Family','Musical']},
+  {k:'independence', label:'Independence Day', moods:['Emotional','Action'],              genres:['Historical','Social']},
+  {k:'newyear',      label:'New Year',         moods:['Feel-Good','Comedy','Romantic'],   genres:[]},
+  {k:'rainy',        label:'Rainy Day',        moods:['Romantic','Nostalgic','Emotional'],genres:[]},
+];
+const occRow=document.getElementById('occRow');
+[['all','All occasions']].concat(OCCASIONS.map(o=>[o.k,o.label])).forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.occasion===k?' on':''); b.dataset.occ=k; b.textContent=label;
+  occRow.appendChild(b);
+});
+occRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  occRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.occasion=b.dataset.occ; render();
+});
+
+const relRow=document.getElementById('relRow');
+[['month','This month'],['latest','Last 2 months'],['lastmonth','Last month'],['year','This year'],['upcoming','Upcoming'],['all','All']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.rel===k?' on':''); b.dataset.rel=k; b.textContent=label;
+  relRow.appendChild(b);
+});
+relRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  relRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.rel=b.dataset.rel; render();
+});
+
+const audRow=document.getElementById('audRow');
+[['all','All audio'],['dub','Hindi Dubbed']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+((k==='dub')===state.dub?' on':''); b.dataset.aud=k; b.textContent=label;
+  audRow.appendChild(b);
+});
+audRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  audRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.dub=(b.dataset.aud==='dub'); render();
+});
+
+const srcRow=document.getElementById('srcRow');
+[['all','All sources'],['catalogue','Catalogue'],['wikidata','Wikidata'],['tmdb','TMDB']].forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.src===k?' on':''); b.dataset.src=k; b.textContent=label;
+  srcRow.appendChild(b);
+});
+srcRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  srcRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.src=b.dataset.src; render();
+});
+
+/* mobile filter drawer */
+function openFilters(){ document.body.classList.add('filters-open'); }
+function closeFilters(){ document.body.classList.remove('filters-open'); }
+document.getElementById('filtersBtn').addEventListener('click',openFilters);
+document.getElementById('filtersClose').addEventListener('click',closeFilters);
+document.getElementById('backdrop').addEventListener('click',closeFilters);
+function updateFilterCount(){
+  const n = activeFilters().length;
+  const c = document.getElementById('filterCount'); if(c) c.textContent = n ? n : '';
+  const fb = document.getElementById('filtersBtn'); if(fb) fb.classList.toggle('on', n>0);
+}
+/* "Load more" */
+document.addEventListener('click',e=>{
+  if(e.target.closest('#moreBtn')){ shownLimit += PAGE; render(); }
+});
+
+document.getElementById('q').addEventListener('input',e=>{
+  state.q=e.target.value.trim().toLowerCase();
+  var qc=document.getElementById('qclear'); if(qc) qc.hidden = !e.target.value;
+  render();
+});
+document.getElementById('qclear').addEventListener('click',()=>{
+  var q=document.getElementById('q'); q.value=''; state.q='';
+  document.getElementById('qclear').hidden=true; q.focus(); render();
+});
+
+/* watchlist toggle + save buttons (delegated) */
+document.getElementById('savedBtn').addEventListener('click',()=>{ state.savedOnly=!state.savedOnly; render(); });
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.save-btn'); if(!b) return;
+  const t=b.dataset.title;
+  if(watchlist.has(t)) watchlist.delete(t); else watchlist.add(t);
+  persistWatchlist();
+  b.classList.toggle('on', watchlist.has(t));
+  b.textContent = watchlist.has(t)?'♥':'♡';
+  updateSavedBtn();
+  if(state.savedOnly) render();
+});
+
+/* share */
+document.getElementById('shareBtn').addEventListener('click',async ev=>{
+  const btn=ev.currentTarget, url=location.href;
+  try{
+    if(navigator.share){ await navigator.share({title:'FilmiSet', text:'Kya dekhein? FilmiSet par dekho:', url}); return; }
+    await navigator.clipboard.writeText(url);
+    const old=btn.textContent; btn.textContent='Link copied'; setTimeout(()=>btn.textContent=old,1500);
+  }catch(e){}
+});
+
+/* ---- legend ---- */
+const legend=document.getElementById('legend');
+if(legend) Object.values(CATS).forEach(v=>{
+  const s=document.createElement('span');
+  s.className='pill';
+  s.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
+  legend.appendChild(s);
+});
+
+/* ---- helpers ---- */
+function initials(t){
+  const w=t.replace(/[^\w\s]/g,'').split(/\s+/).filter(Boolean);
+  return (w[0]?.[0]||'')+(w[1]?.[0]||'');
+}
+function justwatch(t){return 'https://www.justwatch.com/in/search?q='+encodeURIComponent(t);}
+function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}); }catch(e){ return iso; } }
+function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
+
+/* ---- title modal (Surprise me / Aaj ka vibe / details) ---- */
+function openModal(d){
+  const up=d.status==='upcoming';
+  const avail=(d.o&&d.o.length)? 'Available on '+d.o.join(' · ') : 'OTT info not listed';
+  const m=document.getElementById('modal');
+  m.innerHTML='<div class="box">'
+    + (d.poster? '<img src="'+d.poster+'" alt="" onerror="this.remove()">':'')
+    + '<h3>'+d.t+'</h3>'
+    + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(d.rt?' · '+d.rt+' min':'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
+    + '<div class="m" style="margin-top:6px">'+[(d.g||[]).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
+    + (d.ov? '<p>'+d.ov+'</p>':(d.note? '<p>'+d.note+'</p>':''))
+    + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
+        + [d.dir?'Director: '+d.dir:'', d.prod?'Studio: '+d.prod:'',
+           (d.cast&&d.cast.length)?'Cast: '+d.cast.join(', '):''].filter(Boolean).join('  ·  ') + '</div>' : '')
+    + '<div class="row">'
+      + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">Watch trailer</a>':'')
+      + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
+      + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
+      + '<button class="hbtn" data-mclose="1">Close</button>'
+    + '</div></div>';
+  m.hidden=false;
+}
+function closeModal(){ document.getElementById('modal').hidden=true; }
+document.getElementById('modal').addEventListener('click',e=>{
+  const m=document.getElementById('modal');
+  if(e.target===m){ closeModal(); return; }
+  const sv=e.target.closest('[data-msave]');
+  if(sv){ const t=sv.dataset.msave; if(watchlist.has(t))watchlist.delete(t); else watchlist.add(t); persistWatchlist(); sv.textContent=watchlist.has(t)?'\u2665 Saved':'\u2661 Save'; updateSavedBtn(); return; }
+  const sn=e.target.closest('[data-mseen]');
+  if(sn){ const t=sn.dataset.mseen; if(watched.has(t))watched.delete(t); else watched.add(t); persistWatched(); sn.textContent=watched.has(t)?'\u2713 Seen':'Mark seen'; return; }
+  if(e.target.closest('[data-mclose]')) closeModal();
+});
+document.getElementById('surpriseBtn').addEventListener('click',()=>{
+  // prefer the latest Hindi / Hindi-dubbed titles, fall back to anything recent
+  const hindi = d => (d.a||[]).some(x=>/hindi/i.test(x));
+  const base = DATA.filter(d=>d.src!=='youtube' && !(state.hideWatched && watched.has(d.t)));
+  let pool = base.filter(d=>hindi(d) && Number(d.y||0)>=2000 && d.status!=='upcoming');
+  if(pool.length < 25) pool = base;
+  pool = pool.slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,500);
+  if(pool.length) openModal(pool[Math.floor(Math.random()*pool.length)]);
+});
+/* ---- Aaj ka vibe : one popular pick that changes every day ---- */
+function renderVibe(){
+  const pool=DATA.filter(d=>d.poster && (d.pop||0)>0).sort((a,b)=>(b.pop||0)-(a.pop||0)).slice(0,500);
+  if(!pool.length) return;
+  const d=pool[Math.floor(Date.now()/86400000) % pool.length];
+  const el=document.getElementById('vibe');
+  el.hidden=false;
+  el.innerHTML=(d.poster?'<img src="'+d.poster+'" alt="">':'')
+    + '<div class="vt"><span>Aaj ka vibe</span><b>'+d.t+'</b>'
+    + '<p>'+[(d.date?fmtDate(d.date):d.y),(d.g||[]).join(', '),(d.rtg?'\u2605 '+d.rtg:'')].filter(Boolean).join(' · ')+'</p></div>'
+    + '<button class="hbtn" data-vibe="'+esc(d.t)+'">Details</button>';
+  const vb=el.querySelector('[data-vibe]'); if(vb) vb.onclick=()=>openModal(d);
+}
+/* card actions: mark seen + more like this */
+document.addEventListener('click',e=>{
+  const s=e.target.closest('[data-seen]');
+  if(s){ const t=s.dataset.seen; if(watched.has(t))watched.delete(t); else watched.add(t); persistWatched();
+    s.classList.toggle('on', watched.has(t)); s.textContent=watched.has(t)?'\u2713 Seen':'Mark seen';
+    if(state.hideWatched) render(); return; }
+  const mo=e.target.closest('[data-more]');
+  if(mo){ const d=DATA.find(x=>x.t===mo.dataset.more);
+    if(d && d.g && d.g.length){ state.gq=d.g[0]; render(); window.scrollTo({top:0,behavior:'smooth'}); }
+    return; }
+  // clicking anywhere on a card (poster, title, summary) opens the detail window
+  const card=e.target.closest('.card[data-title]');
+  if(card && !e.target.closest('button,a')){
+    const d=DATA.find(x=>x.t===card.dataset.title);
+    if(d) openModal(d);
+    return;
+  }
+});
+function deriveOcc(d){
+  return OCCASIONS.filter(o=>d.m.some(m=>o.moods.includes(m)) || d.g.some(g=>o.genres.includes(g))).map(o=>o.label);
+}
+function syncUrl(){
+  const p=new URLSearchParams();
+  if(state.cat.size) p.set('cat',[...state.cat].join(','));
+  if(state.type.size) p.set('type',[...state.type].join(','));
+  if(state.era!=='all') p.set('era',state.era);
+  if(state.occasion!=='all') p.set('occ',state.occasion);
+  if(state.rel!=='month') p.set('rel',state.rel);
+  if(state.dub) p.set('dub','1');
+  if(state.src!=='all') p.set('src',state.src);
+  if(state.ott.size) p.set('ott',[...state.ott].join(','));
+  if(state.coll!=='all') p.set('coll',state.coll);
+  if(state.fr!=='all') p.set('fr',state.fr);
+  if(state.sort!=='new') p.set('sort',state.sort);
+  if(state.rt!=='all') p.set('rt',state.rt);
+  if(state.company!=='all') p.set('comp',state.company);
+  if(state.gems) p.set('gems','1');
+  if(state.safe) p.set('safe','1');
+  if(!state.hideWatched) p.set('hidew','0');
+  if(state.q) p.set('q',state.q);
+  if(state.moods.size) p.set('moods',[...state.moods].join('|'));
+  if(state.savedOnly) p.set('saved','1');
+  const qs=p.toString();
+  history.replaceState(null,'',qs?('?'+qs):location.pathname);
+}
+function updateSavedBtn(){
+  document.getElementById('savedCount').textContent = watchlist.size;
+  document.getElementById('savedBtn').classList.toggle('on', state.savedOnly);
+}
+function activeFilters(){
+  const a=[];
+  if(state.q) a.push('search "'+state.q+'"');
+  if(state.cat.size) a.push([...state.cat].map(c=>CATS[c]?CATS[c].label:c).join(', '));
+  if(state.type.size) a.push([...state.type].join(', '));
+  if(state.era!=='all') a.push(state.era==='classic' ? 'Classic (pre-2000)' : 'Modern (2000+)');
+  if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) a.push(oc.label); }
+  if(state.rel!=='all' && state.rel!=='month') a.push(REL_LABEL[state.rel]||state.rel);
+  if(state.dub) a.push('Hindi Dubbed');
+  if(state.src!=='all') a.push({youtube:'YouTube',catalogue:'Catalogue',wikidata:'Wikidata',tmdb:'TMDB',jikan:'MyAnimeList'}[state.src]||state.src);
+  if(state.ott.size) a.push([...state.ott].join(', '));
+  if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) a.push(co.label); }
+  if(state.fr!=='all') a.push(state.fr);
+  if(state.gq) a.push('genre: '+state.gq);
+  if(state.rt!=='all') a.push({u90:'under 1½ hr',u120:'under 2 hrs',p120:'2 hrs +'}[state.rt]||state.rt);
+  if(state.gems) a.push('Hidden gems');
+  if(state.safe) a.push('Family-safe');
+  if(state.company!=='all') a.push('with '+state.company);
+  if(state.moods.size) a.push([...state.moods].join(', '));
+  if(state.savedOnly) a.push('Saved only');
+  return a;
+}
+function setPillRow(id, attr, val){
+  const r=document.getElementById(id); if(!r) return;
+  r.querySelectorAll('.pill').forEach(p=>p.classList.toggle('on', p.dataset[attr]===val));
+}
+/* multi-select rows: a pill is on when its value is in the set ("all" when the set is empty) */
+function syncRow(id, attr, set){
+  const r=document.getElementById(id); if(!r) return;
+  r.querySelectorAll('.pill').forEach(p=>{
+    const v=p.dataset[attr];
+    p.classList.toggle('on', v==='all' ? set.size===0 : set.has(v));
+  });
+}
+function clearAllFilters(){
+  state.cat.clear(); state.moods.clear(); state.type.clear(); state.era='all';
+  state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott.clear();
+  state.coll='all'; state.fr='all'; state.sort='new'; state.rt='all'; state.gems=false; state.safe=false;
+  state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
+  const q=document.getElementById('q'); if(q) q.value='';
+  const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
+  setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
+  setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
+  setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
+  setPillRow('ottRow','ott','all'); setPillRow('collRow','coll','all');
+  setPillRow('frRow','fr','all'); setPillRow('sortRow','sort','new');
+  setPillRow('compRow','comp','all'); setPillRow('rtRow','rt','all');
+  document.querySelectorAll('#qualRow .pill').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
+  render();
+}
+
+/* ---- render ---- */
+const grid=document.getElementById('grid');
+const resCount=document.getElementById('resCount');
+const resTitle=document.getElementById('resTitle');
+
+function render(){
+  const out=DATA.filter(d=>{
+    if(d.src==='youtube') return false;            // YouTube is a knowledge source only, never in the feed
+    if(state.cat.size && ![...state.cat].some(c=>d.cat===c || (d.cats||[]).includes(c))) return false;
+    if(state.type.size && !state.type.has(d.type)) return false;
+    if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
+    if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
+    if(state.savedOnly && !watchlist.has(d.t)) return false;
+    if(state.src!=='youtube' && state.rel!=='all'){
+      if(d.src==='youtube') return false;              // videos aren't movie releases
+      const ym=(d.date||'').slice(0,7);
+      if(state.rel==='latest'){ if(!(ym===CUR_YM || ym===PREV_YM || d.status==='upcoming')) return false; }
+      else if(state.rel==='month'){ if(ym!==CUR_YM) return false; }
+      else if(state.rel==='lastmonth'){ if(ym!==PREV_YM) return false; }
+      else if(state.rel==='year'){ if(d.status==='upcoming' || !(Number(d.y) >= CUR_YEAR)) return false; }
+      else if(state.rel==='upcoming'){ if(d.status!=='upcoming') return false; }
+    }
+    if(state.dub && !(d.a||[]).some(x=>/hindi \(dub\)/i.test(x))) return false;
+    if(state.src==='youtube' && d.src!=='youtube') return false;
+    if(state.src==='catalogue' && d.src==='youtube') return false;
+    if(state.src==='wikidata' && d.src!=='wikidata') return false;
+    if(state.src==='tmdb' && d.src!=='tmdb') return false;
+    if(state.src==='jikan' && d.src!=='jikan') return false;
+    if(state.ott.size && ![...state.ott].some(o=>(d.o||[]).includes(o))) return false;
+    if(state.coll!=='all'){
+      const co=COLLECTIONS.find(c=>c.k===state.coll);
+      if(co && co.g){ const gl=(d.g||[]).join(' ').toLowerCase(); if(!co.g.some(k=>gl.includes(k))) return false; }
+    }
+    if(state.fr!=='all' && d.franchise!==state.fr) return false;
+    if(state.gq && !(d.g||[]).join(' ').toLowerCase().includes(state.gq.toLowerCase())) return false;
+    if(state.rt!=='all'){ const r=Number(d.rt||0); if(!r) return false;
+      if(state.rt==='u90' && !(r<=90)) return false; if(state.rt==='u120' && !(r<=120)) return false; if(state.rt==='p120' && !(r>120)) return false; }
+    if(state.gems && !((Number(d.rtg||0)>=7) && (Number(d.vot||0)>0) && (Number(d.vot||0)<5000))) return false;
+    if(state.safe && !(d.cert && FAMILY_CERTS.indexOf(d.cert)>=0)) return false;
+    if(state.company!=='all'){
+      const gm=(d.g||[]).join(' ').toLowerCase(), mm=(d.m||[]).join(' ').toLowerCase();
+      const map={solo:['thriller','mystery','emotional','drama'],family:['family','feel-good'],date:['romantic','romance','feel-good'],friends:['comedy','action'],kids:['family','animation','animation']};
+      if(!(map[state.company]||[]).some(k=>gm.includes(k)||mm.includes(k))) return false;
+    }
+    if(state.hideWatched && watched.has(d.t)) return false;
+    if(state.occasion!=='all'){
+      const oc=OCCASIONS.find(o=>o.k===state.occasion);
+      if(oc){
+        const list=(d.occ && d.occ.length) ? d.occ : deriveOcc(d);
+        if(!list.includes(oc.label)) return false;
+      }
+    }
+    if(state.moods.size && ![...state.moods].every(m=>d.m.includes(m))) return false;
+    if(state.q && !d.t.toLowerCase().includes(state.q)) return false;
+    return true;
+  });
+
+  const byPop = state.sort==='pop' || state.coll==='popular';
+  out.sort((a,b)=>{
+    const ad=String(a.date||''), bd=String(b.date||'');
+    const au=a.status==='upcoming', bu=b.status==='upcoming';
+    if(state.fr!=='all') return (ad||'9999').localeCompare(bd||'9999');   // franchise = release order
+    if(state.rel==='upcoming') return (ad||'9999').localeCompare(bd||'9999');
+    if(byPop){ const pa=a.pop||0, pb=b.pop||0; if(pb!==pa) return pb-pa; return bd.localeCompare(ad); }
+    if(au!==bu) return au ? 1 : -1;                  // released first, upcoming last
+    if(au) return (ad||'9999').localeCompare(bd||'9999');   // soonest first
+    return bd.localeCompare(ad);                      // newest first
+  });
+
+  let label = state.cat.size ? [...state.cat].map(c=>CATS[c]?CATS[c].label:c).join(' + ') : 'All titles';
+  if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat.size ? ' · '+label : ' releases');
+  if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) label = (state.coll==='popular' ? 'Most Popular' : 'Top '+co.label); }
+  if(state.fr!=='all') label = state.fr + ' — in sequence';
+  if(state.gq) label = 'More like '+state.gq;
+  if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
+  resTitle.textContent = label;
+  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q]);
+  if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
+  const shown = out.slice(0, shownLimit);
+  resCount.textContent = (shown.length<out.length ? shown.length+' of '+out.length : out.length)+' title'+(out.length===1?'':'s');
+  syncUrl();
+  updateSavedBtn();
+  updateFilterCount();
+
+  if(!out.length){
+    const act=activeFilters();
+    const why = act.length
+      ? 'Active filters: <strong>'+act.join(' · ')+'</strong>. Inhe hata ke dekhiye — search saare titles par chalta hai, sirf active category par nahi.'
+      : 'Is search ke liye kuch nahi mila. Spelling check kijiye ya doosra naam try kijiye.';
+    grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>'+why
+      + (act.length ? '<br><button class="hbtn" id="clearAllBtn">Saare filters clear karein</button>' : '')+'</div>';
+    const ca=document.getElementById('clearAllBtn'); if(ca) ca.onclick=clearAllFilters;
+    return;
+  }
+
+  grid.innerHTML = shown.map((d,i)=>{
+    const c=CATS[d.cat];
+    const isUp = d.status==='upcoming';
+    const isYT = d.src==='youtube';
+    const grad='linear-gradient(150deg,'+c.color+' 0%, color-mix(in srgb,'+c.color+' 45%, #120c07) 100%)';
+    const audio = d.a.map(x=>'<span class="tag audio">'+x+'</span>').join('');
+    const moods = d.m.slice(0,3).map(x=>'<span class="tag mood">'+x+'</span>').join('');
+    return '<article class="card" data-title="'+esc(d.t)+'" style="animation-delay:'+(Math.min(i,12)*35)+'ms">'
+      + '<div class="poster" style="background:'+grad+'">'
+        + (d.poster ? '<img class="poster-img" src="'+d.poster+'" alt="" loading="lazy" onerror="this.remove()">' : '')
+        + '<span class="type-badge">'+d.type+'</span>'
+        + '<span class="lang-badge">'+c.label.split(' · ')[0]+'</span>'
+        + '<span class="mono">'+initials(d.t)+'</span>'
+        + (isYT ? '<span class="yt-badge">YouTube</span>' : (isUp ? '<span class="upcoming-badge">Upcoming</span>' : (Number(d.y) < 2000 ? '<span class="classic-badge">Classic</span>' : '')))
+        + '<button class="save-btn'+(watchlist.has(d.t)?' on':'')+'" data-title="'+d.t.replace(/"/g,'&quot;')+'" aria-label="Save to watchlist">'+(watchlist.has(d.t)?'♥':'♡')+'</button>'
+      + '</div>'
+      + '<div class="cardbody">'
+        + '<h4>'+d.t+'</h4>'
+        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.irt?' · IMDb '+d.irt:(d.rtg?' · \u2605'+d.rtg:''))+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
+        + (d.ov? '<div class="sum">'+d.ov+'</div>':'')
+        + '<div class="tags">'+moods+'</div>'
+        + '<div class="tags">'+audio+'</div>'
+        + (d.trailer
+            ? '<a class="watch yt" href="'+d.trailer+'" target="_blank" rel="noopener">Watch on YouTube</a>'
+            : (isUp
+              ? '<div class="watch soon">Releasing '+(d.date?fmtDate(d.date):'soon')+'</div>'
+              : ((d.o && d.o.length)
+                ? '<div class="watch avail">Available on '+d.o.join(' · ')+'</div>'
+                : '<div class="watch none">OTT info not listed</div>')))
+        + '<div class="cardacts">'
+          + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>':'')
+          + '<button class="mini'+(watched.has(d.t)?' on':'')+'" data-seen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
+          + '<button class="mini" data-more="'+esc(d.t)+'">More like this</button>'
+        + '</div>'
+      + '</div>'
+    + '</article>';
+  }).join('') + (out.length > shownLimit
+      ? '<div class="more-wrap"><button class="hbtn" id="moreBtn">Load more ('+(out.length-shownLimit)+' more)</button></div>'
+      : '');
+}
+
+let DATA = DEMO.slice();
+
+function boot(){
+  const st=document.getElementById('s-total'); if(st) st.textContent = DATA.length;
+  const sc=document.getElementById('s-classic'); if(sc) sc.textContent = DATA.filter(d => Number(d.y) < 2000).length;
+  render();
+  renderVibe();
+}
+
+function normKey(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]/g,''); }
+function mergeSets(list){
+  const idx = new Map();
+  DATA.forEach((d,i)=> idx.set(normKey(d.t), i));
+  (list||[]).forEach(c => {
+    if(!c || !c.t) return;
+    const k = normKey(c.t);
+    if(idx.has(k)){
+      const cur = DATA[idx.get(k)];
+      if(!cur.poster && c.poster) cur.poster = c.poster;
+      if((!cur.g || !cur.g.length) && c.g && c.g.length) cur.g = c.g;
+      if((!cur.m || !cur.m.length) && c.m && c.m.length) cur.m = c.m;
+      if((!cur.o || !cur.o.length) && c.o && c.o.length) cur.o = c.o;
+      return;
+    }
+    idx.set(k, DATA.length); DATA.push(c);
+  });
+}
+
+/* data/movies.json  = curated catalog (from the Google Sheet)
+   data/catalog.json = auto-collected catalog (Wikidata, refreshed daily by a GitHub Action)
+   data/tmdb.json    = TMDB discover (trending / popular / per-language)
+   data/jikan.json   = anime from MyAnimeList
+   data/youtube.json = videos from the YouTube channels
+   All optional — the embedded demo set is the fallback. */
+Promise.all([
+  fetch('data/movies.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/catalog.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/tmdb.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/jikan.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/youtube.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, yt]) => {
+  mergeSets(curated);
+  mergeSets(auto);
+  mergeSets(tmdbRows);
+  mergeSets(jikanRows);
+  mergeSets(yt);
+  boot();
+}).catch(boot);
