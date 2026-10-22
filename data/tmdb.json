@@ -60,65 +60,6 @@
   "tmdb": 1108427
  },
  {
-  "t": "The Weight",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Thriller",
-   "Adventure",
-   "History"
-  ],
-  "m": [
-   "Thriller",
-   "Action",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/8i5iZV50CoEtmDCFM7RSxCkpE8h.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-09-16",
-  "pop": 55,
-  "rtg": 6.8,
-  "vot": 55,
-  "ov": "When Samuel is torn from his daughter and sent to a brutal prison, Warden Clancy offers him a high-stakes proposition: smuggle gold out of a remote mine with a dangerous crew of prisoners and he’ll win his freedom.",
-  "tmdb": 1433583
- },
- {
-  "t": "Hope",
-  "y": 2026,
-  "cat": "korean-dubbed",
-  "type": "Movie",
-  "g": [
-   "Science Fiction",
-   "Mystery",
-   "Action"
-  ],
-  "m": [
-   "Action",
-   "Mystery"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-07-15",
-  "pop": 296,
-  "rtg": 6.9,
-  "vot": 296,
-  "ov": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-  "tmdb": 1058424
- },
- {
   "t": "Street Fighter",
   "y": 2026,
   "cat": "english-dubbed",
@@ -139,9 +80,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-10-13",
-  "pop": 146,
+  "pop": 145,
   "rtg": 6.3,
-  "vot": 146,
+  "vot": 145,
   "ov": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
   "tmdb": 1153576
  },
@@ -174,6 +115,65 @@
   "tmdb": 1198654
  },
  {
+  "t": "Hope",
+  "y": 2026,
+  "cat": "korean-dubbed",
+  "type": "Movie",
+  "g": [
+   "Science Fiction",
+   "Mystery",
+   "Action"
+  ],
+  "m": [
+   "Action",
+   "Mystery"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Korean"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-07-15",
+  "pop": 296,
+  "rtg": 6.9,
+  "vot": 296,
+  "ov": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+  "tmdb": 1058424
+ },
+ {
+  "t": "The Weight",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Adventure",
+   "History"
+  ],
+  "m": [
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/8i5iZV50CoEtmDCFM7RSxCkpE8h.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-09-16",
+  "pop": 55,
+  "rtg": 6.8,
+  "vot": 55,
+  "ov": "When Samuel is torn from his daughter and sent to a brutal prison, Warden Clancy offers him a high-stakes proposition: smuggle gold out of a remote mine with a dangerous crew of prisoners and he’ll win his freedom.",
+  "tmdb": 1433583
+ },
+ {
   "t": "By Any Means",
   "y": 2026,
   "cat": "english-dubbed",
@@ -196,9 +196,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-09-02",
-  "pop": 56,
+  "pop": 57,
   "rtg": 6.6,
-  "vot": 56,
+  "vot": 57,
   "ov": "In 1960s Mississippi, a young Black FBI agent is forced to partner with a notorious mafia hitman to investigate a wave of brutal civil rights murders.",
   "tmdb": 1380417
  },
@@ -224,37 +224,11 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-10-16",
-  "pop": 133,
+  "pop": 134,
   "rtg": 7.0,
-  "vot": 133,
+  "vot": 134,
   "ov": "When a legendary thief sets his sights on the Mona Lisa, he recruits two young strangers to help him before revealing they are long-lost siblings… and oh yes, by the way, he is their father. Thrown into a chaotic reunion they never asked for, this new family must learn to work together — and try not to kill each other — if they want any chance at pulling off the heist of the century.",
   "tmdb": 1561726
- },
- {
-  "t": "Whalefall",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Thriller"
-  ],
-  "m": [
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-14",
-  "pop": 83,
-  "rtg": 6.5,
-  "vot": 83,
-  "ov": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
-  "tmdb": 1255833
  },
  {
   "t": "Wildwood",
@@ -286,6 +260,88 @@
   "tmdb": 791523
  },
  {
+  "t": "Spider-Man: Brand New Day",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Science Fiction",
+   "Action",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-07-29",
+  "pop": 5938,
+  "rtg": 8.5,
+  "vot": 5938,
+  "ov": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+  "tmdb": 969681
+ },
+ {
+  "t": "Whalefall",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-14",
+  "pop": 84,
+  "rtg": 6.5,
+  "vot": 84,
+  "ov": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
+  "tmdb": 1255833
+ },
+ {
+  "t": "Obsession",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Horror",
+   "Thriller"
+  ],
+  "m": [
+   "Horror",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-05-13",
+  "pop": 6257,
+  "rtg": 8.2,
+  "vot": 6257,
+  "ov": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+  "tmdb": 1339713
+ },
+ {
   "t": "Dune: Part Three",
   "y": 2026,
   "cat": "english-dubbed",
@@ -313,6 +369,60 @@
   "tmdb": 1170608
  },
  {
+  "t": "You Can See Everything",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Documentary"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-16",
+  "pop": 27,
+  "rtg": 8.9,
+  "vot": 27,
+  "ov": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
+  "tmdb": 1765072
+ },
+ {
+  "t": "The Odyssey",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-07-15",
+  "pop": 4213,
+  "rtg": 8.0,
+  "vot": 4213,
+  "ov": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+  "tmdb": 1368337
+ },
+ {
   "t": "Tenzing",
   "y": 2026,
   "cat": "english-dubbed",
@@ -338,142 +448,6 @@
   "vot": 134,
   "ov": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
   "tmdb": 1288069
- },
- {
-  "t": "Other Mommy",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Horror"
-  ],
-  "m": [
-   "Horror"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-07",
-  "pop": 146,
-  "rtg": 5.9,
-  "vot": 146,
-  "ov": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
-  "tmdb": 1400837
- },
- {
-  "t": "Spider-Man: Brand New Day",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Science Fiction",
-   "Action",
-   "Adventure"
-  ],
-  "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-07-29",
-  "pop": 5934,
-  "rtg": 8.5,
-  "vot": 5934,
-  "ov": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-  "tmdb": 969681
- },
- {
-  "t": "The Odyssey",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Adventure",
-   "Action",
-   "Fantasy"
-  ],
-  "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-07-15",
-  "pop": 4211,
-  "rtg": 8.0,
-  "vot": 4211,
-  "ov": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-  "tmdb": 1368337
- },
- {
-  "t": "Obsession",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Horror",
-   "Thriller"
-  ],
-  "m": [
-   "Horror",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-05-13",
-  "pop": 6255,
-  "rtg": 8.2,
-  "vot": 6255,
-  "ov": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-  "tmdb": 1339713
- },
- {
-  "t": "You Can See Everything",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Documentary"
-  ],
-  "m": [
-   "Family"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-16",
-  "pop": 27,
-  "rtg": 9.0,
-  "vot": 27,
-  "ov": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
-  "tmdb": 1765072
  },
  {
   "t": "Avengers: Doomsday",
@@ -504,6 +478,35 @@
   "tmdb": 1003596
  },
  {
+  "t": "Resident Evil",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Horror",
+   "Science Fiction",
+   "Adventure"
+  ],
+  "m": [
+   "Horror",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-09-16",
+  "pop": 1023,
+  "rtg": 7.3,
+  "vot": 1023,
+  "ov": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+  "tmdb": 1423191
+ },
+ {
   "t": "Digger",
   "y": 2026,
   "cat": "english-dubbed",
@@ -532,14 +535,14 @@
   "tmdb": 1248832
  },
  {
-  "t": "Resident Evil",
+  "t": "Colony",
   "y": 2026,
-  "cat": "english-dubbed",
+  "cat": "korean-dubbed",
   "type": "Movie",
   "g": [
    "Horror",
-   "Science Fiction",
-   "Adventure"
+   "Action",
+   "Science Fiction"
   ],
   "m": [
    "Horror",
@@ -547,18 +550,18 @@
   ],
   "a": [
    "Hindi (dub)",
-   "English"
+   "Korean"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/enz3WLx5QU1FUyhXZld04QWIc6N.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-09-16",
-  "pop": 1022,
-  "rtg": 7.3,
-  "vot": 1022,
-  "ov": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-  "tmdb": 1423191
+  "date": "2026-05-21",
+  "pop": 1197,
+  "rtg": 8.1,
+  "vot": 1197,
+  "ov": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing authorities to seal the facility. Trapped inside with no escape, Se-jeong along with a small group of survivors must fight to stay alive while the infected undergo horrific transformations.",
+  "tmdb": 1375646
  },
  {
   "t": "Verity",
@@ -734,35 +737,6 @@
   "tmdb": 1148365
  },
  {
-  "t": "Colony",
-  "y": 2026,
-  "cat": "korean-dubbed",
-  "type": "Movie",
-  "g": [
-   "Horror",
-   "Action",
-   "Science Fiction"
-  ],
-  "m": [
-   "Horror",
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/enz3WLx5QU1FUyhXZld04QWIc6N.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-05-21",
-  "pop": 1197,
-  "rtg": 8.1,
-  "vot": 1197,
-  "ov": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing authorities to seal the facility. Trapped inside with no escape, Se-jeong along with a small group of survivors must fight to stay alive while the infected undergo horrific transformations.",
-  "tmdb": 1375646
- },
- {
   "t": "Tiny Fugitives",
   "y": 2026,
   "cat": "english-dubbed",
@@ -929,6 +903,32 @@
   "vot": 4,
   "ov": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
   "tmdb": 1195803
+ },
+ {
+  "t": "Other Mommy",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Horror"
+  ],
+  "m": [
+   "Horror"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-07",
+  "pop": 146,
+  "rtg": 5.9,
+  "vot": 146,
+  "ov": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
+  "tmdb": 1400837
  },
  {
   "t": "The Old Dog",
@@ -1132,34 +1132,6 @@
   "tmdb": 1284186
  },
  {
-  "t": "Therapy Done Right",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Comedy",
-   "Drama"
-  ],
-  "m": [
-   "Comedy",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/2gJiHJYhPXQy4ovDD5ZvSjwYfMZ.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-08",
-  "pop": 51,
-  "rtg": 7.7,
-  "vot": 51,
-  "ov": "A psychoanalyst who's lost faith in traditional therapy crosses every boundary to help a blocked novelist in this cutting Argentine dark comedy.",
-  "tmdb": 1487317
- },
- {
   "t": "The Storm",
   "y": 2026,
   "cat": "english-dubbed",
@@ -1216,12 +1188,68 @@
   "tmdb": 1234139
  },
  {
-  "t": "The Hunger Games: Sunrise on the Reaping",
+  "t": "Clean Hands",
   "y": 2026,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
-   "Science Fiction",
+   "Crime",
+   "Drama"
+  ],
+  "m": [
+   "Thriller",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/szIEtkFLOMsPX6AVQSfzalNEEDd.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-16",
+  "pop": 7,
+  "rtg": 6.6,
+  "vot": 7,
+  "ov": "Based on a true story, a veteran narcotics officer turned recovery advocate and his daughter, who struggles with addiction, confront the American drug crisis from opposing sides of the law while navigating their complicated family bond.",
+  "tmdb": 1452110
+ },
+ {
+  "t": "Therapy Done Right",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [
+   "Comedy",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/2gJiHJYhPXQy4ovDD5ZvSjwYfMZ.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-08",
+  "pop": 51,
+  "rtg": 7.7,
+  "vot": 51,
+  "ov": "A psychoanalyst who's lost faith in traditional therapy crosses every boundary to help a blocked novelist in this cutting Argentine dark comedy.",
+  "tmdb": 1487317
+ },
+ {
+  "t": "Ramayana: Rise of a Legend",
+  "y": 2026,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Fantasy",
    "Action",
    "Adventure"
   ],
@@ -1229,19 +1257,18 @@
    "Action"
   ],
   "a": [
-   "Hindi (dub)",
-   "English"
+   "Hindi"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/hX94xNPYwazKOVGGqL1GiwMSNuY.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-11-18",
+  "date": "2026-11-05",
   "pop": 0,
   "rtg": null,
   "vot": 0,
-  "ov": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-  "tmdb": 1300968
+  "ov": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
+  "tmdb": 656908
  },
  {
   "t": "Insidious: Out of the Further",
@@ -1265,39 +1292,11 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-08-19",
-  "pop": 864,
+  "pop": 866,
   "rtg": 7.7,
-  "vot": 864,
+  "vot": 866,
   "ov": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
   "tmdb": 1291595
- },
- {
-  "t": "Don't Move",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Horror",
-   "Thriller"
-  ],
-  "m": [
-   "Horror",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/uh0ZSdM8iOQgHwnUlhhanP8Dkl6.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-09-11",
-  "pop": 28,
-  "rtg": 5.3,
-  "vot": 28,
-  "ov": "A church group's annual retreat turns deadly when they wander into the wrong part of the Ozark wilderness, and something starts picking them off one by one.  Suspicion falls on Ricky, the troublemaker of the group. But the real threat is far worse.  Deep in the forest, wrapped in a labyrinth of webs, the group is pursued by a terrifying prehistoric arachnid that hunts by vibration. When every step could be their last",
-  "tmdb": 1375161
  },
  {
   "t": "The Apothecary Diaries",
@@ -2761,9 +2760,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-03-15",
-  "pop": 8418,
+  "pop": 8425,
   "rtg": 8.6,
-  "vot": 8418,
+  "vot": 8425,
   "ov": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
   "tmdb": 687163
  },
@@ -2787,39 +2786,11 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-09-01",
-  "pop": 609,
+  "pop": 612,
   "rtg": 7.3,
-  "vot": 609,
+  "vot": 612,
   "ov": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
   "tmdb": 1101412
- },
- {
-  "t": "The Breadwinner",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Comedy",
-   "Family"
-  ],
-  "m": [
-   "Comedy",
-   "Family"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/4apG9Xk6HQvV48JKEjSUeiebju7.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-05-29",
-  "pop": 122,
-  "rtg": 7.0,
-  "vot": 122,
-  "ov": "After his wife Katie lands a once-in-a-lifetime deal on Shark Tank that takes her on a prolonged business trip - lifelong breadwinner Nate Wilcox now has to fend for his family as a first-time stay-at-home dad.",
-  "tmdb": 1440050
  },
  {
   "t": "The Fix",
@@ -2902,6 +2873,34 @@
   "vot": 45,
   "ov": "A charming, witty, and deeply relatable story of love and sisterhood.",
   "tmdb": 1503762
+ },
+ {
+  "t": "Don't Move",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Horror",
+   "Thriller"
+  ],
+  "m": [
+   "Horror",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/uh0ZSdM8iOQgHwnUlhhanP8Dkl6.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-09-11",
+  "pop": 28,
+  "rtg": 5.3,
+  "vot": 28,
+  "ov": "A church group's annual retreat turns deadly when they wander into the wrong part of the Ozark wilderness, and something starts picking them off one by one.  Suspicion falls on Ricky, the troublemaker of the group. But the real threat is far worse.  Deep in the forest, wrapped in a labyrinth of webs, the group is pursued by a terrifying prehistoric arachnid that hunts by vibration. When every step could be their last",
+  "tmdb": 1375161
  },
  {
   "t": "The Mongoose",
@@ -5074,33 +5073,6 @@
   "tmdb": 891621
  },
  {
-  "t": "Ramayana: Rise of a Legend",
-  "y": 2026,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Fantasy",
-   "Action",
-   "Adventure"
-  ],
-  "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/hX94xNPYwazKOVGGqL1GiwMSNuY.jpg",
-  "src": "tmdb",
-  "status": "upcoming",
-  "date": "2026-11-05",
-  "pop": 0,
-  "rtg": null,
-  "vot": 0,
-  "ov": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
-  "tmdb": 656908
- },
- {
   "t": "Ghost Soldier",
   "y": 2026,
   "cat": "english-dubbed",
@@ -5296,6 +5268,34 @@
   "tmdb": 1440539
  },
  {
+  "t": "Mookuthi Amman 2",
+  "y": 2026,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/dNNzsstJeQxnESyH0hZcLGblLMz.jpg",
+  "src": "tmdb",
+  "status": "upcoming",
+  "date": "2026-11-06",
+  "pop": 0,
+  "rtg": null,
+  "vot": 0,
+  "ov": "A queen sacrifices herself to protect her son, the prince, from invading enemies.Mookuthi Amman returns to protect the child and confronts a mysterious woman who embodies a new and dangerous evil.",
+  "tmdb": 1327835
+ },
+ {
   "t": "Scene",
   "y": 2026,
   "cat": "south-dubbed",
@@ -5326,16 +5326,14 @@
   "tmdb": 1402181
  },
  {
-  "t": "Mookuthi Amman 2",
+  "t": "Singgaramm",
   "y": 2026,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Fantasy",
    "Drama"
   ],
   "m": [
-   "Action",
    "Emotional"
   ],
   "a": [
@@ -5343,15 +5341,15 @@
    "Tamil"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/dNNzsstJeQxnESyH0hZcLGblLMz.jpg",
+  "poster": "",
   "src": "tmdb",
   "status": "upcoming",
-  "date": "2026-11-06",
+  "date": "2026-10-30",
   "pop": 0,
   "rtg": null,
   "vot": 0,
-  "ov": "A queen sacrifices herself to protect her son, the prince, from invading enemies.Mookuthi Amman returns to protect the child and confronts a mysterious woman who embodies a new and dangerous evil.",
-  "tmdb": 1327835
+  "ov": "",
+  "tmdb": 1789037
  },
  {
   "t": "KillR",
@@ -5383,32 +5381,6 @@
   "tmdb": 1688459
  },
  {
-  "t": "Singgaramm",
-  "y": 2026,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Tamil"
-  ],
-  "o": [],
-  "poster": "",
-  "src": "tmdb",
-  "status": "upcoming",
-  "date": "2026-10-30",
-  "pop": 0,
-  "rtg": null,
-  "vot": 0,
-  "ov": "",
-  "tmdb": 1789037
- },
- {
   "t": "Moon Walk",
   "y": 2026,
   "cat": "south-dubbed",
@@ -5435,6 +5407,31 @@
   "vot": 0,
   "ov": "Moonwalk is a family comedy entertainer starring Prabhudeva, Yogi Babu, Aju Varghese, and Arjun Ashokan. Featuring music by A. R. Rahman, the film marks the high-profile reunion of Rahman and Prabhudeva after 30 years. Moonwalk also serves as Rahman’s acting debut. Designed as a wholesome theatrical experience, the film combines high-energy dance, music, and humor for families, children and audiences of all ages.",
   "tmdb": 1306500
+ },
+ {
+  "t": "Lakadbaggha 2: The Monkey Business",
+  "y": 2026,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/rpI1fMxh67IUgnE3T3vGNTqbbPJ.jpg",
+  "src": "tmdb",
+  "status": "upcoming",
+  "date": "2026-11-06",
+  "pop": 0,
+  "rtg": null,
+  "vot": 0,
+  "ov": "Sequel to Lakadbaggha (2023). Plot TBA.",
+  "tmdb": 1495662
  },
  {
   "t": "Bhogi",
@@ -5494,86 +5491,60 @@
   "tmdb": 1680033
  },
  {
-  "t": "Manduka",
+  "t": "Enemy Of The Smuggler",
   "y": 2026,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Mystery",
    "Crime",
+   "Action",
    "Thriller"
   ],
   "m": [
-   "Mystery",
-   "Thriller"
+   "Thriller",
+   "Action"
   ],
   "a": [
    "Hindi (dub)",
-   "Kannada"
+   "Tamil"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/yrPf3xKqWYv8GjIwsQZI8nyDYaY.jpg",
+  "poster": "",
   "src": "tmdb",
   "status": "upcoming",
   "date": "2026-10-30",
   "pop": 0,
   "rtg": null,
   "vot": 0,
-  "ov": "A girl suffering from schizophrenia accidentally meets four criminals. Meanwhile in an hide and seek with Police and the criminals lies the mystery.",
-  "tmdb": 1187038
+  "ov": "",
+  "tmdb": 1800255
  },
  {
-  "t": "Lakadbaggha 2: The Monkey Business",
+  "t": "Sadhak Bamakhyapa",
   "y": 2026,
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Action"
+   "History",
+   "Drama"
   ],
   "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/rpI1fMxh67IUgnE3T3vGNTqbbPJ.jpg",
-  "src": "tmdb",
-  "status": "upcoming",
-  "date": "2026-11-06",
-  "pop": 0,
-  "rtg": null,
-  "vot": 0,
-  "ov": "Sequel to Lakadbaggha (2023). Plot TBA.",
-  "tmdb": 1495662
- },
- {
-  "t": "Begni Ronger Alo",
-  "y": 2026,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Family"
-  ],
-  "m": [
-   "Emotional",
-   "Family"
+   "Emotional"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/yoursvZxaflZ1sa6JnReVutGVKK.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/rDXHAOH8dIilgQ1PWpVfCF0Z1x9.jpg",
   "src": "tmdb",
   "status": "upcoming",
-  "date": "2026-11-13",
+  "date": "2026-11-06",
   "pop": 0,
   "rtg": null,
   "vot": 0,
-  "ov": "Manasi Sinha's third directorial feature.  This is a story of a mother and her daughter, a tale of love, memory, and the delicate bond of identity. This is a story of a relationship bathed in an indescribable light, Begni ronger alo.",
-  "tmdb": 1747153
+  "ov": "Bamakhyapa, an Indian saint living in the 18th century, is a great devotee of Goddess Tara. Though he is against the unconventional orthodox temple practices, he uses his divine powers to help the needy.",
+  "tmdb": 1441306
  },
  {
   "t": "Black Gold",
@@ -5606,31 +5577,61 @@
   "tmdb": 1531050
  },
  {
-  "t": "Sadhak Bamakhyapa",
+  "t": "Begni Ronger Alo",
   "y": 2026,
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "History",
-   "Drama"
+   "Drama",
+   "Family"
   ],
   "m": [
-   "Emotional"
+   "Emotional",
+   "Family"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/rDXHAOH8dIilgQ1PWpVfCF0Z1x9.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/yoursvZxaflZ1sa6JnReVutGVKK.jpg",
   "src": "tmdb",
   "status": "upcoming",
-  "date": "2026-11-06",
+  "date": "2026-11-13",
   "pop": 0,
   "rtg": null,
   "vot": 0,
-  "ov": "Bamakhyapa, an Indian saint living in the 18th century, is a great devotee of Goddess Tara. Though he is against the unconventional orthodox temple practices, he uses his divine powers to help the needy.",
-  "tmdb": 1441306
+  "ov": "Manasi Sinha's third directorial feature.  This is a story of a mother and her daughter, a tale of love, memory, and the delicate bond of identity. This is a story of a relationship bathed in an indescribable light, Begni ronger alo.",
+  "tmdb": 1747153
+ },
+ {
+  "t": "Manduka",
+  "y": 2026,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Mystery",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [
+   "Mystery",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/yrPf3xKqWYv8GjIwsQZI8nyDYaY.jpg",
+  "src": "tmdb",
+  "status": "upcoming",
+  "date": "2026-10-30",
+  "pop": 0,
+  "rtg": null,
+  "vot": 0,
+  "ov": "A girl suffering from schizophrenia accidentally meets four criminals. Meanwhile in an hide and seek with Police and the criminals lies the mystery.",
+  "tmdb": 1187038
  },
  {
   "t": "Damned",
@@ -5658,33 +5659,29 @@
   "tmdb": 1798181
  },
  {
-  "t": "Enemy Of The Smuggler",
+  "t": "Udgam: The Origin of Life",
   "y": 2026,
-  "cat": "south-dubbed",
+  "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Crime",
-   "Action",
-   "Thriller"
+   "Documentary"
   ],
   "m": [
-   "Thriller",
-   "Action"
+   "Family"
   ],
   "a": [
-   "Hindi (dub)",
-   "Tamil"
+   "Hindi"
   ],
   "o": [],
   "poster": "",
   "src": "tmdb",
   "status": "upcoming",
-  "date": "2026-10-30",
+  "date": "2026-10-29",
   "pop": 0,
   "rtg": null,
   "vot": 0,
-  "ov": "",
-  "tmdb": 1800255
+  "ov": "Set in Chamba, the film follows community worker Rena and local farmers preserving indigenous seeds and traditional farming knowledge amid changing agriculture, water scarcity and uncertain rainfall. Their efforts reveal how seed conservation can protect biodiversity and support climate-resilient livelihoods.",
+  "tmdb": 1803293
  },
  {
   "t": "Patakka Guddiyan",
@@ -5715,59 +5712,6 @@
   "vot": 0,
   "ov": "Roohi, a simple girl, is the complete opposite of her twin sister Mahi, who is sharp, daring, and mischievous. As the story progresses, layers of suspense and drama unfold.",
   "tmdb": 1803812
- },
- {
-  "t": "Udgam: The Origin of Life",
-  "y": 2026,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Documentary"
-  ],
-  "m": [
-   "Family"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "",
-  "src": "tmdb",
-  "status": "upcoming",
-  "date": "2026-10-29",
-  "pop": 0,
-  "rtg": null,
-  "vot": 0,
-  "ov": "Set in Chamba, the film follows community worker Rena and local farmers preserving indigenous seeds and traditional farming knowledge amid changing agriculture, water scarcity and uncertain rainfall. Their efforts reveal how seed conservation can protect biodiversity and support climate-resilient livelihoods.",
-  "tmdb": 1803293
- },
- {
-  "t": "Breaking Bad",
-  "y": 2008,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Drama",
-   "Crime"
-  ],
-  "m": [
-   "Emotional",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2008-01-20",
-  "pop": 18899,
-  "rtg": 9.0,
-  "vot": 18899,
-  "ov": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
-  "tmdb": 1396
  },
  {
   "t": "Death in Paradise",
@@ -5828,6 +5772,34 @@
   "tmdb": 83631
  },
  {
+  "t": "Breaking Bad",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Crime"
+  ],
+  "m": [
+   "Emotional",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2008-01-20",
+  "pop": 18899,
+  "rtg": 9.0,
+  "vot": 18899,
+  "ov": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
+  "tmdb": 1396
+ },
+ {
   "t": "Law & Order",
   "y": 1990,
   "cat": "english-dubbed",
@@ -5849,9 +5821,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "1990-09-13",
-  "pop": 736,
+  "pop": 737,
   "rtg": 7.3,
-  "vot": 736,
+  "vot": 737,
   "ov": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York",
   "tmdb": 549
  },
@@ -5877,66 +5849,11 @@
   "src": "tmdb",
   "status": "released",
   "date": "2022-06-23",
-  "pop": 1985,
+  "pop": 1986,
   "rtg": 8.2,
-  "vot": 1985,
+  "vot": 1986,
   "ov": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
   "tmdb": 136315
- },
- {
-  "t": "Ally McBeal",
-  "y": 1997,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Drama",
-   "Comedy"
-  ],
-  "m": [
-   "Emotional",
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/weS8htxS2j0EQ6jorK3WOR1dZpH.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "1997-09-08",
-  "pop": 390,
-  "rtg": 6.5,
-  "vot": 390,
-  "ov": "Ally McBeal is a young lawyer working at the Boston law firm Cage and Fish.  Ally's lives and loves are eccentric, humorous, dramatic with an incredibly overactive imagination that's working overtime!",
-  "tmdb": 1480
- },
- {
-  "t": "Watch What Happens Live with Andy Cohen",
-  "y": 2009,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Talk",
-   "Comedy"
-  ],
-  "m": [
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2009-07-16",
-  "pop": 100,
-  "rtg": 4.9,
-  "vot": 100,
-  "ov": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
-  "tmdb": 22980
  },
  {
   "t": "Come Home Love: Lo and Behold",
@@ -5969,8 +5886,35 @@
   "tmdb": 91759
  },
  {
-  "t": "Nurse Jackie",
+  "t": "Watch What Happens Live with Andy Cohen",
   "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Talk",
+   "Comedy"
+  ],
+  "m": [
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2009-07-16",
+  "pop": 100,
+  "rtg": 4.9,
+  "vot": 100,
+  "ov": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
+  "tmdb": 22980
+ },
+ {
+  "t": "Ally McBeal",
+  "y": 1997,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -5986,44 +5930,39 @@
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/efKrmVB9Jwmh6HxFjED6FyeOUpW.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/weS8htxS2j0EQ6jorK3WOR1dZpH.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2009-06-08",
-  "pop": 266,
-  "rtg": 7.1,
-  "vot": 266,
-  "ov": "Every day is a matter of life and death in a hectic New York City hospital, but for Nurse Jackie that's the easiest part. Between chronic back pain that won't quit, and a personal life on the constant edge of collapse, it's going to take a white lie here, a bent rule there, and a handful of secret strategies to relieve the pain, and stay one step ahead of total disaster.",
-  "tmdb": 18053
+  "date": "1997-09-08",
+  "pop": 390,
+  "rtg": 6.5,
+  "vot": 390,
+  "ov": "Ally McBeal is a young lawyer working at the Boston law firm Cage and Fish.  Ally's lives and loves are eccentric, humorous, dramatic with an incredibly overactive imagination that's working overtime!",
+  "tmdb": 1480
  },
  {
-  "t": "Torchwood",
-  "y": 2006,
+  "t": "The Tonight Show Starring Johnny Carson",
+  "y": 1962,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Sci-Fi & Fantasy",
-   "Action & Adventure",
-   "Drama"
+   "Talk"
   ],
-  "m": [
-   "Action",
-   "Emotional"
-  ],
+  "m": [],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bv7C5r7QyXGsaMxvU40FVY7SvrD.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/uSvET5YUvHNDIeoCpErrbSmasFb.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2006-10-22",
-  "pop": 594,
-  "rtg": 7.3,
-  "vot": 594,
-  "ov": "The exploits of a team of people whose job is to investigate the unusual, the strange and the extraterrestrial.",
-  "tmdb": 424
+  "date": "1962-10-01",
+  "pop": 97,
+  "rtg": 7.6,
+  "vot": 97,
+  "ov": "The Tonight Show Starring Johnny Carson is a talk show hosted by Johnny Carson under The Tonight Show franchise from 1962 to 1992. It originally aired during late-night. For its first ten years, Carson's Tonight Show was based in New York City with occasional trips to Burbank, California; in May 1972, the show moved permanently to Burbank, California. In 2002, The Tonight Show Starring Johnny Carson was ranked #12 on",
+  "tmdb": 2261
  },
  {
   "t": "Law & Order: Special Victims Unit",
@@ -6056,28 +5995,31 @@
   "tmdb": 2734
  },
  {
-  "t": "The Tonight Show Starring Johnny Carson",
-  "y": 1962,
-  "cat": "english-dubbed",
+  "t": "Running Man",
+  "y": 2010,
+  "cat": "korean-dubbed",
   "type": "Series",
   "g": [
-   "Talk"
+   "Comedy",
+   "Reality"
   ],
-  "m": [],
+  "m": [
+   "Comedy"
+  ],
   "a": [
    "Hindi (dub)",
-   "English"
+   "Korean"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/uSvET5YUvHNDIeoCpErrbSmasFb.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "1962-10-01",
-  "pop": 97,
-  "rtg": 7.6,
-  "vot": 97,
-  "ov": "The Tonight Show Starring Johnny Carson is a talk show hosted by Johnny Carson under The Tonight Show franchise from 1962 to 1992. It originally aired during late-night. For its first ten years, Carson's Tonight Show was based in New York City with occasional trips to Burbank, California; in May 1972, the show moved permanently to Burbank, California. In 2002, The Tonight Show Starring Johnny Carson was ranked #12 on",
-  "tmdb": 2261
+  "date": "2010-07-11",
+  "pop": 223,
+  "rtg": 8.2,
+  "vot": 223,
+  "ov": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is co",
+  "tmdb": 33238
  },
  {
   "t": "The Tonight Show Starring Jimmy Fallon",
@@ -6107,59 +6049,28 @@
   "tmdb": 59941
  },
  {
-  "t": "Running Man",
-  "y": 2010,
-  "cat": "korean-dubbed",
-  "type": "Series",
-  "g": [
-   "Comedy",
-   "Reality"
-  ],
-  "m": [
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2010-07-11",
-  "pop": 223,
-  "rtg": 8.2,
-  "vot": 223,
-  "ov": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is co",
-  "tmdb": 33238
- },
- {
-  "t": "Girlfriends",
-  "y": 2000,
+  "t": "Tagesschau",
+  "y": 1952,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Drama",
-   "Comedy"
+   "News"
   ],
-  "m": [
-   "Emotional",
-   "Comedy"
-  ],
+  "m": [],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/buFnsyWEg4pPR7dco5Vbsm6HCIY.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2000-09-11",
-  "pop": 48,
-  "rtg": 7.3,
-  "vot": 48,
-  "ov": "A friend group of black women face life's tests and triumphs together. From dating to divorce, and friends to family to relationships, Joan, Maya, Lynn and Toni support each other despite their differing backgrounds.",
-  "tmdb": 2398
+  "date": "1952-12-26",
+  "pop": 256,
+  "rtg": 6.8,
+  "vot": 256,
+  "ov": "German daily news program, the oldest still existing program on German television.",
+  "tmdb": 94722
  },
  {
   "t": "NCIS",
@@ -6190,6 +6101,36 @@
   "vot": 2597,
   "ov": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
   "tmdb": 4614
+ },
+ {
+  "t": "The Mentalist",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [
+   "Thriller",
+   "Emotional",
+   "Mystery"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2008-09-23",
+  "pop": 4883,
+  "rtg": 8.4,
+  "vot": 4883,
+  "ov": "Patrick Jane, a former celebrity psychic medium, uses his razor sharp skills of observation and expertise at \"reading\" people to solve serious crimes with the California Bureau of Investigation.",
+  "tmdb": 5920
  },
  {
   "t": "The Late Show with Stephen Colbert",
@@ -6301,60 +6242,6 @@
   "vot": 11091,
   "ov": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
   "tmdb": 1416
- },
- {
-  "t": "The Mentalist",
-  "y": 2008,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Crime",
-   "Drama",
-   "Mystery"
-  ],
-  "m": [
-   "Thriller",
-   "Emotional",
-   "Mystery"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2008-09-23",
-  "pop": 4883,
-  "rtg": 8.4,
-  "vot": 4883,
-  "ov": "Patrick Jane, a former celebrity psychic medium, uses his razor sharp skills of observation and expertise at \"reading\" people to solve serious crimes with the California Bureau of Investigation.",
-  "tmdb": 5920
- },
- {
-  "t": "Tagesschau",
-  "y": 1952,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "News"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "1952-12-26",
-  "pop": 256,
-  "rtg": 6.8,
-  "vot": 256,
-  "ov": "German daily news program, the oldest still existing program on German television.",
-  "tmdb": 94722
  },
  {
   "t": "Late Night with Seth Meyers",
@@ -9932,6 +9819,34 @@
   "tmdb": 66465
  },
  {
+  "t": "Kyunki Saas Bhi Kabhi Bahu Thi",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Family",
+   "Soap"
+  ],
+  "m": [
+   "Emotional",
+   "Family"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/rJfoyxt7FOKr7WPB6FPuffarpcn.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2000-07-03",
+  "pop": 12,
+  "rtg": 3.4,
+  "vot": 12,
+  "ov": "A mother-in-law's struggle to put up with her three bahu's. The three bahu's have grown up sons. The bahu's sons start to get involved with having girlfriends and the bahu's try and break their relationships up.",
+  "tmdb": 6060
+ },
+ {
   "t": "Bhabiji Ghar Par Hain",
   "y": 2015,
   "cat": "hindi",
@@ -9961,57 +9876,6 @@
   "tmdb": 65682
  },
  {
-  "t": "Kyunki Saas Bhi Kabhi Bahu Thi",
-  "y": 2000,
-  "cat": "hindi",
-  "type": "Series",
-  "g": [
-   "Drama",
-   "Family",
-   "Soap"
-  ],
-  "m": [
-   "Emotional",
-   "Family"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/rJfoyxt7FOKr7WPB6FPuffarpcn.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2000-07-03",
-  "pop": 12,
-  "rtg": 3.4,
-  "vot": 12,
-  "ov": "A mother-in-law's struggle to put up with her three bahu's. The three bahu's have grown up sons. The bahu's sons start to get involved with having girlfriends and the bahu's try and break their relationships up.",
-  "tmdb": 6060
- },
- {
-  "t": "Indian Idol",
-  "y": 2004,
-  "cat": "hindi",
-  "type": "Series",
-  "g": [
-   "Reality"
-  ],
-  "m": [],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/jCMw8httzGvjTu0NZjiclqUQD6c.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2004-10-28",
-  "pop": 17,
-  "rtg": 5.7,
-  "vot": 17,
-  "ov": "The Indian version of the Pop Idol format.",
-  "tmdb": 13700
- },
- {
   "t": "Kasauti Zindagii Kay",
   "y": 2001,
   "cat": "hindi",
@@ -10035,6 +9899,57 @@
   "vot": 7,
   "ov": "Anurag and Prerna, two star-crossed lovers, are set to get married according to both their fathers' wishes. However, they face challenges in their love life and are separated due to circumstances.",
   "tmdb": 1307
+ },
+ {
+  "t": "Iss Pyaar Ko Kya Naam Doon?",
+  "y": 2011,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Family",
+   "Soap"
+  ],
+  "m": [
+   "Emotional",
+   "Family"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/bAHnfeAz4yF3SpZdVSOVMUEjMSP.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2011-06-06",
+  "pop": 15,
+  "rtg": 7.7,
+  "vot": 15,
+  "ov": "Khushi and Arnav have diametrically opposite ideologies. If Khushi believes in means, Arnav believes only in ends. Khushi's relationships are the most important to her, whereas Arnav believes all people come with a price and can be manipulated for one's benefit.",
+  "tmdb": 39390
+ },
+ {
+  "t": "Indian Idol",
+  "y": 2004,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Reality"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/jCMw8httzGvjTu0NZjiclqUQD6c.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2004-10-28",
+  "pop": 17,
+  "rtg": 5.7,
+  "vot": 17,
+  "ov": "The Indian version of the Pop Idol format.",
+  "tmdb": 13700
  },
  {
   "t": "Anupamaa",
@@ -10084,56 +9999,6 @@
   "vot": 24,
   "ov": "Koffee with Karan is an Indian talk show hosted by filmmaker and television personality Karan Johar and produced by Dharmatic Entertainment, the digital content division of Johar's production company Dharma Productions",
   "tmdb": 14544
- },
- {
-  "t": "Comedy Nights with Kapil",
-  "y": 2013,
-  "cat": "hindi",
-  "type": "Series",
-  "g": [
-   "Comedy"
-  ],
-  "m": [
-   "Comedy"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/9rScFaEadiT3r46LuT9wWOkh3fo.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2013-06-22",
-  "pop": 22,
-  "rtg": 6.8,
-  "vot": 22,
-  "ov": "Comedy Nights with Kapil is a comedy show which provides a distinctive take on the everyday life of a common man as the show explores the story of every household and how our common man Kapil is affected by the simplest issues in life around him.",
-  "tmdb": 60698
- },
- {
-  "t": "K. Street Pali Hill",
-  "y": 2004,
-  "cat": "hindi",
-  "type": "Series",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/zjAMgNuBgiH8s44eSx1Tw1vcHxX.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2004-09-27",
-  "pop": 7,
-  "rtg": 4.4,
-  "vot": 7,
-  "ov": "K. Street Pali Hill is an Indian Thriller soap that aired on STAR Plus. It replaced the highly popular thriller Kaahin Kissii Roz when it concluded in 2004. K. Street Pali Hill was successful for about a year, only to plummet in popularity, owing to many of the actors' replacements. This show pointed many similarities with DD National popular daily soap Shanti",
-  "tmdb": 7895
  },
  {
   "t": "Jodha & Akbar",
@@ -10188,32 +10053,106 @@
   "tmdb": 42316
  },
  {
-  "t": "Iss Pyaar Ko Kya Naam Doon?",
-  "y": 2011,
+  "t": "Comedy Nights with Kapil",
+  "y": 2013,
   "cat": "hindi",
   "type": "Series",
   "g": [
-   "Drama",
-   "Family",
-   "Soap"
+   "Comedy"
   ],
   "m": [
-   "Emotional",
-   "Family"
+   "Comedy"
   ],
   "a": [
    "Hindi"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bAHnfeAz4yF3SpZdVSOVMUEjMSP.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/9rScFaEadiT3r46LuT9wWOkh3fo.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2011-06-06",
-  "pop": 15,
-  "rtg": 7.7,
-  "vot": 15,
-  "ov": "Khushi and Arnav have diametrically opposite ideologies. If Khushi believes in means, Arnav believes only in ends. Khushi's relationships are the most important to her, whereas Arnav believes all people come with a price and can be manipulated for one's benefit.",
-  "tmdb": 39390
+  "date": "2013-06-22",
+  "pop": 22,
+  "rtg": 6.8,
+  "vot": 22,
+  "ov": "Comedy Nights with Kapil is a comedy show which provides a distinctive take on the everyday life of a common man as the show explores the story of every household and how our common man Kapil is affected by the simplest issues in life around him.",
+  "tmdb": 60698
+ },
+ {
+  "t": "K. Street Pali Hill",
+  "y": 2004,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/zjAMgNuBgiH8s44eSx1Tw1vcHxX.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2004-09-27",
+  "pop": 7,
+  "rtg": 4.4,
+  "vot": 7,
+  "ov": "K. Street Pali Hill is an Indian Thriller soap that aired on STAR Plus. It replaced the highly popular thriller Kaahin Kissii Roz when it concluded in 2004. K. Street Pali Hill was successful for about a year, only to plummet in popularity, owing to many of the actors' replacements. This show pointed many similarities with DD National popular daily soap Shanti",
+  "tmdb": 7895
+ },
+ {
+  "t": "Kahiin to Hoga",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Soap"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/7z2eM8uwxawWPAcAEU3iYpHNSuE.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2003-09-08",
+  "pop": 7,
+  "rtg": 3.1,
+  "vot": 7,
+  "ov": "Kahiin to Hoga is an Indian soap opera which aired on STAR Plus between September 2003 and February 2007. The show was created by Ekta Kapoor of Balaji Telefilms. The romantic-drama series was show was one of the famous television program during its airing period which helped Star Plus capitalize the television market in the 2004-2006 era. Kahiin to Hoga suffered huge loss when its lead Rajeev Khandelwal left the sho",
+  "tmdb": 14038
+ },
+ {
+  "t": "The Great Indian Kapil Show",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Talk",
+   "Comedy"
+  ],
+  "m": [
+   "Comedy"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/3KMCmGDlYLlJ8zGOhCs6f3FZcnj.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2024-03-30",
+  "pop": 17,
+  "rtg": 7.1,
+  "vot": 17,
+  "ov": "Comedian Kapil Sharma hosts this laugh-out-loud variety talk show with celebrity guests, hilarious antics and his signature supporting cast.",
+  "tmdb": 247769
  },
  {
   "t": "Qubool Hai",
@@ -10243,59 +10182,32 @@
   "tmdb": 46935
  },
  {
-  "t": "Kahiin to Hoga",
-  "y": 2003,
+  "t": "Ghum Hai Kisikey Pyaar Meiin",
+  "y": 2020,
   "cat": "hindi",
   "type": "Series",
   "g": [
    "Drama",
-   "Soap"
+   "Soap",
+   "Family"
   ],
   "m": [
-   "Emotional"
+   "Emotional",
+   "Family"
   ],
   "a": [
    "Hindi"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/7z2eM8uwxawWPAcAEU3iYpHNSuE.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/u3NVGYCpkAgBArXogLuHPfpSNwG.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2003-09-08",
-  "pop": 7,
-  "rtg": 3.1,
-  "vot": 7,
-  "ov": "Kahiin to Hoga is an Indian soap opera which aired on STAR Plus between September 2003 and February 2007. The show was created by Ekta Kapoor of Balaji Telefilms. The romantic-drama series was show was one of the famous television program during its airing period which helped Star Plus capitalize the television market in the 2004-2006 era. Kahiin to Hoga suffered huge loss when its lead Rajeev Khandelwal left the sho",
-  "tmdb": 14038
- },
- {
-  "t": "Mirzapur",
-  "y": 2018,
-  "cat": "hindi",
-  "type": "Series",
-  "g": [
-   "Crime",
-   "Action & Adventure",
-   "Drama"
-  ],
-  "m": [
-   "Thriller",
-   "Action",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/p0qM8hhlMF5DuxHBzl2EZR6TehX.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2018-11-15",
-  "pop": 194,
-  "rtg": 8.0,
-  "vot": 194,
-  "ov": "The iron-fisted Akhandanand Tripathi is a millionaire carpet exporter and the mafia don of Mirzapur. His son, Munna, is an unworthy, power-hungry heir who will stop at nothing to inherit his father's legacy. An incident at a wedding procession forces him to cross paths with Ramakant Pandit, an upstanding lawyer, and his sons, Guddu and Bablu. It snowballs into a game of ambition, power and greed that threatens the fa",
-  "tmdb": 84105
+  "date": "2020-10-05",
+  "pop": 70,
+  "rtg": 5.7,
+  "vot": 70,
+  "ov": "Sai Joshi, a fearless girl who aspires to become a doctor, marries an IPS officer, Virat Chavan, pretending to be a deal. The story revolves around the life of Sai in orthodox joint family of Virat and how Sai and Virat fall in love.",
+  "tmdb": 111453
  },
  {
   "t": "Pavitra Rishta",
@@ -10346,32 +10258,33 @@
   "tmdb": 85518
  },
  {
-  "t": "Ghum Hai Kisikey Pyaar Meiin",
-  "y": 2020,
+  "t": "Mirzapur",
+  "y": 2018,
   "cat": "hindi",
   "type": "Series",
   "g": [
-   "Drama",
-   "Soap",
-   "Family"
+   "Crime",
+   "Action & Adventure",
+   "Drama"
   ],
   "m": [
-   "Emotional",
-   "Family"
+   "Thriller",
+   "Action",
+   "Emotional"
   ],
   "a": [
    "Hindi"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/u3NVGYCpkAgBArXogLuHPfpSNwG.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/p0qM8hhlMF5DuxHBzl2EZR6TehX.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2020-10-05",
-  "pop": 70,
-  "rtg": 5.7,
-  "vot": 70,
-  "ov": "Sai Joshi, a fearless girl who aspires to become a doctor, marries an IPS officer, Virat Chavan, pretending to be a deal. The story revolves around the life of Sai in orthodox joint family of Virat and how Sai and Virat fall in love.",
-  "tmdb": 111453
+  "date": "2018-11-15",
+  "pop": 194,
+  "rtg": 8.0,
+  "vot": 194,
+  "ov": "The iron-fisted Akhandanand Tripathi is a millionaire carpet exporter and the mafia don of Mirzapur. His son, Munna, is an unworthy, power-hungry heir who will stop at nothing to inherit his father's legacy. An incident at a wedding procession forces him to cross paths with Ramakant Pandit, an upstanding lawyer, and his sons, Guddu and Bablu. It snowballs into a game of ambition, power and greed that threatens the fa",
+  "tmdb": 84105
  },
  {
   "t": "Kaun Banega Crorepati",
@@ -19302,9 +19215,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2025-02-28",
-  "pop": 5,
-  "rtg": 6.9,
-  "vot": 5,
+  "pop": 6,
+  "rtg": 6.1,
+  "vot": 6,
   "ov": "Vinod is ready to build his dream house. But is he ready to face the hurdles in his path?",
   "tmdb": 283760
  },
@@ -21618,6 +21531,33 @@
   "tmdb": 52910
  },
  {
+  "t": "2 Days and 1 Night",
+  "y": 2007,
+  "cat": "korean-dubbed",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Reality"
+  ],
+  "m": [
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Korean"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/qezeCEkIKHQM5iwyVeYBuXmYA2h.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2007-08-05",
+  "pop": 30,
+  "rtg": 6.7,
+  "vot": 30,
+  "ov": "2 Days & 1 Night is a South Korean reality-variety show with the motto \"real wild road variety.\" Its main concept is to recommend various places of interest that viewers can visit in South Korea.",
+  "tmdb": 30801
+ },
+ {
   "t": "Nonstop",
   "y": 2000,
   "cat": "korean-dubbed",
@@ -21646,33 +21586,6 @@
   "tmdb": 18495
  },
  {
-  "t": "2 Days and 1 Night",
-  "y": 2007,
-  "cat": "korean-dubbed",
-  "type": "Series",
-  "g": [
-   "Comedy",
-   "Reality"
-  ],
-  "m": [
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/qezeCEkIKHQM5iwyVeYBuXmYA2h.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2007-08-05",
-  "pop": 30,
-  "rtg": 6.7,
-  "vot": 30,
-  "ov": "2 Days & 1 Night is a South Korean reality-variety show with the motto \"real wild road variety.\" Its main concept is to recommend various places of interest that viewers can visit in South Korea.",
-  "tmdb": 30801
- },
- {
   "t": "Squid Game",
   "y": 2021,
   "cat": "korean-dubbed",
@@ -21696,35 +21609,11 @@
   "src": "tmdb",
   "status": "released",
   "date": "2021-09-17",
-  "pop": 17861,
+  "pop": 17863,
   "rtg": 7.9,
-  "vot": 17861,
+  "vot": 17863,
   "ov": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
   "tmdb": 93405
- },
- {
-  "t": "Mystery Music Show: King of Mask Singer",
-  "y": 2015,
-  "cat": "korean-dubbed",
-  "type": "Series",
-  "g": [
-   "Reality"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/vlnAfmirzYx1TSxXuaPhHjkPPmK.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2015-04-05",
-  "pop": 11,
-  "rtg": 5.6,
-  "vot": 11,
-  "ov": "Competitors are given elaborate masks to wear in order to conceal their identity, thus removing factors such as popularity, career and age that could lead to prejudiced voting. In the first round, a pair of competitors sing the same song, while in the second and third rounds they each sing a solo song. After the First Generation, the winner of the Third Round goes on to challenge the Mask King, and is either eliminat",
-  "tmdb": 66046
  },
  {
   "t": "How Do You Play?",
@@ -21752,6 +21641,30 @@
   "vot": 23,
   "ov": "Yoo Jae-suk reunites the producing team of Infinite Challenge and presents you How Do You Play? The Indefinitely expanding YOONIVERSE, based on Yoo's blood, sweat, and tears, will entertain viewers at home. Let's follow Yoo and his friends' new projects every week.",
   "tmdb": 91121
+ },
+ {
+  "t": "Mystery Music Show: King of Mask Singer",
+  "y": 2015,
+  "cat": "korean-dubbed",
+  "type": "Series",
+  "g": [
+   "Reality"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "Korean"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/vlnAfmirzYx1TSxXuaPhHjkPPmK.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2015-04-05",
+  "pop": 11,
+  "rtg": 5.6,
+  "vot": 11,
+  "ov": "Competitors are given elaborate masks to wear in order to conceal their identity, thus removing factors such as popularity, career and age that could lead to prejudiced voting. In the first round, a pair of competitors sing the same song, while in the second and third rounds they each sing a solo song. After the First Generation, the winner of the Third Round goes on to challenge the Mask King, and is either eliminat",
+  "tmdb": 66046
  },
  {
   "t": "You Quiz on the Block",
@@ -21860,36 +21773,6 @@
   "tmdb": 112888
  },
  {
-  "t": "Take Charge of My Heart",
-  "y": 2026,
-  "cat": "korean-dubbed",
-  "type": "Series",
-  "g": [
-   "Sci-Fi & Fantasy",
-   "Comedy",
-   "Drama"
-  ],
-  "m": [
-   "Action",
-   "Comedy",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/ecRrKGXfflZmDZBD4irdkybClT.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-09",
-  "pop": 39,
-  "rtg": 8.8,
-  "vot": 39,
-  "ov": "A corporate heir with an artificial heart meets a woman who's literally electric. They strike a deal that makes his heart beat — in more ways than one.",
-  "tmdb": 289423
- },
- {
   "t": "We Got Married",
   "y": 2008,
   "cat": "korean-dubbed",
@@ -21936,6 +21819,36 @@
   "vot": 6,
   "ov": "We will get involved in every little detail of the stars’ lives. The managers who work closely with the stars reveal their mundane lives. Once the information is all revealed, the professional meddlers from various different fields are invited to make comments regarding even the smallest details. Lee Yeong Ja, Jun Hyun Moo, Song Eun I, Kim Saeng Min, Yang Se Hyeong and Yoo Byung Jae participate as the life meddlers a",
   "tmdb": 80736
+ },
+ {
+  "t": "Take Charge of My Heart",
+  "y": 2026,
+  "cat": "korean-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi & Fantasy",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Comedy",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Korean"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/ecRrKGXfflZmDZBD4irdkybClT.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-09",
+  "pop": 40,
+  "rtg": 8.8,
+  "vot": 40,
+  "ov": "A corporate heir with an artificial heart meets a woman who's literally electric. They strike a deal that makes his heart beat — in more ways than one.",
+  "tmdb": 289423
  },
  {
   "t": "SNL Korea",
@@ -23692,7 +23605,7 @@
   "tmdb": 67192
  },
  {
-  "t": "Shin Chan",
+  "t": "Crayon Shin-chan",
   "y": 1992,
   "cat": "anime",
   "type": "Series",
@@ -24098,6 +24011,34 @@
   "tmdb": 280110
  },
  {
+  "t": "The Breadwinner",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Family"
+  ],
+  "m": [
+   "Comedy",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/4apG9Xk6HQvV48JKEjSUeiebju7.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-05-29",
+  "pop": 122,
+  "rtg": 7.0,
+  "vot": 122,
+  "ov": "After his wife Katie lands a once-in-a-lifetime deal on Shark Tank that takes her on a prolonged business trip - lifelong breadwinner Nate Wilcox now has to fend for his family as a first-time stay-at-home dad.",
+  "tmdb": 1440050
+ },
+ {
   "t": "The Nightmare Before Christmas",
   "y": 1993,
   "cat": "english-dubbed",
@@ -24239,6 +24180,91 @@
   "vot": 927,
   "ov": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
   "tmdb": 1288445
+ },
+ {
+  "t": "Nurse Jackie",
+  "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy"
+  ],
+  "m": [
+   "Emotional",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/efKrmVB9Jwmh6HxFjED6FyeOUpW.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2009-06-08",
+  "pop": 266,
+  "rtg": 7.1,
+  "vot": 266,
+  "ov": "Every day is a matter of life and death in a hectic New York City hospital, but for Nurse Jackie that's the easiest part. Between chronic back pain that won't quit, and a personal life on the constant edge of collapse, it's going to take a white lie here, a bent rule there, and a handful of secret strategies to relieve the pain, and stay one step ahead of total disaster.",
+  "tmdb": 18053
+ },
+ {
+  "t": "Torchwood",
+  "y": 2006,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi & Fantasy",
+   "Action & Adventure",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/bv7C5r7QyXGsaMxvU40FVY7SvrD.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2006-10-22",
+  "pop": 594,
+  "rtg": 7.3,
+  "vot": 594,
+  "ov": "The exploits of a team of people whose job is to investigate the unusual, the strange and the extraterrestrial.",
+  "tmdb": 424
+ },
+ {
+  "t": "Girlfriends",
+  "y": 2000,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy"
+  ],
+  "m": [
+   "Emotional",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/buFnsyWEg4pPR7dco5Vbsm6HCIY.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2000-09-11",
+  "pop": 48,
+  "rtg": 7.3,
+  "vot": 48,
+  "ov": "A friend group of black women face life's tests and triumphs together. From dating to divorce, and friends to family to relationships, Joan, Maya, Lynn and Toni support each other despite their differing backgrounds.",
+  "tmdb": 2398
  },
  {
   "t": "Late Show with David Letterman",
@@ -29569,6 +29595,62 @@
   "tmdb": 274556
  },
  {
+  "t": "Yalı Çapkını",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Drama"
+  ],
+  "m": [
+   "Family",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/cgf5R2XrfRQGp2sTu3cncbnFxRy.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2022-09-23",
+  "pop": 138,
+  "rtg": 8.4,
+  "vot": 138,
+  "ov": "When Istanbul playboy Ferit Korhan's exasperated grandfather arranges his marriage to a girl from Gaziantep, fate intervenes — Ferit falls for Seyran, the younger sister of his intended bride, upending both families.",
+  "tmdb": 210865
+ },
+ {
+  "t": "The Magnificent Century",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action & Adventure"
+  ],
+  "m": [
+   "Emotional",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/UDvmQWnmIr9U6ZRB1k9ULXBow3.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2011-01-06",
+  "pop": 819,
+  "rtg": 8.1,
+  "vot": 819,
+  "ov": "At the age of 26, when his reign began, Sultan Süleyman sought to build an empire more powerful than Alexander the Great and to render the Ottomans invincible. Throughout his 46-year reign, his fame as the greatest warrior and ruler of his age spreads both to the East and West.  With his companion Pargalı İbrahim, Süleyman achieves great victories, and makes his name known in the Muslim World. Süleyman called İbrahim",
+  "tmdb": 34899
+ },
+ {
   "t": "Sins and Roses",
   "y": 2025,
   "cat": "english-dubbed",
@@ -29623,44 +29705,18 @@
   "tmdb": 104877
  },
  {
-  "t": "The Magnificent Century",
-  "y": 2011,
+  "t": "The Pit",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Drama",
-   "Action & Adventure"
-  ],
-  "m": [
-   "Emotional",
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/UDvmQWnmIr9U6ZRB1k9ULXBow3.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2011-01-06",
-  "pop": 819,
-  "rtg": 8.1,
-  "vot": 819,
-  "ov": "At the age of 26, when his reign began, Sultan Süleyman sought to build an empire more powerful than Alexander the Great and to render the Ottomans invincible. Throughout his 46-year reign, his fame as the greatest warrior and ruler of his age spreads both to the East and West.  With his companion Pargalı İbrahim, Süleyman achieves great victories, and makes his name known in the Muslim World. Süleyman called İbrahim",
-  "tmdb": 34899
- },
- {
-  "t": "Yalı Çapkını",
-  "y": 2022,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Family",
+   "Crime",
+   "Action & Adventure",
    "Drama"
   ],
   "m": [
-   "Family",
+   "Thriller",
+   "Action",
    "Emotional"
   ],
   "a": [
@@ -29668,44 +29724,15 @@
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/cgf5R2XrfRQGp2sTu3cncbnFxRy.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/fBXDSBDw5Zug6E2xTB265LzYVKz.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2022-09-23",
-  "pop": 138,
-  "rtg": 8.4,
-  "vot": 138,
-  "ov": "When Istanbul playboy Ferit Korhan's exasperated grandfather arranges his marriage to a girl from Gaziantep, fate intervenes — Ferit falls for Seyran, the younger sister of his intended bride, upending both families.",
-  "tmdb": 210865
- },
- {
-  "t": "Elif",
-  "y": 2014,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Drama",
-   "Family",
-   "Soap"
-  ],
-  "m": [
-   "Emotional",
-   "Family"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/337YdJG3TUMzpdnbJyP7K9oA72e.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2014-09-15",
-  "pop": 10,
-  "rtg": 5.7,
-  "vot": 10,
-  "ov": "A kind 6-year-old girl is placed under the protection of her mother's best friend, who keeps a well-hidden secret, and is a maid for a wealthy family, in whose mansion she lives.",
-  "tmdb": 49347
+  "date": "2017-10-23",
+  "pop": 95,
+  "rtg": 7.5,
+  "vot": 95,
+  "ov": "When a mafia family named Koçovars are in danger of losing control of their neighborhood, “The Pit,” their youngest son must come back home, a place he could never truly escape.",
+  "tmdb": 74823
  },
  {
   "t": "This Sea Will Overflow",
@@ -29735,6 +29762,36 @@
   "vot": 25,
   "ov": "In a land where people are accustomed to battling fierce waves and constant storms, the story of a woman who stands tall on her feet, with all her emotional strength, resilience and endurance, and a man who is passionate about his \"love\" and who competes with the storms of the Black Sea and struggles with its waves, comes to the screens with an effective script... The ups and downs of the mountains, the sea and the h",
   "tmdb": 302063
+ },
+ {
+  "t": "Eşref Rüya",
+  "y": 2025,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action & Adventure",
+   "Crime"
+  ],
+  "m": [
+   "Emotional",
+   "Action",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/wwwKL2Pq3JZdI52wIYqjAdUF8fx.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2025-03-19",
+  "pop": 43,
+  "rtg": 7.1,
+  "vot": 43,
+  "ov": "A reckless wealthy man named Esref becomes captivated by an unknown love. He meets Nisan, a young musician who makes his heart race.",
+  "tmdb": 283123
  },
  {
   "t": "The Shadow Team",
@@ -29794,6 +29851,62 @@
   "tmdb": 213194
  },
  {
+  "t": "Güldür Güldür Show",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Reality",
+   "Comedy",
+   "Talk"
+  ],
+  "m": [
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/A4PuQEG2XSJxQVks4l3Ox83Dnde.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2013-02-27",
+  "pop": 7,
+  "rtg": 8.1,
+  "vot": 7,
+  "ov": "Güldür Güldür Show, which has won the admiration of everyone with its legendary cast, continues to bring a new approach to many topics from family to love, fame to technology, football to friendship with its unique sense of humour.",
+  "tmdb": 85590
+ },
+ {
+  "t": "تحت الأرض",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action & Adventure"
+  ],
+  "m": [
+   "Emotional",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/bu8ks983hBPEzyAH8gSATW5aPJ7.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-01-28",
+  "pop": 12,
+  "rtg": 8.2,
+  "vot": 12,
+  "ov": "Haydar Ali avenges his family's murder and ends up in prison, where he falls into the orbit of Turkey's most dangerous crime cartel. Recruited by intelligence to dismantle it from within, he must earn the trust of its ruthless boss — a man who becomes his closest ally. Three years later, freedom brings the deadliest complication yet: the woman he never stopped loving is now that same man's wife.",
+  "tmdb": 309328
+ },
+ {
   "t": "The Promise",
   "y": 2019,
   "cat": "english-dubbed",
@@ -29823,41 +29936,12 @@
   "tmdb": 7723
  },
  {
-  "t": "Eşref Rüya",
-  "y": 2025,
+  "t": "Mehmed: Sultan of Conquests",
+  "y": 2024,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Drama",
-   "Action & Adventure",
-   "Crime"
-  ],
-  "m": [
-   "Emotional",
-   "Action",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/wwwKL2Pq3JZdI52wIYqjAdUF8fx.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2025-03-19",
-  "pop": 43,
-  "rtg": 7.1,
-  "vot": 43,
-  "ov": "A reckless wealthy man named Esref becomes captivated by an unknown love. He meets Nisan, a young musician who makes his heart race.",
-  "tmdb": 283123
- },
- {
-  "t": "Torn Apart",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
+   "War & Politics",
    "Drama"
   ],
   "m": [
@@ -29868,57 +29952,58 @@
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/erd75Gon5bXL38kngnH6DCrOUj2.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/A8fHgHmcEQU1UcOcXhW3NXtwwcZ.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-05-31",
-  "pop": 14,
-  "rtg": 7.8,
-  "vot": 14,
-  "ov": "Aras, a fearless seventeen-year-old boy, comes to Bodrum to search for his younger sibling, the only remaining member of his family whom he lost at the age of five. His new life in Bodrum will turn into a challenging struggle when his path crosses with the Akkaya family, the most powerful family in the city.",
-  "tmdb": 317883
+  "date": "2024-02-27",
+  "pop": 20,
+  "rtg": 8.5,
+  "vot": 20,
+  "ov": "The epic story of Mehmed II — the young Ottoman prince who defied palace enemies, survived treachery and deposition, and returned to fulfil his life's dream: the conquest of Constantinople. Spanning his rise from a doubted heir to one of history's most consequential rulers, the series unfolds across palace intrigue, battlefield warfare and a psychological chess match between two great empires. Praised as the finest T",
+  "tmdb": 246621
  },
  {
-  "t": "The Pit",
-  "y": 2017,
+  "t": "Çocuklar Duymasın",
+  "y": 2002,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
+   "Comedy",
+   "Family",
+   "Kids"
+  ],
+  "m": [
+   "Comedy",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/4Ctw5fPgMASHub8LtX16N8jjqQA.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2002-01-16",
+  "pop": 24,
+  "rtg": 5.5,
+  "vot": 24,
+  "ov": "",
+  "tmdb": 82583
+ },
+ {
+  "t": "Money Trap",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Comedy",
    "Crime",
-   "Action & Adventure",
-   "Drama"
-  ],
-  "m": [
-   "Thriller",
-   "Action",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/fBXDSBDw5Zug6E2xTB265LzYVKz.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2017-10-23",
-  "pop": 95,
-  "rtg": 7.5,
-  "vot": 95,
-  "ov": "When a mafia family named Koçovars are in danger of losing control of their neighborhood, “The Pit,” their youngest son must come back home, a place he could never truly escape.",
-  "tmdb": 74823
- },
- {
-  "t": "Underground",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Drama",
    "Action & Adventure"
   ],
   "m": [
-   "Emotional",
+   "Comedy",
+   "Thriller",
    "Action"
   ],
   "a": [
@@ -29926,71 +30011,15 @@
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bu8ks983hBPEzyAH8gSATW5aPJ7.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/7KnFHnuHjeOMkrE5zfw0G7e9daC.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-01-28",
-  "pop": 12,
-  "rtg": 8.2,
-  "vot": 12,
-  "ov": "Haydar Ali avenges his family's murder and ends up in prison, where he falls into the orbit of Turkey's most dangerous crime cartel. Recruited by intelligence to dismantle it from within, he must earn the trust of its ruthless boss — a man who becomes his closest ally. Three years later, freedom brings the deadliest complication yet: the woman he never stopped loving is now that same man's wife.",
-  "tmdb": 309328
- },
- {
-  "t": "The 8th Day",
-  "y": 2018,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Drama",
-   "Mystery"
-  ],
-  "m": [
-   "Emotional",
-   "Mystery"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/r2UhQXgPDmUavuj6ss0R3W6OmId.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2018-03-19",
-  "pop": 7,
-  "rtg": 6.3,
-  "vot": 7,
-  "ov": "It's about the changing life of Bahar, who confronts the dark guys who are pursuing the software that the deceased mother produces.",
-  "tmdb": 77304
- },
- {
-  "t": "Güldür Güldür Show",
-  "y": 2013,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Reality",
-   "Comedy",
-   "Talk"
-  ],
-  "m": [
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/A4PuQEG2XSJxQVks4l3Ox83Dnde.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2013-02-27",
-  "pop": 7,
-  "rtg": 8.1,
-  "vot": 7,
-  "ov": "Güldür Güldür Show, which has won the admiration of everyone with its legendary cast, continues to bring a new approach to many topics from family to love, fame to technology, football to friendship with its unique sense of humour.",
-  "tmdb": 85590
+  "date": "2026-10-16",
+  "pop": 6,
+  "rtg": 4.3,
+  "vot": 6,
+  "ov": "When a mythical map falls into the hands of a legendary scam artist, he decides to pull one last con before leaving it all behind for good.",
+  "tmdb": 320754
  },
  {
   "t": "Valley of the Wolves: Ambush",
@@ -30079,6 +30108,61 @@
   "vot": 86,
   "ov": "One of Turkey's most iconic and influential dramas, Valley of the Wolves follows Polat Alemdar, an undercover agent who infiltrates Istanbul's most dangerous crime organisation after years of preparation. Combining organised crime, covert operations and sharp political commentary, the series fearlessly tackles Turkey's shadowy relationship between the state, the mafia and power — and became a cultural phenomenon that",
   "tmdb": 34587
+ },
+ {
+  "t": "Torn Apart",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/erd75Gon5bXL38kngnH6DCrOUj2.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-05-31",
+  "pop": 14,
+  "rtg": 7.8,
+  "vot": 14,
+  "ov": "Aras, a fearless seventeen-year-old boy, comes to Bodrum to search for his younger sibling, the only remaining member of his family whom he lost at the age of five. His new life in Bodrum will turn into a challenging struggle when his path crosses with the Akkaya family, the most powerful family in the city.",
+  "tmdb": 317883
+ },
+ {
+  "t": "Elif",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Family",
+   "Soap"
+  ],
+  "m": [
+   "Emotional",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/337YdJG3TUMzpdnbJyP7K9oA72e.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2014-09-15",
+  "pop": 10,
+  "rtg": 5.7,
+  "vot": 10,
+  "ov": "A kind 6-year-old girl is placed under the protection of her mother's best friend, who keeps a well-hidden secret, and is a maid for a wealthy family, in whose mansion she lives.",
+  "tmdb": 49347
  },
  {
   "t": "Back Streets",
