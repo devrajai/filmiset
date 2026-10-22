@@ -23,11 +23,40 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-10-19",
-  "pop": 43,
+  "pop": 46,
   "rtg": 7.4,
-  "vot": 43,
+  "vot": 46,
   "ov": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
   "tmdb": 1400940
+ },
+ {
+  "t": "Hope",
+  "y": 2026,
+  "cat": "korean-dubbed",
+  "type": "Movie",
+  "g": [
+   "Science Fiction",
+   "Mystery",
+   "Action"
+  ],
+  "m": [
+   "Action",
+   "Mystery"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Korean"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-07-15",
+  "pop": 296,
+  "rtg": 6.9,
+  "vot": 296,
+  "ov": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+  "tmdb": 1058424
  },
  {
   "t": "Bad Apples",
@@ -51,9 +80,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-09-10",
-  "pop": 64,
+  "pop": 66,
   "rtg": 6.5,
-  "vot": 64,
+  "vot": 66,
   "ov": "A struggling primary school teacher is forced to take drastic action because of a foul-mouthed, violent student, and uncovers how her community will turn a blind eye to the most outrageous events to preserve harmony and their sense of safety.",
   "tmdb": 1198654
  },
@@ -86,35 +115,6 @@
   "vot": 946,
   "ov": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
   "tmdb": 1108427
- },
- {
-  "t": "Hope",
-  "y": 2026,
-  "cat": "korean-dubbed",
-  "type": "Movie",
-  "g": [
-   "Science Fiction",
-   "Mystery",
-   "Action"
-  ],
-  "m": [
-   "Action",
-   "Mystery"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-07-15",
-  "pop": 296,
-  "rtg": 6.9,
-  "vot": 296,
-  "ov": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-  "tmdb": 1058424
  },
  {
   "t": "By Any Means",
@@ -196,39 +196,39 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-10-13",
-  "pop": 146,
+  "pop": 147,
   "rtg": 6.3,
-  "vot": 146,
+  "vot": 147,
   "ov": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
   "tmdb": 1153576
  },
  {
-  "t": "Masterplan",
+  "t": "Spider-Man: Brand New Day",
   "y": 2026,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
+   "Science Fiction",
    "Action",
-   "Thriller"
+   "Adventure"
   ],
   "m": [
-   "Action",
-   "Thriller"
+   "Action"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/5xmXVd7nCK3tAo34XkO58SxUCip.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-10-16",
-  "pop": 135,
-  "rtg": 6.9,
-  "vot": 135,
-  "ov": "When a legendary thief sets his sights on the Mona Lisa, he recruits two young strangers to help him before revealing they are long-lost siblings… and oh yes, by the way, he is their father. Thrown into a chaotic reunion they never asked for, this new family must learn to work together — and try not to kill each other — if they want any chance at pulling off the heist of the century.",
-  "tmdb": 1561726
+  "date": "2026-07-29",
+  "pop": 5941,
+  "rtg": 8.5,
+  "vot": 5941,
+  "ov": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+  "tmdb": 969681
  },
  {
   "t": "Obsession",
@@ -259,14 +259,16 @@
   "tmdb": 1339713
  },
  {
-  "t": "Whalefall",
+  "t": "Masterplan",
   "y": 2026,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
+   "Action",
    "Thriller"
   ],
   "m": [
+   "Action",
    "Thriller"
   ],
   "a": [
@@ -274,15 +276,15 @@
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/5xmXVd7nCK3tAo34XkO58SxUCip.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-10-14",
-  "pop": 84,
-  "rtg": 6.5,
-  "vot": 84,
-  "ov": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
-  "tmdb": 1255833
+  "date": "2026-10-16",
+  "pop": 135,
+  "rtg": 6.9,
+  "vot": 135,
+  "ov": "When a legendary thief sets his sights on the Mona Lisa, he recruits two young strangers to help him before revealing they are long-lost siblings… and oh yes, by the way, he is their father. Thrown into a chaotic reunion they never asked for, this new family must learn to work together — and try not to kill each other — if they want any chance at pulling off the heist of the century.",
+  "tmdb": 1561726
  },
  {
   "t": "Wildwood",
@@ -314,58 +316,30 @@
   "tmdb": 791523
  },
  {
-  "t": "Spider-Man: Brand New Day",
+  "t": "Whalefall",
   "y": 2026,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
-   "Science Fiction",
-   "Action",
-   "Adventure"
+   "Thriller"
   ],
   "m": [
-   "Action"
+   "Thriller"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-07-29",
-  "pop": 5942,
-  "rtg": 8.5,
-  "vot": 5942,
-  "ov": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-  "tmdb": 969681
- },
- {
-  "t": "You Can See Everything",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Documentary"
-  ],
-  "m": [
-   "Family"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-16",
-  "pop": 27,
-  "rtg": 8.9,
-  "vot": 27,
-  "ov": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
-  "tmdb": 1765072
+  "date": "2026-10-14",
+  "pop": 85,
+  "rtg": 6.5,
+  "vot": 85,
+  "ov": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
+  "tmdb": 1255833
  },
  {
   "t": "Dune: Part Three",
@@ -393,61 +367,6 @@
   "vot": 0,
   "ov": "Nearly two decades after he seized control of the Imperium, Paul Atreides is now a ruthless Emperor, and must face the consequences of his reign as old allies return, terrifying new threats emerge, and betrayal lurks in every shadow. Haunted by visions of Imperial collapse and the reappearance of his long-lost love, Paul is drawn into a sweeping conspiracy, with Chani at the heart of its unfolding mystery. As enemies",
   "tmdb": 1170608
- },
- {
-  "t": "The Odyssey",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Adventure",
-   "Action",
-   "Fantasy"
-  ],
-  "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-07-15",
-  "pop": 4214,
-  "rtg": 8.0,
-  "vot": 4214,
-  "ov": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-  "tmdb": 1368337
- },
- {
-  "t": "Tenzing",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "History"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/a3G0yDUDoEJwzmHeIIrZmUCx8bW.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-09",
-  "pop": 135,
-  "rtg": 8.4,
-  "vot": 135,
-  "ov": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
-  "tmdb": 1288069
  },
  {
   "t": "Avengers: Doomsday",
@@ -478,6 +397,32 @@
   "tmdb": 1003596
  },
  {
+  "t": "You Can See Everything",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Documentary"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-16",
+  "pop": 27,
+  "rtg": 8.9,
+  "vot": 27,
+  "ov": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
+  "tmdb": 1765072
+ },
+ {
   "t": "Resident Evil",
   "y": 2026,
   "cat": "english-dubbed",
@@ -500,11 +445,66 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-09-16",
-  "pop": 1023,
+  "pop": 1024,
   "rtg": 7.3,
-  "vot": 1023,
+  "vot": 1024,
   "ov": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
   "tmdb": 1423191
+ },
+ {
+  "t": "Tenzing",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "History"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/a3G0yDUDoEJwzmHeIIrZmUCx8bW.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-09",
+  "pop": 135,
+  "rtg": 8.4,
+  "vot": 135,
+  "ov": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
+  "tmdb": 1288069
+ },
+ {
+  "t": "The Odyssey",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-07-15",
+  "pop": 4215,
+  "rtg": 8.0,
+  "vot": 4215,
+  "ov": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+  "tmdb": 1368337
  },
  {
   "t": "Colony",
@@ -1325,9 +1325,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2022-06-30",
-  "pop": 1255,
+  "pop": 1256,
   "rtg": 8.0,
-  "vot": 1255,
+  "vot": 1256,
   "ov": "Navy SEAL Commander James Reece turns to vengeance as he investigates the mysterious forces behind the murder of his entire platoon. Free from the military's command structure, Reece applies the lessons he's learned from nearly two decades of warfare to hunt down the people responsible.",
   "tmdb": 120911
  },
@@ -1354,9 +1354,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2022-09-13",
-  "pop": 2060,
+  "pop": 2062,
   "rtg": 8.5,
-  "vot": 2060,
+  "vot": 2062,
   "ov": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
   "tmdb": 105248
  },
@@ -1378,7 +1378,7 @@
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
   "src": "tmdb",
   "status": "released",
   "date": "2026-10-13",
@@ -1412,9 +1412,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-10-07",
-  "pop": 412,
+  "pop": 414,
   "rtg": 8.3,
-  "vot": 412,
+  "vot": 414,
   "ov": "After her father's sudden, untimely death thrusts her into the unforgiving ecosystem of public high school, Carrie is forced to navigate a viral bullying scandal that tears through her community, the relentless pressure and casual cruelty of the social‑media age, and the awakening of mysterious telekinetic powers that rise alongside her adolescence.",
   "tmdb": 288673
  },
@@ -1498,9 +1498,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2026-10-15",
-  "pop": 197,
+  "pop": 198,
   "rtg": 8.6,
-  "vot": 197,
+  "vot": 198,
   "ov": "Single mother Pam Voorhees has been unable to shake her grief after her young, sickly son Jason tragically drowned in the town lake almost a year before. When two strangers arrive at Pam's door digging into her past, a disturbing chain of events is set into motion, leaving the townspeople of Crystal Lake wondering: just who is Pam Voorhees?",
   "tmdb": 213562
  },
@@ -1529,32 +1529,6 @@
   "vot": 1,
   "ov": "Gen Takasegawa, the first Japanese actor to play the lead role at London's Shakespeare’s Globe Theatre, has been unable to return to Japan for some time. After two years, he finally makes his way back home, only to find out that he is suddenly and completely forgotten by the entire world.",
   "tmdb": 300527
- },
- {
-  "t": "Where the Mask Ends",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/cE9Og0lCCRCP2RArarzJXmu6xEB.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-16",
-  "pop": 4,
-  "rtg": 7.2,
-  "vot": 4,
-  "ov": "An ambitious street urchin seizes the chance to impersonate a noblewoman and becomes a warlord's bride, but when her comatose husband awakens, she must navigate deadly schemes, win his heart through cunning, and uncover her royal heritage to triumph over rivals and rise from gutter to glory.",
-  "tmdb": 300146
  },
  {
   "t": "Tulsa King",
@@ -1587,6 +1561,32 @@
   "tmdb": 153312
  },
  {
+  "t": "Where the Mask Ends",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/cE9Og0lCCRCP2RArarzJXmu6xEB.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-16",
+  "pop": 4,
+  "rtg": 7.2,
+  "vot": 4,
+  "ov": "An ambitious street urchin seizes the chance to impersonate a noblewoman and becomes a warlord's bride, but when her comatose husband awakens, she must navigate deadly schemes, win his heart through cunning, and uncover her royal heritage to triumph over rivals and rise from gutter to glory.",
+  "tmdb": 300146
+ },
+ {
   "t": "Small Town Remedy",
   "y": 2026,
   "cat": "english-dubbed",
@@ -1611,6 +1611,34 @@
   "vot": 1,
   "ov": "After losing his job at a top-tier hospital due to an unexpected incident, Liu Zhengliang returns to his hometown and begins working in the emergency department of a local community hospital. While healing patients one after another, he finds himself continually healed by their resilience and humanity, creating a mutual journey of recovery and growth between caregiver and those in need.",
   "tmdb": 285625
+ },
+ {
+  "t": "MobLand",
+  "y": 2025,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [
+   "Thriller",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2025-03-30",
+  "pop": 1068,
+  "rtg": 8.5,
+  "vot": 1068,
+  "ov": "Two mob families clash in a war that threatens to topple empires and lives.",
+  "tmdb": 247718
  },
  {
   "t": "Phony",
@@ -1673,6 +1701,34 @@
   "tmdb": 289892
  },
  {
+  "t": "Where's Wanda?",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy"
+  ],
+  "m": [
+   "Emotional",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/hHePJkom6HuTt3EHEvpXLPh0Jtt.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2024-10-02",
+  "pop": 40,
+  "rtg": 6.6,
+  "vot": 40,
+  "ov": "After the Klatts' daughter goes missing, they take matters into their own hands and hatch a wild plan: Spy on the neighborhood. As they make their way into small-time espionage, shocking secrets come to light one by one.",
+  "tmdb": 234310
+ },
+ {
   "t": "Lupin",
   "y": 2021,
   "cat": "english-dubbed",
@@ -1703,86 +1759,6 @@
   "tmdb": 96677
  },
  {
-  "t": "The New Stanford Prison Experiment",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Reality"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/heoESrHAdmPeYECs2B7R8RIqLyN.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-21",
-  "pop": 2,
-  "rtg": 8.0,
-  "vot": 2,
-  "ov": "In this modern reimagining of the infamous study, 30 people enter a real prison for two weeks and shifting power dynamics expose what they're capable of.",
-  "tmdb": 335319
- },
- {
-  "t": "Where's Wanda?",
-  "y": 2024,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Drama",
-   "Comedy"
-  ],
-  "m": [
-   "Emotional",
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/hHePJkom6HuTt3EHEvpXLPh0Jtt.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2024-10-02",
-  "pop": 40,
-  "rtg": 6.6,
-  "vot": 40,
-  "ov": "After the Klatts' daughter goes missing, they take matters into their own hands and hatch a wild plan: Spy on the neighborhood. As they make their way into small-time espionage, shocking secrets come to light one by one.",
-  "tmdb": 234310
- },
- {
-  "t": "MobLand",
-  "y": 2025,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Crime",
-   "Drama"
-  ],
-  "m": [
-   "Thriller",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2025-03-30",
-  "pop": 1067,
-  "rtg": 8.5,
-  "vot": 1067,
-  "ov": "Two mob families clash in a war that threatens to topple empires and lives.",
-  "tmdb": 247718
- },
- {
   "t": "Lanterns",
   "y": 2026,
   "cat": "english-dubbed",
@@ -1811,6 +1787,30 @@
   "vot": 796,
   "ov": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
   "tmdb": 95350
+ },
+ {
+  "t": "The New Stanford Prison Experiment",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Reality"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/heoESrHAdmPeYECs2B7R8RIqLyN.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-21",
+  "pop": 2,
+  "rtg": 8.0,
+  "vot": 2,
+  "ov": "In this modern reimagining of the infamous study, 30 people enter a real prison for two weeks and shifting power dynamics expose what they're capable of.",
+  "tmdb": 335319
  },
  {
   "t": "Bleach",
@@ -1902,6 +1902,33 @@
   "tmdb": 37854
  },
  {
+  "t": "The Lord of the Rings: The Rings of Power",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action & Adventure",
+   "Sci-Fi & Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2022-09-01",
+  "pop": 3977,
+  "rtg": 7.2,
+  "vot": 3977,
+  "ov": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+  "tmdb": 84773
+ },
+ {
   "t": "South Park",
   "y": 1997,
   "cat": "english-dubbed",
@@ -1986,45 +2013,43 @@
   "tmdb": 252747
  },
  {
-  "t": "The Lord of the Rings: The Rings of Power",
-  "y": 2022,
+  "t": "Brothers",
+  "y": 2026,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Action & Adventure",
-   "Sci-Fi & Fantasy"
+   "Comedy"
   ],
   "m": [
-   "Action"
+   "Comedy"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/jD7ZQpDEZzAVReJzkOtmuFoIl2m.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2022-09-01",
-  "pop": 3977,
-  "rtg": 7.2,
-  "vot": 3977,
-  "ov": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
-  "tmdb": 84773
+  "date": "2026-09-22",
+  "pop": 15,
+  "rtg": 7.8,
+  "vot": 15,
+  "ov": "Hollywood actors Matthew McConaughey and Woody Harrelson have been best friends for years, but a shocking family secret suggests their connection might be closer.",
+  "tmdb": 250203
  },
  {
-  "t": "Re:ZERO -Starting Life in Another World-",
-  "y": 2016,
+  "t": "Dragon Ball Super: Beerus",
+  "y": 2026,
   "cat": "anime",
   "type": "Series",
   "g": [
    "Animation",
-   "Mystery",
-   "Action & Adventure"
+   "Action & Adventure",
+   "Sci-Fi & Fantasy"
   ],
   "m": [
    "Family",
-   "Mystery",
    "Action"
   ],
   "a": [
@@ -2032,15 +2057,15 @@
    "Japanese"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/AojgldgsOlzZV8ahyOzaiAjJWvV.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2016-04-04",
-  "pop": 809,
-  "rtg": 8.1,
-  "vot": 809,
-  "ov": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find so",
-  "tmdb": 65942
+  "date": "2026-10-11",
+  "pop": 273,
+  "rtg": 9.7,
+  "vot": 273,
+  "ov": "When Beerus, the God of Destruction, awakens in search of a worthy rival, Goku and his friends face an epic battle to stop him from destroying Earth.\n\nRemastered and re-edited version of Dragon Ball Super.",
+  "tmdb": 312359
  },
  {
   "t": "American Horror Story",
@@ -2101,14 +2126,46 @@
   "tmdb": 305551
  },
  {
-  "t": "Brothers",
-  "y": 2026,
+  "t": "Re:ZERO -Starting Life in Another World-",
+  "y": 2016,
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Animation",
+   "Mystery",
+   "Action & Adventure"
+  ],
+  "m": [
+   "Family",
+   "Mystery",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2016-04-04",
+  "pop": 809,
+  "rtg": 8.1,
+  "vot": 809,
+  "ov": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find so",
+  "tmdb": 65942
+ },
+ {
+  "t": "The Simpsons",
+  "y": 1989,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
+   "Animation",
    "Comedy"
   ],
   "m": [
+   "Family",
    "Comedy"
   ],
   "a": [
@@ -2116,15 +2173,43 @@
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/jD7ZQpDEZzAVReJzkOtmuFoIl2m.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/tf0CUEynk6GfmrlHIQKQ5mfFP5P.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-09-22",
-  "pop": 15,
+  "date": "1989-12-17",
+  "pop": 11096,
+  "rtg": 8.0,
+  "vot": 11096,
+  "ov": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life ",
+  "tmdb": 456
+ },
+ {
+  "t": "Dark Matter",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi & Fantasy",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/2DPmTlv8F0V1TQBPmlsGOVOhtWk.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2024-05-07",
+  "pop": 843,
   "rtg": 7.8,
-  "vot": 15,
-  "ov": "Hollywood actors Matthew McConaughey and Woody Harrelson have been best friends for years, but a shocking family secret suggests their connection might be closer.",
-  "tmdb": 250203
+  "vot": 843,
+  "ov": "Jason Dessen is abducted into an alternate version of his life. To get back to his real family, he embarks on a harrowing journey to save them from the most terrifying foe imaginable: himself.",
+  "tmdb": 196322
  },
  {
   "t": "Below",
@@ -2185,63 +2270,6 @@
   "tmdb": 4614
  },
  {
-  "t": "Dark Matter",
-  "y": 2024,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Sci-Fi & Fantasy",
-   "Drama"
-  ],
-  "m": [
-   "Action",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/2DPmTlv8F0V1TQBPmlsGOVOhtWk.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2024-05-07",
-  "pop": 843,
-  "rtg": 7.8,
-  "vot": 843,
-  "ov": "Jason Dessen is abducted into an alternate version of his life. To get back to his real family, he embarks on a harrowing journey to save them from the most terrifying foe imaginable: himself.",
-  "tmdb": 196322
- },
- {
-  "t": "Dragon Ball Super: Beerus",
-  "y": 2026,
-  "cat": "anime",
-  "type": "Series",
-  "g": [
-   "Animation",
-   "Action & Adventure",
-   "Sci-Fi & Fantasy"
-  ],
-  "m": [
-   "Family",
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Japanese"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/AojgldgsOlzZV8ahyOzaiAjJWvV.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-11",
-  "pop": 273,
-  "rtg": 9.7,
-  "vot": 273,
-  "ov": "When Beerus, the God of Destruction, awakens in search of a worthy rival, Goku and his friends face an epic battle to stop him from destroying Earth.\n\nRemastered and re-edited version of Dragon Ball Super.",
-  "tmdb": 312359
- },
- {
   "t": "Black Clover",
   "y": 2017,
   "cat": "anime",
@@ -2271,60 +2299,6 @@
   "tmdb": 73223
  },
  {
-  "t": "The Terminal List: Dark Wolf",
-  "y": 2025,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Action & Adventure",
-   "Drama"
-  ],
-  "m": [
-   "Action",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/9mYeRoWguq5etbwJRdF8BXFKiF.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2025-08-27",
-  "pop": 300,
-  "rtg": 7.7,
-  "vot": 300,
-  "ov": "Before The Terminal List, Navy SEAL Ben Edwards finds himself entangled in the black operations side of the CIA. The deeper Ben goes into the 'gray', the harder it will become to not give himself over to his darker impulses. Every man has two wolves inside him – light and dark – fighting for control. Which wolf will Ben Edwards feed?",
-  "tmdb": 219760
- },
- {
-  "t": "Extraordinary Attorney Minami",
-  "y": 2026,
-  "cat": "anime",
-  "type": "Series",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Japanese"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/xnNu56T04JDZRBIDxclpr83s7K.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-10-19",
-  "pop": 1,
-  "rtg": 6.0,
-  "vot": 1,
-  "ov": "With her extraordinary memory and unique perspective, Minami takes on challenges in and out of the courtroom as a rookie lawyer on the autism spectrum.",
-  "tmdb": 332713
- },
- {
   "t": "Scrubs",
   "y": 2026,
   "cat": "english-dubbed",
@@ -2351,61 +2325,84 @@
   "tmdb": 295778
  },
  {
-  "t": "The Simpsons",
-  "y": 1989,
+  "t": "Love on Hire",
+  "y": 2026,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Animation",
-   "Comedy"
+   "Drama"
   ],
   "m": [
-   "Family",
-   "Comedy"
+   "Emotional"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/tf0CUEynk6GfmrlHIQKQ5mfFP5P.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/lJGVgDmTsmvkWeg7hKfkW15KZPR.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "1989-12-17",
-  "pop": 11096,
-  "rtg": 8.0,
-  "vot": 11096,
-  "ov": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life ",
-  "tmdb": 456
+  "date": "2026-10-22",
+  "pop": 0,
+  "rtg": null,
+  "vot": 0,
+  "ov": "Thitinan will take any job—being a fake girlfriend and breaking up a relationship, or, special just for Miss Chat, becoming a bedroom coach.Adapted from the novel \"Love on Hire\" (รับจ้าง(เลิก)รัก) by Yuufuku",
+  "tmdb": 307826
  },
  {
-  "t": "SpongeBob SquarePants",
-  "y": 1999,
+  "t": "The Vanishing Beauty",
+  "y": 2026,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Animation",
-   "Comedy",
-   "Family"
+   "Drama"
   ],
   "m": [
-   "Family",
-   "Comedy"
+   "Emotional"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/5h0EU2lqBb03dp5vtRuUHJwqzem.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/m3r695bVVi5y4UjbqIdkSkz060f.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "1999-05-01",
-  "pop": 3293,
+  "date": "2026-10-09",
+  "pop": 4,
+  "rtg": 7.5,
+  "vot": 4,
+  "ov": "Yu Meng, an only child from Jiangsu Zhejiang Shanghai and a popular internet blogger, is admired as a woman with a perfect life. On her fifth wedding anniversary, the bubble of her seemingly flawless happiness shatters. Her model husband is no longer so perfect, and her marriage begins to crack, while she also faces the threat of being financially exploited. With the support of her friends, Yu Meng reexamines her lif",
+  "tmdb": 294446
+ },
+ {
+  "t": "The Terminal List: Dark Wolf",
+  "y": 2025,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action & Adventure",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/9mYeRoWguq5etbwJRdF8BXFKiF.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2025-08-27",
+  "pop": 300,
   "rtg": 7.7,
-  "vot": 3293,
-  "ov": "Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be fo",
-  "tmdb": 387
+  "vot": 300,
+  "ov": "Before The Terminal List, Navy SEAL Ben Edwards finds himself entangled in the black operations side of the CIA. The deeper Ben goes into the 'gray', the harder it will become to not give himself over to his darker impulses. Every man has two wolves inside him – light and dark – fighting for control. Which wolf will Ben Edwards feed?",
+  "tmdb": 219760
  },
  {
   "t": "LINK CLICK",
@@ -2632,6 +2629,35 @@
   "vot": 18,
   "ov": "In a hospital dominated by ego and corruption, an enigmatic but brilliant surgeon arrives — taking on seemingly impossible cases amid fierce opposition.",
   "tmdb": 293610
+ },
+ {
+  "t": "SpongeBob SquarePants",
+  "y": 1999,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Animation",
+   "Comedy",
+   "Family"
+  ],
+  "m": [
+   "Family",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/5h0EU2lqBb03dp5vtRuUHJwqzem.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "1999-05-01",
+  "pop": 3293,
+  "rtg": 7.7,
+  "vot": 3293,
+  "ov": "Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be fo",
+  "tmdb": 387
  },
  {
   "t": "Project Hail Mary",
@@ -7717,56 +7743,6 @@
   "tmdb": 3034
  },
  {
-  "t": "Chicago Fire",
-  "y": 2012,
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/mqwUwexSSiBGC9qGgu38tKczFn.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2012-10-10",
-  "pop": 2454,
-  "rtg": 8.4,
-  "vot": 2454,
-  "ov": "An edge-of-your-seat view into the lives of everyday heroes committed to one of America's noblest professions. For the firefighters, rescue squad and paramedics of Chicago Firehouse 51, no occupation is more stressful or dangerous, yet so rewarding and exhilarating. These courageous men and women are among the elite who forge headfirst into danger when everyone else is running the other way and whose actions make the",
-  "tmdb": 44006
- },
- {
-  "t": "Home Alone",
-  "y": 2013,
-  "cat": "korean-dubbed",
-  "type": "Series",
-  "g": [
-   "Reality"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/1hqGagr94soBq70Lq7tPHvNmmxy.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2013-03-22",
-  "pop": 18,
-  "rtg": 7.5,
-  "vot": 18,
-  "ov": "It can be a badge of honor to be “single.” “I Live Alone” is a documentary-style South Korean reality series that follows the members of a self-formed club called Rainbow, which is comprised of  celebrities who are single and live alone.",
-  "tmdb": 65282
- },
- {
   "t": "Ici tout commence",
   "y": 2020,
   "cat": "english-dubbed",
@@ -7792,6 +7768,32 @@
   "vot": 92,
   "ov": "This television drama series is centered around the prestigious culinary school of renowned chef Auguste Armand. The show follows the lives of students and staff as they navigate the challenges and pressures of the culinary world—delving into their personal and professional lives, revealing secrets, rivalries, and complex relationships.",
   "tmdb": 112470
+ },
+ {
+  "t": "Chicago Fire",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/mqwUwexSSiBGC9qGgu38tKczFn.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2012-10-10",
+  "pop": 2454,
+  "rtg": 8.4,
+  "vot": 2454,
+  "ov": "An edge-of-your-seat view into the lives of everyday heroes committed to one of America's noblest professions. For the firefighters, rescue squad and paramedics of Chicago Firehouse 51, no occupation is more stressful or dangerous, yet so rewarding and exhilarating. These courageous men and women are among the elite who forge headfirst into danger when everyone else is running the other way and whose actions make the",
+  "tmdb": 44006
  },
  {
   "t": "Chicago P.D.",
@@ -7822,31 +7824,32 @@
   "tmdb": 58841
  },
  {
-  "t": "Men on a Mission",
-  "y": 2015,
-  "cat": "korean-dubbed",
+  "t": "Chibi Maruko-chan",
+  "y": 1990,
+  "cat": "anime",
   "type": "Series",
   "g": [
-   "Reality",
+   "Animation",
    "Comedy"
   ],
   "m": [
+   "Family",
    "Comedy"
   ],
   "a": [
    "Hindi (dub)",
-   "Korean"
+   "Japanese"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/2jIi55JtYKJTL1km8qHMuUilOWo.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/bfn54AAMuh47IFqeoco0jgeVH1a.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2015-12-05",
-  "pop": 42,
-  "rtg": 7.4,
-  "vot": 42,
-  "ov": "Male celebs play make-believe as high schoolers, welcoming star transfer students every week and engaging in battles of witty humor and slapstick.",
-  "tmdb": 70672
+  "date": "1990-01-07",
+  "pop": 24,
+  "rtg": 7.8,
+  "vot": 24,
+  "ov": "Meet Maruko, a sweet schoolgirl with a hefty dose of curiosity (and occasional laziness!). She sails through life in a cozy town alongside her loving parents, grandparents, and sister. Maruko has a band of loyal friends, including her closest pal, Tama-chan, but her playful and doting grandpa is at the heart of it all. Life is never dull in this charming series.",
+  "tmdb": 57775
  },
  {
   "t": "EastEnders",
@@ -7876,34 +7879,6 @@
   "vot": 231,
   "ov": "The everyday lives of working-class residents of Albert Square, a traditional Victorian square of terrace houses surrounding a park in the East End of London's Walford borough.",
   "tmdb": 1871
- },
- {
-  "t": "Chibi Maruko-chan",
-  "y": 1990,
-  "cat": "anime",
-  "type": "Series",
-  "g": [
-   "Animation",
-   "Comedy"
-  ],
-  "m": [
-   "Family",
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Japanese"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bfn54AAMuh47IFqeoco0jgeVH1a.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "1990-01-07",
-  "pop": 24,
-  "rtg": 7.8,
-  "vot": 24,
-  "ov": "Meet Maruko, a sweet schoolgirl with a hefty dose of curiosity (and occasional laziness!). She sails through life in a cozy town alongside her loving parents, grandparents, and sister. Maruko has a band of loyal friends, including her closest pal, Tama-chan, but her playful and doting grandpa is at the heart of it all. Life is never dull in this charming series.",
-  "tmdb": 57775
  },
  {
   "t": "FBI",
@@ -7936,28 +7911,55 @@
   "tmdb": 80748
  },
  {
-  "t": "The View",
-  "y": 1997,
-  "cat": "english-dubbed",
+  "t": "Home Alone",
+  "y": 2013,
+  "cat": "korean-dubbed",
   "type": "Series",
   "g": [
-   "Talk"
+   "Reality"
   ],
   "m": [],
   "a": [
    "Hindi (dub)",
-   "English"
+   "Korean"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/pEUNIxCMh2jFjUj7u09f4O5CcR4.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/1hqGagr94soBq70Lq7tPHvNmmxy.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "1997-08-11",
-  "pop": 115,
-  "rtg": 4.3,
-  "vot": 115,
-  "ov": "ABC Daytime's morning chatfest, currently featuring Whoopi Goldberg, Joy Behar, Sunny Hostin, Sara Haines, Alyssa Farah Griffin, and Ana Navarro discussing the most exciting events of the day. Hot topics in the news, the best experts in their field, celebrity interviews and general entertainment are all part of The View.",
-  "tmdb": 2221
+  "date": "2013-03-22",
+  "pop": 18,
+  "rtg": 7.5,
+  "vot": 18,
+  "ov": "It can be a badge of honor to be “single.” “I Live Alone” is a documentary-style South Korean reality series that follows the members of a self-formed club called Rainbow, which is comprised of  celebrities who are single and live alone.",
+  "tmdb": 65282
+ },
+ {
+  "t": "Men on a Mission",
+  "y": 2015,
+  "cat": "korean-dubbed",
+  "type": "Series",
+  "g": [
+   "Reality",
+   "Comedy"
+  ],
+  "m": [
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Korean"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/2jIi55JtYKJTL1km8qHMuUilOWo.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2015-12-05",
+  "pop": 42,
+  "rtg": 7.4,
+  "vot": 42,
+  "ov": "Male celebs play make-believe as high schoolers, welcoming star transfer students every week and engaging in battles of witty humor and slapstick.",
+  "tmdb": 70672
  },
  {
   "t": "Real Time with Bill Maher",
@@ -7987,6 +7989,30 @@
   "tmdb": 4419
  },
  {
+  "t": "Chronicles of the Sun",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Soap"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/t6jVlbPMtZOJoAOfeoR4yQmnjXM.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2018-08-27",
+  "pop": 129,
+  "rtg": 6.6,
+  "vot": 129,
+  "ov": "Claire is surprised when she gets arrested for the murder of her childhood friend after she returns to Montpellier.",
+  "tmdb": 81329
+ },
+ {
   "t": "Good Mythical Morning",
   "y": 2012,
   "cat": "english-dubbed",
@@ -8013,31 +8039,32 @@
   "tmdb": 65701
  },
  {
-  "t": "The Graham Norton Show",
-  "y": 2007,
+  "t": "All Elite Wrestling: Dynamite",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Comedy",
-   "Talk"
+   "Action & Adventure",
+   "Drama"
   ],
   "m": [
-   "Comedy"
+   "Action",
+   "Emotional"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/vrbqaBXB8AALynQzpWz6JdCPEJS.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/2xAAC0Hwm9yxMn9ukgglfIuABc1.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2007-02-22",
-  "pop": 293,
-  "rtg": 7.2,
-  "vot": 293,
-  "ov": "Each week celebrity guests join Irish comedian Graham Norton to discuss what's being going on around the world that week. The guests poke fun and share their opinions on the main news stories. Graham is often joined by a band or artist to play the show out.",
-  "tmdb": 1220
+  "date": "2019-10-02",
+  "pop": 91,
+  "rtg": 7.9,
+  "vot": 91,
+  "ov": "A world-class roster of diverse male and female wrestlers give fans a new wrestling experience for the first time in 20 years.",
+  "tmdb": 91555
  },
  {
   "t": "9-1-1",
@@ -8070,57 +8097,55 @@
   "tmdb": 75219
  },
  {
-  "t": "All Elite Wrestling: Dynamite",
-  "y": 2019,
+  "t": "The View",
+  "y": 1997,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
-   "Action & Adventure",
-   "Drama"
+   "Talk"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/pEUNIxCMh2jFjUj7u09f4O5CcR4.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "1997-08-11",
+  "pop": 115,
+  "rtg": 4.3,
+  "vot": 115,
+  "ov": "ABC Daytime's morning chatfest, currently featuring Whoopi Goldberg, Joy Behar, Sunny Hostin, Sara Haines, Alyssa Farah Griffin, and Ana Navarro discussing the most exciting events of the day. Hot topics in the news, the best experts in their field, celebrity interviews and general entertainment are all part of The View.",
+  "tmdb": 2221
+ },
+ {
+  "t": "The Graham Norton Show",
+  "y": 2007,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Talk"
   ],
   "m": [
-   "Action",
-   "Emotional"
+   "Comedy"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/2xAAC0Hwm9yxMn9ukgglfIuABc1.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/vrbqaBXB8AALynQzpWz6JdCPEJS.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2019-10-02",
-  "pop": 91,
-  "rtg": 7.9,
-  "vot": 91,
-  "ov": "A world-class roster of diverse male and female wrestlers give fans a new wrestling experience for the first time in 20 years.",
-  "tmdb": 91555
- },
- {
-  "t": "My Little Old Boy",
-  "y": 2016,
-  "cat": "korean-dubbed",
-  "type": "Series",
-  "g": [
-   "Reality",
-   "Talk"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "Korean"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/fgeWRIiigNHLxy3qEzM0HqNcFHT.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2016-08-26",
-  "pop": 11,
-  "rtg": 7.3,
-  "vot": 11,
-  "ov": "How much do you know about your grown up son? In Mom’s Diary, the daily lives of the grown up celebrity sons are closely observed by their mothers. Do you know why your son drinks so much these days? How much do you know about your son’s philosophy in his life style? Heart-warming moments of observational communication between a mother and a son can be seen on Mom’s Diary.",
-  "tmdb": 72896
+  "date": "2007-02-22",
+  "pop": 293,
+  "rtg": 7.2,
+  "vot": 293,
+  "ov": "Each week celebrity guests join Irish comedian Graham Norton to discuss what's being going on around the world that week. The guests poke fun and share their opinions on the main news stories. Graham is often joined by a band or artist to play the show out.",
+  "tmdb": 1220
  },
  {
   "t": "Radio Star",
@@ -8147,28 +8172,29 @@
   "tmdb": 65270
  },
  {
-  "t": "Chronicles of the Sun",
-  "y": 2018,
-  "cat": "english-dubbed",
+  "t": "My Little Old Boy",
+  "y": 2016,
+  "cat": "korean-dubbed",
   "type": "Series",
   "g": [
-   "Soap"
+   "Reality",
+   "Talk"
   ],
   "m": [],
   "a": [
    "Hindi (dub)",
-   "English"
+   "Korean"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/t6jVlbPMtZOJoAOfeoR4yQmnjXM.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/fgeWRIiigNHLxy3qEzM0HqNcFHT.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2018-08-27",
-  "pop": 129,
-  "rtg": 6.6,
-  "vot": 129,
-  "ov": "Claire is surprised when she gets arrested for the murder of her childhood friend after she returns to Montpellier.",
-  "tmdb": 81329
+  "date": "2016-08-26",
+  "pop": 11,
+  "rtg": 7.3,
+  "vot": 11,
+  "ov": "How much do you know about your grown up son? In Mom’s Diary, the daily lives of the grown up celebrity sons are closely observed by their mothers. Do you know why your son drinks so much these days? How much do you know about your son’s philosophy in his life style? Heart-warming moments of observational communication between a mother and a son can be seen on Mom’s Diary.",
+  "tmdb": 72896
  },
  {
   "t": "Jeopardy!",
@@ -8832,111 +8858,31 @@
   "tmdb": 413882
  },
  {
-  "t": "3 Idiots",
-  "y": 2009,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Comedy"
-  ],
-  "m": [
-   "Emotional",
-   "Comedy"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/66A9MqXOyVFCssoloscw79z8Tew.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2009-12-23",
-  "pop": 2879,
-  "rtg": 8.0,
-  "vot": 2879,
-  "ov": "Rascal. Joker. Dreamer. Genius... You've never met a college student quite like \"Rancho.\" From the moment he arrives at India's most prestigious university, Rancho's outlandish schemes turn the campus upside down—along with the lives of his two newfound best friends. Together, they make life miserable for \"Virus,\" the school’s uptight and heartless dean. But when Rancho catches the eye of the dean's daughter, Virus s",
-  "tmdb": 20453
- },
- {
-  "t": "Lust Stories 3",
+  "t": "Ikka",
   "y": 2026,
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance",
-   "Drama"
-  ],
-  "m": [
-   "Romantic",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/cLA83DD1qMEBwbRIYXf29RKjMja.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-09-18",
-  "pop": 10,
-  "rtg": 6.3,
-  "vot": 10,
-  "ov": "Through four bite-sized yet emotionally resonant films, the anthology once again explores lust, love, relationships, and repressed desire, offering fresh perspectives on intimacy, longing, and human connection in all their complexity.",
-  "tmdb": 1451944
- },
- {
-  "t": "Dhurandhar",
-  "y": 2025,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Crime",
+   "Drama",
    "Thriller"
   ],
   "m": [
-   "Action",
+   "Emotional",
    "Thriller"
   ],
   "a": [
    "Hindi"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/8FHOtUpNIk5ZPEay2N2EY5lrxkv.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/fp5EAKE8nTx402n1fWz55QsuYY9.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2025-12-05",
-  "pop": 372,
-  "rtg": 7.3,
-  "vot": 372,
-  "ov": "In the early 2000s, an undercover operative infiltrates Karachi's underworld, breaking into its inner circle to dismantle a violent nexus from within.",
-  "tmdb": 1291608
- },
- {
-  "t": "Like Stars on Earth",
-  "y": 2007,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/puHRt6Raovm5ujGCdwLWvRv4NHU.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2007-12-20",
-  "pop": 1438,
-  "rtg": 8.0,
-  "vot": 1438,
-  "ov": "Ishaan Awasthi is an eight-year-old whose world is filled with wonders that no one else seems to appreciate. Colours, fish, dogs, and kites don't seem important to the adults, who are much more interested in things like homework, marks, and neatness. Ishaan cannot seem to get anything right in class; he is then sent to boarding school, where his life changes forever.",
-  "tmdb": 7508
+  "date": "2026-07-10",
+  "pop": 24,
+  "rtg": 5.6,
+  "vot": 24,
+  "ov": "With a loved one's life at stake, a celebrated lawyer must defend a man he suspects is guilty — battling his conscience every step of the way.",
+  "tmdb": 1484913
  },
  {
   "t": "Gandhari",
@@ -8968,31 +8914,111 @@
   "tmdb": 1355228
  },
  {
-  "t": "Ikka",
+  "t": "Lust Stories 3",
   "y": 2026,
   "cat": "hindi",
   "type": "Movie",
   "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/cLA83DD1qMEBwbRIYXf29RKjMja.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-09-18",
+  "pop": 10,
+  "rtg": 6.3,
+  "vot": 10,
+  "ov": "Through four bite-sized yet emotionally resonant films, the anthology once again explores lust, love, relationships, and repressed desire, offering fresh perspectives on intimacy, longing, and human connection in all their complexity.",
+  "tmdb": 1451944
+ },
+ {
+  "t": "3 Idiots",
+  "y": 2009,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
    "Drama",
-   "Thriller"
+   "Comedy"
   ],
   "m": [
    "Emotional",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/66A9MqXOyVFCssoloscw79z8Tew.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2009-12-23",
+  "pop": 2879,
+  "rtg": 8.0,
+  "vot": 2879,
+  "ov": "Rascal. Joker. Dreamer. Genius... You've never met a college student quite like \"Rancho.\" From the moment he arrives at India's most prestigious university, Rancho's outlandish schemes turn the campus upside down—along with the lives of his two newfound best friends. Together, they make life miserable for \"Virus,\" the school’s uptight and heartless dean. But when Rancho catches the eye of the dean's daughter, Virus s",
+  "tmdb": 20453
+ },
+ {
+  "t": "Like Stars on Earth",
+  "y": 2007,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/puHRt6Raovm5ujGCdwLWvRv4NHU.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2007-12-20",
+  "pop": 1438,
+  "rtg": 8.0,
+  "vot": 1438,
+  "ov": "Ishaan Awasthi is an eight-year-old whose world is filled with wonders that no one else seems to appreciate. Colours, fish, dogs, and kites don't seem important to the adults, who are much more interested in things like homework, marks, and neatness. Ishaan cannot seem to get anything right in class; he is then sent to boarding school, where his life changes forever.",
+  "tmdb": 7508
+ },
+ {
+  "t": "Dhurandhar",
+  "y": 2025,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [
+   "Action",
    "Thriller"
   ],
   "a": [
    "Hindi"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/fp5EAKE8nTx402n1fWz55QsuYY9.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/8FHOtUpNIk5ZPEay2N2EY5lrxkv.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-07-10",
-  "pop": 24,
-  "rtg": 5.6,
-  "vot": 24,
-  "ov": "With a loved one's life at stake, a celebrated lawyer must defend a man he suspects is guilty — battling his conscience every step of the way.",
-  "tmdb": 1484913
+  "date": "2025-12-05",
+  "pop": 372,
+  "rtg": 7.3,
+  "vot": 372,
+  "ov": "In the early 2000s, an undercover operative infiltrates Karachi's underworld, breaking into its inner circle to dismantle a violent nexus from within.",
+  "tmdb": 1291608
  },
  {
   "t": "Dhurandhar: The Revenge",
@@ -9021,6 +9047,141 @@
   "vot": 172,
   "ov": "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
   "tmdb": 1582770
+ },
+ {
+  "t": "Alpha",
+  "y": 2026,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [
+   "Action",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/bPtRt3ajQ0EkyeQ1O6iJwAIi9Py.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-07-02",
+  "pop": 33,
+  "rtg": 5.0,
+  "vot": 33,
+  "ov": "When Sita, a highly trained assassin raised in isolation as a super-soldier by a rogue commander, discovers the dark truth about her family and her stolen childhood, she teams up with her long lost sister to take down her creator and his illicit military program.",
+  "tmdb": 1122030
+ },
+ {
+  "t": "My Name Is Khan",
+  "y": 2010,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [
+   "Emotional",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/5Y36lCiNyyV71mjq6LavgiggbhT.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2010-02-11",
+  "pop": 1517,
+  "rtg": 8.0,
+  "vot": 1517,
+  "ov": "Rizwan Khan, a Muslim from the Borivali section of Mumbai, has Asperger's syndrome. He marries a Hindu single mother, Mandira, in San Francisco. After 9/11, Rizwan is detained by authorities at LAX who treat him as a terrorist because of his condition and his race.",
+  "tmdb": 26022
+ },
+ {
+  "t": "KILL",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [
+   "Action",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2024-07-03",
+  "pop": 553,
+  "rtg": 7.2,
+  "vot": 553,
+  "ov": "When an army commando finds out his true love is engaged against her will, he boards a New Dehli-bound train in a daring quest to derail the arranged marriage. But when a gang of knife-wielding thieves begin to terrorize innocent passengers on his train, the commando takes them on, one by one.",
+  "tmdb": 1160018
+ },
+ {
+  "t": "Dhamaal 4",
+  "y": 2026,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [
+   "Comedy"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/oVij5aEEE6iI4PxB4i0CgKp8h0m.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-07-10",
+  "pop": 14,
+  "rtg": 4.1,
+  "vot": 14,
+  "ov": "The Dhamaal boys are back for another treasure hunt, facing hilarious challenges in their quest for the Treasure of Life.",
+  "tmdb": 1303331
+ },
+ {
+  "t": "Satluj",
+  "y": 2026,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "History"
+  ],
+  "m": [
+   "Thriller",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/hm4ou83RwLVwNj3HsmQuqC1qkWy.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-07-03",
+  "pop": 23,
+  "rtg": 8.0,
+  "vot": 23,
+  "ov": "Triggered by the search for his missing aunt, human rights activist Jaswant Singh Khalra takes on a broken system in a courageous fight to uncover the conspiracy behind thousands of disappearances and extrajudicial killings during the nadir of Punjab’s period of insurgency.",
+  "tmdb": 1155818
  },
  {
   "t": "Dangal",
@@ -9052,60 +9213,8 @@
   "tmdb": 360814
  },
  {
-  "t": "Tu Yaa Main",
-  "y": 2026,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Thriller",
-   "Romance"
-  ],
-  "m": [
-   "Thriller",
-   "Romantic"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/nUPnA0I1MTaZRVCsUQc5DS5JA8W.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-02-11",
-  "pop": 64,
-  "rtg": 6.4,
-  "vot": 64,
-  "ov": "A wannabe rapper from the outskirts of Mumbai and an affluent influencer elope to a coastal town, only to find themselves trapped in the pool of a derelict resort fighting for survival against the wrath of a ferocious crocodile.",
-  "tmdb": 1446616
- },
- {
-  "t": "Dhamaal 4",
-  "y": 2026,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Comedy"
-  ],
-  "m": [
-   "Comedy"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/oVij5aEEE6iI4PxB4i0CgKp8h0m.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-07-10",
-  "pop": 14,
-  "rtg": 4.1,
-  "vot": 14,
-  "ov": "The Dhamaal boys are back for another treasure hunt, facing hilarious challenges in their quest for the Treasure of Life.",
-  "tmdb": 1303331
- },
- {
-  "t": "Alpha",
-  "y": 2026,
+  "t": "Jawan",
+  "y": 2023,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -9120,43 +9229,15 @@
    "Hindi"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bPtRt3ajQ0EkyeQ1O6iJwAIi9Py.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/jFt1gS4BGHlK8xt76Y81Alp4dbt.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-07-02",
-  "pop": 33,
-  "rtg": 5.0,
-  "vot": 33,
-  "ov": "When Sita, a highly trained assassin raised in isolation as a super-soldier by a rogue commander, discovers the dark truth about her family and her stolen childhood, she teams up with her long lost sister to take down her creator and his illicit military program.",
-  "tmdb": 1122030
- },
- {
-  "t": "Satluj",
-  "y": 2026,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Crime",
-   "Drama",
-   "History"
-  ],
-  "m": [
-   "Thriller",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/hm4ou83RwLVwNj3HsmQuqC1qkWy.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-07-03",
-  "pop": 24,
-  "rtg": 7.9,
-  "vot": 24,
-  "ov": "Triggered by the search for his missing aunt, human rights activist Jaswant Singh Khalra takes on a broken system in a courageous fight to uncover the conspiracy behind thousands of disappearances and extrajudicial killings during the nadir of Punjab’s period of insurgency.",
-  "tmdb": 1155818
+  "date": "2023-09-07",
+  "pop": 360,
+  "rtg": 7.0,
+  "vot": 360,
+  "ov": "An emotional journey of a prison warden, driven by a personal vendetta while keeping up to a promise made years ago, recruits inmates to commit outrageous crimes that shed light on corruption and injustice, in an attempt to get even with his past,  and that leads him to an unexpected reunion.",
+  "tmdb": 872906
  },
  {
   "t": "PK",
@@ -9186,61 +9267,6 @@
   "vot": 1228,
   "ov": "A stranger in the city asks questions no one has asked before. Known only by his initials, the man's innocent questions and childlike curiosity take him on a journey of love, laughter and letting go.",
   "tmdb": 297222
- },
- {
-  "t": "KILL",
-  "y": 2024,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Crime",
-   "Thriller"
-  ],
-  "m": [
-   "Action",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2024-07-03",
-  "pop": 553,
-  "rtg": 7.2,
-  "vot": 553,
-  "ov": "When an army commando finds out his true love is engaged against her will, he boards a New Dehli-bound train in a daring quest to derail the arranged marriage. But when a gang of knife-wielding thieves begin to terrorize innocent passengers on his train, the commando takes them on, one by one.",
-  "tmdb": 1160018
- },
- {
-  "t": "Jawan",
-  "y": 2023,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Thriller"
-  ],
-  "m": [
-   "Action",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/jFt1gS4BGHlK8xt76Y81Alp4dbt.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2023-09-07",
-  "pop": 360,
-  "rtg": 7.0,
-  "vot": 360,
-  "ov": "An emotional journey of a prison warden, driven by a personal vendetta while keeping up to a promise made years ago, recruits inmates to commit outrageous crimes that shed light on corruption and injustice, in an attempt to get even with his past,  and that leads him to an unexpected reunion.",
-  "tmdb": 872906
  },
  {
   "t": "War 2",
@@ -19031,6 +19057,34 @@
   "tmdb": 1213243
  },
  {
+  "t": "K.G.F: Chapter 1",
+  "y": 2018,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [
+   "Action",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/ltHlJwvxKv7d0ooCiKSAvfwV9tX.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2018-12-20",
+  "pop": 311,
+  "rtg": 7.5,
+  "vot": 311,
+  "ov": "A period drama set in the 1970s, KGF follows the story of a fierce rebel who rises against the brutal oppression in Kolar Gold Fields and becomes the symbol of hope to legions of downtrodden people.",
+  "tmdb": 564147
+ },
+ {
   "t": "Kantara - A Legend: Chapter 1",
   "y": 2025,
   "cat": "south-dubbed",
@@ -19060,34 +19114,6 @@
   "tmdb": 1083637
  },
  {
-  "t": "K.G.F: Chapter 1",
-  "y": 2018,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Thriller"
-  ],
-  "m": [
-   "Action",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/ltHlJwvxKv7d0ooCiKSAvfwV9tX.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2018-12-20",
-  "pop": 311,
-  "rtg": 7.5,
-  "vot": 311,
-  "ov": "A period drama set in the 1970s, KGF follows the story of a fierce rebel who rises against the brutal oppression in Kolar Gold Fields and becomes the symbol of hope to legions of downtrodden people.",
-  "tmdb": 564147
- },
- {
   "t": "K.G.F: Chapter 2",
   "y": 2022,
   "cat": "south-dubbed",
@@ -19114,35 +19140,6 @@
   "vot": 235,
   "ov": "The blood-soaked land of Kolar Gold Fields (KGF) has a new overlord now - Rocky, whose name strikes fear in the heart of his foes. His allies look up to Rocky as their Savior, the government sees him as a threat to law and order; enemies are clamoring for revenge and conspiring for his downfall. Bloodier battles and darker days await as Rocky continues on his quest for unchallenged supremacy.",
   "tmdb": 587412
- },
- {
-  "t": "Mahavatar Narsimha",
-  "y": 2025,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Animation",
-   "Action",
-   "Fantasy"
-  ],
-  "m": [
-   "Family",
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/uGTF87VyfjtwwqRlT2apQg5YnEp.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2025-07-25",
-  "pop": 60,
-  "rtg": 7.4,
-  "vot": 60,
-  "ov": "Tyrannical demon Hiranyakashyap challenges Vishnu, proclaiming himself a god. However, his son Prahlad remains devoted to Vishnu, who appears as Narsimha to defeat the demon.",
-  "tmdb": 1383072
  },
  {
   "t": "Kantara",
@@ -19174,32 +19171,33 @@
   "tmdb": 858485
  },
  {
-  "t": "Love Mocktail 2",
-  "y": 2022,
+  "t": "Mahavatar Narsimha",
+  "y": 2025,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Romance",
-   "Drama"
+   "Animation",
+   "Action",
+   "Fantasy"
   ],
   "m": [
-   "Romantic",
-   "Emotional"
+   "Family",
+   "Action"
   ],
   "a": [
    "Hindi (dub)",
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/u2U7XpEzlFq3x3C0bjRzOo3rhg.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/uGTF87VyfjtwwqRlT2apQg5YnEp.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2022-02-11",
-  "pop": 7,
-  "rtg": 6.0,
-  "vot": 7,
-  "ov": "A sequel to Love Mocktail. Revolves around Aadi after the demise of his wife Nidhi. How does he move on from such a loss?",
-  "tmdb": 723567
+  "date": "2025-07-25",
+  "pop": 60,
+  "rtg": 7.4,
+  "vot": 60,
+  "ov": "Tyrannical demon Hiranyakashyap challenges Vishnu, proclaiming himself a god. However, his son Prahlad remains devoted to Vishnu, who appears as Narsimha to defeat the demon.",
+  "tmdb": 1383072
  },
  {
   "t": "Martin",
@@ -19232,34 +19230,32 @@
   "tmdb": 861451
  },
  {
-  "t": "Lucia",
-  "y": 2013,
+  "t": "Love Mocktail 2",
+  "y": 2022,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Fantasy",
    "Romance",
-   "Thriller"
+   "Drama"
   ],
   "m": [
-   "Action",
    "Romantic",
-   "Thriller"
+   "Emotional"
   ],
   "a": [
    "Hindi (dub)",
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/1b0pkG5fKRXbgxQrk3AVwXSNo7e.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/u2U7XpEzlFq3x3C0bjRzOo3rhg.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2013-10-19",
-  "pop": 63,
-  "rtg": 7.1,
-  "vot": 63,
-  "ov": "A man suffering from insomnia is tricked into buying a drug, Lucia, that makes his desires come true in his dreams, blurring the line between fantasy and reality.",
-  "tmdb": 219343
+  "date": "2022-02-11",
+  "pop": 7,
+  "rtg": 6.0,
+  "vot": 7,
+  "ov": "A sequel to Love Mocktail. Revolves around Aadi after the demise of his wife Nidhi. How does he move on from such a loss?",
+  "tmdb": 723567
  },
  {
   "t": "777 Charlie",
@@ -19292,33 +19288,6 @@
   "tmdb": 634120
  },
  {
-  "t": "Bagheera",
-  "y": 2024,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Adventure"
-  ],
-  "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/oW3iHFiXpfRXXQJiSXScNFEBf7h.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2024-10-31",
-  "pop": 24,
-  "rtg": 5.5,
-  "vot": 24,
-  "ov": "Dismayed by corruption and violence, a virtuous police officer becomes a masked vigilante to dliver lethal justice to criminals and crooked cops alike.",
-  "tmdb": 777292
- },
- {
   "t": "Milana",
   "y": 2007,
   "cat": "south-dubbed",
@@ -19345,6 +19314,148 @@
   "vot": 6,
   "ov": "Hero is in love with a girl who is forced to marry a police officer. Hero is later forced by his parents to marry a girl liked by them. Here starts the trouble again, even she wants a divorce from him. Will hero divorce her or they are happy with each other is the later part of the story",
   "tmdb": 521400
+ },
+ {
+  "t": "Lucia",
+  "y": 2013,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy",
+   "Romance",
+   "Thriller"
+  ],
+  "m": [
+   "Action",
+   "Romantic",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/1b0pkG5fKRXbgxQrk3AVwXSNo7e.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2013-10-19",
+  "pop": 63,
+  "rtg": 7.1,
+  "vot": 63,
+  "ov": "A man suffering from insomnia is tricked into buying a drug, Lucia, that makes his desires come true in his dreams, blurring the line between fantasy and reality.",
+  "tmdb": 219343
+ },
+ {
+  "t": "Seetharam Benoy",
+  "y": 2021,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Mystery"
+  ],
+  "m": [
+   "Emotional",
+   "Mystery"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/yjGSCbPyzyz1uOD6pJGK99e5Rml.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2021-08-16",
+  "pop": 5,
+  "rtg": 6.0,
+  "vot": 5,
+  "ov": "Seetharam, a cop, gets transferred to a remote village in Shimoga Dist Aanegadde finds himself in middle of a bunch of smart yet cruel thieves. The day he takes charge his house gets robbed. Matter of dignity and personal revenge, intense investigation then begins.",
+  "tmdb": 861772
+ },
+ {
+  "t": "Su from So",
+  "y": 2025,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [
+   "Comedy",
+   "Horror"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/eFI5DOq5b9D2vitCW7EY8RXxygf.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2025-07-25",
+  "pop": 24,
+  "rtg": 7.5,
+  "vot": 24,
+  "ov": "In a peaceful village full of joy, laughter, and vibrant life, everything seems perfect—until one day, the devil arrives. What follows is a hilarious chain of events that flips the entire village upside down!",
+  "tmdb": 1513656
+ },
+ {
+  "t": "Dia",
+  "y": 2020,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [
+   "Emotional",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/n038AswpNaZgIWfMEr5cxVAqcsB.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2020-02-07",
+  "pop": 26,
+  "rtg": 6.2,
+  "vot": 26,
+  "ov": "Dia tells the story of a young, introvert girl whose routine life brightens up when she falls for Rohith, one of her fellow college mates. Being an introvert girl and trying to express her love becomes the biggest challenge of her life. This romantic drama will make you lose yourself in the emotional journey of a girl falling in love.",
+  "tmdb": 672128
+ },
+ {
+  "t": "Love Mocktail",
+  "y": 2020,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/2zZHKvynaGFYxzqqWXoKXP3M1WH.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2020-01-31",
+  "pop": 22,
+  "rtg": 6.6,
+  "vot": 22,
+  "ov": "Love Mocktail is a 2020 Indian Kannada-language romantic drama film directed by Krishna in his director debut and jointly produced by Krishna, Milana Nagaraj. The film stars Krishna, Milana Nagaraj in the lead roles. The film was released on 31 January 2020.",
+  "tmdb": 672125
  },
  {
   "t": "Just Maath Maathalli",
@@ -19377,205 +19488,6 @@
   "tmdb": 256156
  },
  {
-  "t": "Vishnuvardhana",
-  "y": 2011,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Comedy",
-   "Thriller",
-   "Romance"
-  ],
-  "m": [
-   "Comedy",
-   "Thriller",
-   "Romantic"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/iSNBL28RhWz9HxSGXAOYYwpnxW2.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2011-12-08",
-  "pop": 8,
-  "rtg": 5.9,
-  "vot": 8,
-  "ov": "No one has entered a biography for him.",
-  "tmdb": 256024
- },
- {
-  "t": "Seetharam Benoy",
-  "y": 2021,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Mystery"
-  ],
-  "m": [
-   "Emotional",
-   "Mystery"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/yjGSCbPyzyz1uOD6pJGK99e5Rml.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2021-08-16",
-  "pop": 5,
-  "rtg": 6.0,
-  "vot": 5,
-  "ov": "Seetharam, a cop, gets transferred to a remote village in Shimoga Dist Aanegadde finds himself in middle of a bunch of smart yet cruel thieves. The day he takes charge his house gets robbed. Matter of dignity and personal revenge, intense investigation then begins.",
-  "tmdb": 861772
- },
- {
-  "t": "Kabzaa",
-  "y": 2023,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Crime",
-   "Thriller"
-  ],
-  "m": [
-   "Action",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/vFpw8DbiGdhrqcvzpuiuRQBZJPb.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2023-03-17",
-  "pop": 16,
-  "rtg": 4.4,
-  "vot": 16,
-  "ov": "During the British rule in India, Arakeshwara, an air force soldier and son of a freedom fighter Amareshwara,due to unavoidable circumstances, kills Khaleed, the don of Amarapura and thus gets trapped in the mafia world and later becomes the king of the underworld. However, trouble ensues for Arakeshwara as he has to deal with his rivals and Bhargav Bhakshi, a cop sent by the British to eradicate him and the underwor",
-  "tmdb": 683876
- },
- {
-  "t": "Su from So",
-  "y": 2025,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Comedy",
-   "Horror"
-  ],
-  "m": [
-   "Comedy",
-   "Horror"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/eFI5DOq5b9D2vitCW7EY8RXxygf.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2025-07-25",
-  "pop": 24,
-  "rtg": 7.5,
-  "vot": 24,
-  "ov": "In a peaceful village full of joy, laughter, and vibrant life, everything seems perfect—until one day, the devil arrives. What follows is a hilarious chain of events that flips the entire village upside down!",
-  "tmdb": 1513656
- },
- {
-  "t": "Love Mocktail",
-  "y": 2020,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Romance",
-   "Drama"
-  ],
-  "m": [
-   "Romantic",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/2zZHKvynaGFYxzqqWXoKXP3M1WH.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2020-01-31",
-  "pop": 22,
-  "rtg": 6.6,
-  "vot": 22,
-  "ov": "Love Mocktail is a 2020 Indian Kannada-language romantic drama film directed by Krishna in his director debut and jointly produced by Krishna, Milana Nagaraj. The film stars Krishna, Milana Nagaraj in the lead roles. The film was released on 31 January 2020.",
-  "tmdb": 672125
- },
- {
-  "t": "Simple Agi Ondh Love Story",
-  "y": 2013,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Comedy",
-   "Romance"
-  ],
-  "m": [
-   "Comedy",
-   "Romantic"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/o98xNCPFvTti9yfz6e69RzXt8Wp.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2013-09-28",
-  "pop": 9,
-  "rtg": 6.5,
-  "vot": 9,
-  "ov": "Rachana persuades her brother to meet her boyfriend's sister, Ithihasini, hoping that cupid would strike them. However, things take a turn when another girl tricks him into falling in love with her.",
-  "tmdb": 224598
- },
- {
-  "t": "Dia",
-  "y": 2020,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Romance"
-  ],
-  "m": [
-   "Emotional",
-   "Romantic"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/n038AswpNaZgIWfMEr5cxVAqcsB.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2020-02-07",
-  "pop": 26,
-  "rtg": 6.2,
-  "vot": 26,
-  "ov": "Dia tells the story of a young, introvert girl whose routine life brightens up when she falls for Rohith, one of her fellow college mates. Being an introvert girl and trying to express her love becomes the biggest challenge of her life. This romantic drama will make you lose yourself in the emotional journey of a girl falling in love.",
-  "tmdb": 672128
- },
- {
   "t": "James",
   "y": 2022,
   "cat": "south-dubbed",
@@ -19606,32 +19518,34 @@
   "tmdb": 683056
  },
  {
-  "t": "Aachar & Co",
-  "y": 2023,
+  "t": "Vishnuvardhana",
+  "y": 2011,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Family",
-   "Comedy"
+   "Comedy",
+   "Thriller",
+   "Romance"
   ],
   "m": [
-   "Family",
-   "Comedy"
+   "Comedy",
+   "Thriller",
+   "Romantic"
   ],
   "a": [
    "Hindi (dub)",
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/uMzdbb8PYgJISkw5YGjWcyWqlMa.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/iSNBL28RhWz9HxSGXAOYYwpnxW2.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2023-07-28",
+  "date": "2011-12-08",
   "pop": 8,
-  "rtg": 6.4,
+  "rtg": 5.9,
   "vot": 8,
-  "ov": "Set against the backdrop of 1960s Bangalore, Aachar & Co. follows the journey of a traditional family as they navigate the challenges of embracing modernity while honouring their roots. The film brings together a delightful mix of nostalgia, humour, and drama, capturing the essence of that era.",
-  "tmdb": 1147765
+  "ov": "No one has entered a biography for him.",
+  "tmdb": 256024
  },
  {
   "t": "Toby",
@@ -19662,6 +19576,61 @@
   "vot": 7,
   "ov": "An estranged man deemed to be a beast vows to break free from the evil world and transform himself for his foster daughter.",
   "tmdb": 1139698
+ },
+ {
+  "t": "Bagheera",
+  "y": 2024,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/oW3iHFiXpfRXXQJiSXScNFEBf7h.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2024-10-31",
+  "pop": 24,
+  "rtg": 5.5,
+  "vot": 24,
+  "ov": "Dismayed by corruption and violence, a virtuous police officer becomes a masked vigilante to dliver lethal justice to criminals and crooked cops alike.",
+  "tmdb": 777292
+ },
+ {
+  "t": "Aachar & Co",
+  "y": 2023,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Family",
+   "Comedy"
+  ],
+  "m": [
+   "Family",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/uMzdbb8PYgJISkw5YGjWcyWqlMa.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2023-07-28",
+  "pop": 8,
+  "rtg": 6.4,
+  "vot": 8,
+  "ov": "Set against the backdrop of 1960s Bangalore, Aachar & Co. follows the journey of a traditional family as they navigate the challenges of embracing modernity while honouring their roots. The film brings together a delightful mix of nostalgia, humour, and drama, capturing the essence of that era.",
+  "tmdb": 1147765
  },
  {
   "t": "Maanikya",
@@ -24012,9 +23981,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2011-04-17",
-  "pop": 27997,
+  "pop": 27996,
   "rtg": 8.5,
-  "vot": 27997,
+  "vot": 27996,
   "ov": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
   "tmdb": 1399
  },
@@ -28149,30 +28118,32 @@
   "tmdb": 64581
  },
  {
-  "t": "Miracle in Cell No. 7",
-  "y": 2019,
+  "t": "The Nightingale of Bursa",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
-   "Drama"
+   "Comedy",
+   "Music"
   ],
   "m": [
-   "Emotional"
+   "Comedy",
+   "Feel-Good"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bOth4QmNyEkalwahfPCfiXjNh1r.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/7Ar20IXj63Ac2MEcZOHt7EC4fsM.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2019-10-10",
-  "pop": 4610,
-  "rtg": 8.2,
-  "vot": 4610,
-  "ov": "Separated from his daughter, a father with an intellectual disability must prove his innocence when he is jailed for the death of a commander's child.",
-  "tmdb": 637920
+  "date": "2023-01-13",
+  "pop": 52,
+  "rtg": 6.5,
+  "vot": 52,
+  "ov": "Cengiz is the singer at a tea garden in Bursa and his greatest ambition is to release an album. Cengiz's life changes when he meets Taskin. Believing that the song composed by Taskin's father, Serafettin, would be a great start for his album, Cengiz buys the song using money he borrowed from his older brother. When Taskin spends all that money, Cengiz starts performing with Taskin and his sister Arzu.",
+  "tmdb": 1056177
  },
  {
   "t": "Aşk Sadece Bir An",
@@ -28203,32 +28174,30 @@
   "tmdb": 1422227
  },
  {
-  "t": "The Nightingale of Bursa",
-  "y": 2023,
+  "t": "Miracle in Cell No. 7",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
-   "Comedy",
-   "Music"
+   "Drama"
   ],
   "m": [
-   "Comedy",
-   "Feel-Good"
+   "Emotional"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/7Ar20IXj63Ac2MEcZOHt7EC4fsM.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/bOth4QmNyEkalwahfPCfiXjNh1r.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2023-01-13",
-  "pop": 52,
-  "rtg": 6.5,
-  "vot": 52,
-  "ov": "Cengiz is the singer at a tea garden in Bursa and his greatest ambition is to release an album. Cengiz's life changes when he meets Taskin. Believing that the song composed by Taskin's father, Serafettin, would be a great start for his album, Cengiz buys the song using money he borrowed from his older brother. When Taskin spends all that money, Cengiz starts performing with Taskin and his sister Arzu.",
-  "tmdb": 1056177
+  "date": "2019-10-10",
+  "pop": 4610,
+  "rtg": 8.2,
+  "vot": 4610,
+  "ov": "Separated from his daughter, a father with an intellectual disability must prove his innocence when he is jailed for the death of a commander's child.",
+  "tmdb": 637920
  },
  {
   "t": "Summer House",
@@ -28289,168 +28258,6 @@
   "tmdb": 1546963
  },
  {
-  "t": "The Last Scene",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Romance"
-  ],
-  "m": [
-   "Emotional",
-   "Romantic"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/vQ69OZWDZ90ktHcW2Ku01ht4eis.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-08-28",
-  "pop": 19,
-  "rtg": 7.3,
-  "vot": 19,
-  "ov": "Selen is a woman with the extraordinary ability to foresee other people’s futures in her dreams. Determined to use this gift to change her own life and the fate of those around her, she unexpectedly finds herself drawn into a dangerous love story. When she crosses paths with a man, Kemal, their connection sparks both passion and peril, forcing Selen to make choices that will shape both of their destinies.",
-  "tmdb": 1550338
- },
- {
-  "t": "Two Worlds One Wish",
-  "y": 2025,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Romance",
-   "Drama"
-  ],
-  "m": [
-   "Romantic",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/mZcwX1aN2RdCLwamxdkoINIhVAm.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2025-11-24",
-  "pop": 54,
-  "rtg": 7.3,
-  "vot": 54,
-  "ov": "Twenty-one years after a magical meeting at a children's hospital, Bilge and Can suddenly begin hearing each other's voices telepathically. What seems like a miracle soon reveals a hidden secret, as fate-reuniting them after decades-has much more in store.",
-  "tmdb": 1522377
- },
- {
-  "t": "Yellow Letters",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/8Sxp3QIdamyoAfgLsUaGCQ1Z1ID.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-03-05",
-  "pop": 50,
-  "rtg": 7.2,
-  "vot": 50,
-  "ov": "The marriage of Derya and Aziz is under pressure after losing their jobs because of state arbitrariness and moving to Istanbul to live with Aziz's parents. They and their 13-year-old daughter Ezgi have to redefine their way of life.",
-  "tmdb": 1315657
- },
- {
-  "t": "About Dry Grasses",
-  "y": 2023,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/mUFpdQSFAch1fMUb9MqHoESpmLS.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2023-07-12",
-  "pop": 184,
-  "rtg": 7.6,
-  "vot": 184,
-  "ov": "A young art teacher hopes to be transferred to Istanbul after completing his mandatory duty in a remote village school in Anatolia. After accusations of inappropriate contact with a student surface, his hopes of escape fade and he descends further into an existential crisis.",
-  "tmdb": 665733
- },
- {
-  "t": "Cooked",
-  "y": 2025,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/bjHGT2f65Tim3YFJJci766FOgzH.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2025-02-11",
-  "pop": 41,
-  "rtg": 6.5,
-  "vot": 41,
-  "ov": "Chef and owner Sina Bora faces personal and professional challenges on one of his restaurant's busiest nights. His father's emergency surgery, staff tensions and his former mentor Renzo's plans to take over push Sina to make tough decisions.",
-  "tmdb": 1392117
- },
- {
-  "t": "Sultana",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Music"
-  ],
-  "m": [
-   "Emotional",
-   "Feel-Good"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/wDebpR4NplIM8EteAGfd51Zdisu.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-04-17",
-  "pop": 19,
-  "rtg": 8.2,
-  "vot": 19,
-  "ov": "Sultana is a drama set in Istanbul's one and only strip club, telling a story of a women, power, rivalry and solidarity. A new Turkish story where women are not victims in a fairy tale, but warriors learning that the 'handsome prince' is often the real monster- and their only salvation is each other. Meral the long reigning queen of the one and only strip club of Istanbul which is Sultana, takes a talented new Belaru",
-  "tmdb": 1656489
- },
- {
   "t": "Art of Love",
   "y": 2024,
   "cat": "english-dubbed",
@@ -28481,33 +28288,32 @@
   "tmdb": 1248795
  },
  {
-  "t": "Ateş",
+  "t": "The Last Scene",
   "y": 2026,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
-   "Crime",
    "Drama",
-   "Thriller"
+   "Romance"
   ],
   "m": [
-   "Thriller",
-   "Emotional"
+   "Emotional",
+   "Romantic"
   ],
   "a": [
    "Hindi (dub)",
    "English"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/wvccdxZHLR3QHGQEdDoHEZronup.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/vQ69OZWDZ90ktHcW2Ku01ht4eis.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2026-10-09",
-  "pop": 5,
-  "rtg": 8.2,
-  "vot": 5,
-  "ov": "After his older brother, Chief Inspector Ali, is killed in the line of duty, Special Forces Major Ateş sets out to uncover the shadowy organization responsible for his death. As his investigation brings him closer to the truth, he faces increasingly dangerous challenges that threaten both his personal life and military career. Driven by grief and a desire for justice, Ateş finds himself caught in a growing conflict b",
-  "tmdb": 1792591
+  "date": "2026-08-28",
+  "pop": 19,
+  "rtg": 7.3,
+  "vot": 19,
+  "ov": "Selen is a woman with the extraordinary ability to foresee other people’s futures in her dreams. Determined to use this gift to change her own life and the fate of those around her, she unexpectedly finds herself drawn into a dangerous love story. When she crosses paths with a man, Kemal, their connection sparks both passion and peril, forcing Selen to make choices that will shape both of their destinies.",
+  "tmdb": 1550338
  },
  {
   "t": "My Apologies",
@@ -28534,6 +28340,168 @@
   "vot": 20,
   "ov": "Erkin, who works as a watchman at the lighthouse, is a lonely man in his mid-thirties. Erkin, crushed under his credit debts, one day receives the news of his grandfather's death. A big surprise awaits Erkin, who immediately goes to his grandfather, who is staying in the nursing home. He asks his grandfather Erkin to apologize to his brother Koray and ex-fiancee Merve, whose heart he broke years ago. Having to fulfil",
   "tmdb": 1101410
+ },
+ {
+  "t": "Sultana",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Music"
+  ],
+  "m": [
+   "Emotional",
+   "Feel-Good"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/wDebpR4NplIM8EteAGfd51Zdisu.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-04-17",
+  "pop": 19,
+  "rtg": 8.2,
+  "vot": 19,
+  "ov": "Sultana is a drama set in Istanbul's one and only strip club, telling a story of a women, power, rivalry and solidarity. A new Turkish story where women are not victims in a fairy tale, but warriors learning that the 'handsome prince' is often the real monster- and their only salvation is each other. Meral the long reigning queen of the one and only strip club of Istanbul which is Sultana, takes a talented new Belaru",
+  "tmdb": 1656489
+ },
+ {
+  "t": "About Dry Grasses",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/mUFpdQSFAch1fMUb9MqHoESpmLS.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2023-07-12",
+  "pop": 184,
+  "rtg": 7.6,
+  "vot": 184,
+  "ov": "A young art teacher hopes to be transferred to Istanbul after completing his mandatory duty in a remote village school in Anatolia. After accusations of inappropriate contact with a student surface, his hopes of escape fade and he descends further into an existential crisis.",
+  "tmdb": 665733
+ },
+ {
+  "t": "Two Worlds One Wish",
+  "y": 2025,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/mZcwX1aN2RdCLwamxdkoINIhVAm.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2025-11-24",
+  "pop": 54,
+  "rtg": 7.3,
+  "vot": 54,
+  "ov": "Twenty-one years after a magical meeting at a children's hospital, Bilge and Can suddenly begin hearing each other's voices telepathically. What seems like a miracle soon reveals a hidden secret, as fate-reuniting them after decades-has much more in store.",
+  "tmdb": 1522377
+ },
+ {
+  "t": "Cooked",
+  "y": 2025,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/bjHGT2f65Tim3YFJJci766FOgzH.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2025-02-11",
+  "pop": 41,
+  "rtg": 6.5,
+  "vot": 41,
+  "ov": "Chef and owner Sina Bora faces personal and professional challenges on one of his restaurant's busiest nights. His father's emergency surgery, staff tensions and his former mentor Renzo's plans to take over push Sina to make tough decisions.",
+  "tmdb": 1392117
+ },
+ {
+  "t": "Yellow Letters",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/8Sxp3QIdamyoAfgLsUaGCQ1Z1ID.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-03-05",
+  "pop": 50,
+  "rtg": 7.2,
+  "vot": 50,
+  "ov": "The marriage of Derya and Aziz is under pressure after losing their jobs because of state arbitrariness and moving to Istanbul to live with Aziz's parents. They and their 13-year-old daughter Ezgi have to redefine their way of life.",
+  "tmdb": 1315657
+ },
+ {
+  "t": "Salvation",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Mystery"
+  ],
+  "m": [
+   "Emotional",
+   "Mystery"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-03-06",
+  "pop": 15,
+  "rtg": 6.5,
+  "vot": 15,
+  "ov": "In a remote village, an exiled clan returns, reviving a decades-old land feud. Seized by divine visions, Mesut challenges his brother’s leadership to save his people. Will this new path bring salvation or tragedy?",
+  "tmdb": 1401106
  },
  {
   "t": "Chasing the Wind",
@@ -28592,88 +28560,6 @@
   "tmdb": 577990
  },
  {
-  "t": "D.I.S.C.O.",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Comedy"
-  ],
-  "m": [
-   "Action",
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/jHXxVDqA130tXf8O20OHLDom4hD.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-01-01",
-  "pop": 16,
-  "rtg": 6.9,
-  "vot": 16,
-  "ov": "The operation, which has been carried out in secret by the D.I.S.C.O. intelligence agency for a long time, fails because of Agent Ertan. Ertan, who was suspended from the organization, goes on vacation with his wife Seda. Here, the path crosses with Bandırma Hair Dryer First Zafer and his wife Aynur. Zafer, who learned about Ertan's profession, has only one condition to be silent. To finish Ertan's unfinished operati",
-  "tmdb": 1555331
- },
- {
-  "t": "Salvation",
-  "y": 2026,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Mystery"
-  ],
-  "m": [
-   "Emotional",
-   "Mystery"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2026-03-06",
-  "pop": 15,
-  "rtg": 6.5,
-  "vot": 15,
-  "ov": "In a remote village, an exiled clan returns, reviving a decades-old land feud. Seized by divine visions, Mesut challenges his brother’s leadership to save his people. Will this new path bring salvation or tragedy?",
-  "tmdb": 1401106
- },
- {
-  "t": "Love Me Instead",
-  "y": 2021,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama"
-  ],
-  "m": [
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/41eH50AJ6D4olMC0oErSMwDD9WY.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2021-11-19",
-  "pop": 58,
-  "rtg": 6.5,
-  "vot": 58,
-  "ov": "Accompanied by a ward, a prisoner travels to his hometown to reconnect with his daughter and make amends, but a tragic truth mars his journey.",
-  "tmdb": 889300
- },
- {
   "t": "Abandoned Man",
   "y": 2025,
   "cat": "english-dubbed",
@@ -28698,6 +28584,93 @@
   "vot": 80,
   "ov": "After serving time in prison for his brother's crime, a man warily reunites with family, finding hope and healing in a life-changing bond with his niece.",
   "tmdb": 1495723
+ },
+ {
+  "t": "Ateş",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/wvccdxZHLR3QHGQEdDoHEZronup.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-10-09",
+  "pop": 5,
+  "rtg": 8.2,
+  "vot": 5,
+  "ov": "After his older brother, Chief Inspector Ali, is killed in the line of duty, Special Forces Major Ateş sets out to uncover the shadowy organization responsible for his death. As his investigation brings him closer to the truth, he faces increasingly dangerous challenges that threaten both his personal life and military career. Driven by grief and a desire for justice, Ateş finds himself caught in a growing conflict b",
+  "tmdb": 1792591
+ },
+ {
+  "t": "Ashes",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [
+   "Romantic",
+   "Emotional",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/9v7e4WvlEY4JnO62OEuw3zllmAP.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2024-02-09",
+  "pop": 67,
+  "rtg": 5.8,
+  "vot": 67,
+  "ov": "From an intoxicating fantasy to a dangerous affair, a wealthy married woman finds her life irreversibly shattered after picking up an unpublished novel.",
+  "tmdb": 1230085
+ },
+ {
+  "t": "Don't Leave",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/9TN5ucb5t2CElp1i3LiHZXPSrgG.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2022-11-11",
+  "pop": 36,
+  "rtg": 5.4,
+  "vot": 36,
+  "ov": "Semih's girlfriend suddenly breaks up with him. In search of answers about their relationship, he must soon confront what he had long ignored.",
+  "tmdb": 1040263
  },
  {
   "t": "The Wild Pear Tree",
@@ -28784,34 +28757,6 @@
   "tmdb": 1285660
  },
  {
-  "t": "Don't Leave",
-  "y": 2022,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Romance",
-   "Drama"
-  ],
-  "m": [
-   "Romantic",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/9TN5ucb5t2CElp1i3LiHZXPSrgG.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2022-11-11",
-  "pop": 36,
-  "rtg": 5.4,
-  "vot": 36,
-  "ov": "Semih's girlfriend suddenly breaks up with him. In search of answers about their relationship, he must soon confront what he had long ignored.",
-  "tmdb": 1040263
- },
- {
   "t": "Recep Ivedik 7",
   "y": 2022,
   "cat": "english-dubbed",
@@ -28836,6 +28781,34 @@
   "vot": 76,
   "ov": "Recep and Nurullah decide to go village house, which is inherited from his grandma. Recep finds out the existence of a big project, that will damage the village and the surrounding forests. Villagers will fight against the project with Recep's leadership.",
   "tmdb": 952062
+ },
+ {
+  "t": "D.I.S.C.O.",
+  "y": 2026,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy"
+  ],
+  "m": [
+   "Action",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/jHXxVDqA130tXf8O20OHLDom4hD.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-01-01",
+  "pop": 16,
+  "rtg": 6.9,
+  "vot": 16,
+  "ov": "The operation, which has been carried out in secret by the D.I.S.C.O. intelligence agency for a long time, fails because of Agent Ertan. Ertan, who was suspended from the organization, goes on vacation with his wife Seda. Here, the path crosses with Bandırma Hair Dryer First Zafer and his wife Aynur. Zafer, who learned about Ertan's profession, has only one condition to be silent. To finish Ertan's unfinished operati",
+  "tmdb": 1555331
  },
  {
   "t": "Dabbe 2",
@@ -29090,36 +29063,6 @@
   "vot": 570,
   "ov": "A group of men set out in search of a dead body in the Anatolian steppes",
   "tmdb": 74879
- },
- {
-  "t": "Ashes",
-  "y": 2024,
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Romance",
-   "Drama",
-   "Fantasy"
-  ],
-  "m": [
-   "Romantic",
-   "Emotional",
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/9v7e4WvlEY4JnO62OEuw3zllmAP.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2024-02-09",
-  "pop": 67,
-  "rtg": 5.8,
-  "vot": 67,
-  "ov": "From an intoxicating fantasy to a dangerous affair, a wealthy married woman finds her life irreversibly shattered after picking up an unpublished novel.",
-  "tmdb": 1230085
  },
  {
   "t": "Sijjin 8",
