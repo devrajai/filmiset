@@ -1,0 +1,36 @@
+{
+  "note": "The catalogue is sharded across several Google Sheets because one spreadsheet caps at 10,000,000 cells. The site queries them live through the gviz endpoint, which is CORS-enabled and supports server-side SQL (tq=select ... where ... limit ...).",
+  "columns": [
+    "tconst",
+    "Title",
+    "Year",
+    "Type",
+    "Genres",
+    "Runtime",
+    "IMDb",
+    "Votes"
+  ],
+  "shards": [
+    {
+      "name": "Catalogue",
+      "kind": "full",
+      "sheet_id": "1xMUhlRF2iKVUPXBk2KnCcmI3uUBcPj4pEWEurdNkWj0",
+      "tab": "All Titles",
+      "rows": 2405
+    },
+    {
+      "name": "IMDb A",
+      "kind": "imdb",
+      "sheet_id": "1WcXlEFx8YA3l5qvih661IGsVjq1HJJpAycOo_YkawnQ",
+      "tab": "Titles",
+      "rows": 15000
+    },
+    {
+      "name": "IMDb B",
+      "kind": "imdb",
+      "sheet_id": "1-H5E_IXHjN7R1te_Y_l0KDiIahzr3yyIkqnVnRujUFs",
+      "tab": "Titles",
+      "rows": 15000
+    }
+  ]
+}

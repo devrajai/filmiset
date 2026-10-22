@@ -318,6 +318,7 @@ const CATS = {
   'korean-dubbed':   {label:'Korean · Hindi Dubbed',   color:'#be123c'},
   'anime':           {label:'Anime',                   color:'#a21caf'},
   'animation':       {label:'Animation',               color:'#1d4ed8'},
+  'imdb':            {label:'IMDb catalogue',          color:'#64748b'},
 };
 
 const MOODS = ['Feel-Good','Comedy','Romantic','Thriller','Mystery','Action','Emotional','Horror','Nostalgic','Family'];
@@ -715,6 +716,8 @@ document.getElementById('q').addEventListener('input',e=>{
   state.q=e.target.value.trim().toLowerCase();
   var qc=document.getElementById('qclear'); if(qc) qc.hidden = !e.target.value;
   render();
+  clearTimeout(liveTimer);
+  liveTimer=setTimeout(()=>fetchLive(state.q), 350);   // also search the sheet shards
 });
 document.getElementById('qclear').addEventListener('click',()=>{
   var q=document.getElementById('q'); q.value=''; state.q='';
@@ -1028,6 +1031,12 @@ function render(){
     return bd.localeCompare(ad);                      // newest first
   });
 
+  // results that came back from the live sheet shards for this search
+  if(liveQuery && state.q && liveQuery === state.q && liveResults.length){
+    const seen = new Set(out.map(x => x.t.toLowerCase()));
+    liveResults.forEach(d => { if(!seen.has(d.t.toLowerCase())){ seen.add(d.t.toLowerCase()); out.push(d); } });
+  }
+
   let label = state.cat.size ? [...state.cat].map(c=>CATS[c]?CATS[c].label:c).join(' + ') : 'All titles';
   if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat.size ? ' · '+label : ' releases');
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) label = (state.coll==='popular' ? 'Most Popular' : 'Top '+co.label); }
@@ -1126,6 +1135,47 @@ function mergeSets(list){
     }
     idx.set(k, DATA.length); DATA.push(c);
   });
+}
+
+/* ---- live catalogue: Google Sheet shards ----
+   A spreadsheet caps at 10,000,000 cells, so the catalogue is split across several sheets.
+   The site asks each shard for just the rows it needs (gviz supports server-side SQL). */
+let SHEET_SHARDS = [], liveResults = [], liveQuery = '', liveTimer = null;
+fetch('data/sheet_shards.json').then(r => r.ok ? r.json() : null)
+  .then(m => { if(m && Array.isArray(m.shards)) SHEET_SHARDS = m.shards.filter(s => s.kind === 'imdb'); })
+  .catch(() => {});
+
+function gviz(shard, tq){
+  const url = 'https://docs.google.com/spreadsheets/d/'+shard.sheet_id+'/gviz/tq?tqx=out:json&sheet='
+    + encodeURIComponent(shard.tab || 'Titles') + '&tq=' + encodeURIComponent(tq);
+  return fetch(url).then(r => r.text()).then(t => {
+    const i = t.indexOf('{'), j = t.lastIndexOf('}');
+    if(i < 0 || j < 0) return [];
+    const d = JSON.parse(t.slice(i, j + 1));
+    return (((d.table || {}).rows) || []).map(row => {
+      const c = row.c || [];
+      const v = k => (c[k] && c[k].v != null) ? c[k].v : '';
+      const g = String(v(2) || '').split(',').map(x => x.trim()).filter(Boolean).slice(0, 3);
+      return { t: String(v(0) || ''), y: Number(v(1)) || '', cat: 'imdb', type: 'Movie',
+               g: g.length ? g : ['Drama'], m: [], a: ['Hindi (dub)', 'English'], o: [], poster: '',
+               src: 'imdb', status: 'released', irt: v(3) || '', ivot: Number(v(4)) || 0, live: true };
+    }).filter(x => x.t);
+  }).catch(() => []);
+}
+function fetchLive(q){
+  if(!SHEET_SHARDS.length || !q || q.length < 3){
+    if(liveResults.length){ liveResults = []; liveQuery = ''; render(); }
+    return;
+  }
+  const safe = q.replace(/'/g, '');
+  Promise.all(SHEET_SHARDS.map(s => gviz(s, "select B,C,E,G,H where B contains '" + safe + "' limit 25")))
+    .then(lists => {
+      const seen = new Set();
+      liveResults = [].concat.apply([], lists).filter(x => {
+        const k = x.t.toLowerCase(); if(seen.has(k)) return false; seen.add(k); return true;
+      });
+      liveQuery = q; render();
+    });
 }
 
 /* ---- PWA: installable + offline shell ---- */
