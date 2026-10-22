@@ -48,6 +48,24 @@ SERIES = {
                 "where": "?s wdt:P31/wdt:P279* wd:Q63952888 ."},
 }
 
+# film franchises ("part of the series", Wikidata P179)
+FRANCHISES = {
+    "Marvel Cinematic Universe": "Q642878",
+    "DC Extended Universe":      "Q18281265",
+    "James Bond":                "Q2484680",
+    "Fast & Furious":            "Q1576873",
+    "Harry Potter":              "Q216930",
+    "Star Wars":                 "Q22092344",
+    "Mission: Impossible":       "Q1356213",
+    "Jurassic Park":             "Q17862144",
+    "Transformers":              "Q2073466",
+    "Pirates of the Caribbean":  "Q194318",
+    "The Hunger Games":          "Q11885031",
+    "The Twilight Saga":         "Q652599",
+    "Fifty Shades":              "Q25222455",
+    "The Lord of the Rings":     "Q190214",
+}
+
 GENRE_MOOD = [
     ("comedy", "Comedy"), ("drama", "Emotional"), ("action", "Action"),
     ("thriller", "Thriller"), ("mystery", "Mystery"), ("romance", "Romantic"),
@@ -305,6 +323,40 @@ def fetch_series(cfg, limit):
     return out
 
 
+def query_franchise(qid, limit):
+    return f"""
+SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop) (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres) WHERE {{
+  ?film wdt:P179 wd:{qid} ; wdt:P31 wd:Q11424 ; wdt:P577 ?date .
+  OPTIONAL {{ ?film wikibase:sitelinks ?sl }}
+  OPTIONAL {{ ?film wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }}
+  OPTIONAL {{ ?film wdt:P18 ?image }}
+  OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}
+GROUP BY ?filmLabel ?image ?articleTitle
+LIMIT {limit}
+"""
+
+
+def fetch_franchise(name, qid, limit=80):
+    out = []
+    for r in sparql(query_franchise(qid, limit))["results"]["bindings"]:
+        t = r.get("filmLabel", {}).get("value", "").strip()
+        if not t or t.startswith("Q"):
+            continue
+        date = r.get("d", {}).get("value", "")[:10]
+        genres = norm_genres(r.get("genres", {}).get("value", ""))
+        out.append({
+            "t": t, "y": int(date[:4]) if date[:4].isdigit() else "",
+            "cat": "english-dubbed", "type": "Movie",
+            "g": genres, "m": moods_for(genres), "a": ["Hindi (dub)", "English"], "o": [],
+            "poster": commons_url(r.get("image", {}).get("value", "")),
+            "src": "wikidata", "status": "released", "date": date, "pop": _pop(r),
+            "franchise": name, "_wiki": r.get("articleTitle", {}).get("value", "").strip(),
+        })
+    return out
+
+
 def dedupe(movies):
     seen, uniq = set(), []
     for m in movies:
@@ -377,6 +429,13 @@ def main():
         try:
             got = fetch_collection(cfg, cfg["limit"]); collected += got
             print(f"  {name:10s} -> {len(got)}")
+        except Exception as e:
+            print(f"  ! {name}: {type(e).__name__}", file=sys.stderr)
+    print("Fetching franchises (Marvel, DC, …)…")
+    for name, qid in FRANCHISES.items():
+        try:
+            got = fetch_franchise(name, qid); collected += got
+            print(f"  {name:26s} -> {len(got)}")
         except Exception as e:
             print(f"  ! {name}: {type(e).__name__}", file=sys.stderr)
     if not args.no_series:

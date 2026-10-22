@@ -231,6 +231,7 @@
     <div class="rail-block"><h6>Category</h6><div class="chips" id="catRow"></div></div>
     <div class="rail-block"><h6>OTT Platform</h6><div class="chips" id="ottRow"></div></div>
     <div class="rail-block"><h6>Collections</h6><div class="chips" id="collRow"></div></div>
+    <div class="rail-block"><h6>Franchise (in sequence)</h6><div class="chips" id="frRow"></div></div>
     <div class="rail-block"><h6>Mood</h6><div class="chips" id="moodRow"></div></div>
     <div class="rail-block"><h6>Type</h6><div class="chips" id="typeRow"></div></div>
     <div class="rail-block"><h6>Era</h6><div class="chips" id="eraRow"></div></div>
@@ -330,7 +331,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:'all', coll:'all', sort:'new', savedOnly:false, q:''};
+const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:'all', coll:'all', fr:'all', sort:'new', savedOnly:false, q:''};
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
 const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
@@ -357,12 +358,13 @@ function persistWatchlist(){ try{ localStorage.setItem('filmiset_watchlist', JSO
   if(p.get('src')) state.src=p.get('src');
   if(p.get('ott')) state.ott=p.get('ott');
   if(p.get('coll')) state.coll=p.get('coll');
+  if(p.get('fr')) state.fr=p.get('fr');
   if(p.get('sort')) state.sort=p.get('sort');
   if(p.get('q')){ state.q=p.get('q').toLowerCase(); document.getElementById('q').value=p.get('q'); }
   if(p.get('moods')) p.get('moods').split('|').filter(Boolean).forEach(m=>state.moods.add(m));
   if(p.get('saved')==='1') state.savedOnly=true;
   // a shared link that pins a category/OTT should show the whole set, not just this month
-  if(!p.get('rel') && ((state.cat!=='all') || (state.ott!=='all') || (state.coll!=='all'))) state.rel='all';
+  if(!p.get('rel') && ((state.cat!=='all') || (state.ott!=='all') || (state.coll!=='all') || (state.fr!=='all'))) state.rel='all';
 })();
 
 /* ---- build filter UI ---- */
@@ -447,6 +449,30 @@ sortRow.addEventListener('click',e=>{
   const b=e.target.closest('.pill'); if(!b)return;
   sortRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
   b.classList.add('on'); state.sort=b.dataset.sort; render();
+});
+
+/* Franchises — always shown in release order (= story sequence) */
+const FRANCHISES = [
+  ['Marvel Cinematic Universe','Marvel (MCU)'], ['DC Extended Universe','DC'],
+  ['James Bond','James Bond'], ['Fast & Furious','Fast & Furious'],
+  ['Harry Potter','Harry Potter'], ['Star Wars','Star Wars'],
+  ['Mission: Impossible','Mission: Impossible'], ['Jurassic Park','Jurassic Park'],
+  ['Transformers','Transformers'], ['Pirates of the Caribbean','Pirates'],
+  ['The Hunger Games','Hunger Games'], ['The Twilight Saga','Twilight'],
+  ['Fifty Shades','Fifty Shades'], ['The Lord of the Rings','Lord of the Rings'],
+];
+const frRow=document.getElementById('frRow');
+[['all','All franchises']].concat(FRANCHISES).forEach(([k,label])=>{
+  const b=document.createElement('button');
+  b.className='pill'+(state.fr===k?' on':''); b.dataset.fr=k; b.textContent=label;
+  frRow.appendChild(b);
+});
+frRow.addEventListener('click',e=>{
+  const b=e.target.closest('.pill'); if(!b)return;
+  frRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  b.classList.add('on'); state.fr=b.dataset.fr;
+  if(state.fr!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  render();
 });
 
 const moodRow=document.getElementById('moodRow');
@@ -624,6 +650,7 @@ function syncUrl(){
   if(state.src!=='all') p.set('src',state.src);
   if(state.ott!=='all') p.set('ott',state.ott);
   if(state.coll!=='all') p.set('coll',state.coll);
+  if(state.fr!=='all') p.set('fr',state.fr);
   if(state.sort!=='new') p.set('sort',state.sort);
   if(state.q) p.set('q',state.q);
   if(state.moods.size) p.set('moods',[...state.moods].join('|'));
@@ -648,6 +675,7 @@ function activeFilters(){
   if(state.src==='catalogue') a.push('Catalogue');
   if(state.ott!=='all') a.push(state.ott);
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) a.push(co.label); }
+  if(state.fr!=='all') a.push(state.fr);
   if(state.moods.size) a.push([...state.moods].join(', '));
   if(state.savedOnly) a.push('Saved only');
   return a;
@@ -659,13 +687,14 @@ function setPillRow(id, attr, val){
 function clearAllFilters(){
   state.cat='all'; state.moods.clear(); state.type='all'; state.era='all';
   state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott='all';
-  state.coll='all'; state.sort='new'; state.savedOnly=false; state.q='';
+  state.coll='all'; state.fr='all'; state.sort='new'; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
   setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
-  setPillRow('ottRow','ott','all'); setPillRow('collRow','coll','all'); setPillRow('sortRow','sort','new');
+  setPillRow('ottRow','ott','all'); setPillRow('collRow','coll','all');
+  setPillRow('frRow','fr','all'); setPillRow('sortRow','sort','new');
   document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
   render();
 }
@@ -699,6 +728,7 @@ function render(){
       const co=COLLECTIONS.find(c=>c.k===state.coll);
       if(co && co.g){ const gl=(d.g||[]).join(' ').toLowerCase(); if(!co.g.some(k=>gl.includes(k))) return false; }
     }
+    if(state.fr!=='all' && d.franchise!==state.fr) return false;
     if(state.occasion!=='all'){
       const oc=OCCASIONS.find(o=>o.k===state.occasion);
       if(oc){
@@ -715,6 +745,7 @@ function render(){
   out.sort((a,b)=>{
     const ad=String(a.date||''), bd=String(b.date||'');
     const au=a.status==='upcoming', bu=b.status==='upcoming';
+    if(state.fr!=='all') return (ad||'9999').localeCompare(bd||'9999');   // franchise = release order
     if(state.rel==='upcoming') return (ad||'9999').localeCompare(bd||'9999');
     if(byPop){ const pa=a.pop||0, pb=b.pop||0; if(pb!==pa) return pb-pa; return bd.localeCompare(ad); }
     if(au!==bu) return au ? 1 : -1;                  // released first, upcoming last
@@ -725,9 +756,10 @@ function render(){
   let label = state.cat==='all' ? 'All titles' : CATS[state.cat].label;
   if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat==='all' ? ' releases' : ' · '+CATS[state.cat].label);
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) label = (state.coll==='popular' ? 'Most Popular' : 'Top '+co.label); }
+  if(state.fr!=='all') label = state.fr + ' — in sequence';
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
-  const key = JSON.stringify([state.cat,[...state.moods].sort(),state.type,state.era,state.occasion,state.rel,state.dub,state.src,state.ott,state.coll,state.sort,state.savedOnly,state.q]);
+  const key = JSON.stringify([state.cat,[...state.moods].sort(),state.type,state.era,state.occasion,state.rel,state.dub,state.src,state.ott,state.coll,state.fr,state.sort,state.savedOnly,state.q]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, shownLimit);
   resCount.textContent = (shown.length<out.length ? shown.length+' of '+out.length : out.length)+' title'+(out.length===1?'':'s');

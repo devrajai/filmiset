@@ -25,6 +25,7 @@ Titles are both **movies** and **web / TV series** (Type filter).
 - **Hindi Dubbed** filter — shows every title with a Hindi dub, regardless of original language
 - **OTT Platform** filter (Netflix, Prime Video, JioHotstar, ZEE5, SonyLIV, HBO Max, Apple TV+, Crunchyroll, …)
 - **Collections** — Heist, Suspense & Mystery, Thriller, Crime, Horror, Teen, Romance, Sci-Fi, Action, Comedy, 18+ (Adult), Most Popular
+- **Franchise** — Marvel (MCU), DC, James Bond, Fast & Furious, Harry Potter, Star Wars, Mission: Impossible, Jurassic Park, Transformers, Pirates, Hunger Games, Twilight, Fifty Shades, Lord of the Rings — always shown in **release order (story sequence)**
 - **Sort** — Newest / Most popular (popularity from Wikidata sitelinks)
 - Har title par: year, genres, mood tags, available audio (Hindi dub included), OTT platforms
 - **"Where to watch"** button -> JustWatch India search (100% legal)
