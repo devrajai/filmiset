@@ -254,7 +254,11 @@
    "Rainy Day"
   ],
   "note": "Tamil classic",
-  "poster": "posters/parasakthi-2026-poster.jpg"
+  "poster": "posters/parasakthi-2026-poster.jpg",
+  "rt": 188,
+  "rtg": 6.6,
+  "vot": 10,
+  "cert": "U"
  },
  {
   "t": "The Godfather",
@@ -439,7 +443,10 @@
    "Rainy Day"
   ],
   "note": "First Indian talkie",
-  "poster": "posters/alam-ara-poster-1931.jpg"
+  "poster": "posters/alam-ara-poster-1931.jpg",
+  "rt": 124,
+  "rtg": 6.5,
+  "vot": 2
  },
  {
   "t": "Achhut Kanya",
@@ -493,7 +500,10 @@
    "Rainy Day"
   ],
   "note": "1940s blockbuster",
-  "poster": "posters/500px-kismet-1943.jpg"
+  "poster": "posters/500px-kismet-1943.jpg",
+  "rt": 143,
+  "rtg": 6.2,
+  "vot": 6
  },
  {
   "t": "Do Bigha Zamin",
@@ -609,7 +619,12 @@
    "Rainy Day"
   ],
   "note": "Salim-Javed classic",
-  "poster": "posters/deewaar-poster.jpg"
+  "poster": "posters/deewaar-poster.jpg",
+  "rt": 174,
+  "rtg": 7.2,
+  "vot": 78,
+  "cert": "U",
+  "tr": "DuJ_7UVyGIc"
  },
  {
   "t": "Chupke Chupke",
@@ -830,7 +845,11 @@
    "New Year"
   ],
   "note": "Cult comedy",
-  "poster": "posters/andaz-apna-apna.jpg"
+  "poster": "posters/andaz-apna-apna.jpg",
+  "rt": 160,
+  "rtg": 6.8,
+  "vot": 260,
+  "cert": "U"
  },
  {
   "t": "Patala Bhairavi",
@@ -1287,7 +1306,11 @@
    "Independence Day"
   ],
   "note": "Spielberg classic",
-  "poster": "posters/jurassic-park-poster.jpg"
+  "poster": "posters/jurassic-park-poster.jpg",
+  "rt": 127,
+  "rtg": 8.0,
+  "vot": 18504,
+  "tr": "bx46tthKXmc"
  },
  {
   "t": "Titanic",
