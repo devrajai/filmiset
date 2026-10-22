@@ -165,6 +165,8 @@
   .vibe .vt span{font-family:var(--font-mono);font-size:10px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}
   .vibe .vt b{font-family:var(--font-display);font-size:17px;display:block;margin-top:2px}
   .vibe .vt p{font-size:13px;color:var(--muted);margin-top:3px}
+  .sum{font-size:11.5px;color:var(--muted);line-height:1.45;margin-top:6px;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
   .cardacts{display:flex;gap:6px;margin-top:8px}
   .mini{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;
     font-family:var(--font-body);font-size:11.5px;font-weight:600;cursor:pointer;padding:7px 8px;
@@ -745,7 +747,10 @@ function openModal(d){
     + '<h3>'+d.t+'</h3>'
     + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(d.rt?' · '+d.rt+' min':'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
     + '<div class="m" style="margin-top:6px">'+[(d.g||[]).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
-    + (d.note? '<p>'+d.note+'</p>':'')
+    + (d.ov? '<p>'+d.ov+'</p>':(d.note? '<p>'+d.note+'</p>':''))
+    + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
+        + [d.dir?'Director: '+d.dir:'', d.prod?'Studio: '+d.prod:'',
+           (d.cast&&d.cast.length)?'Cast: '+d.cast.join(', '):''].filter(Boolean).join('  ·  ') + '</div>' : '')
     + '<div class="row">'
       + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">Watch trailer</a>':'')
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
@@ -978,6 +983,7 @@ function render(){
       + '<div class="cardbody">'
         + '<h4>'+d.t+'</h4>'
         + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.irt?' · IMDb '+d.irt:(d.rtg?' · \u2605'+d.rtg:''))+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
+        + (d.ov? '<div class="sum">'+d.ov+'</div>':'')
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
         + (d.trailer

@@ -22,7 +22,8 @@ import argparse, json, os, sys, time, urllib.parse, urllib.request
 
 TMDB = "https://api.themoviedb.org/3"
 CACHE = "data/tmdb_cache.json"
-FIELDS = ("o", "rt", "rtg", "vot", "cert", "tr", "imdb")
+FIELDS = ("o", "rt", "rtg", "vot", "cert", "tr", "imdb", "ov", "cast", "dir", "prod")
+SCHEMA = 2          # bump when new fields are added, so cached titles get re-looked-up
 
 PROVIDER_MAP = {
     "netflix": "Netflix", "amazon prime video": "Prime Video", "amazon video": "Prime Video",
@@ -64,9 +65,22 @@ def lookup(title, year, key, region):
             return out
         mid = res[0]["id"]
 
-        d = tmdb(f"/movie/{mid}", key, {"append_to_response": "release_dates,videos"})
+        d = tmdb(f"/movie/{mid}", key, {"append_to_response": "release_dates,videos,credits"})
         if d.get("imdb_id"):
             out["imdb"] = d["imdb_id"]
+        if d.get("overview"):
+            out["ov"] = d["overview"][:420]
+        cr = d.get("credits", {}) or {}
+        cast = [c.get("name") for c in (cr.get("cast") or [])[:4] if c.get("name")]
+        if cast:
+            out["cast"] = cast
+        for c in (cr.get("crew") or []):
+            if c.get("job") == "Director" and c.get("name"):
+                out["dir"] = c["name"]
+                break
+        pc = d.get("production_companies") or []
+        if pc:
+            out["prod"] = pc[0].get("name")
         if d.get("runtime"):
             out["rt"] = int(d["runtime"])
         if d.get("vote_average"):
@@ -153,16 +167,16 @@ def main():
         print("TMDB_API_KEY not set — skipping new lookups (site keeps working).")
         return
 
-    todo = [(f, m) for f, data in loaded.items() for m in data if not m.get("rt")]
+    todo = [(f, m) for f, data in loaded.items() for m in data
+            if cache.get(key_of(m), {}).get("_v") != SCHEMA]
     if args.limit:
         todo = todo[:args.limit]
     print(f"titles needing a new lookup: {len(todo)}")
     done = 0
     for f, m in todo:
         ck = key_of(m)
-        if ck in cache:
-            continue
         info = lookup(m.get("t", ""), m.get("y", ""), key, args.region)
+        info["_v"] = SCHEMA
         cache[ck] = info
         time.sleep(args.delay)
         if info:
