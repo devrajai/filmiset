@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FilmiSet — Kya Dekhein?</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -252,6 +256,7 @@
     <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
     <button id="shareBtn" class="hbtn" title="Share this view">Share</button>
     <button id="surpriseBtn" class="hbtn" title="Random pick">Surprise me</button>
+    <button id="installBtn" class="hbtn on" title="Install App" hidden>Install App</button>
   </div>
 </header>
 
@@ -1067,6 +1072,34 @@ function mergeSets(list){
     idx.set(k, DATA.length); DATA.push(c);
   });
 }
+
+/* ---- PWA setup ---- */
+if('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')){
+  navigator.serviceWorker.register('sw.js').catch(console.error);
+}
+
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const btn = document.getElementById('installBtn');
+  if(btn) btn.hidden = false;
+});
+
+document.getElementById('installBtn').addEventListener('click', async () => {
+  if(!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const { outcome } = await deferredPrompt.userChoice;
+  if(outcome === 'accepted'){
+    document.getElementById('installBtn').hidden = true;
+  }
+  deferredPrompt = null;
+});
+
+window.addEventListener('appinstalled', () => {
+  document.getElementById('installBtn').hidden = true;
+  deferredPrompt = null;
+});
 
 /* data/movies.json  = curated catalog (from the Google Sheet)
    data/catalog.json = auto-collected catalog (Wikidata, refreshed daily by a GitHub Action)
