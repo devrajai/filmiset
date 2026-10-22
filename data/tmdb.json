@@ -3704,9 +3704,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2016-07-01",
-  "pop": 13122,
+  "pop": 13123,
   "rtg": 8.5,
-  "vot": 13122,
+  "vot": 13123,
   "ov": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
   "tmdb": 372058
  },
@@ -3733,9 +3733,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2014-11-04",
-  "pop": 41580,
+  "pop": 41583,
   "rtg": 8.5,
-  "vot": 41580,
+  "vot": 41583,
   "ov": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
   "tmdb": 157336
  },
@@ -3763,9 +3763,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2019-05-30",
-  "pop": 21533,
+  "pop": 21535,
   "rtg": 8.5,
-  "vot": 21533,
+  "vot": 21535,
   "ov": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
   "tmdb": 496243
  },
@@ -3792,9 +3792,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "1994-09-10",
-  "pop": 31139,
+  "pop": 31142,
   "rtg": 8.5,
-  "vot": 31139,
+  "vot": 31142,
   "ov": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
   "tmdb": 680
  },
@@ -3875,9 +3875,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "1994-06-23",
-  "pop": 30712,
+  "pop": 30713,
   "rtg": 8.5,
-  "vot": 30712,
+  "vot": 30713,
   "ov": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
   "tmdb": 13
  },
@@ -3988,9 +3988,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "1990-09-12",
-  "pop": 14917,
+  "pop": 14918,
   "rtg": 8.4,
-  "vot": 14917,
+  "vot": 14918,
   "ov": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
   "tmdb": 769
  },
@@ -4016,9 +4016,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2001-12-18",
-  "pop": 28641,
+  "pop": 28644,
   "rtg": 8.4,
-  "vot": 28641,
+  "vot": 28644,
   "ov": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
   "tmdb": 120
  },
@@ -4072,9 +4072,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "1999-10-15",
-  "pop": 33076,
+  "pop": 33078,
   "rtg": 8.4,
-  "vot": 33076,
+  "vot": 33078,
   "ov": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
   "tmdb": 550
  },
@@ -4100,9 +4100,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "1997-12-20",
-  "pop": 14336,
+  "pop": 14337,
   "rtg": 8.4,
-  "vot": 14336,
+  "vot": 14337,
   "ov": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
   "tmdb": 637
  },
@@ -4156,9 +4156,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2002-12-18",
-  "pop": 24804,
+  "pop": 24805,
   "rtg": 8.4,
-  "vot": 24804,
+  "vot": 24805,
   "ov": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor.",
   "tmdb": 121
  },
@@ -4184,9 +4184,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2002-08-30",
-  "pop": 8547,
+  "pop": 8548,
   "rtg": 8.4,
-  "vot": 8547,
+  "vot": 8548,
   "ov": "In the poverty-stricken favelas of Rio de Janeiro in the 1970s, two young men choose different paths. Rocket is a budding photographer who documents the increasing drug-related violence of his neighborhood, while José “Zé” Pequeno is an ambitious drug dealer diving into a dangerous life of crime.",
   "tmdb": 598
  },
@@ -19256,34 +19256,6 @@
   "tmdb": 1213243
  },
  {
-  "t": "K.G.F: Chapter 1",
-  "y": 2018,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Thriller"
-  ],
-  "m": [
-   "Action",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/ltHlJwvxKv7d0ooCiKSAvfwV9tX.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2018-12-20",
-  "pop": 311,
-  "rtg": 7.5,
-  "vot": 311,
-  "ov": "A period drama set in the 1970s, KGF follows the story of a fierce rebel who rises against the brutal oppression in Kolar Gold Fields and becomes the symbol of hope to legions of downtrodden people.",
-  "tmdb": 564147
- },
- {
   "t": "Kantara - A Legend: Chapter 1",
   "y": 2025,
   "cat": "south-dubbed",
@@ -19313,6 +19285,34 @@
   "tmdb": 1083637
  },
  {
+  "t": "K.G.F: Chapter 1",
+  "y": 2018,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [
+   "Action",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/ltHlJwvxKv7d0ooCiKSAvfwV9tX.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2018-12-20",
+  "pop": 311,
+  "rtg": 7.5,
+  "vot": 311,
+  "ov": "A period drama set in the 1970s, KGF follows the story of a fierce rebel who rises against the brutal oppression in Kolar Gold Fields and becomes the symbol of hope to legions of downtrodden people.",
+  "tmdb": 564147
+ },
+ {
   "t": "K.G.F: Chapter 2",
   "y": 2022,
   "cat": "south-dubbed",
@@ -19339,6 +19339,35 @@
   "vot": 235,
   "ov": "The blood-soaked land of Kolar Gold Fields (KGF) has a new overlord now - Rocky, whose name strikes fear in the heart of his foes. His allies look up to Rocky as their Savior, the government sees him as a threat to law and order; enemies are clamoring for revenge and conspiring for his downfall. Bloodier battles and darker days await as Rocky continues on his quest for unchallenged supremacy.",
   "tmdb": 587412
+ },
+ {
+  "t": "Mahavatar Narsimha",
+  "y": 2025,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Family",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/uGTF87VyfjtwwqRlT2apQg5YnEp.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2025-07-25",
+  "pop": 60,
+  "rtg": 7.4,
+  "vot": 60,
+  "ov": "Tyrannical demon Hiranyakashyap challenges Vishnu, proclaiming himself a god. However, his son Prahlad remains devoted to Vishnu, who appears as Narsimha to defeat the demon.",
+  "tmdb": 1383072
  },
  {
   "t": "Kantara",
@@ -19370,33 +19399,32 @@
   "tmdb": 858485
  },
  {
-  "t": "Mahavatar Narsimha",
-  "y": 2025,
+  "t": "Love Mocktail 2",
+  "y": 2022,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Animation",
-   "Action",
-   "Fantasy"
+   "Romance",
+   "Drama"
   ],
   "m": [
-   "Family",
-   "Action"
+   "Romantic",
+   "Emotional"
   ],
   "a": [
    "Hindi (dub)",
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/uGTF87VyfjtwwqRlT2apQg5YnEp.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/u2U7XpEzlFq3x3C0bjRzOo3rhg.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2025-07-25",
-  "pop": 60,
-  "rtg": 7.4,
-  "vot": 60,
-  "ov": "Tyrannical demon Hiranyakashyap challenges Vishnu, proclaiming himself a god. However, his son Prahlad remains devoted to Vishnu, who appears as Narsimha to defeat the demon.",
-  "tmdb": 1383072
+  "date": "2022-02-11",
+  "pop": 7,
+  "rtg": 6.0,
+  "vot": 7,
+  "ov": "A sequel to Love Mocktail. Revolves around Aadi after the demise of his wife Nidhi. How does he move on from such a loss?",
+  "tmdb": 723567
  },
  {
   "t": "Martin",
@@ -19429,32 +19457,34 @@
   "tmdb": 861451
  },
  {
-  "t": "Love Mocktail 2",
-  "y": 2022,
+  "t": "Lucia",
+  "y": 2013,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
+   "Fantasy",
    "Romance",
-   "Drama"
+   "Thriller"
   ],
   "m": [
+   "Action",
    "Romantic",
-   "Emotional"
+   "Thriller"
   ],
   "a": [
    "Hindi (dub)",
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/u2U7XpEzlFq3x3C0bjRzOo3rhg.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/1b0pkG5fKRXbgxQrk3AVwXSNo7e.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2022-02-11",
-  "pop": 7,
-  "rtg": 6.0,
-  "vot": 7,
-  "ov": "A sequel to Love Mocktail. Revolves around Aadi after the demise of his wife Nidhi. How does he move on from such a loss?",
-  "tmdb": 723567
+  "date": "2013-10-19",
+  "pop": 63,
+  "rtg": 7.1,
+  "vot": 63,
+  "ov": "A man suffering from insomnia is tricked into buying a drug, Lucia, that makes his desires come true in his dreams, blurring the line between fantasy and reality.",
+  "tmdb": 219343
  },
  {
   "t": "777 Charlie",
@@ -19487,6 +19517,33 @@
   "tmdb": 634120
  },
  {
+  "t": "Bagheera",
+  "y": 2024,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/oW3iHFiXpfRXXQJiSXScNFEBf7h.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2024-10-31",
+  "pop": 24,
+  "rtg": 5.5,
+  "vot": 24,
+  "ov": "Dismayed by corruption and violence, a virtuous police officer becomes a masked vigilante to dliver lethal justice to criminals and crooked cops alike.",
+  "tmdb": 777292
+ },
+ {
   "t": "Milana",
   "y": 2007,
   "cat": "south-dubbed",
@@ -19513,148 +19570,6 @@
   "vot": 6,
   "ov": "Hero is in love with a girl who is forced to marry a police officer. Hero is later forced by his parents to marry a girl liked by them. Here starts the trouble again, even she wants a divorce from him. Will hero divorce her or they are happy with each other is the later part of the story",
   "tmdb": 521400
- },
- {
-  "t": "Lucia",
-  "y": 2013,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Fantasy",
-   "Romance",
-   "Thriller"
-  ],
-  "m": [
-   "Action",
-   "Romantic",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/1b0pkG5fKRXbgxQrk3AVwXSNo7e.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2013-10-19",
-  "pop": 63,
-  "rtg": 7.1,
-  "vot": 63,
-  "ov": "A man suffering from insomnia is tricked into buying a drug, Lucia, that makes his desires come true in his dreams, blurring the line between fantasy and reality.",
-  "tmdb": 219343
- },
- {
-  "t": "Seetharam Benoy",
-  "y": 2021,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Mystery"
-  ],
-  "m": [
-   "Emotional",
-   "Mystery"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/yjGSCbPyzyz1uOD6pJGK99e5Rml.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2021-08-16",
-  "pop": 5,
-  "rtg": 6.0,
-  "vot": 5,
-  "ov": "Seetharam, a cop, gets transferred to a remote village in Shimoga Dist Aanegadde finds himself in middle of a bunch of smart yet cruel thieves. The day he takes charge his house gets robbed. Matter of dignity and personal revenge, intense investigation then begins.",
-  "tmdb": 861772
- },
- {
-  "t": "Su from So",
-  "y": 2025,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Comedy",
-   "Horror"
-  ],
-  "m": [
-   "Comedy",
-   "Horror"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/eFI5DOq5b9D2vitCW7EY8RXxygf.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2025-07-25",
-  "pop": 24,
-  "rtg": 7.5,
-  "vot": 24,
-  "ov": "In a peaceful village full of joy, laughter, and vibrant life, everything seems perfect—until one day, the devil arrives. What follows is a hilarious chain of events that flips the entire village upside down!",
-  "tmdb": 1513656
- },
- {
-  "t": "Dia",
-  "y": 2020,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama",
-   "Romance"
-  ],
-  "m": [
-   "Emotional",
-   "Romantic"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/n038AswpNaZgIWfMEr5cxVAqcsB.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2020-02-07",
-  "pop": 26,
-  "rtg": 6.2,
-  "vot": 26,
-  "ov": "Dia tells the story of a young, introvert girl whose routine life brightens up when she falls for Rohith, one of her fellow college mates. Being an introvert girl and trying to express her love becomes the biggest challenge of her life. This romantic drama will make you lose yourself in the emotional journey of a girl falling in love.",
-  "tmdb": 672128
- },
- {
-  "t": "Love Mocktail",
-  "y": 2020,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Romance",
-   "Drama"
-  ],
-  "m": [
-   "Romantic",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/2zZHKvynaGFYxzqqWXoKXP3M1WH.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2020-01-31",
-  "pop": 22,
-  "rtg": 6.6,
-  "vot": 22,
-  "ov": "Love Mocktail is a 2020 Indian Kannada-language romantic drama film directed by Krishna in his director debut and jointly produced by Krishna, Milana Nagaraj. The film stars Krishna, Milana Nagaraj in the lead roles. The film was released on 31 January 2020.",
-  "tmdb": 672125
  },
  {
   "t": "Just Maath Maathalli",
@@ -19687,6 +19602,205 @@
   "tmdb": 256156
  },
  {
+  "t": "Vishnuvardhana",
+  "y": 2011,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Thriller",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Thriller",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/iSNBL28RhWz9HxSGXAOYYwpnxW2.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2011-12-08",
+  "pop": 8,
+  "rtg": 5.9,
+  "vot": 8,
+  "ov": "No one has entered a biography for him.",
+  "tmdb": 256024
+ },
+ {
+  "t": "Seetharam Benoy",
+  "y": 2021,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Mystery"
+  ],
+  "m": [
+   "Emotional",
+   "Mystery"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/yjGSCbPyzyz1uOD6pJGK99e5Rml.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2021-08-16",
+  "pop": 5,
+  "rtg": 6.0,
+  "vot": 5,
+  "ov": "Seetharam, a cop, gets transferred to a remote village in Shimoga Dist Aanegadde finds himself in middle of a bunch of smart yet cruel thieves. The day he takes charge his house gets robbed. Matter of dignity and personal revenge, intense investigation then begins.",
+  "tmdb": 861772
+ },
+ {
+  "t": "Kabzaa",
+  "y": 2023,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [
+   "Action",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/vFpw8DbiGdhrqcvzpuiuRQBZJPb.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2023-03-17",
+  "pop": 16,
+  "rtg": 4.4,
+  "vot": 16,
+  "ov": "During the British rule in India, Arakeshwara, an air force soldier and son of a freedom fighter Amareshwara,due to unavoidable circumstances, kills Khaleed, the don of Amarapura and thus gets trapped in the mafia world and later becomes the king of the underworld. However, trouble ensues for Arakeshwara as he has to deal with his rivals and Bhargav Bhakshi, a cop sent by the British to eradicate him and the underwor",
+  "tmdb": 683876
+ },
+ {
+  "t": "Su from So",
+  "y": 2025,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [
+   "Comedy",
+   "Horror"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/eFI5DOq5b9D2vitCW7EY8RXxygf.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2025-07-25",
+  "pop": 24,
+  "rtg": 7.5,
+  "vot": 24,
+  "ov": "In a peaceful village full of joy, laughter, and vibrant life, everything seems perfect—until one day, the devil arrives. What follows is a hilarious chain of events that flips the entire village upside down!",
+  "tmdb": 1513656
+ },
+ {
+  "t": "Love Mocktail",
+  "y": 2020,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/2zZHKvynaGFYxzqqWXoKXP3M1WH.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2020-01-31",
+  "pop": 22,
+  "rtg": 6.6,
+  "vot": 22,
+  "ov": "Love Mocktail is a 2020 Indian Kannada-language romantic drama film directed by Krishna in his director debut and jointly produced by Krishna, Milana Nagaraj. The film stars Krishna, Milana Nagaraj in the lead roles. The film was released on 31 January 2020.",
+  "tmdb": 672125
+ },
+ {
+  "t": "Simple Agi Ondh Love Story",
+  "y": 2013,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/o98xNCPFvTti9yfz6e69RzXt8Wp.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2013-09-28",
+  "pop": 9,
+  "rtg": 6.5,
+  "vot": 9,
+  "ov": "Rachana persuades her brother to meet her boyfriend's sister, Ithihasini, hoping that cupid would strike them. However, things take a turn when another girl tricks him into falling in love with her.",
+  "tmdb": 224598
+ },
+ {
+  "t": "Dia",
+  "y": 2020,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [
+   "Emotional",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/n038AswpNaZgIWfMEr5cxVAqcsB.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2020-02-07",
+  "pop": 26,
+  "rtg": 6.2,
+  "vot": 26,
+  "ov": "Dia tells the story of a young, introvert girl whose routine life brightens up when she falls for Rohith, one of her fellow college mates. Being an introvert girl and trying to express her love becomes the biggest challenge of her life. This romantic drama will make you lose yourself in the emotional journey of a girl falling in love.",
+  "tmdb": 672128
+ },
+ {
   "t": "James",
   "y": 2022,
   "cat": "south-dubbed",
@@ -19717,34 +19831,32 @@
   "tmdb": 683056
  },
  {
-  "t": "Vishnuvardhana",
-  "y": 2011,
+  "t": "Aachar & Co",
+  "y": 2023,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Comedy",
-   "Thriller",
-   "Romance"
+   "Family",
+   "Comedy"
   ],
   "m": [
-   "Comedy",
-   "Thriller",
-   "Romantic"
+   "Family",
+   "Comedy"
   ],
   "a": [
    "Hindi (dub)",
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/iSNBL28RhWz9HxSGXAOYYwpnxW2.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/uMzdbb8PYgJISkw5YGjWcyWqlMa.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2011-12-08",
+  "date": "2023-07-28",
   "pop": 8,
-  "rtg": 5.9,
+  "rtg": 6.4,
   "vot": 8,
-  "ov": "No one has entered a biography for him.",
-  "tmdb": 256024
+  "ov": "Set against the backdrop of 1960s Bangalore, Aachar & Co. follows the journey of a traditional family as they navigate the challenges of embracing modernity while honouring their roots. The film brings together a delightful mix of nostalgia, humour, and drama, capturing the essence of that era.",
+  "tmdb": 1147765
  },
  {
   "t": "Toby",
@@ -19777,72 +19889,18 @@
   "tmdb": 1139698
  },
  {
-  "t": "Bagheera",
-  "y": 2024,
+  "t": "Maanikya",
+  "y": 2014,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
    "Action",
-   "Adventure"
-  ],
-  "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/oW3iHFiXpfRXXQJiSXScNFEBf7h.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2024-10-31",
-  "pop": 24,
-  "rtg": 5.5,
-  "vot": 24,
-  "ov": "Dismayed by corruption and violence, a virtuous police officer becomes a masked vigilante to dliver lethal justice to criminals and crooked cops alike.",
-  "tmdb": 777292
- },
- {
-  "t": "Kabzaa",
-  "y": 2023,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Crime",
-   "Thriller"
-  ],
-  "m": [
-   "Action",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/vFpw8DbiGdhrqcvzpuiuRQBZJPb.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2023-03-17",
-  "pop": 16,
-  "rtg": 4.4,
-  "vot": 16,
-  "ov": "During the British rule in India, Arakeshwara, an air force soldier and son of a freedom fighter Amareshwara,due to unavoidable circumstances, kills Khaleed, the don of Amarapura and thus gets trapped in the mafia world and later becomes the king of the underworld. However, trouble ensues for Arakeshwara as he has to deal with his rivals and Bhargav Bhakshi, a cop sent by the British to eradicate him and the underwor",
-  "tmdb": 683876
- },
- {
-  "t": "Aachar & Co",
-  "y": 2023,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Family",
+   "Romance",
    "Comedy"
   ],
   "m": [
-   "Family",
+   "Action",
+   "Romantic",
    "Comedy"
   ],
   "a": [
@@ -19850,15 +19908,15 @@
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/uMzdbb8PYgJISkw5YGjWcyWqlMa.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/az6hDjRez2FzEYLycpzYGYWe5DU.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2023-07-28",
-  "pop": 8,
-  "rtg": 6.4,
-  "vot": 8,
-  "ov": "Set against the backdrop of 1960s Bangalore, Aachar & Co. follows the journey of a traditional family as they navigate the challenges of embracing modernity while honouring their roots. The film brings together a delightful mix of nostalgia, humour, and drama, capturing the essence of that era.",
-  "tmdb": 1147765
+  "date": "2014-03-28",
+  "pop": 5,
+  "rtg": 5.2,
+  "vot": 5,
+  "ov": "Vijay and Manasa's families have been at each other's throat's since the past 25 years. However, things take a turn when they fall in love with each other.",
+  "tmdb": 256023
  },
  {
   "t": "Auto Shankar",
@@ -19915,60 +19973,6 @@
   "vot": 17,
   "ov": "Set in a fictional world, the story is about the psychological conflict between a king in a town and an extraordinary man, and how that man, through his cunning and master minded plans takes over everything, takes control of the entire town, becomes a dictator.",
   "tmdb": 984500
- },
- {
-  "t": "Aa Karaala Ratri",
-  "y": 2018,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Thriller"
-  ],
-  "m": [
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/eebyDiBgu2dCFwBtWzVZgtrxn5u.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2018-07-13",
-  "pop": 13,
-  "rtg": 5.8,
-  "vot": 13,
-  "ov": "Muthanna and his family, who live in abject poverty, receive a prediction that says their fortune will change overnight. The same day, a mysterious man arrives and requests them to let him stay back.",
-  "tmdb": 536475
- },
- {
-  "t": "Pailwaan",
-  "y": 2019,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Drama"
-  ],
-  "m": [
-   "Action",
-   "Emotional"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/umWoSbujUE3iyrBjDxstuNapu0m.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2019-09-12",
-  "pop": 11,
-  "rtg": 6.0,
-  "vot": 11,
-  "ov": "A fierce wrestler becomes the symbol of hope for his people when he rises against the odds and fights the brutal oppression.",
-  "tmdb": 607294
  },
  {
   "t": "Pushpaka Vimana",
@@ -20029,17 +20033,46 @@
   "tmdb": 199583
  },
  {
-  "t": "Birbal Trilogy: Case 1 – Finding Vajramuni",
+  "t": "Pailwaan",
   "y": 2019,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Crime",
-   "Mystery",
-   "Thriller"
+   "Action",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/umWoSbujUE3iyrBjDxstuNapu0m.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2019-09-12",
+  "pop": 11,
+  "rtg": 6.0,
+  "vot": 11,
+  "ov": "A fierce wrestler becomes the symbol of hope for his people when he rises against the odds and fights the brutal oppression.",
+  "tmdb": 607294
+ },
+ {
+  "t": "Vikrant Rona",
+  "y": 2022,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Action",
+   "Mystery"
   ],
   "m": [
    "Thriller",
+   "Action",
    "Mystery"
   ],
   "a": [
@@ -20047,185 +20080,15 @@
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/pE7S2pQT8OgKSNUO7zjNSezL37z.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/jq1yH1pT8VMZONLMTgOFUDgitNh.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2019-01-18",
-  "pop": 7,
-  "rtg": 5.2,
-  "vot": 7,
-  "ov": "A man wrongly accused of murder is helped by Advocate Mahesh Das, despite the increasing threats they face during the investigation.",
-  "tmdb": 578432
- },
- {
-  "t": "Power",
-  "y": 2014,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Comedy"
-  ],
-  "m": [
-   "Action",
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/mvItDHQIHNiP3PA15Abr7JMAyDX.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2014-08-28",
-  "pop": 5,
-  "rtg": 4.0,
-  "vot": 5,
-  "ov": "A politician slips into coma after being attacked by criminals. He wakes up several years later to find his son having taken up his responsibilities. However, things are not what they seem to be.",
-  "tmdb": 668763
- },
- {
-  "t": "Simple Agi Ondh Love Story",
-  "y": 2013,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Comedy",
-   "Romance"
-  ],
-  "m": [
-   "Comedy",
-   "Romantic"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/o98xNCPFvTti9yfz6e69RzXt8Wp.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2013-09-28",
-  "pop": 9,
-  "rtg": 6.5,
-  "vot": 9,
-  "ov": "Rachana persuades her brother to meet her boyfriend's sister, Ithihasini, hoping that cupid would strike them. However, things take a turn when another girl tricks him into falling in love with her.",
-  "tmdb": 224598
- },
- {
-  "t": "Maanikya",
-  "y": 2014,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Romance",
-   "Comedy"
-  ],
-  "m": [
-   "Action",
-   "Romantic",
-   "Comedy"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/az6hDjRez2FzEYLycpzYGYWe5DU.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2014-03-28",
-  "pop": 5,
-  "rtg": 5.2,
-  "vot": 5,
-  "ov": "Vijay and Manasa's families have been at each other's throat's since the past 25 years. However, things take a turn when they fall in love with each other.",
-  "tmdb": 256023
- },
- {
-  "t": "Porki",
-  "y": 2010,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Crime"
-  ],
-  "m": [
-   "Action",
-   "Thriller"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/8g3yR3yKG0qqpv5wt3xJ0jx1o4c.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2010-01-28",
-  "pop": 5,
-  "rtg": 4.8,
-  "vot": 5,
-  "ov": "A cop disguises as a gangster in order to capture a mafia leader.",
-  "tmdb": 376074
- },
- {
-  "t": "Santhu Straight Forward",
-  "y": 2016,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action",
-   "Drama",
-   "Romance"
-  ],
-  "m": [
-   "Action",
-   "Emotional",
-   "Romantic"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/y9zNY9X8BkkL9POrPw3S6Gnp9bp.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2016-10-28",
-  "pop": 7,
-  "rtg": 5.0,
-  "vot": 7,
-  "ov": "Santhu is the typical do-gooder youngster, who is also the angry young hero. He falls for college student Ananya after a series of chance meetings. But, there's also dreaded don Deva in the picture forming the triangle.",
-  "tmdb": 519909
- },
- {
-  "t": "Pogaru",
-  "y": 2021,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [
-   "Action"
-  ],
-  "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Kannada"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/9zay0yF4MbU0K6gD32e5TsRDwsf.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2021-02-19",
-  "pop": 5,
-  "rtg": 3.8,
-  "vot": 5,
-  "ov": "Shiva, a ruffian, is the terror of his area in many ways, but still has a heart of gold. He has just one wish, for his mother to love him wholly like the way he does.",
-  "tmdb": 788106
+  "date": "2022-07-28",
+  "pop": 38,
+  "rtg": 6.1,
+  "vot": 38,
+  "ov": "Almost half a century ago, a remote village in the middle of a tropical rain forest starts witnessing a series of unexplainable events which they attribute to the supernatural. Vikrant Rona, An eccentric police officer, is assigned to solve the mystery.  A mysterious game unfolds where everyone in the village is a potential victim and everyone is a suspect.",
+  "tmdb": 680334
  },
  {
   "t": "Nathicharami",
@@ -20254,32 +20117,90 @@
   "tmdb": 571576
  },
  {
-  "t": "Avane Srimannarayana",
-  "y": 2019,
+  "t": "Kirik Party",
+  "y": 2016,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Fantasy",
-   "Action",
-   "Adventure"
+   "Comedy",
+   "Drama"
   ],
   "m": [
-   "Action"
+   "Comedy",
+   "Emotional"
   ],
   "a": [
    "Hindi (dub)",
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/2RbZNL7JRq5GhIAPrcJlm0LgsgX.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/16gpI8K51r2FzZ9wE0VXmrG5v9c.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2019-12-27",
-  "pop": 32,
-  "rtg": 7.4,
-  "vot": 32,
-  "ov": "In the pursuit of solving an ancient mystery of Amaravati, Narayana, a corrupt cop, must battle the dangerous clan of dacoits and it's fierce leader.",
-  "tmdb": 634077
+  "date": "2016-12-30",
+  "pop": 31,
+  "rtg": 7.6,
+  "vot": 31,
+  "ov": "Karna from a small town has joined this engineering college and he gangs up with his hostel mates Loki, Alexander, Manja and others to fuel a lot of mischief in the college.",
+  "tmdb": 433327
+ },
+ {
+  "t": "Chaarulatha",
+  "y": 2012,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Drama"
+  ],
+  "m": [
+   "Thriller",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/x8lxKknX4hbh6KSNfvhjbRPiyYP.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2012-09-21",
+  "pop": 7,
+  "rtg": 5.7,
+  "vot": 7,
+  "ov": "Chaarulatha (also spelled as Charulatha) is a 2012 Indian horror film simultaneously made in Kannada and Tamil languages. The film was directed by Pon Kumaran, a former associate to K. Bhagyaraj and K. S. Ravikumar, and features Priyamani in the lead role. The film was an adaptation of the Thai horror film Alone. Sundar C Babu composed the film's music.] The film’s story is about conjoined twins. Produced by Global O",
+  "tmdb": 146658
+ },
+ {
+  "t": "Rangi Taranga",
+  "y": 2015,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/bcuEuE3k0cIYD1t7HAgNLypfagx.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2015-07-03",
+  "pop": 28,
+  "rtg": 6.9,
+  "vot": 28,
+  "ov": "Mysterious events begin to unfold after a reclusive novelist and his wife move back to her ancestral village, followed by a journalist.",
+  "tmdb": 354667
  },
  {
   "t": "Upendra",
@@ -20310,32 +20231,86 @@
   "tmdb": 286110
  },
  {
-  "t": "Kirik Party",
-  "y": 2016,
+  "t": "Pogaru",
+  "y": 2021,
   "cat": "south-dubbed",
   "type": "Movie",
   "g": [
-   "Comedy",
-   "Drama"
+   "Action"
   ],
   "m": [
-   "Comedy",
-   "Emotional"
+   "Action"
   ],
   "a": [
    "Hindi (dub)",
    "Kannada"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/16gpI8K51r2FzZ9wE0VXmrG5v9c.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/9zay0yF4MbU0K6gD32e5TsRDwsf.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2016-12-30",
-  "pop": 31,
-  "rtg": 7.6,
-  "vot": 31,
-  "ov": "Karna from a small town has joined this engineering college and he gangs up with his hostel mates Loki, Alexander, Manja and others to fuel a lot of mischief in the college.",
-  "tmdb": 433327
+  "date": "2021-02-19",
+  "pop": 5,
+  "rtg": 3.8,
+  "vot": 5,
+  "ov": "Shiva, a ruffian, is the terror of his area in many ways, but still has a heart of gold. He has just one wish, for his mother to love him wholly like the way he does.",
+  "tmdb": 788106
+ },
+ {
+  "t": "Avane Srimannarayana",
+  "y": 2019,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy",
+   "Action",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/2RbZNL7JRq5GhIAPrcJlm0LgsgX.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2019-12-27",
+  "pop": 32,
+  "rtg": 7.4,
+  "vot": 32,
+  "ov": "In the pursuit of solving an ancient mystery of Amaravati, Narayana, a corrupt cop, must battle the dangerous clan of dacoits and it's fierce leader.",
+  "tmdb": 634077
+ },
+ {
+  "t": "Chakravarthy",
+  "y": 2017,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Action"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/zuPfBREMXmjDRs7xlviExsN4gWj.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2017-03-10",
+  "pop": 6,
+  "rtg": 7.2,
+  "vot": 6,
+  "ov": "Gangster life, from the 1980s to today, is represented in this movie.",
+  "tmdb": 440028
  },
  {
   "t": "Beast of Bangalore: Indian Predator",
@@ -23210,6 +23185,34 @@
   "tmdb": 1679730
  },
  {
+  "t": "Hana-Kimi",
+  "y": 2026,
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Animation",
+   "Comedy"
+  ],
+  "m": [
+   "Family",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/hZU0HRRGm9l4iRpUL98cMUogkge.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2026-01-04",
+  "pop": 32,
+  "rtg": 7.9,
+  "vot": 32,
+  "ov": "Mizuki Ashiya is on a mission: disguise herself as a boy and enroll in a male boarding school to meet her idol, high jump star Izumi Sano. But after successfully infiltrating the school, she discovers he’s suddenly quit the sport! Now Mizuki must dodge suspicion, protect her cover, and somehow reach the boy she came all this way for—all while surviving the chaos of an all-boys dorm!",
+  "tmdb": 254492
+ },
+ {
   "t": "Pokémon",
   "y": 1997,
   "cat": "anime",
@@ -23239,35 +23242,6 @@
   "tmdb": 60572
  },
  {
-  "t": "JUJUTSU KAISEN",
-  "y": 2020,
-  "cat": "anime",
-  "type": "Series",
-  "g": [
-   "Animation",
-   "Sci-Fi & Fantasy",
-   "Action & Adventure"
-  ],
-  "m": [
-   "Family",
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Japanese"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/6qQzMJG27XOJsyAEEIisoJB45j2.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "2020-10-03",
-  "pop": 4708,
-  "rtg": 8.6,
-  "vot": 4708,
-  "ov": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organizatio",
-  "tmdb": 95479
- },
- {
   "t": "Mushoku Tensei: Jobless Reincarnation",
   "y": 2021,
   "cat": "anime",
@@ -23290,11 +23264,40 @@
   "src": "tmdb",
   "status": "released",
   "date": "2021-01-11",
-  "pop": 1791,
+  "pop": 1792,
   "rtg": 8.4,
-  "vot": 1791,
+  "vot": 1792,
   "ov": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
   "tmdb": 94664
+ },
+ {
+  "t": "JUJUTSU KAISEN",
+  "y": 2020,
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Animation",
+   "Sci-Fi & Fantasy",
+   "Action & Adventure"
+  ],
+  "m": [
+   "Family",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/6qQzMJG27XOJsyAEEIisoJB45j2.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "2020-10-03",
+  "pop": 4709,
+  "rtg": 8.6,
+  "vot": 4709,
+  "ov": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organizatio",
+  "tmdb": 95479
  },
  {
   "t": "Detective Conan",
@@ -23327,34 +23330,33 @@
   "tmdb": 30983
  },
  {
-  "t": "AIBOU: Tokyo Detective Duo",
-  "y": 2002,
+  "t": "Ninja Boy Rantaro",
+  "y": 1993,
   "cat": "anime",
   "type": "Series",
   "g": [
-   "Drama",
-   "Crime",
-   "Mystery"
+   "Comedy",
+   "Action & Adventure",
+   "Kids"
   ],
   "m": [
-   "Emotional",
-   "Thriller",
-   "Mystery"
+   "Comedy",
+   "Action"
   ],
   "a": [
    "Hindi (dub)",
    "Japanese"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/8u8rCCeuBufMQ1VlGX0lruhDaPR.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/fzNiSp0HhCthOTYu9IYWlPPa7fU.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "2002-10-09",
+  "date": "1993-04-10",
   "pop": 24,
-  "rtg": 7.5,
+  "rtg": 6.9,
   "vot": 24,
-  "ov": "Detective Ukyo Sugishita confronts crime on the basis of his own convictions. He has a partner that works for him in the Special Task Unit. For the first 7 seasons, Ukyo’s first partner is Kaoru Kameyama. He is a good-natured, hot-tempered, straightforward and somewhat scattered detective. Beginning in Season 8, Takeru Kanbe replaces Kameyama. Contrary to his predecessor, Takeru is a lanky, cool, conceited and confid",
-  "tmdb": 40663
+  "ov": "Rantarō, Shinbei and Kirimaru are ninja  apprentices in the Ninja Gakuen, where first grade ones are called  \"Nintamas\". They must learn  everything a ninja must know, but as for our heroes, money, food or  playing are more interesting. The series show the everyday adventures of  our heroes.",
+  "tmdb": 34860
  },
  {
   "t": "Naruto",
@@ -23386,62 +23388,34 @@
   "tmdb": 46260
  },
  {
-  "t": "Sazae-san",
-  "y": 1969,
+  "t": "AIBOU: Tokyo Detective Duo",
+  "y": 2002,
   "cat": "anime",
   "type": "Series",
   "g": [
-   "Animation",
-   "Comedy",
-   "Family"
+   "Drama",
+   "Crime",
+   "Mystery"
   ],
   "m": [
-   "Family",
-   "Comedy"
+   "Emotional",
+   "Thriller",
+   "Mystery"
   ],
   "a": [
    "Hindi (dub)",
    "Japanese"
   ],
   "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/ovOdOiGr0xHxB8rCwLSXAchCrta.jpg",
+  "poster": "https://image.tmdb.org/t/p/w342/8u8rCCeuBufMQ1VlGX0lruhDaPR.jpg",
   "src": "tmdb",
   "status": "released",
-  "date": "1969-10-05",
-  "pop": 7,
-  "rtg": 7.0,
-  "vot": 7,
-  "ov": "The adventures of Sazae Fuguta and her family and friends in their Tokyo suburb.",
-  "tmdb": 153485
- },
- {
-  "t": "Ninja Boy Rantaro",
-  "y": 1993,
-  "cat": "anime",
-  "type": "Series",
-  "g": [
-   "Comedy",
-   "Action & Adventure",
-   "Kids"
-  ],
-  "m": [
-   "Comedy",
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "Japanese"
-  ],
-  "o": [],
-  "poster": "https://image.tmdb.org/t/p/w342/fzNiSp0HhCthOTYu9IYWlPPa7fU.jpg",
-  "src": "tmdb",
-  "status": "released",
-  "date": "1993-04-10",
+  "date": "2002-10-09",
   "pop": 24,
-  "rtg": 6.9,
+  "rtg": 7.5,
   "vot": 24,
-  "ov": "Rantarō, Shinbei and Kirimaru are ninja  apprentices in the Ninja Gakuen, where first grade ones are called  \"Nintamas\". They must learn  everything a ninja must know, but as for our heroes, money, food or  playing are more interesting. The series show the everyday adventures of  our heroes.",
-  "tmdb": 34860
+  "ov": "Detective Ukyo Sugishita confronts crime on the basis of his own convictions. He has a partner that works for him in the Special Task Unit. For the first 7 seasons, Ukyo’s first partner is Kaoru Kameyama. He is a good-natured, hot-tempered, straightforward and somewhat scattered detective. Beginning in Season 8, Takeru Kanbe replaces Kameyama. Contrary to his predecessor, Takeru is a lanky, cool, conceited and confid",
+  "tmdb": 40663
  },
  {
   "t": "Dragon Ball Z",
@@ -23471,6 +23445,35 @@
   "vot": 5050,
   "ov": "Now happily married and with a son, martial arts champion Goku must defend Earth from a series of extraterrestrial invaders bent on destruction.",
   "tmdb": 12971
+ },
+ {
+  "t": "Sazae-san",
+  "y": 1969,
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Animation",
+   "Comedy",
+   "Family"
+  ],
+  "m": [
+   "Family",
+   "Comedy"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "https://image.tmdb.org/t/p/w342/ovOdOiGr0xHxB8rCwLSXAchCrta.jpg",
+  "src": "tmdb",
+  "status": "released",
+  "date": "1969-10-05",
+  "pop": 7,
+  "rtg": 7.0,
+  "vot": 7,
+  "ov": "The adventures of Sazae Fuguta and her family and friends in their Tokyo suburb.",
+  "tmdb": 153485
  },
  {
   "t": "Naruto Shippūden",
@@ -24234,9 +24237,9 @@
   "src": "tmdb",
   "status": "released",
   "date": "2011-04-17",
-  "pop": 27996,
+  "pop": 27997,
   "rtg": 8.5,
-  "vot": 27996,
+  "vot": 27997,
   "ov": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
   "tmdb": 1399
  },
