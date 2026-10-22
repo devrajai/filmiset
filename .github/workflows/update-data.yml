@@ -24,7 +24,7 @@ jobs:
         run: python3 scripts/fetch_youtube.py
       - name: Fill OTT availability (TMDB, optional — needs TMDB_API_KEY secret)
         env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
         run: python3 scripts/fetch_ott.py --region IN
       - name: Download + compress posters locally
         run: python3 scripts/download_posters.py --workers 2 --delay 0.35

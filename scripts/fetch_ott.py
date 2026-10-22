@@ -91,7 +91,7 @@ def main():
     ap.add_argument("--files", default="data/catalog.json,data/movies.json")
     args = ap.parse_args()
 
-    key = os.environ.get("TMDB_API_KEY", "").strip()
+    key = (os.environ.get("TMDB_API_KEY") or os.environ.get("TMDBKEY") or "").strip()
     if not key:
         print("TMDB_API_KEY not set — skipping OTT enrichment (site keeps working).")
         return
