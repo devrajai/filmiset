@@ -23,7 +23,22 @@
    "Rainy Day"
   ],
   "note": "Ketan Mehta classic",
-  "poster": "posters/bhavnibhavai.jpg"
+  "poster": "posters/bhavnibhavai.jpg",
+  "rt": 135,
+  "rtg": 4.9,
+  "vot": 8,
+  "imdb": "tt0080435",
+  "ov": "In a drought-stricken city in India, the emperor Maharaja Dhiraj Chandrasen, who has two wives, and no children, orders all kinds of rituals to appease the Rain Gods",
+  "cast": [
+   "Smita Patil",
+   "Naseeruddin Shah",
+   "Mohan Gokhale",
+   "Om Puri"
+  ],
+  "dir": "Ketan Mehta",
+  "prod": "Sanchar Film Cooperative",
+  "irt": 7.1,
+  "ivot": 171
  },
  {
   "t": "Mena Gurjari",
@@ -49,7 +64,13 @@
    "Family Night",
    "Rainy Day"
   ],
-  "note": "Evergreen Gujarati film"
+  "note": "Evergreen Gujarati film",
+  "rtg": 9.0,
+  "vot": 1,
+  "imdb": "tt0266763",
+  "ov": "Film starring Snehlata and Upendra Trivedi",
+  "irt": 8.4,
+  "ivot": 7
  },
  {
   "t": "Desh Re Joya Dada Pardesh Joya",
@@ -77,7 +98,20 @@
    "Rainy Day"
   ],
   "note": "Blockbuster Gujarati film",
-  "poster": "posters/desh-re-joya-dada-pardesh-joya-poster.jpg"
+  "poster": "posters/desh-re-joya-dada-pardesh-joya-poster.jpg",
+  "rt": 167,
+  "imdb": "tt5739748",
+  "ov": "Desh Re Joya Dada Pardesh Joya is a romantic action comedy Gujarati movie, Directed and Produced by Govindbhai Patel. Featuring Hiten Kumar, Roma Manik and Ramesh Mehta in the lead roles . Radha, a village girl, is married off to an NRI after her marriage to her childhood sweetheart is cancelled. But, she undergoes a cultural shock in her new surroundings and yearns to get back home.",
+  "cast": [
+   "Hiten Kumar",
+   "Roma Manik",
+   "Arvind Trivedi",
+   "Sameer Rajda"
+  ],
+  "dir": "Govindbhai Patel",
+  "prod": "GN Films",
+  "irt": 7.4,
+  "ivot": 54
  },
  {
   "t": "Mughal-e-Azam",
@@ -107,7 +141,19 @@
   "rt": 197,
   "rtg": 7.1,
   "vot": 66,
-  "tr": "6PjoLgcrmcQ"
+  "tr": "6PjoLgcrmcQ",
+  "imdb": "tt0054098",
+  "ov": "In the 16th century, when Prince Salim falls in love with a beautiful courtesan named Anarkali, Emperor Akbar's disapproval leads to a battle between father and son.",
+  "cast": [
+   "Dilip Kumar",
+   "Prithviraj Kapoor",
+   "Madhubala",
+   "Durga Khote"
+  ],
+  "dir": "K. Asif",
+  "prod": "Sterling Investment Corp.",
+  "irt": 8.1,
+  "ivot": 9788
  },
  {
   "t": "Sholay",
@@ -126,7 +172,8 @@
    "Original only"
   ],
   "o": [
-   "Prime Video"
+   "Prime Video",
+   "JioHotstar"
   ],
   "occ": [
    "Weekend",
@@ -134,7 +181,24 @@
    "Rainy Day"
   ],
   "note": "Evergreen Hindi classic",
-  "poster": "posters/sholay-poster.jpg"
+  "poster": "posters/sholay-poster.jpg",
+  "rt": 208,
+  "rtg": 7.1,
+  "vot": 337,
+  "cert": "U",
+  "tr": "RDY97iu1_q8",
+  "imdb": "tt0073707",
+  "ov": "After his family is slain by notorious bandit Gabbar Singh, former Inspector Thakur Baldev Singh enlists low-level outlaws Jai and Veeru to capture Gabbar and seek revenge.",
+  "cast": [
+   "Dharmendra",
+   "Amitabh Bachchan",
+   "Sanjeev Kumar",
+   "Amjad Khan"
+  ],
+  "dir": "Ramesh Sippy",
+  "prod": "Sippy Films",
+  "irt": 8.1,
+  "ivot": 64144
  },
  {
   "t": "Pyaasa",
@@ -167,7 +231,19 @@
   "rtg": 7.3,
   "vot": 78,
   "cert": "U",
-  "tr": "IjlQJjmTIcM"
+  "tr": "IjlQJjmTIcM",
+  "imdb": "tt0050870",
+  "ov": "Vijay, a destitute poet, searches for true love while attempting to get his work published. With the assistance of two women in his life, his dream comes true - but at a cost that causes Vijay to rethink his worldview.",
+  "cast": [
+   "Guru Dutt",
+   "Waheeda Rehman",
+   "Mala Sinha",
+   "Johnny Walker"
+  ],
+  "dir": "Guru Dutt",
+  "prod": "Guru Dutt Films Pvt. Ltd.",
+  "irt": 8.3,
+  "ivot": 8472
  },
  {
   "t": "Anand",
@@ -202,7 +278,19 @@
   "rtg": 7.0,
   "vot": 166,
   "cert": "U",
-  "tr": "4zu4blN745A"
+  "tr": "4zu4blN745A",
+  "imdb": "tt0066763",
+  "ov": "Dr. Bhaskar Bannerjee struggles with his patients' suffering and the darkness and poverty he confronts daily. He treats cancer patient Anand who upon learning of his impending death determines to use the time he has left to the absolute fullest.",
+  "cast": [
+   "Rajesh Khanna",
+   "Amitabh Bachchan",
+   "Sumita Sanyal",
+   "Ramesh Deo"
+  ],
+  "dir": "Hrishikesh Mukherjee",
+  "prod": "Rupam Chitra",
+  "irt": 8.1,
+  "ivot": 38058
  },
  {
   "t": "Mayabazar",
@@ -221,7 +309,7 @@
    "Hindi dub + Original"
   ],
   "o": [
-   "YouTube"
+   "Sun NXT"
   ],
   "occ": [
    "Diwali",
@@ -229,7 +317,24 @@
    "Rainy Day"
   ],
   "note": "Telugu classic, Hindi dub",
-  "poster": "posters/mayabazar.jpg"
+  "poster": "posters/mayabazar.jpg",
+  "rt": 181,
+  "rtg": 8.0,
+  "vot": 33,
+  "cert": "UA",
+  "tr": "i3m27aET8ag",
+  "imdb": "tt0249795",
+  "ov": "Balarama promises Subhadra that he'll marry his daughter to her son. But when the Pandavas lose their kingdom to the Kauravas, Balarama breaks his promise.",
+  "cast": [
+   "N.T. Rama Rao",
+   "S. V. Ranga Rao",
+   "Savitri",
+   "Akkineni Nageswara Rao"
+  ],
+  "dir": "Kadiri Venkata Reddy",
+  "prod": "Vijaya Pictures",
+  "irt": 9.0,
+  "ivot": 7083
  },
  {
   "t": "Parasakthi",
@@ -247,7 +352,7 @@
    "Hindi dub + Original"
   ],
   "o": [
-   "YouTube"
+   "Prime Video"
   ],
   "occ": [
    "Independence Day",
@@ -258,7 +363,19 @@
   "rt": 188,
   "rtg": 6.6,
   "vot": 10,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt0215033",
+  "ov": "Set against the backdrop of World War II, three brothers are separated by war while their sister Kalyani faces immense struggles after being widowed and left destitute. As each sibling endures hardship and societal injustice, their paths cross in unexpected ways, culminating in a dramatic courtroom trial that exposes the harsh realities of their world and sets the stage for a powerful family reunion.",
+  "cast": [
+   "Sivaji Ganesan",
+   "S. V. Sahasranamam",
+   "S. S. Rajendran",
+   "Sriranjani"
+  ],
+  "dir": "S. Panju",
+  "prod": "National Pictures",
+  "irt": 7.6,
+  "ivot": 469
  },
  {
   "t": "The Godfather",
@@ -287,7 +404,19 @@
   "rt": 175,
   "rtg": 8.7,
   "vot": 23808,
-  "tr": "Ew9ngL1GZvs"
+  "tr": "Ew9ngL1GZvs",
+  "imdb": "tt0068646",
+  "ov": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+  "cast": [
+   "Marlon Brando",
+   "Al Pacino",
+   "James Caan",
+   "Robert Duvall"
+  ],
+  "dir": "Francis Ford Coppola",
+  "prod": "Paramount Pictures",
+  "irt": 9.2,
+  "ivot": 2266836
  },
  {
   "t": "Oldboy",
@@ -312,7 +441,23 @@
    "Weekend"
   ],
   "note": "Korean classic",
-  "poster": "posters/oldboykoreanposter.jpg"
+  "poster": "posters/oldboykoreanposter.jpg",
+  "rt": 120,
+  "rtg": 8.2,
+  "vot": 10320,
+  "tr": "tAaBkFChaRg",
+  "imdb": "tt0364569",
+  "ov": "With no clue how he came to be imprisoned, drugged and tortured for 15 years, a desperate man seeks revenge on his captors.",
+  "cast": [
+   "Choi Min-sik",
+   "Yoo Ji-tae",
+   "Kang Hye-jung",
+   "Kim Byeong-ok"
+  ],
+  "dir": "Park Chan-wook",
+  "prod": "Show East",
+  "irt": 8.3,
+  "ivot": 736193
  },
  {
   "t": "Bluffmaster Gujjubhai",
@@ -341,7 +486,16 @@
   ],
   "note": "Popular Gujarati natak",
   "rt": 152,
-  "cert": "UA"
+  "cert": "UA",
+  "imdb": "tt36608744",
+  "ov": "The craziest Gujjubhai adventure where chaos happens as a mysterious girl proposes Gujjubhai in front of his wife, and his mother-in-law is supposed to arrive with ₹10 crore as per his father-in-law’s wish. Can Gujjubhai tackle all this through his bluff and insane hilarity?",
+  "cast": [
+   "Siddharth Randeria",
+   "Tejas Vyas",
+   "Nilesh Joshi",
+   "Jyuthika Shah"
+  ],
+  "dir": "Siddharth Randeria"
  },
  {
   "t": "Narsinh Mehta",
@@ -419,7 +573,16 @@
   "rt": 151,
   "rtg": 10.0,
   "vot": 1,
-  "cert": "U/A 13+"
+  "cert": "U/A 13+",
+  "imdb": "tt4127096",
+  "ov": "Manvini Bhavai is a Gujarati-language drama set during the famine of 1899–1900, following the tragic love story of Kalu and Raju as they struggle against social customs and starvation. Adapted from Pannalal Patel’s celebrated novel Manvini Bhavai, the film captures the resilience of rural life in the face of immense suffering.",
+  "cast": [
+   "Upendra Trivedi",
+   "Anuradha Patel"
+  ],
+  "dir": "Upendra Trivedi",
+  "irt": 9.2,
+  "ivot": 48
  },
  {
   "t": "Alam Ara",
@@ -446,7 +609,19 @@
   "poster": "posters/alam-ara-poster-1931.jpg",
   "rt": 124,
   "rtg": 6.5,
-  "vot": 2
+  "vot": 2,
+  "imdb": "tt0021594",
+  "ov": "A period fantasy that told of the ageing king of Kamarpur, and his two rival queens, Navbahar and Dilbahar, and their rivalry when a fakir predicts that Navbahar will bear the king's heir. Dilbahar unsuccessfully tries to seduce the army chief Adil (Vithal) and vengefully destroys his family, leaving his daughter Alam Ara (Zubeida) to be raised by nomads. Eventually, Alam Ara's nomad friends invade the palace, expose",
+  "cast": [
+   "Master Vithal",
+   "Zubeida",
+   "Jillo",
+   "Sushila"
+  ],
+  "dir": "Ardeshir Irani",
+  "prod": "Imperial Film Company",
+  "irt": 6.5,
+  "ivot": 156
  },
  {
   "t": "Achhut Kanya",
@@ -474,7 +649,19 @@
   "note": "Early Hindi classic",
   "rt": 142,
   "rtg": 6.0,
-  "vot": 6
+  "vot": 6,
+  "imdb": "tt0027256",
+  "ov": "An \"untouchable\" girl and a Brahmin boy fall in love, but the strict caste system and the gossip of the villagers threaten to keep them apart.",
+  "cast": [
+   "Devika Rani",
+   "Ashok Kumar",
+   "Monorama",
+   "Pramila"
+  ],
+  "dir": "Franz Osten",
+  "prod": "Bombay Talkies",
+  "irt": 6.5,
+  "ivot": 196
  },
  {
   "t": "Kismet",
@@ -503,7 +690,19 @@
   "poster": "posters/500px-kismet-1943.jpg",
   "rt": 143,
   "rtg": 6.2,
-  "vot": 6
+  "vot": 6,
+  "imdb": "tt0036077",
+  "ov": "A former theater owner and his crippled daughter live in poverty until a chance encounter with a young pickpocket brings romance for the petty criminal and daughter as well as a chance by the father to get back at the villainous new theater owner who ousted him from the business years before.",
+  "cast": [
+   "Ashok Kumar",
+   "Shah Nawaz",
+   "Mumtaz Shanti",
+   "V.H. Desai"
+  ],
+  "dir": "Gyan Mukherjee",
+  "prod": "Bombay Talkies",
+  "irt": 7.4,
+  "ivot": 153
  },
  {
   "t": "Do Bigha Zamin",
@@ -532,7 +731,19 @@
   "rt": 125,
   "rtg": 7.9,
   "vot": 24,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt0045693",
+  "ov": "After falling for a cunning landlord’s scheme, a farmer (Balraj Sahni) and his young son (Ratan Kumar) travel to Calcutta in search of work to save money and reclaim their ancestral land.",
+  "cast": [
+   "Balraj Sahni",
+   "Nirupa Roy",
+   "Nana Palsikar",
+   "Rattan Kumar"
+  ],
+  "dir": "Bimal Roy",
+  "prod": "Bimal Roy Productions",
+  "irt": 8.3,
+  "ivot": 2568
  },
  {
   "t": "Mother India",
@@ -564,7 +775,19 @@
   "rtg": 7.0,
   "vot": 112,
   "cert": "U",
-  "tr": "OFWHKtISBrY"
+  "tr": "OFWHKtISBrY",
+  "imdb": "tt0050188",
+  "ov": "A poverty-stricken woman raises her sons through many trials and tribulations. But no matter the struggles, always sticks to her own moral code.",
+  "cast": [
+   "Nargis",
+   "Sunil Dutt",
+   "Rajendra Kumar",
+   "Raaj Kumar"
+  ],
+  "dir": "Mehboob Khan",
+  "prod": "Mehboob Productions",
+  "irt": 7.8,
+  "ivot": 10526
  },
  {
   "t": "Guide",
@@ -592,7 +815,23 @@
    "Rainy Day"
   ],
   "note": "Dev Anand classic",
-  "poster": "posters/guide-1965-film-poster.jpg"
+  "poster": "posters/guide-1965-film-poster.jpg",
+  "rt": 183,
+  "rtg": 6.7,
+  "vot": 41,
+  "tr": "JEUt35teTw8",
+  "imdb": "tt0059246",
+  "ov": "A tourist guide meets an unhappy married woman who wants to take up dancing. With his motivation, she becomes a successful dancer but success corrupts the man's mind.",
+  "cast": [
+   "Dev Anand",
+   "Waheeda Rehman",
+   "Leela Chitnis",
+   "Anwar Hussain"
+  ],
+  "dir": "Vijay Anand",
+  "prod": "Navketan International Films",
+  "irt": 8.4,
+  "ivot": 13174
  },
  {
   "t": "Deewaar",
@@ -611,7 +850,8 @@
    "Original only"
   ],
   "o": [
-   "Prime Video"
+   "Prime Video",
+   "JioHotstar"
   ],
   "occ": [
    "Weekend",
@@ -624,7 +864,19 @@
   "rtg": 7.2,
   "vot": 78,
   "cert": "U",
-  "tr": "DuJ_7UVyGIc"
+  "tr": "DuJ_7UVyGIc",
+  "imdb": "tt0072860",
+  "ov": "Haunted by the past, Vijay turns to crime, while Ravi, his brother, becomes an honest police officer. Fate pits them against each other when Ravi is sent to nab Vijay.",
+  "cast": [
+   "Shashi Kapoor",
+   "Amitabh Bachchan",
+   "Nirupa Roy",
+   "Parveen Babi"
+  ],
+  "dir": "Yash Chopra",
+  "prod": "Trimurti Films Pvt. Ltd.",
+  "irt": 8.0,
+  "ivot": 13365
  },
  {
   "t": "Chupke Chupke",
@@ -657,7 +909,19 @@
   "rtg": 7.2,
   "vot": 69,
   "cert": "U",
-  "tr": "o_tlw3zQlX8"
+  "tr": "o_tlw3zQlX8",
+  "imdb": "tt0072783",
+  "ov": "Sulekha is in awe of her brother-in-law Raghavendra for his intelligence. Parimal, her husband, decides to take up the challenge of fooling Raghavendra and goes to work for him as a driver.",
+  "cast": [
+   "Dharmendra",
+   "Sharmila Tagore",
+   "Om Prakash",
+   "Usha Kiran"
+  ],
+  "dir": "Hrishikesh Mukherjee",
+  "prod": "Rupam Chitra",
+  "irt": 8.3,
+  "ivot": 14159
  },
  {
   "t": "Gol Maal",
@@ -689,7 +953,19 @@
   "rt": 144,
   "rtg": 7.6,
   "vot": 95,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt0079221",
+  "ov": "A man's simple lie to secure his job escalates into more complex lies when his orthodox boss becomes suspicious.",
+  "cast": [
+   "Amol Palekar",
+   "Utpal Dutt",
+   "Bindiya Goswami",
+   "Dina Pathak"
+  ],
+  "dir": "Hrishikesh Mukherjee",
+  "prod": "Rupam Chitra",
+  "irt": 8.5,
+  "ivot": 22373
  },
  {
   "t": "Mr. India",
@@ -723,7 +999,19 @@
   "rtg": 6.9,
   "vot": 120,
   "cert": "U",
-  "tr": "5XJxoDYkk8o"
+  "tr": "5XJxoDYkk8o",
+  "imdb": "tt0093578",
+  "ov": "A poor but big-hearted man takes orphans into his home. After discovering his scientist father's invisibility device, he rises to the occasion and fights to save his children and all of India from the clutches of a megalomaniac.",
+  "cast": [
+   "Anil Kapoor",
+   "Sridevi",
+   "Amrish Puri",
+   "Satish Kaushik"
+  ],
+  "dir": "Shekhar Kapur",
+  "prod": "Narsimha Enterprises",
+  "irt": 7.7,
+  "ivot": 20862
  },
  {
   "t": "Qayamat Se Qayamat Tak",
@@ -754,7 +1042,19 @@
   "rt": 162,
   "rtg": 6.8,
   "vot": 62,
-  "tr": "Y-mLv7Xe_XI"
+  "tr": "Y-mLv7Xe_XI",
+  "imdb": "tt0095936",
+  "ov": "Both Dhanraj Singh and Randhir Singh are two bitter and old time enemies. They faced a disastrous situation when their children, Raj and Rashmi fall deeply in love. They openly declare their hatred for one another and will do anything in their power, even kill - but they will not accept their children's choice. But Raj and Rashmi are dedicated to their love and are not willing to accept the fact that their fathers ar",
+  "cast": [
+   "Aamir Khan",
+   "Juhi Chawla Mehta",
+   "Dalip Tahil",
+   "Ravindra Kapoor"
+  ],
+  "dir": "Mansoor Khan",
+  "prod": "Nasir Hussain Films",
+  "irt": 7.4,
+  "ivot": 12014
  },
  {
   "t": "Hum Aapke Hain Koun",
@@ -790,7 +1090,19 @@
   "rtg": 6.6,
   "vot": 133,
   "cert": "U",
-  "tr": "N59F2MMuWnc"
+  "tr": "N59F2MMuWnc",
+  "imdb": "tt0110076",
+  "ov": "Prem and Nisha meet and fall in love at the wedding of their elder siblings, but their plans to be together are put in jeopardy when Nisha's sister dies, leaving behind a baby.",
+  "cast": [
+   "Salman Khan",
+   "Madhuri Dixit",
+   "Mohnish Behl",
+   "Renuka Shahane"
+  ],
+  "dir": "Sooraj Barjatya",
+  "prod": "Rajshri Productions",
+  "irt": 7.5,
+  "ivot": 24648
  },
  {
   "t": "Dilwale Dulhania Le Jayenge",
@@ -809,7 +1121,7 @@
    "Original only"
   ],
   "o": [
-   "Prime Video"
+   "Netflix"
   ],
   "occ": [
    "Holi",
@@ -817,7 +1129,24 @@
    "Rainy Day"
   ],
   "note": "Evergreen romance",
-  "poster": "posters/dilwale-dulhania-le-jayenge-poster.jpg"
+  "poster": "posters/dilwale-dulhania-le-jayenge-poster.jpg",
+  "rt": 190,
+  "rtg": 8.5,
+  "vot": 4635,
+  "cert": "U",
+  "tr": "oIZ4U21DRlM",
+  "imdb": "tt0112870",
+  "ov": "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.",
+  "cast": [
+   "Kajol",
+   "Shah Rukh Khan",
+   "Amrish Puri",
+   "Farida Jalal"
+  ],
+  "dir": "Aditya Chopra",
+  "prod": "Yash Raj Films",
+  "irt": 8.0,
+  "ivot": 87111
  },
  {
   "t": "Andaz Apna Apna",
@@ -849,7 +1178,19 @@
   "rt": 160,
   "rtg": 6.8,
   "vot": 260,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt0109117",
+  "ov": "Two slackers competing for the affections of an heiress inadvertently become her protectors from an evil criminal.",
+  "cast": [
+   "Aamir Khan",
+   "Salman Khan",
+   "Raveena Tandon",
+   "Karisma Kapoor"
+  ],
+  "dir": "Rajkumar Santoshi",
+  "prod": "Vinay Pictures",
+  "irt": 8.0,
+  "ivot": 58434
  },
  {
   "t": "Patala Bhairavi",
@@ -880,7 +1221,19 @@
   "rt": 195,
   "rtg": 8.6,
   "vot": 8,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt0043908",
+  "ov": "Thota Ramudu faces opposition when he falls in love with a princess. He then seeks the help of a sorcerer, who secretly plans to sacrifice Thota Ramudu to Goddess Pathala Bhairavi.",
+  "cast": [
+   "N.T. Rama Rao",
+   "S. V. Ranga Rao",
+   "K. Malathi",
+   "Valluri Balakrishna"
+  ],
+  "dir": "Kadiri Venkata Reddy",
+  "prod": "Vijaya Pictures",
+  "irt": 8.5,
+  "ivot": 862
  },
  {
   "t": "Shankarabharanam",
@@ -911,7 +1264,19 @@
   "rt": 143,
   "rtg": 5.9,
   "vot": 19,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt0079889",
+  "ov": "Sankara Shastri is a devout and famous classical singer who finds a fan in Tulasi, a prostitute's daughter. She wants to devote herself to his service, but her mother has other plans for her.",
+  "cast": [
+   "Somayajulu J V",
+   "Manju Bhargavi",
+   "Chandra Mohan",
+   "Rajyalakshmi"
+  ],
+  "dir": "K. Viswanath",
+  "prod": "Poornodaya Movie Creations",
+  "irt": 8.8,
+  "ivot": 2777
  },
  {
   "t": "Sagara Sangamam",
@@ -942,7 +1307,19 @@
   "rt": 160,
   "rtg": 7.8,
   "vot": 25,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt0086231",
+  "ov": "When a passionate classical dancer, Balakrishna, falls in love with Madhavi, a woman who admires his talent, fate separates them. Years later, as he drowns in sorrow and self-destruction, an unexpected encounter rekindles his lost hopes, emotions and talent.",
+  "cast": [
+   "Kamal Haasan",
+   "Jaya Prada",
+   "Sarath Babu",
+   "S.P. Sailaja"
+  ],
+  "dir": "K. Viswanath",
+  "prod": "Poornodaya Movie Creations",
+  "irt": 8.7,
+  "ivot": 6632
  },
  {
   "t": "Nayakan",
@@ -973,7 +1350,19 @@
   "rt": 156,
   "rtg": 7.9,
   "vot": 99,
-  "cert": "A"
+  "cert": "A",
+  "imdb": "tt0093603",
+  "ov": "Velu Naicker, who witnesses the brutal murder of his father, kills a corrupt policeman and escapes to Mumbai, only to become a gangster.",
+  "cast": [
+   "Kamal Haasan",
+   "Saranya Ponvannan",
+   "Karthika",
+   "Janagaraj"
+  ],
+  "dir": "Mani Ratnam",
+  "prod": "Sujatha Films",
+  "irt": 8.6,
+  "ivot": 28341
  },
  {
   "t": "Thalapathi",
@@ -1004,7 +1393,19 @@
   "rt": 157,
   "rtg": 8.0,
   "vot": 65,
-  "cert": "UA"
+  "cert": "UA",
+  "imdb": "tt0101649",
+  "ov": "Surya, a courageous man who was raised in the slums, fights for the rights of the poor and befriends Deva, who hires him as his commander and changes his life completely.",
+  "cast": [
+   "Rajinikanth",
+   "Mammootty",
+   "Arvind Swamy",
+   "Srividya"
+  ],
+  "dir": "Mani Ratnam",
+  "prod": "G. V. Films",
+  "irt": 8.5,
+  "ivot": 16308
  },
  {
   "t": "Anniyan",
@@ -1035,7 +1436,19 @@
   "rt": 181,
   "rtg": 7.4,
   "vot": 128,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt0376127",
+  "ov": "Unable to tolerate society's injustices and devastated by rejection from the woman he loves, a meek lawyer develops a split personality: one side a vengeful vigilante killer punishing evildoers, the other a dashing playboy capable of winning her heart. Complications arise when the three sides begin to collide.",
+  "cast": [
+   "Vikram",
+   "Sadha",
+   "Prakash Raj",
+   "Vivek"
+  ],
+  "dir": "Shankar",
+  "prod": "Aascar Films",
+  "irt": 8.4,
+  "ivot": 27154
  },
  {
   "t": "Ghilli",
@@ -1065,7 +1478,19 @@
   "rtg": 7.1,
   "vot": 78,
   "cert": "UA",
-  "tr": "-I4H71WYW-M"
+  "tr": "-I4H71WYW-M",
+  "imdb": "tt0422320",
+  "ov": "Muthu Pandi, a village strongman, decides to marry Dhanalakshmi, and begins his quest by eliminating everyone who opposes their union - starting with both her brothers. In desperation, Dhanalakshmi decides to escape from the village, and in the process is unwittingly assisted by a university Kabaddi player Velu.",
+  "cast": [
+   "Vijay",
+   "Trisha Krishnan",
+   "Prakash Raj",
+   "Ashish Vidhyarthi"
+  ],
+  "dir": "Dharani",
+  "prod": "Sri Surya Movies",
+  "irt": 8.2,
+  "ivot": 19409
  },
  {
   "t": "Enthiran (Robot)",
@@ -1093,7 +1518,19 @@
   "rt": 176,
   "rtg": 6.6,
   "vot": 272,
-  "cert": "U"
+  "cert": "U",
+  "imdb": "tt1305797",
+  "ov": "Dr. Vaseegaran creates Chitti, a powerful robot in his own image, but it is rejected by the scientific body AIRD due to its lack of human behaviour and emotions. After a lightning strike triggers emotions in Chitti, he begins to develop human-like feelings. However, Chitti falls in love with Dr. Vaseegaran's fiancée, Sana, and turns against his creator, leading to dangerous consequences.",
+  "cast": [
+   "Rajinikanth",
+   "Aishwarya Rai Bachchan",
+   "Danny Denzongpa",
+   "Santhanam"
+  ],
+  "dir": "Shankar",
+  "prod": "Sun Pictures",
+  "irt": 7.2,
+  "ivot": 34282
  },
  {
   "t": "Ben-Hur",
@@ -1123,7 +1560,19 @@
   "rt": 212,
   "rtg": 7.9,
   "vot": 3310,
-  "tr": "f2y1gDeZ230"
+  "tr": "f2y1gDeZ230",
+  "imdb": "tt0052618",
+  "ov": "In ancient Judea, a Jewish aristocrat opposing Roman occupation of his homeland reunites with his childhood friend, now a Roman commander — setting in motion a saga of betrayal, adventure, tragedy, revenge, and faith.",
+  "cast": [
+   "Charlton Heston",
+   "Stephen Boyd",
+   "Hugh Griffith",
+   "Jack Hawkins"
+  ],
+  "dir": "William Wyler",
+  "prod": "Metro-Goldwyn-Mayer",
+  "irt": 8.1,
+  "ivot": 274278
  },
  {
   "t": "The Sound of Music",
@@ -1156,7 +1605,19 @@
   "rtg": 7.7,
   "vot": 3779,
   "cert": "U",
-  "tr": "Q7wZClqWm_o"
+  "tr": "Q7wZClqWm_o",
+  "imdb": "tt0059742",
+  "ov": "In the years before World War II, a tomboyish postulant at an Austrian abbey is hired as a governess in the home of a widowed naval captain with seven children and brings a new love of life and music into the home.",
+  "cast": [
+   "Julie Andrews",
+   "Christopher Plummer",
+   "Eleanor Parker",
+   "Charmian Carr"
+  ],
+  "dir": "Robert Wise",
+  "prod": "Robert Wise Productions",
+  "irt": 8.1,
+  "ivot": 296430
  },
  {
   "t": "Jaws",
@@ -1184,9 +1645,21 @@
   "poster": "posters/500px-jaws-movie-poster.jpg",
   "rt": 124,
   "rtg": 7.7,
-  "vot": 11960,
+  "vot": 11962,
   "cert": "A",
-  "tr": "N9hzLQUGr34"
+  "tr": "N9hzLQUGr34",
+  "imdb": "tt0073195",
+  "ov": "When the seaside community of Amity finds itself under attack by a dangerous great white shark, the town's chief of police, a young marine biologist, and a grizzled shark hunter embark on a desperate quest to kill the beast before it strikes again.",
+  "cast": [
+   "Roy Scheider",
+   "Robert Shaw",
+   "Richard Dreyfuss",
+   "Lorraine Gary"
+  ],
+  "dir": "Steven Spielberg",
+  "prod": "The Zanuck/Brown Company",
+  "irt": 8.1,
+  "ivot": 752650
  },
  {
   "t": "Star Wars",
@@ -1218,7 +1691,19 @@
   "rtg": 8.2,
   "vot": 23051,
   "cert": "U",
-  "tr": "i-vsILeJ8_8"
+  "tr": "i-vsILeJ8_8",
+  "imdb": "tt0076759",
+  "ov": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+  "cast": [
+   "Mark Hamill",
+   "Harrison Ford",
+   "Carrie Fisher",
+   "Peter Cushing"
+  ],
+  "dir": "George Lucas",
+  "prod": "Lucasfilm Ltd.",
+  "irt": 8.6,
+  "ivot": 1594693
  },
  {
   "t": "E.T.",
@@ -1249,8 +1734,20 @@
   "poster": "posters/e-t-the-extra-terrestrial-ver3.jpg",
   "rt": 115,
   "rtg": 7.5,
-  "vot": 12359,
-  "tr": "NsvdZ_z56c0"
+  "vot": 12360,
+  "tr": "NsvdZ_z56c0",
+  "imdb": "tt0083866",
+  "ov": "An alien is left behind on Earth and saved by the 10-year-old Elliott who decides to keep him hidden in his home. While a task force hunts for the extra-terrestrial, Elliott, his brother, and his little sister Gertie form an emotional bond with their new friend, and try to help him find his way home.",
+  "cast": [
+   "Henry Thomas",
+   "Drew Barrymore",
+   "Robert MacNaughton",
+   "Peter Coyote"
+  ],
+  "dir": "Steven Spielberg",
+  "prod": "Universal Pictures",
+  "irt": 7.9,
+  "ivot": 478334
  },
  {
   "t": "Terminator 2",
@@ -1278,9 +1775,21 @@
   "poster": "posters/terminator-2-judgment-day.jpg",
   "rt": 137,
   "rtg": 8.2,
-  "vot": 15059,
+  "vot": 15060,
   "cert": "A",
-  "tr": "BuBD2s2NmEM"
+  "tr": "BuBD2s2NmEM",
+  "imdb": "tt0103064",
+  "ov": "Ten years after the events of the original, a reprogrammed T-800 is sent back in time to protect young John Connor from the shape-shifting T-1000. Together with his mother Sarah, he fights to stop Skynet from triggering a nuclear apocalypse.",
+  "cast": [
+   "Arnold Schwarzenegger",
+   "Linda Hamilton",
+   "Edward Furlong",
+   "Robert Patrick"
+  ],
+  "dir": "James Cameron",
+  "prod": "Carolco Pictures",
+  "irt": 8.6,
+  "ivot": 1307424
  },
  {
   "t": "Jurassic Park",
@@ -1299,6 +1808,7 @@
    "Hindi dub + Original"
   ],
   "o": [
+   "Prime Video",
    "JioHotstar"
   ],
   "occ": [
@@ -1309,8 +1819,20 @@
   "poster": "posters/jurassic-park-poster.jpg",
   "rt": 127,
   "rtg": 8.0,
-  "vot": 18504,
-  "tr": "bx46tthKXmc"
+  "vot": 18505,
+  "tr": "bx46tthKXmc",
+  "imdb": "tt0107290",
+  "ov": "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experience the park and help calm anxious investors. However, the park is anything but amusing as the security systems go off-line and the dinosaurs escape.",
+  "cast": [
+   "Sam Neill",
+   "Laura Dern",
+   "Jeff Goldblum",
+   "Richard Attenborough"
+  ],
+  "dir": "Steven Spielberg",
+  "prod": "Universal Pictures",
+  "irt": 8.2,
+  "ivot": 1203786
  },
  {
   "t": "Titanic",
@@ -1342,7 +1864,19 @@
   "rt": 194,
   "rtg": 7.9,
   "vot": 27940,
-  "tr": "wO44qBPBG4c"
+  "tr": "wO44qBPBG4c",
+  "imdb": "tt0120338",
+  "ov": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic's departure through to its death—on its first and last voyage—on April 15, 1912.",
+  "cast": [
+   "Leonardo DiCaprio",
+   "Kate Winslet",
+   "Billy Zane",
+   "Kathy Bates"
+  ],
+  "dir": "James Cameron",
+  "prod": "Paramount Pictures",
+  "irt": 8.0,
+  "ivot": 1417781
  },
  {
   "t": "My Sassy Girl",
@@ -1371,7 +1905,23 @@
    "Rainy Day"
   ],
   "note": "Korean rom-com",
-  "poster": "posters/my-sassy-girl-movie-poster.jpg"
+  "poster": "posters/my-sassy-girl-movie-poster.jpg",
+  "rt": 137,
+  "rtg": 7.5,
+  "vot": 692,
+  "tr": "q69gtbQMcm8",
+  "imdb": "tt0293715",
+  "ov": "A young man’s world is turned upside down when a female force of nature takes his life by storm in this outrageous and uplifting ode to true love.",
+  "cast": [
+   "Gianna Jun",
+   "Cha Tae-hyun",
+   "Kim In-mun",
+   "Song Ok-suk"
+  ],
+  "dir": "Kwak Jae-yong",
+  "prod": "Shin Cine Communications",
+  "irt": 7.9,
+  "ivot": 53551
  },
  {
   "t": "Memories of Murder",
@@ -1396,7 +1946,23 @@
    "Weekend"
   ],
   "note": "Bong Joon-ho classic",
-  "poster": "posters/salinui-chueok-south-korean-movie-poster-md.jpg"
+  "poster": "posters/salinui-chueok-south-korean-movie-poster-md.jpg",
+  "rt": 131,
+  "rtg": 8.1,
+  "vot": 4889,
+  "tr": "0n_HQwQU8ls",
+  "imdb": "tt0353969",
+  "ov": "A sadistic serial rapist and murderer of young women terrorizes a small province in 1980s South Korea. To prevent further crimes, three increasingly desperate detectives with conflicting methods race against time to unravel the violent mind of the killer in a futile effort to solve the case.",
+  "cast": [
+   "Song Kang-ho",
+   "Kim Sang-kyung",
+   "Kim Roi-ha",
+   "Song Jae-ho"
+  ],
+  "dir": "Bong Joon Ho",
+  "prod": "CJ Entertainment",
+  "irt": 8.1,
+  "ivot": 277370
  },
  {
   "t": "The Host",
@@ -1420,7 +1986,23 @@
   "occ": [
    "Weekend"
   ],
-  "note": "Korean monster film"
+  "note": "Korean monster film",
+  "rt": 120,
+  "rtg": 7.0,
+  "vot": 3277,
+  "tr": "xrLY0wO06l4",
+  "imdb": "tt0468492",
+  "ov": "A teenage girl is captured by a giant mutated squid-like creature that appears from Seoul's Han River after toxic waste was dumped in it, prompting her family into a frantic search for her.",
+  "cast": [
+   "Song Kang-ho",
+   "Byun Hee-bong",
+   "Park Hae-il",
+   "Bae Doona"
+  ],
+  "dir": "Bong Joon Ho",
+  "prod": "Chungeorahm Film",
+  "irt": 7.1,
+  "ivot": 145168
  },
  {
   "t": "Train to Busan",
@@ -1453,6 +2035,18 @@
   "rt": 118,
   "rtg": 7.8,
   "vot": 8855,
-  "tr": "4qm59Rcq1Fw"
+  "tr": "4qm59Rcq1Fw",
+  "imdb": "tt5700672",
+  "ov": "When a zombie virus pushes Korea into a state of emergency, those trapped on an express train to Busan must fight for their own survival.",
+  "cast": [
+   "Gong Yoo",
+   "Kim Su-an",
+   "Jung Yu-mi",
+   "Don Lee"
+  ],
+  "dir": "Yeon Sang-ho",
+  "prod": "Next Entertainment World",
+  "irt": 7.6,
+  "ivot": 317441
  }
 ]
