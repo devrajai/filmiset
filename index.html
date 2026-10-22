@@ -166,8 +166,12 @@
   .vibe .vt b{font-family:var(--font-display);font-size:17px;display:block;margin-top:2px}
   .vibe .vt p{font-size:13px;color:var(--muted);margin-top:3px}
   .cardacts{display:flex;gap:6px;margin-top:8px}
-  .mini{flex:1;font-family:var(--font-body);font-size:11.5px;font-weight:600;cursor:pointer;padding:7px 8px;
-    border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--muted);transition:.15s}
+  .mini{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;
+    font-family:var(--font-body);font-size:11.5px;font-weight:600;cursor:pointer;padding:7px 8px;
+    border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--muted);transition:.15s;
+    text-decoration:none}
+  .mini.yt{color:#c4302b;border-color:rgba(196,48,43,.45)}
+  .mini.yt:hover{background:#c4302b;color:#fff;border-color:#c4302b}
   .mini:hover{border-color:var(--line-2);color:var(--ink)}
   .mini.on{background:var(--teal);color:#fff;border-color:var(--teal)}
   .modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:18px;background:rgba(0,0,0,.55)}
@@ -739,7 +743,7 @@ function openModal(d){
   m.innerHTML='<div class="box">'
     + (d.poster? '<img src="'+d.poster+'" alt="" onerror="this.remove()">':'')
     + '<h3>'+d.t+'</h3>'
-    + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(d.rt?' · '+d.rt+' min':'')+(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':'')+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
+    + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(d.rt?' · '+d.rt+' min':'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
     + '<div class="m" style="margin-top:6px">'+[(d.g||[]).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
     + (d.note? '<p>'+d.note+'</p>':'')
     + '<div class="row">'
@@ -973,7 +977,7 @@ function render(){
       + '</div>'
       + '<div class="cardbody">'
         + '<h4>'+d.t+'</h4>'
-        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.rtg?' · \u2605'+d.rtg:'')+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
+        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.irt?' · IMDb '+d.irt:(d.rtg?' · \u2605'+d.rtg:''))+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
         + (d.trailer
@@ -984,6 +988,7 @@ function render(){
                 ? '<div class="watch avail">Available on '+d.o.join(' · ')+'</div>'
                 : '<div class="watch none">OTT info not listed</div>')))
         + '<div class="cardacts">'
+          + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>':'')
           + '<button class="mini'+(watched.has(d.t)?' on':'')+'" data-seen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
           + '<button class="mini" data-more="'+esc(d.t)+'">More like this</button>'
         + '</div>'

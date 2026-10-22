@@ -22,7 +22,7 @@ import argparse, json, os, sys, time, urllib.parse, urllib.request
 
 TMDB = "https://api.themoviedb.org/3"
 CACHE = "data/tmdb_cache.json"
-FIELDS = ("o", "rt", "rtg", "vot", "cert", "tr")
+FIELDS = ("o", "rt", "rtg", "vot", "cert", "tr", "imdb")
 
 PROVIDER_MAP = {
     "netflix": "Netflix", "amazon prime video": "Prime Video", "amazon video": "Prime Video",
@@ -65,6 +65,8 @@ def lookup(title, year, key, region):
         mid = res[0]["id"]
 
         d = tmdb(f"/movie/{mid}", key, {"append_to_response": "release_dates,videos"})
+        if d.get("imdb_id"):
+            out["imdb"] = d["imdb_id"]
         if d.get("runtime"):
             out["rt"] = int(d["runtime"])
         if d.get("vote_average"):

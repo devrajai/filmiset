@@ -103,11 +103,12 @@ def _sel(cfg):
 def query_lang(cfg, limit):
     sel, opt = _sel(cfg)
     return f"""
-SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop){sel} (SAMPLE(?desc) AS ?description) WHERE {{
+SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop){sel} (SAMPLE(?desc) AS ?description) (SAMPLE(?imdb) AS ?imdb) WHERE {{
   ?film wdt:P31 wd:Q11424 ; wdt:P577 ?date ; wdt:P364 wd:{cfg['qid']} .
   BIND(YEAR(?date) AS ?year)
   FILTER(?year >= {cfg['min_year']} && ?year <= 2026)
   OPTIONAL {{ ?film wikibase:sitelinks ?sl }}
+  OPTIONAL {{ ?film wdt:P345 ?imdb }}
   {opt}
   OPTIONAL {{ ?film wdt:P18 ?image }}
   OPTIONAL {{ ?film schema:description ?desc . FILTER(lang(?desc)="en") }}
@@ -123,10 +124,11 @@ def query_recent(cfg, limit, days):
     sel, opt = _sel(cfg)
     cutoff = (datetime.utcnow() - timedelta(days=days)).strftime("%Y-%m-%dT00:00:00Z")
     return f"""
-SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop){sel} WHERE {{
+SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop){sel} (SAMPLE(?imdb) AS ?imdb) WHERE {{
   ?film wdt:P31 wd:Q11424 ; wdt:P577 ?date ; wdt:P364 wd:{cfg['qid']} .
   FILTER(?date > "{cutoff}"^^xsd:dateTime && ?date < NOW())
   OPTIONAL {{ ?film wikibase:sitelinks ?sl }}
+  OPTIONAL {{ ?film wdt:P345 ?imdb }}
   {opt}
   OPTIONAL {{ ?film wdt:P18 ?image }}
   OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
@@ -140,10 +142,11 @@ LIMIT {limit}
 def query_upcoming(cfg, limit):
     sel, opt = _sel(cfg)
     return f"""
-SELECT ?filmLabel ?date ?image ?articleTitle (MAX(?sl) AS ?pop){sel} WHERE {{
+SELECT ?filmLabel ?date ?image ?articleTitle (MAX(?sl) AS ?pop){sel} (SAMPLE(?imdb) AS ?imdb) WHERE {{
   ?film wdt:P31 wd:Q11424 ; wdt:P577 ?date ; wdt:P364 wd:{cfg['qid']} .
   FILTER(?date > NOW() && ?date < "2029-01-01"^^xsd:dateTime)
   OPTIONAL {{ ?film wikibase:sitelinks ?sl }}
+  OPTIONAL {{ ?film wdt:P345 ?imdb }}
   {opt}
   OPTIONAL {{ ?film wdt:P18 ?image }}
   OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
@@ -156,12 +159,13 @@ LIMIT {limit}
 
 def query_collection(cfg, limit):
     return f"""
-SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop) (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres) WHERE {{
+SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop) (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres) (SAMPLE(?imdb) AS ?imdb) WHERE {{
   {cfg['where']}
   ?film wdt:P577 ?date .
   BIND(YEAR(?date) AS ?year)
   FILTER(?year >= 1950 && ?year <= 2026)
   OPTIONAL {{ ?film wikibase:sitelinks ?sl }}
+  OPTIONAL {{ ?film wdt:P345 ?imdb }}
   OPTIONAL {{ ?film wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }}
   OPTIONAL {{ ?film wdt:P18 ?image }}
   OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
@@ -174,10 +178,11 @@ LIMIT {limit}
 
 def query_series(cfg, limit):
     return f"""
-SELECT ?sLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop) (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres) WHERE {{
+SELECT ?sLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop) (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres) (SAMPLE(?imdb) AS ?imdb) WHERE {{
   {cfg['where']}
   OPTIONAL {{ ?s wdt:P571 ?date }}
   OPTIONAL {{ ?s wikibase:sitelinks ?sl }}
+  OPTIONAL {{ ?s wdt:P345 ?imdb }}
   OPTIONAL {{ ?s wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }}
   OPTIONAL {{ ?s wdt:P18 ?image }}
   OPTIONAL {{ ?article schema:about ?s ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
@@ -230,13 +235,13 @@ def _pop(r):
     return int(v) if v and str(v).isdigit() else 0
 
 
-def row_to_movie(lang, cfg, title, date, image, genres, desc, wiki, status, pop=0):
+def row_to_movie(lang, cfg, title, date, image, genres, desc, wiki, status, pop=0, imdb=""):
     y = int(date[:4]) if date[:4].isdigit() else ""
     m = {
         "t": title, "y": y, "cat": cfg["cat"], "type": "Movie",
         "g": genres, "m": moods_for(genres), "a": audio_for(lang, cfg), "o": [],
         "poster": commons_url(image), "src": "wikidata", "status": status,
-        "date": date, "pop": pop, "_wiki": wiki,
+        "date": date, "pop": pop, "imdb": (imdb or ""), "_wiki": wiki,
     }
     if desc:
         m["note"] = desc[:160]
@@ -253,7 +258,8 @@ def fetch_lang(lang, cfg, limit):
                                 r.get("image", {}).get("value", ""),
                                 norm_genres(r.get("genres", {}).get("value", "")),
                                 r.get("description", {}).get("value", "").strip(),
-                                r.get("articleTitle", {}).get("value", "").strip(), "released", _pop(r)))
+                                r.get("articleTitle", {}).get("value", "").strip(), "released", _pop(r),
+                                r.get("imdb", {}).get("value", "")))
     return out
 
 
@@ -266,7 +272,8 @@ def fetch_recent(lang, cfg, limit, days):
         out.append(row_to_movie(lang, cfg, t, r.get("d", {}).get("value", "")[:10],
                                 r.get("image", {}).get("value", ""),
                                 norm_genres(r.get("genres", {}).get("value", "")),
-                                "", r.get("articleTitle", {}).get("value", "").strip(), "released", _pop(r)))
+                                "", r.get("articleTitle", {}).get("value", "").strip(), "released", _pop(r),
+                                r.get("imdb", {}).get("value", "")))
     return out
 
 
@@ -279,7 +286,8 @@ def fetch_upcoming(lang, cfg, limit):
         out.append(row_to_movie(lang, cfg, t, r.get("date", {}).get("value", "")[:10],
                                 r.get("image", {}).get("value", ""),
                                 norm_genres(r.get("genres", {}).get("value", "")),
-                                "", r.get("articleTitle", {}).get("value", "").strip(), "upcoming", _pop(r)))
+                                "", r.get("articleTitle", {}).get("value", "").strip(), "upcoming", _pop(r),
+                                r.get("imdb", {}).get("value", "")))
     return out
 
 
@@ -298,6 +306,7 @@ def fetch_collection(cfg, limit):
             "g": genres, "m": moods_for(genres) or ["Family"], "a": list(cfg.get("audio", [])), "o": [],
             "poster": commons_url(r.get("image", {}).get("value", "")),
             "src": "wikidata", "status": "released", "date": date, "pop": _pop(r),
+            "imdb": r.get("imdb", {}).get("value", ""),
             "cats": list(cfg.get("cats", [cfg["cat"]])),
             "_wiki": r.get("articleTitle", {}).get("value", "").strip(),
         })
@@ -317,6 +326,7 @@ def fetch_series(cfg, limit):
             "g": genres, "m": moods_for(genres) or ["Emotional"], "a": list(cfg.get("audio", [])), "o": [],
             "poster": commons_url(r.get("image", {}).get("value", "")),
             "src": "wikidata", "status": "released", "date": date, "pop": _pop(r),
+            "imdb": r.get("imdb", {}).get("value", ""),
             "cats": list(cfg.get("cats", [cfg["cat"]])),
             "_wiki": r.get("articleTitle", {}).get("value", "").strip(),
         })
@@ -325,9 +335,10 @@ def fetch_series(cfg, limit):
 
 def query_franchise(qid, limit):
     return f"""
-SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop) (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres) WHERE {{
+SELECT ?filmLabel ?image ?articleTitle (MIN(?date) AS ?d) (MAX(?sl) AS ?pop) (GROUP_CONCAT(DISTINCT ?gl; separator="|") AS ?genres) (SAMPLE(?imdb) AS ?imdb) WHERE {{
   ?film wdt:P179 wd:{qid} ; wdt:P31 wd:Q11424 ; wdt:P577 ?date .
   OPTIONAL {{ ?film wikibase:sitelinks ?sl }}
+  OPTIONAL {{ ?film wdt:P345 ?imdb }}
   OPTIONAL {{ ?film wdt:P136 ?g . ?g rdfs:label ?gl . FILTER(lang(?gl)="en") }}
   OPTIONAL {{ ?film wdt:P18 ?image }}
   OPTIONAL {{ ?article schema:about ?film ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?articleTitle . }}
@@ -352,6 +363,7 @@ def fetch_franchise(name, qid, limit=80):
             "g": genres, "m": moods_for(genres), "a": ["Hindi (dub)", "English"], "o": [],
             "poster": commons_url(r.get("image", {}).get("value", "")),
             "src": "wikidata", "status": "released", "date": date, "pop": _pop(r),
+            "imdb": r.get("imdb", {}).get("value", ""),
             "franchise": name, "_wiki": r.get("articleTitle", {}).get("value", "").strip(),
         })
     return out
