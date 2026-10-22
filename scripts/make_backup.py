@@ -49,7 +49,10 @@ def header(ws, cols, widths):
     ws.freeze_panes = "A2"
 
 
-def rows_for(movies):
+SRC_LABEL = {"wikidata": "Wikidata", "tmdb": "TMDB", "jikan": "MyAnimeList", "youtube": "YouTube"}
+
+
+def rows_for(movies, default_src=""):
     out = []
     for i, m in enumerate(movies, start=1):
         out.append([
@@ -57,7 +60,9 @@ def rows_for(movies):
             CAT_LABEL.get(m.get("cat"), m.get("cat", "")), m.get("type", ""),
             ", ".join(m.get("g") or []), ", ".join(m.get("m") or []),
             ", ".join(m.get("a") or []), ", ".join(m.get("o") or []),
-            m.get("src", ""), m.get("status", "released"),
+            m.get("irt", ""), m.get("rt", ""), m.get("cert", ""), m.get("rtg", ""),
+            SRC_LABEL.get(m.get("src"), default_src or m.get("src") or "Curated sheet"),
+            m.get("status", "released"),
             (m.get("poster") or "").replace("posters/", ""),
         ])
     return out
@@ -117,48 +122,20 @@ def main():
         r += 1
 
     # --- Catalog ---
-    cols = ["#", "Title", "Year", "Release date", "Category", "Type", "Genres", "Moods",
-            "Audio", "OTT Platforms", "Source", "Status", "Poster file"]
-    widths = [6, 34, 7, 13, 22, 8, 24, 22, 20, 26, 10, 11, 34]
-    ws = wb.create_sheet("Catalog")
+    cols = ["#", "Title", "Year", "Release date", "Category", "Type", "Franchise", "Genres", "Moods",
+            "Audio", "OTT Platforms", "IMDb", "Runtime", "Age cert", "TMDB rating", "Source", "Status", "Poster file"]
+    widths = [6, 34, 7, 13, 22, 8, 22, 24, 22, 20, 26, 8, 9, 10, 12, 15, 11, 34]
+    ws = wb.create_sheet("All Titles")
     ws.sheet_properties.tabColor = NAVY
     header(ws, cols, widths)
-    write_rows(ws, rows_for(catalog))
-
-    tw = wb.create_sheet("TMDB")
-    tw.sheet_properties.tabColor = "01B4E4"
-    header(tw, cols, widths)
-    write_rows(tw, rows_for(tmdb_rows))
-
-    jw = wb.create_sheet("Anime (MyAnimeList)")
-    jw.sheet_properties.tabColor = "2E51A2"
-    header(jw, cols, widths)
-    write_rows(jw, rows_for(jikan_rows))
-
-    ws2 = wb.create_sheet("Curated")
-    ws2.sheet_properties.tabColor = GOLD
-    header(ws2, cols, widths)
-    write_rows(ws2, rows_for(curated))
-
-    # --- YouTube ---
-    yc = ["#", "Title", "Channel", "Category", "Published", "Video URL", "Full video title"]
-    yw = [6, 34, 22, 20, 13, 40, 60]
-    ys = wb.create_sheet("YouTube")
-    ys.sheet_properties.tabColor = "C4302B"
-    header(ys, yc, yw)
-    yrows = []
-    for i, v in enumerate(youtube, start=1):
-        yrows.append([i, v.get("t", ""), v.get("channel", ""),
-                      CAT_LABEL.get(v.get("cat"), v.get("cat", "")),
-                      v.get("date", ""), v.get("trailer", ""), (v.get("note") or "")[:200]])
-    write_rows(ys, yrows)
+    write_rows(ws, rows_for(catalog + tmdb_rows + jikan_rows + curated + youtube))
 
     # --- OTT summary ---
     counter = collections.Counter()
     for m in catalog + curated + tmdb_rows + jikan_rows:
         for p in (m.get("o") or []):
             counter[p] += 1
-    osheet = wb.create_sheet("OTT Summary")
+    osheet = wb.create_sheet("Summary")
     header(osheet, ["OTT Platform", "Titles"], [28, 10])
     total = sum(1 for m in catalog + curated + tmdb_rows + jikan_rows if m.get("o"))
     for p, n in counter.most_common():

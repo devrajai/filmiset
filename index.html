@@ -167,6 +167,9 @@
   .vibe .vt p{font-size:13px;color:var(--muted);margin-top:3px}
   .sum{font-size:11.5px;color:var(--muted);line-height:1.45;margin-top:6px;
     display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .card{cursor:pointer}
+  .card .poster-img{transition:.2s}
+  .card:hover .poster-img{transform:scale(1.03)}
   .cardacts{display:flex;gap:6px;margin-top:8px}
   .mini{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;
     font-family:var(--font-body);font-size:11.5px;font-weight:600;cursor:pointer;padding:7px 8px;
@@ -365,7 +368,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:'all', moods:new Set(), type:'all', era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:'all', coll:'all', fr:'all', sort:'new', rt:'all', gems:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -387,14 +390,14 @@ function persistWatched(){ try{ localStorage.setItem('filmiset_watched', JSON.st
 /* restore filters from the URL so a shared link reopens the same view */
 (function readUrl(){
   const p=new URLSearchParams(location.search);
-  if(p.get('cat')) state.cat=p.get('cat');
-  if(p.get('type')) state.type=p.get('type');
+  if(p.get('cat')) p.get('cat').split(',').filter(Boolean).forEach(v=>state.cat.add(v));
+  if(p.get('type')) p.get('type').split(',').filter(Boolean).forEach(v=>state.type.add(v));
   if(p.get('era')) state.era=p.get('era');
   if(p.get('occ')) state.occasion=p.get('occ');
   if(p.get('rel')) state.rel=p.get('rel');
   if(p.get('dub')==='1') state.dub=true;
   if(p.get('src')) state.src=p.get('src');
-  if(p.get('ott')) state.ott=p.get('ott');
+  if(p.get('ott')) p.get('ott').split(',').filter(Boolean).forEach(v=>state.ott.add(v));
   if(p.get('coll')) state.coll=p.get('coll');
   if(p.get('fr')) state.fr=p.get('fr');
   if(p.get('sort')) state.sort=p.get('sort');
@@ -407,26 +410,28 @@ function persistWatched(){ try{ localStorage.setItem('filmiset_watched', JSON.st
   if(p.get('moods')) p.get('moods').split('|').filter(Boolean).forEach(m=>state.moods.add(m));
   if(p.get('saved')==='1') state.savedOnly=true;
   // a shared link that pins a category/OTT should show the whole set, not just this month
-  if(!p.get('rel') && ((state.cat!=='all') || (state.ott!=='all') || (state.coll!=='all') || (state.fr!=='all'))) state.rel='all';
+  if(!p.get('rel') && (state.cat.size || state.ott.size || (state.coll!=='all') || (state.fr!=='all'))) state.rel='all';
 })();
 
 /* ---- build filter UI ---- */
 const catRow = document.getElementById('catRow');
 const allPill = document.createElement('button');
-allPill.className='pill'+(state.cat==='all'?' on':''); allPill.dataset.cat='all'; allPill.textContent='All titles';
+allPill.className='pill'+(state.cat.size?'':' on'); allPill.dataset.cat='all'; allPill.textContent='All titles';
 catRow.appendChild(allPill);
 Object.entries(CATS).forEach(([k,v])=>{
   const b=document.createElement('button');
-  b.className='pill'+(state.cat===k?' on':''); b.dataset.cat=k;
+  b.className='pill'+(state.cat.has(k)?' on':''); b.dataset.cat=k;
   b.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
   catRow.appendChild(b);
 });
 catRow.addEventListener('click',e=>{
   const b=e.target.closest('.pill'); if(!b)return;
-  catRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
-  b.classList.add('on'); state.cat=b.dataset.cat;
-  // browsing a category -> show the whole category, not just this month
-  if(state.cat!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  const k=b.dataset.cat;
+  if(k==='all') state.cat.clear();
+  else if(state.cat.has(k)) state.cat.delete(k);
+  else state.cat.add(k);
+  syncRow('catRow','cat',state.cat);
+  if(state.cat.size && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
   render();
 });
 
@@ -439,14 +444,17 @@ const JW_SLUG = {'Netflix':'netflix','Prime Video':'amazon-prime-video','JioHots
 const ottRow=document.getElementById('ottRow');
 [['all','All OTT']].concat(OTTS.map(o=>[o,o])).forEach(([k,label])=>{
   const b=document.createElement('button');
-  b.className='pill'+(state.ott===k?' on':''); b.dataset.ott=k; b.textContent=label;
+  b.className='pill'+((k==='all' ? !state.ott.size : state.ott.has(k))?' on':''); b.dataset.ott=k; b.textContent=label;
   ottRow.appendChild(b);
 });
 ottRow.addEventListener('click',e=>{
   const b=e.target.closest('.pill'); if(!b)return;
-  ottRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
-  b.classList.add('on'); state.ott=b.dataset.ott;
-  if(state.ott!=='all' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+  const k=b.dataset.ott;
+  if(k==='all') state.ott.clear();
+  else if(state.ott.has(k)) state.ott.delete(k);
+  else state.ott.add(k);
+  syncRow('ottRow','ott',state.ott);
+  if(state.ott.size && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
   render();
 });
 
@@ -590,14 +598,18 @@ moodRow.addEventListener('click',e=>{
 const typeRow=document.getElementById('typeRow');
 ['all','Movie','Natak','Series'].forEach(t=>{
   const b=document.createElement('button');
-  b.className='pill'+(state.type===t?' on':''); b.dataset.type=t;
+  b.className='pill'+((t==='all' ? !state.type.size : state.type.has(t))?' on':''); b.dataset.type=t;
   b.textContent = t==='all'?'All types':t+'s';
   typeRow.appendChild(b);
 });
 typeRow.addEventListener('click',e=>{
   const b=e.target.closest('.pill'); if(!b)return;
-  typeRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
-  b.classList.add('on'); state.type=b.dataset.type; render();
+  const k=b.dataset.type;
+  if(k==='all') state.type.clear();
+  else if(state.type.has(k)) state.type.delete(k);
+  else state.type.add(k);
+  syncRow('typeRow','type',state.type);
+  render();
 });
 
 const eraRow=document.getElementById('eraRow');
@@ -659,7 +671,7 @@ audRow.addEventListener('click',e=>{
 });
 
 const srcRow=document.getElementById('srcRow');
-[['all','All sources'],['catalogue','Catalogue'],['wikidata','Wikidata'],['tmdb','TMDB'],['jikan','MyAnimeList'],['youtube','YouTube']].forEach(([k,label])=>{
+[['all','All sources'],['catalogue','Catalogue'],['wikidata','Wikidata'],['tmdb','TMDB']].forEach(([k,label])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.src===k?' on':''); b.dataset.src=k; b.textContent=label;
   srcRow.appendChild(b);
@@ -770,7 +782,12 @@ document.getElementById('modal').addEventListener('click',e=>{
   if(e.target.closest('[data-mclose]')) closeModal();
 });
 document.getElementById('surpriseBtn').addEventListener('click',()=>{
-  const pool=DATA.filter(d=>!(state.hideWatched && watched.has(d.t)));
+  // prefer the latest Hindi / Hindi-dubbed titles, fall back to anything recent
+  const hindi = d => (d.a||[]).some(x=>/hindi/i.test(x));
+  const base = DATA.filter(d=>d.src!=='youtube' && !(state.hideWatched && watched.has(d.t)));
+  let pool = base.filter(d=>hindi(d) && Number(d.y||0)>=2000 && d.status!=='upcoming');
+  if(pool.length < 25) pool = base;
+  pool = pool.slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,500);
   if(pool.length) openModal(pool[Math.floor(Math.random()*pool.length)]);
 });
 /* ---- Aaj ka vibe : one popular pick that changes every day ---- */
@@ -796,20 +813,27 @@ document.addEventListener('click',e=>{
   if(mo){ const d=DATA.find(x=>x.t===mo.dataset.more);
     if(d && d.g && d.g.length){ state.gq=d.g[0]; render(); window.scrollTo({top:0,behavior:'smooth'}); }
     return; }
+  // clicking anywhere on a card (poster, title, summary) opens the detail window
+  const card=e.target.closest('.card[data-title]');
+  if(card && !e.target.closest('button,a')){
+    const d=DATA.find(x=>x.t===card.dataset.title);
+    if(d) openModal(d);
+    return;
+  }
 });
 function deriveOcc(d){
   return OCCASIONS.filter(o=>d.m.some(m=>o.moods.includes(m)) || d.g.some(g=>o.genres.includes(g))).map(o=>o.label);
 }
 function syncUrl(){
   const p=new URLSearchParams();
-  if(state.cat!=='all') p.set('cat',state.cat);
-  if(state.type!=='all') p.set('type',state.type);
+  if(state.cat.size) p.set('cat',[...state.cat].join(','));
+  if(state.type.size) p.set('type',[...state.type].join(','));
   if(state.era!=='all') p.set('era',state.era);
   if(state.occasion!=='all') p.set('occ',state.occasion);
   if(state.rel!=='month') p.set('rel',state.rel);
   if(state.dub) p.set('dub','1');
   if(state.src!=='all') p.set('src',state.src);
-  if(state.ott!=='all') p.set('ott',state.ott);
+  if(state.ott.size) p.set('ott',[...state.ott].join(','));
   if(state.coll!=='all') p.set('coll',state.coll);
   if(state.fr!=='all') p.set('fr',state.fr);
   if(state.sort!=='new') p.set('sort',state.sort);
@@ -831,14 +855,14 @@ function updateSavedBtn(){
 function activeFilters(){
   const a=[];
   if(state.q) a.push('search "'+state.q+'"');
-  if(state.cat!=='all') a.push(CATS[state.cat] ? CATS[state.cat].label : state.cat);
-  if(state.type!=='all') a.push(state.type);
+  if(state.cat.size) a.push([...state.cat].map(c=>CATS[c]?CATS[c].label:c).join(', '));
+  if(state.type.size) a.push([...state.type].join(', '));
   if(state.era!=='all') a.push(state.era==='classic' ? 'Classic (pre-2000)' : 'Modern (2000+)');
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) a.push(oc.label); }
   if(state.rel!=='all' && state.rel!=='month') a.push(REL_LABEL[state.rel]||state.rel);
   if(state.dub) a.push('Hindi Dubbed');
   if(state.src!=='all') a.push({youtube:'YouTube',catalogue:'Catalogue',wikidata:'Wikidata',tmdb:'TMDB',jikan:'MyAnimeList'}[state.src]||state.src);
-  if(state.ott!=='all') a.push(state.ott);
+  if(state.ott.size) a.push([...state.ott].join(', '));
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) a.push(co.label); }
   if(state.fr!=='all') a.push(state.fr);
   if(state.gq) a.push('genre: '+state.gq);
@@ -854,9 +878,17 @@ function setPillRow(id, attr, val){
   const r=document.getElementById(id); if(!r) return;
   r.querySelectorAll('.pill').forEach(p=>p.classList.toggle('on', p.dataset[attr]===val));
 }
+/* multi-select rows: a pill is on when its value is in the set ("all" when the set is empty) */
+function syncRow(id, attr, set){
+  const r=document.getElementById(id); if(!r) return;
+  r.querySelectorAll('.pill').forEach(p=>{
+    const v=p.dataset[attr];
+    p.classList.toggle('on', v==='all' ? set.size===0 : set.has(v));
+  });
+}
 function clearAllFilters(){
-  state.cat='all'; state.moods.clear(); state.type='all'; state.era='all';
-  state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott='all';
+  state.cat.clear(); state.moods.clear(); state.type.clear(); state.era='all';
+  state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott.clear();
   state.coll='all'; state.fr='all'; state.sort='new'; state.rt='all'; state.gems=false; state.safe=false;
   state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
@@ -879,8 +911,9 @@ const resTitle=document.getElementById('resTitle');
 
 function render(){
   const out=DATA.filter(d=>{
-    if(state.cat!=='all' && d.cat!==state.cat && !(d.cats||[]).includes(state.cat)) return false;
-    if(state.type!=='all' && d.type!==state.type) return false;
+    if(d.src==='youtube') return false;            // YouTube is a knowledge source only, never in the feed
+    if(state.cat.size && ![...state.cat].some(c=>d.cat===c || (d.cats||[]).includes(c))) return false;
+    if(state.type.size && !state.type.has(d.type)) return false;
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
     if(state.savedOnly && !watchlist.has(d.t)) return false;
@@ -899,7 +932,7 @@ function render(){
     if(state.src==='wikidata' && d.src!=='wikidata') return false;
     if(state.src==='tmdb' && d.src!=='tmdb') return false;
     if(state.src==='jikan' && d.src!=='jikan') return false;
-    if(state.ott!=='all' && !(d.o||[]).includes(state.ott)) return false;
+    if(state.ott.size && ![...state.ott].some(o=>(d.o||[]).includes(o))) return false;
     if(state.coll!=='all'){
       const co=COLLECTIONS.find(c=>c.k===state.coll);
       if(co && co.g){ const gl=(d.g||[]).join(' ').toLowerCase(); if(!co.g.some(k=>gl.includes(k))) return false; }
@@ -940,14 +973,14 @@ function render(){
     return bd.localeCompare(ad);                      // newest first
   });
 
-  let label = state.cat==='all' ? 'All titles' : CATS[state.cat].label;
-  if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat==='all' ? ' releases' : ' · '+CATS[state.cat].label);
+  let label = state.cat.size ? [...state.cat].map(c=>CATS[c]?CATS[c].label:c).join(' + ') : 'All titles';
+  if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat.size ? ' · '+label : ' releases');
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) label = (state.coll==='popular' ? 'Most Popular' : 'Top '+co.label); }
   if(state.fr!=='all') label = state.fr + ' — in sequence';
   if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
-  const key = JSON.stringify([state.cat,[...state.moods].sort(),state.type,state.era,state.occasion,state.rel,state.dub,state.src,state.ott,state.coll,state.fr,state.sort,state.savedOnly,state.q]);
+  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, shownLimit);
   resCount.textContent = (shown.length<out.length ? shown.length+' of '+out.length : out.length)+' title'+(out.length===1?'':'s');
@@ -973,7 +1006,7 @@ function render(){
     const grad='linear-gradient(150deg,'+c.color+' 0%, color-mix(in srgb,'+c.color+' 45%, #120c07) 100%)';
     const audio = d.a.map(x=>'<span class="tag audio">'+x+'</span>').join('');
     const moods = d.m.slice(0,3).map(x=>'<span class="tag mood">'+x+'</span>').join('');
-    return '<article class="card" style="animation-delay:'+(Math.min(i,12)*35)+'ms">'
+    return '<article class="card" data-title="'+esc(d.t)+'" style="animation-delay:'+(Math.min(i,12)*35)+'ms">'
       + '<div class="poster" style="background:'+grad+'">'
         + (d.poster ? '<img class="poster-img" src="'+d.poster+'" alt="" loading="lazy" onerror="this.remove()">' : '')
         + '<span class="type-badge">'+d.type+'</span>'
