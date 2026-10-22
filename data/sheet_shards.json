@@ -51,28 +51,28 @@
       "kind": "imdb",
       "sheet_id": "1ibX7RsnLhkwI0flfASbAEs10umk7u9qkxaBQ6TTf3Yo",
       "tab": "Titles",
-      "rows": 220000
+      "rows": 581770
     },
     {
       "name": "IMDb F",
       "kind": "imdb",
       "sheet_id": "1_5naGZw9_jmLiUj6y6KMh5HawRa7G_HNPe5KBPwDGCk",
       "tab": "Titles",
-      "rows": 220000
+      "rows": 581770
     },
     {
       "name": "IMDb G",
       "kind": "imdb",
       "sheet_id": "1tdGRzUix3lMAtFe-g0SNuyEUzp3gbO1lrLTYLzcernA",
       "tab": "Titles",
-      "rows": 220000
+      "rows": 581770
     },
     {
       "name": "IMDb H",
       "kind": "imdb",
       "sheet_id": "1opxe-6aEL5qODT4XYFX0a-H9sjuNSU8kh6kM3uXDMxU",
       "tab": "Titles",
-      "rows": 220000
+      "rows": 581767
     }
   ],
   "master": {
@@ -90,12 +90,17 @@
   },
   "totals": {
     "shards": 9,
-    "rows": 1002405,
-    "cells": 8040885
+    "rows": 2449482,
+    "cells": 19617501
   },
   "folder": {
     "name": "FilmiSet — Data (Sheets)",
     "id": "1I5XFS6OqSmpJl9w42fIxlqes9VizqEJC",
     "url": "https://drive.google.com/drive/folders/1I5XFS6OqSmpJl9w42fIxlqes9VizqEJC"
+  },
+  "limits": {
+    "cells_per_spreadsheet": 20000000,
+    "rows_at_26_cols": 769000,
+    "rows_at_8_cols": 2500000
   }
 }
