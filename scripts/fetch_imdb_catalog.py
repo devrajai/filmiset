@@ -55,9 +55,9 @@ def read_ratings(path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--top", type=int, default=30000, help="how many most-voted titles to keep for the site")
+    ap.add_argument("--top", type=int, default=30000, help="how many most-voted titles to keep")
     ap.add_argument("--stats", default="data/imdb_stats.json")
-    ap.add_argument("--out", default="data/imdb_top.json")
+    ap.add_argument("--out", default="data/imdb_all.json.gz", help="gzipped when it ends in .gz")
     args = ap.parse_args()
 
     try:
@@ -120,8 +120,13 @@ def main():
 
     rows.sort(key=lambda r: -r["ivot"])
     top = rows[:args.top]
-    json.dump(top, open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"  wrote {args.out} ({len(top):,} most-voted titles)")
+    if args.out.endswith(".gz"):
+        with gzip.open(args.out, "wt", encoding="utf-8") as f:
+            json.dump(top, f, ensure_ascii=False)
+    else:
+        json.dump(top, open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    mb = os.path.getsize(args.out) / 1048576
+    print(f"  wrote {args.out} ({len(top):,} most-voted titles, {mb:.1f} MB)")
 
 
 if __name__ == "__main__":
