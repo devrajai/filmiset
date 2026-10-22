@@ -355,6 +355,8 @@ function persistWatchlist(){ try{ localStorage.setItem('filmiset_watchlist', JSO
   if(p.get('q')){ state.q=p.get('q').toLowerCase(); document.getElementById('q').value=p.get('q'); }
   if(p.get('moods')) p.get('moods').split('|').filter(Boolean).forEach(m=>state.moods.add(m));
   if(p.get('saved')==='1') state.savedOnly=true;
+  // a shared link that pins a category/OTT should show the whole set, not just this month
+  if(!p.get('rel') && ((state.cat!=='all') || (state.ott!=='all'))) state.rel='all';
 })();
 
 /* ---- build filter UI ---- */
