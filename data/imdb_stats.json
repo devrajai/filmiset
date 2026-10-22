@@ -1,13 +1,13 @@
 {
  "generated_from": "IMDb public datasets (datasets.imdbws.com) — free, no API key",
- "imdb_rows_total": 12883475,
- "titles_kept": 2446954,
+ "imdb_rows_total": 12884302,
+ "titles_kept": 2447077,
  "by_type": {
-  "short": 1161870,
-  "movie": 751041,
-  "tvSeries": 304199,
+  "short": 1161938,
+  "movie": 751080,
+  "tvSeries": 304209,
   "tvMovie": 156571,
-  "tvMiniSeries": 73273
+  "tvMiniSeries": 73279
  },
  "rated_titles": 728218,
  "by_decade": {
@@ -18,15 +18,15 @@
   "1910s": 72652,
   "1920s": 36981,
   "1930s": 32892,
-  "1940s": 26487,
+  "1940s": 26489,
   "1950s": 45283,
   "1960s": 70568,
   "1970s": 81224,
   "1980s": 89326,
   "1990s": 118765,
-  "2000s": 284408,
-  "2010s": 796732,
-  "2020s": 566145,
+  "2000s": 284411,
+  "2010s": 796740,
+  "2020s": 566253,
   "2030s": 20,
   "2110s": 1
  }
