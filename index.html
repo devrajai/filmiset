@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FilmiSet — Kya Dekhein?</title>
+<meta name="description" content="Mood bolo, hum dikha denge — Bollywood, Hollywood, South, Korean, Anime aur web series, sab ek jagah. OTT availability, IMDb rating aur trailer ke saath.">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://devrajai.github.io/filmiset/">
+<meta property="og:site_name" content="FilmiSet">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FilmiSet — Kya Dekhein?">
+<meta property="og:description" content="Mood bolo, hum dikha denge — Bollywood, Hollywood, South, Korean, Anime aur web series, sab ek jagah.">
+<meta property="og:url" content="https://devrajai.github.io/filmiset/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -750,7 +759,36 @@ function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString(
 function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
 
 /* ---- title modal (Surprise me / Aaj ka vibe / details) ---- */
-function openModal(d){
+/* ---- deep links: every title has a stable ?t= URL, and the og tags follow it ---- */
+function slugify(s){ return String(s==null?'':s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,''); }
+function titleSlug(d){ return slugify(d.t)+'-'+(d.y||''); }
+function findBySlug(s){
+  if(!s) return null;
+  return DATA.find(d=>titleSlug(d)===s) || DATA.find(d=>slugify(d.t)===s) || null;
+}
+function setMeta(prop, val){
+  let m=document.querySelector('meta[property="'+prop+'"]');
+  if(!m){ m=document.createElement('meta'); m.setAttribute('property',prop); document.head.appendChild(m); }
+  m.setAttribute('content', val||'');
+}
+function setOg(d){
+  setMeta('og:title', d ? d.t+(d.y?' ('+d.y+')':'')+' \u2014 FilmiSet' : 'FilmiSet \u2014 Kya Dekhein?');
+  setMeta('og:description', d ? (d.ov || (d.g||[]).join(', ') || 'FilmiSet') : 'Mood bolo, hum dikha denge.');
+  try{ setMeta('og:url', location.href.split('#')[0]); }catch(e){}
+  let img='';
+  try{ img = (d && d.poster) ? new URL(d.poster, location.href).href : ''; }catch(e){}
+  setMeta('og:image', img);
+  document.title = d ? d.t+(d.y?' ('+d.y+')':'')+' \u2014 FilmiSet' : 'FilmiSet \u2014 Kya Dekhein?';
+}
+function pushTitle(d){
+  try{
+    const u=new URL(location.href);
+    if(d) u.searchParams.set('t', titleSlug(d)); else u.searchParams.delete('t');
+    history.pushState({t: d?titleSlug(d):null}, '', u);
+  }catch(e){ /* file:// or sandboxed context — ignore */ }
+}
+
+function openModal(d, fromPop){
   const up=d.status==='upcoming';
   const avail=(d.o&&d.o.length)? 'Available on '+d.o.join(' · ') : 'OTT info not listed';
   const m=document.getElementById('modal');
@@ -770,8 +808,21 @@ function openModal(d){
       + '<button class="hbtn" data-mclose="1">Close</button>'
     + '</div></div>';
   m.hidden=false;
+  setOg(d);
+  if(!fromPop) pushTitle(d);
 }
-function closeModal(){ document.getElementById('modal').hidden=true; }
+function closeModal(fromPop){
+  document.getElementById('modal').hidden=true;
+  setOg(null);
+  if(!fromPop) pushTitle(null);
+}
+/* browser Back / Forward follows the ?t= parameter */
+window.addEventListener('popstate',()=>{
+  let s=null;
+  try{ s=new URL(location.href).searchParams.get('t'); }catch(e){}
+  if(s){ const d=findBySlug(s); if(d){ openModal(d, true); return; } }
+  closeModal(true);
+});
 document.getElementById('modal').addEventListener('click',e=>{
   const m=document.getElementById('modal');
   if(e.target===m){ closeModal(); return; }
@@ -1047,6 +1098,11 @@ function boot(){
   const sc=document.getElementById('s-classic'); if(sc) sc.textContent = DATA.filter(d => Number(d.y) < 2000).length;
   render();
   renderVibe();
+  // deep link: ?t=3-idiots-2009 opens that title's detail window straight away
+  try{
+    const s=new URL(location.href).searchParams.get('t');
+    if(s){ const d=findBySlug(s); if(d) openModal(d, true); }
+  }catch(e){}
 }
 
 function normKey(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]/g,''); }

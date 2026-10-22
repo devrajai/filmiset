@@ -1,0 +1,51 @@
+name: CI
+
+# Guards the site on every push and pull request, so a bad change can never
+# silently blank the grid: the inline script must parse, the data files must be
+# valid, and every poster a row points at must exist.
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: The inline script in index.html must parse
+        run: |
+          python3 - <<'PY'
+          import re, pathlib
+          h = pathlib.Path("index.html").read_text(encoding="utf-8")
+          blocks = re.findall(r"<script>(.*?)</script>", h, re.S)
+          assert blocks, "no inline <script> block found in index.html"
+          pathlib.Path("/tmp/inline.js").write_text("\n".join(blocks), encoding="utf-8")
+          print(f"extracted {len(blocks)} inline script block(s)")
+          PY
+          node --check /tmp/inline.js
+
+      - name: Data files must be valid (shape + posters on disk)
+        run: python3 scripts/validate_data.py
+
+      - name: Pipeline scripts must compile
+        run: python3 -m py_compile scripts/*.py
+
+      - name: index.html must not contain a hard-coded secret
+        run: |
+          if grep -nE '(api_key|apiKey|TMDB_API_KEY)\s*[:=]\s*["'"'"'][A-Za-z0-9]{16,}' index.html; then
+            echo "::error::a hard-coded API key looks present in index.html"
+            exit 1
+          fi
+          echo "no hard-coded keys found"
