@@ -1,5 +1,26 @@
 [
  {
+  "t": "Pranjal Bhatt",
+  "y": 2026,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "posters/hqdefault.jpg",
+  "trailer": "https://www.youtube.com/watch?v=bl8weI77qwI",
+  "src": "youtube",
+  "channel": "Shemaroo Gujarati",
+  "status": "released",
+  "date": "2026-10-22",
+  "note": "રેવાના જીવનમાં આવી પડ્યું દુઃખનું વાવાઝોડું! - Movie Scene | Pranjal Bhatt | Anandi Tripathi"
+ },
+ {
   "t": "Komal Kumar बस में Priyamani को 'You Are So Sweet' बोल रहा है",
   "y": 2026,
   "cat": "south-dubbed",
@@ -12,7 +33,7 @@
   "o": [
    "YouTube"
   ],
-  "poster": "posters/hqdefault.jpg",
+  "poster": "posters/hqdefault-8e4bfa.jpg",
   "trailer": "https://www.youtube.com/watch?v=h0vMSEXh_Gc",
   "src": "youtube",
   "channel": "Goldmines",
