@@ -26,6 +26,12 @@ jobs:
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
         run: python3 scripts/fetch_tmdb.py --region IN
+      - name: TMDB discover (trending / popular / per-language)
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
+        run: python3 scripts/fetch_tmdb_discover.py --region IN --pages 1
+      - name: Anime from MyAnimeList (Jikan, free)
+        run: python3 scripts/fetch_jikan.py || true
       - name: Add IMDb ratings (free IMDb datasets)
         run: python3 scripts/fetch_imdb.py
       - name: Download + compress posters locally
@@ -36,7 +42,7 @@ jobs:
         run: |
           git config user.name "filmiset-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json data/movies.json data/youtube.json data/tmdb_cache.json data/filmiset-backup.xlsx posters
+          git add data/catalog.json data/movies.json data/youtube.json data/tmdb.json data/jikan.json data/tmdb_cache.json data/filmiset-backup.xlsx posters
           if git diff --staged --quiet; then
             echo "no changes today"
           else

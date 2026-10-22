@@ -78,11 +78,15 @@ def main():
     ap.add_argument("--catalog", default="data/catalog.json")
     ap.add_argument("--movies", default="data/movies.json")
     ap.add_argument("--youtube", default="data/youtube.json")
+    ap.add_argument("--tmdb", default="data/tmdb.json")
+    ap.add_argument("--jikan", default="data/jikan.json")
     args = ap.parse_args()
 
     catalog = load(args.catalog)
     curated = load(args.movies)
     youtube = load(args.youtube)
+    tmdb_rows = load(args.tmdb)
+    jikan_rows = load(args.jikan)
 
     wb = Workbook()
 
@@ -97,8 +101,11 @@ def main():
     info = [
         ("What is this", "A backup of everything the FilmiSet website shows."),
         ("Catalog sheet", f"{len(catalog)} titles auto-collected from Wikidata (free, no API key)."),
+        ("TMDB sheet", f"{len(tmdb_rows)} titles from TMDB discover (trending / popular / per-language)."),
+        ("Anime sheet", f"{len(jikan_rows)} anime from Jikan (MyAnimeList, free)."),
         ("Curated sheet", f"{len(curated)} hand-curated titles (from the Google Sheet)."),
         ("YouTube sheet", f"{len(youtube)} videos collected from the YouTube channels."),
+        ("Total titles", f"{len(catalog) + len(tmdb_rows) + len(jikan_rows) + len(curated)} across all sources."),
         ("OTT Platforms", "Filled from TMDB watch-provider data (India) where available."),
         ("Regenerate", "python3 scripts/make_backup.py  (runs daily in the GitHub Action)"),
         ("Website", "https://devrajai.github.io/filmiset/"),
@@ -117,6 +124,16 @@ def main():
     ws.sheet_properties.tabColor = NAVY
     header(ws, cols, widths)
     write_rows(ws, rows_for(catalog))
+
+    tw = wb.create_sheet("TMDB")
+    tw.sheet_properties.tabColor = "01B4E4"
+    header(tw, cols, widths)
+    write_rows(tw, rows_for(tmdb_rows))
+
+    jw = wb.create_sheet("Anime (MyAnimeList)")
+    jw.sheet_properties.tabColor = "2E51A2"
+    header(jw, cols, widths)
+    write_rows(jw, rows_for(jikan_rows))
 
     ws2 = wb.create_sheet("Curated")
     ws2.sheet_properties.tabColor = GOLD
@@ -138,17 +155,25 @@ def main():
 
     # --- OTT summary ---
     counter = collections.Counter()
-    for m in catalog + curated:
+    for m in catalog + curated + tmdb_rows + jikan_rows:
         for p in (m.get("o") or []):
             counter[p] += 1
     osheet = wb.create_sheet("OTT Summary")
     header(osheet, ["OTT Platform", "Titles"], [28, 10])
-    total = sum(1 for m in catalog + curated if m.get("o"))
+    total = sum(1 for m in catalog + curated + tmdb_rows + jikan_rows if m.get("o"))
     for p, n in counter.most_common():
         osheet.append([p, n])
     osheet.append(["—", "—"])
     osheet.append(["Titles with OTT info", total])
-    osheet.append(["Titles without OTT info", len(catalog) + len(curated) - total])
+    alln = len(catalog) + len(curated) + len(tmdb_rows) + len(jikan_rows)
+    osheet.append(["Titles without OTT info", alln - total])
+    osheet.append(["—", "—"])
+    osheet.append(["Source", "Titles"])
+    for name, n in (("Wikidata", len(catalog)), ("TMDB", len(tmdb_rows)),
+                    ("MyAnimeList (Jikan)", len(jikan_rows)), ("Curated sheet", len(curated)),
+                    ("YouTube", len(youtube))):
+        osheet.append([name, n])
+    osheet.append(["TOTAL", alln])
     for row in osheet.iter_rows(min_row=2, max_row=osheet.max_row):
         for c in row:
             c.font = Font(name=FONT, size=10)
@@ -156,7 +181,8 @@ def main():
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     wb.save(args.out)
-    print(f"wrote {args.out}: catalog={len(catalog)} curated={len(curated)} youtube={len(youtube)} ott-tagged={total}")
+    print(f"wrote {args.out}: catalog={len(catalog)} tmdb={len(tmdb_rows)} anime={len(jikan_rows)} "
+          f"curated={len(curated)} youtube={len(youtube)} ott-tagged={total}")
 
 
 if __name__ == "__main__":

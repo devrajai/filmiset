@@ -659,7 +659,7 @@ audRow.addEventListener('click',e=>{
 });
 
 const srcRow=document.getElementById('srcRow');
-[['all','All sources'],['catalogue','Catalogue'],['youtube','YouTube']].forEach(([k,label])=>{
+[['all','All sources'],['catalogue','Catalogue'],['wikidata','Wikidata'],['tmdb','TMDB'],['jikan','MyAnimeList'],['youtube','YouTube']].forEach(([k,label])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.src===k?' on':''); b.dataset.src=k; b.textContent=label;
   srcRow.appendChild(b);
@@ -837,8 +837,7 @@ function activeFilters(){
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) a.push(oc.label); }
   if(state.rel!=='all' && state.rel!=='month') a.push(REL_LABEL[state.rel]||state.rel);
   if(state.dub) a.push('Hindi Dubbed');
-  if(state.src==='youtube') a.push('YouTube');
-  if(state.src==='catalogue') a.push('Catalogue');
+  if(state.src!=='all') a.push({youtube:'YouTube',catalogue:'Catalogue',wikidata:'Wikidata',tmdb:'TMDB',jikan:'MyAnimeList'}[state.src]||state.src);
   if(state.ott!=='all') a.push(state.ott);
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) a.push(co.label); }
   if(state.fr!=='all') a.push(state.fr);
@@ -897,6 +896,9 @@ function render(){
     if(state.dub && !(d.a||[]).some(x=>/hindi \(dub\)/i.test(x))) return false;
     if(state.src==='youtube' && d.src!=='youtube') return false;
     if(state.src==='catalogue' && d.src==='youtube') return false;
+    if(state.src==='wikidata' && d.src!=='wikidata') return false;
+    if(state.src==='tmdb' && d.src!=='tmdb') return false;
+    if(state.src==='jikan' && d.src!=='jikan') return false;
     if(state.ott!=='all' && !(d.o||[]).includes(state.ott)) return false;
     if(state.coll!=='all'){
       const co=COLLECTIONS.find(c=>c.k===state.coll);
@@ -1035,14 +1037,21 @@ function mergeSets(list){
 
 /* data/movies.json  = curated catalog (from the Google Sheet)
    data/catalog.json = auto-collected catalog (Wikidata, refreshed daily by a GitHub Action)
-   Both are optional — the embedded demo set is the fallback. */
+   data/tmdb.json    = TMDB discover (trending / popular / per-language)
+   data/jikan.json   = anime from MyAnimeList
+   data/youtube.json = videos from the YouTube channels
+   All optional — the embedded demo set is the fallback. */
 Promise.all([
   fetch('data/movies.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/catalog.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/tmdb.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/jikan.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/youtube.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, yt]) => {
+]).then(([curated, auto, tmdbRows, jikanRows, yt]) => {
   mergeSets(curated);
   mergeSets(auto);
+  mergeSets(tmdbRows);
+  mergeSets(jikanRows);
   mergeSets(yt);
   boot();
 }).catch(boot);
