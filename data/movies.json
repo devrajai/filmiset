@@ -96,14 +96,18 @@
    "Original only"
   ],
   "o": [
-   "JioHotstar"
+   "ZEE5"
   ],
   "occ": [
    "Independence Day",
    "Rainy Day"
   ],
   "note": "Epic classic",
-  "poster": "posters/mughal-e-azam.jpg"
+  "poster": "posters/mughal-e-azam.jpg",
+  "rt": 197,
+  "rtg": 7.1,
+  "vot": 66,
+  "tr": "6PjoLgcrmcQ"
  },
  {
   "t": "Sholay",
@@ -158,7 +162,12 @@
    "Rainy Day"
   ],
   "note": "Guru Dutt classic",
-  "poster": "posters/pyaasa-poster.jpg"
+  "poster": "posters/pyaasa-poster.jpg",
+  "rt": 146,
+  "rtg": 7.3,
+  "vot": 78,
+  "cert": "U",
+  "tr": "IjlQJjmTIcM"
  },
  {
   "t": "Anand",
@@ -176,6 +185,7 @@
    "Original only"
   ],
   "o": [
+   "Prime Video",
    "JioHotstar"
   ],
   "occ": [
@@ -187,7 +197,12 @@
    "Rainy Day"
   ],
   "note": "Feel-good classic",
-  "poster": "posters/anand-2004-poster.jpg"
+  "poster": "posters/anand-2004-poster.jpg",
+  "rt": 122,
+  "rtg": 7.0,
+  "vot": 166,
+  "cert": "U",
+  "tr": "4zu4blN745A"
  },
  {
   "t": "Mayabazar",
@@ -257,13 +272,18 @@
    "Hindi dub + Original"
   ],
   "o": [
+   "Netflix",
    "JioHotstar"
   ],
   "occ": [
    "Weekend"
   ],
   "note": "Hollywood classic, Hindi dub",
-  "poster": "posters/godfather-ver1.jpg"
+  "poster": "posters/godfather-ver1.jpg",
+  "rt": 175,
+  "rtg": 8.7,
+  "vot": 23808,
+  "tr": "Ew9ngL1GZvs"
  },
  {
   "t": "Oldboy",
@@ -315,7 +335,9 @@
    "Family Night",
    "New Year"
   ],
-  "note": "Popular Gujarati natak"
+  "note": "Popular Gujarati natak",
+  "rt": 152,
+  "cert": "UA"
  },
  {
   "t": "Narsinh Mehta",
@@ -389,7 +411,11 @@
    "Rainy Day"
   ],
   "note": "Based on Pannalal Patel's novel",
-  "poster": "posters/500px-cover-of-manvini-bhavai-svg.jpg"
+  "poster": "posters/500px-cover-of-manvini-bhavai-svg.jpg",
+  "rt": 151,
+  "rtg": 10.0,
+  "vot": 1,
+  "cert": "U/A 13+"
  },
  {
   "t": "Alam Ara",
@@ -438,7 +464,10 @@
    "Independence Day",
    "Rainy Day"
   ],
-  "note": "Early Hindi classic"
+  "note": "Early Hindi classic",
+  "rt": 142,
+  "rtg": 6.0,
+  "vot": 6
  },
  {
   "t": "Kismet",
@@ -482,14 +511,18 @@
    "Original only"
   ],
   "o": [
-   "YouTube"
+   "Prime Video"
   ],
   "occ": [
    "Independence Day",
    "Rainy Day"
   ],
   "note": "Bimal Roy classic",
-  "poster": "posters/do-bigha-zamin.jpg"
+  "poster": "posters/do-bigha-zamin.jpg",
+  "rt": 125,
+  "rtg": 7.9,
+  "vot": 24,
+  "cert": "U"
  },
  {
   "t": "Mother India",
@@ -516,7 +549,12 @@
    "Rainy Day"
   ],
   "note": "Landmark Hindi classic",
-  "poster": "posters/mother-india-poster.jpg"
+  "poster": "posters/mother-india-poster.jpg",
+  "rt": 175,
+  "rtg": 7.0,
+  "vot": 112,
+  "cert": "U",
+  "tr": "OFWHKtISBrY"
  },
  {
   "t": "Guide",
@@ -599,7 +637,12 @@
    "New Year"
   ],
   "note": "Hrishikesh Mukherjee comedy",
-  "poster": "posters/chupke-chupke-1975.jpg"
+  "poster": "posters/chupke-chupke-1975.jpg",
+  "rt": 129,
+  "rtg": 7.2,
+  "vot": 69,
+  "cert": "U",
+  "tr": "o_tlw3zQlX8"
  },
  {
   "t": "Gol Maal",
@@ -627,7 +670,11 @@
    "New Year"
   ],
   "note": "Comedy classic",
-  "poster": "posters/gol-maal-poster.jpg"
+  "poster": "posters/gol-maal-poster.jpg",
+  "rt": 144,
+  "rtg": 7.6,
+  "vot": 95,
+  "cert": "U"
  },
  {
   "t": "Mr. India",
@@ -646,7 +693,8 @@
    "Original only"
   ],
   "o": [
-   "JioHotstar"
+   "Prime Video",
+   "ZEE5"
   ],
   "occ": [
    "Diwali",
@@ -655,7 +703,12 @@
    "Independence Day"
   ],
   "note": "Iconic Hindi film",
-  "poster": "posters/mr-india-1987-film-poster.jpg"
+  "poster": "posters/mr-india-1987-film-poster.jpg",
+  "rt": 179,
+  "rtg": 6.9,
+  "vot": 120,
+  "cert": "U",
+  "tr": "5XJxoDYkk8o"
  },
  {
   "t": "Qayamat Se Qayamat Tak",
@@ -682,7 +735,11 @@
    "Rainy Day"
   ],
   "note": "Romantic classic",
-  "poster": "posters/qayamat-se-qayamat-tak.jpg"
+  "poster": "posters/qayamat-se-qayamat-tak.jpg",
+  "rt": 162,
+  "rtg": 6.8,
+  "vot": 62,
+  "tr": "Y-mLv7Xe_XI"
  },
  {
   "t": "Hum Aapke Hain Koun",
@@ -702,7 +759,9 @@
    "Original only"
   ],
   "o": [
-   "JioHotstar"
+   "Prime Video",
+   "JioHotstar",
+   "ZEE5"
   ],
   "occ": [
    "Diwali",
@@ -711,7 +770,12 @@
    "New Year"
   ],
   "note": "Family musical",
-  "poster": "posters/hum-aapke-hain-koun-poster.jpg"
+  "poster": "posters/hum-aapke-hain-koun-poster.jpg",
+  "rt": 207,
+  "rtg": 6.6,
+  "vot": 133,
+  "cert": "U",
+  "tr": "N59F2MMuWnc"
  },
  {
   "t": "Dilwale Dulhania Le Jayenge",
@@ -785,14 +849,19 @@
    "Original only"
   ],
   "o": [
-   "YouTube"
+   "Prime Video",
+   "Sun NXT"
   ],
   "occ": [
    "Diwali",
    "Family Night",
    "Rainy Day"
   ],
-  "note": "Telugu classic (Hindi dub verify)"
+  "note": "Telugu classic (Hindi dub verify)",
+  "rt": 195,
+  "rtg": 8.6,
+  "vot": 8,
+  "cert": "U"
  },
  {
   "t": "Shankarabharanam",
@@ -811,7 +880,7 @@
    "Original only"
   ],
   "o": [
-   "YouTube"
+   "Sun NXT"
   ],
   "occ": [
    "Diwali",
@@ -819,7 +888,11 @@
    "Independence Day",
    "Rainy Day"
   ],
-  "note": "Telugu classic"
+  "note": "Telugu classic",
+  "rt": 143,
+  "rtg": 5.9,
+  "vot": 19,
+  "cert": "U"
  },
  {
   "t": "Sagara Sangamam",
@@ -837,7 +910,7 @@
    "Original only"
   ],
   "o": [
-   "YouTube"
+   "Sun NXT"
   ],
   "occ": [
    "Diwali",
@@ -846,7 +919,11 @@
    "Rainy Day"
   ],
   "note": "Telugu classic",
-  "poster": "posters/sagara-sangamam.jpg"
+  "poster": "posters/sagara-sangamam.jpg",
+  "rt": 160,
+  "rtg": 7.8,
+  "vot": 25,
+  "cert": "U"
  },
  {
   "t": "Nayakan",
@@ -873,7 +950,11 @@
    "Rainy Day"
   ],
   "note": "Mani Ratnam classic",
-  "poster": "posters/nayakan-poster.jpg"
+  "poster": "posters/nayakan-poster.jpg",
+  "rt": 156,
+  "rtg": 7.9,
+  "vot": 99,
+  "cert": "A"
  },
  {
   "t": "Thalapathi",
@@ -900,7 +981,11 @@
    "Rainy Day"
   ],
   "note": "Mani Ratnam classic",
-  "poster": "posters/thalapathi-poster.jpg"
+  "poster": "posters/thalapathi-poster.jpg",
+  "rt": 157,
+  "rtg": 8.0,
+  "vot": 65,
+  "cert": "UA"
  },
  {
   "t": "Anniyan",
@@ -919,14 +1004,19 @@
    "Hindi dub + Original"
   ],
   "o": [
-   "JioHotstar"
+   "ZEE5",
+   "Sun NXT"
   ],
   "occ": [
    "Weekend",
    "Independence Day"
   ],
   "note": "Shankar thriller",
-  "poster": "posters/anniyan-poster.jpg"
+  "poster": "posters/anniyan-poster.jpg",
+  "rt": 181,
+  "rtg": 7.4,
+  "vot": 128,
+  "cert": "U"
  },
  {
   "t": "Ghilli",
@@ -944,14 +1034,19 @@
    "Hindi dub + Original"
   ],
   "o": [
-   "JioHotstar"
+   "Sun NXT"
   ],
   "occ": [
    "Weekend",
    "Independence Day"
   ],
   "note": "Vijay action film",
-  "poster": "posters/ghilli-poster.jpg"
+  "poster": "posters/ghilli-poster.jpg",
+  "rt": 168,
+  "rtg": 7.1,
+  "vot": 78,
+  "cert": "UA",
+  "tr": "-I4H71WYW-M"
  },
  {
   "t": "Enthiran (Robot)",
@@ -969,13 +1064,17 @@
    "Hindi dub + Original"
   ],
   "o": [
-   "JioHotstar"
+   "Sun NXT"
   ],
   "occ": [
    "Weekend",
    "Independence Day"
   ],
-  "note": "Rajinikanth sci-fi"
+  "note": "Rajinikanth sci-fi",
+  "rt": 176,
+  "rtg": 6.6,
+  "vot": 272,
+  "cert": "U"
  },
  {
   "t": "Ben-Hur",
@@ -1001,7 +1100,11 @@
    "Rainy Day"
   ],
   "note": "Hollywood epic",
-  "poster": "posters/ben-hur-2016-poster.jpg"
+  "poster": "posters/ben-hur-2016-poster.jpg",
+  "rt": 212,
+  "rtg": 7.9,
+  "vot": 3310,
+  "tr": "f2y1gDeZ230"
  },
  {
   "t": "The Sound of Music",
@@ -1029,7 +1132,12 @@
    "New Year"
   ],
   "note": "Family classic",
-  "poster": "posters/500px-sound-of-music.jpg"
+  "poster": "posters/500px-sound-of-music.jpg",
+  "rt": 174,
+  "rtg": 7.7,
+  "vot": 3779,
+  "cert": "U",
+  "tr": "Q7wZClqWm_o"
  },
  {
   "t": "Jaws",
@@ -1048,13 +1156,18 @@
    "Hindi dub + Original"
   ],
   "o": [
-   "Prime Video"
+   "JioHotstar"
   ],
   "occ": [
    "Weekend"
   ],
   "note": "Spielberg classic",
-  "poster": "posters/500px-jaws-movie-poster.jpg"
+  "poster": "posters/500px-jaws-movie-poster.jpg",
+  "rt": 124,
+  "rtg": 7.7,
+  "vot": 11960,
+  "cert": "A",
+  "tr": "N9hzLQUGr34"
  },
  {
   "t": "Star Wars",
@@ -1081,7 +1194,12 @@
    "Rainy Day"
   ],
   "note": "Sci-fi classic",
-  "poster": "posters/starwarsmovieposter1977.jpg"
+  "poster": "posters/starwarsmovieposter1977.jpg",
+  "rt": 121,
+  "rtg": 8.2,
+  "vot": 23051,
+  "cert": "U",
+  "tr": "i-vsILeJ8_8"
  },
  {
   "t": "E.T.",
@@ -1109,7 +1227,11 @@
    "Rainy Day"
   ],
   "note": "Family classic",
-  "poster": "posters/e-t-the-extra-terrestrial-ver3.jpg"
+  "poster": "posters/e-t-the-extra-terrestrial-ver3.jpg",
+  "rt": 115,
+  "rtg": 7.5,
+  "vot": 12359,
+  "tr": "NsvdZ_z56c0"
  },
  {
   "t": "Terminator 2",
@@ -1134,7 +1256,12 @@
    "Independence Day"
   ],
   "note": "Action classic",
-  "poster": "posters/terminator-2-judgment-day.jpg"
+  "poster": "posters/terminator-2-judgment-day.jpg",
+  "rt": 137,
+  "rtg": 8.2,
+  "vot": 15059,
+  "cert": "A",
+  "tr": "BuBD2s2NmEM"
  },
  {
   "t": "Jurassic Park",
@@ -1188,7 +1315,11 @@
    "Rainy Day"
   ],
   "note": "Romantic epic",
-  "poster": "posters/titanic-1997-film-poster.jpg"
+  "poster": "posters/titanic-1997-film-poster.jpg",
+  "rt": 194,
+  "rtg": 7.9,
+  "vot": 27940,
+  "tr": "wO44qBPBG4c"
  },
  {
   "t": "My Sassy Girl",
@@ -1285,13 +1416,20 @@
    "Hindi dub + Original"
   ],
   "o": [
-   "Prime Video"
+   "Prime Video",
+   "Lionsgate Play",
+   "JioHotstar",
+   "MX Player"
   ],
   "occ": [
    "Weekend",
    "Independence Day"
   ],
   "note": "Korean zombie hit",
-  "poster": "posters/train-to-busan.jpg"
+  "poster": "posters/train-to-busan.jpg",
+  "rt": 118,
+  "rtg": 7.8,
+  "vot": 8855,
+  "tr": "4qm59Rcq1Fw"
  }
 ]
