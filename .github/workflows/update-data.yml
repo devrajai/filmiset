@@ -30,8 +30,6 @@ jobs:
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
         run: python3 scripts/fetch_tmdb_discover.py --region IN --pages 1
-      - name: Anime from MyAnimeList (Jikan, free)
-        run: python3 scripts/fetch_jikan.py || true
       - name: Add IMDb ratings (free IMDb datasets)
         run: python3 scripts/fetch_imdb.py
       - name: Download + compress posters locally
