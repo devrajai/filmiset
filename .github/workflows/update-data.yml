@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install deps
-        run: pip install pillow
+        run: pip install pillow openpyxl
       - name: Fetch free movie data (Wikidata, no API key)
         run: python3 scripts/fetch_data.py --out data/catalog.json
       - name: Collect from YouTube channels (RSS, no key)
