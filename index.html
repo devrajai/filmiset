@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FilmiSet — Kya Dekhein?</title>
 <meta name="description" content="Mood bolo, hum dikha denge — Bollywood, Hollywood, South, Korean, Anime aur web series, sab ek jagah. OTT availability, IMDb rating aur trailer ke saath.">
-<meta name="theme-color" content="#17140f">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://devrajai.github.io/filmiset/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <meta property="og:site_name" content="FilmiSet">
 <meta property="og:type" content="website">
 <meta property="og:title" content="FilmiSet — Kya Dekhein?">
@@ -261,6 +264,7 @@
     <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
     <button id="shareBtn" class="hbtn" title="Share this view">Share</button>
     <button id="surpriseBtn" class="hbtn" title="Random pick">Surprise me</button>
+    <button id="installBtn" class="hbtn" title="Install FilmiSet as an app" hidden>Install app</button>
   </div>
 </header>
 
@@ -1123,6 +1127,30 @@ function mergeSets(list){
     idx.set(k, DATA.length); DATA.push(c);
   });
 }
+
+/* ---- PWA: installable + offline shell ---- */
+if('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')){
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW registration failed:', err));
+  });
+}
+let deferredInstall = null;
+const installBtn = document.getElementById('installBtn');
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredInstall = e;
+  if(installBtn) installBtn.hidden = false;
+});
+if(installBtn) installBtn.addEventListener('click', async () => {
+  if(!deferredInstall) return;
+  deferredInstall.prompt();
+  try{ const { outcome } = await deferredInstall.userChoice; if(outcome === 'accepted') installBtn.hidden = true; }catch(e){}
+  deferredInstall = null;
+});
+window.addEventListener('appinstalled', () => {
+  if(installBtn) installBtn.hidden = true;
+  deferredInstall = null;
+});
 
 /* data/movies.json  = curated catalog (from the Google Sheet)
    data/catalog.json = auto-collected catalog (Wikidata, refreshed daily by a GitHub Action)
