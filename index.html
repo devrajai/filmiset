@@ -240,12 +240,6 @@
       <div class="eyebrow">live catalog · google sheet + wikidata · refreshed daily</div>
       <h2>Kya dekhein? Mood bolo, <em>hum dikha denge.</em></h2>
       <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Mood, festival ya weekend — apne mauke ke hisaab se pick karo. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
-      <div class="stats">
-        <div class="stat"><b id="s-total">0</b><span>TITLES</span></div>
-        <div class="stat"><b>6</b><span>CATEGORIES</span></div>
-        <div class="stat"><b id="s-classic">0</b><span>CLASSICS (pre-2000)</span></div>
-        <div class="stat stat-opt"><b>100%</b><span>LEGAL LINKS</span></div>
-      </div>
     </section>
 
     <div class="resultbar">
@@ -698,8 +692,8 @@ function render(){
 let DATA = DEMO.slice();
 
 function boot(){
-  document.getElementById('s-total').textContent = DATA.length;
-  document.getElementById('s-classic').textContent = DATA.filter(d => Number(d.y) < 2000).length;
+  const st=document.getElementById('s-total'); if(st) st.textContent = DATA.length;
+  const sc=document.getElementById('s-classic'); if(sc) sc.textContent = DATA.filter(d => Number(d.y) < 2000).length;
   render();
 }
 
