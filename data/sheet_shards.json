@@ -31,6 +31,20 @@
       "sheet_id": "1-H5E_IXHjN7R1te_Y_l0KDiIahzr3yyIkqnVnRujUFs",
       "tab": "Titles",
       "rows": 15000
+    },
+    {
+      "name": "IMDb C",
+      "kind": "imdb",
+      "sheet_id": "1sqUa5k0wlUW1ZcYvYKvhMGOefcsAYebhk0lOsxVyddI",
+      "tab": "Titles",
+      "rows": 45000
+    },
+    {
+      "name": "IMDb D",
+      "kind": "imdb",
+      "sheet_id": "1NuvsYtVLiroVPax0Kgj98KayyMJ4BRs9_-4aohnGPRI",
+      "tab": "Titles",
+      "rows": 45000
     }
   ],
   "master": {
@@ -45,5 +59,15 @@
     "titles_per_sheet_at_8_cols": 1250000,
     "sheets_for_15m_at_10_cols": 15,
     "sheets_for_15m_at_8_cols": 12
+  },
+  "totals": {
+    "shards": 5,
+    "rows": 122405,
+    "cells": 1000885
+  },
+  "folder": {
+    "name": "FilmiSet — Data (Sheets)",
+    "id": "1I5XFS6OqSmpJl9w42fIxlqes9VizqEJC",
+    "url": "https://drive.google.com/drive/folders/1I5XFS6OqSmpJl9w42fIxlqes9VizqEJC"
   }
 }
