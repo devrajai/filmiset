@@ -9,3 +9,7 @@ GoldminesTelefilms | south-dubbed   | Hindi    | Goldmines
 yogiboltahai       | hindi          | Hindi    | Yogi Bolta Hai
 filmiindian        | hindi          | Hindi    | Filmi Indian
 abhikareview       | hindi          | Hindi    | Abhi Ka Review
+rajshri            | hindi          | Hindi    | Rajshri
+PocketFilms        | hindi          | Hindi    | Pocket Films
+ultramovieparlour  | hindi          | Hindi    | Ultra Movie Parlour
+shemaroomovies     | hindi          | Hindi    | Shemaroo Movies

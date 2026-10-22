@@ -91,6 +91,8 @@ def collect(key, region, pages):
         ("/movie/upcoming", "movie", mg, {"region": region, "_upcoming": True}),
         ("/tv/popular", "tv", tg, {}), ("/tv/top_rated", "tv", tg, {}),
         ("/tv/on_the_air", "tv", tg, {}), ("/tv/airing_today", "tv", tg, {}),
+        ("/discover/movie", "movie", mg, {"primary_release_date.lte": "1999-12-31", "sort_by": "popularity.desc"}),
+        ("/discover/movie", "movie", mg, {"with_runtime.lte": "40", "sort_by": "popularity.desc"}),
     ]
     for path, kind, gmap, extra in lists:
         up = extra.pop("_upcoming", False)
