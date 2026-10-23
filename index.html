@@ -667,6 +667,26 @@ fetch('data/tvmaze.json').then(r => r.ok ? r.json() : null)
   .then(m => { if(m){ TVMAZE = m; applyExternalData(); render(); } }).catch(()=>{});
 /* cast / director / overview for the IMDb rows, produced by the daily Action and stored in the
    repo, so the site never asks TMDB for anything */
+function gunzipJson(url){
+  return fetch(url).then(r => r.ok ? r.arrayBuffer() : null).then(buf => {
+    if(!buf || typeof DecompressionStream === 'undefined') return null;
+    return new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).json();
+  }).catch(()=>null);
+}
+/* cast + director for every title, built from IMDb's own bulk files (no API involved) */
+gunzipJson('data/imdb_cast.json.gz').then(m => {
+  if(!m) return;
+  let n = 0;
+  DATA.forEach(d => {
+    const k = d.imdb || d.id || d.iid;
+    const x = k ? m[k] : null;
+    if(!x) return;
+    if(x.d && !d.dir) d.dir = x.d;
+    if(x.c && x.c.length && (!d.cast || !d.cast.length)) d.cast = x.c;
+    n++;
+  });
+  if(n) render();
+});
 fetch('data/imdb_details.json.gz').then(r => r.ok ? r.arrayBuffer() : null)
   .then(buf => {
     if(!buf) return;
