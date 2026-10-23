@@ -157,6 +157,68 @@ def main():
             c.border = BORDER
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
+    # --- every curated list, merged into one sheet ---
+    import glob
+    cur = wb.create_sheet("Curated (all lists)")
+    header(cur, ["List", "Title", "Year", "Type", "Category", "Genres", "Audio", "OTT",
+                 "Director", "Cast", "Overview"], [22, 34, 7, 8, 15, 22, 16, 18, 24, 34, 50])
+    lists_seen = []
+    n_cur = 0
+    for f in sorted(glob.glob("data/curated_*.json")):
+        rows = load(f)
+        if not rows:
+            continue
+        label = os.path.basename(f)[len("curated_"):-len(".json")]
+        lists_seen.append((label, len(rows)))
+        for m in rows:
+            if not isinstance(m, dict) or not m.get("t"):
+                continue
+            n_cur += 1
+            cur.append([label, m.get("t"), m.get("y"), m.get("type"), m.get("cat"),
+                        ", ".join(m.get("g") or []), ", ".join(m.get("a") or []),
+                        ", ".join(m.get("o") or []), m.get("dir") or "",
+                        ", ".join((m.get("cast") or [])[:5]), (m.get("ov") or "")[:400]])
+    cur.freeze_panes = "A2"
+
+    # --- an index of every data file, so nothing is silently left out ---
+    idx = wb.create_sheet("Data files")
+    header(idx, ["File", "Rows", "Size (KB)", "What it holds"], [34, 10, 11, 62])
+    NOTES = {
+        "catalog.json": "titles auto-collected from Wikidata",
+        "tmdb.json": "titles from TMDB discover",
+        "jikan.json": "anime from MyAnimeList (Jikan)",
+        "imdb_all.json.gz": "every IMDb title with rating + votes (the sheet shards)",
+        "imdb_stats.json": "counts from the IMDb ingest",
+        "imdb_top.json": "the 30,000 most-voted IMDb titles",
+        "imdb_indian.json": "Indian titles from the IMDb akas file",
+        "imdb_posters.json": "poster URLs per IMDb id (TMDB)",
+        "sheet_shards.json": "manifest of the Google Sheet shards",
+        "watch_order.json": "MCU / DC in-universe watch order",
+        "tvmaze.json": "seasons, episodes and network per series (TVmaze)",
+        "watch_providers.json": "Indian streaming platforms per title (TMDB)",
+        "tmdb_exports.json": "TMDB daily ID exports",
+        "curated_*.json": "hand-curated lists (see the Curated sheet)",
+    }
+    for f in sorted(glob.glob("data/*")):
+        if os.path.isdir(f):
+            continue
+        base = os.path.basename(f)
+        kb = round(os.path.getsize(f) / 1024, 1)
+        if base.endswith(".json"):
+            rows = load(f)
+            n = len(rows) if isinstance(rows, list) else (len(rows.get("shards", [])) if isinstance(rows, dict) else "")
+        else:
+            n = ""
+        note = NOTES.get(base, NOTES.get("curated_*.json" if base.startswith("curated_") else "", ""))
+        idx.append([base, n, kb, note])
+
+    # --- Readme gains the real totals ---
+    rd.cell(row=r + 0, column=2)
+    extra = r + len(info) + 2
+    rd.cell(row=extra, column=2, value="Curated lists").font = Font(name=FONT, size=11, bold=True)
+    rd.cell(row=extra, column=3, value=f"{n_cur} titles across {len(lists_seen)} lists: "
+             + ", ".join(f"{a} ({b})" for a, b in lists_seen))
+
     wb.save(args.out)
     print(f"wrote {args.out}: catalog={len(catalog)} tmdb={len(tmdb_rows)} anime={len(jikan_rows)} "
           f"curated={len(curated)} youtube={len(youtube)} ott-tagged={total}")
