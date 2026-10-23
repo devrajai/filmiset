@@ -40,6 +40,12 @@ jobs:
         run: python3 scripts/fetch_imdb_catalog.py --top 2500000
       - name: IMDb Indian titles (region/language from the akas dump)
         run: python3 scripts/fetch_imdb_indian.py --top 20000
+      - name: Watch providers — where each title streams in India (TMDB)
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
+        run: python3 scripts/fetch_watch_providers.py
+      - name: TVmaze — seasons, episodes and network per series (no key needed)
+        run: python3 scripts/fetch_tvmaze.py
       - name: Posters for the IMDb rows (rolling, TMDB by IMDb id)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}

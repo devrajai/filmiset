@@ -592,6 +592,31 @@ const FRANCHISES = [
   ['The Hunger Games','Hunger Games'], ['The Twilight Saga','Twilight'],
   ['Fifty Shades','Fifty Shades'], ['The Lord of the Rings','Lord of the Rings'],
 ];
+/* Optional enrichment produced by the daily Action:
+   data/watch_providers.json — the Indian platforms a title really streams on (+ a JustWatch link)
+   data/tvmaze.json          — seasons, episode count and network for every series */
+let WATCH_PROVIDERS = {}, TVMAZE = {};
+function extKey(t){ return String(t || '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim(); }
+function applyExternalData(){
+  DATA.forEach(d => {
+    const k = extKey(d.t);
+    const wp = WATCH_PROVIDERS[k];
+    if(wp){
+      if((!d.o || !d.o.length) && wp.p && wp.p.length) d.o = wp.p.slice(0, 3);
+      if(wp.jw) d.jw = wp.jw;
+    }
+    const tv = TVMAZE[k];
+    if(tv && (tv.seasons || tv.eps)){
+      d.tv = (tv.seasons ? 'S' + tv.seasons : '') + (tv.eps ? (tv.seasons ? ' · ' : '') + tv.eps + ' eps' : '');
+      if(tv.net && (!d.o || !d.o.length)) d.o = [tv.net];
+    }
+  });
+}
+fetch('data/watch_providers.json').then(r => r.ok ? r.json() : null)
+  .then(m => { if(m){ WATCH_PROVIDERS = m; applyExternalData(); render(); } }).catch(()=>{});
+fetch('data/tvmaze.json').then(r => r.ok ? r.json() : null)
+  .then(m => { if(m){ TVMAZE = m; applyExternalData(); render(); } }).catch(()=>{});
+
 /* In-universe chronological watch order, curated from the MCU/DC compendium. When a franchise
    is selected the grid follows THIS order instead of release date. */
 let WATCH_ORDER = {};
@@ -1208,7 +1233,7 @@ function render(){
       + '</div>'
       + '<div class="cardbody">'
         + '<h4>'+dispTitle(d.t)+'</h4>'
-        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.irt?' · IMDb '+d.irt:(d.rtg?' · \u2605'+d.rtg:''))+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+gList(d).join(', ')+'</div>'
+        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.irt?' · IMDb '+d.irt:(d.rtg?' · \u2605'+d.rtg:''))+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+gList(d).join(', ')+(d.tv?' · '+d.tv:'')+'</div>'
         + (d.ov? '<div class="sum">'+d.ov+'</div>':'')
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
@@ -1406,6 +1431,7 @@ Promise.all([
   mergeSets(netflixHollywood);       // Netflix Hollywood English & Hindi-Dubbed Catalog
   mergeSets(primeCatalog);           // Amazon Prime Video master catalog
   mergeSets(hotstarCatalog);         // Disney+ Hotstar master catalog
+  applyExternalData();               // TMDB watch providers + TVmaze, when those files exist
   boot();
 }).catch(boot);
 </script>
