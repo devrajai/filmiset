@@ -48,6 +48,10 @@ jobs:
         run: python3 scripts/fetch_watch_providers.py
       - name: TVmaze — seasons, episodes and network per series (no key needed)
         run: python3 scripts/fetch_tvmaze.py
+      - name: Metadata for the IMDb rows (cast, director, overview)
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
+        run: python3 scripts/fetch_tmdb_details.py --limit 300000 --per-run 20000 --workers 12
       - name: Posters for the IMDb rows (rolling, TMDB by IMDb id)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}

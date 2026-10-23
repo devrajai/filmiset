@@ -665,6 +665,30 @@ fetch('data/watch_providers.json').then(r => r.ok ? r.json() : null)
   .then(m => { if(m){ WATCH_PROVIDERS = m; applyExternalData(); render(); } }).catch(()=>{});
 fetch('data/tvmaze.json').then(r => r.ok ? r.json() : null)
   .then(m => { if(m){ TVMAZE = m; applyExternalData(); render(); } }).catch(()=>{});
+/* cast / director / overview for the IMDb rows, produced by the daily Action and stored in the
+   repo, so the site never asks TMDB for anything */
+fetch('data/imdb_details.json.gz').then(r => r.ok ? r.arrayBuffer() : null)
+  .then(buf => {
+    if(!buf) return;
+    if(typeof DecompressionStream === 'undefined') return;
+    const ds = new DecompressionStream('gzip');
+    return new Response(new Blob([buf]).stream().pipeThrough(ds)).json();
+  })
+  .then(m => {
+    if(!m) return;
+    let n = 0;
+    DATA.forEach(d => {
+      const k = d.imdb || d.id || d.iid;
+      const x = k ? m[k] : null;
+      if(!x) return;
+      if(x.d && !d.dir) d.dir = x.d;
+      if(x.c && x.c.length && (!d.cast || !d.cast.length)) d.cast = x.c;
+      if(x.o && !d.ov) d.ov = x.o;
+      if(x.r && !d.rt) d.rt = x.r;
+      n++;
+    });
+    if(n) render();
+  }).catch(()=>{});
 
 /* In-universe chronological watch order, curated from the MCU/DC compendium. When a franchise
    is selected the grid follows THIS order instead of release date. */
