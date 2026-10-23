@@ -1,0 +1,68 @@
+name: Jules daily maintenance
+
+# Wakes Jules up once a day to keep the site healthy.
+#
+# One-time setup (5 minutes):
+#   1. jules.google.com -> sign in with GitHub -> Settings -> create an API key
+#   2. This repo -> Settings -> Secrets and variables -> Actions -> New repository secret
+#      Name: JULES_API_KEY   Value: the key
+# Until that secret exists this workflow simply skips (it does not fail).
+
+on:
+  schedule:
+    - cron: '30 2 * * *'      # 08:00 IST every day
+  workflow_dispatch:
+
+jobs:
+  jules:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Is the Jules key present?
+        id: check
+        run: echo "have=${{ secrets.JULES_API_KEY != '' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Invoke Jules
+        if: steps.check.outputs.have == 'true'
+        uses: google-labs-code/jules-invoke@v1
+        with:
+          jules_api_key: ${{ secrets.JULES_API_KEY }}
+          starting_branch: main
+          include_commit_log: true
+          prompt: |
+            You are the FilmiSet maintenance agent. FilmiSet is a free, static movie and
+            web-series discovery site served by GitHub Pages from this repo. Read
+            docs/JULES_TASKS.md first — it is the full brief (file map, data shapes, rules).
+
+            Every day, do this:
+
+            1. HEALTH CHECK — report, and only then act:
+               - Is the latest CI run on main green? (workflow ci.yml)
+               - Does data/*.json still parse and do all the rows keep the keys the site
+                 needs (t, cat, type, g, m, a, o)? Run `python3 scripts/validate_data.py`.
+               - Did poster coverage drop? Compare the number of entries in
+                 data/imdb_posters.json with the previous commit.
+               - Is index.html still under ~250 KB of HTML+CSS+JS, and does its inline
+                 <script> pass `node --check`?
+
+            2. ACT — pick at most ONE small, clearly-correct fix from what you found.
+               Good candidates: a broken OTT link, a filter that returns nothing it should,
+               a missing aria-label, a poster that 404s, a stale row in the README.
+               Keep it under ~80 changed lines and inside a single file where possible.
+
+            3. OPEN AT MOST ONE PULL REQUEST against main.
+               - Title: "daily: <what you fixed>"
+               - Body: what was wrong, what you changed, and which check proves it is fixed.
+               - If nothing needs fixing, open NO pull request and simply say
+                 "all healthy" in your final message.
+
+            Hard rules — never break these:
+            - index.html stays ONE self-contained file. No npm, no bundler, no framework.
+            - Never put an API key, token or secret in any file.
+            - No piracy, torrent or unofficial streaming links. Legal platforms only.
+            - Rows with "src": "youtube" must never appear in the feed.
+            - UI copy stays Hinglish. Small, reviewable diffs only.
+            - Do not touch data/*.json or posters/ — the update-data workflow owns those.
+
+            Never do more than one task per day, and never merge anything yourself.
