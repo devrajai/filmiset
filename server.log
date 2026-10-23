@@ -1,0 +1,14 @@
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /data/sheet_shards.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /data/movies.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /data/catalog.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /data/tmdb.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] code 404, message File not found
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /data/imdb_indian.json HTTP/1.1" 404 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /data/youtube.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /data/jikan.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /data/imdb_posters.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:00] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:01] "GET /manifest.webmanifest HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2026 04:22:01] "GET /icon.svg HTTP/1.1" 200 -
