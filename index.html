@@ -324,6 +324,54 @@ const CATS = {
 
 const MOODS = ['Feel-Good','Comedy','Romantic','Thriller','Mystery','Action','Emotional','Horror','Nostalgic','Family'];
 
+/* ---- tolerant search ----
+   "breking bad" must still find "Breaking Bad": every word of the query has to match, but a
+   word may be one letter off (two for long words) or be a prefix of a title word. */
+function editLE(a, b, cap){
+  const la = a.length, lb = b.length;
+  if(Math.abs(la - lb) > cap) return false;
+  let prev = Array.from({length: lb + 1}, (_, j) => j);
+  for(let i = 1; i <= la; i++){
+    const cur = [i];
+    let best = i;
+    for(let j = 1; j <= lb; j++){
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+      if(cur[j] < best) best = cur[j];
+    }
+    if(best > cap) return false;
+    prev = cur;
+  }
+  return prev[lb] <= cap;
+}
+function fuzzyHit(title, q){
+  const qs = String(q || '').toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length > 1);
+  if(!qs.length) return true;
+  const tw = String(title || '').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  return qs.every(qw => {
+    const cap = qw.length >= 7 ? 2 : 1;
+    return tw.some(w => w.startsWith(qw) || editLE(w, qw, cap));
+  });
+}
+/* the closest catalogue title to what was typed, for a "did you mean" hint */
+function closestTitle(q){
+  const qs = String(q || '').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  if(!qs.length) return '';
+  let best = '', bestScore = 99;
+  for(const d of DATA){
+    const tw = String(d.t || '').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+    if(!tw.length) continue;
+    let score = 0;
+    for(const qw of qs){
+      let m = 99;
+      for(const w of tw){ if(w.startsWith(qw)){ m = 0; break; } m = Math.min(m, Math.abs(w.length - qw.length) + (editLE(w, qw, 2) ? 1 : 9)); }
+      score += m;
+    }
+    if(score < bestScore){ bestScore = score; best = d.t; }
+  }
+  return bestScore <= 2 ? best : '';
+}
+
 /* Wikidata stores genres as long sentence-case labels — "Thriller television series",
    "Lgbt-related television series". Shorten them for display, and drop repeats that only
    differed by the suffix. Filtering still uses the raw genre strings. */
@@ -1119,7 +1167,9 @@ function render(){
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
     if(state.savedOnly && !watchlist.has(d.t)) return false;
-    if(state.src!=='youtube' && state.rel!=='all'){
+    /* a search looks across the WHOLE catalogue — the release window must not hide old titles
+       (searching "breaking bad" while "This month" is active used to return nothing) */
+    if(state.src!=='youtube' && state.rel!=='all' && !state.q){
       if(d.src==='youtube') return false;              // videos aren't movie releases
       const ym=(d.date||'').slice(0,7);
       if(state.rel==='latest'){ if(!(ym===CUR_YM || ym===PREV_YM || d.status==='upcoming')) return false; }
@@ -1159,7 +1209,7 @@ function render(){
       }
     }
     if(state.moods.size && ![...state.moods].every(m=>moodOf(d).includes(m))) return false;
-    if(state.q && !d.t.toLowerCase().includes(state.q)) return false;
+    if(state.q && !fuzzyHit(d.t, state.q)) return false;
     return true;
   });
 
@@ -1209,9 +1259,13 @@ function render(){
     const why = act.length
       ? 'Active filters: <strong>'+act.join(' · ')+'</strong>. Inhe hata ke dekhiye — search saare titles par chalta hai, sirf active category par nahi.'
       : 'Is search ke liye kuch nahi mila. Spelling check kijiye ya doosra naam try kijiye.';
+    const guess = state.q ? closestTitle(state.q) : '';
     grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>'+why
+      + (guess && guess.toLowerCase() !== state.q ? '<br>Shayad aap <b>'+esc(guess)+'</b> chahte the? <button class="hbtn" id="didYouMeanBtn">'+esc(guess)+'</button>' : '')
       + (act.length ? '<br><button class="hbtn" id="clearAllBtn">Saare filters clear karein</button>' : '')+'</div>';
     const ca=document.getElementById('clearAllBtn'); if(ca) ca.onclick=clearAllFilters;
+    const dy=document.getElementById('didYouMeanBtn');
+    if(dy) dy.onclick=()=>{ const q=document.getElementById('q'); q.value=guess; state.q=guess.toLowerCase(); render(); fetchLive(state.q); };
     return;
   }
 
@@ -1347,13 +1401,25 @@ function fetchLive(q){
   }
   loadPosters();
   const safe = q.replace(/'/g, '');
-  Promise.all(SHEET_SHARDS.map(s => gviz(s, "select A,B,C,E,G,H where B contains '" + safe + "' limit 25")))
+  const words = q.split(/[^a-z0-9]+/).filter(w => w.length >= 3);
+  const dedupe = list => {
+    const seen = new Set();
+    return list.filter(x => { const k = x.t.toLowerCase(); if(seen.has(k)) return false; seen.add(k); return true; });
+  };
+  const phraseQ = s => "select A,B,C,E,G,H where B contains '" + s.replace(/'/g, '') + "' limit 25";
+  Promise.all(SHEET_SHARDS.map(s => gviz(s, phraseQ(safe))))
     .then(lists => {
-      const seen = new Set();
-      liveResults = [].concat.apply([], lists).filter(x => {
-        const k = x.t.toLowerCase(); if(seen.has(k)) return false; seen.add(k); return true;
-      });
-      liveQuery = q; render();
+      const hit = dedupe([].concat.apply([], lists));
+      if(hit.length){ liveResults = hit; liveQuery = q; render(); return; }
+      if(words.length < 2){ liveResults = []; liveQuery = q; render(); return; }
+      /* nothing for the whole phrase (often a typo) — ask for each word, then keep the rows
+         that pass the same tolerant test the local results use */
+      return Promise.all(words.map(w => Promise.all(SHEET_SHARDS.map(s => gviz(s, phraseQ(w))))))
+        .then(per => {
+          const all = dedupe([].concat.apply([], [].concat.apply([], per)));
+          liveResults = all.filter(x => fuzzyHit(x.t, q)).slice(0, 40);
+          liveQuery = q; render();
+        });
     });
 }
 
