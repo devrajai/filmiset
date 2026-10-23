@@ -1355,7 +1355,8 @@ Promise.all([
   fetch('data/curated_hollywood.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_hollywood_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries]) => {
+  fetch('data/curated_anime.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -1366,6 +1367,7 @@ Promise.all([
   mergeSets(hollywoodHindi);         // curated Hollywood films dubbed in Hindi
   mergeSets(hindiSeries);            // curated Hindi web series (one row per show)
   mergeSets(hollywoodSeries);        // curated Hollywood series with Hindi dubs
+  mergeSets(animeHindi);             // curated anime with Hindi dubs
   boot();
 }).catch(boot);
 </script>

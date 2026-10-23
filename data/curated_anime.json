@@ -1,0 +1,3219 @@
+[
+ {
+  "t": "Naruto",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The classic journey of a shunned orphan striving to become the Hokage of the Hidden Leaf.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Naruto: Shippuden",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Teenage Naruto confronts the Akatsuki and searches for rogue teammate Sasuke.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Boruto: Naruto Next Generations",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Naruto's rebellious son carves his own ninja path amid Otsutsuki threats.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jujutsu Kaisen",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yuji Itadori swallows a cursed finger of Sukuna and enters the Tokyo Jujutsu High sorcery world.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jujutsu Kaisen Season 2 (Hidden Inventory & Shibuya Incident)",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gojo and Geto's youth, followed by the catastrophic Halloween curse siege in Shibuya.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Demon Slayer: Kimetsu no Yaiba",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tanjiro Kamado joins the Demon Slayer Corps to avenge his family and cure his demon sister, Nezuko.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Demon Slayer: Mugen Train Arc",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tanjiro and Flame Hashira Rengoku investigate mysterious train disappearances.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Demon Slayer: Entertainment District Arc",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Infiltrating Yoshiwara red-light houses with Sound Hashira Tengen Uzui.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Demon Slayer: Swordsmith Village Arc",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Romance",
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Romantic",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Defending the secret sword-crafting sanctuary alongside the Mist and Love Hashiras.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Demon Slayer: Hashira Training Arc",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Intensive preparatory bootcamps with all Hashira ahead of the Infinity Castle showdown.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dragon Ball Z",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Goku discovers his Saiyan origins, battling Vegeta, Frieza, Cell, and Majin Buu.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dragon Ball Super",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Battles against Beerus the God of Destruction, Goku Black, and the Tournament of Power.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dragon Ball Daima",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Goku and friends are mysteriously shrunk into children, journeying through the Demon Realm.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chainsaw Man",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Denji merges with Pochita to become a chainsaw-wielding devil hunter for Public Safety.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Solo Leveling",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The world's weakest hunter, Sung Jinwoo, unlocks a secret game-like leveling interface.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "My Hero Academia",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Quirkless Izuku Midoriya inherits One For All from All Might to attend UA High.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bleach",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ichigo Kurosaki gains Soul Reaper powers and defends Karakura Town from Hollows.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bleach: Thousand",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Year Blood War – The Quincy Wandenreich returns to wage war on the Soul Society.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "One Piece (Select Arcs & Movies)",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Monkey D. Luffy sets sail with the Straw Hat Pirates to find the ultimate treasure.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Clover",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Magicless Asta receives a five-leaf grimoire to become the Wizard King alongside his rival Yuno.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Fire Force",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shinra Kusakabe joins Special Fire Force Company 8 to fight spontaneous human combustion.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mashle: Magic and Muscles",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "In a world where magic is everything, a boy without magic relies entirely on weightlifting.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kaiju No. 8",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A defense-force cleanup worker accidentally ingests a small monster and turns into a humanoid Kaiju.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hell’s Paradise (Jigokuraku)",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Condemned ninja Gabimaru is sent to an uncanny island to locate the Elixir of Immortality.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Vinland Saga",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Young Viking warrior Thorfinn seeks personal revenge against his father’s killer, Askeladd.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Tokyo Revengers",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Takemichi time-leaps 12 years back to his middle-school gang days to save his murdered ex-girlfriend.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Akudama Drive",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ordinary civilians are swept into a high-stakes cybernetic heist with death-row convicts.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Radiant",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sorcerer Seth hunts Nemesis creatures while facing persecution from the Inquisition.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Tower of God",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bam enters a towering structure to chase after his childhood friend Rachel.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "God of High School",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Martial artists compete in an arena tournament that unmasks mythological deities.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Noblesse",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An ancient vampire noble awakens from an 820-year slumber to attend high school in modern Korea.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Baki / Baki Hanma",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Underground martial artists engage in brutal, no-rules death matches.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kengan Ashura",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Corporations hire gladiators to resolve high-stakes business deals in secret brawls.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Assassination Classroom",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Middle-school outcasts are tasked with assassinating their tentacled yellow teacher, Koro-sensei.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "One",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Punch Man – Saitama effortlessly knocks out every monster with a single punch, seeking an exciting battle.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mob Psycho 100",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An emotionally introverted middle-schooler with immense psychic power works for a charming con-man exorcist.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Death Note",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Light Yagami uses a supernatural notebook to execute criminals while matching wits with master detective L.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Classroom of the Elite",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kiyotaka Ayanokoji conceals his genius inside the cutthroat Tokyo Metropolitan Advanced Nurturing High School.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dr. STONE",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "High school science genius Senku Ishigami awakens thousands of years after humanity is turned to stone to rebuild civilization.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Apothecary Diaries",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Former brothel-district apothecary Maomao uses herbal forensics to solve poisoning mysteries in the imperial palace.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Zom 100: Bucket List of the Dead",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An overworked corporate worker feels liberated when a zombie apocalypse breaks out and writes a 100-item bucket list.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Tomodachi Game",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "High school friends are forced into cruel psychological debt games that test their trust.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Detective Is Already Dead",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kimihiko continues solving crimes following the death of his brilliant detective partner, Siesta.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Erased (Boku dake ga Inai Machi)",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A manga artist experiences time resets that send him back to 1988 to prevent a child abduction case.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Terror in Resonance",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Two genius teenage boys execute calculated public bombings across Tokyo to expose a state conspiracy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Psycho",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Pass – Inspectors and Enforcers use the Sibyl System’s mental health index to arrest citizens with high criminal intent.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Parasyte: The Maxim",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "High schooler Shinichi Izumi forms a symbiosis with a sentient alien parasite that took over his right hand.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "In/Spectre",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kotoko Iwanaga acts as the mediator between the supernatural yokai realm and human logic murder mysteries.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Deadman Wonderland",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A student wrongfully convicted of mass murder is sent to a private theme-park prison where inmates battle with blood.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ajin: Demi",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Human – Immortal beings hunted by world governments fight back using invisible black ghost avatars.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "B: The Beginning",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Investigators hunt a serial killer branded \"Killer B\" while unmasking a divine genetic cult.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Lookism",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Thriller",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A heavily bullied high school student discovers he can switch between his original body and an attractive, athletic second body.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "That Time I Got Reincarnated as a Slime",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A murdered salaryman reincarnates as a blue slime named Rimuru, building a peaceful monster federation.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mushoku Tensei: Jobless Reincarnation",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A reclusive man reincarnates as Rudeus Greyrat, learning magic and making the most of a second chance at life.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Rising of the Shield Hero",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Naofumi is summoned to an alternate world, falsely accused, and must survive as the outcast Shield Hero.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Overlord",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A salaryman stays logged into his favorite MMORPG as the servers shut down and is transported into the world as the skeletal sorcerer Ainz Ooal Gown.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Re:ZERO",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Sci-Fi",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Starting Life in Another World – Subaru Natsuki discovers that every time he dies in a fantasy world, his timeline rewinds to an earlier checkpoint.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Frieren: Beyond Journey’s End",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Elven mage Frieren embarks on a quiet journey decades after defeating the Demon King to understand human life and connections.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Delicious in Dungeon (Dungeon Meshi)",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Adventurers cook and eat dungeon monsters to save supplies on a rescue quest to the bottom floors.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Log Horizon",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "30,000 Japanese gamers are pulled into an online fantasy game and form city governance coalitions.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Daily Life of the Immortal King",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Wang Ling tries to live a normal teenage life while concealing his universe-destroying cultivation energy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Ancient Magus' Bride",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Chise Hatori finds a home and magical apprenticeship under Elias Ainsworth, an inhuman sorcerer with an animal skull.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ranking of Kings",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bojji, a small, deaf, and mute prince, undertakes a heroic quest to become the greatest king.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "I Was Reincarnated as the 7th Prince",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A sorcerer executed for having weak blood awakens as a royal prince with unlimited magical reserve.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Misfit of Demon King Academy",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The reincarnated Demon King of Tyranny enrolls in an academy that fails to recognize his immense power.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Reborn as a Vending Machine, I Now Wander the Dungeon",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A vending machine enthusiast reincarnates as a magical automated dispensing box in a fantasy dungeon.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "My Unique Skill Makes Me OP even at Level 1",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Reborn into a dungeon-drop world where every item is collected through drops, Ryota's drop stats break the system.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Iceblade Sorcerer Shall Rule the World",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The continent's most powerful sorcerer hides his identity to attend an aristocratic magic academy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Handyman Saitou in Another World",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An ordinary handyman finds his practical lockpicking, fixing, and cleaning skills useful in a dungeon party.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Villainess Level 99: I May Be the Hidden Boss But I'm Not the Demon Lord",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Reincarnated into an otome game, a girl grinds dungeon levels to max level 99 to live peacefully.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "KamiKatsu: Working for God in a Godless World",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A cult sacrifice survivor is transported to a world with no religion and must build a following for his clumsy deity.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "How a Realist Hero Rebuilt the Kingdom",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A modern civil servant is summoned to a dying kingdom and uses economic reform and bureaucracy to save it.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Wrong Way to Use Healing Magic",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An ordinary student is transported to a fantasy realm where extreme physical training turns healing magic into combat armor.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shangri",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "La Frontier – A gamer who specializes in clearing broken, buggy trash games tackles the world's most popular VR MMO.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Campfire Cooking in Another World with My Absurd Skill",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A summoned office worker uses an online supermarket skill to cook modern dishes that tame legendary beasts.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "SPY x FAMILY",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Master spy Twilight forms a fake family with an assassin wife and a telepathic orphan daughter without realizing their secret identities.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "My Dress",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Up Darling – A quiet traditional Hina doll craftsman teams up with a popular classmate, Marin Kitagawa, to construct cosplay outfits.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kaguya",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Thriller",
+   "Romance"
+  ],
+  "m": [
+   "Romantic",
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "sama: Love Is War – Two genius student council executives wage psychological warfare to force the other to confess their love first.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Buddy Daddies",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Two professional hitman partners are forced to raise the cheerful four-year-old daughter of a target they eliminated.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "My Happy Marriage",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An abused, dowry-less young woman is betrothed to an icy military commander, discovering warmth and her dormant lineage.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "ReLIFE",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An unemployed 27-year-old takes an experimental rejuvenation drug to repeat his final year of high school.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "A Couple of Cuckoos",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Two teens discover they were swapped at birth and are pushed into an arranged engagement by their eccentric parents.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Rent",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "a-Girlfriend – A dumped college student rents a girlfriend through a mobile app, setting off a chain of family lies and college mix-ups.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Angel Next Door Spoils Me Rotten",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An introverted high school boy strikes up a neighborly domestic friendship with the school's most popular girl.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Tomo",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Romance",
+   "Comedy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "chan Is a Girl! – A tomboy martial artist struggles to get her childhood guy friend to see her as a romantic prospect.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Masamune",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "kun's Revenge – A formerly chubby boy remakes himself into an attractive student to break the heart of the girl who once rejected him.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Way of the Househusband",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A legendary retired Yakuza enforcer, the \"Immortal Dragon,\" applies gangland intensity to coupons, cooking, and chores.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Komi Can't Communicate",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A high school girl with social anxiety attempts to make 100 friends with the help of an observant classmate.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Romantic Killer",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Romance",
+   "Comedy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A video-game-loving teen is stripped of her games, chocolate, and cats by a wizard determined to force her into a shojo romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "My Love Story with Yamada",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "kun at Lv999 – A girl dumped by her gamer ex-boyfriend meets a stoic, professional high-school gamer in an online MMO.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "A Sign of Affection",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A deaf college student's quiet world expands when she connects with a trilingual senior who travels the world.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "An Archdemon's Dilemma: How to Love Your Elf Bride",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Romance",
+   "Comedy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A socially awkward sorcerer falls in love at first sight with an elf slave girl, struggling to express his feelings.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A salaryman takes in a runaway teen, offering her shelter while teaching her self-respect.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Ice Guy and His Cool Female Colleague",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A modern descendant of the Snow Maiden freezes items around him whenever his workplace crush smiles at him.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aharen",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "san wa Hakarenai – A small, quiet girl who has trouble gauging personal boundaries forms an unusual friendship with her desk neighbor.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Haikyu!!",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sport",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hinata Shoyo, despite his short height, joins the Karasuno High volleyball team to soar past the blockers alongside setter Kageyama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Blue Lock",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sport",
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Three hundred high school strikers are locked in an egoist training facility to create the most ruthless forward in world football.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aoashi",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sport",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A raw football talent from rural Japan is recruited into Tokyo Esperion's elite youth academy, learning positional tactical awareness.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hajime no Ippo: The Fighting!",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Sport"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bullied student Ippo Makunouchi discovers the power of his fists and trains to become a professional boxer.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Megalo Box",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Sport"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Underground boxer \"Junk Dog\" fights in an arena where fighters wear mechanized gear, choosing to fight completely gearless.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kuroko’s Basketball",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sport",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tetsuya Kuroko uses his lack of court presence to serve as the invisible phantom sixth man to powerhouse Kagami.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Captain Tsubasa",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sport",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tsubasa Oozora pursues his dream of leading Japan's national soccer team to World Cup glory.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Prince of Tennis",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sport",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tennis prodigy Ryoma Echizen joins Seigaku Junior High, using unconventional spin techniques to defeat older opponents.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Yowamushi Pedal",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sport",
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An otaku cycling enthusiast discovers his stamina from pedaling to Akihabara and joins the high school road racing club.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ahiru no Sora",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Sport",
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A short basketball player breathes new life into a high school team full of unmotivated delinquents.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spirited Away",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Chihiro wanders into a bathhouse for spirits ruled by the witch Yubaba to rescue her transformed parents.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Princess Mononoke",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Fantasy",
+   "Animation"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Prince Ashitaka is caught in a war between the gods of a forest and Tatara, a mining colony.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Howl’s Moving Castle",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sophie is transformed into an elderly woman by a witch and finds refuge in Howl's walking magical castle.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "My Neighbor Totoro",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Two young sisters move to the countryside and discover friendly forest spirits.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Grave of the Fireflies",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A teenage boy and his young sister struggle to survive in Japan during the closing months of World War II.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ponyo",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A young fish princess escapes the ocean and befriends a human boy, wanting to become human herself.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Suzume",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A high-school girl and a mysterious young man travel across disaster ruins in Japan to close dimensional doors preventing earthquakes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Weathering With You",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Animation"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A runaway high school boy in rainy Tokyo meets a girl who has the miraculous power to clear the sky.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "5 Centimeters per Second",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Romance",
+   "Drama"
+  ],
+  "m": [
+   "Romantic",
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A wistful exploration of childhood romance, time, and growing emotional distance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Garden of Words",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An aspiring shoemaker and a troubled older woman strike up a rainy-morning connection in a Tokyo park.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "A Silent Voice (Koe no Katachi)",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A reformed former bully seeks redemption and friendship from the deaf girl he tormented in elementary school.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jujutsu Kaisen 0",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Fantasy",
+   "Animation"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yuta Okkotsu learns to control the cursed spirit of his childhood friend Rika at Tokyo Jujutsu High.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Demon Slayer: Mugen Train (Movie Cut)",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The record-shattering theatrical release featuring the battle against Upper Three Akaza.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dragon Ball Super: Super Hero",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gohan and Piccolo take the spotlight to stop the resurrected Red Ribbon Army and Gamma androids.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dragon Ball Super: Broly",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Goku and Vegeta clash with the exiled Saiyan prodigy Broly in the icy wastes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "One Piece Film: Red",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Straw Hats attend a concert by Uta, the world’s most beloved singer and daughter of Red-Haired Shanks.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Clover: Sword of the Wizard King",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Fantasy",
+   "Animation"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Asta and the Magic Knights confront four resurrected former Wizard Kings aiming to destroy the kingdom.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "SPY x FAMILY CODE: White",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Forger family takes a winter weekend trip that entangles them in a military microfilm conspiracy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Stand by Me Doraemon & Stand by Me Doraemon 2",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "3D CGI films detailing Doraemon's arrival and Nobita’s wedding to Shizuka.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Boy and the Heron",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hayao Miyazaki’s Oscar-winning adventure of a boy entering an underworld kingdom between life and death.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Doraemon",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The blue robotic cat from the 22nd century helps Nobita Nobi navigate daily childhood problems using futuristic gadgets.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shin",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Emotional",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "chan – The comedic misadventures of five-year-old Shinnosuke Nohara and his eccentric family in Kasukabe.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ninja Hattori",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Action",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "kun – A young ninja from Iga resides with Kenichi, using ninja techniques to help him through everyday problems.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Perman",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An ordinary schoolboy is chosen by Superman to fight crime and protect his city with a mask, cape, and copy-robot.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kiteretsu Daihyakuka",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A young inventor uses his ancestor's ancient book to craft gadgets, accompanied by his companion Korosuke.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kochikame (Kochira Katsushika",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "ku Kameari Koen-mae Hashutsujo) – Headstrong police officer Kankichi Ryotsu devises get-rich-quick schemes that end in chaos.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pokémon (Original Indigo League to Sun & Moon / Journeys)",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ash Ketchum and Pikachu journey through regions to become Pokémon Masters.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Beyblade (Original Series, V",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Action",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Force & G-Revolution) – Tyson, Kai, Ray, and Max battle with Bit-Beasts to win the World Beyblade Championship.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Beyblade: Metal Fusion / Metal Masters / Metal Fury",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gingka Hagane wields Storm Pegasus against the Dark Nebula organization.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Digimon Adventure",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Seven children transported to the Digital World partner with Digital Monsters to save both realms.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Yu",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gi-Oh! Duel Monsters – Yugi Mutou unlocks the Millennium Puzzle, sharing his body with an ancient Pharaoh to play Duel Monsters.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Inuyasha (Early Animax Hindi Dub)",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Action",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kagome falls into a sacred shrine well, traveling back to feudal Japan to collect Shikon Jewel shards with half-demon Inuyasha.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Cardcaptor Sakura",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sakura Kinomoto accidentally releases magical Clow Cards from an ancient book and must recapture them.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Haketoon / Monster Kid (Kaibutsu",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Family",
+   "Adventure"
+  ],
+  "m": [
+   "Action",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "kun) – The Prince of Monsterland visits the human world to experience life alongside his monster assistants.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Atashin'chi",
+  "y": "",
+  "cat": "anime",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Emotional",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Everyday slice-of-life comedy depicting the domestic quirks and habits of the four-member Tachibana family.",
+  "src": "curated",
+  "status": "released"
+ }
+]
