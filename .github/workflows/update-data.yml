@@ -40,6 +40,10 @@ jobs:
         run: python3 scripts/fetch_imdb_catalog.py --top 2500000
       - name: IMDb Indian titles (region/language from the akas dump)
         run: python3 scripts/fetch_imdb_indian.py --top 20000
+      - name: Free full films on YouTube (official uploaders only)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY || secrets.YT_API_KEY }}
+        run: python3 scripts/fetch_youtube_free.py --min-minutes 20 --per-channel 12
       - name: Trending now (TMDB, for the Trending chip)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}

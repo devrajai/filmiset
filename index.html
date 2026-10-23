@@ -247,7 +247,7 @@
       z-index:80;box-shadow:0 -12px 40px rgba(0,0,0,.28)}
     body.filters-open .rail{transform:translateY(0)}
     body.filters-open{overflow:hidden}
-    .rail-head{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    .rail-head{position:sticky;top:0;z-index:5;background:var(--surface);padding:10px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;
       position:sticky;top:-16px;background:var(--bg);padding:6px 0 12px;margin-top:-6px;z-index:2}
     .rail-head span{font-family:var(--font-display);font-size:17px;font-weight:600}
     .backdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:70;
@@ -300,6 +300,8 @@
 <div class="wrap layout">
   <aside class="rail" id="rail">
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
+    <div class="rail-block"><h6>Free full films on YouTube</h6><div class="chips" id="ytFreeRow"></div></div>
+    <div class="rail-block"><h6>Popular on YouTube</h6><div class="chips" id="ytChanRow"></div></div>
     <div class="rail-block"><h6>Free on YouTube (legal)</h6><div class="chips" id="freeRow"></div></div>
     <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
     <div class="rail-block"><h6>OTT par dekho</h6><div class="quickpicks" id="ottPicks"></div></div>
@@ -979,6 +981,9 @@ const QUICK = [
   {id:'quick',   label:'\u23F1\uFE0F Under 2 hours',  apply:s=>{ s.rt='u120'; s.rel='all'; }},
   {id:'family',  label:'\u{1F46A} Family night',   apply:s=>{ s.company='family'; s.rel='all'; }},
 ];
+function closeRailIfMobile(){
+  try{ if(window.matchMedia('(max-width:980px)').matches && typeof closeFilters==='function') closeFilters(); }catch(e){}
+}
 (function buildQuickPicks(){
   const row=document.getElementById('quickPicks'); if(!row) return;
   QUICK.forEach(q=>{
@@ -998,7 +1003,7 @@ const QUICK = [
     }
     document.querySelectorAll('#quickPicks .qp').forEach(p=>p.classList.remove('on'));
     b.classList.add('on');
-    render();
+    render(); closeRailIfMobile();
   });
 })();
 
@@ -1018,6 +1023,34 @@ function freeOnYouTube(title){ return ytSearchUrl(String(title||'')+' full movie
     FREE_YT=list;
     row.innerHTML = list.map(function(c){
       const url = c.url || ytSearchUrl(c.q || (c.name+' full movie'));
+      return '<a class="pill ytfree" href="'+url+'" target="_blank" rel="noopener" title="'+esc(c.what||'')+'">\u25B6 '+esc(c.name)+'</a>';
+    }).join('');
+  }).catch(()=>{});
+})();
+
+
+/* ---- real free full-length films found on YouTube (from the daily API fetch) ---- */
+(function buildYtFreeRow(){
+  const row=document.getElementById('ytFreeRow'); if(!row) return;
+  fetch('data/youtube_free.json').then(r=>r.ok?r.json():null).then(list=>{
+    if(!Array.isArray(list) || !list.length){
+      row.innerHTML='<span style="font-size:12px;color:var(--muted)">Run the workflow with YOUTUBE_API_KEY to fill this</span>';
+      return;
+    }
+    row.innerHTML = list.slice(0,60).map(function(v){
+      const url='https://www.youtube.com/watch?v='+v.id;
+      return '<a class="pill ytfree" href="'+url+'" target="_blank" rel="noopener" title="'+esc(v.ch||'')+' \u00b7 '+(v.min||'')+' min">\u25B6 '+esc(v.t)+'</a>';
+    }).join('');
+  }).catch(()=>{});
+})();
+
+/* ---- popular Indian YouTube channels & series ---- */
+(function buildYtChanRow(){
+  const row=document.getElementById('ytChanRow'); if(!row) return;
+  fetch('data/yt_channels.json').then(r=>r.ok?r.json():null).then(list=>{
+    if(!Array.isArray(list) || !list.length) return;
+    row.innerHTML = list.map(function(c){
+      const url = c.url || ytSearchUrl(c.q || c.name);
       return '<a class="pill ytfree" href="'+url+'" target="_blank" rel="noopener" title="'+esc(c.what||'')+'">\u25B6 '+esc(c.name)+'</a>';
     }).join('');
   }).catch(()=>{});
@@ -1054,7 +1087,7 @@ const TOP_PICKS = [
     }
     document.querySelectorAll('#topPicks .qp').forEach(p=>p.classList.remove('on'));
     b.classList.add('on');
-    render();
+    render(); closeRailIfMobile();
   });
 })();
 
@@ -1076,7 +1109,7 @@ const OTT_PICKS = ['Netflix','Prime Video','JioHotstar','SonyLIV','ZEE5','Aha','
     if(typeof setPillRow==='function'){ setPillRow('relRow','rel','all'); setPillRow('ottRow','ott','all'); }
     document.querySelectorAll('#ottPicks .qp').forEach(x=>x.classList.remove('on'));
     b.classList.add('on');
-    render();
+    render(); closeRailIfMobile();
   });
 })();
 
@@ -1168,7 +1201,7 @@ const MOOD_PICKS = [
     if(typeof setPillRow==='function'){ setPillRow('relRow','rel','all'); }
     document.querySelectorAll('#moodPicks .qp').forEach(p=>p.classList.remove('on'));
     b.classList.add('on');
-    render();
+    render(); closeRailIfMobile();
   });
 })();
 
@@ -1200,7 +1233,7 @@ const TREND_PICKS = [
     if(typeof setPillRow==='function') setPillRow('relRow','rel','all');
     document.querySelectorAll('#trendPicks .qp').forEach(p=>p.classList.remove('on'));
     b.classList.add('on');
-    render();
+    render(); closeRailIfMobile();
   });
 })();
 function loadTrendSources(){
@@ -1258,10 +1291,16 @@ function pickSugg(title){
 (function wireSugg(){
   const box=document.getElementById('sugg'), inp=document.getElementById('q');
   if(!box || !inp) return;
-  box.addEventListener('mousedown',e=>{
+  const choose=e=>{
     const sg=e.target.closest('.sg'); if(!sg) return;
-    e.preventDefault(); pickSugg(sg.dataset.sg);
-  });
+    e.preventDefault(); e.stopPropagation();
+    pickSugg(sg.dataset.sg);
+  };
+  box.addEventListener('mousedown',choose);
+  box.addEventListener('touchstart',choose,{passive:false});
+  box.addEventListener('click',choose);
+  // keep the dropdown open while a finger is on it
+  box.addEventListener('touchstart',e=>e.stopPropagation(),{passive:true});
   inp.addEventListener('keydown',e=>{
     const items=box.querySelectorAll('.sg');
     if(!items.length || !box.classList.contains('on')) return;
@@ -1278,7 +1317,7 @@ function pickSugg(title){
       box.classList.remove('on');
     }
   });
-  inp.addEventListener('blur',()=>setTimeout(()=>box.classList.remove('on'),150));
+  inp.addEventListener('blur',()=>setTimeout(()=>box.classList.remove('on'),320));
   inp.addEventListener('focus',()=>{ if(state.q && state.q.length>=2) drawSugg(state.q); });
 })();
 
