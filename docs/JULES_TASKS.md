@@ -261,3 +261,87 @@ a region switch for OTT data (`IN` / `US` / `GB`) so the "Available on…" line 
 region's platforms.
 **Done when:** the new languages appear with sensible Category labels and the region switch changes
 the OTT line.
+
+---
+
+# Third wave (T26 – T36) — after the Google Sheet shards and the daily cron
+
+Context you must know before starting: the catalogue now lives in **9 public Google Sheets**
+(see `data/sheet_shards.json` and `docs/SCALE.md`). A weekly agent cron syncs them. The site
+queries the shards live through the Google **gviz** endpoint (CORS is allowed, and it supports
+server-side SQL: `tq=select A,B,C,E,G,H where B contains 'x' order by H desc limit 20`).
+`data/imdb_indian.json` holds the most-voted Indian titles and `data/imdb_posters.json` maps
+`tconst -> poster URL`.
+
+### T26 — Verify and repair every OTT link
+`OTT_URL` in `index.html` maps a platform name to its **search** URL. Several of these were
+guessed and were never verified. Check each one against the real site, correct the ones that
+are wrong, and make `ottLink()` fall back to the platform home page (not a broken search path)
+when a title is empty. Add a short comment listing which ones you verified.
+**Done when:** every platform in the map opens a working page for a real title.
+
+### T27 — "Popular in India" row
+Add a horizontally scrolling row above the grid that shows the most-voted **Indian** titles
+from `data/imdb_indian.json` (fall back to the shards with `order by H desc` when the file is
+missing). Hide the row when there is nothing to show. Give each card the existing card markup
+so Save / Mark seen / More like this keep working.
+**Done when:** the row renders with real Indian titles and disappears gracefully offline.
+
+### T28 — Search across cast, director and studio
+The local rows carry `cast`, `dir` and `prod`. Extend the search box to match those too and
+show the matched field on the card (e.g. "Cast: …"). Keep the live sheet search working
+alongside it.
+**Done when:** typing an actor or director name returns their titles, and typing a title still works.
+
+### T29 — Keep the page fast now that it loads more
+The boot now also fetches the shard manifest, the poster map and the popular rows. Add
+skeletons while those load, keep the first render under 1.5 s on a throttled connection, and
+make sure the poster map is only fetched once. Total HTML+CSS+JS must stay under 250 KB.
+**Done when:** Lighthouse performance ≥ 90 on mobile and no layout jump when posters arrive.
+
+### T30 — Accessibility pass (WCAG AA)
+Keyboard access everywhere, `aria-label` on icon-only buttons, the detail window is a real
+dialog (`role="dialog"`, `aria-modal`, focus trapped, `Esc` closes, focus returns to the card),
+contrast ≥ 4.5:1 in both themes, and the mobile filter drawer announces its state.
+**Done when:** an axe-core scan reports no critical issues and the site is fully usable by keyboard.
+
+### T31 — Giscus comments on each title
+Lazy-load `https://giscus.app/client.js` in the detail window with `data-repo="devrajai/filmiset"`
+and a per-title term, `data-theme` matched to the site's light/dark state. Only load it when the
+section is expanded. Leave the `repo-id` / `category` values as clearly marked TODOs.
+**Done when:** comments load per title only after expanding the section.
+
+### T32 — Anonymous analytics (GoatCounter)
+Add the deferred GoatCounter script with a TODO for the code, and fire named events for:
+filter applied, Surprise me, Mark seen, Trailer click, detail window open, live sheet search.
+Never send the user's search text.
+**Done when:** events fire without errors when the GoatCounter code is still unset.
+
+### T33 — Instagram-style share card
+A **Share card** button (card + detail window) that draws a 1080×1080 canvas: poster, title,
+year, rating, genre chips and the site URL, then shares via `navigator.share({files})` or
+downloads the PNG. Handle missing posters with a colour block.
+**Done when:** the exported PNG is exactly 1080×1080 and legible on a phone.
+
+### T34 — Gujarati / Hinglish UI toggle
+A language toggle (Hinglish default, ગુજરાતી) driven by a single `I18N` object and a `t(key)`
+helper. Persist in `localStorage` and reflect it in the URL (`?lang=gu`). Translate the hero,
+every filter heading and pill, card actions, the detail window buttons, the empty state and
+"Load more". Do **not** translate titles.
+**Done when:** switching re-renders the whole UI with no reload and no English left in Gujarati mode.
+
+### T35 — Guard the sheet shards in CI
+Extend `scripts/validate_data.py` (run by `.github/workflows/ci.yml`) to also fetch
+`data/sheet_shards.json`, and for each shard confirm the sheet id/tab still respond on the gviz
+endpoint and that the row count is within 5% of the manifest. Fail the check with a clear
+message when a shard has been deleted, renamed or emptied.
+**Done when:** a deliberately wrong sheet id in the manifest turns CI red.
+
+### T36 — Replaces the manual sheet sync with a real job
+The weekly cron currently does the sheet sync by hand. Write `scripts/sync_sheets.py` plus a
+workflow that appends any new rows from `data/imdb_all.json.gz` / `data/tmdb_full.json.gz` into
+the shards using a **Google service account** (`GOOGLE_SA_JSON` repo secret), keeping every
+sheet under Google's 20,000,000-cell limit, and updates the MASTER INDEX
+(`1ZonhzqGrArw0aISB9lgeY04MJ5YIJJDsBEOj7UIMn5c`). Document the one-time service-account setup
+in `docs/SCALE.md`. If the secret is missing the script must exit 0 and change nothing.
+**Done when:** the job appends new titles without any manual step and the master index updates itself.
