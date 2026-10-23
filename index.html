@@ -1414,7 +1414,8 @@ Promise.all([
   fetch('data/curated_prime.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_hotstar.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_sonyliv_zee5.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog, sonylivZee5]) => {
+  fetch('data/curated_gujarati.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog, sonylivZee5, gujaratiCat]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -1433,6 +1434,7 @@ Promise.all([
   mergeSets(primeCatalog);           // Amazon Prime Video master catalog
   mergeSets(hotstarCatalog);         // Disney+ Hotstar master catalog
   mergeSets(sonylivZee5);            // SonyLIV + ZEE5 master catalog
+  mergeSets(gujaratiCat);            // Shemaroo Gujarati nataks + cinema + web series
   applyExternalData();               // TMDB watch providers + TVmaze, when those files exist
   boot();
 }).catch(boot);
