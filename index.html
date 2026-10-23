@@ -99,6 +99,13 @@
   #sugg .sg .t{font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   #sugg .sg .m{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   #sugg .sg .k{font-size:10px;color:var(--accent);font-family:var(--font-mono);flex:0 0 auto}
+  .recs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:6px 0 4px}
+  .rec{display:flex;gap:8px;align-items:center;text-align:left;border:1px solid var(--line);background:var(--surface-2);
+    border-radius:10px;padding:6px;cursor:pointer;color:var(--ink);font-family:inherit;font-size:12px}
+  .rec:hover{border-color:var(--accent)}
+  .rec img{width:26px;height:38px;object-fit:cover;border-radius:4px;flex:0 0 auto}
+  .rec span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .rec i{color:var(--muted);font-style:normal;font-size:10.5px}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -291,6 +298,8 @@
 <div class="wrap layout">
   <aside class="rail" id="rail">
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
+    <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
+    <div class="rail-block"><h6>OTT par dekho</h6><div class="quickpicks" id="ottPicks"></div></div>
     <div class="rail-block"><h6>Kya mood hai?</h6><div class="quickpicks" id="moodPicks"></div></div>
     <div class="rail-block"><h6>Trending &amp; reels</h6><div class="quickpicks" id="trendPicks"></div></div>
     <div class="rail-block"><h6>Quick picks</h6><div class="quickpicks" id="quickPicks"></div></div>
@@ -532,7 +541,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -655,7 +664,7 @@ collRow.addEventListener('click',e=>{
 });
 
 const sortRow=document.getElementById('sortRow');
-[['new','Newest'],['pop','Most popular']].forEach(([k,label])=>{
+[['new','Newest'],['pop','Most popular'],['rating','Highest rated'],['votes','Most voted'],['oldest','Oldest first']].forEach(([k,label])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.sort===k?' on':''); b.dataset.sort=k; b.textContent=label;
   sortRow.appendChild(b);
@@ -991,6 +1000,123 @@ const QUICK = [
 })();
 
 
+
+/* ---- Best of all time: Top 5 / 10 / 25 / 100 ---- */
+const TOP_PICKS = [
+  {id:'t5',   label:'\u{1F3C6} Top 5',        n:5},
+  {id:'t10',  label:'\u{1F947} Top 10',       n:10},
+  {id:'t25',  label:'\u2B50 Top 25',          n:25},
+  {id:'t100', label:'\u{1F4AF} Top 100',      n:100},
+  {id:'tm',   label:'\u{1F3AC} Top 10 films', n:10, type:'Movie'},
+  {id:'ts',   label:'\u{1F4FA} Top 10 series',n:10, type:'Series'},
+  {id:'gems', label:'\u{1F48E} Hidden gems',  gems:true},
+];
+(function buildTopPicks(){
+  const row=document.getElementById('topPicks'); if(!row) return;
+  TOP_PICKS.forEach(t=>{
+    const b=document.createElement('button');
+    b.className='qp'; b.dataset.tpn=t.id; b.type='button'; b.textContent=t.label;
+    row.appendChild(b);
+  });
+  row.addEventListener('click',e=>{
+    const b=e.target.closest('.qp'); if(!b) return;
+    const spec=TOP_PICKS.find(t=>t.id===b.dataset.tpn); if(!spec) return;
+    clearAllFilters();
+    state.rel='all'; state.sort='rating';
+    if(spec.n) state.topN=spec.n;
+    if(spec.type) state.type=new Set([spec.type]);
+    if(spec.gems) state.gemsMode=true;
+    if(typeof setPillRow==='function'){
+      setPillRow('relRow','rel','all'); setPillRow('sortRow','sort','rating');
+      setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
+    }
+    document.querySelectorAll('#topPicks .qp').forEach(p=>p.classList.remove('on'));
+    b.classList.add('on');
+    render();
+  });
+})();
+
+/* ---- OTT par dekho: one tap per platform ---- */
+const OTT_PICKS = ['Netflix','Prime Video','JioHotstar','SonyLIV','ZEE5','Aha','Sun NXT',
+                   'Hoichoi','MX Player','ShemarooMe','Apple TV+','Crunchyroll','JioCinema'];
+(function buildOttPicks(){
+  const row=document.getElementById('ottPicks'); if(!row) return;
+  OTT_PICKS.forEach(p=>{
+    const b=document.createElement('button');
+    b.className='qp'; b.dataset.ottp=p; b.type='button'; b.textContent=p;
+    row.appendChild(b);
+  });
+  row.addEventListener('click',e=>{
+    const b=e.target.closest('.qp'); if(!b) return;
+    const p=b.dataset.ottp;
+    clearAllFilters();
+    state.ott=new Set([p]); state.rel='all';
+    if(typeof setPillRow==='function'){ setPillRow('relRow','rel','all'); setPillRow('ottRow','ott','all'); }
+    document.querySelectorAll('#ottPicks .qp').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    render();
+  });
+})();
+
+/* ---- "You might also like" in the detail view ---- */
+function recommendationsFor(cur, n){
+  const cg = (cur.g||[]).map(x=>String(x).toLowerCase());
+  const cy = Number(cur.y)||0;
+  const scored=[];
+  for(const d of DATA){
+    if(d===cur || d.src==='youtube') continue;
+    if(!d.t || d.t.toLowerCase()===String(cur.t||'').toLowerCase()) continue;
+    const dg=(d.g||[]).map(x=>String(x).toLowerCase());
+    let g=0; for(const x of dg) if(cg.indexOf(x)>=0) g++;
+    if(!g && d.cat!==cur.cat) continue;
+    const dy=Math.abs((Number(d.y)||0)-cy);
+    const score = g*3 + (dy<=10?1:0) + Number(d.irt||d.rtg||0)*0.2 + (d.cat===cur.cat?0.5:0);
+    scored.push([score,d]);
+  }
+  scored.sort((a,b)=>b[0]-a[0]);
+  return scored.slice(0,n||4).map(x=>x[1]);
+}
+
+/* ---- keyboard shortcuts ---- */
+window.addEventListener('keydown',e=>{
+  const tag=(e.target.tagName||'').toLowerCase();
+  const typing = tag==='input' || tag==='textarea' || tag==='select';
+  if(e.key==='/' && !typing){ e.preventDefault(); const q=document.getElementById('q'); if(q){ q.focus(); q.select(); } return; }
+  if(e.key==='Escape'){
+    const mm=document.getElementById('modal');
+    if(mm && !mm.hidden){ closeModal(); return; }
+    const box=document.getElementById('sugg'); if(box) box.classList.remove('on');
+    return;
+  }
+  if((e.key==='r'||e.key==='R') && !typing){
+    const sb=document.getElementById('surpriseBtn'); if(sb) sb.click();
+  }
+});
+
+/* ---- share just the watchlist ---- */
+(function shareWatchlist(){
+  const btn=document.getElementById('shareBtn'); if(!btn) return;
+  btn.addEventListener('click',()=>{
+    if(!watchlist || !watchlist.size) return;                 // the normal view-share handles the rest
+    try{
+      const ids=[...watchlist];
+      const enc=btoa(unescape(encodeURIComponent(JSON.stringify(ids))));
+      const url=location.origin+location.pathname+'#wl='+enc;
+      navigator.clipboard.writeText(url);
+      btn.textContent='Watchlist link copied';
+      setTimeout(()=>{ btn.textContent='Share'; }, 1800);
+    }catch(err){}
+  }, true);                                                    // runs alongside the existing handler
+})();
+(function importSharedWatchlist(){
+  try{
+    const m=/[#&]wl=([^&]+)/.exec(location.hash||'');
+    if(!m) return;
+    const ids=JSON.parse(decodeURIComponent(escape(atob(m[1]))));
+    if(Array.isArray(ids)) ids.forEach(t=>watchlist.add(t));
+  }catch(e){}
+})();
+
 /* ---- mood suggestions: "Kya mood hai?" ---- */
 const MOOD_PICKS = [
   {id:'feel',   label:'\u{1F604} Feel-good',  moods:['Feel-Good']},
@@ -1276,6 +1402,7 @@ function openModal(d, fromPop){
     + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
         + [d.dir?'Director: '+d.dir:'', d.prod?'Studio: '+d.prod:'',
            (d.cast&&d.cast.length)?'Cast: '+d.cast.join(', '):''].filter(Boolean).join('  ·  ') + '</div>' : '')
+    + (function(){ const rs=recommendationsFor(d,4); return rs.length ? '<div class="m" style="margin-top:10px">You might also like</div><div class="recs">'+rs.map(function(r){ return '<button class="rec" data-rec="'+esc(r.t)+'">'+(r.poster?'<img src="'+esc(r.poster)+'" alt="" onerror="this.remove()">':'')+'<span>'+esc(dispTitle(r.t))+'</span><i>'+(r.y||'')+'</i></button>'; }).join('')+'</div>' : ''; })()
     + '<div class="row">'
       + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">Watch trailer</a>' : '')
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
@@ -1305,6 +1432,8 @@ document.getElementById('modal').addEventListener('click',e=>{
   if(sv){ const t=sv.dataset.msave; if(watchlist.has(t))watchlist.delete(t); else watchlist.add(t); persistWatchlist(); sv.textContent=watchlist.has(t)?'\u2665 Saved':'\u2661 Save'; updateSavedBtn(); return; }
   const sn=e.target.closest('[data-mseen]');
   if(sn){ const t=sn.dataset.mseen; if(watched.has(t))watched.delete(t); else watched.add(t); persistWatched(); sn.textContent=watched.has(t)?'\u2713 Seen':'Mark seen'; return; }
+  const rc=e.target.closest('[data-rec]');
+  if(rc){ const t=rc.dataset.rec; const hit=DATA.find(x=>x.t===t); if(hit) openModal(hit, true); return; }
   if(e.target.closest('[data-mclose]')) closeModal();
 });
 document.getElementById('surpriseBtn').addEventListener('click',()=>{
@@ -1419,7 +1548,7 @@ function clearAllFilters(){
   state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
-  state.minRating=0; state.only=null;
+  state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
   setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
@@ -1427,6 +1556,9 @@ function clearAllFilters(){
   setPillRow('frRow','fr','all'); setPillRow('sortRow','sort','new');
   setPillRow('compRow','comp','all'); setPillRow('rtRow','rt','all');
   document.querySelectorAll('#qualRow .pill').forEach(p=>p.classList.remove('on'));
+  ['#quickPicks','#moodPicks','#trendPicks','#topPicks','#ottPicks'].forEach(function(sel){
+    document.querySelectorAll(sel+' .qp').forEach(function(p){ p.classList.remove('on'); });
+  });
   document.querySelectorAll('#moodRow .pill').forEach(p=>p.classList.remove('on'));
   render();
 }
@@ -1443,6 +1575,10 @@ function render(){
     if(state.type.size && !state.type.has(d.type)) return false;
     if(state.minRating && Number(d.irt||d.rtg||0) < state.minRating) return false;
     if(state.only && !state.only.has(String(d.t||'').toLowerCase())) return false;
+    if(state.gemsMode){
+      const r=Number(d.irt||d.rtg||0), v=Number(d.ivot||d.vot||0);
+      if(!(r>=7.6 && v>=1000 && v<=50000)) return false;      // high rating, modest vote count
+    }
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
     if(state.savedOnly && !watchlist.has(d.t)) return false;
@@ -1507,6 +1643,9 @@ function render(){
     }
     if(state.rel==='upcoming') return (ad||'9999').localeCompare(bd||'9999');
     if(byPop){ const pa=a.pop||0, pb=b.pop||0; if(pb!==pa) return pb-pa; return bd.localeCompare(ad); }
+    if(state.sort==='rating'){ const ra=Number(a.irt||a.rtg||0), rb=Number(b.irt||b.rtg||0); if(rb!==ra) return rb-ra; }
+    if(state.sort==='votes'){ const va=Number(a.ivot||a.vot||0), vb=Number(b.ivot||b.vot||0); if(vb!==va) return vb-va; }
+    if(state.sort==='oldest'){ const ya=Number(a.y||9999), yb=Number(b.y||9999); if(ya!==yb) return ya-yb; }
     if(au!==bu) return au ? 1 : -1;                  // released first, upcoming last
     if(au) return (ad||'9999').localeCompare(bd||'9999');   // soonest first
     return bd.localeCompare(ad);                      // newest first
@@ -1525,10 +1664,10 @@ function render(){
   if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
-  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q]);
+  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
-  const shown = out.slice(0, shownLimit);
-  resCount.textContent = (shown.length<out.length ? shown.length+' of '+out.length : out.length)+' title'+(out.length===1?'':'s');
+  const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
+  resCount.textContent = (state.topN ? 'Top '+shown.length : (shown.length<out.length ? shown.length+' of '+out.length : out.length))+' title'+(out.length===1?'':'s');
   syncUrl();
   updateSavedBtn();
   updateFilterCount();
