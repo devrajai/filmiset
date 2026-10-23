@@ -15,7 +15,11 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Crunchyroll",
+   "Netflix",
+   "JioCinema"
+  ],
   "poster": "",
   "ov": "The classic journey of a shunned orphan striving to become the Hokage of the Hidden Leaf.",
   "src": "curated",
@@ -81,7 +85,11 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Crunchyroll",
+   "Netflix",
+   "JioCinema"
+  ],
   "poster": "",
   "ov": "Yuji Itadori swallows a cursed finger of Sukuna and enters the Tokyo Jujutsu High sorcery world.",
   "src": "curated",
@@ -239,7 +247,11 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Crunchyroll",
+   "Netflix",
+   "JioCinema"
+  ],
   "poster": "",
   "ov": "Goku discovers his Saiyan origins, battling Vegeta, Frieza, Cell, and Majin Buu.",
   "src": "curated",
@@ -305,7 +317,11 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Crunchyroll",
+   "Netflix",
+   "JioCinema"
+  ],
   "poster": "",
   "ov": "Denji merges with Pochita to become a chainsaw-wielding devil hunter for Public Safety.",
   "src": "curated",
@@ -327,7 +343,11 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Crunchyroll",
+   "Netflix",
+   "JioCinema"
+  ],
   "poster": "",
   "ov": "The world's weakest hunter, Sung Jinwoo, unlocks a secret game-like leveling interface.",
   "src": "curated",
@@ -819,7 +839,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "Light Yagami uses a supernatural notebook to execute criminals while matching wits with master detective L.",
   "src": "curated",
@@ -844,7 +867,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "Kiyotaka Ayanokoji conceals his genius inside the cutthroat Tokyo Metropolitan Advanced Nurturing High School.",
   "src": "curated",
@@ -869,7 +895,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "High school science genius Senku Ishigami awakens thousands of years after humanity is turned to stone to rebuild civilization.",
   "src": "curated",
@@ -1055,7 +1084,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "High schooler Shinichi Izumi forms a symbiosis with a sentient alien parasite that took over his right hand.",
   "src": "curated",
@@ -1711,7 +1743,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "Master spy Twilight forms a fake family with an assassin wife and a telepathic orphan daughter without realizing their secret identities.",
   "src": "curated",
@@ -2430,7 +2465,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "Chihiro wanders into a bathhouse for spirits ruled by the witch Yubaba to rescue her transformed parents.",
   "src": "curated",
@@ -2566,7 +2604,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "A high-school girl and a mysterious young man travel across disaster ruins in Japan to close dimensional doors preventing earthquakes.",
   "src": "curated",
@@ -2590,7 +2631,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "A runaway high school boy in rainy Tokyo meets a girl who has the miraculous power to clear the sky.",
   "src": "curated",
@@ -3213,6 +3257,57 @@
   "o": [],
   "poster": "",
   "ov": "Everyday slice-of-life comedy depicting the domestic quirks and habits of the four-member Tachibana family.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "A Silent Voice",
+  "y": 2016,
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [
+   "Emotional",
+   "Romantic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
+  "poster": "",
+  "ov": "A former bully tries to make amends with the deaf girl he tormented.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Demon Slayer: Mugen Train",
+  "y": 2020,
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [
+   "Netflix",
+   "Crunchyroll"
+  ],
+  "poster": "",
+  "ov": "Tanjiro and the Hashira face a demon aboard a night train.",
   "src": "curated",
   "status": "released"
  }
