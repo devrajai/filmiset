@@ -785,7 +785,14 @@ function initials(t){
 }
 function justwatch(t){return 'https://www.justwatch.com/in/search?q='+encodeURIComponent(t);}
 function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}); }catch(e){ return iso; } }
-function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
+function esc(s){
+  return String(s==null?'':s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 /* ---- official OTT websites: clicking "Available on X" opens that platform ---- */
 const OTT_URL = {
   'Netflix':        'https://www.netflix.com/search?q=',
@@ -814,7 +821,7 @@ function ottLink(name, title){
   return 'https://www.google.com/search?q=' + encodeURIComponent(name + ' ' + (title || '') + ' watch');
 }
 function ottLinks(list, title){
-  return (list || []).map(p => '<a class="ottl" target="_blank" rel="noopener" href="' + ottLink(p, title) + '">' + p + '</a>').join(' · ');
+  return (list || []).map(p => '<a class="ottl" target="_blank" rel="noopener" href="' + ottLink(p, title).replace(/"/g, '&quot;') + '">' + esc(p) + '</a>').join(' · ');
 }
 
 /* ---- title modal (Surprise me / Aaj ka vibe / details) ---- */
@@ -852,16 +859,16 @@ function openModal(d, fromPop){
   const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t) : 'OTT info not listed';
   const m=document.getElementById('modal');
   m.innerHTML='<div class="box">'
-    + (d.poster? '<img src="'+d.poster+'" alt="" onerror="this.remove()">':'')
-    + '<h3>'+d.t+'</h3>'
-    + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(d.rt?' · '+d.rt+' min':'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
-    + '<div class="m" style="margin-top:6px">'+[(d.g||[]).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
-    + (d.ov? '<p>'+d.ov+'</p>':(d.note? '<p>'+d.note+'</p>':''))
+    + (d.poster? '<img src="'+esc(d.poster)+'" alt="" onerror="this.remove()">':'')
+    + '<h3>'+esc(d.t)+'</h3>'
+    + '<div class="m">'+((d.date?esc(fmtDate(d.date)):esc(d.y))||'')+(d.rt?' · '+esc(d.rt)+' min':'')+(d.irt?' · IMDb '+esc(d.irt)+' ('+esc(d.ivot)+' votes)':(d.rtg?' · \u2605 '+esc(d.rtg)+' ('+esc(d.vot)+' votes)':''))+(d.cert?' · '+esc(d.cert):'')+(up?' · Upcoming':'')+'</div>'
+    + '<div class="m" style="margin-top:6px">'+[(d.g||[]).map(esc).join(', '),(d.a||[]).map(esc).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
+    + (d.ov? '<p>'+esc(d.ov)+'</p>':(d.note? '<p>'+esc(d.note)+'</p>':''))
     + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
-        + [d.dir?'Director: '+d.dir:'', d.prod?'Studio: '+d.prod:'',
-           (d.cast&&d.cast.length)?'Cast: '+d.cast.join(', '):''].filter(Boolean).join('  ·  ') + '</div>' : '')
+        + [d.dir?'Director: '+esc(d.dir):'', d.prod?'Studio: '+esc(d.prod):'',
+           (d.cast&&d.cast.length)?'Cast: '+d.cast.map(esc).join(', '):''].filter(Boolean).join('  ·  ') + '</div>' : '')
     + '<div class="row">'
-      + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">Watch trailer</a>' : '')
+      + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+encodeURIComponent(d.tr)+'">Watch trailer</a>' : '')
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
       + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
       + '<button class="hbtn" data-mclose="1">Close</button>'
@@ -907,9 +914,9 @@ function renderVibe(){
   const d=pool[Math.floor(Date.now()/86400000) % pool.length];
   const el=document.getElementById('vibe');
   el.hidden=false;
-  el.innerHTML=(d.poster?'<img src="'+d.poster+'" alt="">':'')
-    + '<div class="vt"><span>Aaj ka vibe</span><b>'+d.t+'</b>'
-    + '<p>'+[(d.date?fmtDate(d.date):d.y),(d.g||[]).join(', '),(d.rtg?'\u2605 '+d.rtg:'')].filter(Boolean).join(' · ')+'</p></div>'
+  el.innerHTML=(d.poster?'<img src="'+esc(d.poster)+'" alt="">':'')
+    + '<div class="vt"><span>Aaj ka vibe</span><b>'+esc(d.t)+'</b>'
+    + '<p>'+[(d.date?esc(fmtDate(d.date)):esc(d.y)),(d.g||[]).map(esc).join(', '),(d.rtg?'\u2605 '+esc(d.rtg):'')].filter(Boolean).join(' · ')+'</p></div>'
     + '<button class="hbtn" data-vibe="'+esc(d.t)+'">Details</button>';
   const vb=el.querySelector('[data-vibe]'); if(vb) vb.onclick=()=>openModal(d);
 }
@@ -1120,32 +1127,32 @@ function render(){
     const isUp = d.status==='upcoming';
     const isYT = d.src==='youtube';
     const grad='linear-gradient(150deg,'+c.color+' 0%, color-mix(in srgb,'+c.color+' 45%, #120c07) 100%)';
-    const audio = d.a.map(x=>'<span class="tag audio">'+x+'</span>').join('');
-    const moods = d.m.slice(0,3).map(x=>'<span class="tag mood">'+x+'</span>').join('');
+    const audio = (d.a||[]).map(x=>'<span class="tag audio">'+esc(x)+'</span>').join('');
+    const moods = (d.m||[]).slice(0,3).map(x=>'<span class="tag mood">'+esc(x)+'</span>').join('');
     return '<article class="card" data-title="'+esc(d.t)+'" style="animation-delay:'+(Math.min(i,12)*35)+'ms">'
       + '<div class="poster" style="background:'+grad+'">'
-        + (d.poster ? '<img class="poster-img" src="'+d.poster+'" alt="" loading="lazy" onerror="this.remove()">' : '')
-        + '<span class="type-badge">'+d.type+'</span>'
-        + '<span class="lang-badge">'+c.label.split(' · ')[0]+'</span>'
-        + '<span class="mono">'+initials(d.t)+'</span>'
+        + (d.poster ? '<img class="poster-img" src="'+esc(d.poster)+'" alt="" loading="lazy" onerror="this.remove()">' : '')
+        + '<span class="type-badge">'+esc(d.type)+'</span>'
+        + '<span class="lang-badge">'+esc(c.label.split(' · ')[0])+'</span>'
+        + '<span class="mono">'+esc(initials(d.t))+'</span>'
         + (isYT ? '<span class="yt-badge">YouTube</span>' : (isUp ? '<span class="upcoming-badge">Upcoming</span>' : (Number(d.y) < 2000 ? '<span class="classic-badge">Classic</span>' : '')))
-        + '<button class="save-btn'+(watchlist.has(d.t)?' on':'')+'" data-title="'+d.t.replace(/"/g,'&quot;')+'" aria-label="Save to watchlist">'+(watchlist.has(d.t)?'♥':'♡')+'</button>'
+        + '<button class="save-btn'+(watchlist.has(d.t)?' on':'')+'" data-title="'+esc(d.t)+'" aria-label="Save to watchlist">'+(watchlist.has(d.t)?'♥':'♡')+'</button>'
       + '</div>'
       + '<div class="cardbody">'
-        + '<h4>'+d.t+'</h4>'
-        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.irt?' · IMDb '+d.irt:(d.rtg?' · \u2605'+d.rtg:''))+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
-        + (d.ov? '<div class="sum">'+d.ov+'</div>':'')
+        + '<h4>'+esc(d.t)+'</h4>'
+        + '<div class="meta">'+((d.date && !isYT) ? esc(fmtDate(d.date)) : esc(d.y))+(d.rt?' · '+esc(d.rt)+'m':'')+(d.irt?' · IMDb '+esc(d.irt):(d.rtg?' · \u2605'+esc(d.rtg):''))+(d.cert?' · '+esc(d.cert):'')+' · '+(isYT && d.channel ? esc(d.channel)+' · ' : '')+(d.g||[]).map(esc).join(', ')+'</div>'
+        + (d.ov? '<div class="sum">'+esc(d.ov)+'</div>':'')
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
         + (d.trailer
-            ? '<a class="watch yt" href="'+d.trailer+'" target="_blank" rel="noopener">Watch on YouTube</a>'
+            ? '<a class="watch yt" href="'+encodeURIComponent(d.trailer)+'" target="_blank" rel="noopener">Watch on YouTube</a>'
             : (isUp
-              ? '<div class="watch soon">Releasing '+(d.date?fmtDate(d.date):'soon')+'</div>'
+              ? '<div class="watch soon">Releasing '+(d.date?esc(fmtDate(d.date)):'soon')+'</div>'
               : ((d.o && d.o.length)
                 ? '<div class="watch avail">Available on '+ottLinks(d.o, d.t)+'</div>'
                 : '<div class="watch none">OTT info not listed</div>')))
         + '<div class="cardacts">'
-          + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>' : '')
+          + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+encodeURIComponent(d.tr)+'">\u25b6 Trailer</a>' : '')
           + '<button class="mini'+(watched.has(d.t)?' on':'')+'" data-seen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
           + '<button class="mini" data-more="'+esc(d.t)+'">More like this</button>'
         + '</div>'
