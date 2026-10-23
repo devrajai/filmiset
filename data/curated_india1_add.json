@@ -1,0 +1,979 @@
+[
+ {
+  "t": "Black",
+  "y": 2005,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "",
+  "dir": "Sanjay Leela Bhansali",
+  "cast": [
+   "Amitabh Bachchan",
+   "Rani Mukerji",
+   "Shernaz Netflix / Psychological Patel",
+   "Ayesha Kapur Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 21"
+ },
+ {
+  "t": "Rang De Basanti",
+  "y": 2006,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Drama",
+  "dir": "Rakeysh Omprakash Mehra",
+  "cast": [
+   "Aamir Khan",
+   "Siddharth",
+   "Sharman Joshi",
+   "Netflix / Patriotic Kunal Kapoor"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 21"
+ },
+ {
+  "t": "The Miniaturist of Junagadh",
+  "y": 2022,
+  "cat": "hindi",
+  "type": "Short",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Historical",
+  "dir": "Kaushal Oza",
+  "cast": [
+   "Naseeruddin Shah",
+   "Rasika Dugal",
+   "Raj YouTube Arjun",
+   "Padmavati Rao Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 23"
+ },
+ {
+  "t": "Manoranjan",
+  "y": 2023,
+  "cat": "marathi",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "ZEE5"
+  ],
+  "poster": "",
+  "ov": "/ Satirical",
+  "dir": "Kedar Shinde",
+  "cast": [
+   "Planet Marathi Bharat Jadhav",
+   "Siddharth Jadhav Comedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 28"
+ },
+ {
+  "t": "Gair",
+  "y": 2022,
+  "cat": "marathi",
+  "type": "Short",
+  "g": [
+   "Thriller",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Mystery Drama",
+  "dir": "Nikhil Mahajan",
+  "cast": [
+   "Jitendra Joshi",
+   "Gauri Nalawade YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 29"
+ },
+ {
+  "t": "Valli",
+  "y": 2022,
+  "cat": "marathi",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Drama Short",
+  "dir": "Manoj Kadam",
+  "cast": [
+   "Dilip Prabhavalkar",
+   "Neena Kulkarni YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 29"
+ },
+ {
+  "t": "The Comedian",
+  "y": 2023,
+  "cat": "marathi",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Drama Short",
+  "dir": "Katyayan Shivpuri",
+  "cast": [
+   "Satish Alekar",
+   "Mohan Agashe YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 29"
+ },
+ {
+  "t": "Warli Art",
+  "y": 2018,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Tribal Art",
+  "dir": "Avinash Deshpande",
+  "cast": [
+   "YouTube Jivya Soma Mashe Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 31"
+ },
+ {
+  "t": "Lavani: The Unsung Art",
+  "y": 2019,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Cultural",
+  "dir": "Savitri Medhatul",
+  "cast": [
+   "YouTube Shakuntala Nagarkar Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 31"
+ },
+ {
+  "t": "Varkari: Journey to Pandharpur",
+  "y": 2021,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Spiritual",
+  "dir": "Shrirang Godbole",
+  "cast": [
+   "YouTube — Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 31"
+ },
+ {
+  "t": "Bodhon",
+  "y": 2022,
+  "cat": "bengali",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Hoichoi"
+  ],
+  "poster": "",
+  "ov": "Social Drama",
+  "dir": "Aditi Roy",
+  "cast": [
+   "Sandipta Sen",
+   "Ditipriya Roy",
+   "Kaushik Roy Hoichoi /"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 34"
+ },
+ {
+  "t": "Uposhar",
+  "y": 2020,
+  "cat": "bengali",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Relationship",
+  "dir": "Arindam Sil",
+  "cast": [
+   "YouTube Abir Chatterjee",
+   "Sohini Sarkar Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 35"
+ },
+ {
+  "t": "Doodh Pither Gachh",
+  "y": 2020,
+  "cat": "bengali",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Rural Drama",
+  "dir": "Ujjwal Basu",
+  "cast": [
+   "Dily Sengupta",
+   "Kaushik Roy YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 35"
+ },
+ {
+  "t": "Anamika",
+  "y": 2021,
+  "cat": "bengali",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Psychological",
+  "dir": "Aniruddha Roy Chowdhury",
+  "cast": [
+   "YouTube Bidita Bag",
+   "Indraneil Sengupta Thriller"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 35"
+ },
+ {
+  "t": "72 Ghanta",
+  "y": 2021,
+  "cat": "bengali",
+  "type": "Short",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Crime Short",
+  "dir": "Atanu Ghosh",
+  "cast": [
+   "Ritwick Chakraborty",
+   "Jaya Ahsan YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 35"
+ },
+ {
+  "t": "The Red File",
+  "y": 2022,
+  "cat": "bengali",
+  "type": "Short",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Noir Short",
+  "dir": "Sourav Chakraborty",
+  "cast": [
+   "Saurabh Das",
+   "Riddhi Sen YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 35"
+ },
+ {
+  "t": "Galpo Hekim Saheb",
+  "y": 1985,
+  "cat": "bengali",
+  "type": "Natak",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Stage"
+  ],
+  "poster": "",
+  "ov": "Drama",
+  "dir": "Manoj Mitra",
+  "cast": [
+   "Manoj Mitra",
+   "Koushik Sen Stage / Period"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 36"
+ },
+ {
+  "t": "Madhab Malanchi Kanya",
+  "y": 1988,
+  "cat": "bengali",
+  "type": "Natak",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Stage"
+  ],
+  "poster": "",
+  "ov": "Ballad Drama",
+  "dir": "Bibhash Chakraborty",
+  "cast": [
+   "Debesh Roychowdhury",
+   "Chitra Sen Stage / Folk"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 36"
+ },
+ {
+  "t": "Prachya",
+  "y": 2000,
+  "cat": "bengali",
+  "type": "Natak",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Stage"
+  ],
+  "poster": "",
+  "ov": "Drama",
+  "dir": "Koushik Sen",
+  "cast": [
+   "Koushik Sen",
+   "Reshmi Sen Stage / Social"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 36"
+ },
+ {
+  "t": "A Few Things About Him",
+  "y": 2006,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Historical",
+  "dir": "Tanvir Mokammel",
+  "cast": [
+   "YouTube Aly Zaker Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 37"
+ },
+ {
+  "t": "Coral Tears",
+  "y": 2018,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Environmental",
+  "dir": "Sourav Sarangi",
+  "cast": [
+   "YouTube — Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 37"
+ },
+ {
+  "t": "In Search of Famine",
+  "y": 2021,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Cinema",
+  "dir": "Goutam Ghose",
+  "cast": [
+   "YouTube Mrinal Sen Retrospective"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 37"
+ },
+ {
+  "t": "The Ghats of Kolkata",
+  "y": 2022,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Urban Heritage",
+  "dir": "Supriyo Sen",
+  "cast": [
+   "— YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 37"
+ },
+ {
+  "t": "Fall",
+  "y": 2022,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Aha"
+  ],
+  "poster": "",
+  "ov": "/ Amnesia",
+  "dir": "Siddarth Ramaswamy",
+  "cast": [
+   "JioHotstar Anjali",
+   "S.P. Charan",
+   "Sonia Agarwal Thriller"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 40"
+ },
+ {
+  "t": "Sweet Kaaram Coffee",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Aha"
+  ],
+  "poster": "",
+  "ov": "/ Road Drama",
+  "dir": "Bejoy Nambiar, Krishna Marimuthu",
+  "cast": [
+   "Madhoo",
+   "Lakshmi",
+   "Santhy Balachandran Prime Video"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 40"
+ },
+ {
+  "t": "The Yellow Festival",
+  "y": 2015,
+  "cat": "tamil",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Social Drama",
+  "dir": "Kamal Sethu",
+  "cast": [
+   "Charle",
+   "Anupama Kumar YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 41"
+ },
+ {
+  "t": "Wind",
+  "y": 2016,
+  "cat": "tamil",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Drama Short",
+  "dir": "Manikandan",
+  "cast": [
+   "Kaali Venkat",
+   "Balaji Venugopal YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 41"
+ },
+ {
+  "t": "Maa",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Short",
+  "g": [
+   "Animation",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Family Drama",
+  "dir": "Sarjun KM",
+  "cast": [
+   "Kani Kusruti",
+   "Anikha Surendran YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 41"
+ },
+ {
+  "t": "Oorukku Nooruper",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Psychological",
+  "dir": "Lenin",
+  "cast": [
+   "YouTube M. Nasser",
+   "Rohini Short"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 41"
+ },
+ {
+  "t": "Paari",
+  "y": 2020,
+  "cat": "tamil",
+  "type": "Short",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "",
+  "ov": "/ Satirical Short",
+  "dir": "Balaji Tharaneetharan",
+  "cast": [
+   "Vijay Sethupathi",
+   "Bagavathi Perumal YouTube"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 41"
+ },
+ {
+  "t": "Chandrahari",
+  "y": 1932,
+  "cat": "tamil",
+  "type": "Natak",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Stage"
+  ],
+  "poster": "",
+  "ov": "Farce",
+  "dir": "Pammal Sambandha Mudaliar",
+  "cast": [
+   "Pammal Sambandha Mudaliar",
+   "K. Stage / Satirical Sarangapani"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 42"
+ },
+ {
+  "t": "Ramanujar",
+  "y": 1997,
+  "cat": "tamil",
+  "type": "Natak",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Stage"
+  ],
+  "poster": "",
+  "ov": "Biopic",
+  "dir": "Indira Parthasarathy",
+  "cast": [
+   "M. Ramaswamy",
+   "Gnana Rajasekaran Stage / Spiritual"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 42"
+ },
+ {
+  "t": "Karuppu",
+  "y": 2014,
+  "cat": "tamil",
+  "type": "Natak",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Stage"
+  ],
+  "poster": "",
+  "ov": "Theatre",
+  "dir": "Koumarane Valavane",
+  "cast": [
+   "Vasanth Selvam",
+   "David Stage / Physical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 42"
+ },
+ {
+  "t": "In the Forest Hangs a Bridge",
+  "y": 1999,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Tribal",
+  "dir": "Sanjay Kak",
+  "cast": [
+   "Doordarshan — Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 43"
+ },
+ {
+  "t": "The Story of Koodankulam",
+  "y": 2012,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Social",
+  "dir": "Amudhan R.P.",
+  "cast": [
+   "YouTube — Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 43"
+ },
+ {
+  "t": "Yazhpanam Nayanar",
+  "y": 2014,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Music",
+  "dir": "Amshan Kumar",
+  "cast": [
+   "YouTube S.R.D. Vaidyanathan Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 43"
+ },
+ {
+  "t": "Native Craft of Chettinad",
+  "y": 2017,
+  "cat": "documentary",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "/ Craft",
+  "dir": "R.V. Ramani",
+  "cast": [
+   "YouTube — Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Seven Canons Compendium · section 43"
+ }
+]
