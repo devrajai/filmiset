@@ -29,7 +29,7 @@ jobs:
       - name: TMDB discover (trending / popular / per-language)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_tmdb_discover.py --region IN --pages 2
+        run: python3 scripts/fetch_tmdb_discover.py --region IN --pages 2 --indian-pages 5
       - name: Add IMDb ratings (free IMDb datasets)
         run: python3 scripts/fetch_imdb.py
       - name: TMDB full catalogue sweep (movies + TV, year by year)

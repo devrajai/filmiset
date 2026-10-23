@@ -19,7 +19,15 @@ LANGS = {
     "ta": "south-dubbed", "te": "south-dubbed", "ml": "south-dubbed", "kn": "south-dubbed",
     "ko": "korean-dubbed", "ja": "anime", "en": "english-dubbed",
     "es": "english-dubbed", "fr": "english-dubbed", "tr": "english-dubbed", "zh": "english-dubbed",
+    # more Indian languages — swept deeper than the rest
+    "as": "hindi", "or": "hindi", "ur": "hindi", "ne": "hindi", "sa": "hindi",
+    "mai": "hindi", "bh": "hindi", "doi": "hindi", "kok": "hindi", "mni": "hindi",
+    "sat": "hindi", "brx": "hindi", "ks": "hindi", "sd": "hindi",
 }
+
+# languages that get the deeper sweep, so Indian titles are properly covered
+INDIAN = {"hi", "mr", "bn", "pa", "as", "or", "ur", "ne", "sa", "mai", "bh", "doi",
+          "kok", "mni", "sat", "brx", "ks", "sd", "ta", "te", "ml", "kn", "gu"}
 AUDIO = {"hi": ["Hindi"], "gu": ["Gujarati"], "ta": ["Hindi (dub)", "Tamil"],
          "te": ["Hindi (dub)", "Telugu"], "ml": ["Hindi (dub)", "Malayalam"],
          "kn": ["Hindi (dub)", "Kannada"], "ko": ["Hindi (dub)", "Korean"],
@@ -78,7 +86,7 @@ def row(item, kind, gmap, lang):
     }
 
 
-def collect(key, region, pages):
+def collect(key, region, pages, indian_pages):
     mg = {g["id"]: g["name"] for g in tmdb("/genre/movie/list", key).get("genres", [])}
     tg = {g["id"]: g["name"] for g in tmdb("/genre/tv/list", key).get("genres", [])}
     rows = []
@@ -108,8 +116,9 @@ def collect(key, region, pages):
             time.sleep(0.05)
 
     for lang in LANGS:
+        npages = indian_pages if lang in INDIAN else pages
         for kind, gmap in (("movie", mg), ("tv", tg)):
-            for page in range(1, pages + 1):
+            for page in range(1, npages + 1):
                 try:
                     d = tmdb(f"/discover/{kind}", key, {
                         "with_original_language": lang, "sort_by": "popularity.desc",
@@ -140,6 +149,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--region", default="IN")
     ap.add_argument("--pages", type=int, default=1)
+    ap.add_argument("--indian-pages", type=int, default=5, help="pages per Indian language (20 titles each)")
     ap.add_argument("--out", default=OUT)
     args = ap.parse_args()
 
@@ -149,7 +159,7 @@ def main():
         rows = []
     else:
         try:
-            rows = dedupe(collect(key, args.region, args.pages))
+            rows = dedupe(collect(key, args.region, args.pages, args.indian_pages))
         except Exception as e:
             print(f"TMDB discover failed: {type(e).__name__} {e}", file=sys.stderr)
             rows = []
