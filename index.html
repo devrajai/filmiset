@@ -571,6 +571,23 @@ const FRANCHISES = [
   ['The Hunger Games','Hunger Games'], ['The Twilight Saga','Twilight'],
   ['Fifty Shades','Fifty Shades'], ['The Lord of the Rings','Lord of the Rings'],
 ];
+/* In-universe chronological watch order, curated from the MCU/DC compendium. When a franchise
+   is selected the grid follows THIS order instead of release date. */
+let WATCH_ORDER = {};
+function wtKey(t){
+  return String(t || '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9 ]+/g, ' ')
+    .replace(/\b(the|a|an)\b/g, ' ').replace(/\s+/g, ' ').trim();
+}
+fetch('data/watch_order.json').then(r => r.ok ? r.json() : null).then(m => {
+  if(!m) return;
+  Object.keys(m).forEach(f => {
+    const idx = {};
+    (m[f] || []).forEach((t, i) => { const k = wtKey(t); if(!(k in idx)) idx[k] = i; });
+    WATCH_ORDER[f] = idx;
+  });
+  if(state.fr !== 'all') render();
+}).catch(() => {});
+
 const frRow=document.getElementById('frRow');
 [['all','All franchises']].concat(FRANCHISES).forEach(([k,label])=>{
   const b=document.createElement('button');
@@ -1098,7 +1115,15 @@ function render(){
   out.sort((a,b)=>{
     const ad=String(a.date||''), bd=String(b.date||'');
     const au=a.status==='upcoming', bu=b.status==='upcoming';
-    if(state.fr!=='all') return (ad||'9999').localeCompare(bd||'9999');   // franchise = release order
+    if(state.fr!=='all'){                                 // franchise
+      const ord = WATCH_ORDER[state.fr];
+      if(ord){
+        const ai = ord[wtKey(a.t)], bi = ord[wtKey(b.t)];
+        const av = (ai === undefined ? 9999 : ai), bv = (bi === undefined ? 9999 : bi);
+        if(av !== bv) return av - bv;                     // in-universe chronological order
+      }
+      return (ad||'9999').localeCompare(bd||'9999');      // titles outside the list: release order
+    }
     if(state.rel==='upcoming') return (ad||'9999').localeCompare(bd||'9999');
     if(byPop){ const pa=a.pop||0, pb=b.pop||0; if(pb!==pa) return pb-pa; return bd.localeCompare(ad); }
     if(au!==bu) return au ? 1 : -1;                  // released first, upcoming last
@@ -1115,7 +1140,7 @@ function render(){
   let label = state.cat.size ? [...state.cat].map(c=>CATS[c]?CATS[c].label:c).join(' + ') : 'All titles';
   if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat.size ? ' · '+label : ' releases');
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) label = (state.coll==='popular' ? 'Most Popular' : 'Top '+co.label); }
-  if(state.fr!=='all') label = state.fr + ' — in sequence';
+  if(state.fr!=='all') label = state.fr + (WATCH_ORDER[state.fr] ? ' — watch order' : ' — in sequence');
   if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
