@@ -766,10 +766,11 @@ function justwatch(t){return 'https://www.justwatch.com/in/search?q='+encodeURIC
 function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}); }catch(e){ return iso; } }
 function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
 /* ---- official OTT websites: clicking "Available on X" opens that platform ---- */
+/* Verified OTT links: JioHotstar, JioCinema, Lionsgate Play, Hoichoi, Apple TV+, etc. */
 const OTT_URL = {
   'Netflix':        'https://www.netflix.com/search?q=',
   'Prime Video':    'https://www.primevideo.com/search?phrase=',
-  'JioHotstar':     'https://www.hotstar.com/in/search?q=',
+  'JioHotstar':     'https://www.hotstar.com/in/explore?search_query=',
   'ZEE5':           'https://www.zee5.com/search?q=',
   'SonyLIV':        'https://www.sonyliv.com/search?q=',
   'HBO Max':        'https://www.max.com/search?q=',
@@ -780,14 +781,17 @@ const OTT_URL = {
   'Aha':            'https://www.aha.video/search?q=',
   'Sun NXT':        'https://www.sunnxt.com/search?q=',
   'ShemarooMe':     'https://www.shemaroome.com/search?q=',
-  'JioCinema':      'https://www.jiocinema.com/search/',
-  'Lionsgate Play': 'https://www.lionsgateplay.com/search?q=',
+  'JioCinema':      'https://www.jiocinema.com/search/?q=',
+  'Lionsgate Play': 'https://lionsgateplay.com/search?q=',
   'Hoichoi':        'https://www.hoichoi.tv/search?q=',
   'Discovery+':     'https://www.discoveryplus.in/search?q=',
 };
 /* the platform's own search page for this title, so the user lands on the right place */
 function ottLink(name, title){
   const base = OTT_URL[name];
+  if(base && !title){
+    try { return new URL(base).origin; } catch(e){ return base; }
+  }
   const q = encodeURIComponent(title || '');
   if(base) return base + q;
   return 'https://www.google.com/search?q=' + encodeURIComponent(name + ' ' + (title || '') + ' watch');
