@@ -1385,7 +1385,8 @@ Promise.all([
   fetch('data/curated_anime.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_netflix.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_netflix_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries]) => {
+  fetch('data/curated_netflix_hollywood.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -1400,6 +1401,7 @@ Promise.all([
   mergeSets(netflixHindi);           // Netflix Hindi Film Directory (director + cast + Netflix)
   (netflixSeries || []).forEach(r => { if(r && r.nf && r.t) PLATFORM_IDS[pidKey(r.t)] = r.nf; });
   mergeSets(netflixSeries);          // Netflix Hindi Web Series Directory (creators + cast + deep links)
+  mergeSets(netflixHollywood);       // Netflix Hollywood English & Hindi-Dubbed Catalog
   boot();
 }).catch(boot);
 </script>
