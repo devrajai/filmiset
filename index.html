@@ -767,21 +767,33 @@ function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString(
 function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
 /* ---- official OTT websites: clicking "Available on X" opens that platform ---- */
 const OTT_URL = {
-  'Netflix':'https://www.netflix.com/', 'Prime Video':'https://www.primevideo.com/',
-  'JioHotstar':'https://www.hotstar.com/', 'ZEE5':'https://www.zee5.com/',
-  'SonyLIV':'https://www.sonyliv.com/', 'HBO Max':'https://www.max.com/',
-  'Apple TV+':'https://tv.apple.com/', 'Crunchyroll':'https://www.crunchyroll.com/',
-  'MX Player':'https://www.mxplayer.in/', 'YouTube':'https://www.youtube.com/',
-  'Aha':'https://www.aha.video/', 'Sun NXT':'https://www.sunnxt.com/',
-  'ShemarooMe':'https://www.shemaroome.com/', 'JioCinema':'https://www.jiocinema.com/',
-  'Lionsgate Play':'https://www.lionsgateplay.com/', 'Hoichoi':'https://www.hoichoi.tv/',
-  'Discovery+':'https://www.discoveryplus.in/', 'JOJO':'https://www.jio.com/',
+  'Netflix':        'https://www.netflix.com/search?q=',
+  'Prime Video':    'https://www.primevideo.com/search?phrase=',
+  'JioHotstar':     'https://www.hotstar.com/in/search?q=',
+  'ZEE5':           'https://www.zee5.com/search?q=',
+  'SonyLIV':        'https://www.sonyliv.com/search?q=',
+  'HBO Max':        'https://www.max.com/search?q=',
+  'Apple TV+':      'https://tv.apple.com/search?term=',
+  'Crunchyroll':    'https://www.crunchyroll.com/search?q=',
+  'MX Player':      'https://www.mxplayer.in/search?q=',
+  'YouTube':        'https://www.youtube.com/results?search_query=',
+  'Aha':            'https://www.aha.video/search?q=',
+  'Sun NXT':        'https://www.sunnxt.com/search?q=',
+  'ShemarooMe':     'https://www.shemaroome.com/search?q=',
+  'JioCinema':      'https://www.jiocinema.com/search/',
+  'Lionsgate Play': 'https://www.lionsgateplay.com/search?q=',
+  'Hoichoi':        'https://www.hoichoi.tv/search?q=',
+  'Discovery+':     'https://www.discoveryplus.in/search?q=',
 };
-function ottLink(name){
-  return OTT_URL[name] || ('https://www.google.com/search?q=' + encodeURIComponent(name + ' streaming'));
+/* the platform's own search page for this title, so the user lands on the right place */
+function ottLink(name, title){
+  const base = OTT_URL[name];
+  const q = encodeURIComponent(title || '');
+  if(base) return base + q;
+  return 'https://www.google.com/search?q=' + encodeURIComponent(name + ' ' + (title || '') + ' watch');
 }
-function ottLinks(list){
-  return (list || []).map(p => '<a class="ottl" target="_blank" rel="noopener" href="' + ottLink(p) + '">' + p + '</a>').join(' · ');
+function ottLinks(list, title){
+  return (list || []).map(p => '<a class="ottl" target="_blank" rel="noopener" href="' + ottLink(p, title) + '">' + p + '</a>').join(' · ');
 }
 
 /* ---- title modal (Surprise me / Aaj ka vibe / details) ---- */
@@ -816,7 +828,7 @@ function pushTitle(d){
 
 function openModal(d, fromPop){
   const up=d.status==='upcoming';
-  const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o) : 'OTT info not listed';
+  const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t) : 'OTT info not listed';
   const m=document.getElementById('modal');
   m.innerHTML='<div class="box">'
     + (d.poster? '<img src="'+d.poster+'" alt="" onerror="this.remove()">':'')
@@ -1109,7 +1121,7 @@ function render(){
             : (isUp
               ? '<div class="watch soon">Releasing '+(d.date?fmtDate(d.date):'soon')+'</div>'
               : ((d.o && d.o.length)
-                ? '<div class="watch avail">Available on '+ottLinks(d.o)+'</div>'
+                ? '<div class="watch avail">Available on '+ottLinks(d.o, d.t)+'</div>'
                 : '<div class="watch none">OTT info not listed</div>')))
         + '<div class="cardacts">'
           + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>' : '')
@@ -1169,8 +1181,23 @@ function loadPosters(){
     .then(m => { if(m) IMDB_POSTERS = m; })
     .catch(() => {});
 }
+/* at boot, pull the most-voted titles from every shard, so the popular shows and films
+   (Game of Thrones, Breaking Bad, Squid Game …) are browsable straight away, not only via search */
+function loadPopular(){
+  if(!SHEET_SHARDS.length) return;
+  loadPosters();
+  Promise.all(SHEET_SHARDS.map(s => gviz(s, 'select A,B,C,E,G,H order by H desc limit 200')))
+    .then(lists => {
+      const seen = new Set(DATA.map(x => x.t.toLowerCase()));
+      let added = 0;
+      [].concat.apply([], lists).forEach(d => {
+        if(d.t && !seen.has(d.t.toLowerCase())){ seen.add(d.t.toLowerCase()); DATA.push(d); added++; }
+      });
+      if(added){ render(); renderVibe(); }
+    }).catch(() => {});
+}
 fetch('data/sheet_shards.json').then(r => r.ok ? r.json() : null)
-  .then(m => { if(m && Array.isArray(m.shards)) SHEET_SHARDS = m.shards.filter(s => s.kind === 'imdb'); })
+  .then(m => { if(m && Array.isArray(m.shards)){ SHEET_SHARDS = m.shards.filter(s => s.kind === 'imdb'); loadPopular(); } })
   .catch(() => {});
 
 function gviz(shard, tq){
