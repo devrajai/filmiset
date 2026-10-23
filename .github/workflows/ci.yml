@@ -65,10 +65,14 @@ jobs:
               for trig in ("issues:", "issue_comment:", "pull_request_target:"):
                   if re.search(r"^\s*" + re.escape(trig), head, re.M):
                       bad.append(f"{f}: uses {trig} — anyone could trigger it in a public repo")
-              if "secrets." in t and "echo" in t:
-                  for line in t.splitlines():
-                      if "echo" in line and "secrets." in line:
-                          bad.append(f"{f}: echoes a secret -> {line.strip()[:70]}")
+              for line in t.splitlines():
+                  if not re.search(r"secrets\.[A-Za-z0-9_]", line):
+                      continue          # only a real secrets.NAME reference counts
+                  if not re.search(r"\b(echo|print|cat)\b", line):
+                      continue
+                  if re.search(r"secrets\.[A-Za-z0-9_]+\s*(!=|==)\s*", line):
+                      continue          # the harmless "is this secret set?" comparison
+                  bad.append(f"{f}: looks like it prints a secret -> {line.strip()[:70]}")
           if bad:
               print("FAILED:")
               for b in bad: print("  -", b)
