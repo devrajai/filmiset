@@ -367,6 +367,7 @@ const CATS = {
   'world-dubbed':    {label:'World · Hindi Dubbed',    color:'#7c3aed'},
   'documentary':     {label:'Documentaries',           color:'#0f766e'},
   'short':           {label:'Short Films',             color:'#9333ea'},
+  'youtube-free':    {label:'Free on YouTube',         color:'#dc2626'},
   'anime':           {label:'Anime',                   color:'#a21caf'},
   'animation':       {label:'Animation',               color:'#1d4ed8'},
   'imdb':            {label:'IMDb catalogue',          color:'#64748b'},
@@ -1967,7 +1968,8 @@ Promise.all([
   fetch('data/curated_india1.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_india2.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_india_all.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog, sonylivZee5, gujaratiCat, multiOtt, canons, shortfilms, india1, india2, indiaAll]) => {
+  fetch('data/curated_youtube_free.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog, sonylivZee5, gujaratiCat, multiOtt, canons, shortfilms, india1, india2, indiaAll, ytFree]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -1993,6 +1995,27 @@ Promise.all([
   mergeSets(india1);                 // India Complete Catalog Part 1: Hindi, Marathi, Bengali, Tamil
   mergeSets(india2);                 // India Complete Catalog Part 2: Telugu, Malayalam, Kannada, Punjabi
   mergeSets(indiaAll);               // All-Regions PDF, IMDb-verified rows only (191 of 280)
+  mergeSets(ytFree);                 // YouTube Free Master Edition — 64 titles free to watch on YouTube
+  /* these 64 are free to watch on YouTube. Many already exist in the catalogue from another
+     source, so instead of adding a duplicate, tag the existing row: it gains the category and
+     YouTube is added to its platform list. */
+  (function tagYoutubeFree(){
+    const byTitle = {};
+    (ytFree||[]).forEach(r => { if(r && r.t) byTitle[r.t.toLowerCase()] = r; });
+    let tagged = 0;
+    DATA.forEach(d => {
+      const r = byTitle[String(d.t||'').toLowerCase()];
+      if(!r) return;
+      if(!Array.isArray(d.cats)) d.cats = [];
+      if(d.cats.indexOf('youtube-free') < 0) d.cats.push('youtube-free');
+      if(!Array.isArray(d.o)) d.o = [];
+      if(d.o.indexOf('YouTube') < 0) d.o.push('YouTube');
+      if(!d.dir && r.dir) d.dir = r.dir;
+      if((!d.cast || !d.cast.length) && r.cast) d.cast = r.cast;
+      tagged++;
+    });
+    return tagged;
+  })();
   applyExternalData();               // TMDB watch providers + TVmaze, when those files exist
   boot();
 }).catch(boot);
