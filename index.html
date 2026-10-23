@@ -1386,7 +1386,9 @@ Promise.all([
   fetch('data/curated_netflix.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_netflix_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_netflix_hollywood.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood]) => {
+  fetch('data/curated_prime.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/curated_hotstar.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -1402,6 +1404,8 @@ Promise.all([
   (netflixSeries || []).forEach(r => { if(r && r.nf && r.t) PLATFORM_IDS[pidKey(r.t)] = r.nf; });
   mergeSets(netflixSeries);          // Netflix Hindi Web Series Directory (creators + cast + deep links)
   mergeSets(netflixHollywood);       // Netflix Hollywood English & Hindi-Dubbed Catalog
+  mergeSets(primeCatalog);           // Amazon Prime Video master catalog
+  mergeSets(hotstarCatalog);         // Disney+ Hotstar master catalog
   boot();
 }).catch(boot);
 </script>
