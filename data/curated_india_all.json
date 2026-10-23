@@ -1,0 +1,4911 @@
+[
+ {
+  "t": "Pyaasa",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Guru Dutt",
+  "cast": [
+   "Guru Dutt",
+   "Waheeda Rehman",
+   "Mala Feature Sinha",
+   "Johnny Walker Social"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Mughal-e-Azam",
+  "y": 1960,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Historical",
+  "dir": "K. Asif",
+  "cast": [
+   "Prithviraj Kapoor",
+   "Dilip Kumar",
+   "Feature Madhubala",
+   "Durga Khote Romance"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sholay",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Western",
+  "dir": "Ramesh Sippy",
+  "cast": [
+   "Dharmendra",
+   "Amitabh Bachchan",
+   "Hema Feature Malini",
+   "Sanjeev Kumar Action"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Dangal",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Sports",
+  "dir": "Nitesh Tiwari",
+  "cast": [
+   "Aamir Khan",
+   "Fatima Sana Shaikh",
+   "Sanya Feature Malhotra",
+   "Sakshi Tanwar Biopic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sacred Games",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Crime Noir",
+  "dir": "Anurag Kashyap, Vikramaditya Motwane",
+  "cast": [
+   "Saif Ali Khan",
+   "Nawazuddin Siddiqui",
+   "Web Radhika Apte",
+   "Pankaj Tripathi"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "The Family Man",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Drama",
+  "dir": "Raj & DK",
+  "cast": [
+   "Manoj Bajpayee",
+   "Priyamani",
+   "Sharib Web Hashmi",
+   "Neeraj Madhav Espionage"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Panchayat",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Drama",
+  "dir": "Deepak Kumar Mishra",
+  "cast": [
+   "Jitendra Kumar",
+   "Neena Gupta",
+   "Raghubir Web Yadav",
+   "Chandan Roy Comedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ahalya",
+  "y": 2015,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Thriller",
+  "dir": "Sujoy Ghosh",
+  "cast": [
+   "Radhika Apte",
+   "Soumitra Chatterjee",
+   "Tota Short Roy Choudhury"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Andha Yug",
+  "y": 1953,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Verse Tragedy",
+  "dir": "Ebrahim Alkazi",
+  "cast": [
+   "Mohan Maharishi",
+   "Om Shivpuri",
+   "Uttara Stage Baokar"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "An Insignificant Man",
+  "y": 2016,
+  "cat": "documentary",
+  "type": "Documentary",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "",
+  "dir": "Khushboo Ranka, Vinay Shukla",
+  "cast": [
+   "Arvind Kejriwal",
+   "Manish Sisodia",
+   "Documentary Yogendra Yadav Political"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 1 (hindi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sant Tukaram",
+  "y": 1936,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Documentary"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Biopic",
+  "dir": "V.G. Damle, Sheikh Fattelal",
+  "cast": [
+   "Feature Vishnupant Pagnis",
+   "Gauri",
+   "B. Nandrekar Devotional"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Pinjra",
+  "y": 1972,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Musical",
+  "dir": "V. Shantaram",
+  "cast": [
+   "Feature Shreeram Lagoo",
+   "Sandhya",
+   "Nilu Phule Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sinhasan",
+  "y": 1979,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Political",
+  "dir": "Jabbar Patel",
+  "cast": [
+   "Nilu Phule",
+   "Shreeram Lagoo",
+   "Nana Feature Patekar Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Shwaas",
+  "y": 2004,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Animation"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Family",
+  "dir": "Sandeep Sawant",
+  "cast": [
+   "Arun Nalawade",
+   "Ashwin Chitale",
+   "Amruta Feature Subhash Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sairat",
+  "y": 2016,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Romantic",
+  "dir": "Nagraj Manjule",
+  "cast": [
+   "Rinku Rajguru",
+   "Akash Thosar",
+   "Tanaji Feature Galgunde Tragedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Samantar",
+  "y": 2020,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Mystery",
+  "dir": "Satish Rajwade",
+  "cast": [
+   "Swapnil Joshi",
+   "Nitish Bharadwaj",
+   "Web Tejaswini Pandit Thriller"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "RaanBaazaar",
+  "y": 2022,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Thriller",
+  "dir": "Abhijit Panse",
+  "cast": [
+   "Tejaswini Pandit",
+   "Prajakta Mali",
+   "Mohan Web Agashe Political"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Natasamrat",
+  "y": 1970,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Tragedy",
+  "dir": "Purushottam Darvhekar",
+  "cast": [
+   "Stage Shreeram Lagoo",
+   "Shanta Jog Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "classic"
+ },
+ {
+  "t": "Babasaheb Ambedkar",
+  "y": 1991,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Marathi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Docudrama",
+  "dir": "Jabbar Patel",
+  "cast": [
+   "Documentary Mammootty",
+   "Sonali Kulkarni Biographical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 2 (marathi)",
+  "verify": "classic"
+ },
+ {
+  "t": "Pather Panchali",
+  "y": 1955,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Realism",
+  "dir": "Satyajit Ray",
+  "cast": [
+   "Subir Banerjee",
+   "Kanu Banerjee",
+   "Karuna Feature Banerjee Rural"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Meghe Dhaka Tara",
+  "y": 1960,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Refugee",
+  "dir": "Ritwik Ghatak",
+  "cast": [
+   "Supriya Choudhury",
+   "Anil Chatterjee",
+   "Feature Gita Dey Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Charulata",
+  "y": 1964,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Period",
+  "dir": "Satyajit Ray",
+  "cast": [
+   "Madhabi Mukherjee",
+   "Soumitra Feature Chatterjee",
+   "Sailen Mukherjee Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhuvan Shome",
+  "y": 1969,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Satirical",
+  "dir": "Mrinal Sen",
+  "cast": [
+   "Utpal Dutt",
+   "Suhasini Mulay",
+   "Shekhar Feature Chatterjee Comedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Chotushkone",
+  "y": 2014,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Mystery",
+  "dir": "Srijit Mukherji",
+  "cast": [
+   "Aparna Sen",
+   "Goutam Ghose",
+   "Chiranjeet Feature Chakraborty Thriller"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Byomkesh",
+  "y": 2017,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Detective",
+  "dir": "Sayantan Ghosal",
+  "cast": [
+   "Anirban Bhattacharya",
+   "Suprobhat Das",
+   "Web Ridhima Ghosh Mystery"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Taqdeer",
+  "y": 2020,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Crime",
+  "dir": "Syed Ahmed Shawki",
+  "cast": [
+   "Chanchal Chowdhury",
+   "Sanjida Preeti",
+   "Web Manoj Kumar Pramanik Thriller"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Two",
+  "y": 1964,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Parable",
+  "dir": "Satyajit Ray",
+  "cast": [
+   "Short Ravi Kiran Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Nabanna",
+  "y": 1944,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Social",
+  "dir": "Bijon Bhattacharya, Sambhu Mitra",
+  "cast": [
+   "Bijon Bhattacharya",
+   "Sambhu Mitra",
+   "Stage Tripti Mitra Realism"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "classic"
+ },
+ {
+  "t": "Rabindranath Tagore",
+  "y": 1961,
+  "cat": "documentary",
+  "type": "Documentary",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bengali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "",
+  "dir": "Satyajit Ray",
+  "cast": [
+   "Documentary Raya Chatterjee",
+   "Soumitra Chatterjee Biographical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 3 (bengali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Parasakthi",
+  "y": 1952,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social",
+  "dir": "Krishnan-Panju",
+  "cast": [
+   "Sivaji Ganesan",
+   "S.V. Sahasranamam",
+   "Feature Pandari Bai Reform"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 4 (tamil)",
+  "verify": "imdb"
+ },
+ {
+  "t": "16 Vayathinile",
+  "y": 1977,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Rural",
+  "dir": "P. Bharathiraja",
+  "cast": [
+   "Feature Kamal Haasan",
+   "Sridevi",
+   "Rajinikanth Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 4 (tamil)",
+  "verify": "classic"
+ },
+ {
+  "t": "Nayakan",
+  "y": 1987,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Epic",
+  "dir": "Mani Ratnam",
+  "cast": [
+   "Kamal Haasan",
+   "Saranya Ponvannan",
+   "Feature Janagaraj Crime"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 4 (tamil)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Thalapathi",
+  "y": 1991,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Mani Ratnam",
+  "cast": [
+   "Feature Rajinikanth",
+   "Mammootty",
+   "Shobana Action"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 4 (tamil)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Pariyerum Perumal",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Anti- Drama",
+  "dir": "Mari Selvaraj",
+  "cast": [
+   "Feature Kathir",
+   "Anandhi",
+   "Yogi Babu Caste"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 4 (tamil)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Suzhal: The Vortex",
+  "y": 2022,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Crime",
+  "dir": "Pushkar-Gayathri, Bramma",
+  "cast": [
+   "Web Kathir",
+   "Aishwarya Rajesh",
+   "R. Parthiban Thriller"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 4 (tamil)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Maa",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Animation"
+  ],
+  "m": [],
+  "a": [
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Family",
+  "dir": "Sarjun KM",
+  "cast": [
+   "Short Kani Kusruti",
+   "Anikha Surendran Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 4 (tamil)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Thanneer Thanneer",
+  "y": 1979,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Period",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Tamil"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Social Drama",
+  "dir": "Komal Swaminathan",
+  "cast": [
+   "Charuhasan",
+   "G. Vasantha Stage"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 4 (tamil)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Mayabazar",
+  "y": 1957,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Animation"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Fantasy",
+  "dir": "K.V. Reddy",
+  "cast": [
+   "N.T. Rama Rao",
+   "S.V. Ranga Rao",
+   "Savitri",
+   "Feature A. Nageswara Rao Mythological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Shankarabharanam",
+  "y": 1980,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Musical",
+  "dir": "K. Viswanath",
+  "cast": [
+   "J.V. Somayajulu",
+   "Manju Bhargavi",
+   "Feature Chandra Mohan Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "classic"
+ },
+ {
+  "t": "Sagara Sangamam",
+  "y": 1983,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Dance",
+  "dir": "K. Viswanath",
+  "cast": [
+   "Feature Kamal Haasan",
+   "Jaya Prada",
+   "Sarath Babu Classical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Shiva",
+  "y": 1989,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Action",
+  "dir": "Ram Gopal Varma",
+  "cast": [
+   "Feature Nagarjuna",
+   "Amala",
+   "Raghuvaran Crime"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Baahubali: The Beginning",
+  "y": 2015,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Action",
+  "dir": "S.S. Rajamouli",
+  "cast": [
+   "Prabhas",
+   "Rana Daggubati",
+   "Anushka Feature Shetty",
+   "Tamannaah Mythological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "C/o Kancharapalem",
+  "y": 2018,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Realism",
+  "dir": "Venkatesh Maha",
+  "cast": [
+   "Subba Rao",
+   "Radha Bessy",
+   "Mohan Feature Bhagath Anthological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kudi Yedamaithe",
+  "y": 2021,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Sci-Fi Mystery",
+  "dir": "Pawan Kumar",
+  "cast": [
+   "Amala Paul",
+   "Rahul Vijay",
+   "Ravi Prakash Web"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Dhootha",
+  "y": 2023,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Mystery",
+  "dir": "Vikram K. Kumar",
+  "cast": [
+   "Naga Chaitanya",
+   "Parvathy Thiruvothu",
+   "Web Priya Bhavani Shankar Supernatural"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kanyasulkam",
+  "y": 1892,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Social Reform",
+  "dir": "Gurazada Apparao",
+  "cast": [
+   "D.V. Subba Rao",
+   "Sthanam Narasimha Stage Rao"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Maa Ooru",
+  "y": 1987,
+  "cat": "documentary",
+  "type": "Documentary",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Telugu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "",
+  "dir": "B. Narsing Rao",
+  "cast": [
+   "Documentary — Anthropological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 5 (telugu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Chemmeen",
+  "y": 1965,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Tragedy",
+  "dir": "Ramu Kariat",
+  "cast": [
+   "Madhu",
+   "Sheela",
+   "Sathyan",
+   "Kottarakkara Feature Sreedharan Nair Romantic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Swayamvaram",
+  "y": 1972,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Adoor Gopalakrishnan",
+  "cast": [
+   "Feature Madhu",
+   "Sharada",
+   "Adoor Bhavani Neorealist"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Elippathayam",
+  "y": 1981,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Tragedy",
+  "dir": "Adoor Gopalakrishnan",
+  "cast": [
+   "Karamana Janardanan Nair",
+   "Sharada",
+   "Feature Jalaja Psychological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kireedam",
+  "y": 1989,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Tragic",
+  "dir": "Sibi Malayil",
+  "cast": [
+   "Mohanlal",
+   "Thilakan",
+   "Parvathy",
+   "Kaviyoor Feature Ponnamma Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Manichitrathazhu",
+  "y": 1993,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Thriller",
+  "dir": "Fazil",
+  "cast": [
+   "Mohanlal",
+   "Shobana",
+   "Suresh Gopi",
+   "Feature Nedumudi Venu Psychological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kumbalangi Nights",
+  "y": 2019,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Madhu C. Narayanan",
+  "cast": [
+   "Soubin Shahir",
+   "Fahadh Faasil",
+   "Shane Feature Nigam",
+   "Sreenath Bhasi Sibling"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kerala Crime Files",
+  "y": 2023,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Police",
+  "dir": "Ahammed Khabeer",
+  "cast": [
+   "Web Aju Varghese",
+   "Lal",
+   "Navas Vallikkunnu Procedural"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Midnight Run",
+  "y": 2018,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Thriller",
+  "dir": "Remya Raj",
+  "cast": [
+   "Short Chethan Jayalal",
+   "Dileesh Pothan Short"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ningalenne Communistakki",
+  "y": 1952,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Malayalam"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Revolutionary",
+  "dir": "Thoppil Bhasi",
+  "cast": [
+   "Thoppil Bhasi",
+   "K.P.A.C. Sulochana",
+   "Stage Kambisseri K. Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 6 (malayalam)",
+  "verify": "classic"
+ },
+ {
+  "t": "Samskara",
+  "y": 1970,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Caste",
+  "dir": "Pattabhirama Reddy",
+  "cast": [
+   "Girish Karnad",
+   "Snehalata Reddy",
+   "P. Feature Lankesh Reform"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bangarada Manushya",
+  "y": 1972,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Agrarian",
+  "dir": "Siddalingaiah",
+  "cast": [
+   "Dr. Rajkumar",
+   "Bharathi",
+   "Aarathi",
+   "Feature Vajramuni Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Chomana Dudi",
+  "y": 1975,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Dalit",
+  "dir": "B.V. Karanth",
+  "cast": [
+   "Feature M.V. Vasudeva Rao",
+   "Padma Kumta Tragedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ghatashraddha",
+  "y": 1977,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Brahmin",
+  "dir": "Girish Kasaravalli",
+  "cast": [
+   "Meena Kuttappa",
+   "Narayana Bhat",
+   "Ajith Feature Kumar Tragedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Om",
+  "y": 1995,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Noir",
+  "dir": "Upendra",
+  "cast": [
+   "Feature Shiva Rajkumar",
+   "Prema",
+   "Sadhu Kokila Underworld"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Lucia",
+  "y": 2013,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Sci",
+  "dir": "Pawan Kumar",
+  "cast": [
+   "Sathish Ninasam",
+   "Sruthi Hariharan",
+   "Feature Achyuth Kumar Fi Noir"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Thithi",
+  "y": 2015,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Rural",
+  "dir": "Raam Reddy",
+  "cast": [
+   "Thammegowda S.",
+   "Channegowda",
+   "Feature Abhishek H.N. Satire"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kantara",
+  "y": 2022,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Action",
+  "dir": "Rishab Shetty",
+  "cast": [
+   "Rishab Shetty",
+   "Sapthami Gowda",
+   "Feature Kishore Folklore"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Hayavadana",
+  "y": 1971,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Music",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Folk Drama",
+  "dir": "B.V. Karanth",
+  "cast": [
+   "Girish Karnad",
+   "B.V. Karanth",
+   "C.R. Stage Simha"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "classic"
+ },
+ {
+  "t": "Wild Karnataka",
+  "y": 2019,
+  "cat": "documentary",
+  "type": "Documentary",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kannada"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "",
+  "dir": "Amoghavarsha, Kalyan Varma",
+  "cast": [
+   "Documentary Prakash Raj Wildlife"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 7 (kannada)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Nanak Nam Jahaz Hai",
+  "y": 1969,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Ram Maheshwary",
+  "cast": [
+   "Prithviraj Kapoor",
+   "I.S. Johar",
+   "Vimi",
+   "Som Feature Dutt Devotional"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "classic"
+ },
+ {
+  "t": "Chann Pardesi",
+  "y": 1980,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Feudal",
+  "dir": "Chitrarth Singh",
+  "cast": [
+   "Raj Babbar",
+   "Rama Vij",
+   "Amrish Puri",
+   "Feature Kulbhushan Kharbanda Tragedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "classic"
+ },
+ {
+  "t": "Marhi Da Deeva",
+  "y": 1989,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Agrarian",
+  "dir": "Surinder Singh",
+  "cast": [
+   "Raj Babbar",
+   "Deepti Naval",
+   "Pankaj Kapur",
+   "Feature Kanwaljit Singh Tragedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Waris Shah: Ishq Daa Waaris",
+  "y": 2006,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Sufi",
+  "dir": "Manoj Punj",
+  "cast": [
+   "Gurdas Maan",
+   "Juhi Chawla",
+   "Sushant Feature Singh Biopic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Anhe Ghore Da Daan",
+  "y": 2011,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Dalit",
+  "dir": "Gurvinder Singh",
+  "cast": [
+   "Feature Samuel John",
+   "Mal Singh",
+   "Sarbjeet Kaur Realism"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "classic"
+ },
+ {
+  "t": "Chauthi Koot",
+  "y": 2015,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Political",
+  "dir": "Gurvinder Singh",
+  "cast": [
+   "Suvinder Vicky",
+   "Rajbir Kaur",
+   "Gurpreet Feature Bhangu Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kohrra",
+  "y": 2023,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Police Noir",
+  "dir": "Randeep Jha",
+  "cast": [
+   "Suvinder Vicky",
+   "Barun Sobti",
+   "Harleen Web Sethi"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Nooran",
+  "y": 2014,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Rural",
+  "dir": "Navtej Sandhu",
+  "cast": [
+   "Short Sardar Sohi",
+   "Kul Sidhu",
+   "Jaswant Daman Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Loha Kutt",
+  "y": 1937,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Punjabi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Feudal",
+  "dir": "Balwant Gargi",
+  "cast": [
+   "Stage Balwant Gargi",
+   "Lahore Repertory Passion"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 8 (punjabi)",
+  "verify": "classic"
+ },
+ {
+  "t": "Kanku",
+  "y": 1969,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social",
+  "dir": "Kantilal Rathod",
+  "cast": [
+   "Pallavi Mehta",
+   "Kishore Bhatt",
+   "Kishore Feature Jariwala Realism"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Jesal Toral",
+  "y": 1971,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Devotional",
+  "dir": "Ravindra Dave",
+  "cast": [
+   "Upendra Trivedi",
+   "Snehlata",
+   "Ramesh Feature Mehta Folk"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhavni Bhavai",
+  "y": 1980,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Folk",
+  "dir": "Ketan Mehta",
+  "cast": [
+   "Feature Naseeruddin Shah",
+   "Smita Patil",
+   "Om Puri Satire"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Chhello Divas",
+  "y": 2015,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Comedy",
+  "dir": "Krishnadev Yagnik",
+  "cast": [
+   "Feature Malhar Thakar",
+   "Yash Soni",
+   "Mitra Gadhvi College"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Hellaro",
+  "y": 2019,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Folklore",
+  "dir": "Abhishek Shah",
+  "cast": [
+   "Shraddha Dangar",
+   "Jayesh More",
+   "Aarjav Feature Trivedi Dance"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Vash",
+  "y": 2023,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Thriller",
+  "dir": "Krishnadev Yagnik",
+  "cast": [
+   "Janki Bodiwala",
+   "Hitu Kanodia",
+   "Hiten Feature Kumar Psychological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Vaat Vaat Ma",
+  "y": 2021,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Comedy",
+  "dir": "Kartavya Shah",
+  "cast": [
+   "Web Malhar Thakar",
+   "Puja Joshi Romantic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Gujjubhai Banya Khalnayak",
+  "y": 2006,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Farce",
+  "dir": "Siddharth Randeria",
+  "cast": [
+   "Siddharth Randeria",
+   "Jimmit Trivedi",
+   "Stage Tejal Vyas Comedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "classic"
+ },
+ {
+  "t": "Baap Kamaal Dikro Dhamaal",
+  "y": 2010,
+  "cat": "gujarati",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Comedy",
+  "dir": "Sanjay Goradia",
+  "cast": [
+   "Sanjay Goradia",
+   "Bhavini Jani",
+   "Santu Stage Rajda Generational"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 9 (gujarati)",
+  "verify": "classic"
+ },
+ {
+  "t": "Sita Bibaha",
+  "y": 1936,
+  "cat": "odia",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Odia"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Mohan Sundar Deb Goswami",
+  "cast": [
+   "Makhanlal Banerjee",
+   "Prabhabati",
+   "Adaita Feature Ballabh Mythological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 10 (odia)",
+  "verify": "classic"
+ },
+ {
+  "t": "Matira Manisha",
+  "y": 1966,
+  "cat": "odia",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Odia"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Agrarian",
+  "dir": "Mrinal Sen",
+  "cast": [
+   "Prashanta Nanda",
+   "Sarat Pujari",
+   "Sujata Feature Anand Realism"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 10 (odia)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Maya Miriga",
+  "y": 1984,
+  "cat": "odia",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Odia"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Joint",
+  "dir": "Nirad N. Mohapatra",
+  "cast": [
+   "Bansidhar Satpathy",
+   "Kishori Devi",
+   "Feature Manimala Family"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 10 (odia)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Hakim Babu",
+  "y": 1985,
+  "cat": "odia",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Odia"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Tribal",
+  "dir": "Pranab Das",
+  "cast": [
+   "Feature Ajit Das",
+   "Jaya Swami",
+   "Bijay Mohanty Displacement"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 10 (odia)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sala Budha",
+  "y": 2012,
+  "cat": "odia",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Odia"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Folk",
+  "dir": "Sabyasachi Mohapatra",
+  "cast": [
+   "Feature Gadadhar Barik",
+   "Tapaswini Guru Realism"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 10 (odia)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Daman",
+  "y": 2022,
+  "cat": "odia",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Odia"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Debi Prasad Lenka, Vishal Mourya",
+  "cast": [
+   "Babushaan Mohanty",
+   "Dipanwit Feature Dashmohapatra Medical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 10 (odia)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ganga",
+  "y": 2021,
+  "cat": "odia",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Odia"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Kanccha Lannka Action",
+  "dir": "Jyoti Das",
+  "cast": [
+   "Web Akash Dasnayak",
+   "Sivani Sangita Rural"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 10 (odia)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Joymoti",
+  "y": 1935,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Assamese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Tragedy",
+  "dir": "Jyoti Prasad Agarwala",
+  "cast": [
+   "Aideu Handique",
+   "Phani Sarma",
+   "Feature Swargajyoti Dutta Historical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 11 (assamese)",
+  "verify": "classic"
+ },
+ {
+  "t": "Halodhia Choraye Baodhan Khai",
+  "y": 1987,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Assamese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Agrarian",
+  "dir": "Jahnu Barua",
+  "cast": [
+   "Feature Indra Bania",
+   "Badal Das",
+   "Purnima Pathak Struggle"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 11 (assamese)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Firingoti",
+  "y": 1992,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Assamese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Village",
+  "dir": "Jahnu Barua",
+  "cast": [
+   "Feature Moloya Goswami",
+   "Bishnu Kharghoria Education"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 11 (assamese)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Xagoroloi Bohudoor",
+  "y": 1995,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Assamese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film River",
+  "dir": "Jahnu Barua",
+  "cast": [
+   "Bishnu Kharghoria",
+   "Arun Nath",
+   "Kashmiri Feature Saikia Displacement"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 11 (assamese)",
+  "verify": "classic"
+ },
+ {
+  "t": "Village Rockstars",
+  "y": 2017,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Assamese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Coming",
+  "dir": "Rima Das",
+  "cast": [
+   "Bhanita Das",
+   "Basanti Das",
+   "Manabendra Feature Das of Age"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 11 (assamese)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Aamis",
+  "y": 2019,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Assamese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Dark",
+  "dir": "Bhaskar Hazarika",
+  "cast": [
+   "Lima Das",
+   "Arghadeep Baruah",
+   "Neetali Feature Das Psychological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 11 (assamese)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Fisaa",
+  "y": 2021,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Assamese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series ReelDrama Action",
+  "dir": "Kenny Basumatary",
+  "cast": [
+   "Web Kenny Basumatary",
+   "Utkal Hazowary Comedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 11 (assamese)",
+  "verify": "imdb"
+ },
+ {
+  "t": "A Path",
+  "y": 2014,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Assamese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Rural",
+  "dir": "Sangeeta Tamuli",
+  "cast": [
+   "Short Sangeeta Tamuli",
+   "Deben Sharma Short"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 11 (assamese)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ganga Maiyya Tohe Piyari",
+  "y": 1963,
+  "cat": "bhojpuri",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Bhojpuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social",
+  "dir": "Kundan Kumar",
+  "cast": [
+   "Feature Kumkum",
+   "Ashim Kumar",
+   "Nazir Hussain Melodrama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 12 (bhojpuri)",
+  "verify": "classic"
+ },
+ {
+  "t": "Balam Pardesia",
+  "y": 1979,
+  "cat": "bhojpuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bhojpuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Nazir Hussain",
+  "cast": [
+   "Rakesh Pandey",
+   "Padma Khanna",
+   "Nazir Feature Hussain Migration"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 12 (bhojpuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Nadiya Ke Paar",
+  "y": 1982,
+  "cat": "bhojpuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bhojpuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Rural",
+  "dir": "Govind Moonis",
+  "cast": [
+   "Sachin Pilgaonkar",
+   "Sadhana Singh",
+   "Leela Feature Mishra Family"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 12 (bhojpuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sasura Bada Paisawala",
+  "y": 2004,
+  "cat": "bhojpuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bhojpuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Ajay Sinha",
+  "cast": [
+   "Manoj Tiwari",
+   "Rani Chatterjee",
+   "Balkar Feature Bali Romantic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 12 (bhojpuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Purvanchal",
+  "y": 2021,
+  "cat": "bhojpuri",
+  "type": "Movie",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Bhojpuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Crime",
+  "dir": "Ajay Sharma",
+  "cast": [
+   "Web Ritesh Pandey",
+   "Sanjay Pandey Thriller"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 12 (bhojpuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bidesiya",
+  "y": 1940,
+  "cat": "bhojpuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bhojpuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Migration Drama",
+  "dir": "Bhikhari Thakur",
+  "cast": [
+   "Stage Bhikhari Thakur Troupe Folk"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 12 (bhojpuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Mirza Ghalib",
+  "y": 1954,
+  "cat": "urdu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Urdu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Classic",
+  "dir": "Sohrab Modi",
+  "cast": [
+   "Feature Bharat Bhushan",
+   "Suraiya",
+   "Nigar Sultana Biographical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 13 (urdu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Garm Hava",
+  "y": 1973,
+  "cat": "urdu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Urdu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Partition",
+  "dir": "M.S. Sathyu",
+  "cast": [
+   "Balraj Sahni",
+   "Gita Siddharth",
+   "Farooq Feature Shaikh Tragedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 13 (urdu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Umrao Jaan",
+  "y": 1981,
+  "cat": "urdu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Urdu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Muzaffar Ali",
+  "cast": [
+   "Rekha",
+   "Farooq Shaikh",
+   "Naseeruddin Feature Shah Courtesan"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 13 (urdu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bazaar",
+  "y": 1982,
+  "cat": "urdu",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Urdu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social",
+  "dir": "Sagar Sarhadi",
+  "cast": [
+   "Naseeruddin Shah",
+   "Smita Patil",
+   "Farooq Feature Shaikh",
+   "Supriya Pathak Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 13 (urdu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Salim Langde Pe Mat Ro",
+  "y": 1989,
+  "cat": "urdu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Urdu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Urban",
+  "dir": "Saeed Akhtar Mirza",
+  "cast": [
+   "Pavan Malhotra",
+   "Makrand Deshpande",
+   "Feature Ashutosh Gowariker Crime"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 13 (urdu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Dhoop Ki Deewar",
+  "y": 2021,
+  "cat": "urdu",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Urdu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Cross-Border",
+  "dir": "Haseeb Hassan",
+  "cast": [
+   "Ahad Raza Mir",
+   "Sajal Aly",
+   "Samiya Web Mumtaz Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 13 (urdu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Agra Bazar",
+  "y": 1954,
+  "cat": "urdu",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Urdu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Poetic Satire",
+  "dir": "Habib Tanvir",
+  "cast": [
+   "Habib Tanvir",
+   "Naya Theatre Actors Stage"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 13 (urdu)",
+  "verify": "classic"
+ },
+ {
+  "t": "Mogacho Anvddo",
+  "y": 1950,
+  "cat": "konkani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Konkani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Jerry Braganza",
+  "cast": [
+   "Feature Jerry Braganza",
+   "Leena Fernandes Romantic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 14 (konkani)",
+  "verify": "classic"
+ },
+ {
+  "t": "Nirmon",
+  "y": 1966,
+  "cat": "konkani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Konkani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film",
+  "dir": "A. Salam",
+  "cast": [
+   "Feature C. Alvares",
+   "Shalini",
+   "Anthony D'Sa Melodrama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 14 (konkani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Paltadacho Munis",
+  "y": 2009,
+  "cat": "konkani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Konkani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Forest",
+  "dir": "Laxmikant Shetgaonkar",
+  "cast": [
+   "Chittaranjan Giri",
+   "Veena Jamkar",
+   "Feature Prasanthi Talpankar Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 14 (konkani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "O Maria",
+  "y": 2010,
+  "cat": "konkani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Konkani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Heritage",
+  "dir": "Rajendra Talak",
+  "cast": [
+   "Feature Shernaz Patel",
+   "Cory Glass",
+   "Tiku Talsania Protection"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 14 (konkani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Nachom-ia Kumpasar",
+  "y": 2014,
+  "cat": "konkani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Konkani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Jazz",
+  "dir": "Bardroy Barretto",
+  "cast": [
+   "Palomi Ghosh",
+   "John D'Silva",
+   "Prince Feature Jacob Musical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 14 (konkani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Amori",
+  "y": 2019,
+  "cat": "konkani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Konkani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Dinesh P. Bhonsle",
+  "cast": [
+   "Meena Naik",
+   "Tanvi Prabhu",
+   "Prashanti Feature Talpankar Environmental"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 14 (konkani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "A Rainy Day",
+  "y": 2014,
+  "cat": "konkani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Konkani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Coastal",
+  "dir": "Laxmikant Shetgaonkar",
+  "cast": [
+   "Short Dnyaneshwar",
+   "Sujata Short"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 14 (konkani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Paral Ko Aago",
+  "y": 1978,
+  "cat": "nepali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Nepali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Rural",
+  "dir": "Pratap Subba",
+  "cast": [
+   "Tanka Sharma",
+   "Basundhara Bhusal",
+   "I.K. Feature Singh Conflict"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 15 (nepali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kagbeni",
+  "y": 2008,
+  "cat": "nepali",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Nepali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Mystery",
+  "dir": "Bhusan Dahal",
+  "cast": [
+   "Nima Rumba",
+   "Deeya Maskey",
+   "Saugat Feature Malla Supernatural"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 15 (nepali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bato Muni Ko Phool",
+  "y": 2010,
+  "cat": "nepali",
+  "type": "Movie",
+  "g": [
+   "Period",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Nepali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social Drama",
+  "dir": "Suraj Subba",
+  "cast": [
+   "Feature Yash Kumar",
+   "Rekha Thapa",
+   "Babu Bogati Caste"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 15 (nepali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kalo Pothi",
+  "y": 2015,
+  "cat": "nepali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Nepali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Village",
+  "dir": "Min Bahadur Bham",
+  "cast": [
+   "Feature Khadka Raj Nepali",
+   "Sukra Raj Rokaya Friendship"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 15 (nepali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "White Sun",
+  "y": 2016,
+  "cat": "nepali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Nepali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Civil",
+  "dir": "Deepak Rauniyar",
+  "cast": [
+   "Dayahang Rai",
+   "Asha Magrati",
+   "Rabindra Feature Singh Baniya War Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 15 (nepali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "The Flute",
+  "y": 2012,
+  "cat": "nepali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Nepali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Minimalist",
+  "dir": "Min Bahadur Bham",
+  "cast": [
+   "Short Khadka Raj Short"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 15 (nepali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sirumarani",
+  "y": 1998,
+  "cat": "nepali",
+  "type": "Movie",
+  "g": [
+   "Music",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Nepali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Folk Drama",
+  "dir": "Birendra Subba",
+  "cast": [
+   "Sikkim Repertory Stage"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 15 (nepali)",
+  "verify": "classic"
+ },
+ {
+  "t": "Abana",
+  "y": 1958,
+  "cat": "sindhi",
+  "type": "Movie",
+  "g": [
+   "Animation"
+  ],
+  "m": [],
+  "a": [
+   "Sindhi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Family",
+  "dir": "Deepak Asha, Arjun Hingorani",
+  "cast": [
+   "Feature Sheila Ramani",
+   "Sadhana",
+   "Kan Mohan Melodrama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 16 (sindhi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Jhulelal",
+  "y": 1964,
+  "cat": "sindhi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Sindhi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Legend",
+  "dir": "Deepak Asha",
+  "cast": [
+   "Feature Master Chander",
+   "Sheila Ramani Devotional"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 16 (sindhi)",
+  "verify": "classic"
+ },
+ {
+  "t": "Ladli",
+  "y": 1968,
+  "cat": "sindhi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Sindhi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Arjun Hingorani",
+  "cast": [
+   "Feature Master Chander",
+   "Kamlesh Social"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 16 (sindhi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "The Lost Roots",
+  "y": 2015,
+  "cat": "sindhi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Sindhi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Partition",
+  "dir": "Arjan Shad",
+  "cast": [
+   "Short — Short"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 16 (sindhi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kanyadan",
+  "y": 1965,
+  "cat": "maithili",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Maithili"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social",
+  "dir": "Phani Majumdar",
+  "cast": [
+   "Feature Hari Nath",
+   "Bageshri",
+   "Chetan Anand Reform"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 17 (maithili)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Mamta Gave Geet",
+  "y": 1982,
+  "cat": "maithili",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Maithili"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Rural",
+  "dir": "C. Parmanand",
+  "cast": [
+   "Feature Udit Narayan",
+   "Sona",
+   "Birendra Musical"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 17 (maithili)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Mithila Makhaan",
+  "y": 2015,
+  "cat": "maithili",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Maithili"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Reverse",
+  "dir": "Nitin Chandra",
+  "cast": [
+   "Kranti Prakash Jha",
+   "Anurita Jha",
+   "Pankaj Feature Jha Migration"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 17 (maithili)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Gamak Ghar",
+  "y": 2019,
+  "cat": "maithili",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Maithili"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Nostalgia",
+  "dir": "Achal Mishra",
+  "cast": [
+   "Feature Abhinav Jha",
+   "Bikram Singh",
+   "Mira Jha Ancestral"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 17 (maithili)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Dhuin",
+  "y": 2022,
+  "cat": "maithili",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Maithili"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film MUBI Small Dreams",
+  "dir": "Achal Mishra",
+  "cast": [
+   "Abhinav Jha",
+   "Bijoy Kumar",
+   "Prashant Feature Rana Town"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 17 (maithili)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Vidyapati",
+  "y": 1972,
+  "cat": "maithili",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Maithili"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Poetic Drama",
+  "dir": "Umapati Bhatt",
+  "cast": [
+   "Maithili Natya Parishad Stage"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 17 (maithili)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Matamgi Manipur",
+  "y": 1972,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Family Drama",
+  "dir": "Debkumar Bose",
+  "cast": [
+   "Gurumayum Ravindra Sharma",
+   "Feature Yengkhom Roma Modern"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Imagi Ningthem",
+  "y": 1981,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Laureate",
+  "dir": "Aribam Syam Sharma",
+  "cast": [
+   "Feature Leikhendro",
+   "Dhani Devi",
+   "R.K. Sorojini Montgolfiere"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Paokhum Ama",
+  "y": 1983,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social",
+  "dir": "Aribam Syam Sharma",
+  "cast": [
+   "Feature Kangabam Tomba",
+   "Yengkhom Roma Alienation"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ishanou",
+  "y": 1990,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Spiritual",
+  "dir": "Aribam Syam Sharma",
+  "cast": [
+   "Feature Anoubam Kiranmala",
+   "Kangabam Tomba Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Sanabi",
+  "y": 1995,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Pony",
+  "dir": "Aribam Syam Sharma",
+  "cast": [
+   "Feature R.K. Sushila",
+   "Thokchom Jamuna Classic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Loktak Lairembee",
+  "y": 2016,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Lake",
+  "dir": "Haobam Paban Kumar",
+  "cast": [
+   "Ningthoujam Sanatomba",
+   "Sagolsem Feature Thabal Realism"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Joseph's Son",
+  "y": 2023,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Son Search",
+  "dir": "Haobam Paban Kumar",
+  "cast": [
+   "Feature Guru Rewben Mashangva Missing"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "AFSPA 1958",
+  "y": 2005,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Political",
+  "dir": "Haobam Paban Kumar",
+  "cast": [
+   "Short Irom Sharmila Documentary"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Chakravyuha",
+  "y": 1984,
+  "cat": "manipuri",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Manipuri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Anti-War",
+  "dir": "Ratan Thiyam",
+  "cast": [
+   "Stage Chorus Repertory Theatre Actors Theatre"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 18 (manipuri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Shayar-e-Kashmir Mahjoor",
+  "y": 1972,
+  "cat": "kashmiri",
+  "type": "Movie",
+  "g": [
+   "Documentary"
+  ],
+  "m": [],
+  "a": [
+   "Kashmiri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film National Biopic",
+  "dir": "Prabhat Mukherjee",
+  "cast": [
+   "Feature Balraj Sahni",
+   "Parikshit Sahni",
+   "Pran Poet"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 19 (kashmiri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Habba Khatoon",
+  "y": 1978,
+  "cat": "kashmiri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kashmiri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Legend",
+  "dir": "Bashir Budgami",
+  "cast": [
+   "Feature Rita Razdan",
+   "Mohammad Sultan Romantic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 19 (kashmiri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bub",
+  "y": 2001,
+  "cat": "kashmiri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kashmiri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Post- Tragedy",
+  "dir": "Jyoti Sarup",
+  "cast": [
+   "K.K. Raina",
+   "Virendra Razdan",
+   "Feature Meenakshi Kak 1990"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 19 (kashmiri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Harud",
+  "y": 2010,
+  "cat": "kashmiri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kashmiri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Valley",
+  "dir": "Aamir Bashir",
+  "cast": [
+   "Reza Sheikh",
+   "Shahnawaz Bhat",
+   "Shamim Feature Patel Alienation"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 19 (kashmiri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Lines",
+  "y": 2021,
+  "cat": "kashmiri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kashmiri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Kargil Division",
+  "dir": "Hussein Khan",
+  "cast": [
+   "Feature Hina Khan",
+   "Farida Jalal",
+   "Rishi Bhutani Border"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 19 (kashmiri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "The Window",
+  "y": 2018,
+  "cat": "kashmiri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Kashmiri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Valley",
+  "dir": "Razi Majid",
+  "cast": [
+   "Short Tariq Mir Isolation"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 19 (kashmiri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Laila Majnu",
+  "y": 1974,
+  "cat": "kashmiri",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Kashmiri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Folk Legend",
+  "dir": "Moti Lal Kemmu",
+  "cast": [
+   "Som Nath Sadhu",
+   "Pushkar Bhan Stage"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 19 (kashmiri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Dhola Maru",
+  "y": 1956,
+  "cat": "rajasthani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Rajasthani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Desert Legend",
+  "dir": "N.R. Acharya",
+  "cast": [
+   "Feature Bharat Bhushan",
+   "Rehana Love"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 20 (rajasthani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Supattar Binani",
+  "y": 1981,
+  "cat": "rajasthani",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Rajasthani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social",
+  "dir": "Radheshyam Pipaliya",
+  "cast": [
+   "Feature Neelu Vaghela",
+   "Arvind Kumar Reform"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 20 (rajasthani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bai Chali Sasariye",
+  "y": 1988,
+  "cat": "rajasthani",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Rajasthani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Folklore",
+  "dir": "Mohan Singh Rathore",
+  "cast": [
+   "Feature Upasana Singh",
+   "Lalit Kapoor Blockbuster"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 20 (rajasthani)",
+  "verify": "classic"
+ },
+ {
+  "t": "Dharani",
+  "y": 2014,
+  "cat": "rajasthani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Rajasthani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Desert Guilt",
+  "dir": "Akshay Singh",
+  "cast": [
+   "Feature Akshay Singh",
+   "Smita Sharma Feudal"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 20 (rajasthani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Chidi Balla",
+  "y": 2018,
+  "cat": "rajasthani",
+  "type": "Movie",
+  "g": [
+   "Sport",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Rajasthani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Sports Drama",
+  "dir": "Radheshyam",
+  "cast": [
+   "Feature Shravan Sagar",
+   "Neha Shree Badminton"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 20 (rajasthani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Desert Tears",
+  "y": 2015,
+  "cat": "rajasthani",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Rajasthani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Short",
+  "dir": "Pushpendra Singh",
+  "cast": [
+   "Short Lakha Khan Manganiyar"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 20 (rajasthani)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Amar Singh Rathore",
+  "y": 1965,
+  "cat": "rajasthani",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Rajasthani"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Khayal Folk",
+  "dir": "Ram Singh",
+  "cast": [
+   "Stage Nautanki Mandali Theatre"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 20 (rajasthani)",
+  "verify": "classic"
+ },
+ {
+  "t": "Dharti",
+  "y": 1968,
+  "cat": "haryanvi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Haryanvi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Pioneer",
+  "dir": "Anand Kumar",
+  "cast": [
+   "Feature Manphool Singh",
+   "Shakuntala Agrarian"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 21 (haryanvi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Chandrawal",
+  "y": 1984,
+  "cat": "haryanvi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Haryanvi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Historic Hit",
+  "dir": "Jayant Prabhakar",
+  "cast": [
+   "Usha Sharma",
+   "Jagat Rawat",
+   "Daryav Feature Singh Malik All-Time"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 21 (haryanvi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Laado",
+  "y": 2000,
+  "cat": "haryanvi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Haryanvi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Gotra Drama",
+  "dir": "Ashwini Chaudhary",
+  "cast": [
+   "Ashutosh Rana",
+   "Rajendra Gupta",
+   "Feature Arundhati Social"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 21 (haryanvi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Pagdi: The Honour",
+  "y": 2014,
+  "cat": "haryanvi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Haryanvi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Khap Drama",
+  "dir": "Rajeev Bhatia",
+  "cast": [
+   "Ravi Chauhan",
+   "Brijesh Sharma",
+   "Feature Baljinder Kaur Panchayat"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 21 (haryanvi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Satrangi",
+  "y": 2015,
+  "cat": "haryanvi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Haryanvi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Cultural Revival",
+  "dir": "Sandeep Sharma",
+  "cast": [
+   "Feature Sachin Shaukeen",
+   "Amit Pahelwan Music"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 21 (haryanvi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Dada Lakhmi",
+  "y": 2022,
+  "cat": "haryanvi",
+  "type": "Movie",
+  "g": [
+   "Documentary"
+  ],
+  "m": [],
+  "a": [
+   "Haryanvi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Saang Biopic",
+  "dir": "Yashpal Sharma",
+  "cast": [
+   "Yashpal Sharma",
+   "Meghna Malik",
+   "Feature Rajendra Gupta Folk"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 21 (haryanvi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Mere Yaar Ki Shaadi",
+  "y": 2020,
+  "cat": "haryanvi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Haryanvi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Series Rural",
+  "dir": "Amit Bishnoi",
+  "cast": [
+   "Web Dheeraj Kumar",
+   "Pooja Hooda Comedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 21 (haryanvi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Mor Chhainha Bhuinya",
+  "y": 2000,
+  "cat": "chhattisgarhi",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Chhattisgarhi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Modern Epic",
+  "dir": "Shiv Kumar Deepak",
+  "cast": [
+   "Feature Anuj Sharma",
+   "Reena",
+   "Shekhar Revival"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 22 (chhattisgarhi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Maya",
+  "y": 2009,
+  "cat": "chhattisgarhi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Chhattisgarhi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Musical",
+  "dir": "Prakash Shrestha",
+  "cast": [
+   "Feature Prakash Shrestha",
+   "Anikriti Chauhan Romantic"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 22 (chhattisgarhi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhulan The Maze",
+  "y": 2021,
+  "cat": "chhattisgarhi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Chhattisgarhi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Village",
+  "dir": "Manoj Verma",
+  "cast": [
+   "Omkar Das Manikpuri",
+   "Sanjay Batra",
+   "Feature Anima Pagare Satire"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 22 (chhattisgarhi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Charandas Chor",
+  "y": 1975,
+  "cat": "chhattisgarhi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Chhattisgarhi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Play Folk Satire",
+  "dir": "Habib Tanvir",
+  "cast": [
+   "Lalu Ram",
+   "Madan Lal",
+   "Fida Bai Stage"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 22 (chhattisgarhi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Koti Chennaya",
+  "y": 1973,
+  "cat": "tulu",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Tulu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Twin Epic",
+  "dir": "Vishu Kumar",
+  "cast": [
+   "Feature Anand Ganiga",
+   "Papamma",
+   "Sheela Heroes"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 23 (tulu)",
+  "verify": "classic"
+ },
+ {
+  "t": "Bangar Patler",
+  "y": 1993,
+  "cat": "tulu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Tulu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Feudal Drama",
+  "dir": "Richard Castelino",
+  "cast": [
+   "Feature Vaman Raj",
+   "Sudha Rao Reform"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 23 (tulu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Chaali Polilu",
+  "y": 2014,
+  "cat": "tulu",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Tulu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Record- Comedy",
+  "dir": "Veerendra Shetty",
+  "cast": [
+   "Devadas Kapikad",
+   "Naveen D. Padil",
+   "Feature Bhojaraj Vamanjoor Breaking"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 23 (tulu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Madipu",
+  "y": 2016,
+  "cat": "tulu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Tulu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Ritual Conflict",
+  "dir": "Chethan Mundadi",
+  "cast": [
+   "Feature Sardar Sathya",
+   "M.K. Mata",
+   "Seeta Kote Orthodox"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 23 (tulu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Paddayi",
+  "y": 2018,
+  "cat": "tulu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Tulu"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Coastal Adaptation",
+  "dir": "Abhaya Simha",
+  "cast": [
+   "Mohan Sheni",
+   "Bindu Raxidi",
+   "Gopinath Feature Bhat Macbeth"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 23 (tulu)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Hagramayao Jinahari",
+  "y": 1995,
+  "cat": "bodo",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Bodo"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Forest Classic",
+  "dir": "Jwngdao Bodosa",
+  "cast": [
+   "Feature Aloka Boro",
+   "Tikendrajit Narzary Conservation"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 24 (bodo)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Gharjawai",
+  "y": 1986,
+  "cat": "garhwali",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Garhwali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Family Drama",
+  "dir": "Visheshwar Dutt Nautiyal",
+  "cast": [
+   "Feature Balraj Negi",
+   "Shashi Sharma Comedy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 26 (garhwali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kauthig",
+  "y": 1987,
+  "cat": "garhwali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Garhwali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Village",
+  "dir": "Subhash Ghai Production",
+  "cast": [
+   "Feature Urmila Sharma",
+   "Chandan Fair Romance"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 26 (garhwali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Banta",
+  "y": 1990,
+  "cat": "garhwali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Garhwali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Property Dispute",
+  "dir": "Parashar Gaur",
+  "cast": [
+   "Feature Parashar Gaur",
+   "Rekha Mandolia Mountain"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 26 (garhwali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Yaad Aali Tehri",
+  "y": 2010,
+  "cat": "garhwali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Garhwali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Dam Memory",
+  "dir": "Sudhir Negi",
+  "cast": [
+   "Feature Anil Ghildiyal",
+   "Madhu Bhatt Submersion"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 26 (garhwali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Kamli",
+  "y": 2021,
+  "cat": "garhwali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Garhwali"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Hill Desertion",
+  "dir": "Rajesh Joshi",
+  "cast": [
+   "Feature Geeta Uniyal",
+   "Ramesh Rawat Migration"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 26 (garhwali)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Geetiyan",
+  "y": 2014,
+  "cat": "dogri",
+  "type": "Movie",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Dogri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film 1980s Underworld",
+  "dir": "Rahul Sharma",
+  "cast": [
+   "Tanveer Dar",
+   "Brijeshwar Singh",
+   "Master Feature Aman Jammu"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 27 (dogri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Lakeer",
+  "y": 2018,
+  "cat": "dogri",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Dogri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Border Separation",
+  "dir": "Shiv Dutt Sharma",
+  "cast": [
+   "Feature Rakesh Sharma",
+   "Meenakshi Line"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 27 (dogri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Lok Gatha",
+  "y": 2020,
+  "cat": "dogri",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Dogri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Dogra Epic",
+  "dir": "Rajesh Khajuria",
+  "cast": [
+   "Feature Vikram Sharma",
+   "Neha Singh Chivalry"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 27 (dogri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Tawaif",
+  "y": 2017,
+  "cat": "dogri",
+  "type": "Movie",
+  "g": [
+   "Period"
+  ],
+  "m": [],
+  "a": [
+   "Dogri"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Social Short",
+  "dir": "Abhishek Bharti",
+  "cast": [
+   "Short Sunita Bharti Stigma"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 27 (dogri)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Manik Raitong",
+  "y": 1984,
+  "cat": "khasi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Khasi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Tragedy",
+  "dir": "Ardhendu Bhattacharya",
+  "cast": [
+   "Feature Skendrowell Syiemlieh",
+   "Sheba Diengdoh Mythological"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 28 (khasi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ri: Homeland of Uncertainty",
+  "y": 2014,
+  "cat": "khasi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Khasi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Drama",
+  "dir": "Pradip Kurbah",
+  "cast": [
+   "Feature Merlvin Mukhim",
+   "Albert Mawrie Militancy"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 28 (khasi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Onaatah: Of the Earth",
+  "y": 2016,
+  "cat": "khasi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Khasi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Healing",
+  "dir": "Pradip Kurbah",
+  "cast": [
+   "Feature Sweety Pala",
+   "Merlvin Mukhim Drama"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 28 (khasi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ma.Ama",
+  "y": 2018,
+  "cat": "khasi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Khasi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Grief &",
+  "dir": "Dominic Sangma",
+  "cast": [
+   "Feature Philip Sangma",
+   "Kunal Sangma Mortality"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 28 (khasi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Rapture",
+  "y": 2023,
+  "cat": "khasi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Khasi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Film Village",
+  "dir": "Dominic Sangma",
+  "cast": [
+   "Feature Torikhu Chesang",
+   "Celestine Kujur Paranoia"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 28 (khasi)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Because We Did Not Choose",
+  "y": 2017,
+  "cat": "khasi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Khasi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "WWI Corps",
+  "dir": "Wanphrang Diengdoh",
+  "cast": [
+   "Documentary — Labour"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "India Complete Catalog · section 28 (khasi)",
+  "verify": "imdb"
+ }
+]

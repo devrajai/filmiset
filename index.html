@@ -320,6 +320,9 @@ const CATS = {
   'malayalam':       {label:'Malayalam',               color:'#059669'},
   'kannada':         {label:'Kannada',                 color:'#ca8a04'},
   'punjabi':         {label:'Punjabi',                 color:'#db2777'},
+  'odia':            {label:'Odia',                    color:'#ea580c'},
+  'assamese':        {label:'Assamese',                color:'#0d9488'},
+  'bhojpuri':        {label:'Bhojpuri',                color:'#a16207'},
   'regional':        {label:'Regional Cinema',         color:'#16a34a'},
   'hindi':           {label:'Bollywood',               color:'#c2410c'},
   'south-dubbed':    {label:'South · Hindi Dubbed',    color:'#65a30d'},
@@ -1551,7 +1554,8 @@ Promise.all([
   fetch('data/curated_shortfilms.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_india1.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_india2.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog, sonylivZee5, gujaratiCat, multiOtt, canons, shortfilms, india1, india2]) => {
+  fetch('data/curated_india_all.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog, sonylivZee5, gujaratiCat, multiOtt, canons, shortfilms, india1, india2, indiaAll]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -1576,6 +1580,7 @@ Promise.all([
   mergeSets(shortfilms);             // Seven Neglected Canons: Kannada/Punjabi/Bhojpuri/NE + short films
   mergeSets(india1);                 // India Complete Catalog Part 1: Hindi, Marathi, Bengali, Tamil
   mergeSets(india2);                 // India Complete Catalog Part 2: Telugu, Malayalam, Kannada, Punjabi
+  mergeSets(indiaAll);               // All-Regions PDF, IMDb-verified rows only (191 of 280)
   applyExternalData();               // TMDB watch providers + TVmaze, when those files exist
   boot();
 }).catch(boot);
