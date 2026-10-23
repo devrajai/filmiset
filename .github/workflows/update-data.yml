@@ -32,6 +32,10 @@ jobs:
         run: python3 scripts/fetch_tmdb_discover.py --region IN --pages 2
       - name: Add IMDb ratings (free IMDb datasets)
         run: python3 scripts/fetch_imdb.py
+      - name: TMDB full catalogue sweep (movies + TV, year by year)
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
+        run: python3 scripts/fetch_tmdb_full.py --start-year 1950 --end-year 2026 --max-pages 50
       - name: IMDb full catalogue (11.6M titles, free datasets)
         run: python3 scripts/fetch_imdb_catalog.py --top 2500000
       - name: Posters for the IMDb rows (rolling, TMDB by IMDb id)
