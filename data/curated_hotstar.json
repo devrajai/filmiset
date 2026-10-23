@@ -1,7 +1,7 @@
 [
  {
   "t": "Special OPS",
-  "y": "",
+  "y": 2020,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -55,7 +55,7 @@
  },
  {
   "t": "Criminal Justice",
-  "y": "",
+  "y": 2019,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -107,7 +107,7 @@
  },
  {
   "t": "City of Dreams",
-  "y": "",
+  "y": 2019,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -132,7 +132,7 @@
  },
  {
   "t": "The Freelancer",
-  "y": "",
+  "y": 2023,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -159,7 +159,7 @@
  },
  {
   "t": "Rudra: The Edge of Darkness",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -186,7 +186,7 @@
  },
  {
   "t": "Lootere",
-  "y": "",
+  "y": 2024,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -211,7 +211,7 @@
  },
  {
   "t": "Karmma Calling",
-  "y": "",
+  "y": 2024,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -236,7 +236,7 @@
  },
  {
   "t": "Human",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -261,7 +261,7 @@
  },
  {
   "t": "Dil Bechara",
-  "y": "",
+  "y": 2020,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -289,7 +289,7 @@
  },
  {
   "t": "Govinda Naam Mera",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -316,7 +316,7 @@
  },
  {
   "t": "Atrangi Re",
-  "y": "",
+  "y": 2021,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -343,7 +343,7 @@
  },
  {
   "t": "Gulmohar",
-  "y": "",
+  "y": 2023,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -371,7 +371,7 @@
  },
  {
   "t": "Freddy",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -398,7 +398,7 @@
  },
  {
   "t": "Bhuj: The Pride of India",
-  "y": "",
+  "y": 2021,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -425,7 +425,7 @@
  },
  {
   "t": "Laxmii",
-  "y": "",
+  "y": 2020,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -453,7 +453,7 @@
  },
  {
   "t": "Apurva",
-  "y": "",
+  "y": 2023,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -478,7 +478,7 @@
  },
  {
   "t": "A Thursday",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -503,7 +503,7 @@
  },
  {
   "t": "Good Luck Jerry",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -528,7 +528,7 @@
  },
  {
   "t": "Cuttputlli",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -632,7 +632,7 @@
  },
  {
   "t": "WandaVision",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -659,7 +659,7 @@
  },
  {
   "t": "Andor",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -684,7 +684,7 @@
  },
  {
   "t": "The Bear",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -709,7 +709,7 @@
  },
  {
   "t": "Ahsoka",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -736,7 +736,7 @@
  },
  {
   "t": "Daredevil: Born Again",
-  "y": "",
+  "y": 2025,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -763,7 +763,7 @@
  },
  {
   "t": "Olympians",
-  "y": "",
+  "y": 1982,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -788,7 +788,7 @@
  },
  {
   "t": "Percy Jackson & the Olympians",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -815,7 +815,7 @@
  },
  {
   "t": "Grey's Anatomy",
-  "y": "",
+  "y": 2005,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -840,7 +840,7 @@
  },
  {
   "t": "Moon Knight",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -867,7 +867,7 @@
  },
  {
   "t": "Secret Invasion",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -892,7 +892,7 @@
  },
  {
   "t": "Avatar",
-  "y": "",
+  "y": 2009,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
@@ -918,7 +918,7 @@
  },
  {
   "t": "Avatar: The Way of Water",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
@@ -944,7 +944,7 @@
  },
  {
   "t": "War",
-  "y": "",
+  "y": 2007,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
@@ -996,7 +996,7 @@
  },
  {
   "t": "Guardians of the Galaxy Vol. 3",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
@@ -1149,7 +1149,7 @@
  },
  {
   "t": "Multiverse",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
@@ -1304,7 +1304,7 @@
  },
  {
   "t": "Avatar: The Way of Water",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [

@@ -698,8 +698,12 @@ function applyExternalData(){
     const k = extKey(d.t);
     const wp = WATCH_PROVIDERS[k];
     if(wp){
-      if((!d.o || !d.o.length) && wp.p && wp.p.length) d.o = wp.p.slice(0, 3);
+      // TMDB is the authority on where something streams; the curated lists were hand-written
+      // and had wrong platforms, so TMDB replaces them whenever it knows the title.
+      if(wp.p && wp.p.length) d.o = wp.p.slice(0, 4);
+      else if((!d.o || !d.o.length) && wp.p && wp.p.length) d.o = wp.p.slice(0, 4);
       if(wp.jw) d.jw = wp.jw;
+      d.ottSrc = 'tmdb';
     }
     const tv = TVMAZE[k];
     if(tv && (tv.seasons || tv.eps)){

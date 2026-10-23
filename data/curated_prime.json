@@ -1,7 +1,7 @@
 [
  {
   "t": "The Family Man",
-  "y": "",
+  "y": 2000,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -29,7 +29,7 @@
  },
  {
   "t": "Mirzapur",
-  "y": "",
+  "y": 2018,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -54,7 +54,7 @@
  },
  {
   "t": "Paatal Lok",
-  "y": "",
+  "y": 2020,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -79,7 +79,7 @@
  },
  {
   "t": "Dahaad",
-  "y": "",
+  "y": 2023,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -104,7 +104,7 @@
  },
  {
   "t": "Made in Heaven",
-  "y": "",
+  "y": 2019,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -129,7 +129,7 @@
  },
  {
   "t": "Bandish Bandits",
-  "y": "",
+  "y": 2020,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -154,7 +154,7 @@
  },
  {
   "t": "S2",
-  "y": "",
+  "y": 2015,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -206,7 +206,7 @@
  },
  {
   "t": "Aspirants",
-  "y": "",
+  "y": 2021,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -231,7 +231,7 @@
  },
  {
   "t": "Sardar Udham",
-  "y": "",
+  "y": 2021,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -259,7 +259,7 @@
  },
  {
   "t": "Gehraiyaan",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -286,7 +286,7 @@
  },
  {
   "t": "Shershaah",
-  "y": "",
+  "y": 2021,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -314,7 +314,7 @@
  },
  {
   "t": "Jalsa",
-  "y": "",
+  "y": 2022,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -341,7 +341,7 @@
  },
  {
   "t": "Sherni",
-  "y": "",
+  "y": 2021,
   "cat": "hindi",
   "type": "Series",
   "g": [
@@ -368,7 +368,7 @@
  },
  {
   "t": "Shakuntala Devi",
-  "y": "",
+  "y": 2020,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -395,7 +395,7 @@
  },
  {
   "t": "Gulabo Sitabo",
-  "y": "",
+  "y": 2020,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -421,7 +421,7 @@
  },
  {
   "t": "Ae Watan Mere Watan",
-  "y": "",
+  "y": 2024,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -448,7 +448,7 @@
  },
  {
   "t": "Pippa",
-  "y": "",
+  "y": 2023,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -528,7 +528,7 @@
  },
  {
   "t": "Yodha",
-  "y": "",
+  "y": 2024,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -556,7 +556,7 @@
  },
  {
   "t": "Bawaal",
-  "y": "",
+  "y": 2023,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -583,7 +583,7 @@
  },
  {
   "t": "Fukrey 3",
-  "y": "",
+  "y": 2023,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -610,7 +610,7 @@
  },
  {
   "t": "Teri Baaton Mein Aisa Uljha Jiya",
-  "y": "",
+  "y": 2024,
   "cat": "hindi",
   "type": "Movie",
   "g": [
@@ -691,7 +691,7 @@
  },
  {
   "t": "The Boys",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -745,7 +745,7 @@
  },
  {
   "t": "The Lord of the Rings: The Rings of Power",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -800,7 +800,7 @@
  },
  {
   "t": "Fallout",
-  "y": "",
+  "y": 2024,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -854,7 +854,7 @@
  },
  {
   "t": "The Wheel of Time",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -879,7 +879,7 @@
  },
  {
   "t": "Gen V",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -904,7 +904,7 @@
  },
  {
   "t": "The Marvelous Mrs. Maisel",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -930,7 +930,7 @@
  },
  {
   "t": "Bosch",
-  "y": "",
+  "y": 2014,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -958,7 +958,7 @@
  },
  {
   "t": "Bosch: Legacy",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1011,7 +1011,7 @@
  },
  {
   "t": "Upload",
-  "y": "",
+  "y": 2020,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1324,7 +1324,7 @@
  },
  {
   "t": "Transformers: Rise of the Beasts",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
@@ -1350,7 +1350,7 @@
  },
  {
   "t": "Mission: Impossible Fallout",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [
@@ -1402,7 +1402,7 @@
  },
  {
   "t": "Shazam! Fury of the Gods",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Movie",
   "g": [

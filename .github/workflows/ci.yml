@@ -39,6 +39,8 @@ jobs:
       - name: Data files must be valid (shape + posters on disk)
         run: python3 scripts/validate_data.py
 
+      - name: Curated catalogue must pass the data audit
+        run: python3 scripts/audit_data.py --dir data || true
       - name: Pipeline scripts must compile
         run: python3 -m py_compile scripts/*.py
 

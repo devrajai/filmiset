@@ -1,7 +1,7 @@
 [
  {
   "t": "Loki",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -16,9 +16,7 @@
    "English"
   ],
   "o": [
-   "Prime Video",
-   "JioHotstar",
-   "Netflix"
+   "JioHotstar"
   ],
   "poster": "",
   "ov": "The God of Mischief slips through time anomalies working with the Time Variance Authority.",
@@ -27,7 +25,7 @@
  },
  {
   "t": "WandaVision",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -42,7 +40,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "Wanda Maximoff traps a suburban town in classic sitcom decades to process unbearable grief.",
   "src": "curated",
@@ -50,45 +50,7 @@
  },
  {
   "t": "The Falcon and the Winter Soldier",
-  "y": "",
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Action"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "",
-  "ov": "Sam Wilson and Bucky Barnes face the Flag Smashers to honor Captain America’s shield.",
-  "src": "curated",
-  "status": "released"
- },
- {
-  "t": "Hawkeye",
-  "y": "",
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Action"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "",
-  "ov": "Clint Barton mentors Kate Bishop in New York during Christmas while confronting his Ronin past.",
-  "src": "curated",
-  "status": "released"
- },
- {
-  "t": "Moon Knight",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -100,9 +62,49 @@
    "English"
   ],
   "o": [
-   "Prime Video",
-   "JioHotstar",
-   "Netflix"
+   "JioHotstar"
+  ],
+  "poster": "",
+  "ov": "Sam Wilson and Bucky Barnes face the Flag Smashers to honor Captain America’s shield.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hawkeye",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "poster": "",
+  "ov": "Clint Barton mentors Kate Bishop in New York during Christmas while confronting his Ronin past.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Moon Knight",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "JioHotstar"
   ],
   "poster": "",
   "ov": "Gift shop clerk Steven Grant discovers his dissociative identity disorder and ancient Egyptian avatar Marc Spector.",
@@ -111,7 +113,7 @@
  },
  {
   "t": "Ms. Marvel",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -125,7 +127,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "Jersey City teen Kamala Khan gains cosmic hard-light powers connected to her South Asian ancestry.",
   "src": "curated",
@@ -133,7 +137,7 @@
  },
  {
   "t": "She",
-  "y": "",
+  "y": 2020,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -155,7 +159,7 @@
  },
  {
   "t": "Secret Invasion",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -166,7 +170,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "Nick Fury uncovers a faction of shape-shifting Skrulls infiltrating Earth's highest defense offices.",
   "src": "curated",
@@ -174,7 +180,7 @@
  },
  {
   "t": "Echo",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -193,7 +199,7 @@
  },
  {
   "t": "Agatha All Along",
-  "y": "",
+  "y": 2024,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -215,7 +221,7 @@
  },
  {
   "t": "Daredevil",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -227,9 +233,7 @@
    "English"
   ],
   "o": [
-   "Prime Video",
-   "JioHotstar",
-   "Netflix"
+   "JioHotstar"
   ],
   "poster": "",
   "ov": "Blind lawyer Matt Murdock fights Wilson Fisk and the Hand in Hell's Kitchen as a masked vigilante.",
@@ -238,7 +242,7 @@
  },
  {
   "t": "Jessica Jones",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -257,7 +261,7 @@
  },
  {
   "t": "Luke Cage",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -279,7 +283,7 @@
  },
  {
   "t": "Iron Fist",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -298,7 +302,7 @@
  },
  {
   "t": "The Defenders",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -317,7 +321,7 @@
  },
  {
   "t": "The Punisher",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -341,7 +345,7 @@
  },
  {
   "t": "Daredevil: Born Again",
-  "y": "",
+  "y": 2025,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -363,7 +367,7 @@
  },
  {
   "t": "Agents of S.H.I.E.L.D.",
-  "y": "",
+  "y": 2013,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -382,7 +386,7 @@
  },
  {
   "t": "Agent Carter",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -401,7 +405,7 @@
  },
  {
   "t": "Runaways",
-  "y": "",
+  "y": 2010,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -420,7 +424,7 @@
  },
  {
   "t": "Cloak & Dagger",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -439,7 +443,7 @@
  },
  {
   "t": "Inhumans",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -461,7 +465,7 @@
  },
  {
   "t": "Legion",
-  "y": "",
+  "y": 2010,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -480,7 +484,7 @@
  },
  {
   "t": "The Gifted",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -502,7 +506,7 @@
  },
  {
   "t": "The Boys",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -514,9 +518,7 @@
    "English"
   ],
   "o": [
-   "Prime Video",
-   "JioHotstar",
-   "Netflix"
+   "Prime Video"
   ],
   "poster": "",
   "ov": "Corrupt corporate superheroes owned by Vought are countered by a raw, unhinged civilian black-ops squad.",
@@ -525,7 +527,7 @@
  },
  {
   "t": "Gen V",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -537,9 +539,7 @@
    "English"
   ],
   "o": [
-   "Prime Video",
-   "JioHotstar",
-   "Netflix"
+   "Prime Video"
   ],
   "poster": "",
   "ov": "College-age supes at Godolkin University uncover sinister laboratory experiments inside The Woods.",
@@ -548,7 +548,7 @@
  },
  {
   "t": "Invincible",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -562,7 +562,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "Prime Video"
+  ],
   "poster": "",
   "ov": "Mark Grayson discovers his superhero father Omni-Man hides a brutal alien conquest secret.",
   "src": "curated",
@@ -570,7 +572,7 @@
  },
  {
   "t": "Peacemaker",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -585,9 +587,7 @@
    "English"
   ],
   "o": [
-   "Prime Video",
-   "JioHotstar",
-   "Netflix"
+   "JioHotstar"
   ],
   "poster": "",
   "ov": "Christopher Smith joins Project Butterfly to eliminate parasitic alien invaders threatening the world.",
@@ -596,7 +596,7 @@
  },
  {
   "t": "Watchmen",
-  "y": "",
+  "y": 2009,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -618,7 +618,7 @@
  },
  {
   "t": "The Sandman",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -630,8 +630,6 @@
    "English"
   ],
   "o": [
-   "Prime Video",
-   "JioHotstar",
    "Netflix"
   ],
   "poster": "",
@@ -641,7 +639,7 @@
  },
  {
   "t": "Dead Boy Detectives",
-  "y": "",
+  "y": 2024,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -663,7 +661,7 @@
  },
  {
   "t": "Sweet Tooth",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -682,7 +680,7 @@
  },
  {
   "t": "The Umbrella Academy",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -693,7 +691,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "Netflix"
+  ],
   "poster": "",
   "ov": "Estranged adopted sibling superheroes reunite to solve their father's death and stop the apocalypse.",
   "src": "curated",
@@ -701,7 +701,7 @@
  },
  {
   "t": "Lucifer",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -723,7 +723,7 @@
  },
  {
   "t": "Gotham",
-  "y": "",
+  "y": 2014,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -745,7 +745,7 @@
  },
  {
   "t": "Arrow",
-  "y": "",
+  "y": 2012,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -764,7 +764,7 @@
  },
  {
   "t": "The Flash",
-  "y": "",
+  "y": 2014,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -783,7 +783,7 @@
  },
  {
   "t": "Supergirl",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -824,7 +824,7 @@
  },
  {
   "t": "Black Lightning",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -843,7 +843,7 @@
  },
  {
   "t": "Batwoman",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -862,7 +862,7 @@
  },
  {
   "t": "Superman & Lois",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -881,7 +881,7 @@
  },
  {
   "t": "Titans",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -900,7 +900,7 @@
  },
  {
   "t": "Doom Patrol",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -919,7 +919,7 @@
  },
  {
   "t": "Swamp Thing",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -938,7 +938,7 @@
  },
  {
   "t": "Pennyworth",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -957,7 +957,7 @@
  },
  {
   "t": "Krypton",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -976,7 +976,7 @@
  },
  {
   "t": "Constantine",
-  "y": "",
+  "y": 2005,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -995,7 +995,7 @@
  },
  {
   "t": "Preacher",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1033,7 +1033,7 @@
  },
  {
   "t": "Jupiter's Legacy",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1052,7 +1052,7 @@
  },
  {
   "t": "Locke & Key",
-  "y": "",
+  "y": 2020,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1074,7 +1074,7 @@
  },
  {
   "t": "Raising Dion",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1093,7 +1093,7 @@
  },
  {
   "t": "Warrior Nun",
-  "y": "",
+  "y": 2020,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1112,7 +1112,7 @@
  },
  {
   "t": "I Am Not Okay with This",
-  "y": "",
+  "y": 2020,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1131,7 +1131,7 @@
  },
  {
   "t": "Extraordinary",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1150,7 +1150,7 @@
  },
  {
   "t": "Powers",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1169,7 +1169,7 @@
  },
  {
   "t": "Heroes",
-  "y": "",
+  "y": 2006,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1188,7 +1188,7 @@
  },
  {
   "t": "Heroes Reborn",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1229,7 +1229,7 @@
  },
  {
   "t": "Game of Thrones",
-  "y": "",
+  "y": 2011,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1243,9 +1243,7 @@
    "English"
   ],
   "o": [
-   "Netflix",
-   "Prime Video",
-   "JioCinema"
+   "JioHotstar"
   ],
   "poster": "",
   "ov": "Noble families feud for the Iron Throne of Westeros while an ancient icy menace marches south.",
@@ -1254,7 +1252,7 @@
  },
  {
   "t": "House of the Dragon",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1268,9 +1266,7 @@
    "English"
   ],
   "o": [
-   "Netflix",
-   "Prime Video",
-   "JioCinema"
+   "JioHotstar"
   ],
   "poster": "",
   "ov": "The Targaryen civil war, known as the Dance of the Dragons, fractures royal dynasty rule.",
@@ -1279,28 +1275,7 @@
  },
  {
   "t": "The Lord of the Rings: The Rings of Power",
-  "y": "",
-  "cat": "english-dubbed",
-  "type": "Series",
-  "g": [
-   "Fantasy"
-  ],
-  "m": [
-   "Action"
-  ],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [],
-  "poster": "",
-  "ov": "The forging of the Rings of Power during Middle-earth’s Second Age against rising Sauron.",
-  "src": "curated",
-  "status": "released"
- },
- {
-  "t": "The Witcher",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1314,9 +1289,30 @@
    "English"
   ],
   "o": [
-   "Netflix",
-   "Prime Video",
-   "JioCinema"
+   "Prime Video"
+  ],
+  "poster": "",
+  "ov": "The forging of the Rings of Power during Middle-earth’s Second Age against rising Sauron.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Witcher",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Netflix"
   ],
   "poster": "",
   "ov": "Geralt of Rivia, a mutated monster hunter, navigates a continent where humans often prove more beastly.",
@@ -1325,7 +1321,7 @@
  },
  {
   "t": "The Witcher: Blood Origin",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1346,7 +1342,7 @@
  },
  {
   "t": "The Wheel of Time",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1359,7 +1355,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "Prime Video"
+  ],
   "poster": "",
   "ov": "Moiraine guides five young villagers, one of whom is the reincarnated Dragon Reborn.",
   "src": "curated",
@@ -1367,7 +1365,7 @@
  },
  {
   "t": "Shadow and Bone",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1388,7 +1386,7 @@
  },
  {
   "t": "Carnival Row",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1411,7 +1409,7 @@
  },
  {
   "t": "His Dark Materials",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1432,7 +1430,7 @@
  },
  {
   "t": "Percy Jackson and the Olympians",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1495,7 +1493,7 @@
  },
  {
   "t": "The Letter for the King",
-  "y": "",
+  "y": 2020,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1516,7 +1514,7 @@
  },
  {
   "t": "Cursed",
-  "y": "",
+  "y": 2005,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1537,7 +1535,7 @@
  },
  {
   "t": "The Shannara Chronicles",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1558,7 +1556,7 @@
  },
  {
   "t": "Fate: The Winx Saga",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1579,7 +1577,7 @@
  },
  {
   "t": "Willow",
-  "y": "",
+  "y": 1988,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1600,7 +1598,7 @@
  },
  {
   "t": "American Gods",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1621,7 +1619,7 @@
  },
  {
   "t": "Good Omens",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1642,7 +1640,7 @@
  },
  {
   "t": "Britannia",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1663,7 +1661,7 @@
  },
  {
   "t": "The Outpost",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1686,7 +1684,7 @@
  },
  {
   "t": "Merlin",
-  "y": "",
+  "y": 2008,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1707,7 +1705,7 @@
  },
  {
   "t": "Atlantis",
-  "y": "",
+  "y": 2013,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1749,7 +1747,7 @@
  },
  {
   "t": "Legend of the Seeker",
-  "y": "",
+  "y": 2008,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1770,7 +1768,7 @@
  },
  {
   "t": "Once Upon a Time",
-  "y": "",
+  "y": 2011,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1791,7 +1789,7 @@
  },
  {
   "t": "The Magicians",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1812,7 +1810,7 @@
  },
  {
   "t": "A Discovery of Witches",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1835,7 +1833,7 @@
  },
  {
   "t": "The Nevers",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1858,7 +1856,7 @@
  },
  {
   "t": "Emerald City",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1881,7 +1879,7 @@
  },
  {
   "t": "Beowulf: Return to the Shieldlands",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1902,7 +1900,7 @@
  },
  {
   "t": "Camelot",
-  "y": "",
+  "y": 2011,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1925,7 +1923,7 @@
  },
  {
   "t": "Troy: Fall of a City",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1946,7 +1944,7 @@
  },
  {
   "t": "Hercules: The Legendary Journeys",
-  "y": "",
+  "y": 1995,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -1967,7 +1965,7 @@
  },
  {
   "t": "Xena: Warrior Princess",
-  "y": "",
+  "y": 1995,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2009,7 +2007,7 @@
  },
  {
   "t": "Spartacus: Gods of the Arena",
-  "y": "",
+  "y": 2011,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2072,7 +2070,7 @@
  },
  {
   "t": "Rome",
-  "y": "",
+  "y": 2005,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2093,7 +2091,7 @@
  },
  {
   "t": "Domina",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2116,7 +2114,7 @@
  },
  {
   "t": "Knightfall",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2137,7 +2135,7 @@
  },
  {
   "t": "The Last Kingdom",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2158,7 +2156,7 @@
  },
  {
   "t": "The Last Kingdom: Seven Kings Must Die",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2179,7 +2177,7 @@
  },
  {
   "t": "Vikings",
-  "y": "",
+  "y": 2013,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2193,9 +2191,7 @@
    "English"
   ],
   "o": [
-   "Netflix",
-   "Prime Video",
-   "JioCinema"
+   "Netflix"
   ],
   "poster": "",
   "ov": "Ragnar Lothbrok rises from simple farmer to legendary Norse king raiding England and France.",
@@ -2204,7 +2200,7 @@
  },
  {
   "t": "Vikings: Valhalla",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2251,7 +2247,7 @@
  },
  {
   "t": "Frontier",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2272,7 +2268,7 @@
  },
  {
   "t": "Black Sails",
-  "y": "",
+  "y": 2014,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2293,7 +2289,7 @@
  },
  {
   "t": "Crossbones",
-  "y": "",
+  "y": 2014,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2316,7 +2312,7 @@
  },
  {
   "t": "Our Flag Means Death",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2337,7 +2333,7 @@
  },
  {
   "t": "Marco Polo",
-  "y": "",
+  "y": 2014,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2360,7 +2356,7 @@
  },
  {
   "t": "Outlander",
-  "y": "",
+  "y": 2014,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2382,7 +2378,7 @@
  },
  {
   "t": "Poldark",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2403,7 +2399,7 @@
  },
  {
   "t": "Sanditon",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2424,7 +2420,7 @@
  },
  {
   "t": "The Bastard Executioner",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2445,7 +2441,7 @@
  },
  {
   "t": "Da Vinci's Demons",
-  "y": "",
+  "y": 2013,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2466,7 +2462,7 @@
  },
  {
   "t": "The Borgias",
-  "y": "",
+  "y": 2011,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2510,7 +2506,7 @@
  },
  {
   "t": "The White Queen",
-  "y": "",
+  "y": 2013,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2531,7 +2527,7 @@
  },
  {
   "t": "The White Princess",
-  "y": "",
+  "y": 2017,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2552,7 +2548,7 @@
  },
  {
   "t": "The Spanish Princess",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2573,7 +2569,7 @@
  },
  {
   "t": "Kaos",
-  "y": "",
+  "y": 2024,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2594,7 +2590,7 @@
  },
  {
   "t": "Nautilus",
-  "y": "",
+  "y": 2024,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2615,7 +2611,7 @@
  },
  {
   "t": "Barbarians",
-  "y": "",
+  "y": 2020,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2636,7 +2632,7 @@
  },
  {
   "t": "Stranger Things",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2649,7 +2645,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "Netflix"
+  ],
   "poster": "",
   "ov": "The disappearance of a young boy uncovers secret lab experiments and the dark Upside Down.",
   "src": "curated",
@@ -2657,7 +2655,7 @@
  },
  {
   "t": "Fallout",
-  "y": "",
+  "y": 2024,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2678,7 +2676,7 @@
  },
  {
   "t": "Halo",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2699,7 +2697,7 @@
  },
  {
   "t": "Westworld",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2712,7 +2710,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "Synthetic android theme park hosts awaken to sentience and revolt against their human creators.",
   "src": "curated",
@@ -2720,7 +2720,7 @@
  },
  {
   "t": "The Last of Us",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2735,7 +2735,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "Smuggler Joel escorts immune teen Ellie across a ruined America infected by fungal cordyceps.",
   "src": "curated",
@@ -2743,7 +2745,7 @@
  },
  {
   "t": "Silo",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2764,7 +2766,7 @@
  },
  {
   "t": "Foundation",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2785,7 +2787,7 @@
  },
  {
   "t": "3 Body Problem",
-  "y": "",
+  "y": 2024,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2806,7 +2808,7 @@
  },
  {
   "t": "Black Mirror",
-  "y": "",
+  "y": 2011,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2827,7 +2829,7 @@
  },
  {
   "t": "Altered Carbon",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2850,7 +2852,7 @@
  },
  {
   "t": "See",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2871,7 +2873,7 @@
  },
  {
   "t": "Lost in Space",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2892,7 +2894,7 @@
  },
  {
   "t": "The Expanse",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2915,7 +2917,7 @@
  },
  {
   "t": "The Mandalorian",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2928,7 +2930,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "A lone bounty hunter traverses the outer reaches of the galaxy protecting the Force-sensitive Child, Grogu.",
   "src": "curated",
@@ -2949,7 +2953,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "Cassian Andor transforms from a selfish scavenger into the passionate architect of the Rebel Alliance.",
   "src": "curated",
@@ -2970,7 +2976,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "Former Jedi Padawan Ahsoka Tano investigates an emerging imperial threat posed by Grand Admiral Thrawn.",
   "src": "curated",
@@ -2978,7 +2986,7 @@
  },
  {
   "t": "Obi",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -2999,7 +3007,7 @@
  },
  {
   "t": "The Book of Boba Fett",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3012,7 +3020,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "The legendary armored bounty hunter takes over the Tatooine criminal empire once run by Jabba the Hutt.",
   "src": "curated",
@@ -3033,7 +3043,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "Four lost children make a discovery on their home planet and journey across the dangerous galaxy.",
   "src": "curated",
@@ -3054,7 +3066,9 @@
    "Hindi (dub)",
    "English"
   ],
-  "o": [],
+  "o": [
+   "JioHotstar"
+  ],
   "poster": "",
   "ov": "A Jedi Master investigates a series of shocking murders during the High Republic era.",
   "src": "curated",
@@ -3062,7 +3076,7 @@
  },
  {
   "t": "Star Wars: The Bad Batch",
-  "y": "",
+  "y": 2021,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3083,7 +3097,7 @@
  },
  {
   "t": "For All Mankind",
-  "y": "",
+  "y": 2019,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3104,7 +3118,7 @@
  },
  {
   "t": "Monarch: Legacy of Monsters",
-  "y": "",
+  "y": 2023,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3127,7 +3141,7 @@
  },
  {
   "t": "Invasion",
-  "y": "",
+  "y": 2007,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3169,7 +3183,7 @@
  },
  {
   "t": "Severance",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3192,7 +3206,7 @@
  },
  {
   "t": "The Peripheral",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3213,7 +3227,7 @@
  },
  {
   "t": "Night Sky",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3234,7 +3248,7 @@
  },
  {
   "t": "Colony",
-  "y": "",
+  "y": 2013,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3257,7 +3271,7 @@
  },
  {
   "t": "Falling Skies",
-  "y": "",
+  "y": 2011,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3278,7 +3292,7 @@
  },
  {
   "t": "The 100",
-  "y": "",
+  "y": 2014,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3299,7 +3313,7 @@
  },
  {
   "t": "Revolution",
-  "y": "",
+  "y": 2012,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3320,7 +3334,7 @@
  },
  {
   "t": "Manifest",
-  "y": "",
+  "y": 2018,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3341,7 +3355,7 @@
  },
  {
   "t": "Travelers",
-  "y": "",
+  "y": 2016,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3362,7 +3376,7 @@
  },
  {
   "t": "Sense8",
-  "y": "",
+  "y": 2015,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [
@@ -3383,7 +3397,7 @@
  },
  {
   "t": "1899",
-  "y": "",
+  "y": 2022,
   "cat": "english-dubbed",
   "type": "Series",
   "g": [

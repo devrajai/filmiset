@@ -1,7 +1,7 @@
 [
  {
   "t": "Naruto",
-  "y": "",
+  "y": 2002,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -17,8 +17,7 @@
   ],
   "o": [
    "Crunchyroll",
-   "Netflix",
-   "JioCinema"
+   "Netflix"
   ],
   "poster": "",
   "ov": "The classic journey of a shunned orphan striving to become the Hokage of the Hidden Leaf.",
@@ -27,7 +26,7 @@
  },
  {
   "t": "Naruto: Shippuden",
-  "y": "",
+  "y": 2007,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -49,7 +48,7 @@
  },
  {
   "t": "Boruto: Naruto Next Generations",
-  "y": "",
+  "y": 2017,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -71,7 +70,7 @@
  },
  {
   "t": "Jujutsu Kaisen",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -87,8 +86,7 @@
   ],
   "o": [
    "Crunchyroll",
-   "Netflix",
-   "JioCinema"
+   "Netflix"
   ],
   "poster": "",
   "ov": "Yuji Itadori swallows a cursed finger of Sukuna and enters the Tokyo Jujutsu High sorcery world.",
@@ -119,7 +117,7 @@
  },
  {
   "t": "Demon Slayer: Kimetsu no Yaiba",
-  "y": "",
+  "y": 2019,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -135,7 +133,10 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Crunchyroll",
+   "Netflix"
+  ],
   "poster": "",
   "ov": "Tanjiro Kamado joins the Demon Slayer Corps to avenge his family and cure his demon sister, Nezuko.",
   "src": "curated",
@@ -233,7 +234,7 @@
  },
  {
   "t": "Dragon Ball Z",
-  "y": "",
+  "y": 1996,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -248,9 +249,7 @@
    "Japanese"
   ],
   "o": [
-   "Crunchyroll",
-   "Netflix",
-   "JioCinema"
+   "Crunchyroll"
   ],
   "poster": "",
   "ov": "Goku discovers his Saiyan origins, battling Vegeta, Frieza, Cell, and Majin Buu.",
@@ -259,7 +258,7 @@
  },
  {
   "t": "Dragon Ball Super",
-  "y": "",
+  "y": 2015,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -281,7 +280,7 @@
  },
  {
   "t": "Dragon Ball Daima",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -303,7 +302,7 @@
  },
  {
   "t": "Chainsaw Man",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -318,9 +317,7 @@
    "Japanese"
   ],
   "o": [
-   "Crunchyroll",
-   "Netflix",
-   "JioCinema"
+   "Crunchyroll"
   ],
   "poster": "",
   "ov": "Denji merges with Pochita to become a chainsaw-wielding devil hunter for Public Safety.",
@@ -329,7 +326,7 @@
  },
  {
   "t": "Solo Leveling",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -344,9 +341,7 @@
    "Japanese"
   ],
   "o": [
-   "Crunchyroll",
-   "Netflix",
-   "JioCinema"
+   "Crunchyroll"
   ],
   "poster": "",
   "ov": "The world's weakest hunter, Sung Jinwoo, unlocks a secret game-like leveling interface.",
@@ -355,7 +350,7 @@
  },
  {
   "t": "My Hero Academia",
-  "y": "",
+  "y": 2016,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -369,7 +364,9 @@
    "Hindi (dub)",
    "Japanese"
   ],
-  "o": [],
+  "o": [
+   "Crunchyroll"
+  ],
   "poster": "",
   "ov": "Quirkless Izuku Midoriya inherits One For All from All Might to attend UA High.",
   "src": "curated",
@@ -377,7 +374,7 @@
  },
  {
   "t": "Bleach",
-  "y": "",
+  "y": 2004,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -399,7 +396,7 @@
  },
  {
   "t": "Bleach: Thousand-Year Blood War",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -443,7 +440,7 @@
  },
  {
   "t": "Black Clover",
-  "y": "",
+  "y": 2017,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -465,7 +462,7 @@
  },
  {
   "t": "Fire Force",
-  "y": "",
+  "y": 2019,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -487,7 +484,7 @@
  },
  {
   "t": "Mashle: Magic and Muscles",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -509,7 +506,7 @@
  },
  {
   "t": "Kaiju No. 8",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -531,7 +528,7 @@
  },
  {
   "t": "Hell's Paradise",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -553,7 +550,7 @@
  },
  {
   "t": "Vinland Saga",
-  "y": "",
+  "y": 2019,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -575,7 +572,7 @@
  },
  {
   "t": "Tokyo Revengers",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -599,7 +596,7 @@
  },
  {
   "t": "Akudama Drive",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -621,7 +618,7 @@
  },
  {
   "t": "Radiant",
-  "y": "",
+  "y": 2018,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -643,7 +640,7 @@
  },
  {
   "t": "Tower of God",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -665,7 +662,7 @@
  },
  {
   "t": "God of High School",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -687,7 +684,7 @@
  },
  {
   "t": "Noblesse",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -733,7 +730,7 @@
  },
  {
   "t": "Kengan Ashura",
-  "y": "",
+  "y": 2019,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -755,7 +752,7 @@
  },
  {
   "t": "Assassination Classroom",
-  "y": "",
+  "y": 2013,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -779,7 +776,7 @@
  },
  {
   "t": "One",
-  "y": "",
+  "y": 2001,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -801,7 +798,7 @@
  },
  {
   "t": "Mob Psycho 100",
-  "y": "",
+  "y": 2016,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -823,7 +820,7 @@
  },
  {
   "t": "Death Note",
-  "y": "",
+  "y": 2006,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -840,8 +837,8 @@
    "Japanese"
   ],
   "o": [
-   "Netflix",
-   "Crunchyroll"
+   "Crunchyroll",
+   "Netflix"
   ],
   "poster": "",
   "ov": "Light Yagami uses a supernatural notebook to execute criminals while matching wits with master detective L.",
@@ -850,7 +847,7 @@
  },
  {
   "t": "Classroom of the Elite",
-  "y": "",
+  "y": 2017,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -878,7 +875,7 @@
  },
  {
   "t": "Dr. STONE",
-  "y": "",
+  "y": 2019,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -906,7 +903,7 @@
  },
  {
   "t": "The Apothecary Diaries",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -929,7 +926,7 @@
  },
  {
   "t": "Zom 100: Bucket List of the Dead",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -952,7 +949,7 @@
  },
  {
   "t": "Tomodachi Game",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -977,7 +974,7 @@
  },
  {
   "t": "The Detective Is Already Dead",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1000,7 +997,7 @@
  },
  {
   "t": "Erased",
-  "y": "",
+  "y": 2016,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1023,7 +1020,7 @@
  },
  {
   "t": "Terror in Resonance",
-  "y": "",
+  "y": 2014,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1046,7 +1043,7 @@
  },
  {
   "t": "Psycho",
-  "y": "",
+  "y": 1960,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1069,7 +1066,7 @@
  },
  {
   "t": "Parasyte: The Maxim",
-  "y": "",
+  "y": 2014,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1095,7 +1092,7 @@
  },
  {
   "t": "In/Spectre",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1119,7 +1116,7 @@
  },
  {
   "t": "Deadman Wonderland",
-  "y": "",
+  "y": 2011,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1143,7 +1140,7 @@
  },
  {
   "t": "Ajin: Demi-Human",
-  "y": "",
+  "y": 2017,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1167,7 +1164,7 @@
  },
  {
   "t": "B: The Beginning",
-  "y": "",
+  "y": 2018,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1190,7 +1187,7 @@
  },
  {
   "t": "Lookism",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1215,7 +1212,7 @@
  },
  {
   "t": "That Time I Got Reincarnated as a Slime",
-  "y": "",
+  "y": 2018,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1237,7 +1234,7 @@
  },
  {
   "t": "Mushoku Tensei: Jobless Reincarnation",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1259,7 +1256,7 @@
  },
  {
   "t": "The Rising of the Shield Hero",
-  "y": "",
+  "y": 2019,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1281,7 +1278,7 @@
  },
  {
   "t": "Overlord",
-  "y": "",
+  "y": 2018,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1303,7 +1300,7 @@
  },
  {
   "t": "Re:Zero - Starting Life in Another World",
-  "y": "",
+  "y": 2016,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1326,7 +1323,7 @@
  },
  {
   "t": "Frieren: Beyond Journey’s End",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1349,7 +1346,7 @@
  },
  {
   "t": "Delicious in Dungeon",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1371,7 +1368,7 @@
  },
  {
   "t": "Log Horizon",
-  "y": "",
+  "y": 2013,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1393,7 +1390,7 @@
  },
  {
   "t": "The Daily Life of the Immortal King",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1415,7 +1412,7 @@
  },
  {
   "t": "The Ancient Magus' Bride",
-  "y": "",
+  "y": 2017,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1437,7 +1434,7 @@
  },
  {
   "t": "Ranking of Kings",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1459,7 +1456,7 @@
  },
  {
   "t": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1481,7 +1478,7 @@
  },
  {
   "t": "The Misfit of Demon King Academy",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1504,7 +1501,7 @@
  },
  {
   "t": "Reborn as a Vending Machine, I Now Wander the Dungeon",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1526,7 +1523,7 @@
  },
  {
   "t": "My Unique Skill Makes Me OP even at Level 1",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1548,7 +1545,7 @@
  },
  {
   "t": "The Iceblade Sorcerer Shall Rule the World",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1570,7 +1567,7 @@
  },
  {
   "t": "Handyman Saitou in Another World",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1592,7 +1589,7 @@
  },
  {
   "t": "Villainess Level 99: I May Be the Hidden Boss But I'm Not the Demon Lord",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1614,7 +1611,7 @@
  },
  {
   "t": "KamiKatsu: Working for God in a Godless World",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1636,7 +1633,7 @@
  },
  {
   "t": "How a Realist Hero Rebuilt the Kingdom",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1658,7 +1655,7 @@
  },
  {
   "t": "The Wrong Way to Use Healing Magic",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1703,7 +1700,7 @@
  },
  {
   "t": "Campfire Cooking in Another World with My Absurd Skill",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1725,7 +1722,7 @@
  },
  {
   "t": "SPY x FAMILY",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1744,7 +1741,6 @@
    "Japanese"
   ],
   "o": [
-   "Netflix",
    "Crunchyroll"
   ],
   "poster": "",
@@ -1754,7 +1750,7 @@
  },
  {
   "t": "My Dress-Up Darling",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1803,7 +1799,7 @@
  },
  {
   "t": "Buddy Daddies",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1827,7 +1823,7 @@
  },
  {
   "t": "My Happy Marriage",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1851,7 +1847,7 @@
  },
  {
   "t": "ReLIFE",
-  "y": "",
+  "y": 2016,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1877,7 +1873,7 @@
  },
  {
   "t": "A Couple of Cuckoos",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1901,7 +1897,7 @@
  },
  {
   "t": "Rent",
-  "y": "",
+  "y": 2005,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1927,7 +1923,7 @@
  },
  {
   "t": "The Angel Next Door Spoils Me Rotten",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -1953,7 +1949,7 @@
  },
  {
   "t": "Tomo",
-  "y": "",
+  "y": 2004,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2003,7 +1999,7 @@
  },
  {
   "t": "The Way of the Househusband",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2029,7 +2025,7 @@
  },
  {
   "t": "Komi Can't Communicate",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2055,7 +2051,7 @@
  },
  {
   "t": "Romantic Killer",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2079,7 +2075,7 @@
  },
  {
   "t": "My Love Story with Yamada-kun at Lv999",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2105,7 +2101,7 @@
  },
  {
   "t": "A Sign of Affection",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2129,7 +2125,7 @@
  },
  {
   "t": "An Archdemon's Dilemma: How to Love Your Elf Bride",
-  "y": "",
+  "y": 2024,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2153,7 +2149,7 @@
  },
  {
   "t": "Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2177,7 +2173,7 @@
  },
  {
   "t": "The Ice Guy and His Cool Female Colleague",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2201,7 +2197,7 @@
  },
  {
   "t": "Aharen",
-  "y": "",
+  "y": 2007,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2225,7 +2221,7 @@
  },
  {
   "t": "Haikyuu!!",
-  "y": "",
+  "y": 2014,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2247,7 +2243,7 @@
  },
  {
   "t": "Blue Lock",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2271,7 +2267,7 @@
  },
  {
   "t": "Aoashi",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2315,7 +2311,7 @@
  },
  {
   "t": "Megalo Box",
-  "y": "",
+  "y": 2018,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2337,7 +2333,7 @@
  },
  {
   "t": "Kuroko’s Basketball",
-  "y": "",
+  "y": 2012,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2359,7 +2355,7 @@
  },
  {
   "t": "Captain Tsubasa",
-  "y": "",
+  "y": 1983,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2381,7 +2377,7 @@
  },
  {
   "t": "Prince of Tennis",
-  "y": "",
+  "y": 2001,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2403,7 +2399,7 @@
  },
  {
   "t": "Yowamushi Pedal",
-  "y": "",
+  "y": 2013,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2427,7 +2423,7 @@
  },
  {
   "t": "Ahiru no Sora",
-  "y": "",
+  "y": 2019,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2451,7 +2447,7 @@
  },
  {
   "t": "Spirited Away",
-  "y": "",
+  "y": 2001,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2476,7 +2472,7 @@
  },
  {
   "t": "Princess Mononoke",
-  "y": "",
+  "y": 1997,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2499,7 +2495,7 @@
  },
  {
   "t": "Howl’s Moving Castle",
-  "y": "",
+  "y": 2004,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2521,7 +2517,7 @@
  },
  {
   "t": "My Neighbor Totoro",
-  "y": "",
+  "y": 1988,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2543,7 +2539,7 @@
  },
  {
   "t": "Grave of the Fireflies",
-  "y": "",
+  "y": 1988,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2566,7 +2562,7 @@
  },
  {
   "t": "Ponyo",
-  "y": "",
+  "y": 2008,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2588,7 +2584,7 @@
  },
  {
   "t": "Suzume",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2615,7 +2611,7 @@
  },
  {
   "t": "Weathering With You",
-  "y": "",
+  "y": 2019,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2642,7 +2638,7 @@
  },
  {
   "t": "5 Centimeters per Second",
-  "y": "",
+  "y": 2007,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2667,7 +2663,7 @@
  },
  {
   "t": "The Garden of Words",
-  "y": "",
+  "y": 2013,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2689,7 +2685,7 @@
  },
  {
   "t": "A Silent Voice",
-  "y": "",
+  "y": 2009,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2713,7 +2709,7 @@
  },
  {
   "t": "Jujutsu Kaisen 0",
-  "y": "",
+  "y": 2021,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2758,7 +2754,7 @@
  },
  {
   "t": "Dragon Ball Super: Super Hero",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2780,7 +2776,7 @@
  },
  {
   "t": "Dragon Ball Super: Broly",
-  "y": "",
+  "y": 2018,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2802,7 +2798,7 @@
  },
  {
   "t": "One Piece Film: Red",
-  "y": "",
+  "y": 2022,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2824,7 +2820,7 @@
  },
  {
   "t": "Black Clover: Sword of the Wizard King",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2846,7 +2842,7 @@
  },
  {
   "t": "SPY x FAMILY CODE: White",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2870,7 +2866,7 @@
  },
  {
   "t": "Stand by Me Doraemon",
-  "y": "",
+  "y": 2014,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2892,7 +2888,7 @@
  },
  {
   "t": "Stand by Me Doraemon 2",
-  "y": "",
+  "y": 2020,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2914,7 +2910,7 @@
  },
  {
   "t": "The Boy and the Heron",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Movie",
   "g": [
@@ -2936,7 +2932,7 @@
  },
  {
   "t": "Doraemon",
-  "y": "",
+  "y": 1979,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2958,7 +2954,7 @@
  },
  {
   "t": "Shin",
-  "y": "",
+  "y": 2023,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -2984,7 +2980,7 @@
  },
  {
   "t": "Ninja Hattori",
-  "y": "",
+  "y": 1981,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -3008,7 +3004,7 @@
  },
  {
   "t": "Perman",
-  "y": "",
+  "y": 1983,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -3054,7 +3050,7 @@
  },
  {
   "t": "Kochira Katsushika-ku Kameari Koen Mae Hashutsujo",
-  "y": "",
+  "y": 1996,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -3144,7 +3140,7 @@
  },
  {
   "t": "Digimon Adventure",
-  "y": "",
+  "y": 1999,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -3166,7 +3162,7 @@
  },
  {
   "t": "Yu",
-  "y": "",
+  "y": 2003,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -3212,7 +3208,7 @@
  },
  {
   "t": "Cardcaptor Sakura",
-  "y": "",
+  "y": 1998,
   "cat": "anime",
   "type": "Series",
   "g": [
@@ -3258,7 +3254,7 @@
  },
  {
   "t": "Atashin'chi",
-  "y": "",
+  "y": 2002,
   "cat": "anime",
   "type": "Series",
   "g": [
