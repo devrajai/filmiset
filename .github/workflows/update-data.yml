@@ -49,7 +49,7 @@ jobs:
       - name: Posters for the IMDb rows (rolling, TMDB by IMDb id)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_posters_tmdb.py --limit 300000 --per-run 12000
+        run: python3 scripts/fetch_posters_tmdb.py --limit 600000 --per-run 50000 --workers 12
       - name: Download + compress posters locally
         run: python3 scripts/download_posters.py --workers 2 --delay 0.35
       - name: Build Excel backup
