@@ -929,7 +929,35 @@
   "note": "Prime Video Master Catalog · 3. Amazon Hollywood Original & Flagship English Series Global Sci-Fi, Superheroes, High Fantasy & Dark Comedies"
  },
  {
-  "t": "Bosch & Bosch: Legacy",
+  "t": "Bosch",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "English"
+  ],
+  "o": [
+   "Prime Video"
+  ],
+  "poster": "",
+  "ov": "Michael Connelly LAPD Detective Noir",
+  "dir": "Complete Sagas",
+  "cast": [
+   "Titus Welliver",
+   "Jamie Hector",
+   "Mimi Rogers"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Prime Video Master Catalog · 3. Amazon Hollywood Original & Flagship English Series Global Sci-Fi, Superheroes, High Fantasy & Dark Comedies"
+ },
+ {
+  "t": "Bosch: Legacy",
   "y": "",
   "cat": "english-dubbed",
   "type": "Series",
@@ -1289,32 +1317,6 @@
   "cast": [
    "Karl Urban",
    "Antony Starr (Famous for colloquial Hindi dubs)"
-  ],
-  "src": "curated",
-  "status": "released",
-  "note": "Prime Video Master Catalog · 5. Hollywood Content Dubbed in Hindi on Amazon Global Blockbusters with Dedicated Hindi Dialogue Tracks"
- },
- {
-  "t": "Title (Movies & Series)",
-  "y": "",
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [
-   "Prime Video"
-  ],
-  "poster": "",
-  "ov": "Audio Options",
-  "dir": "Type",
-  "cast": [
-   "Cast & Hindi Localization Context"
   ],
   "src": "curated",
   "status": "released",

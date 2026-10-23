@@ -1,6 +1,33 @@
 [
  {
-  "t": "Special OPS & Special OPS 1.5",
+  "t": "Special OPS",
+  "y": "",
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "poster": "",
+  "ov": "R&AW 19-Year Terror Manhunt",
+  "dir": "Neeraj Pandey, Shiv Rawail",
+  "cast": [
+   "Kay Kay Menon",
+   "Vinay Pathak",
+   "Karan Tacker"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "JioHotstar Master Catalog · 1. Hotstar Specials: Original Hindi Web Series Critically Acclaimed Thrillers, Courtroom & Espionage Dramas"
+ },
+ {
+  "t": "Special OPS 1.5",
   "y": "",
   "cat": "hindi",
   "type": "Series",
@@ -864,7 +891,33 @@
   "note": "JioHotstar Master Catalog · 3. Flagship English Hollywood Web Series: Disney, Marvel,"
  },
  {
-  "t": "Avatar & Avatar: The Way of Water",
+  "t": "Avatar",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "English"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "poster": "",
+  "ov": "Top-Grossing Global Sagas",
+  "dir": "20th Century",
+  "cast": [
+   "James Cameron; Sam Worthington",
+   "Zoe Saldaña"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "JioHotstar Master Catalog · 4. Hollywood Movies: Disney, Marvel, Star Wars, Pixar & 20th Century All-Time Global Box-Office Record Holders"
+ },
+ {
+  "t": "Avatar: The Way of Water",
   "y": "",
   "cat": "english-dubbed",
   "type": "Movie",
@@ -1018,7 +1071,33 @@
   "note": "JioHotstar Master Catalog · 4. Hollywood Movies: Disney, Marvel, Star Wars, Pixar & 20th Century All-Time Global Box-Office Record Holders"
  },
  {
-  "t": "Inside Out & Inside Out 2",
+  "t": "Inside Out",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Animation"
+  ],
+  "m": [],
+  "a": [
+   "English"
+  ],
+  "o": [
+   "JioHotstar"
+  ],
+  "poster": "",
+  "ov": "Highest-Grossing Animation in History",
+  "dir": "Pixar Animation",
+  "cast": [
+   "Kelsey Mann; Amy Poehler",
+   "Maya Hawke"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "JioHotstar Master Catalog · 4. Hollywood Movies: Disney, Marvel, Star Wars, Pixar & 20th Century All-Time Global Box-Office Record Holders"
+ },
+ {
+  "t": "Inside Out 2",
   "y": 2024,
   "cat": "english-dubbed",
   "type": "Movie",
@@ -1166,32 +1245,6 @@
   "dir": "Franchise",
   "cast": [
    "Iron Man to Deadpool & Wolverine (Full Sacred Timeline in Hindi)"
-  ],
-  "src": "curated",
-  "status": "released",
-  "note": "JioHotstar Master Catalog · 5. Hollywood Content Dubbed in Hindi on Hotstar Master Hindi Voice Localization & Celebrity Castings"
- },
- {
-  "t": "Title (Movies & Series)",
-  "y": "",
-  "cat": "english-dubbed",
-  "type": "Movie",
-  "g": [
-   "Drama"
-  ],
-  "m": [],
-  "a": [
-   "Hindi (dub)",
-   "English"
-  ],
-  "o": [
-   "JioHotstar"
-  ],
-  "poster": "",
-  "ov": "Audio Specifications",
-  "dir": "Type",
-  "cast": [
-   "Cast & Hindi Voice Localization Context"
   ],
   "src": "curated",
   "status": "released",

@@ -28,7 +28,35 @@
   "note": "Netflix Hollywood Hindi-Dubbed Catalog"
  },
  {
-  "t": "Extraction & Extraction 2",
+  "t": "Extraction",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "Tactical Mercenary Action",
+  "dir": "Sam Hargrave",
+  "cast": [
+   "Chris Hemsworth",
+   "Golshifteh F.",
+   "Randeep Hooda"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Netflix Hollywood Hindi-Dubbed Catalog"
+ },
+ {
+  "t": "Extraction 2",
   "y": "",
   "cat": "english-dubbed",
   "type": "Movie",
@@ -142,7 +170,35 @@
   "note": "Netflix Hollywood Hindi-Dubbed Catalog"
  },
  {
-  "t": "Bird Box & Bird Box Barcelona",
+  "t": "Bird Box",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "Acoustic Horror Survival",
+  "dir": "Susanne Bier / Pastor Bros.",
+  "cast": [
+   "Sandra Bullock",
+   "Trevante Rhodes",
+   "Mario Casas"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Netflix Hollywood Hindi-Dubbed Catalog"
+ },
+ {
+  "t": "Bird Box Barcelona",
   "y": "",
   "cat": "english-dubbed",
   "type": "Movie",
@@ -255,7 +311,35 @@
   "note": "Netflix Hollywood Hindi-Dubbed Catalog"
  },
  {
-  "t": "Enola Holmes & Enola Holmes 2",
+  "t": "Enola Holmes",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "Victorian Detective Mystery",
+  "dir": "Harry Bradbeer",
+  "cast": [
+   "Millie Bobby Brown",
+   "Henry Cavill",
+   "Helena Bonham C."
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Netflix Hollywood Hindi-Dubbed Catalog"
+ },
+ {
+  "t": "Enola Holmes 2",
   "y": "",
   "cat": "english-dubbed",
   "type": "Movie",
@@ -1351,7 +1435,34 @@
   "note": "Netflix Hollywood Hindi-Dubbed Catalog"
  },
  {
-  "t": "Narcos & Narcos: Mexico",
+  "t": "Narcos",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [
+   "Netflix"
+  ],
+  "poster": "",
+  "ov": "Pascal, Diego Luna, Cocaine Cartel Historic Sagas",
+  "dir": "Complete Series",
+  "cast": [
+   "Wagner Moura",
+   "Pedro Michael Peña"
+  ],
+  "src": "curated",
+  "status": "released",
+  "note": "Netflix Hollywood Hindi-Dubbed Catalog"
+ },
+ {
+  "t": "Narcos: Mexico",
   "y": "",
   "cat": "english-dubbed",
   "type": "Series",

@@ -398,7 +398,7 @@
   "status": "released"
  },
  {
-  "t": "Bleach: Thousand",
+  "t": "Bleach: Thousand-Year Blood War",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -530,7 +530,7 @@
   "status": "released"
  },
  {
-  "t": "Hell’s Paradise (Jigokuraku)",
+  "t": "Hell's Paradise",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -999,7 +999,7 @@
   "status": "released"
  },
  {
-  "t": "Erased (Boku dake ga Inai Machi)",
+  "t": "Erased",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -1142,7 +1142,7 @@
   "status": "released"
  },
  {
-  "t": "Ajin: Demi",
+  "t": "Ajin: Demi-Human",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -1302,7 +1302,7 @@
   "status": "released"
  },
  {
-  "t": "Re:ZERO",
+  "t": "Re:Zero - Starting Life in Another World",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -1348,7 +1348,7 @@
   "status": "released"
  },
  {
-  "t": "Delicious in Dungeon (Dungeon Meshi)",
+  "t": "Delicious in Dungeon",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -1458,7 +1458,7 @@
   "status": "released"
  },
  {
-  "t": "I Was Reincarnated as the 7th Prince",
+  "t": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -1753,7 +1753,7 @@
   "status": "released"
  },
  {
-  "t": "My Dress",
+  "t": "My Dress-Up Darling",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -2078,7 +2078,7 @@
   "status": "released"
  },
  {
-  "t": "My Love Story with Yamada",
+  "t": "My Love Story with Yamada-kun at Lv999",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -2224,7 +2224,7 @@
   "status": "released"
  },
  {
-  "t": "Haikyu!!",
+  "t": "Haikyuu!!",
   "y": "",
   "cat": "anime",
   "type": "Series",
@@ -2688,7 +2688,7 @@
   "status": "released"
  },
  {
-  "t": "A Silent Voice (Koe no Katachi)",
+  "t": "A Silent Voice",
   "y": "",
   "cat": "anime",
   "type": "Movie",
@@ -2869,7 +2869,29 @@
   "status": "released"
  },
  {
-  "t": "Stand by Me Doraemon & Stand by Me Doraemon 2",
+  "t": "Stand by Me Doraemon",
+  "y": "",
+  "cat": "anime",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "Japanese"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "3D CGI films detailing Doraemon's arrival and Nobita’s wedding to Shizuka.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Stand by Me Doraemon 2",
   "y": "",
   "cat": "anime",
   "type": "Movie",
@@ -3031,7 +3053,7 @@
   "status": "released"
  },
  {
-  "t": "Kochikame (Kochira Katsushika",
+  "t": "Kochira Katsushika-ku Kameari Koen Mae Hashutsujo",
   "y": "",
   "cat": "anime",
   "type": "Series",
