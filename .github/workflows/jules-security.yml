@@ -1,0 +1,79 @@
+name: Jules security audit
+
+# A daily security pass over a PUBLIC repo.
+#
+# Public-repo safety rules baked into this file:
+#   * it only ever runs on a schedule or a manual dispatch — NEVER on issues or on
+#     pull_request_target, because anyone can open an issue in a public repo and that
+#     would let a stranger spend your Jules quota and run code with your key.
+#   * the job gets `contents: read` only. It never writes with GITHUB_TOKEN.
+#   * the API key comes from the JULES_API_KEY repository secret and is never echoed.
+#   * secrets are not exposed to fork pull requests, so a forked PR cannot read the key.
+#
+# Setup: the same JULES_API_KEY secret the daily maintenance job uses.
+# Until it exists this workflow skips instead of failing.
+
+on:
+  schedule:
+    - cron: '0 3 * * *'      # 08:30 IST, just after the maintenance run
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Is the Jules key present?
+        id: check
+        run: echo "have=${{ secrets.JULES_API_KEY != '' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Invoke Jules for a security audit
+        if: steps.check.outputs.have == 'true'
+        uses: google-labs-code/jules-invoke@v1.0.0
+        with:
+          jules_api_key: ${{ secrets.JULES_API_KEY }}
+          starting_branch: main
+          include_commit_log: true
+          prompt: |
+            You are the FilmiSet security agent. This is a PUBLIC repository serving a free
+            static movie-discovery site from GitHub Pages. Read docs/JULES_TASKS.md first for
+            the file map and the rules.
+
+            Audit, in this order of severity, and fix only what you can prove is wrong:
+
+            CRITICAL
+            - Any hard-coded secret, API key, token or password in ANY file (index.html,
+              scripts/, workflows, data/). The TMDB and Jules keys must only ever live in
+              GitHub Actions secrets.
+            - Cross-site scripting in index.html. The page builds cards and the detail window
+              with innerHTML from data that comes from remote sources (the Google Sheet shards,
+              TMDB, IMDb, Wikidata). Anything that reaches innerHTML must be escaped. Check
+              every interpolation of a title, genre, cast name, overview, poster URL and OTT
+              name; report each unescaped one you find and fix it with a proper escape helper.
+            - A remote value being put into a URL (href/src) without encoding — e.g. building a
+              poster URL, a YouTube link or an OTT search link from a title.
+
+            HIGH
+            - External links missing rel="noopener".
+            - The gviz query builder: a search term is interpolated into a query string. Make
+              sure a quote, backslash or newline in the search box cannot break out of it.
+            - Anything in .github/workflows that could let an untrusted person run code or
+              spend the Jules key — especially any trigger on issues, issue_comment or
+              pull_request_target, and any workflow that echoes a secret.
+            - The service worker caching something it should not, or serving stale HTML forever.
+
+            MEDIUM
+            - Missing security headers the site can control (it is static, so focus on
+              referrer policy and anything set in index.html).
+            - Over-broad workflow permissions.
+
+            How to work:
+            - Open AT MOST ONE pull request, titled "security: <the most severe issue fixed>".
+            - Fix the single highest-severity issue you can prove. Keep it under ~80 changed
+              lines, ideally in one file.
+            - In the PR body: the issue, the concrete attack it enables, the fix, and how you
+              verified it. If you find nothing, open no PR and say "no security issues found".
+
+            Never: add a dependency, add npm or a build step, commit a secret, add a piracy or
+            unofficial streaming link, or merge anything yourself.

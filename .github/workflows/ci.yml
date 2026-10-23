@@ -49,3 +49,29 @@ jobs:
             exit 1
           fi
           echo "no hard-coded keys found"
+      - name: Secret scan across the whole repo (gitleaks)
+        run: |
+          curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz \
+            | tar -xz gitleaks
+          ./gitleaks detect --source . --no-git --redact -v
+      - name: Workflows must not be triggerable by strangers
+        run: |
+          python3 - <<'PY'
+          import glob, sys, re
+          bad = []
+          for f in glob.glob(".github/workflows/*.yml"):
+              t = open(f, encoding="utf-8").read()
+              head = t.split("jobs:", 1)[0]
+              for trig in ("issues:", "issue_comment:", "pull_request_target:"):
+                  if re.search(r"^\s*" + re.escape(trig), head, re.M):
+                      bad.append(f"{f}: uses {trig} — anyone could trigger it in a public repo")
+              if "secrets." in t and "echo" in t:
+                  for line in t.splitlines():
+                      if "echo" in line and "secrets." in line:
+                          bad.append(f"{f}: echoes a secret -> {line.strip()[:70]}")
+          if bad:
+              print("FAILED:")
+              for b in bad: print("  -", b)
+              sys.exit(1)
+          print("workflow triggers and secret handling look safe")
+          PY
