@@ -324,6 +324,29 @@ const CATS = {
 
 const MOODS = ['Feel-Good','Comedy','Romantic','Thriller','Mystery','Action','Emotional','Horror','Nostalgic','Family'];
 
+/* Wikidata stores genres as long sentence-case labels — "Thriller television series",
+   "Lgbt-related television series". Shorten them for display, and drop repeats that only
+   differed by the suffix. Filtering still uses the raw genre strings. */
+const GENRE_FIX = {'lgbt':'LGBT','lgbtq':'LGBTQ','sci fi':'Sci-Fi','film noir':'Film Noir','black and white':'B&W'};
+function gLabel(g){
+  let s = String(g == null ? '' : g).trim();
+  if(!s) return '';
+  s = s.replace(/\s*[-\u2013]?\s*(television series|tv series|web series|series|film|movie|picture)\s*$/i, '');
+  s = s.replace(/[-\u2013]\s*related\s*$/i, '').trim();
+  if(!s) return String(g).trim();
+  const k = s.toLowerCase();
+  if(GENRE_FIX[k]) return GENRE_FIX[k];
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+function gList(d){
+  const seen = new Set(), out = [];
+  (d.g || []).forEach(x => {
+    const l = gLabel(x), k = l.toLowerCase();
+    if(l && !seen.has(k)){ seen.add(k); out.push(l); }
+  });
+  return out.slice(0, 3);
+}
+
 /* Moods are DERIVED from the genres every row already has, so the mood filter works for all
    2.4M IMDb rows too — not only the handful of curated titles that carry an explicit list.
    No external service, no key, instant. */
@@ -832,7 +855,7 @@ function setMeta(prop, val){
 }
 function setOg(d){
   setMeta('og:title', d ? d.t+(d.y?' ('+d.y+')':'')+' \u2014 FilmiSet' : 'FilmiSet \u2014 Kya Dekhein?');
-  setMeta('og:description', d ? (d.ov || (d.g||[]).join(', ') || 'FilmiSet') : 'Mood bolo, hum dikha denge.');
+  setMeta('og:description', d ? (d.ov || gList(d).join(', ') || 'FilmiSet') : 'Mood bolo, hum dikha denge.');
   try{ setMeta('og:url', location.href.split('#')[0]); }catch(e){}
   let img='';
   try{ img = (d && d.poster) ? new URL(d.poster, location.href).href : ''; }catch(e){}
@@ -855,7 +878,7 @@ function openModal(d, fromPop){
     + (d.poster? '<img src="'+d.poster+'" alt="" onerror="this.remove()">':'')
     + '<h3>'+d.t+'</h3>'
     + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(d.rt?' · '+d.rt+' min':'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
-    + '<div class="m" style="margin-top:6px">'+[(d.g||[]).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
+    + '<div class="m" style="margin-top:6px">'+[gList(d).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
     + (d.ov? '<p>'+d.ov+'</p>':(d.note? '<p>'+d.note+'</p>':''))
     + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
         + [d.dir?'Director: '+d.dir:'', d.prod?'Studio: '+d.prod:'',
@@ -909,7 +932,7 @@ function renderVibe(){
   el.hidden=false;
   el.innerHTML=(d.poster?'<img src="'+d.poster+'" alt="">':'')
     + '<div class="vt"><span>Aaj ka vibe</span><b>'+d.t+'</b>'
-    + '<p>'+[(d.date?fmtDate(d.date):d.y),(d.g||[]).join(', '),(d.rtg?'\u2605 '+d.rtg:'')].filter(Boolean).join(' · ')+'</p></div>'
+    + '<p>'+[(d.date?fmtDate(d.date):d.y),gList(d).join(', '),(d.rtg?'\u2605 '+d.rtg:'')].filter(Boolean).join(' · ')+'</p></div>'
     + '<button class="hbtn" data-vibe="'+esc(d.t)+'">Details</button>';
   const vb=el.querySelector('[data-vibe]'); if(vb) vb.onclick=()=>openModal(d);
 }
@@ -1133,7 +1156,7 @@ function render(){
       + '</div>'
       + '<div class="cardbody">'
         + '<h4>'+d.t+'</h4>'
-        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.irt?' · IMDb '+d.irt:(d.rtg?' · \u2605'+d.rtg:''))+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+d.g.join(', ')+'</div>'
+        + '<div class="meta">'+((d.date && !isYT) ? fmtDate(d.date) : d.y)+(d.rt?' · '+d.rt+'m':'')+(d.irt?' · IMDb '+d.irt:(d.rtg?' · \u2605'+d.rtg:''))+(d.cert?' · '+d.cert:'')+' · '+(isYT && d.channel ? d.channel+' · ' : '')+gList(d).join(', ')+'</div>'
         + (d.ov? '<div class="sum">'+d.ov+'</div>':'')
         + '<div class="tags">'+moods+'</div>'
         + '<div class="tags">'+audio+'</div>'
@@ -1306,7 +1329,8 @@ Promise.all([
   fetch('data/curated_hindi.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_hollywood.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries]) => {
+  fetch('data/curated_hollywood_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -1316,6 +1340,7 @@ Promise.all([
   mergeSets(classicsHindi);          // curated landmark Hindi films
   mergeSets(hollywoodHindi);         // curated Hollywood films dubbed in Hindi
   mergeSets(hindiSeries);            // curated Hindi web series (one row per show)
+  mergeSets(hollywoodSeries);        // curated Hollywood series with Hindi dubs
   boot();
 }).catch(boot);
 </script>

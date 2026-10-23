@@ -1,0 +1,3361 @@
+[
+ {
+  "t": "Loki",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The God of Mischief slips through time anomalies working with the Time Variance Authority.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "WandaVision",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Action"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Wanda Maximoff traps a suburban town in classic sitcom decades to process unbearable grief.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Falcon and the Winter Soldier",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sam Wilson and Bucky Barnes face the Flag Smashers to honor Captain America’s shield.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hawkeye",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Clint Barton mentors Kate Bishop in New York during Christmas while confronting his Ronin past.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Moon Knight",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gift shop clerk Steven Grant discovers his dissociative identity disorder and ancient Egyptian avatar Marc Spector.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ms. Marvel",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Jersey City teen Kamala Khan gains cosmic hard-light powers connected to her South Asian ancestry.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "She",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hulk: Attorney at Law – Jennifer Walters balances superhuman legal defense cases with her 6-foot-7 green persona.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Secret Invasion",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Nick Fury uncovers a faction of shape-shifting Skrulls infiltrating Earth's highest defense offices.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Echo",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Maya Lopez returns to her Oklahoma roots while pursued by Wilson Fisk's criminal syndicate.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Agatha All Along",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Agatha Harkness navigates the perilous Witches' Road to reclaim her stripped magic.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Daredevil",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Blind lawyer Matt Murdock fights Wilson Fisk and the Hand in Hell's Kitchen as a masked vigilante.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jessica Jones",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A cynical private investigator with superhuman strength confronts her mind-controlling tormentor, Kilgrave.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Luke Cage",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Action"
+  ],
+  "m": [
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A bulletproof ex-con defends Harlem against corrupt politicians and street crime lords.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Iron Fist",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Danny Rand returns to New York after 15 years armed with the glowing mystical power of the Iron Fist.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Defenders",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Daredevil, Jessica Jones, Luke Cage, and Iron Fist unite to save New York from destruction.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Punisher",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Thriller",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Frank Castle wages an unrelenting military-grade crusade to avenge the murder of his family.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Daredevil: Born Again",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Matt Murdock and Mayor Wilson Fisk clash anew over the legal and criminal soul of New York.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Agents of S.H.I.E.L.D.",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Phil Coulson leads a mobile tactical team investigating classified global superhuman phenomena.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Agent Carter",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Peggy Carter balances administrative post-war SSR tasks with covert operations for Howard Stark.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Runaways",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Six teenagers discover their wealthy parents belong to a villainous occult syndicate called the Pride.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Cloak & Dagger",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Two teens from different walks of life discover their newly awakened complementary powers.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Inhumans",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Royal superhuman family members are exiled from their lunar city to Hawaii following a military coup.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Legion",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "David Haller uncovers that his diagnosed schizophrenia is actually world-altering psychic power.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Gifted",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An ordinary family goes on the run after discovering their children possess active mutant genes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Boys",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Corrupt corporate superheroes owned by Vought are countered by a raw, unhinged civilian black-ops squad.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gen V",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "College-age supes at Godolkin University uncover sinister laboratory experiments inside The Woods.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Invincible",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mark Grayson discovers his superhero father Omni-Man hides a brutal alien conquest secret.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Peacemaker",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Christopher Smith joins Project Butterfly to eliminate parasitic alien invaders threatening the world.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Watchmen",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Action"
+  ],
+  "m": [
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Masked police officers and white supremacists clash in Tulsa under the legacy of Dr. Manhattan.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Sandman",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Morpheus, the King of Dreams, escapes a century of imprisonment to restore his decaying realm.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dead Boy Detectives",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Horror",
+   "Action"
+  ],
+  "m": [
+   "Horror"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Two teenage ghosts and a psychic medium solve supernatural murders on Earth.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sweet Tooth",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A half-human, half-deer hybrid boy journeys across a post-pandemic ruined world to find his mother.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Umbrella Academy",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Estranged adopted sibling superheroes reunite to solve their father's death and stop the apocalypse.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Lucifer",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The bored Lord of Hell abandons his throne to run a Los Angeles piano bar and assist LAPD homicides.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gotham",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Action"
+  ],
+  "m": [
+   "Thriller"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Detective Jim Gordon navigates a corrupt city as young Bruce Wayne witnesses his parents' murder.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Arrow",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Oliver Queen returns from five years stranded on a hostile island to clean up Starling City as a hooded archer.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Flash",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Forensic scientist Barry Allen gains superhuman speed, battling metahumans across Central City.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Supergirl",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Superman's cousin Kara Zor-El embraces her Kryptonian abilities to protect National City.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "DC's Legends of Tomorrow",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Time traveler Rip Hunter recruits an eccentric team of heroes and villains across historical timelines.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Lightning",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A retired superhero high school principal puts on his electrical suit again to save his neighborhood.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Batwoman",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Armed with military training and bat-gear, Ryan Wilder defends Gotham's vulnerable streets.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Superman & Lois",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Clark Kent and Lois Lane navigate modern parenting stress and small-town living in Smallville.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Titans",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dick Grayson steps out of Batman's shadow to lead a team of traumatized young meta heroes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Doom Patrol",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Disfigured social outcasts with bizarre superpowers investigate bizarre cosmic anomalies.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Swamp Thing",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "CDC doctor Abby Arcane investigates a deadly swamp-borne virus in Louisiana harboring an avatar of nature.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pennyworth",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Alfred Pennyworth establishes a private security firm in 1960s London before serving Bruce Wayne.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Krypton",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Superman’s grandfather Seg-El fights to restore honor to the House of El and save his world.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Constantine",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Demon hunter John Constantine balances his damned soul while protecting humanity from rising darkness.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Preacher",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A West Texas preacher possessed by an otherworldly entity travels across America to literally find God.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Boys Presents: Diabolical",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Animated shorts exploring the darkly violent, unethical corners of the Vought universe.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jupiter's Legacy",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "First-generation aging superheroes struggle to pass the moral torch to their disillusioned children.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Locke & Key",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Action"
+  ],
+  "m": [
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Three siblings unlock reality-bending magical keys inside their ancestral family manor.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Raising Dion",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A single mother protects her young son as he develops unpredictable superhero telekinesis.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Warrior Nun",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An orphaned quadriplegic girl wakes up in a morgue with a divine angel's halo embedded in her back.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "I Am Not Okay with This",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A teenage girl navigates high-school anxieties alongside sudden, volatile telekinetic outbursts.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Extraordinary",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "In a world where everyone gets a superpower at 18, a 25-year-old struggles with having none.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Powers",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Homicide detectives investigate crimes involving humans with superhuman abilities called \"Powers\".",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Heroes",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ordinary people across the globe discover they have abilities and unite to save a cheerleader and the world.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Heroes Reborn",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A new generation of extraordinary beings goes into hiding as government agencies hunt them down.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Marvel's Hit",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Horror",
+   "Action"
+  ],
+  "m": [
+   "Horror"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Monkey – A wronged Japanese macaque guided by the ghost of an American assassin takes down Tokyo’s yakuza.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Game of Thrones",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Noble families feud for the Iron Throne of Westeros while an ancient icy menace marches south.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "House of the Dragon",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Targaryen civil war, known as the Dance of the Dragons, fractures royal dynasty rule.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Lord of the Rings: The Rings of Power",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The forging of the Rings of Power during Middle-earth’s Second Age against rising Sauron.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Witcher",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Geralt of Rivia, a mutated monster hunter, navigates a continent where humans often prove more beastly.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Witcher: Blood Origin",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The creation of the first prototype Witcher and the celestial Conjunction of the Spheres.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Wheel of Time",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Moiraine guides five young villagers, one of whom is the reincarnated Dragon Reborn.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shadow and Bone",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Orphan mapmaker Alina Starkov unleashes radiant sun-summoning power capable of cleaving the Shadow Fold.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Carnival Row",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Crime"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A human detective and a refugee fae rekindle a dangerous affair amid Victorian fantasy serial killings.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "His Dark Materials",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Lyra's search for a kidnapped friend uncovers cosmic Dust and parallel multiverse worlds.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Percy Jackson and the Olympians",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A modern demigod son of Poseidon is accused of stealing Zeus’s master lightning bolt.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "One Piece (Live Action)",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Monkey D. Luffy sets sail with his ragtag Straw Hat pirate crew in search of the legendary treasure.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Avatar: The Last Airbender (Live Action)",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Young airbender Aang masters all four elemental arts to stop the destructive Fire Nation.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Letter for the King",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A novice knight is entrusted with carrying a secret letter to the monarch to prevent catastrophe.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Cursed",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Nimue embraces her destiny to wield the ancestral sword Excalibur before Arthurian legend emerges.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Shannara Chronicles",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Elves and humans embark on a perilous quest to protect the ancient Ellcrys tree from demons.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Fate: The Winx Saga",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Fairies at Alfea boarding school master elemental magic while facing ancient Burned Ones.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Willow",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An aspiring sorcerer leads an unlikely group of young heroes on a rescue mission beyond the Shattered Dunes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "American Gods",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shadow Moon is released from prison and hired as bodyguard to Mr. Wednesday, an incarnation of Odin.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Good Omens",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An angel and a demon who enjoy their comfortable Earthly lifestyle team up to stop Armageddon.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Britannia",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Roman legions invade the mystical shores of Britain ruled by wild Celtic warrior queens and Druids.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Outpost",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Talon, the sole survivor of the Blackblood race, tracks her family’s killers to a lawless frontier fortress.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Merlin",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Young wizard Merlin conceals his magical arts while serving the stubborn Prince Arthur in Camelot.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Atlantis",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A modern man washed ashore in ancient mythological Atlantis encounters Hercules and Pythagoras.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Robin Hood (BBC)",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Robin of Locksley returns from the Crusades to lead outlaw resistance against the Sheriff of Nottingham.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Legend of the Seeker",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Woodsman Richard Cypher is guided by a wizard to wield the Sword of Truth against a tyrant.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Once Upon a Time",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Fairy-tale characters are trapped in our real-world Maine town with their memories wiped by a curse.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Magicians",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Students admitted to Brakebills University discover the secret magical kingdom from childhood books is real and deadly.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "A Discovery of Witches",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Horror",
+   "Fantasy"
+  ],
+  "m": [
+   "Horror",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A historian witch discovers an enchanted alchemical manuscript, partnering with a geneticist vampire.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Nevers",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Horror",
+   "Fantasy"
+  ],
+  "m": [
+   "Horror",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Victorian women suddenly gifted with abnormal supernatural abilities champion London's outcasts.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Emerald City",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Fantasy"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A modern police officer is swept by a tornado into a dark, technologically divided land of Oz.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Beowulf: Return to the Shieldlands",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The legendary mercenary warrior defends the Great Hall of Herot from Grendel creatures.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Camelot",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "King Arthur ascends to the throne amid political manipulation by the sorceress Morgan le Fay.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Troy: Fall of a City",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Paris and Helen’s forbidden love triggers the ten-year Greek military siege of Troy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hercules: The Legendary Journeys",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The mythical Greek demigod travels ancient landscapes defending mortals from monsters.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Xena: Warrior Princess",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A reformed warrior woman and her companion Gabrielle seek redemption across mythical lands.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spartacus: Blood and Sand",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A Thracian gladiator is forced into brutal Ludus arena slavery before igniting an empire revolt.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spartacus: Gods of the Arena",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The rise of the House of Batiatus and arena champion Gannicus before Spartacus's arrival.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spartacus: Vengeance",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rebel gladiators wage guerrilla warfare against Roman legions sent to slaughter them.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spartacus: War of the Damned",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Spartacus faces the ruthless financial and military might of Marcus Licinius Crassus.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Rome",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Soldiers Lucius Vorenus and Titus Pullo witness the death of the Roman Republic and Caesar's rise.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Domina",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Livia Drusilla navigates political assassinations and blood feuds to become Rome’s most influential empress.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Knightfall",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Knights Templar search for the lost Holy Grail as King Philip IV plots their downfall.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Last Kingdom",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Saxon-born Uhtred of Bebbanburg, raised by Danish Vikings, fights to reclaim his ancestral birthright.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Last Kingdom: Seven Kings Must Die",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Uhtred fights to unite England following the death of King Edward.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Vikings",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ragnar Lothbrok rises from simple farmer to legendary Norse king raiding England and France.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Vikings: Valhalla",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Leif Erikson, Freydís Eiríksdóttir, and Harald Hardrada forge legendary paths as the Viking Age wanes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Norsemen",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Deadpan dark-comedy everyday life and political schemes of an 8th-century Viking village.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Frontier",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Declan Harp campaigns against the Hudson's Bay Company's corrupt fur trade monopoly in 1700s Canada.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Sails",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Captain Flint and John Silver fight for the survival of New Providence Island during piracy's golden age.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Crossbones",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Thriller",
+   "Fantasy"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Legendary pirate Blackbeard commands an outlaw haven on Santa Campana using high-seas espionage.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Our Flag Means Death",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Aristocrat Stede Bonnet abandons high society to become an eccentric gentleman pirate alongside Blackbeard.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Marco Polo",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The young Italian merchant navigates Kublai Khan's imperial court, martial arts, and Chinese conquests.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Outlander",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A WWII combat nurse is mysteriously swept back in time to 1743 Scotland, meeting Highland warrior Jamie Fraser.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Poldark",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ross Poldark returns from the American War of Independence to rebuild his ruined Cornish tin-mining estate.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sanditon",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Charlotte Heywood moves to a developing seaside resort town in this adaptation of Jane Austen's final unfinished work.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Bastard Executioner",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A 14th-century knight vows to lay down his sword, but is forced to take up the bloody executioner's axe.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Da Vinci's Demons",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Young Leonardo da Vinci uses innovative engineering and inventions amid Renaissance Vatican politics.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Borgias",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rodrigo Borgia schemes and bribes his way into becoming Pope Alexander VI, building a dynastic empire.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Medici: Masters of Florence",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The banking dynasty funds Renaissance art while fighting political rivals for Florentine control.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The White Queen",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Three ruthless women fight for the English throne during the turbulent Wars of the Roses.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The White Princess",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The union of Elizabeth of York and King Henry VII aims to bridge fractured House divisions.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Spanish Princess",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Catherine of Aragon arrives in England determined to secure her royal destiny as queen.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kaos",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Zeus grows paranoid over a wrinkle on his forehead as humans realize the Greek gods are self-absorbed tyrants.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Nautilus",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Jules Verne’s Captain Nemo escapes colonial imprisonment to build his legendary high-tech submarine.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Barbarians",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A Germanic officer torn between Roman legions and his tribal roots leads the Battle of the Teutoburg Forest.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Stranger Things",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The disappearance of a young boy uncovers secret lab experiments and the dark Upside Down.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Fallout",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A vault dweller leaves her underground nuclear bunker to traverse the bizarre, violent California wasteland.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Halo",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Master Chief John-117 battles the alien Covenant while discovering his humanity through an ancient artifact.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Westworld",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Synthetic android theme park hosts awaken to sentience and revolt against their human creators.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Last of Us",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Smuggler Joel escorts immune teen Ellie across a ruined America infected by fungal cordyceps.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Silo",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Thousands live inside a massive 144-floor subterranean silo bound by strict rules regarding the toxic outside world.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Foundation",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mathematician Hari Seldon uses psychohistory to predict the fall of the Galactic Empire and preserve knowledge.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "3 Body Problem",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Scientists across continents confront an extraterrestrial threat triggered by a 1960s secret Chinese transmission.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Mirror",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Twilight Zone-style standalone anthologies examining the disturbing, unintended consequences of modern technologies.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Altered Carbon",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Takeshi Kovacs is resleeved into a new body 250 years later to solve a wealthy immortal’s murder.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "See",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Centuries after a virus blinded humanity, twin infants born with the mythic gift of sight cause tribal warfare.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Lost in Space",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Robinson family's exploratory spacecraft crashes on an uncharted alien world alongside an alien robot.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Expanse",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Crime"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A hardened detective and a rogue ship crew uncover an alien protomolecule threatening Solar System politics.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Mandalorian",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A lone bounty hunter traverses the outer reaches of the galaxy protecting the Force-sensitive Child, Grogu.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Star Wars: Andor",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Cassian Andor transforms from a selfish scavenger into the passionate architect of the Rebel Alliance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Star Wars: Ahsoka",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Former Jedi Padawan Ahsoka Tano investigates an emerging imperial threat posed by Grand Admiral Thrawn.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Obi",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Wan Kenobi – In hiding on Tatooine, Obi-Wan embarks on a dangerous rescue mission pursued by Darth Vader and Inquisitors.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Book of Boba Fett",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The legendary armored bounty hunter takes over the Tatooine criminal empire once run by Jabba the Hutt.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Star Wars: Skeleton Crew",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Four lost children make a discovery on their home planet and journey across the dangerous galaxy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Star Wars: The Acolyte",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A Jedi Master investigates a series of shocking murders during the High Republic era.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Star Wars: The Bad Batch",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Genetically mutated Clone Force 99 takes on mercenary missions across the newly formed Empire.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "For All Mankind",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Alternate timeline history where the Soviet Union beats America to the Moon, fueling an endless space race.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Monarch: Legacy of Monsters",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Siblings follow their father’s footsteps to uncover their family’s connection to Godzilla and Monarch.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Invasion",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An extraterrestrial invasion unfolds in real time through the perspectives of ordinary people across five continents.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dark Matter (2024)",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A physicist is abducted into an alternate reality of his own life and must fight parallel versions to return.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Severance",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Employees undergo a medical procedure separating their work memories from their personal non-work memories.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Peripheral",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A young woman testing a futuristic VR headset discovers she is piloting a physical avatar in 2099 London.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Night Sky",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An elderly couple keeps a secret underground chamber that inexplicably opens onto a deserted alien planet.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Colony",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A family in occupied Los Angeles must choose between collaborating with alien transitional authorities or resisting.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Falling Skies",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "History professor Tom Mason leads civilian resistance fighters following a catastrophic extraterrestrial invasion.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The 100",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A century after a nuclear apocalypse, 100 juvenile delinquents are sent back to Earth to test its habitability.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Revolution",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Fifteen years after an unexplained worldwide blackout disables all electricity, survivors battle regional militias.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Manifest",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Passengers aboard Montego Air Flight 828 land safely, only to discover five and a half years have passed.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Travelers",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Operatives send their consciousness back to the 21st century into host bodies to prevent human extinction.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sense8",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Eight strangers across different global cities discover they are mentally and emotionally linked telepathically.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "1899",
+  "y": "",
+  "cat": "english-dubbed",
+  "type": "Series",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "European migrants sailing to New York aboard the Kerberos encounter a deserted",
+  "src": "curated",
+  "status": "released"
+ }
+]
