@@ -1178,7 +1178,7 @@ function loadPosters(){
   if(IMDB_POSTERS !== null) return;
   IMDB_POSTERS = {};
   fetch('data/imdb_posters.json').then(r => r.ok ? r.json() : null)
-    .then(m => { if(m) IMDB_POSTERS = m; })
+    .then(m => { if(m){ IMDB_POSTERS = m; render(); } })   // posters arrive -> refresh the grid
     .catch(() => {});
 }
 /* at boot, pull the most-voted titles from every shard, so the popular shows and films
@@ -1250,17 +1250,30 @@ if('serviceWorker' in navigator && (location.protocol === 'https:' || location.h
    data/jikan.json   = anime from MyAnimeList
    data/youtube.json = videos from the YouTube channels
    All optional — the embedded demo set is the fallback. */
+/* IMDb's own rows (id/title/year/type/genres/rating) are reshaped into the site's schema */
+function normImdbRows(rows){
+  return (rows || []).filter(r => r && r.t).map(r => ({
+    t: r.t, y: r.y, cat: 'imdb', type: r.type || 'Movie',
+    g: (r.g && r.g.length) ? r.g : ['Drama'], m: [], a: ['Hindi (dub)'], o: [],
+    poster: (IMDB_POSTERS && IMDB_POSTERS[r.id]) || '',
+    src: 'imdb', status: 'released', irt: r.irt || '', ivot: r.ivot || 0,
+    rt: r.rt || '', imdb: r.id || ''
+  }));
+}
 Promise.all([
   fetch('data/movies.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/catalog.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/tmdb.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/jikan.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  fetch('data/imdb_indian.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/youtube.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, yt]) => {
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, yt]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
   mergeSets(jikanRows);
+  loadPosters();
+  mergeSets(normImdbRows(indianRows));
   mergeSets(yt);
   boot();
 }).catch(boot);
