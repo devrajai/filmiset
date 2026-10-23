@@ -1,0 +1,4287 @@
+[
+ {
+  "t": "Alam Ara",
+  "y": 1931,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "India’s first sound film.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Devdas",
+  "y": 1935,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "P.C. Barua’s pioneering adaptation starring K.L. Saigal.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Achhut Kannya",
+  "y": 1936,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Landmark social drama starring Devika Rani and Ashok Kumar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kismet",
+  "y": 1943,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "India's first blockbuster featuring a charismatic anti-hero.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Neecha Nagar",
+  "y": 1946,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Social realist drama; won the Grand Prix at Cannes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kalpana",
+  "y": 1948,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Uday Shankar’s experimental dance-drama masterpiece.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chandralekha",
+  "y": 1948,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Spectacular drum dance and visual grandeur.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Andaz",
+  "y": 1949,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mehboob Khan's romantic triangle starring Dilip Kumar, Nargis, and Raj Kapoor.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mahal",
+  "y": 1949,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kamal Amrohi's atmospheric, reincarnation gothic romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Barsaat",
+  "y": 1949,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The template for classic RK Films romantic drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Babul",
+  "y": 1950,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dilip Kumar and Nargis in a poignant melodrama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jogan",
+  "y": 1950,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kidar Sharma’s philosophical romantic tragedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Awaara",
+  "y": 1951,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Kapoor's socialist tramp archetype.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Baazi",
+  "y": 1951,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Guru Dutt’s stylish noir crime drama starring Dev Anand.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aan",
+  "y": 1952,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "India’s first technicolor film release.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Baiju Bawra",
+  "y": 1952,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Classical musical conflict starring Meena Kumari and Bharat Bhushan.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jaal",
+  "y": 1952,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Coastal noir romance directed by Guru Dutt.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Do Bigha Zamin",
+  "y": 1953,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bimal Roy’s neorealist agrarian tragedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Parineeta",
+  "y": 1953,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ashok Kumar and Meena Kumari in Sarat Chandra's adaptation.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Boot Polish",
+  "y": 1954,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Uplifting neorealist story of orphan siblings.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mirza Ghalib",
+  "y": 1954,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sohrab Modi’s biopic of the legendary Urdu poet.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jagte Raho",
+  "y": 1956,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Satirical night journey of a thirsty villager trapped in a high-rise.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "CID",
+  "y": 1956,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Khosla's crisp urban detective thriller.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chori Chori",
+  "y": 1956,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Classic romantic comedy adapted from It Happened One Night.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shree 420",
+  "y": 1955,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rural innocence corrupted by urban greed.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Devdas",
+  "y": 1955,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bimal Roy’s definitive adaptation with Dilip Kumar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Munimji",
+  "y": 1955,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dev Anand and Nalini Jaywant romantic entertainer.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pyaasa",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Guru Dutt's critique of materialistic society and forgotten poets.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mother India",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "India's Oscar-nominated national epic of resilience.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Naya Daur",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Man versus machine rural drama starring Dilip Kumar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Do Aankhen Barah Haath",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "V. Shantaram's humanist prison reform classic.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Madhumati",
+  "y": 1958,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ritwik Ghatak and Bimal Roy’s ghost/reincarnation romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chalti Ka Naam Gaadi",
+  "y": 1958,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Ganguly brothers' comedy masterpiece.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kala Pani",
+  "y": 1958,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dev Anand’s quest to exonerate his wrongfully imprisoned father.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sadhna",
+  "y": 1958,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "B.R. Chopra's progressive rehabilitation drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kaagaz Ke Phool",
+  "y": 1959,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Guru Dutt’s tragic, autobiographical cinema study.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sujata",
+  "y": 1959,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bimal Roy's exploration of caste discrimination.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Anari",
+  "y": 1959,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hrishikesh Mukherjee’s simple man facing city deception.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Navrang",
+  "y": 1959,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "V. Shantaram’s tribute to poetry, dance, and music.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mughal-e-Azam",
+  "y": 1960,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "K. Asif’s monumental historical romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kanoon",
+  "y": 1960,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Music",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "B.R. Chopra’s taut, songless courtroom murder mystery.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chaudhvin Ka Chand",
+  "y": 1960,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Poetic exploration of friendship and courtly Lucknow love.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jis Desh Mein Ganga Behti Hai",
+  "y": 1960,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "RK Films’ dacoit rehabilitation drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gunga Jumna",
+  "y": 1961,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Archetypal rural brothers on opposite sides of the law.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hum Dono",
+  "y": 1961,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dev Anand in an introspective wartime double-role drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kabuliwala",
+  "y": 1961,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Heartwarming adaptation of Tagore’s story of paternal affection.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sahib Bibi Aur Ghulam",
+  "y": 1962,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Decline of Bengali feudal aristocracy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bees Saal Baad",
+  "y": 1962,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Spooky thriller loosely inspired by The Hound of the Baskervilles.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bandini",
+  "y": 1963,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bimal Roy and Nutan’s female-led prison drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gumrah",
+  "y": 1963,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "B.R. Chopra’s adult drama tackling marital infidelity.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mere Mehboob",
+  "y": 1963,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Grand Muslim social romance set in Aligarh.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Woh Kaun Thi?",
+  "y": 1964,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Khosla’s iconic psychological mystery.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sangam",
+  "y": 1964,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Kapoor’s technicolor melodrama of triangular friendship.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dosti",
+  "y": 1964,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Heartfelt chronicle of friendship between two disabled youth.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Haqeeqat",
+  "y": 1964,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Chetan Anand’s stark, realistic 1962 war drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Guide",
+  "y": 1965,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Vijay Anand’s philosophical, spiritual exploration of liberation.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Waqt",
+  "y": 1965,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra's foundational lost-and-found multi-starrer.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Teesri Manzil",
+  "y": 1966,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Stylish musical whodunit directed by Vijay Anand.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Phool Aur Patthar",
+  "y": 1966,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dharmendra’s breakthrough action-melodrama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mamta",
+  "y": 1966,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Suchitra Sen’s powerhouse courtroom-melodrama dual role.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Teesri Kasam",
+  "y": 1966,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Basu Bhattacharya’s rustic, bittersweet bullock-cart journey.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jewel Thief",
+  "y": 1967,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dev Anand’s slick caper and doppelgänger mystery.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Upkar",
+  "y": 1967,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Manoj Kumar's patriotic salute to farmers and soldiers.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Milan",
+  "y": 1967,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sunil Dutt and Nutan in a classical reincarnation drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ram Aur Shyam",
+  "y": 1967,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dilip Kumar’s defining identical-twin comedy-drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Padosan",
+  "y": 1968,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Evergreen musical comedy with Kishore Kumar and Mehmood.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aankhen",
+  "y": 1968,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ramanand Sagar’s exotic, globe-trotting spy thriller.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Saraswatichandra",
+  "y": 1968,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Govind Saraiya’s lyrical, black-and-white Gujarati adaptation.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aradhana",
+  "y": 1969,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The start of Rajesh Khanna hysteria.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ittefaq",
+  "y": 1969,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra’s edge-of-the-seat, songless single-night thriller.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bhuvan Shome",
+  "y": 1969,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mrinal Sen’s minimalist catalyst for the Indian New Wave.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Anand",
+  "y": 1971,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hrishikesh Mukherjee’s celebration of life facing mortality.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mera Naam Joker",
+  "y": 1970,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Kapoor’s ambitious, melancholic circus opus.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kati Patang",
+  "y": 1970,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shakti Samanta’s Rajesh Khanna-Asha Parekh hit drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Johny Mera Naam",
+  "y": 1970,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Vijay Anand’s sleek quintessential masala entertainer.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Khilona",
+  "y": 1970,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sanjeev Kumar and Mumtaz in an intense psychological romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Purab Aur Paschim",
+  "y": 1970,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Manoj Kumar's cultural values clash.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chetna",
+  "y": 1970,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "B.R. Ishara’s bold, taboo-shattering independent feature.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Haathi Mere Saathi",
+  "y": 1971,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Salim-Javed’s enduring animal-human family drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Amar Prem",
+  "y": 1972,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shakti Samanta’s poignant story of courtesan compassion.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pakeezah",
+  "y": 1972,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kamal Amrohi’s 14-year tribute to courtesan aesthetics and sorrow.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bawarchi",
+  "y": 1972,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rajesh Khanna uniting a fractured joint family.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Seeta Aur Geeta",
+  "y": 1972,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hema Malini’s separated-twin comedy tour de force.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Koshish",
+  "y": 1972,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gulzar’s sensitive chronicle of a deaf-mute couple.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Victoria No. 203",
+  "y": 1972,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hilarious diamond-heist buddy comedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Anubhav",
+  "y": 1971,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Basu Bhattacharya’s intimate marital chamber piece.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Piya Ka Ghar",
+  "y": 1972,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Jaya Bhaduri dealing with congested Mumbai apartment living.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Zanjeer",
+  "y": 1973,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Birth of the ‘Angry Young Man’ via Vijay Khanna.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Abhimaan",
+  "y": 1973,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Marital rivalry when the wife outshines the husband’s fame.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bobby",
+  "y": 1973,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Kapoor’s vibrant youth-rebellion romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Yaadon Ki Baaraat",
+  "y": 1973,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Nasir Hussain’s archetype of separated-brothers revenge.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Namak Haraam",
+  "y": 1973,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Class conflict between factory owner and union worker.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dharmatma",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Feroz Khan’s stylized Afghan adaptation of The Godfather.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Garam Hawa",
+  "y": 1974,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "M.S. Sathyu’s heartbreaking look at post-Partition Muslim identity.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Rajnigandha",
+  "y": 1974,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Basu Chatterjee’s gentle middle-class romantic realism.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ankur",
+  "y": 1974,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shyam Benegal’s arrival; feudal exploitation and caste defiance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Roti Kapda Aur Makaan",
+  "y": 1974,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Working-class struggle during economic distress.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aandhi",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gulzar’s political and personal reconciliation drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chupke Chupke",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hrishikesh Mukherjee’s evergreen linguistic-prank comedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Deewaar",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Salim-Javed’s clash of morality, state, and mother.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sholay",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ramesh Sippy’s legendary curry-western blockbuster.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chhoti Si Baat",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Amol Palekar learning confidence from Ashok Kumar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Nishant",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shyam Benegal’s brutal study of rural feudal tyranny.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mili",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Heartbreaking tale of terminal illness and second chances.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kabhie Kabhie",
+  "y": 1976,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra’s multi-generational romantic poetry.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Manthan",
+  "y": 1976,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Benegal's crowdfunded story of India's white revolution.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kalicharan",
+  "y": 1976,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Subhash Ghai’s breakthrough cop thriller with Shatrughan Sinha.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hera Pheri",
+  "y": 1976,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Amitabh and Vinod Khanna in a classic con-artist caper.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Amar Akbar Anthony",
+  "y": 1977,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Manmohan Desai’s peak secular masala delight.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bhumika",
+  "y": 1977,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Smita Patil’s complex portrayal of actress Hansa Wadkar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gharaonda",
+  "y": 1977,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mumbai’s harsh housing market testing a young relationship.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Inkaar",
+  "y": 1977,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Sippy’s kidnapping thriller based on Kurosawa's High and Low.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Don",
+  "y": 1978,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Chandra Barot’s sharp underworld doppelgänger thriller.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Trishul",
+  "y": 1978,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra and Salim-Javed’s illegitimate son revenge saga.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Satyam Shivam Sundaram",
+  "y": 1978,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Kapoor’s meditation on inner versus outer beauty.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Muqaddar Ka Sikandar",
+  "y": 1978,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tragic Devdas archetype reframed for 70s Bombay.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Junoon",
+  "y": 1978,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shyam Benegal’s 1857 Mutiny period romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gol Maal",
+  "y": 1979,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hrishikesh Mukherjee and Amol Palekar’s mustache masquerade.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kaala Patthar",
+  "y": 1979,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra’s Chasnala-inspired coal mine catastrophe.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mr. Natwarlal",
+  "y": 1979,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Amitabh Bachchan’s family-friendly robin hood con-artist film.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Noorie",
+  "y": 1979,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tragic rural romance set in the valleys of Bhaderwah.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aakrosh",
+  "y": 1980,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Govind Nihalani’s searing courtroom/tribal exploitation drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Karz",
+  "y": 1980,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Horror",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Subhash Ghai’s reincarnation musical-action revenge vehicle.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dostana",
+  "y": 1980,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Friendship fractured by love, starring Amitabh and Shatrughan.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shaan",
+  "y": 1980,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "James Bond-scale ambitious action spectacle with villain Shakaal.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Khubsoorat",
+  "y": 1980,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rekha brings warmth to a strictly governed household.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Insaf Ka Tarazu",
+  "y": 1980,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "B.R. Chopra's grim legal examination of sexual assault.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Silsila",
+  "y": 1981,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra’s poetic exploration of extra-marital love.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Umrao Jaan",
+  "y": 1981,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Muzaffar Ali’s authentic, melancholic courtesan portrait.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chashme Buddoor",
+  "y": 1981,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sai Paranjpye’s lighthearted Delhi student comedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kalyug",
+  "y": 1981,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shyam Benegal’s modern corporate retelling of the Mahabharata.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ek Duuje Ke Liye",
+  "y": 1981,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "K. Balachander’s tragic cross-cultural romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Laawaris",
+  "y": 1981,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Music",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Prakash Mehra’s orphan-identity action melodrama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kaalia",
+  "y": 1981,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tinu Anand’s prison-to-powerhouse action vehicle.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Angoor",
+  "y": 1982,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gulzar’s comedy of errors adapted from Shakespeare.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bazaar",
+  "y": 1982,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sagar Sarhadi’s expose of Gulf bride-buying in Hyderabad.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Arth",
+  "y": 1982,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mahesh Bhatt’s raw, personal breakdown of marriage and independence.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Namak Halaal",
+  "y": 1982,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Prakash Mehra’s laugh-out-loud comedy-actioner.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shakti",
+  "y": 1982,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dilip Kumar and Amitabh Bachchan’s ideological father-son faceoff.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Vijeta",
+  "y": 1982,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Nihalani’s coming-of-age fighter pilot drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jaane Bhi Do Yaaro",
+  "y": 1983,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kundan Shah’s legendary, nihilistic black comedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ardh Satya",
+  "y": 1983,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Om Puri as an honest cop suffocated by systemic decay.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Masoom",
+  "y": 1983,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shekhar Kapur’s gentle study of infidelity and a child’s arrival.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mandi",
+  "y": 1983,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shyam Benegal’s satirical, politically charged brothel comedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Coolie",
+  "y": 1983,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Manmohan Desai’s union-worker epic marked by Bachchan’s near-fatal injury.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sadma",
+  "y": 1983,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Balu Mahendra’s tragic romance of amnesia and heartbreak.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sparsh",
+  "y": 1984,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Naseeruddin Shah and Shabana Azmi in a sensitive romance of dignity.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Paar",
+  "y": 1984,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Goutam Ghose’s brutal survival piece with an iconic river-crossing scene.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Saaransh",
+  "y": 1984,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Anupam Kher’s heartbreaking debut as an aging father fighting grief.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sharaabi",
+  "y": 1984,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Amitabh Bachchan and Pran in an emotional alcoholic redemption tale.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jaag Utha Insan",
+  "y": 1984,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "K. Vishwanath's exploration of caste and classical dance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Damul",
+  "y": 1985,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Prakash Jha’s stark portrayal of bonded labor in Bihar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ram Teri Ganga Maili",
+  "y": 1985,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Raj Kapoor’s ecological and moral allegory.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mirch Masala",
+  "y": 1987,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ketan Mehta’s feminist defiance set in a colonial chili factory.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Naam",
+  "y": 1986,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mahesh Bhatt’s cautionary tale of illegal migration and underworld traps.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chameli Ki Shaadi",
+  "y": 1986,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Basu Chatterjee’s small-town romantic satire.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mr. India",
+  "y": 1987,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shekhar Kapur’s seamless sci-fi superhero family fantasy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ijaazat",
+  "y": 1987,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gulzar’s mature reflection on divorce, memory, and closure.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hero Hiralal",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ketan Mehta’s quirky romance between an auto driver and starlet.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Qayamat Se Qayamat Tak",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mansoor Khan resets Bollywood romance for a new generation.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Salaam Bombay!",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mira Nair’s Oscar-nominated street children chronicle.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Tezaab",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "N. Chandra’s high-octane romantic action smash.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shahenshah",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Amitabh Bachchan’s iconic dual-identity vigilante film.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Parinda",
+  "y": 1989,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Vidhu Vinod Chopra’s gritty realism redefining Mumbai underworld cinema.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Maine Pyar Kiya",
+  "y": 1989,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sooraj Barjatya revitalizes family entertainment and pure romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chandni",
+  "y": 1989,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra returns to romance, swiss landscapes, and lilting melodies.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Salim Langde Pe Mat Ro",
+  "y": 1989,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Saeed Akhtar Mirza’s sociopolitical look at urban youth.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kamla Ki Maut",
+  "y": 1989,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Basu Chatterjee’s deep dive into societal guilt and suicide.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Agneepath",
+  "y": 1990,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mukul Anand’s operatic underworld revenge thriller.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aashiqui",
+  "y": 1990,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Musical romance that set unprecedented cassette sales records.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ghayal",
+  "y": 1990,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rajkumar Santoshi and Sunny Deol’s angry anti-corruption actioner.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dil",
+  "y": 1990,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "High-voltage college romance starring Aamir Khan and Madhuri Dixit.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Lamhe",
+  "y": 1991,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra’s ahead-of-its-time exploration of cross-generational love.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Saudagar",
+  "y": 1991,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Subhash Ghai’s clash of cinematic titans: Dilip Kumar and Raaj Kumar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sadak",
+  "y": 1991,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mahesh Bhatt’s dark romantic thriller featuring Maharani.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jo Jeeta Wohi Sikandar",
+  "y": 1992,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mansoor Khan’s quintessential sports and coming-of-age classic.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Roja",
+  "y": 1992,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Romance",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mani Ratnam’s political romantic thriller featuring A.R. Rahman’s debut.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Raju Ban Gaya Gentleman",
+  "y": 1992,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Early Shah Rukh Khan navigating cutthroat Mumbai ambition.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Khiladi",
+  "y": 1992,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Abbas-Mustan’s suspense thriller that spawned Akshay Kumar’s moniker.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Damini",
+  "y": 1993,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "War",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rajkumar Santoshi’s blistering courtroom battle for justice.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Baazigar",
+  "y": 1993,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Abbas-Mustan’s high-stakes thriller casting SRK as an unapologetic anti-hero.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Darr",
+  "y": 1993,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra’s psychological obsession thriller.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gardish",
+  "y": 1993,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Priyadarshan’s tragedy of a son dragged into street violence.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kabhi Haan Kabhi Naa",
+  "y": 1994,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kundan Shah’s tender ode to the lovable loser, Sunil.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Andaz Apna Apna",
+  "y": 1994,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rajkumar Santoshi’s cult slapstick masterpiece.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hum Aapke Hain Koun..!",
+  "y": 1994,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Barjatya’s cultural phenomenon that revived theatrical distribution.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "1942: A Love Story",
+  "y": 1994,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music",
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "R.D. Burman’s swan song set against the freedom struggle.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bandit Queen",
+  "y": 1994,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shekhar Kapur’s raw, unflinching biopic of Phoolan Devi.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Karan Arjun",
+  "y": 1995,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rakesh Roshan’s blockbuster reincarnation masala saga.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bombay",
+  "y": 1995,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mani Ratnam’s harrowing look at interfaith love during the 1992-93 riots.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dilwale Dulhania Le Jayenge",
+  "y": 1995,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Aditya Chopra’s record-shattering NRI romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Rangeela",
+  "y": 1995,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ram Gopal Varma’s vibrant, technical cinematic revolution.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Maachis",
+  "y": 1996,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gulzar’s haunting study of alienation and Punjab militancy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Khamoshi: The Musical",
+  "y": 1996,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sanjay Leela Bhansali’s delicate debut about a deaf-mute family.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Raja Hindustani",
+  "y": 1996,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Small-town cab driver and heiress melodrama blockbuster.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Border",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "J.P. Dutta’s definitive 1971 Longewala war epic.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Judaai",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Greed, marriage, and moral compromise starring Sridevi.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Virasat",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Priyadarshan’s rich adaptation of rural feudal cycles and duty.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gupt",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rajiv Rai’s stylish musical whodunit with an iconic twist.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chachi 420",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kamal Haasan’s delightful adaptation of Mrs. Doubtfire.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dil To Pagal Hai",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Yash Chopra’s glossy musical celebrating musical soulmates.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pardes",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Subhash Ghai’s traditional values versus westernization drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Satya",
+  "y": 1998,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ram Gopal Varma’s gritty underworld revolution that spawned indie Mumbai cinema.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kuch Kuch Hota Hai",
+  "y": 1998,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Karan Johar’s candy-colored pop-culture defining college romance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dil Se..",
+  "y": 1998,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mani Ratnam’s poetic, political tragedy set against borderland unrest.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Zakhm",
+  "y": 1998,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mahesh Bhatt’s poignant semi-autobiographical communal drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ghulam",
+  "y": 1998,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Vikram Bhatt and Aamir Khan’s boxing and local intimidation drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Sarfarosh",
+  "y": 1999,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "John Matthew Matthan’s procedural combat against cross-border smuggling.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hum Dil De Chuke Sanam",
+  "y": 1999,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bhansali’s operatic celebration of Rajasthani color and sacrifice.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Taal",
+  "y": 1999,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Subhash Ghai and A.R. Rahman’s audio-visual musical treat.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Vaastav",
+  "y": 1999,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mahesh Manjrekar’s brutal tragedy of an innocent chawl boy turning gangster.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shool",
+  "y": 1999,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "E. Nivas and Anurag Kashyap’s gritty Bihar cop tragedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Biwi No.1",
+  "y": 1999,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "David Dhawan’s blockbuster comedy of marital errors.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kaho Naa... Pyaar Hai",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hrithik Roshan’s sensational dual-role debut.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hera Pheri",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Priyadarshan’s cult comedy of three broke misfits and a ransom call.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mohabbatein",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Romance",
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Aditya Chopra’s battle between tradition and love.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Astitva",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mahesh Manjrekar’s feminist critique of patriarchal hypocrisy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Fiza",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Khalid Mohamed’s nuanced post-riots sibling search.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Lagaan",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ashutosh Gowariker’s historic Oscar-nominated cricket resistance epic.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dil Chahta Hai",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Farhan Akhtar rewrites conversational Hindi dialogue and youth cinema.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gadar: Ek Prem Katha",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Anil Sharma’s raw emotional partition phenomenon.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kabhi Khushi Kabhie Gham...",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Karan Johar’s ultimate joint-family extravaganza.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chandni Bar",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Madhur Bhandarkar’s gritty look at Mumbai’s dance bar underbelly.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Monsoon Wedding",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mira Nair’s vibrant, layered Punjabi wedding drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Company",
+  "y": 2002,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ram Gopal Varma’s sleek, boardroom-style underworld breakdown.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Devdas",
+  "y": 2002,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bhansali’s lavish, high-voltage Cannes-premiered adaptation.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Saathiya",
+  "y": 2002,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shaad Ali’s authentic look at young marriage after elopement.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Legend of Bhagat Singh",
+  "y": 2002,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rajkumar Santoshi’s fiery historical freedom biopic.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aankhen",
+  "y": 2002,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Vipul Shah’s heist thriller featuring three blind bank robbers.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Munna Bhai M.B.B.S.",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rajkumar Hirani’s feel-good medical humanism.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kal Ho Naa Ho",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Nikhil Advani and Karan Johar’s bittersweet New York weepie.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gangaajal",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Prakash Jha’s raw exploration of mob justice and police ethics.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Koi... Mil Gaya",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rakesh Roshan’s alien sci-fi fantasy that launched Krrish.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Haasil",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tigmanshu Dhulia’s gritty student politics in Allahabad.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pinjar",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Chandra Prakash Dwivedi’s wrenching Partition abduction drama.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Maqbool",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Vishal Bhardwaj sets Shakesp",
+  "src": "curated",
+  "status": "released"
+ }
+]
