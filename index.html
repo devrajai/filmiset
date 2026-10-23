@@ -300,9 +300,6 @@
 <div class="wrap layout">
   <aside class="rail" id="rail">
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
-    <div class="rail-block"><h6>Free full films on YouTube</h6><div class="chips" id="ytFreeRow"></div></div>
-    <div class="rail-block"><h6>Popular on YouTube</h6><div class="chips" id="ytChanRow"></div></div>
-    <div class="rail-block"><h6>Free on YouTube (legal)</h6><div class="chips" id="freeRow"></div></div>
     <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
     <div class="rail-block"><h6>OTT par dekho</h6><div class="quickpicks" id="ottPicks"></div></div>
     <div class="rail-block"><h6>Kya mood hai?</h6><div class="quickpicks" id="moodPicks"></div></div>
@@ -1017,45 +1014,10 @@ function closeRailIfMobile(){
 let FREE_YT=[];
 function ytSearchUrl(q){ return 'https://www.youtube.com/results?search_query='+encodeURIComponent(q); }
 function freeOnYouTube(title){ return ytSearchUrl(String(title||'')+' full movie'); }
-(function buildFreeRow(){
-  const row=document.getElementById('freeRow'); if(!row) return;
-  fetch('data/free_youtube.json').then(r=>r.ok?r.json():null).then(list=>{
-    if(!Array.isArray(list) || !list.length) return;
-    FREE_YT=list;
-    row.innerHTML = list.map(function(c){
-      const url = c.url || ytSearchUrl(c.q || (c.name+' full movie'));
-      return '<a class="pill ytfree" href="'+url+'" target="_blank" rel="noopener" title="'+esc(c.what||'')+'">\u25B6 '+esc(c.name)+'</a>';
-    }).join('');
-  }).catch(()=>{});
-})();
 
 
-/* ---- real free full-length films found on YouTube (from the daily API fetch) ---- */
-(function buildYtFreeRow(){
-  const row=document.getElementById('ytFreeRow'); if(!row) return;
-  fetch('data/youtube_free.json').then(r=>r.ok?r.json():null).then(list=>{
-    if(!Array.isArray(list) || !list.length){
-      row.innerHTML='<span style="font-size:12px;color:var(--muted)">Run the workflow with YOUTUBE_API_KEY to fill this</span>';
-      return;
-    }
-    row.innerHTML = list.slice(0,60).map(function(v){
-      const url='https://www.youtube.com/watch?v='+v.id;
-      return '<a class="pill ytfree" href="'+url+'" target="_blank" rel="noopener" title="'+esc(v.ch||'')+' \u00b7 '+(v.min||'')+' min">\u25B6 '+esc(v.t)+'</a>';
-    }).join('');
-  }).catch(()=>{});
-})();
 
 /* ---- popular Indian YouTube channels & series ---- */
-(function buildYtChanRow(){
-  const row=document.getElementById('ytChanRow'); if(!row) return;
-  fetch('data/yt_channels.json').then(r=>r.ok?r.json():null).then(list=>{
-    if(!Array.isArray(list) || !list.length) return;
-    row.innerHTML = list.map(function(c){
-      const url = c.url || ytSearchUrl(c.q || c.name);
-      return '<a class="pill ytfree" href="'+url+'" target="_blank" rel="noopener" title="'+esc(c.what||'')+'">\u25B6 '+esc(c.name)+'</a>';
-    }).join('');
-  }).catch(()=>{});
-})();
 
 /* ---- Best of all time: Top 5 / 10 / 25 / 100 ---- */
 const TOP_PICKS = [
@@ -1094,7 +1056,7 @@ const TOP_PICKS = [
 
 /* ---- OTT par dekho: one tap per platform ---- */
 const OTT_PICKS = ['Netflix','Prime Video','JioHotstar','SonyLIV','ZEE5','Aha','Sun NXT',
-                   'Hoichoi','MX Player','ShemarooMe','Apple TV+','Crunchyroll','JioCinema'];
+                   'Hoichoi','MX Player','ShemarooMe','Apple TV+','Crunchyroll','JioCinema','YouTube'];
 (function buildOttPicks(){
   const row=document.getElementById('ottPicks'); if(!row) return;
   OTT_PICKS.forEach(p=>{
