@@ -1,0 +1,36 @@
+{
+ "checked": 2200,
+ "verified_exact": 1820,
+ "verified_pct": 83,
+ "unverified": 380,
+ "how": "Every curated title was matched against the full IMDb dataset (1,28,85,817 rows) held in filmiset_all_world_master_15m.db, first on the exact normalised name and then on a looser form that ignores punctuation and spaces.",
+ "why_titles_miss": {
+  "named_differently_on_imdb": "Anime in particular: 'Haikyu!!', 'Re:ZERO', 'Ajin: Demi-Human', 'Bleach: Thousand-Year Blood War'. The title is real, IMDb spells it another way.",
+  "two_titles_in_one_row": "Rows like 'Avatar & Avatar: The Way of Water' or 'Avengers: Endgame & Infinity War' — Gemini merged two entries into one cell.",
+  "stage_plays": "IMDb does not catalogue theatre. Gujarati, Marathi and Bengali nataks will never match.",
+  "genuinely_fabricated": "Generic descriptive phrases in the languages Gemini knows least: 'Songs of the Himalayas', 'Chhath: The Sun Festival', 'Manganiyars: Desert Melodies', 'Bodo Weaves: Dokhona'."
+ },
+ "fabrication_pattern": "Invented entries look like '<Thing>: The <Concept>' and cluster in Santali, Bodo, Chhattisgarhi, Dogri, Sindhi, Tulu and Garhwali. Real titles are short and specific. Hindi, Marathi, Bengali, Tamil, Telugu and Hollywood verified at 91-100%.",
+ "per_file": {
+  "curated_hollywood": "100%",
+  "curated_hindi": "98%",
+  "curated_netflix": "98%",
+  "curated_netflix_series": "98%",
+  "curated_canons": "93%",
+  "curated_hollywood_series": "91%",
+  "curated_india_all": "87%",
+  "curated_series": "85%",
+  "curated_netflix_hollywood": "84%",
+  "curated_shortfilms": "81%",
+  "curated_anime": "78%",
+  "curated_india1": "76%",
+  "curated_prime": "76%",
+  "curated_hotstar": "75%",
+  "curated_sonyliv_zee5": "67%",
+  "curated_india2": "63%",
+  "curated_multiott": "60%",
+  "curated_india1_add": "57%",
+  "curated_gujarati": "40% — nataks are stage plays, which IMDb does not list"
+ },
+ "already_removed": "The All-Regions PDF was checked the same way before import: 191 of 280 kept, 89 held back (see curated_india_all_rejected.json)."
+}

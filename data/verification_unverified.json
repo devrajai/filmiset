@@ -1,0 +1,2672 @@
+{
+ "theatre": [
+  {
+   "file": "curated_india1",
+   "t": "Sangeet Shakuntal",
+   "y": 1880,
+   "cat": "marathi",
+   "dir": "Annasaheb Kirloskar"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Mathilukal [Stage]",
+   "y": 2008,
+   "cat": "malayalam",
+   "dir": "Pramod Payyannur"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Ninasam: Theater in Heggodu",
+   "y": 1992,
+   "cat": "documentary",
+   "dir": "B.V. Karanth"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Yakshagana: Coastal Epic",
+   "y": 2012,
+   "cat": "documentary",
+   "dir": "Sanjeev Suvarna"
+  }
+ ],
+ "composite": [
+  {
+   "file": "curated_anime",
+   "t": "Jujutsu Kaisen Season 2 (Hidden Inventory & Shibuya Incident)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Demon Slayer: Mugen Train Arc",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Demon Slayer: Entertainment District Arc",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Demon Slayer: Swordsmith Village Arc",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Demon Slayer: Hashira Training Arc",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "One Piece (Select Arcs & Movies)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Baki / Baki Hanma",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Stand by Me Doraemon & Stand by Me Doraemon 2",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Pokémon (Original Indigo League to Sun & Moon / Journeys)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Beyblade: Metal Fusion / Metal Masters / Metal Fury",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Haketoon / Monster Kid (Kaibutsu",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Special OPS & Special OPS 1.5",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Neeraj Pandey, Shiv Rawail"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "The Night Manager (Parts 1 & 2)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Sandeep Modi, Priyanka Ghose"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Avatar & Avatar: The Way of Water",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "20th Century"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Avengers: Endgame & Infinity War",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Marvel Studios"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Inside Out & Inside Out 2",
+   "y": 2024,
+   "cat": "english-dubbed",
+   "dir": "Pixar Animation"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Title (Movies & Series)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Type"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Star Wars: The Complete Saga",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Franchise"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Encanto & Moana",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Movie"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Theri & Mersal",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Thenandal"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Extraction & Extraction 2",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Sam Hargrave"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Bird Box & Bird Box Barcelona",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Susanne Bier / Pastor Bros."
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Rebel Moon: Parts 1 & 2",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Zack Snyder"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Enola Holmes & Enola Holmes 2",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Harry Bradbeer"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "The Dark Knight Trilogy",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "2005–12"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Black Mirror (Select)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Seasons 3–6"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Narcos & Narcos: Mexico",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Complete Series"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Fear Street Trilogy (1994–1666)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Leigh Janiak"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Chhorii (Parts 1 & 2)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2021–24"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Bosch & Bosch: Legacy",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Complete Sagas"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Title (Movies & Series)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Type"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Interstellar & Inception",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Movie"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Title (Movies & Series)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Type"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Resident Evil: Complete Series",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Movies"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Ghostbusters (Classic & Afterlife)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Movies"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "World on Fire & A Confession",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Series"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Taj: Divided by Blood & Revenge",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Ronald Scalpello, William Borthwick"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Silence... Can You Hear It? (1 & 2)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2021–24"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Escape Plan (1, 2 & 3)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Franchise"
+  }
+ ],
+ "anime_alt": [
+  {
+   "file": "curated_anime",
+   "t": "Hell’s Paradise (Jigokuraku)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Erased (Boku dake ga Inai Machi)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Delicious in Dungeon (Dungeon Meshi)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "A Silent Voice (Koe no Katachi)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Demon Slayer: Mugen Train (Movie Cut)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Inuyasha (Early Animax Hindi Dub)",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_canons",
+   "t": "The Promise (Yemin)",
+   "y": 2019,
+   "cat": "world-dubbed",
+   "dir": "Hakan Arslan, Reyhan Pekar"
+  },
+  {
+   "file": "curated_canons",
+   "t": "Katiyabaaz (Powerless)",
+   "y": 2013,
+   "cat": "documentary",
+   "dir": "Deepti Kakkar, Fahad Mustafa"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Lallu Lal (Double Role)",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sanjay Goradia"
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "One Piece (Live Action)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Avatar: The Last Airbender (Live Action)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Robin Hood (BBC)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Dark Matter (2024)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "12th Fail (Streaming Release)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2023"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "1–2) Loki (Seasons",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Marvel Studios"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Marvel Cinematic Universe (All)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Franchise"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Subramania Bharati",
+   "y": 1999,
+   "cat": "documentary",
+   "dir": "Amshan Kumar"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Dilli Chalo: The Farmer March",
+   "y": 2021,
+   "cat": "documentary",
+   "dir": "Gurvinder Singh"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Daydreamer (Erkenci Kuş)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Turkish Hit"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "The Promise (Yemin)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Turkish Drama"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Kudi Yedamaithe (Hindi Dub)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Pawan Kumar (Lucia fame)"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "11th Hour (Hindi Dub)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Praveen Sattaru"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Sin (Hindi Dub)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Navdeep"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Geetha Subramanyam (Hindi Dub)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Siva Sai Vardhan"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Unstoppable with NBK (Highlights)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Fremantle / Aha"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Agent Anand Santosh (Hindi)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Subbu Cherukuri"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Krack (Hindi: Sethupathi)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2021"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Sardar (Hindi Dubbed)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2022"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Aniyan (Aparichit)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Shankar"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Nandini (Fantasy Horror)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Sundar C."
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Arundhati (Mythological)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Malla Vijaya Prasad"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Maya (Supernatural)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Avni Telemedia"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Taqdeer (Hindi Dub)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Syed Ahmed Shawki"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Baishe Srabon (Hindi Dub)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Srijit Mukherji"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Dwitiyo Purush (Hindi)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Srijit Mukherji"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Chander Pahar (Hindi Dub)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Mukherjee"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "One Piece (Live Action)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Season 1"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Crimson Peak (Licensed)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Guillermo del Toro"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Tiger 3 (Exclusive Post-Theatrical)",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2023"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Citadel (Global Spy Franchise)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Season 1"
+  },
+  {
+   "file": "curated_prime",
+   "t": "1–4) The Boys (Seasons",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Series"
+  },
+  {
+   "file": "curated_series",
+   "t": "Rangbaaz: Darr Ki Ra राजनीति (Darr Ki Rajneeti)",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Subedar",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Aam Aadmi Family: Seasons 2",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Firingoti (The Spark)",
+   "y": 1992,
+   "cat": "regional",
+   "dir": "Jahnu Barua"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Aamis (Ravening)",
+   "y": 2019,
+   "cat": "regional",
+   "dir": "Bhaskar Hazarika"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Ishanou (The Chosen One)",
+   "y": 1990,
+   "cat": "regional",
+   "dir": "Aribam Syam Sharma"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "2018: Everyone is a Hero (Hindi)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "2023"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Por Thozhil (Hindi Dubbed)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "2023"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "A Miracle (Mucize Doktor)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Turkish Series"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Descendants of the Sun (Hindi)",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "K-Drama"
+  }
+ ],
+ "descriptive_fake": [
+  {
+   "file": "curated_india1",
+   "t": "Temple of Thanjavur",
+   "y": 1960,
+   "cat": "documentary",
+   "dir": "S. Sukhdev"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Warli Art",
+   "y": 2018,
+   "cat": "documentary",
+   "dir": "Avinash Deshpande"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Lavani: The Unsung Art",
+   "y": 2019,
+   "cat": "documentary",
+   "dir": "Savitri Medhatul"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Varkari: Journey to Pandharpur",
+   "y": 2021,
+   "cat": "documentary",
+   "dir": "Shrirang Godbole"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "The Story of Koodankulam",
+   "y": 2012,
+   "cat": "documentary",
+   "dir": "Amudhan R.P."
+  }
+ ],
+ "unknown": [
+  {
+   "file": "curated_anime",
+   "t": "Bleach: Thousand",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Ajin: Demi",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Re:ZERO",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "I Was Reincarnated as the 7th Prince",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Shangri",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "My Dress",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Masamune",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "My Love Story with Yamada",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Haikyu!!",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Hajime no Ippo: The Fighting!",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Kiteretsu Daihyakuka",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Kochikame (Kochira Katsushika",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Beyblade (Original Series, V",
+   "y": "",
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_anime",
+   "t": "Demon Slayer: Mugen Train",
+   "y": 2020,
+   "cat": "anime",
+   "dir": null
+  },
+  {
+   "file": "curated_canons",
+   "t": "Shantata! Court Chaalu Aahe",
+   "y": 1971,
+   "cat": "marathi",
+   "dir": "Satyadev Dubey"
+  },
+  {
+   "file": "curated_canons",
+   "t": "Natasamrat",
+   "y": 1970,
+   "cat": "marathi",
+   "dir": "Purushottam Darvhekar"
+  },
+  {
+   "file": "curated_canons",
+   "t": "Ashrunchi Zali Phule",
+   "y": 1966,
+   "cat": "marathi",
+   "dir": "Vasant Kanetkar"
+  },
+  {
+   "file": "curated_canons",
+   "t": "Shankarabharanam",
+   "y": 1980,
+   "cat": "regional",
+   "dir": "K. Viswanath"
+  },
+  {
+   "file": "curated_canons",
+   "t": "Anhe Ghore Da Daan",
+   "y": 2011,
+   "cat": "regional",
+   "dir": "Gurvinder Singh"
+  },
+  {
+   "file": "curated_canons",
+   "t": "Lagaan",
+   "y": 2001,
+   "cat": "hindi",
+   "dir": "Ashutosh Gowariker"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Gujjubhai Banya Khalnayak",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Siddharth Randeria"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Lage Raho Gujjubhai",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Siddharth Randeria"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Lo Gujjubhai Ghadya",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Siddharth Randeria"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Gujjubhai E Gaam Gajavyu",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Siddharth Randeria"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Baap Kamaal Dikro Dhamaal",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sanjay Goradia"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Chhel Chhabilo Gujarati",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sanjay Goradia"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Pappa Tamne Nai Samjay",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sanjay Goradia"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Tu Che Lajawab",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sanjay Goradia"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Rang Rangeela Gujjubhai",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Siddharth Randeria"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Chor Na Haathe Chavi",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Dilip Joshi"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Daughter No. 1",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sanjay Goradia"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Kanku Pagla",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Ketki Dave, Rasik Dave"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Aa Parivar Amaro Che",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Apara Mehta, Rasik Dave"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Hu Tane Gampu Chu?",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Ketki Dave, Rasik Dave"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Maa Baap Ne Bhulsho Nahi",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sarita Joshi, Arvind Rathod"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Saasu Ni Chhori Vahu Ni Chhori",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Ketki Dave"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Ek Murakh Ne Evi Tev",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Manoj Joshi"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Vaat Baar Gai",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Ketki Dave, Rasik Dave"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Khel Khel Ma Khel",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sanjay Goradia, Hitesh Dave"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Chup Raho Khush Raho",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Jhaveri"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Manas Matre Ghotale Baaz",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Tiku Talsania, Vandana Pathak"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Ek Anokho Karar",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Rasik Dave, Ketki Dave"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Doctor Tamhe Pan?!",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Sanjay Goradia"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "The Theatrical Roots of National Many of India's most beloved comedy",
+   "y": "",
+   "cat": "gujarati-natak",
+   "dir": "Television Stars and dramatic television actors—including"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Bhadar Tara Vaheta Paani",
+   "y": "",
+   "cat": "gujarati-movie",
+   "dir": "Upendra Trivedi"
+  },
+  {
+   "file": "curated_gujarati",
+   "t": "Purusharth",
+   "y": "",
+   "cat": "gujarati-movie",
+   "dir": "Social Drama"
+  },
+  {
+   "file": "curated_hindi",
+   "t": "Achhut Kannya",
+   "y": 1936,
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_hindi",
+   "t": "Do Aankhen Barah Haath",
+   "y": 1957,
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_hindi",
+   "t": "Jis Desh Mein Ganga Behti Hai",
+   "y": 1960,
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_hindi",
+   "t": "Roti Kapda Aur Makaan",
+   "y": 1974,
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_hindi",
+   "t": "Lagaan",
+   "y": 2001,
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood",
+   "t": "Dark Phoenix",
+   "y": 2019,
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "DC's Legends of Tomorrow",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Marvel's Hit",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Spartacus: Blood and Sand",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Spartacus: Vengeance",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Spartacus: War of the Damned",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Medici: Masters of Florence",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Star Wars: Andor",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Star Wars: Ahsoka",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Star Wars: Skeleton Crew",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hollywood_series",
+   "t": "Star Wars: The Acolyte",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": null
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "1– The Mandalorian",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Star Wars"
+  },
+  {
+   "file": "curated_hotstar",
+   "t": "Doctor Strange in the Multiverse",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Marvel Studios"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Achhut Kannya",
+   "y": 1936,
+   "cat": "hindi",
+   "dir": "Franz Osten"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Lagaan Dil Chahta Hai",
+   "y": 2001,
+   "cat": "hindi",
+   "dir": "Ashutosh Gowariker Farhan Akhtar"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Black Rang De Basanti",
+   "y": 2005,
+   "cat": "hindi",
+   "dir": "Sanjay Leela Bhansali Rakeysh Omprakash Mehra"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Scam 1992",
+   "y": 2020,
+   "cat": "hindi",
+   "dir": "Hansal Mehta"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Anukul",
+   "y": 2017,
+   "cat": "hindi",
+   "dir": "Sujoy Ghosh"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Ashadh Ka Ek Din",
+   "y": 1958,
+   "cat": "hindi",
+   "dir": "Mohan Rakesh"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Ghasiram Kotwal [Hindi]",
+   "y": 1975,
+   "cat": "hindi",
+   "dir": "B.V. Karanth"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Tumhari Amrita",
+   "y": 1992,
+   "cat": "hindi",
+   "dir": "Feroz Abbas Khan"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Mera Woh Matlab Nahi Tha",
+   "y": 2015,
+   "cat": "hindi",
+   "dir": "Rakesh Bedi"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Gagan Damama Bajyo",
+   "y": 2002,
+   "cat": "hindi",
+   "dir": "Piyush Mishra"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Shantata! Court Chaalu Aahe",
+   "y": 1971,
+   "cat": "marathi",
+   "dir": "Satyadev Dubey"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Dombivali Fast",
+   "y": 2005,
+   "cat": "marathi",
+   "dir": "Nishikant Kamat"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Baipan Bhaari Deva",
+   "y": 2023,
+   "cat": "marathi",
+   "dir": "Kedar Shinde"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Shobhant",
+   "y": 2021,
+   "cat": "marathi",
+   "dir": "Sachin Kundalkar"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Mitraa",
+   "y": 2014,
+   "cat": "marathi",
+   "dir": "Ravi Jadhav"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Bibtya",
+   "y": 2016,
+   "cat": "marathi",
+   "dir": "Swapnil Kapure"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Khisa",
+   "y": 2020,
+   "cat": "marathi",
+   "dir": "Raj Pritam More"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Pavsacha Nibandh",
+   "y": 2020,
+   "cat": "marathi",
+   "dir": "Nagraj Manjule"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Katyar Kaljat Ghusli",
+   "y": 1967,
+   "cat": "marathi",
+   "dir": "Purushottam Darvhekar"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Natasamrat",
+   "y": 1970,
+   "cat": "marathi",
+   "dir": "Purushottam Darvhekar"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Moruchi Mavshi",
+   "y": 1985,
+   "cat": "marathi",
+   "dir": "Baban Prabhu"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Eka Lagnachi Gosht",
+   "y": 1998,
+   "cat": "marathi",
+   "dir": "Mangesh Kadam"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Dnyaneshwar Eknath",
+   "y": 1960,
+   "cat": "documentary",
+   "dir": "G.V. Sane"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Colors of Absence",
+   "y": 1993,
+   "cat": "documentary",
+   "dir": "Arun Khopkar"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Babasaheb Ambedkar",
+   "y": 1991,
+   "cat": "documentary",
+   "dir": "Jabbar Patel"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Narayan Gangaram Surve",
+   "y": 2002,
+   "cat": "documentary",
+   "dir": "Arun Khopkar"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Nagarkirtan",
+   "y": 2017,
+   "cat": "bengali",
+   "dir": "Kaushik Ganguly"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Binisutoy",
+   "y": 2021,
+   "cat": "bengali",
+   "dir": "Atanu Ghosh"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Aparajito [Ray Biopic]",
+   "y": 2022,
+   "cat": "bengali",
+   "dir": "Anik Dutta"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Nabanna",
+   "y": 1944,
+   "cat": "bengali",
+   "dir": "Bijon Bhattacharya, Sambhu Mitra"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Raktakarabi",
+   "y": 1954,
+   "cat": "bengali",
+   "dir": "Sambhu Mitra"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Tughlaq [Bengali]",
+   "y": 1970,
+   "cat": "bengali",
+   "dir": "Shyamanand Jalan"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Chakbhanga Madhu",
+   "y": 1972,
+   "cat": "bengali",
+   "dir": "Manoj Mitra"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Sajano Bagaan",
+   "y": 1977,
+   "cat": "bengali",
+   "dir": "Manoj Mitra"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Tin Poyshar Pala",
+   "y": 1969,
+   "cat": "bengali",
+   "dir": "Ajitesh Bandopadhyay"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Sukanta",
+   "y": 1981,
+   "cat": "documentary",
+   "dir": "Utpalendu Chakrabarty"
+  },
+  {
+   "file": "curated_india1",
+   "t": "16 Vayathinile",
+   "y": 1977,
+   "cat": "tamil",
+   "dir": "P. Bharathiraja"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Baashha",
+   "y": 1995,
+   "cat": "tamil",
+   "dir": "Suresh Krissna"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Vilangoo",
+   "y": 2022,
+   "cat": "tamil",
+   "dir": "Prasanth Pandiyaraj"
+  },
+  {
+   "file": "curated_india1",
+   "t": "The Jungle Radio",
+   "y": 2010,
+   "cat": "tamil",
+   "dir": "Balaji Mohan"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Kaaka Muttai [Short]",
+   "y": 2013,
+   "cat": "tamil",
+   "dir": "M. Manikandan"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Thuruval",
+   "y": 2016,
+   "cat": "tamil",
+   "dir": "Nalan Kumarasamy"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Avvaiyar",
+   "y": 1942,
+   "cat": "tamil",
+   "dir": "T.K. Shanmugam"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Sivaji Kanda Hindu Rajyam",
+   "y": 1945,
+   "cat": "tamil",
+   "dir": "C.N. Annadurai"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Nandan Kathai",
+   "y": 1985,
+   "cat": "tamil",
+   "dir": "Indira Parthasarathy"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Aurangzeb [Tamil]",
+   "y": 1975,
+   "cat": "tamil",
+   "dir": "Indira Parthasarathy"
+  },
+  {
+   "file": "curated_india1",
+   "t": "The Painter of Eloquent Silences",
+   "y": 1998,
+   "cat": "documentary",
+   "dir": "B. Narsing Rao"
+  },
+  {
+   "file": "curated_india1",
+   "t": "Shepherds of the Nilgiris",
+   "y": 2019,
+   "cat": "documentary",
+   "dir": "Saravana Kumar"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Uposhar",
+   "y": 2020,
+   "cat": "bengali",
+   "dir": "Arindam Sil"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "The Red File",
+   "y": 2022,
+   "cat": "bengali",
+   "dir": "Sourav Chakraborty"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Galpo Hekim Saheb",
+   "y": 1985,
+   "cat": "bengali",
+   "dir": "Manoj Mitra"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Madhab Malanchi Kanya",
+   "y": 1988,
+   "cat": "bengali",
+   "dir": "Bibhash Chakraborty"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Prachya",
+   "y": 2000,
+   "cat": "bengali",
+   "dir": "Koushik Sen"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "A Few Things About Him",
+   "y": 2006,
+   "cat": "documentary",
+   "dir": "Tanvir Mokammel"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Coral Tears",
+   "y": 2018,
+   "cat": "documentary",
+   "dir": "Sourav Sarangi"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "The Ghats of Kolkata",
+   "y": 2022,
+   "cat": "documentary",
+   "dir": "Supriyo Sen"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Oorukku Nooruper",
+   "y": 2018,
+   "cat": "tamil",
+   "dir": "Lenin"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Chandrahari",
+   "y": 1932,
+   "cat": "tamil",
+   "dir": "Pammal Sambandha Mudaliar"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Yazhpanam Nayanar",
+   "y": 2014,
+   "cat": "documentary",
+   "dir": "Amshan Kumar"
+  },
+  {
+   "file": "curated_india1_add",
+   "t": "Native Craft of Chettinad",
+   "y": 2017,
+   "cat": "documentary",
+   "dir": "R.V. Ramani"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Alluri Seetarama Raju",
+   "y": 1974,
+   "cat": "telugu",
+   "dir": "V. Ramachandra Rao"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Shankarabharanam",
+   "y": 1980,
+   "cat": "telugu",
+   "dir": "K. Viswanath"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Pilla Zamindar Short",
+   "y": 2011,
+   "cat": "telugu",
+   "dir": "G. Ashok"
+  },
+  {
+   "file": "curated_india2",
+   "t": "A Clockwork Orange Tribute",
+   "y": 2015,
+   "cat": "telugu",
+   "dir": "Sandeep Reddy Vanga"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Middle Class Melodies Short",
+   "y": 2018,
+   "cat": "telugu",
+   "dir": "Vinod Anantoju"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Prataparudreeyam",
+   "y": 1920,
+   "cat": "telugu",
+   "dir": "Vedam Venkataraya Sastry"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Kanyasulkam [Modern]",
+   "y": 1985,
+   "cat": "telugu",
+   "dir": "B.V. Karanth"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Betala Kathalu",
+   "y": 1995,
+   "cat": "telugu",
+   "dir": "Tanikella Bharani"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Tulasi Teertham",
+   "y": 2002,
+   "cat": "telugu",
+   "dir": "D.S. Dikshitulu"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Bommalaata",
+   "y": 2010,
+   "cat": "telugu",
+   "dir": "N.J. Bhikshu"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Mahakavi Sri Sri",
+   "y": 1980,
+   "cat": "documentary",
+   "dir": "B. Narsing Rao"
+  },
+  {
+   "file": "curated_india2",
+   "t": "The Painter of Eloquent Silences",
+   "y": 1998,
+   "cat": "documentary",
+   "dir": "B. Narsing Rao"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Amaravathi: Heritage of Andhra",
+   "y": 2005,
+   "cat": "documentary",
+   "dir": "K.S. Rama Rao"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Kuchipudi Classical Heritage",
+   "y": 2010,
+   "cat": "documentary",
+   "dir": "Vempati Chinna Satyam"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Godavari: River of Life",
+   "y": 2015,
+   "cat": "documentary",
+   "dir": "B. Narsing Rao"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Dhaatu: Weaver's Rhythm",
+   "y": 2018,
+   "cat": "documentary",
+   "dir": "Rajesh Touchriver"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Ramoji Film City: Dream Factory",
+   "y": 2019,
+   "cat": "documentary",
+   "dir": "S.S. Rajamouli"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Wild Andhra: Eastern Ghats",
+   "y": 2020,
+   "cat": "documentary",
+   "dir": "K. Phani Kumar"
+  },
+  {
+   "file": "curated_india2",
+   "t": "The Legend of Alluri",
+   "y": 2022,
+   "cat": "documentary",
+   "dir": "K. Raghavendra Rao"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Kili",
+   "y": 2020,
+   "cat": "malayalam",
+   "dir": "Vishnu G. Raghav"
+  },
+  {
+   "file": "curated_india2",
+   "t": "A Silent Poem",
+   "y": 2013,
+   "cat": "malayalam",
+   "dir": "Jude Anthany Joseph"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Priyamvadha Katharayano",
+   "y": 2014,
+   "cat": "malayalam",
+   "dir": "Basil Joseph"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Yellow Pen",
+   "y": 2015,
+   "cat": "malayalam",
+   "dir": "Jude Anthany Joseph"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Thanneer Mathan Short",
+   "y": 2017,
+   "cat": "malayalam",
+   "dir": "Girish A.D."
+  },
+  {
+   "file": "curated_india2",
+   "t": "Prakrithi",
+   "y": 2020,
+   "cat": "malayalam",
+   "dir": "Don Palathara"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Ente Hridayathinte Vadakku Kizhakke Attam",
+   "y": 2021,
+   "cat": "malayalam",
+   "dir": "Anup Narayanan"
+  },
+  {
+   "file": "curated_india2",
+   "t": "B 32 Muthal 44 Vare Short",
+   "y": 2022,
+   "cat": "malayalam",
+   "dir": "Shruthi Sharanyam"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Ningalenne Communistakki",
+   "y": 1952,
+   "cat": "malayalam",
+   "dir": "Thoppil Bhasi"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Koottukudumbam",
+   "y": 1955,
+   "cat": "malayalam",
+   "dir": "Thoppil Bhasi"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Avanavan Kadamba",
+   "y": 1976,
+   "cat": "malayalam",
+   "dir": "Kavalam Narayana Panikkar"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Saketham",
+   "y": 1978,
+   "cat": "malayalam",
+   "dir": "C.N. Sreekantan Nair"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Guruvayur",
+   "y": 1970,
+   "cat": "documentary",
+   "dir": "P. Bhaskaran"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Have You Seen the Arana?",
+   "y": 2012,
+   "cat": "documentary",
+   "dir": "Sunanda Bhat"
+  },
+  {
+   "file": "curated_india2",
+   "t": "8½ Intercuts: Life of K.G. George",
+   "y": 2017,
+   "cat": "documentary",
+   "dir": "Lijin Jose"
+  },
+  {
+   "file": "curated_india2",
+   "t": "The Bamboo Whispers",
+   "y": 2018,
+   "cat": "documentary",
+   "dir": "C.R. Sreeraj"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Theyyam: Dance of the Gods",
+   "y": 2021,
+   "cat": "documentary",
+   "dir": "K.R. Subhash"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Bhookailasa",
+   "y": 1958,
+   "cat": "kannada",
+   "dir": "K. Shankar"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Sapta Saagaradaache Ello – Side A",
+   "y": 2023,
+   "cat": "kannada",
+   "dir": "Hemanth M. Rao"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Kyaabre",
+   "y": 2018,
+   "cat": "kannada",
+   "dir": "Hemanth Rao"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Ekantha",
+   "y": 2020,
+   "cat": "kannada",
+   "dir": "Raghu Shivamogga"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Humble Politician Nograj Series",
+   "y": 2022,
+   "cat": "kannada",
+   "dir": "Saad Khan"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Sulle Satya",
+   "y": 2016,
+   "cat": "kannada",
+   "dir": "Adarsh Eshwarappa"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Paduvaaralli",
+   "y": 2017,
+   "cat": "kannada",
+   "dir": "Raj B. Shetty"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Katha Sangama Short",
+   "y": 2019,
+   "cat": "kannada",
+   "dir": "Rishab Shetty"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Gadiyara",
+   "y": 2020,
+   "cat": "kannada",
+   "dir": "Pradeep Sastry"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Ondu Sanje",
+   "y": 2022,
+   "cat": "kannada",
+   "dir": "Suni"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Tughlaq",
+   "y": 1964,
+   "cat": "kannada",
+   "dir": "B.V. Karanth"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Hayavadana",
+   "y": 1971,
+   "cat": "kannada",
+   "dir": "B.V. Karanth"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Jokumaraswamy",
+   "y": 1972,
+   "cat": "kannada",
+   "dir": "B.V. Karanth"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Bhootaraadhe",
+   "y": 1982,
+   "cat": "kannada",
+   "dir": "K.V. Subbanna"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Siri Sampige",
+   "y": 1993,
+   "cat": "kannada",
+   "dir": "Chandrashekhara Kambara"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Agni Mattu Male",
+   "y": 1995,
+   "cat": "kannada",
+   "dir": "C.R. Simha"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Mysooru Mallige",
+   "y": 1996,
+   "cat": "kannada",
+   "dir": "B. Jayashree"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Hampi: Ruins of Vijayanagara",
+   "y": 1975,
+   "cat": "documentary",
+   "dir": "T.S. Nagabharana"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Kuvempu: Rashtrakavi",
+   "y": 1985,
+   "cat": "documentary",
+   "dir": "Girish Karnad"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Bendre: Poet of Life",
+   "y": 1987,
+   "cat": "documentary",
+   "dir": "Girish Karnad"
+  },
+  {
+   "file": "curated_india2",
+   "t": "G.V. Iyer: The Barefoot Filmmaker",
+   "y": 2000,
+   "cat": "documentary",
+   "dir": "T.S. Nagabharana"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Melukote: Heritage Town",
+   "y": 2005,
+   "cat": "documentary",
+   "dir": "P. Sheshadri"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Dr. Rajkumar: The Inimitable",
+   "y": 2016,
+   "cat": "documentary",
+   "dir": "P. Sheshadri"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Nanak Nam Jahaz Hai",
+   "y": 1969,
+   "cat": "punjabi",
+   "dir": "Ram Maheshwary"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Chann Pardesi",
+   "y": 1980,
+   "cat": "punjabi",
+   "dir": "Chitrarth Singh"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Anhe Ghore Da Daan",
+   "y": 2011,
+   "cat": "punjabi",
+   "dir": "Gurvinder Singh"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Kambdi Deor",
+   "y": 2015,
+   "cat": "punjabi",
+   "dir": "Navtej Sandhu"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Suhe Phull",
+   "y": 2016,
+   "cat": "punjabi",
+   "dir": "Amardeep Singh Gill"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Gaddi Jandi",
+   "y": 2017,
+   "cat": "punjabi",
+   "dir": "Gurpreet Palheri"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Sassi: The Silent Tears",
+   "y": 2018,
+   "cat": "punjabi",
+   "dir": "Preetpal Brar"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Pind Da Mod",
+   "y": 2021,
+   "cat": "punjabi",
+   "dir": "Rana Ranbir"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Dhee Da Khet",
+   "y": 2022,
+   "cat": "punjabi",
+   "dir": "Jatinder Mauhar"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Loha Kutt",
+   "y": 1937,
+   "cat": "punjabi",
+   "dir": "Balwant Gargi"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Kanak Di Balli",
+   "y": 1954,
+   "cat": "punjabi",
+   "dir": "Balwant Gargi"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Chamkaur Di Garhi",
+   "y": 1968,
+   "cat": "punjabi",
+   "dir": "Harpal Tiwana"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Sirhind Di Deewar",
+   "y": 1972,
+   "cat": "punjabi",
+   "dir": "Harpal Tiwana"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Dhooni Di Agg",
+   "y": 1977,
+   "cat": "punjabi",
+   "dir": "Balwant Gargi"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Ik Si Nani",
+   "y": 1993,
+   "cat": "punjabi",
+   "dir": "Shahid Nadeem"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Bullha",
+   "y": 2001,
+   "cat": "punjabi",
+   "dir": "Shahid Nadeem"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Mera Rang De Basanti Chola",
+   "y": 2008,
+   "cat": "punjabi",
+   "dir": "Kewal Dhaliwal"
+  },
+  {
+   "file": "curated_india2",
+   "t": "The Land of Five Rivers",
+   "y": 1988,
+   "cat": "documentary",
+   "dir": "M.S. Sathyu"
+  },
+  {
+   "file": "curated_india2",
+   "t": "1984: A Sikh Proclamation",
+   "y": 1994,
+   "cat": "documentary",
+   "dir": "Baljit Singh"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Amu: The Real Voices",
+   "y": 2005,
+   "cat": "documentary",
+   "dir": "Shonali Bose"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Green Revolution: Toxic Fields",
+   "y": 2010,
+   "cat": "documentary",
+   "dir": "Meera Dewan"
+  },
+  {
+   "file": "curated_india2",
+   "t": "The Forgotten Veterans of Punjab",
+   "y": 2018,
+   "cat": "documentary",
+   "dir": "David Olusoga"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Jallianwala Bagh: The Massacre",
+   "y": 2019,
+   "cat": "documentary",
+   "dir": "Simran Kaler"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Taani: The Weave of Punjab",
+   "y": 2020,
+   "cat": "documentary",
+   "dir": "Harinder Singh"
+  },
+  {
+   "file": "curated_india2",
+   "t": "Heer: Singing the Ballad",
+   "y": 2022,
+   "cat": "documentary",
+   "dir": "Madan Gopal Singh"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Natasamrat",
+   "y": 1970,
+   "cat": "marathi",
+   "dir": "Purushottam Darvhekar"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Babasaheb Ambedkar",
+   "y": 1991,
+   "cat": "marathi",
+   "dir": "Jabbar Patel"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Nabanna",
+   "y": 1944,
+   "cat": "bengali",
+   "dir": "Bijon Bhattacharya, Sambhu Mitra"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "16 Vayathinile",
+   "y": 1977,
+   "cat": "tamil",
+   "dir": "P. Bharathiraja"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Shankarabharanam",
+   "y": 1980,
+   "cat": "telugu",
+   "dir": "K. Viswanath"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Ningalenne Communistakki",
+   "y": 1952,
+   "cat": "malayalam",
+   "dir": "Thoppil Bhasi"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Hayavadana",
+   "y": 1971,
+   "cat": "kannada",
+   "dir": "B.V. Karanth"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Nanak Nam Jahaz Hai",
+   "y": 1969,
+   "cat": "punjabi",
+   "dir": "Ram Maheshwary"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Chann Pardesi",
+   "y": 1980,
+   "cat": "punjabi",
+   "dir": "Chitrarth Singh"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Anhe Ghore Da Daan",
+   "y": 2011,
+   "cat": "punjabi",
+   "dir": "Gurvinder Singh"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Loha Kutt",
+   "y": 1937,
+   "cat": "punjabi",
+   "dir": "Balwant Gargi"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Gujjubhai Banya Khalnayak",
+   "y": 2006,
+   "cat": "gujarati",
+   "dir": "Siddharth Randeria"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Baap Kamaal Dikro Dhamaal",
+   "y": 2010,
+   "cat": "gujarati",
+   "dir": "Sanjay Goradia"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Sita Bibaha",
+   "y": 1936,
+   "cat": "odia",
+   "dir": "Mohan Sundar Deb Goswami"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Joymoti",
+   "y": 1935,
+   "cat": "assamese",
+   "dir": "Jyoti Prasad Agarwala"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Xagoroloi Bohudoor",
+   "y": 1995,
+   "cat": "assamese",
+   "dir": "Jahnu Barua"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Ganga Maiyya Tohe Piyari",
+   "y": 1963,
+   "cat": "bhojpuri",
+   "dir": "Kundan Kumar"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Agra Bazar",
+   "y": 1954,
+   "cat": "urdu",
+   "dir": "Habib Tanvir"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Mogacho Anvddo",
+   "y": 1950,
+   "cat": "konkani",
+   "dir": "Jerry Braganza"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Sirumarani",
+   "y": 1998,
+   "cat": "nepali",
+   "dir": "Birendra Subba"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Jhulelal",
+   "y": 1964,
+   "cat": "sindhi",
+   "dir": "Deepak Asha"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Bai Chali Sasariye",
+   "y": 1988,
+   "cat": "rajasthani",
+   "dir": "Mohan Singh Rathore"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Amar Singh Rathore",
+   "y": 1965,
+   "cat": "rajasthani",
+   "dir": "Ram Singh"
+  },
+  {
+   "file": "curated_india_all",
+   "t": "Koti Chennaya",
+   "y": 1973,
+   "cat": "tulu",
+   "dir": "Vishu Kumar"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Color Photo",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2020"
+  },
+  {
+   "file": "curated_multiott",
+   "t": "Boba Rohoshyo",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Abhishek Saha"
+  },
+  {
+   "file": "curated_netflix",
+   "t": "Lagaan",
+   "y": 2001,
+   "cat": "hindi",
+   "dir": "Ashutosh Gowariker"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "Glass Onion: A Knives Out Mystery",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Rian Johnson"
+  },
+  {
+   "file": "curated_netflix_hollywood",
+   "t": "John Wick: Chapters",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "2014–19"
+  },
+  {
+   "file": "curated_netflix_series",
+   "t": "Mai: A Mother's Rage",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Anshai Lal, Atul Mongia"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Mumbai Diaries 26/11",
+   "y": "",
+   "cat": "hindi",
+   "dir": "Nikkhil Advani"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Sharmajee Namkeen",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2022"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Theatrical",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2023"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Rings of Power",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Seasons 1–2"
+  },
+  {
+   "file": "curated_prime",
+   "t": "Tom Clancy's Jack Ryan",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "1–4 Seasons"
+  },
+  {
+   "file": "curated_prime",
+   "t": "The Multiverse Expansion: Conceived by the Russo Brothers,",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Citadel Worldwide Citadel established"
+  },
+  {
+   "file": "curated_series",
+   "t": "Jamtara",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Rangbaaz: Phirse",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Chakravyuh: An Inspector Ranvir Kaul Mystery",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Khaali Peeli Series",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Poison 2",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Tooth Pari",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Avrodh",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Mukhbir",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Faadu",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Khakee: The UP Files",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Gaanth",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Sarfarosh: Sarhad Ka Pehredaar",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "The Secret of the Nagas Series",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Battle of Galwan",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Mission Frontline",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Indian Predator: Beast of Bangalore",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Modern Love Mumbai: I Believe in You",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Chutney Sambar: Heartland Edition",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "BTech Diaries",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_series",
+   "t": "Kanpur Junction",
+   "y": "",
+   "cat": "hindi",
+   "dir": null
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Nanak Nam Jahaz Hai",
+   "y": 1969,
+   "cat": "regional",
+   "dir": "Ram Maheshwary"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Chann Pardesi",
+   "y": 1980,
+   "cat": "regional",
+   "dir": "Chitrarth Singh"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Anhe Ghore Da Daan",
+   "y": 2011,
+   "cat": "regional",
+   "dir": "Gurvinder Singh"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Ganga Maiyya Tohe Piyari",
+   "y": 1963,
+   "cat": "regional",
+   "dir": "Kundan Kumar"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Laagi Nahi Chhute Ram",
+   "y": 1963,
+   "cat": "regional",
+   "dir": "Kundan Kumar"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Daroga Babu I Love You",
+   "y": 2004,
+   "cat": "regional",
+   "dir": "Ajay Kumar"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Joymoti",
+   "y": 1935,
+   "cat": "regional",
+   "dir": "Jyoti Prasad Agarwala"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Xagoroloi Bohudoor",
+   "y": 1995,
+   "cat": "regional",
+   "dir": "Jahnu Barua"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Sita Bibaha",
+   "y": 1936,
+   "cat": "regional",
+   "dir": "Mohan Sundar Deb Goswami"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Gaggara",
+   "y": 2008,
+   "cat": "regional",
+   "dir": "Shivadhwaj"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Bai Chali Sasariye",
+   "y": 1988,
+   "cat": "regional",
+   "dir": "Mohan Singh Rathore"
+  },
+  {
+   "file": "curated_shortfilms",
+   "t": "Khandobacha Lagin",
+   "y": 1998,
+   "cat": "regional",
+   "dir": "Subhash Shinde"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Spider-Man: Franchise Vault",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Movies"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "The Sony Pictures Entertainment As the digital streaming arm of Culver",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Integration City's Sony Pictures,"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Kaafi Sirf Ek Bandaa Hai",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2023"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "Radhe: Your Most Wanted Bhai",
+   "y": "",
+   "cat": "hindi",
+   "dir": "2021"
+  },
+  {
+   "file": "curated_sonyliv_zee5",
+   "t": "1–3 John Wick: Chapters",
+   "y": "",
+   "cat": "english-dubbed",
+   "dir": "Lionsgate Hits"
+  }
+ ]
+}
