@@ -108,6 +108,16 @@
   .rec i{color:var(--muted);font-style:normal;font-size:10.5px}
   .ytfree{text-decoration:none;color:var(--ink);border-color:var(--line)}
   .ytfree:hover{border-color:var(--accent);color:var(--accent)}
+  .streamrow{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
+  .sbtn{text-decoration:none;color:#fff;font-size:11.5px;padding:7px 11px;border-radius:8px;font-weight:600}
+  .sbtn:hover{opacity:.86}
+  .rate{display:flex;align-items:center;gap:6px;margin:10px 0 4px;font-size:12px;color:var(--muted)}
+  .rate .st{background:none;border:0;cursor:pointer;font-size:19px;color:var(--line-2);padding:0 1px}
+  .rate .st.on{color:#e8b23a}
+  .roulette{position:fixed;inset:0;z-index:400;display:grid;place-items:center;background:rgba(0,0,0,.6)}
+  .rbox{background:var(--surface);border:1px solid var(--accent);border-radius:16px;padding:26px 30px;text-align:center;max-width:380px}
+  .rbox h3{margin-bottom:12px;color:var(--accent)}
+  .rdisp{font-size:1.1rem;font-weight:700;min-height:52px;display:flex;align-items:center;justify-content:center}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -302,6 +312,7 @@
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
     <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
     <div class="rail-block"><h6>OTT par dekho</h6><div class="quickpicks" id="ottPicks"></div></div>
+    <div class="rail-block"><h6>Aaj ka vibe</h6><div class="quickpicks" id="vibePicks"></div></div>
     <div class="rail-block"><h6>Kya mood hai?</h6><div class="quickpicks" id="moodPicks"></div></div>
     <div class="rail-block"><h6>Trending &amp; reels</h6><div class="quickpicks" id="trendPicks"></div></div>
     <div class="rail-block"><h6>Quick picks</h6><div class="quickpicks" id="quickPicks"></div></div>
@@ -544,7 +555,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -1139,6 +1150,98 @@ window.addEventListener('keydown',e=>{
   }catch(e){}
 })();
 
+
+/* ---- vibe picks: a genre combination, the way people actually ask for something to watch ---- */
+const VIBE_PICKS = [
+  {id:'mind',  label:'\u{1F9E0} Mind-Bending',      g:['Sci-Fi','Mystery','Thriller']},
+  {id:'adren', label:'\u26A1 High Adrenaline',      g:['Action','Adventure','Crime']},
+  {id:'comfy', label:'\u2600\uFE0F Comfort & Feel-Good', g:['Comedy','Family','Music']},
+  {id:'dark',  label:'\u{1F311} Dark & Gritty',     g:['Crime','Horror','Thriller']},
+  {id:'deep',  label:'\u{1F4A7} Emotional / Deep',  g:['Drama','Romance','Biography']},
+];
+(function buildVibePicks(){
+  const row=document.getElementById('vibePicks'); if(!row) return;
+  VIBE_PICKS.forEach(v=>{
+    const b=document.createElement('button');
+    b.className='qp'; b.dataset.vb=v.id; b.type='button'; b.textContent=v.label;
+    row.appendChild(b);
+  });
+  row.addEventListener('click',e=>{
+    const b=e.target.closest('.qp'); if(!b) return;
+    const spec=VIBE_PICKS.find(v=>v.id===b.dataset.vb); if(!spec) return;
+    clearAllFilters();
+    state.vibe=spec.g.slice(); state.rel='all';
+    if(typeof setPillRow==='function') setPillRow('relRow','rel','all');
+    document.querySelectorAll('#vibePicks .qp').forEach(p=>p.classList.remove('on'));
+    b.classList.add('on');
+    render(); closeRailIfMobile();
+  });
+})();
+
+/* ---- where to look for a title: one search link per service ----
+   These are search links, not deep links, because a deep link goes stale the day a licence
+   changes. The label says "Search", so nobody is told the title is definitely there. */
+function streamLinks(title){
+  const q=encodeURIComponent(title||'');
+  return [
+    ['Netflix',     'https://www.netflix.com/search?q='+q,                        '#e50914'],
+    ['Prime Video', 'https://www.primevideo.com/search?phrase='+q,                 '#00a8e1'],
+    ['JioHotstar',  'https://www.hotstar.com/in/explore?search_query='+q,          '#1b3a6b'],
+    ['ZEE5',        'https://www.zee5.com/search?q='+q,                            '#82368c'],
+    ['SonyLIV',     'https://www.sonyliv.com/search?searchTerm='+q,                '#2b2b2b'],
+    ['YouTube',     'https://www.youtube.com/results?search_query='+q+'+full+movie','#cc0000'],
+  ];
+}
+function streamRowHtml(title){
+  return '<div class="m" style="margin-top:10px">Where to look \u2014 search each service</div>'
+    + '<div class="streamrow">'
+    + streamLinks(title).map(function(x){
+        return '<a class="sbtn" style="background:'+x[2]+'" target="_blank" rel="noopener" href="'+x[1]+'">'+x[0]+'</a>';
+      }).join('')
+    + '</div>';
+}
+
+/* ---- movie roulette: a short spin before the pick is revealed ---- */
+function runMovieRoulette(){
+  const pool=(DATA||[]).filter(d=>d.src!=='youtube' && Number(d.irt||d.rtg||0)>=7.0);
+  if(!pool.length) return;
+  const ov=document.createElement('div');
+  ov.className='roulette';
+  ov.innerHTML='<div class="rbox"><h3>\u{1F3B0} Deciding movie night\u2026</h3>'
+    +'<div id="rlDisp" class="rdisp">\u2026</div></div>';
+  document.body.appendChild(ov);
+  let ticks=0; const max=18;
+  const t=setInterval(function(){
+    const p=pool[Math.floor(Math.random()*pool.length)];
+    const el=document.getElementById('rlDisp');
+    if(el) el.textContent=dispTitle(p.t)+' ('+(p.y||'')+')';
+    if(++ticks>=max){
+      clearInterval(t);
+      const p=pool[Math.floor(Math.random()*pool.length)];
+      setTimeout(function(){ ov.remove(); openModal(p); }, 420);
+    }
+  }, 95);
+}
+
+/* ---- watched + a personal star rating ---- */
+let RATINGS = {};
+try{ RATINGS = JSON.parse(localStorage.getItem('filmiset_ratings')||'{}') || {}; }catch(e){ RATINGS={}; }
+function setMyRating(title, n){
+  if(!title) return;
+  if(n) RATINGS[title]=n; else delete RATINGS[title];
+  try{ localStorage.setItem('filmiset_ratings', JSON.stringify(RATINGS)); }catch(e){}
+}
+function myStats(){
+  const seen=[...watched];
+  const items=DATA.filter(d=>seen.indexOf(d.t)>=0);
+  const n=items.length;
+  const avg = n ? (items.reduce((a,d)=>a+Number(d.irt||d.rtg||0),0)/n) : 0;
+  const tally={};
+  items.forEach(d=>(d.g||[]).forEach(g=>{ tally[g]=(tally[g]||0)+1; }));
+  const top=Object.entries(tally).sort((a,b)=>b[1]-a[1])[0]||['\u2014',0];
+  return {n:n, avg:avg.toFixed(1), top:top[0], rated:Object.keys(RATINGS).length};
+}
+
 /* ---- mood suggestions: "Kya mood hai?" ---- */
 const MOOD_PICKS = [
   {id:'feel',   label:'\u{1F604} Feel-good',  moods:['Feel-Good']},
@@ -1434,6 +1537,10 @@ function openModal(d, fromPop){
     + '<div class="row">'
       + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">Watch trailer</a>' : '')
       + '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="'+freeOnYouTube(d.t)+'">\u25B6 Free on YouTube</a>'
+      + streamRowHtml(d.t)
+      + '<div class="rate"><span>My rating</span>'
+      + [1,2,3,4,5].map(function(n){ return '<button class="st'+(RATINGS[d.t]>=n?' on':'')+'" data-rate="'+n+'" data-rt="'+esc(d.t)+'">★</button>'; }).join('')
+      + '</div>'
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
       + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
       + '<button class="hbtn" data-mclose="1">Close</button>'
@@ -1461,6 +1568,9 @@ document.getElementById('modal').addEventListener('click',e=>{
   if(sv){ const t=sv.dataset.msave; if(watchlist.has(t))watchlist.delete(t); else watchlist.add(t); persistWatchlist(); sv.textContent=watchlist.has(t)?'\u2665 Saved':'\u2661 Save'; updateSavedBtn(); return; }
   const sn=e.target.closest('[data-mseen]');
   if(sn){ const t=sn.dataset.mseen; if(watched.has(t))watched.delete(t); else watched.add(t); persistWatched(); sn.textContent=watched.has(t)?'\u2713 Seen':'Mark seen'; return; }
+  const rt=e.target.closest('[data-rate]');
+  if(rt){ setMyRating(rt.dataset.rt, Number(rt.dataset.rate)); const box=rt.parentElement;
+          const v=Number(rt.dataset.rate); [].slice.call(box.querySelectorAll('.st')).forEach(function(s,i){ s.classList.toggle('on', i<v); }); return; }
   const rc=e.target.closest('[data-rec]');
   if(rc){ const t=rc.dataset.rec; const hit=DATA.find(x=>x.t===t); if(hit) openModal(hit, true); return; }
   if(e.target.closest('[data-mclose]')) closeModal();
@@ -1472,7 +1582,7 @@ document.getElementById('surpriseBtn').addEventListener('click',()=>{
   let pool = base.filter(d=>hindi(d) && Number(d.y||0)>=2000 && d.status!=='upcoming');
   if(pool.length < 25) pool = base;
   pool = pool.slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,500);
-  if(pool.length) openModal(pool[Math.floor(Math.random()*pool.length)]);
+  if(pool.length) runMovieRoulette();
 });
 /* ---- Aaj ka vibe : one popular pick that changes every day ---- */
 function renderVibe(){
@@ -1577,7 +1687,7 @@ function clearAllFilters(){
   state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
-  state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false;
+  state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false; state.vibe=null;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
   setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
@@ -1604,6 +1714,12 @@ function render(){
     if(state.type.size && !state.type.has(d.type)) return false;
     if(state.minRating && Number(d.irt||d.rtg||0) < state.minRating) return false;
     if(state.only && !state.only.has(String(d.t||'').toLowerCase())) return false;
+    if(state.vibe && state.vibe.length){
+      const g=(d.g||[]).map(x=>String(x).toLowerCase());
+      const m=state.vibe.filter(v=>g.some(x=>x.indexOf(String(v).toLowerCase())>=0)).length;
+      const r=Number(d.irt||d.rtg||0);
+      if(!(m>=2 || (m>=1 && r>=7.8))) return false;      // two tag hits, or one plus a high rating
+    }
     if(state.gemsMode){
       const r=Number(d.irt||d.rtg||0), v=Number(d.ivot||d.vot||0);
       if(!(r>=7.6 && v>=1000 && v<=50000)) return false;      // high rating, modest vote count
@@ -1693,7 +1809,7 @@ function render(){
   if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
-  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode]);
+  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
   resCount.textContent = (state.topN ? 'Top '+shown.length : (shown.length<out.length ? shown.length+' of '+out.length : out.length))+' title'+(out.length===1?'':'s');
