@@ -87,6 +87,24 @@
   .layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:30px;align-items:start;
     padding:26px 22px 60px}
   .rail{position:sticky;top:80px;display:flex;flex-direction:column;gap:22px}
+  /* search suggestions */
+  .search{position:relative}
+  #sugg{position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:6px;z-index:80;max-height:60vh;overflow:auto;display:none;box-shadow:0 20px 44px rgba(0,0,0,.55)}
+  #sugg.on{display:block}
+  #sugg .hd{padding:8px 10px 4px;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  #sugg .sg{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:10px;cursor:pointer}
+  #sugg .sg:hover,#sugg .sg.act{background:var(--card-hover)}
+  #sugg .sg .ph{width:30px;height:44px;object-fit:cover;border-radius:5px;background:#1c2437;flex:0 0 auto}
+  #sugg .sg .tx{min-width:0;flex:1}
+  #sugg .sg .t{font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #sugg .sg .m{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #sugg .sg .k{font-size:10px;color:var(--accent);font-family:var(--font-mono);flex:0 0 auto}
+  /* one-tap filter suggestions */
+  .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
+  .quickpicks::-webkit-scrollbar{display:none}
+  .qp{white-space:nowrap;border:1px solid var(--border);background:var(--card-bg);color:var(--text);border-radius:999px;padding:8px 13px;font-size:12.5px;cursor:pointer;font-family:inherit}
+  .qp:hover{border-color:var(--accent)}
+  .qp.on{border-color:var(--accent);background:rgba(59,130,246,.14)}
   .rail-block h6{font-family:var(--font-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
     color:var(--faint);margin-bottom:9px}
   .chips{display:flex;flex-wrap:wrap;gap:6px}
@@ -261,6 +279,7 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
       <input id="q" type="text" placeholder="Search a title — 3 Idiots, RRR, Bluffmaster…" autocomplete="off">
       <button id="qclear" class="qclear" aria-label="Clear search" hidden>×</button>
+      <div id="sugg" role="listbox" aria-label="Suggestions"></div>
     </div>
     <button id="filtersBtn" class="hbtn only-mobile" title="Filters">Filters <b id="filterCount"></b></button>
     <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
@@ -272,6 +291,7 @@
 <div class="wrap layout">
   <aside class="rail" id="rail">
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
+    <div class="rail-block"><h6>Quick picks</h6><div class="quickpicks" id="quickPicks"></div></div>
     <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
     <div class="rail-block"><h6>Category</h6><div class="chips" id="catRow"></div></div>
     <div class="rail-block"><h6>OTT Platform</h6><div class="chips" id="ottRow"></div></div>
@@ -510,7 +530,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -927,9 +947,124 @@ document.addEventListener('click',e=>{
   if(e.target.closest('#moreBtn')){ shownLimit += PAGE; render(); }
 });
 
+/* ---- one-tap filter suggestions ----
+   Each chip sets a whole filter combination, so a viewer does not have to hunt through the rail. */
+const REGIONAL_CATS = ['regional','marathi','bengali','tamil','telugu','malayalam','kannada','punjabi',
+                       'gujarati-movie','gujarati-natak','odia','assamese','bhojpuri'];
+const QUICK = [
+  {id:'month',   label:'\u{1F195} New this month', apply:s=>{ s.rel='month'; s.sort='new'; }},
+  {id:'top',     label:'\u{1F525} Most popular',   apply:s=>{ s.rel='all'; s.sort='pop'; }},
+  {id:'acclaim', label:'\u{1F3C6} 8+ rated',       apply:s=>{ s.minRating=8; s.rel='all'; }},
+  {id:'hindi',   label:'\u{1F3AC} Hindi films',    apply:s=>{ s.cat=new Set(['hindi']); s.type=new Set(['Movie']); s.rel='all'; }},
+  {id:'series',  label:'\u{1F4FA} Web series',     apply:s=>{ s.type=new Set(['Series']); s.rel='all'; }},
+  {id:'short',   label:'\u{1F39E}\uFE0F Short films',    apply:s=>{ s.type=new Set(['Short']); s.rel='all'; }},
+  {id:'regional',label:'\u{1F30F} Regional',       apply:s=>{ s.cat=new Set(REGIONAL_CATS); s.rel='all'; }},
+  {id:'anime',   label:'\u{1F338} Anime',          apply:s=>{ s.cat=new Set(['anime']); s.rel='all'; }},
+  {id:'natak',   label:'\u{1F3AD} Natak',          apply:s=>{ s.type=new Set(['Natak']); s.rel='all'; }},
+  {id:'docs',    label:'\u{1F4DA} Documentaries',  apply:s=>{ s.cat=new Set(['documentary']); s.rel='all'; }},
+  {id:'quick',   label:'\u23F1\uFE0F Under 2 hours',  apply:s=>{ s.rt='u120'; s.rel='all'; }},
+  {id:'family',  label:'\u{1F46A} Family night',   apply:s=>{ s.company='family'; s.rel='all'; }},
+];
+(function buildQuickPicks(){
+  const row=document.getElementById('quickPicks'); if(!row) return;
+  QUICK.forEach(q=>{
+    const b=document.createElement('button');
+    b.className='qp'; b.dataset.qp=q.id; b.textContent=q.label; b.type='button';
+    row.appendChild(b);
+  });
+  row.addEventListener('click',e=>{
+    const b=e.target.closest('.qp'); if(!b) return;
+    const spec=QUICK.find(q=>q.id===b.dataset.qp); if(!spec) return;
+    clearAllFilters();
+    spec.apply(state);
+    if(typeof setPillRow==='function'){
+      setPillRow('relRow','rel',state.rel); setPillRow('sortRow','sort',state.sort);
+      setPillRow('rtRow','rt',state.rt); setPillRow('compRow','comp',state.company);
+      setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
+    }
+    document.querySelectorAll('#quickPicks .qp').forEach(p=>p.classList.remove('on'));
+    b.classList.add('on');
+    render();
+  });
+})();
+
+/* ---- search suggestions ---- */
+let suggActive=-1;
+function suggHits(q){
+  const pool=(DATA||[]).concat(liveResults||[]);
+  const seen=new Set(), out=[];
+  for(const d of pool){
+    if(!d || !d.t || d.src==='youtube') continue;
+    if(typeof fuzzyHit==='function' ? !fuzzyHit(d.t,q) : d.t.toLowerCase().indexOf(q)<0) continue;
+    const k=d.t.toLowerCase();
+    if(seen.has(k)) continue;
+    seen.add(k); out.push(d);
+    if(out.length>=40) break;
+  }
+  out.sort((a,b)=>{
+    const ap=a.t.toLowerCase().startsWith(q)?0:1, bp=b.t.toLowerCase().startsWith(q)?0:1;
+    if(ap!==bp) return ap-bp;
+    return Number(b.irt||b.rtg||0)-Number(a.irt||a.rtg||0);
+  });
+  return out.slice(0,8);
+}
+function drawSugg(q){
+  const box=document.getElementById('sugg'); if(!box) return;
+  if(!q || q.length<2){ box.classList.remove('on'); box.innerHTML=''; suggActive=-1; return; }
+  const hits=suggHits(q);
+  if(!hits.length){ box.classList.remove('on'); box.innerHTML=''; return; }
+  const lbl=k=>(CATS[k]&&CATS[k].label)||k||'';
+  box.innerHTML='<div class="hd">Suggestions</div>'+hits.map(d=>{
+    const r=d.irt||d.rtg||'';
+    return '<div class="sg" data-sg="'+esc(d.t)+'">'
+      + '<img class="ph" src="'+esc(d.poster||'')+'" alt="" onerror="this.style.visibility=\'hidden\'">'
+      + '<div class="tx"><div class="t">'+esc(dispTitle(d.t))+'</div>'
+      + '<div class="m">'+[d.y, lbl(d.cat), d.type].filter(Boolean).join(' \u00b7 ')+'</div></div>'
+      + '<div class="k">'+(r?('\u2605 '+r):'')+'</div></div>';
+  }).join('');
+  box.classList.add('on');
+  suggActive=-1;
+}
+function pickSugg(title){
+  const box=document.getElementById('sugg');
+  if(box){ box.classList.remove('on'); box.innerHTML=''; }
+  const inp=document.getElementById('q');
+  if(inp) inp.value=title;
+  state.q=String(title).toLowerCase();
+  var qc=document.getElementById('qclear'); if(qc) qc.hidden=false;
+  render();
+}
+(function wireSugg(){
+  const box=document.getElementById('sugg'), inp=document.getElementById('q');
+  if(!box || !inp) return;
+  box.addEventListener('mousedown',e=>{
+    const sg=e.target.closest('.sg'); if(!sg) return;
+    e.preventDefault(); pickSugg(sg.dataset.sg);
+  });
+  inp.addEventListener('keydown',e=>{
+    const items=box.querySelectorAll('.sg');
+    if(!items.length || !box.classList.contains('on')) return;
+    if(e.key==='ArrowDown' || e.key==='ArrowUp'){
+      e.preventDefault();
+      suggActive += (e.key==='ArrowDown'?1:-1);
+      if(suggActive<0) suggActive=items.length-1;
+      if(suggActive>=items.length) suggActive=0;
+      items.forEach((n,i)=>n.classList.toggle('act', i===suggActive));
+      items[suggActive].scrollIntoView({block:'nearest'});
+    } else if(e.key==='Enter' && suggActive>=0){
+      e.preventDefault(); pickSugg(items[suggActive].dataset.sg);
+    } else if(e.key==='Escape'){
+      box.classList.remove('on');
+    }
+  });
+  inp.addEventListener('blur',()=>setTimeout(()=>box.classList.remove('on'),150));
+  inp.addEventListener('focus',()=>{ if(state.q && state.q.length>=2) drawSugg(state.q); });
+})();
+
 document.getElementById('q').addEventListener('input',e=>{
   state.q=e.target.value.trim().toLowerCase();
   var qc=document.getElementById('qclear'); if(qc) qc.hidden = !e.target.value;
+  drawSugg(state.q);
   render();
   clearTimeout(liveTimer);
   liveTimer=setTimeout(()=>fetchLive(state.q), 350);   // also search the sheet shards
@@ -1211,6 +1346,7 @@ function clearAllFilters(){
   state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
+  state.minRating=0;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
   setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
@@ -1232,6 +1368,7 @@ function render(){
     if(d.src==='youtube') return false;            // YouTube is a knowledge source only, never in the feed
     if(state.cat.size && ![...state.cat].some(c=>d.cat===c || (d.cats||[]).includes(c))) return false;
     if(state.type.size && !state.type.has(d.type)) return false;
+    if(state.minRating && Number(d.irt||d.rtg||0) < state.minRating) return false;
     if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
     if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
     if(state.savedOnly && !watchlist.has(d.t)) return false;
