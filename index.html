@@ -324,6 +324,27 @@ const CATS = {
 
 const MOODS = ['Feel-Good','Comedy','Romantic','Thriller','Mystery','Action','Emotional','Horror','Nostalgic','Family'];
 
+/* Moods are DERIVED from the genres every row already has, so the mood filter works for all
+   2.4M IMDb rows too — not only the handful of curated titles that carry an explicit list.
+   No external service, no key, instant. */
+function moodOf(d){
+  const out = new Set(d.m || []);
+  const g = (d.g || []).map(x => String(x).toLowerCase());
+  const has = k => g.some(x => x.includes(k));
+  if(has('comedy')){ out.add('Comedy'); out.add('Feel-Good'); }
+  if(has('romance') || has('romantic')) out.add('Romantic');
+  if(has('thriller') || has('crime')) out.add('Thriller');
+  if(has('mystery')){ out.add('Mystery'); out.add('Thriller'); }
+  if(has('action') || has('adventure') || has('sci-fi') || has('fantasy') || has('science fiction')
+     || has('superhero') || has('speculative') || has('thriller')) out.add('Action');
+  if(has('horror')) out.add('Horror');
+  if(has('family') || has('animation')) out.add('Family');
+  if(has('drama') || has('war') || has('biography')) out.add('Emotional');
+  if(has('history') || has('documentary') || has('western')) out.add('Nostalgic');
+  if(has('music') || has('musical') || has('sport')) out.add('Feel-Good');
+  return [...out];
+}
+
 const DEMO = [
   // --- Gujarati Movies ---
   {t:'Chhello Divas',y:2015,cat:'gujarati-movie',type:'Movie',g:['Comedy','Drama'],m:['Feel-Good','Comedy','Nostalgic'],a:['Gujarati'],o:['ShemarooMe','JioHotstar'],poster:'posters/chhello-divas-gujarati-film-poster.jpg'},
@@ -1045,7 +1066,7 @@ function render(){
         if(!list.includes(oc.label)) return false;
       }
     }
-    if(state.moods.size && ![...state.moods].every(m=>d.m.includes(m))) return false;
+    if(state.moods.size && ![...state.moods].every(m=>moodOf(d).includes(m))) return false;
     if(state.q && !d.t.toLowerCase().includes(state.q)) return false;
     return true;
   });
