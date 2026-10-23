@@ -264,7 +264,6 @@
     <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
     <button id="shareBtn" class="hbtn" title="Share this view">Share</button>
     <button id="surpriseBtn" class="hbtn" title="Random pick">Surprise me</button>
-    <button id="installBtn" class="hbtn" title="Install FilmiSet as an app" hidden>Install app</button>
   </div>
 </header>
 
@@ -764,6 +763,13 @@ function initials(t){
 function justwatch(t){return 'https://www.justwatch.com/in/search?q='+encodeURIComponent(t);}
 function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}); }catch(e){ return iso; } }
 function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
+/* every title gets a trailer link: the exact YouTube video when TMDB has one,
+   otherwise a YouTube search for "<title> <year> trailer" */
+function ytTrailer(d){
+  if(d && d.tr) return 'https://www.youtube.com/watch?v=' + d.tr;
+  const q = ((d && d.t) || '') + ((d && d.y) ? ' ' + d.y : '') + ' trailer';
+  return 'https://www.youtube.com/results?search_query=' + encodeURIComponent(q);
+}
 
 /* ---- title modal (Surprise me / Aaj ka vibe / details) ---- */
 /* ---- deep links: every title has a stable ?t= URL, and the og tags follow it ---- */
@@ -809,7 +815,7 @@ function openModal(d, fromPop){
         + [d.dir?'Director: '+d.dir:'', d.prod?'Studio: '+d.prod:'',
            (d.cast&&d.cast.length)?'Cast: '+d.cast.join(', '):''].filter(Boolean).join('  ·  ') + '</div>' : '')
     + '<div class="row">'
-      + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">Watch trailer</a>':'')
+      + '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="'+ytTrailer(d)+'">'+(d.tr?'Watch trailer':'Find trailer')+'</a>'
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
       + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
       + '<button class="hbtn" data-mclose="1">Close</button>'
@@ -1093,7 +1099,7 @@ function render(){
                 ? '<div class="watch avail">Available on '+d.o.join(' · ')+'</div>'
                 : '<div class="watch none">OTT info not listed</div>')))
         + '<div class="cardacts">'
-          + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>':'')
+          + '<a class="mini yt" target="_blank" rel="noopener" href="'+ytTrailer(d)+'">\u25b6 Trailer</a>'
           + '<button class="mini'+(watched.has(d.t)?' on':'')+'" data-seen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
           + '<button class="mini" data-more="'+esc(d.t)+'">More like this</button>'
         + '</div>'
@@ -1196,23 +1202,7 @@ if('serviceWorker' in navigator && (location.protocol === 'https:' || location.h
     navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW registration failed:', err));
   });
 }
-let deferredInstall = null;
-const installBtn = document.getElementById('installBtn');
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault();
-  deferredInstall = e;
-  if(installBtn) installBtn.hidden = false;
-});
-if(installBtn) installBtn.addEventListener('click', async () => {
-  if(!deferredInstall) return;
-  deferredInstall.prompt();
-  try{ const { outcome } = await deferredInstall.userChoice; if(outcome === 'accepted') installBtn.hidden = true; }catch(e){}
-  deferredInstall = null;
-});
-window.addEventListener('appinstalled', () => {
-  if(installBtn) installBtn.hidden = true;
-  deferredInstall = null;
-});
+/* the app is still installable — just through the browser's own menu, no button here */
 
 /* data/movies.json  = curated catalog (from the Google Sheet)
    data/catalog.json = auto-collected catalog (Wikidata, refreshed daily by a GitHub Action)
