@@ -33,6 +33,25 @@ def norm(t):
     return re.sub(r"\s+", " ", t).strip()
 
 
+# known TMDB provider ids (India) -> the name the site uses
+PROVIDER_BY_ID = {
+    8: "Netflix", 9: "Prime Video", 122: "JioHotstar", 2336: "JioHotstar", 220: "JioCinema",
+    237: "SonyLIV", 232: "ZEE5", 474: "ShemarooMe", 515: "MX Player", 532: "Aha",
+    2528: "Sun NXT", 315: "Hoichoi", 350: "Apple TV+", 283: "Crunchyroll",
+    2: "Apple TV+", 3: "Google Play Movies", 192: "YouTube", 68: "Microsoft Store",
+}
+
+
+def provider_name(p):
+    pid = p.get("provider_id")
+    if pid in PROVIDER_BY_ID:
+        return PROVIDER_BY_ID[pid]
+    name = p.get("provider_name") or ""
+    return {"Amazon Prime Video": "Prime Video", "Disney+ Hotstar": "JioHotstar",
+            "JioHotstar": "JioHotstar", "Hotstar": "JioHotstar",
+            "Apple TV Plus": "Apple TV+", "Apple TV": "Apple TV+"}.get(name, name)
+
+
 def lookup(title, year, is_series, key):
     kind = "tv" if is_series else "movie"
     params = {"query": title, "include_adult": "false"}
@@ -54,10 +73,7 @@ def lookup(title, year, is_series, key):
     plats, seen = [], set()
     for bucket in ("flatrate", "free", "ads", "rent", "buy"):
         for p in block.get(bucket) or []:
-            name = p.get("provider_name") or ""
-            name = {"Amazon Prime Video": "Prime Video", "Disney+ Hotstar": "JioHotstar",
-                    "JioHotstar": "JioHotstar", "Hotstar": "JioHotstar",
-                    "Apple TV Plus": "Apple TV+", "Apple TV": "Apple TV+"}.get(name, name)
+            name = provider_name(p)
             if name and name not in seen:
                 seen.add(name)
                 plats.append(name)
