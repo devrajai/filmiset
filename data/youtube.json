@@ -1,6 +1,6 @@
 [
  {
-  "t": "Pranjal Bhatt",
+  "t": "Naresh Kanodia",
   "y": 2026,
   "cat": "gujarati-movie",
   "type": "Movie",
@@ -13,6 +13,153 @@
    "YouTube"
   ],
   "poster": "posters/hqdefault.jpg",
+  "trailer": "https://www.youtube.com/watch?v=C_wIlxbx3S4",
+  "src": "youtube",
+  "channel": "Shemaroo Gujarati",
+  "status": "released",
+  "date": "2026-10-23",
+  "note": "કારણ કે પ્રીતના લેખ મનુષ્ય નહીં, પણ પરમેશ્વર પોતે લખે છે! | Gujarati Movie Scene | Naresh Kanodia"
+ },
+ {
+  "t": "Darshan Thoogudeepa के दोस्त उससे मदद मांगने आये हैं",
+  "y": 2026,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "posters/hqdefault-cfae8f.jpg",
+  "trailer": "https://www.youtube.com/watch?v=fFfa_W4l4J0",
+  "src": "youtube",
+  "channel": "Goldmines",
+  "status": "released",
+  "date": "2026-10-23",
+  "note": "Darshan Thoogudeepa के दोस्त उससे मदद मांगने आये हैं | Viraat फिल्म का मजेदार सीन"
+ },
+ {
+  "t": "द रीटर्न ऑफ़ रिबेल",
+  "y": 2026,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "posters/hqdefault-687b55.jpg",
+  "trailer": "https://www.youtube.com/watch?v=50BXP_DMcbI",
+  "src": "youtube",
+  "channel": "Goldmines",
+  "status": "released",
+  "date": "2026-10-23",
+  "note": "Prabhas बर्थडे स्पेशल हिंदी डब्ड मूवी | द रीटर्न ऑफ़ रिबेल - The Return of Rebel | अनुष्का शेट्टी"
+ },
+ {
+  "t": "Paisa Vasool फिल्म का सीन",
+  "y": 2026,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "posters/hqdefault-b49c68.jpg",
+  "trailer": "https://www.youtube.com/watch?v=CShPGhGMi_w",
+  "src": "youtube",
+  "channel": "Goldmines",
+  "status": "released",
+  "date": "2026-10-23",
+  "note": "टाइम ख़त्म होने के बाद ना मौहलत मिलेगी ना माफ़ी | Paisa Vasool फिल्म का सीन"
+ },
+ {
+  "t": "Raashii Khanna और अली Gopichand के सामने नाटक कर रहे हैं",
+  "y": 2026,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "posters/hqdefault-885833.jpg",
+  "trailer": "https://www.youtube.com/watch?v=urw-tJYMXIo",
+  "src": "youtube",
+  "channel": "Goldmines",
+  "status": "released",
+  "date": "2026-10-23",
+  "note": "Raashii Khanna और अली Gopichand के सामने नाटक कर रहे हैं | Oxygen फिल्म की कॉमेडी"
+ },
+ {
+  "t": "खतरनाक खिलाड़ी (HD) साउथ सुपरस्टार #Prabhas बर्थडे स्पेशल हिंदी डब्ड म",
+  "y": 2026,
+  "cat": "south-dubbed",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "posters/hqdefault-e5d2ae.jpg",
+  "trailer": "https://www.youtube.com/watch?v=RvIWcoj3CmU",
+  "src": "youtube",
+  "channel": "Goldmines",
+  "status": "released",
+  "date": "2026-10-23",
+  "note": "खतरनाक खिलाड़ी (HD) साउथ सुपरस्टार #Prabhas बर्थडे स्पेशल हिंदी डब्ड मूवी | अनुष्का शेट्टी"
+ },
+ {
+  "t": "418 + CLAYFACE Movies",
+  "y": 2026,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "posters/hqdefault-fceb08.jpg",
+  "trailer": "https://www.youtube.com/watch?v=wIOH_fqwVrY",
+  "src": "youtube",
+  "channel": "Abhi Ka Review",
+  "status": "released",
+  "date": "2026-10-23",
+  "note": "418 + CLAYFACE Movies Review"
+ },
+ {
+  "t": "Pranjal Bhatt",
+  "y": 2026,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Gujarati"
+  ],
+  "o": [
+   "YouTube"
+  ],
+  "poster": "posters/hqdefault-137504.jpg",
   "trailer": "https://www.youtube.com/watch?v=bl8weI77qwI",
   "src": "youtube",
   "channel": "Shemaroo Gujarati",
@@ -147,27 +294,6 @@
   "note": "Amritha Aiyer लिफ्ट में भूत के बारे में जानने के लिये एक गेम खेल रही है | Lift Horror फिल्म का सीन"
  },
  {
-  "t": "मेरी ताक़त (Balupu) साउथ की एक्शन डब्ड फुल मूवी",
-  "y": 2026,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [],
-  "m": [],
-  "a": [
-   "Hindi"
-  ],
-  "o": [
-   "YouTube"
-  ],
-  "poster": "posters/hqdefault-7394cd.jpg",
-  "trailer": "https://www.youtube.com/watch?v=UqZVYD7y2mc",
-  "src": "youtube",
-  "channel": "Goldmines",
-  "status": "released",
-  "date": "2026-10-22",
-  "note": "मेरी ताक़त (Balupu) साउथ की एक्शन डब्ड फुल मूवी | रवि तेजा, श्रुति हासन, अंजलि"
- },
- {
   "t": "1 Film = 100 Animal: Ghost In The Cell",
   "y": 2026,
   "cat": "hindi",
@@ -229,90 +355,6 @@
   "status": "released",
   "date": "2026-10-21",
   "note": "હિતેન અને પ્રાંજલ પડ્યા પ્રેમમાં | ડ્રાઈવર દિલવાળો - Driver Dilwalo | Hiten Kumar | Pranjal Bhatt"
- },
- {
-  "t": "Day 9: Finding Epic Movies #rajathegreat",
-  "y": 2026,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [],
-  "m": [],
-  "a": [
-   "Hindi"
-  ],
-  "o": [
-   "YouTube"
-  ],
-  "poster": "posters/hqdefault-faf10e.jpg",
-  "trailer": "https://www.youtube.com/watch?v=gjKOi8Cc5ZA",
-  "src": "youtube",
-  "channel": "Goldmines",
-  "status": "released",
-  "date": "2026-10-21",
-  "note": "Day 9: Finding Epic Movies #rajathegreat"
- },
- {
-  "t": "Prabhas इस आदमी को आटे कि बोरी बोल रहा है",
-  "y": 2026,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [],
-  "m": [],
-  "a": [
-   "Hindi"
-  ],
-  "o": [
-   "YouTube"
-  ],
-  "poster": "posters/hqdefault-3d87cf.jpg",
-  "trailer": "https://www.youtube.com/watch?v=t2AXnoOXkto",
-  "src": "youtube",
-  "channel": "Goldmines",
-  "status": "released",
-  "date": "2026-10-21",
-  "note": "Prabhas इस आदमी को आटे कि बोरी बोल रहा है | Mirchi फिल्म का बेहतरीन सीन"
- },
- {
-  "t": "Gulu Gulu फिल्म का मजेदार सीन",
-  "y": 2026,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [],
-  "m": [],
-  "a": [
-   "Hindi"
-  ],
-  "o": [
-   "YouTube"
-  ],
-  "poster": "posters/hqdefault-081682.jpg",
-  "trailer": "https://www.youtube.com/watch?v=t9GzWspgBOU",
-  "src": "youtube",
-  "channel": "Goldmines",
-  "status": "released",
-  "date": "2026-10-21",
-  "note": "ये लड़की Santhanam को पुलिस ऑफिसर के कान के नीचे मारने को कहती है | Gulu Gulu फिल्म का मजेदार सीन"
- },
- {
-  "t": "Dynamite Khiladi फिल्म का सीन",
-  "y": 2026,
-  "cat": "south-dubbed",
-  "type": "Movie",
-  "g": [],
-  "m": [],
-  "a": [
-   "Hindi"
-  ],
-  "o": [
-   "YouTube"
-  ],
-  "poster": "posters/hqdefault-99f34a.jpg",
-  "trailer": "https://www.youtube.com/watch?v=jzD1otz44o4",
-  "src": "youtube",
-  "channel": "Goldmines",
-  "status": "released",
-  "date": "2026-10-21",
-  "note": "अभिषेक अंबरीश को पुलिस लेके जाती है पूछताछ के लिए | Dynamite Khiladi फिल्म का सीन"
  },
  {
   "t": "Ramayana Ravana Tandav Yash Song",
@@ -756,27 +798,6 @@
   "note": "Ramayana Trailer 3 Aa Gaya - REVIEW | Deeksha Sharma"
  },
  {
-  "t": "Hu re Pujaran Sajan Tara Premni -FULL Gujarati MOVIE",
-  "y": 2026,
-  "cat": "gujarati-movie",
-  "type": "Movie",
-  "g": [],
-  "m": [],
-  "a": [
-   "Gujarati"
-  ],
-  "o": [
-   "YouTube"
-  ],
-  "poster": "posters/hqdefault-daeeb8.jpg",
-  "trailer": "https://www.youtube.com/watch?v=ZGDSJLNAs50",
-  "src": "youtube",
-  "channel": "Shemaroo Gujarati",
-  "status": "released",
-  "date": "2026-10-16",
-  "note": "ચંદન રાઠોડ નાગજી જેવા ગુંડા સાથે કરી દુશ્મની! | Hu re Pujaran Sajan Tara Premni -FULL Gujarati MOVIE"
- },
- {
   "t": "Jailer 2 ka Worst Promotion!!",
   "y": 2026,
   "cat": "hindi",
@@ -796,27 +817,6 @@
   "status": "released",
   "date": "2026-10-16",
   "note": "Jailer 2 ka Worst Promotion!!"
- },
- {
-  "t": "Prahaar",
-  "y": 2026,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [],
-  "m": [],
-  "a": [
-   "Hindi"
-  ],
-  "o": [
-   "YouTube"
-  ],
-  "poster": "posters/hqdefault-416f3b.jpg",
-  "trailer": "https://www.youtube.com/watch?v=yJgYaWBP-us",
-  "src": "youtube",
-  "channel": "Filmi Indian",
-  "status": "released",
-  "date": "2026-10-16",
-  "note": "Prahaar Movie REVIEW | Deeksha Sharma"
  },
  {
   "t": "Nayyi Navelli + Prahaar",
@@ -1132,27 +1132,6 @@
   "status": "released",
   "date": "2026-10-02",
   "note": "Drishyam: The Conclusion MOVIE REVIEW"
- },
- {
-  "t": "VERITY + DIGGER Movies",
-  "y": 2026,
-  "cat": "hindi",
-  "type": "Movie",
-  "g": [],
-  "m": [],
-  "a": [
-   "Hindi"
-  ],
-  "o": [
-   "YouTube"
-  ],
-  "poster": "posters/hqdefault-278974.jpg",
-  "trailer": "https://www.youtube.com/watch?v=VkWHEvZTQxk",
-  "src": "youtube",
-  "channel": "Abhi Ka Review",
-  "status": "released",
-  "date": "2026-10-02",
-  "note": "VERITY + DIGGER Movies Review"
  },
  {
   "t": "Nanga Suraj?",
