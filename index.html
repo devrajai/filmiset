@@ -1258,9 +1258,25 @@ function fetchLive(q){
 }
 
 /* ---- PWA: installable + offline shell ---- */
+/* build stamp — so we can always tell which version a device is actually running */
+const BUILD = '2026-10-23c';
+document.documentElement.setAttribute('data-build', BUILD);
+console.log('FilmiSet build', BUILD);
+
 if('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')){
+  /* if a NEW service worker takes over, reload once so the device leaves the old version.
+     This is what stops a phone showing a stale copy of the site. */
+  let reloading = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if(reloading) return;
+    reloading = true;
+    location.reload();
+  });
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW registration failed:', err));
+    navigator.serviceWorker.register('sw.js').then(reg => {
+      reg.update().catch(() => {});                       // check for a new sw.js right away
+      setInterval(() => reg.update().catch(() => {}), 60 * 60 * 1000);   // and hourly
+    }).catch(err => console.warn('SW registration failed:', err));
   });
 }
 /* the app is still installable — just through the browser's own menu, no button here */
@@ -1287,15 +1303,13 @@ Promise.all([
   fetch('data/tmdb.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/jikan.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/imdb_indian.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-  fetch('data/youtube.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, yt]) => {
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
   mergeSets(jikanRows);
   loadPosters();
   mergeSets(normImdbRows(indianRows));
-  mergeSets(yt);
   boot();
 }).catch(boot);
 </script>

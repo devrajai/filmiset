@@ -3,7 +3,7 @@
    - navigations   -> network-first           (a new deploy shows up immediately)
    - posters/*     -> cache-first             (they never change)
    Bump CACHE whenever the shell changes. */
-const CACHE = 'filmiset-v1';
+const CACHE = 'filmiset-v2-2026-10-23';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', e => {
