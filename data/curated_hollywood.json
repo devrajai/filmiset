@@ -1,0 +1,4354 @@
+[
+ {
+  "t": "Iron Man",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Robert Downey Jr. introduces Tony Stark; established Marvel's Indian theatrical footprint.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Incredible Hulk",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bruce Banner's origin battle through Harlem.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Iron Man 2",
+  "y": 2010,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Whiplash arrives and Black Widow makes her tactical debut.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Thor",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kenneth Branagh’s mythological Norse fantasy introducing the God of Thunder.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Captain America: The First Avenger",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Steve Rogers takes up the vibranium shield in WWII.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Avengers",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Earth’s Mightiest Heroes assemble in New York; shattered Indian box office records.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Iron Man 3",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tony Stark faces the Mandarin and his personal panic attacks.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Thor: The Dark World",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Thor and Loki form an uneasy alliance against Malekith.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Captain America: The Winter Soldier",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller",
+   "Drama"
+  ],
+  "m": [
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "High-stakes political espionage thriller with Bucky Barnes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Guardians of the Galaxy",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "James Gunn's cosmic space-opera filled with retro tunes.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Avengers: Age of Ultron",
+  "y": 2015,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tony Stark’s AI defense program turns rogue.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ant-Man",
+  "y": 2015,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Scott Lang's heist-comedy subatomic adventure.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Captain America: Civil War",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Sokovia Accords fracture the Avengers (Varun Dhawan voiced Cap in Hindi).",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Doctor Strange",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mind-bending mystic dimensions and mirror realities.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Guardians of the Galaxy Vol. 2",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Star-Lord discovers the dark truth about his celestial father, Ego.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spider-Man: Homecoming",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Peter Parker balances high school and Vulture (voiced by Tiger Shroff in Hindi).",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Thor: Ragnarok",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Taika Waititi’s colorful arena gladiator comedy on Sakaar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Panther",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "T'Challa defends Wakanda against Erik Killmonger.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Avengers: Infinity War",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Thanos wipes out half the universe; historic box-office run across India.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ant-Man and the Wasp",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Quantum realm rescue mission with Hope van Dyne.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Captain Marvel",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Carol Danvers unlocks cosmic binary power amidst the Kree-Skrull war.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Avengers: Endgame",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The ultimate conclusion to the Infinity Saga; highest-grossing Hollywood film in India for years.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spider-Man: Far From Home",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Peter Parker encounters Mysterio and drone warfare across Europe.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Widow",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Natasha Romanoff confronts the Red Room and Taskmaster.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shang-Chi and the Legend of the Ten Rings",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Martial arts fantasy spectacle rooted in Chinese folklore.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Eternals",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Chloé Zhao's multi-millennium celestial mythology.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spider-Man: No Way Home",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Multiversal crossover uniting Tobey Maguire, Andrew Garfield, and Tom Holland.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Doctor Strange in the Multiverse of Madness",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Scarlet Witch's rampage through parallel realities.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Thor: Love and Thunder",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Thor battles Gorr the God Butcher alongside Mighty Thor.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Panther: Wakanda Forever",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Shuri rises against Namor and the underwater kingdom of Talokan.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ant-Man and the Wasp: Quantumania",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kang the Conqueror's conquest in the Quantum Realm.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Guardians of the Galaxy Vol. 3",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Rocket Raccoon's tragic backstory and the High Evolutionary.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Marvels",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Carol Danvers, Monica Rambeau, and Kamala Khan tangle powers.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Deadpool & Wolverine",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ryan Reynolds and Hugh Jackman team up in the MCU multiverse.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spider-Man",
+  "y": 2002,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sam Raimi and Tobey Maguire's foundational superhero classic.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spider-Man 2",
+  "y": 2004,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Peter Parker’s existential burden facing Doctor Octopus.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Spider-Man 3",
+  "y": 2007,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The black alien symbiote, Sandman, and New Goblin.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Amazing Spider-Man",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Andrew Garfield takes on the Lizard in Marc Webb's reboot.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Amazing Spider-Man 2",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Electro, the Green Goblin, and Gwen Stacy's clock tower tragedy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Venom",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tom Hardy and the alien symbiote form a chaotic anti-hero bond.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Venom: Let There Be Carnage",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Woody Harrelson unleashes Carnage.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Venom: The Last Dance",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Eddie and Venom's final cross-country road survival run.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Morbius",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Jared Leto’s living vampire transformation.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Madame Web",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Clairvoyant suspense thriller set in 2003 New York.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Deadpool",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The fourth-wall-breaking, R-rated mercenary origin.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Deadpool 2",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Merc with a Mouth forms X-Force (featuring Ranveer Singh's iconic Hindi dub).",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "X-Men",
+  "y": 2000,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bryan Singer's grounded mutant civil rights allegory.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "X2: X-Men United",
+  "y": 2003,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Mutants and humans unite against Colonel William Stryker.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "X-Men: The Last Stand",
+  "y": 2006,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Dark Phoenix emerges against the mutant cure.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "X-Men Origins: Wolverine",
+  "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Logan’s adamantium bonding and feud with Sabretooth.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "X-Men: First Class",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Magneto and Professor X's brotherhood set during the Cuban Missile Crisis.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Wolverine",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Logan’s mortal battle against yakuza and Silver Samurai in Japan.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "X-Men: Days of Future Past",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Wolverine travels back in time to alter dystopian Sentinel futures.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "X-Men: Apocalypse",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "En Sabah Nur awakens to cleanse humanity.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Logan",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "An aging Wolverine and Charles Xavier protect Laura in a gritty neo-western masterpiece.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dark Phoenix",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Jean Grey loses control of cosmic solar flare forces.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Batman Begins",
+  "y": 2005,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Christopher Nolan’s grounded reboot of the Caped Crusader.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Dark Knight",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Heath Ledger's Joker tests Gotham's moral compass.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Dark Knight Rises",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bane breaks Batman and isolates Gotham City.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Man of Steel",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Zack Snyder's grand, destructive rebirth of Superman.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Batman v Superman: Dawn of Justice",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ideological clash between Gotham’s vigilante and Metropolis’s god.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Suicide Squad",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Task Force X takes on Enchantress in Midway City.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Wonder Woman",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Diana Prince enters WWI to battle Ares.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Justice League",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Joss Whedon's theatrical assembly against Steppenwolf.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Zack Snyder's Justice League",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Four-hour restored epic restoring Darkseid and Cyborg's arc.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aquaman",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "James Wan’s colorful, visual underwater fantasy blockbuster.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shazam!",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Billy Batson gains the wisdom, strength, and lightning of ancients.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Birds of Prey",
+  "y": 2020,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Margot Robbie’s Harley Quinn breaks free of the Joker.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Wonder Woman 1984",
+  "y": 2020,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Diana encounters the Dreamstone, Cheetah, and Maxwell Lord.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Suicide Squad",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "James Gunn’s bloody, comedic Corto Maltese mission.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Black Adam",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dwayne Johnson unleashes ancient Kahndaq fury.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Shazam! Fury of the Gods",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Shazamily confronts the Daughters of Atlas.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Flash",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Barry Allen resets timelines, bringing back Michael Keaton's Batman.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Blue Beetle",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Jaime Reyes bonds with an alien bio-technological scarab.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aquaman and the Lost Kingdom",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Arthur Curry and Orm team up against Black Manta's Black Trident.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Batman",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Matt Reeves and Robert Pattinson deliver a gritty detective neo-noir.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Joker",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Joaquin Phoenix’s Oscar-winning descent into madness and societal decay.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Joker: Folie à Deux",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Music",
+   "Drama"
+  ],
+  "m": [
+   "Emotional",
+   "Feel-Good"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Musical psychological courtroom drama inside Arkham.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Constantine",
+  "y": 2005,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Keanu Reeves hunts demons and negotiates with Lucifer.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hellboy",
+  "y": 2004,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Guillermo del Toro's dark occult superhero fantasy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hellboy II: The Golden Army",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Del Toro’s mythical fairy-realm spectacle.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Blade",
+  "y": 1998,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Wesley Snipes’ daywalking vampire hunter action thriller.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Blade II",
+  "y": 2002,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Guillermo del Toro pits Blade against the mutated Reapers.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ghost Rider",
+  "y": 2007,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Nicolas Cage's flaming-skull motorcycle stuntman anti-hero.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hancock",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Will Smith's reckless, immortal superhero seeking public redemption.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Avatar",
+  "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "James Cameron's groundbreaking visual journey to Pandora.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Avatar: The Way of Water",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Sully family explores the oceanic Metkayina reefs.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Matrix",
+  "y": 1999,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Wachowskis redefine action cinema and cyber-philosophical reality.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Matrix Reloaded",
+  "y": 2003,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The highway chase and the revelation of the Architect.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Matrix Revolutions",
+  "y": 2003,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Zion’s defense against the machine swarms and the final Smith clash.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Matrix Resurrections",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Lana Wachowski’s meta-commentary on legacy and free will.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Inception",
+  "y": 2010,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Christopher Nolan’s multi-layered subconscious dream heist.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Interstellar",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Cooper’s journey through a wormhole to save human civilization.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Tenet",
+  "y": 2020,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Nolan’s time-inverting espionage thriller across global operations.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Terminator",
+  "y": 1984,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Arnold Schwarzenegger’s relentless cybernetic assassin.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Terminator 2: Judgment Day",
+  "y": 1991,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "T-800 protects John Connor from the liquid-metal T-1000.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Terminator 3: Rise of the Machines",
+  "y": 2003,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The T-X arrives as Judgment Day proves inevitable.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Terminator Salvation",
+  "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Christian Bale fights the post-apocalyptic machine war.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Terminator Genisys",
+  "y": 2015,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Altered timelines and a nanotech-infected John Connor.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Terminator: Dark Fate",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Linda Hamilton and Arnold reunite to protect Dani Ramos.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Transformers",
+  "y": 2007,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Michael Bay brings Optimus Prime and Megatron to Earth.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Transformers: Revenge of the Fallen",
+  "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The ancient Decepticon Fallen threatens the Sun.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Transformers: Dark of the Moon",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "History"
+  ],
+  "m": [
+   "Action",
+   "Nostalgic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Secret lunar Apollo history and the battle for Chicago.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Transformers: Age of Extinction",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dinobots charge into Hong Kong alongside Mark Wahlberg.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Transformers: The Last Knight",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Arthurian legend meets cybertronian planetary collision.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Bumblebee",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Travis Knight’s tender, character-focused 1980s origin adventure.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Transformers: Rise of the Beasts",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Maximals and Terrorcons battle in 1990s Peru.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Rise of the Planet of the Apes",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Andy Serkis’s Caesar develops human intelligence via ALZ-112.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dawn of the Planet of the Apes",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Frail peace shatters between apes and human survivors.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "War for the Planet of the Apes",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Caesar leads his species to freedom against the Colonel.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kingdom of the Planet of the Apes",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Generations later, Noa defies the tyrant Proximus Caesar.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Edge of Tomorrow",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tom Cruise and Emily Blunt live, die, and repeat against Mimics.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "I, Robot",
+  "y": 2004,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Will Smith investigates robot ethics and VIKI's synthetic uprising.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "I Am Legend",
+  "y": 2007,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The last man standing in a deserted, vampire-plagued Manhattan.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Minority Report",
+  "y": 2002,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Steven Spielberg’s pre-crime psychic murder prevention thriller.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "War of the Worlds",
+  "y": 2005,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Alien tripod death rays decimate Earth's cities.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Total Recall",
+  "y": 1990,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Arnold Schwarzenegger’s Martian memory implant conspiracy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Total Recall",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Colin Farrell navigates The Fall and futuristic chemical colony warfare.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "District 9",
+  "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Neill Blomkamp’s apartheid allegory featuring extraterrestrial Prawns.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Elysium",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Matt Damon equips an exoskeleton to breach an elitist space habitat.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Chappie",
+  "y": 2015,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Family"
+  ],
+  "m": [
+   "Action",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A sentient police robot learns about consciousness and family.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Lucy",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Scarlett Johansson unlocks 100% of her human brain capacity.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ready Player One",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Spielberg’s pop-culture virtual-reality OASIS treasure hunt.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Alita: Battle Angel",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Robert Rodriguez’s cyborg martial-arts bounty hunter epic.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dune",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Drama"
+  ],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Denis Villeneuve’s majestic space political saga on Arrakis.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dune: Part Two",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Paul Atreides embraces the Fremen prophecy against the Harkonnens.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Fifth Element",
+  "y": 1997,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Luc Besson’s colorful 23rd-century flying-cab space adventure.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Oblivion",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Drone repairman Jack Harper discovers clones and the Tet deception.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Real Steel",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Hugh Jackman coaches an underdog sparring robot in the ring.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Gravity",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sandra Bullock’s breathtaking, terrifying orbital debris survival tale.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Martian",
+  "y": 2015,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Matt Damon sciences his way into surviving alone on the Red Planet.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Arrival",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Amy Adams deciphers non-linear alien linguistics to alter time perception.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Prometheus",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ridley Scott’s atmospheric quest to find human creators, the Engineers.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Alien: Covenant",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Synthetic David conducts xenomorph breeding experiments.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Alien: Romulus",
+  "y": 2024,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Scavengers board an abandoned space station housing facehuggers.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Predator",
+  "y": 1987,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Arnold Schwarzenegger’s jungle commando unit hunted by an alien hunter.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Predator 2",
+  "y": 1990,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Danny Glover fights an urban Predator in heatwave Los Angeles.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Predators",
+  "y": 2010,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Elite mercenaries dropped onto an extraterrestrial game preserve planet.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Predator",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Genetically upgraded super-predators invade suburban America.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Prey",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A Comanche warrior takes on a feral Predator in 1719 North America.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "AVP: Alien vs. Predator",
+  "y": 2004,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ancient subterranean pyramid battle beneath Antarctica.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Aliens vs. Predator: Requiem",
+  "y": 2007,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Predalien causes mayhem in a small Colorado town.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Source Code",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Jake Gyllenhaal relives an eight-minute commuter train bombing.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Looper",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Joseph Gordon-Levitt must execute his future self, Bruce Willis.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "RoboCop",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Modernized reboot of Alex Murphy's corporate cyborg lawman.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Island",
+  "y": 2005,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Clones discover they are organ-harvesting spare parts for the wealthy.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Maze Runner",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Gladers solve an enormous shifting mechanical maze.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Maze Runner: The Scorch Trials",
+  "y": 2015,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Escapees traverse desolate wastelands infected by the Flare.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Maze Runner: The Death Cure",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Final raid into WICKED's Last City.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Divergent",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tris Prior challenges faction-based dystopian societal conformity.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Harry Potter and the Sorcerer's Stone",
+  "y": 2001,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Boy Who Lived enters Hogwarts.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Harry Potter and the Chamber of Secrets",
+  "y": 2002,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Basilisk petrifies students beneath the castle.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Harry Potter and the Prisoner of Azkaban",
+  "y": 2004,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Alfonso Cuarón introduces Dementors and Sirius Black.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Harry Potter and the Goblet of Fire",
+  "y": 2005,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Triwizard Tournament and Lord Voldemort's rebirth.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Harry Potter and the Order of the Phoenix",
+  "y": 2006,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dumbledore's Army resists Umbridge and the Ministry.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Harry Potter and the Half-Blood Prince",
+  "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Voldemort's Horcruxes and Snape's shocking betrayal.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Harry Potter and the Deathly Hallows – Part 1",
+  "y": 2010,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The trio searches across Britain on the run.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Harry Potter and the Deathly Hallows – Part 2",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The epic final Battle of Hogwarts.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Fantastic Beasts and Where to Find Them",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Newt Scamander's magical briefcase opens in New York.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Fantastic Beasts: The Crimes of Grindelwald",
+  "y": 2018,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Grindelwald gathers followers in 1920s Paris.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Fantastic Beasts: The Secrets of Dumbledore",
+  "y": 2022,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Qilin selection and the fight against Grindelwald.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Lord of the Rings: The Fellowship of the Ring",
+  "y": 2001,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Peter Jackson launches Frodo’s quest to Mordor.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Lord of the Rings: The Two Towers",
+  "y": 2002,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The defense of Helm's Deep and Gollum's double-nature.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Lord of the Rings: The Return of the King",
+  "y": 2003,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The siege of Minas Tirith; won 11 Oscars.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Hobbit: An Unexpected Journey",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bilbo Baggins joins Thorin’s dwarf company.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Hobbit: The Desolation of Smaug",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Bilbo confronts the golden dragon inside Erebor.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Hobbit: The Battle of the Five Armies",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Grand clash of armies beneath the Lonely Mountain.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pirates of the Caribbean: The Curse of the Black Pearl",
+  "y": 2003,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Johnny Depp's iconic Captain Jack Sparrow.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pirates of the Caribbean: Dead Man's Chest",
+  "y": 2006,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Davy Jones, the Flying Dutchman, and the Kraken.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pirates of the Caribbean: At World's End",
+  "y": 2007,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Maelstrom whirlpool battle of the Pirate Lords.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pirates of the Caribbean: On Stranger Tides",
+  "y": 2011,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Search for the Fountain of Youth with Blackbeard.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Pirates of the Caribbean: Dead Men Tell No Tales",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Ghostly Captain Salazar seeks pirate vengeance.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Raiders of the Lost Ark",
+  "y": 1981,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Harrison Ford races Nazis to recover the Ark of the Covenant.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Indiana Jones and the Temple of Doom",
+  "y": 1984,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Indy's India adventure featuring Amrish Puri as Mola Ram.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Indiana Jones and the Last Crusade",
+  "y": 1989,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Sean Connery and Harrison Ford seek the Holy Grail.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Indiana Jones and the Kingdom of the Crystal Skull",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Sci-Fi",
+   "Adventure"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Soviet agents, jungle chases, and alien relics.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Indiana Jones and the Dial of Destiny",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Archimedes' time-shifting Antikythera mechanism.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+  "y": 2005,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Family"
+  ],
+  "m": [
+   "Action",
+   "Family"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Children enter Narnia to battle the White Witch.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Chronicles of Narnia: Prince Caspian",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Pevensies help Caspian reclaim his throne.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
+  "y": 2010,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "High-seas voyage to Aslan's country.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jumanji",
+  "y": 1995,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Robin Williams emerges from the enchanted board game with stampeding beasts.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jumanji: Welcome to the Jungle",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Four teens trapped in video game avatars (The Rock, Kevin Hart).",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jumanji: The Next Level",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Swapped avatars, desert ostriches, and freezing mountain fortresses.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Zathura: A Space Adventure",
+  "y": 2005,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Board game catapults a suburban house into meteor showers and Zorgons.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Mummy",
+  "y": 1999,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Brendan Fraser awakens the cursed high priest Imhotep in Hamunaptra.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Mummy Returns",
+  "y": 2001,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "The Scorpion King's army and the bracelet of Anubis.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Mummy: Tomb of the Dragon Emperor",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Jet Li's terracotta army rises in ancient China.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Scorpion King",
+  "y": 2002,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dwayne Johnson’s sword-and-sorcery desert warrior origin.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Mummy",
+  "y": 2017,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Tom Cruise unearths the dark tomb of Princess Ahmanet.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Clash of the Titans",
+  "y": 2010,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Perseus takes on Medusa and the Kraken.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Wrath of the Titans",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Perseus journeys to the Underworld to stop Kronos.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Prince of Persia: The Sands of Time",
+  "y": 2010,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dastan wields the dagger that rewinds time.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Percy Jackson & the Olympians: The Lightning Thief",
+  "y": 2010,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Poseidon's son discovers Mount Olympus.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Percy Jackson: Sea of Monsters",
+  "y": 2013,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Quest to retrieve the magical Golden Fleece.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Night at the Museum",
+  "y": 2006,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Exhibits come alive via an Egyptian tablet at sundown.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Night at the Museum: Battle of the Smithsonian",
+  "y": 2009,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "History"
+  ],
+  "m": [
+   "Action",
+   "Nostalgic"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Historical icons battle inside Smithsonian archives.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Night at the Museum: Secret of the Tomb",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Adventure"
+  ],
+  "m": [],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Journey to London’s British Museum to restore the tablet.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Journey to the Center of the Earth",
+  "y": 2008,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Brendan Fraser enters subterranean prehistoric caverns.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Journey 2: The Mysterious Island",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dwayne Johnson discovers miniature elephants and giant bees.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Eragon",
+  "y": 2006,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "A farm boy bonds with the blue dragon Saphira against King Galbatorix.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Golden Compass",
+  "y": 2007,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Armored polar bears and spirit daemons in an alternate universe.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Warcraft",
+  "y": 2016,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Duncan Jones pits orc clans against human kingdoms of Azeroth.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dungeons & Dragons: Honor Among Thieves",
+  "y": 2023,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Chris Pine leads a ragtag party heist.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jungle Cruise",
+  "y": 2021,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Dwayne Johnson and Emily Blunt navigate Amazonian supernatural waters.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Maleficent",
+  "y": 2014,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Angelina Jolie reframes the fairy godmother and Sleeping Beauty curse.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Maleficent: Mistress of Evil",
+  "y": 2019,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "War erupts between the dark fey and Queen Ingrith.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Snow White and the Huntsman",
+  "y": 2012,
+  "cat": "english-dubbed",
+  "type": "Movie",
+  "g": [
+   "Fantasy"
+  ],
+  "m": [
+   "Action"
+  ],
+  "a": [
+   "Hindi (dub)",
+   "English"
+  ],
+  "o": [],
+  "poster": "",
+  "ov": "Kristen Stewart and Chris Hemsworth chal",
+  "src": "curated",
+  "status": "released"
+ }
+]

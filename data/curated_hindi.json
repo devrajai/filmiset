@@ -7,7 +7,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -25,7 +27,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -43,7 +47,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -61,7 +67,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -79,7 +87,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -95,9 +105,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Music"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -115,7 +127,9 @@
   "g": [
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -133,7 +147,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -149,10 +165,14 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance",
-   "Horror"
+   "Thriller",
+   "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -168,9 +188,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance"
+   "Romance",
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -186,9 +210,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Music"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -206,7 +232,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -224,7 +252,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -240,9 +270,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Action"
+   "Action",
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -260,7 +294,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -278,7 +314,9 @@
   "g": [
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -294,10 +332,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance",
+   "Action",
+   "Romance"
+  ],
+  "m": [
+   "Romantic",
    "Action"
   ],
-  "m": [],
   "a": [
    "Hindi"
   ],
@@ -315,7 +356,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -333,7 +376,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -351,7 +396,9 @@
   "g": [
    "Family"
   ],
-  "m": [],
+  "m": [
+   "Family"
+  ],
   "a": [
    "Hindi"
   ],
@@ -369,7 +416,9 @@
   "g": [
    "Biography"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -385,7 +434,7 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Drama"
+   "Adventure"
   ],
   "m": [],
   "a": [
@@ -405,7 +454,10 @@
   "g": [
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -424,7 +476,11 @@
    "Comedy",
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -442,7 +498,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -460,7 +518,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -478,7 +538,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -496,7 +558,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -514,7 +578,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -532,7 +598,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -550,7 +618,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -566,10 +636,14 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance",
-   "Horror"
+   "Thriller",
+   "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -587,7 +661,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -603,7 +680,7 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Drama"
+   "Adventure"
   ],
   "m": [],
   "a": [
@@ -623,7 +700,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -639,9 +718,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Biography"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -659,7 +740,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -677,7 +760,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -695,7 +780,9 @@
   "g": [
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -711,9 +798,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance"
+   "Romance",
+   "History"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Nostalgic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -730,10 +821,13 @@
   "type": "Movie",
   "g": [
    "Thriller",
-   "Music",
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -751,7 +845,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -767,9 +863,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Action"
+   "Action",
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -787,7 +887,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -803,9 +905,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "War"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -821,9 +925,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "War"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -841,7 +947,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -857,10 +965,12 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Thriller",
-   "Horror"
+   "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -878,7 +988,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -896,7 +1008,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -915,7 +1029,10 @@
    "Romance",
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -933,7 +1050,10 @@
   "g": [
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -949,9 +1069,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Music"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -969,7 +1091,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -985,9 +1109,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "War"
+   "Action",
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1005,7 +1133,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1023,7 +1153,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1042,7 +1174,11 @@
    "Thriller",
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1058,10 +1194,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Action",
-   "Music"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1077,10 +1214,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Music",
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1096,7 +1234,7 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Drama"
+   "Adventure"
   ],
   "m": [],
   "a": [
@@ -1116,7 +1254,10 @@
   "g": [
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1132,9 +1273,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "War"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1150,9 +1293,14 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Horror"
+   "Thriller",
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1168,9 +1316,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Comedy"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1189,7 +1339,10 @@
    "Comedy",
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1205,10 +1358,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [
    "Thriller",
    "Action"
   ],
-  "m": [],
   "a": [
    "Hindi"
   ],
@@ -1226,7 +1382,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1244,7 +1402,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1260,10 +1420,12 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Thriller",
-   "Music"
+   "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1281,7 +1443,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1299,7 +1463,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1317,7 +1483,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1335,7 +1503,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1353,7 +1523,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1371,7 +1543,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1389,7 +1563,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1407,7 +1583,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1423,9 +1601,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Family"
+   "Family",
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Family",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1443,7 +1625,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1461,7 +1645,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1479,7 +1665,9 @@
   "g": [
    "Family"
   ],
-  "m": [],
+  "m": [
+   "Family"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1497,7 +1685,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1515,7 +1706,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1531,10 +1724,12 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Comedy",
-   "Thriller"
+   "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1552,7 +1747,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1570,7 +1767,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1588,7 +1787,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1606,7 +1807,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1624,7 +1827,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1642,7 +1847,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1660,7 +1867,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1678,7 +1887,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1696,7 +1907,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1714,7 +1927,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1732,7 +1947,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1750,7 +1967,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1768,7 +1987,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1786,7 +2007,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1804,7 +2028,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1822,7 +2048,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1840,7 +2068,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1858,7 +2088,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1876,7 +2108,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1894,7 +2128,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1912,7 +2148,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1930,7 +2168,10 @@
   "g": [
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1946,9 +2187,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Thriller"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1966,7 +2209,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -1984,7 +2229,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2002,7 +2249,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2020,7 +2269,10 @@
   "g": [
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2036,10 +2288,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [
    "Thriller",
    "Action"
   ],
-  "m": [],
   "a": [
    "Hindi"
   ],
@@ -2057,7 +2312,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2075,7 +2332,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2093,7 +2352,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2110,9 +2371,12 @@
   "type": "Movie",
   "g": [
    "Romance",
-   "War"
+   "History"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Nostalgic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2130,7 +2394,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2148,7 +2414,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2164,9 +2432,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Family"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2184,7 +2454,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2202,7 +2474,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2219,10 +2493,12 @@
   "type": "Movie",
   "g": [
    "Action",
-   "Horror",
-   "Music"
+   "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2240,7 +2516,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2258,7 +2536,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2274,9 +2554,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "War"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2294,7 +2576,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2312,7 +2596,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2330,7 +2616,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2348,7 +2636,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2366,7 +2657,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2384,7 +2677,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2401,10 +2696,12 @@
   "type": "Movie",
   "g": [
    "Action",
-   "Music",
-   "Family"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2422,7 +2719,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2440,7 +2739,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2458,7 +2760,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2476,7 +2780,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2492,10 +2798,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Comedy",
-   "Action"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2513,7 +2820,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2531,7 +2840,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2549,7 +2860,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2567,7 +2881,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2585,7 +2901,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2601,10 +2919,12 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Comedy",
-   "Drama"
+   "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2622,7 +2942,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2640,7 +2962,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2658,7 +2982,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2676,7 +3002,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2694,7 +3022,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2712,7 +3042,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2731,7 +3063,10 @@
    "Music",
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2749,7 +3084,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2767,7 +3104,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2785,7 +3124,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2803,7 +3144,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2822,7 +3165,11 @@
    "Comedy",
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good",
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2838,9 +3185,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Family"
+   "Action",
+   "Sci-Fi",
+   "Fantasy"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2858,7 +3209,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2876,7 +3229,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2894,7 +3249,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2912,7 +3269,9 @@
   "g": [
    "Family"
   ],
-  "m": [],
+  "m": [
+   "Family"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2928,10 +3287,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance",
+   "Action",
+   "Romance"
+  ],
+  "m": [
+   "Romantic",
    "Action"
   ],
-  "m": [],
   "a": [
    "Hindi"
   ],
@@ -2949,7 +3311,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2967,7 +3331,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -2986,7 +3352,10 @@
    "Romance",
    "Family"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Family"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3002,10 +3371,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance",
-   "Music"
+   "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3023,7 +3393,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3041,7 +3413,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3057,10 +3431,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [
    "Thriller",
    "Action"
   ],
-  "m": [],
   "a": [
    "Hindi"
   ],
@@ -3079,7 +3456,10 @@
    "Romance",
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3095,9 +3475,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Action"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3115,7 +3497,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3133,7 +3517,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3151,7 +3537,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3170,7 +3558,11 @@
    "Thriller",
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3188,7 +3580,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3208,7 +3602,12 @@
    "Romance",
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Thriller",
+   "Action",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3226,7 +3625,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3244,7 +3645,10 @@
   "g": [
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3260,10 +3664,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "War",
+   "Action",
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Action",
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3281,7 +3688,10 @@
   "g": [
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3299,7 +3709,10 @@
   "g": [
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3317,7 +3730,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3335,7 +3750,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3353,7 +3770,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3371,7 +3791,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3387,10 +3809,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Music",
-   "War"
+   "Music"
   ],
-  "m": [],
+  "m": [
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3408,7 +3831,9 @@
   "g": [
    "Biography"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3424,9 +3849,12 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Horror"
+   "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3444,7 +3872,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3462,7 +3892,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3480,7 +3912,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3498,7 +3932,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3516,7 +3952,9 @@
   "g": [
    "Family"
   ],
-  "m": [],
+  "m": [
+   "Family"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3532,9 +3970,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Music"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3550,9 +3990,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "War"
+   "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3570,7 +4012,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3588,7 +4032,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3607,7 +4053,11 @@
    "Thriller",
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3625,7 +4075,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3643,7 +4095,9 @@
   "g": [
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3661,7 +4115,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3679,7 +4135,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3697,7 +4155,9 @@
   "g": [
    "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3715,7 +4175,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3731,9 +4193,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Biography"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3751,7 +4215,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3767,9 +4233,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Action"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3787,7 +4255,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3805,7 +4275,9 @@
   "g": [
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3823,7 +4295,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3841,7 +4315,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3859,7 +4335,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3877,7 +4356,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3895,7 +4376,10 @@
   "g": [
    "Comedy"
   ],
-  "m": [],
+  "m": [
+   "Comedy",
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3911,10 +4395,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Romance",
-   "War"
+   "Action",
+   "Romance"
   ],
-  "m": [],
+  "m": [
+   "Romantic",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3932,7 +4419,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3950,7 +4439,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3966,9 +4457,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "War"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -3986,7 +4479,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4004,7 +4499,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4020,9 +4517,11 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Family"
+   "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4040,7 +4539,9 @@
   "g": [
    "Music"
   ],
-  "m": [],
+  "m": [
+   "Feel-Good"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4058,7 +4559,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4076,7 +4579,9 @@
   "g": [
    "Action"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4094,7 +4599,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4112,7 +4619,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4128,9 +4637,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Biography"
+   "Biography",
+   "History"
   ],
-  "m": [],
+  "m": [
+   "Emotional",
+   "Nostalgic"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4146,9 +4659,13 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
+   "Action",
    "Thriller"
   ],
-  "m": [],
+  "m": [
+   "Thriller",
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4166,7 +4683,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4184,7 +4703,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4202,7 +4723,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4218,9 +4741,12 @@
   "cat": "hindi",
   "type": "Movie",
   "g": [
-   "Drama"
+   "Sci-Fi",
+   "Fantasy"
   ],
-  "m": [],
+  "m": [
+   "Action"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4238,7 +4764,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4256,7 +4784,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],
@@ -4274,7 +4804,9 @@
   "g": [
    "Drama"
   ],
-  "m": [],
+  "m": [
+   "Emotional"
+  ],
   "a": [
    "Hindi"
   ],

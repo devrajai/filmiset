@@ -1304,14 +1304,16 @@ Promise.all([
   fetch('data/jikan.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/imdb_indian.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_hindi.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi]) => {
+  fetch('data/curated_hollywood.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
   mergeSets(jikanRows);
   loadPosters();
   mergeSets(normImdbRows(indianRows));
-  mergeSets(classicsHindi);          // the curated 236-film landmark Hindi list
+  mergeSets(classicsHindi);          // curated landmark Hindi films
+  mergeSets(hollywoodHindi);         // curated Hollywood films dubbed in Hindi
   boot();
 }).catch(boot);
 </script>
