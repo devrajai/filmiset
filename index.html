@@ -867,15 +867,21 @@ const OTT_URL = {
   'Hoichoi':        'https://www.hoichoi.tv/search?q=',
   'Discovery+':     'https://www.discoveryplus.in/search?q=',
 };
-/* the platform's own search page for this title, so the user lands on the right place */
-function ottLink(name, title){
+/* the platform's own search page for this title, so the user lands on the right place.
+   When we know the real platform id (d.nf = the Netflix title id) we deep-link straight to it. */
+/* permanent platform ids we know (title -> id), filled from the curated data at boot */
+let PLATFORM_IDS = {};
+function pidKey(t){ return String(t || '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim(); }
+function ottLink(name, title, d){
+  const nfId = (d && d.nf) || PLATFORM_IDS[pidKey(title)];
+  if(name === 'Netflix' && nfId) return 'https://www.netflix.com/title/' + nfId;
   const base = OTT_URL[name];
   const q = encodeURIComponent(title || '');
   if(base) return base + q;
   return 'https://www.google.com/search?q=' + encodeURIComponent(name + ' ' + (title || '') + ' watch');
 }
-function ottLinks(list, title){
-  return (list || []).map(p => '<a class="ottl" target="_blank" rel="noopener" href="' + ottLink(p, title) + '">' + p + '</a>').join(' · ');
+function ottLinks(list, title, d){
+  return (list || []).map(p => '<a class="ottl" target="_blank" rel="noopener" href="' + ottLink(p, title, d) + '">' + p + '</a>').join(' · ');
 }
 
 /* ---- title modal (Surprise me / Aaj ka vibe / details) ---- */
@@ -910,7 +916,7 @@ function pushTitle(d){
 
 function openModal(d, fromPop){
   const up=d.status==='upcoming';
-  const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t) : 'OTT info not listed';
+  const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t, d) : 'OTT info not listed';
   const m=document.getElementById('modal');
   m.innerHTML='<div class="box">'
     + (d.poster? '<img src="'+d.poster+'" alt="" onerror="this.remove()">':'')
@@ -1211,7 +1217,7 @@ function render(){
             : (isUp
               ? '<div class="watch soon">Releasing '+(d.date?fmtDate(d.date):'soon')+'</div>'
               : ((d.o && d.o.length)
-                ? '<div class="watch avail">Available on '+ottLinks(d.o, d.t)+'</div>'
+                ? '<div class="watch avail">Available on '+ottLinks(d.o, d.t, d)+'</div>'
                 : '<div class="watch none">OTT info not listed</div>')))
         + '<div class="cardacts">'
           + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>' : '')
@@ -1378,7 +1384,8 @@ Promise.all([
   fetch('data/curated_hollywood_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_anime.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_netflix.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi]) => {
+  fetch('data/curated_netflix_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -1391,6 +1398,8 @@ Promise.all([
   mergeSets(hollywoodSeries);        // curated Hollywood series with Hindi dubs
   mergeSets(animeHindi);             // curated anime with Hindi dubs
   mergeSets(netflixHindi);           // Netflix Hindi Film Directory (director + cast + Netflix)
+  (netflixSeries || []).forEach(r => { if(r && r.nf && r.t) PLATFORM_IDS[pidKey(r.t)] = r.nf; });
+  mergeSets(netflixSeries);          // Netflix Hindi Web Series Directory (creators + cast + deep links)
   boot();
 }).catch(boot);
 </script>
