@@ -1,0 +1,84 @@
+[
+ {
+  "name": "Shemaroo Movies",
+  "q": "Shemaroo Movies full movie",
+  "what": "Official Hindi & Gujarati feature films"
+ },
+ {
+  "name": "Goldmines",
+  "q": "Goldmines full movie hindi dubbed",
+  "what": "Hindi-dubbed South Indian films"
+ },
+ {
+  "name": "Rajshri",
+  "q": "Rajshri full movie",
+  "what": "Hindi classics and family films"
+ },
+ {
+  "name": "Ultra Bollywood",
+  "q": "Ultra Bollywood full movie",
+  "what": "Hindi films, full length"
+ },
+ {
+  "name": "Eagle Movies",
+  "q": "Eagle Movies full hindi movie",
+  "what": "Hindi action and dubbed films"
+ },
+ {
+  "name": "Dhoom Movies",
+  "q": "Dhoom Movies full movie",
+  "what": "Hindi dubbed feature films"
+ },
+ {
+  "name": "Wide Frame Films",
+  "q": "Wide Frame Films full movie",
+  "what": "Hindi feature films"
+ },
+ {
+  "name": "Shemaroo Comedy",
+  "q": "Shemaroo Comedy full movie",
+  "what": "Hindi comedy films"
+ },
+ {
+  "name": "Shemaroo Gujarati",
+  "q": "Shemaroo Gujarati full movie",
+  "what": "Gujarati films and nataks"
+ },
+ {
+  "name": "Shemaroo Natak",
+  "q": "Shemaroo Natak full natak",
+  "what": "Gujarati stage plays"
+ },
+ {
+  "name": "Hindi Classic Films",
+  "q": "old hindi classic full movie",
+  "what": "Golden-age Hindi cinema"
+ },
+ {
+  "name": "South Dubbed Free",
+  "q": "south indian hindi dubbed full movie",
+  "what": "Tamil/Telugu/Malayalam in Hindi"
+ },
+ {
+  "name": "Short Films India",
+  "q": "indian short film award winning",
+  "what": "Indian short films"
+ },
+ {
+  "name": "Anime Hindi Free",
+  "q": "anime hindi dubbed full episodes",
+  "what": "Anime with Hindi dubs"
+ },
+ {
+  "name": "YouTube Movies",
+  "q": "",
+  "url": "https://www.youtube.com/feed/free_movies",
+  "what": "YouTube's own free-with-ads catalogue"
+ },
+ {
+  "name": "Internet Archive",
+  "q": "",
+  "url": "https://archive.org/details/feature_films",
+  "what": "Public-domain films, free and legal"
+ }
+]

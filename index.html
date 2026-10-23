@@ -106,6 +106,8 @@
   .rec img{width:26px;height:38px;object-fit:cover;border-radius:4px;flex:0 0 auto}
   .rec span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .rec i{color:var(--muted);font-style:normal;font-size:10.5px}
+  .ytfree{text-decoration:none;color:var(--ink);border-color:var(--line)}
+  .ytfree:hover{border-color:var(--accent);color:var(--accent)}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -298,6 +300,7 @@
 <div class="wrap layout">
   <aside class="rail" id="rail">
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
+    <div class="rail-block"><h6>Free on YouTube (legal)</h6><div class="chips" id="freeRow"></div></div>
     <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
     <div class="rail-block"><h6>OTT par dekho</h6><div class="quickpicks" id="ottPicks"></div></div>
     <div class="rail-block"><h6>Kya mood hai?</h6><div class="quickpicks" id="moodPicks"></div></div>
@@ -1001,6 +1004,25 @@ const QUICK = [
 
 
 
+
+/* ---- Free on YouTube: official channels that legally publish full films ----
+   Each chip opens a YouTube search scoped to that channel, so the link always lands on real
+   content. No embeds and no piracy mirrors — only official uploaders and public-domain archives. */
+let FREE_YT=[];
+function ytSearchUrl(q){ return 'https://www.youtube.com/results?search_query='+encodeURIComponent(q); }
+function freeOnYouTube(title){ return ytSearchUrl(String(title||'')+' full movie'); }
+(function buildFreeRow(){
+  const row=document.getElementById('freeRow'); if(!row) return;
+  fetch('data/free_youtube.json').then(r=>r.ok?r.json():null).then(list=>{
+    if(!Array.isArray(list) || !list.length) return;
+    FREE_YT=list;
+    row.innerHTML = list.map(function(c){
+      const url = c.url || ytSearchUrl(c.q || (c.name+' full movie'));
+      return '<a class="pill ytfree" href="'+url+'" target="_blank" rel="noopener" title="'+esc(c.what||'')+'">\u25B6 '+esc(c.name)+'</a>';
+    }).join('');
+  }).catch(()=>{});
+})();
+
 /* ---- Best of all time: Top 5 / 10 / 25 / 100 ---- */
 const TOP_PICKS = [
   {id:'t5',   label:'\u{1F3C6} Top 5',        n:5},
@@ -1405,6 +1427,7 @@ function openModal(d, fromPop){
     + (function(){ const rs=recommendationsFor(d,4); return rs.length ? '<div class="m" style="margin-top:10px">You might also like</div><div class="recs">'+rs.map(function(r){ return '<button class="rec" data-rec="'+esc(r.t)+'">'+(r.poster?'<img src="'+esc(r.poster)+'" alt="" onerror="this.remove()">':'')+'<span>'+esc(dispTitle(r.t))+'</span><i>'+(r.y||'')+'</i></button>'; }).join('')+'</div>' : ''; })()
     + '<div class="row">'
       + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">Watch trailer</a>' : '')
+      + '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="'+freeOnYouTube(d.t)+'">\u25B6 Free on YouTube</a>'
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
       + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
       + '<button class="hbtn" data-mclose="1">Close</button>'
@@ -1715,7 +1738,7 @@ function render(){
               ? '<div class="watch soon">Releasing '+(d.date?fmtDate(d.date):'soon')+'</div>'
               : ((d.o && d.o.length)
                 ? '<div class="watch avail">Available on '+ottLinks(d.o, d.t, d)+'</div>'
-                : '<div class="watch none">OTT info not listed</div>')))
+                : '<div class="watch none">OTT info not listed \u00b7 <a class="ottl" target="_blank" rel="noopener" href="'+freeOnYouTube(d.t)+'">try YouTube</a></div>')))
         + '<div class="cardacts">'
           + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>' : '')
           + '<button class="mini'+(watched.has(d.t)?' on':'')+'" data-seen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
