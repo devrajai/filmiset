@@ -1920,41 +1920,98 @@ const CRISIS = ['jeena nahi','nahi jeena','marna chahta','marna chahti','khudkhu
   'end my life','kill myself','want to die','jaan de','zindagi khatam','mujhe marna','self harm',
   'hurt myself','nahi rehna','jeene ka mann nahi','khatam kar'];
 const TALK = {
+  /* every group the rail has, so the box can set anything a tap can */
   situations: [
-    ['Breakup / move on', ['breakup','break up','toot','alag ho','move on','dumped','dhokha','bewafa']],
-    ['Healing',          ['heal','sukoon','calm','shant','relax','thak gaya','stress','burnout','pareshan']],
-    ['Self growth',      ['motivat','grow','improve','khud ko','better person','seekh','career badal']],
+    ['Breakup / move on', ['breakup','break up','toot','alag ho','move on','dumped','dhokha','bewafa','bichhad']],
+    ['Healing',          ['heal','sukoon','calm','shant','relax','thak gaya','stress','burnout','pareshan','mental']],
+    ['Self growth',      ['motivat','grow','improve','khud ko','better person','seekh','career badal','inspir']],
     ['Life lessons',     ['life lesson','sikh','zindagi ka','meaning of life','philosoph']],
-    ['Sci-fi / Space',   ['sci-fi','scifi','space','future','robots','antariks']],
-    ['Mind hit',         ['mind','twist','brain','confus','sochna','puzzle','mystery']],
-    ['Doctor life',      ['doctor','hospital','medical','nurse']],
-    ['Student life',     ['student','exam','padhai','study','college exam','iit','neet']],
-    ['College life',     ['college','hostel','campus','friends in college']],
-    ['Job life',         ['job','office','boss','corporate','naukri','career','startup']],
-    ['Lawyer life',      ['lawyer','court','vakeel','case','legal']],
-    ['Couple life',      ['couple','marriage','shadi','pati','patni','wife','husband','relationship']],
-    ['Long distance',    ['long distance','door','separation','videsh','abroad']],
-    ['Friendship',       ['friend','dost','yaar','gang','buddies']],
-    ['Hindi TV classics',['sitcom','tv show','purana show','khichdi','comedy show','doordarshan']],
+    ['Sci-fi / Space',   ['sci-fi','scifi','space','future','robots','antariks','alien','spacecraft']],
+    ['Mind hit',         ['mind bending','mind-bending','twist ending','brain','confus','sochna','puzzle','raaz']],
+    ['Doctor life',      ['doctor','hospital','medical','nurse','surgeon']],
+    ['Student life',     ['student','exam','padhai','study','college exam','iit','neet','school']],
+    ['College life',     ['college','hostel','campus','fresher']],
+    ['Job life',         ['job','office','boss','corporate','naukri','career','startup','salary']],
+    ['Lawyer life',      ['lawyer','court','vakeel','case','legal','advocate']],
+    ['Couple life',      ['couple','marriage','shadi','pati','patni','wife','husband','relationship','sasural']],
+    ['Long distance',    ['long distance','door','separation','videsh','abroad','pardes']],
+    ['Friendship',       ['friend','dost','yaar','gang','buddies','sang']],
+    ['Hindi TV classics',['sitcom','tv show','purana show','khichdi','comedy show','doordarshan','serial']],
   ],
-  light:   ['halka','halki','light','easy','fun','comedy','hasa','smile','khush','happy','mazedaar','timepass'],
-  heavy:   ['gahara','gehra','heavy','sad','rona','cry','emotional','dukhi','tragic'],
-  fast:    ['fast','thrill','action','edge of seat','suspense','josh','dhamaka'],
-  slow:    ['slow','calm','shant','peaceful','aaram','relaxing'],
-  alone:   ['akela','akeli','alone','solo','by myself','khud'],
-  family:  ['family','ghar','parents','maa','papa','mummy','papa','bachche','kids','grandparents','dada','dadi','nani'],
-  partner: ['partner','wife','husband','girlfriend','boyfriend','pati','patni','date night','couple'],
-  friends: ['friends','dost','yaar','gang','group'],
-  short:   ['short','chhota','kam time','2 hours','jaldi','time nahi'],
-  hindi:   ['hindi','bollywood','desi'],
-  gujarati:['gujarati','gujrati'],
-  korean:  ['korean','kdrama','k-drama','korea'],
-  tamil:   ['tamil'], telugu: ['telugu'], malayalam: ['malayalam'], kannada: ['kannada'],
-  bengali: ['bengali','bangla'], marathi: ['marathi'], punjabi: ['punjabi'],
-  dubbed:  ['dubbed','dub','hindi mein'],
-  series:  ['series','web series','show','season','episodes'],
-  movie:   ['movie','film','picture'],
+  /* genres, straight onto the Genre filter */
+  genres: ['Comedy','Thriller','Horror','Romance','Crime','Drama','Sci-Fi','Action','Mystery',
+           'Documentary','Animation','Biopic','Sports','Mythology','Musical','Family'],
+  /* a big word list per genre, across Hindi, Hinglish and English */
+  genreWords: {
+    'Comedy':      ['comedy','funny','hasa','hans','mazedaar','mazak','comic','halka-fulka','lol'],
+    'Thriller':    ['thriller','suspense','edge of seat','khoon','murder','crime','gangster','mafia','police','detective'],
+    'Horror':      ['horror','bhoot','daraw','darr','scary','ghost','zombie','pret'],
+    'Romance':     ['romance','romantic','love','pyaar','pyar','ishq','mohabbat','prem'],
+    'Crime':       ['crime','criminal','heist','dacoit','loot','drugs'],
+    'Drama':       ['drama','gahara','heavy','serious','family drama','samajik'],
+    'Sci-Fi':      ['sci-fi','scifi','science fiction','space','robot','future','time travel'],
+    'Action':      ['action','josh','dhamaka','fight','mast','mass','adrenaline','fast','high octane'],
+    'Mystery':     ['mystery','mysterious','raaz','puzzle','whodunit'],
+    'Documentary': ['documentary','docs','real story','sachchi kahani','factual'],
+    'Animation':   ['animation','animated','cartoon','anime'],
+    'Biopic':      ['biopic','biography','real life','jivani','true story'],
+    'Sports':      ['sports','cricket','football','khel','boxing','running'],
+    'Mythology':   ['mythology','mythological','pauranik','ramayan','mahabharat','devta'],
+    'Musical':     ['musical','music','sangeet','gaana','dance','naach'],
+    'Family':      ['family','parivar','ghar-wale','sab ke saath'],
+  },
+  /* languages, onto the Original language filter */
+  langWords: {
+    'Hindi':     ['hindi','bollywood','desi','hindustani'],
+    'Gujarati':  ['gujarati','gujrati','gujju'],
+    'Tamil':     ['tamil','tamizh','kollywood'],
+    'Telugu':    ['telugu','tollywood'],
+    'Malayalam': ['malayalam','mollywood','mallu'],
+    'Kannada':   ['kannada','sandalwood'],
+    'Bengali':   ['bengali','bangla','bangladesh'],
+    'Marathi':   ['marathi'],
+    'Punjabi':   ['punjabi','punjabi'],
+    'English':   ['english','hollywood','angrezi','america','usa','british'],
+    'Korean':    ['korean','kdrama','k-drama','korea','k dram'],
+    'Japanese':  ['japanese','japan','anime'],
+  },
+  /* platforms, onto the OTT filter */
+  ottWords: {
+    'Netflix':    ['netflix'],
+    'Prime Video':['prime','amazon','prime video'],
+    'JioHotstar': ['hotstar','jiohotstar','jio hotstar','disney'],
+    'ZEE5':       ['zee5','zee 5'],
+    'SonyLIV':    ['sonyliv','sony liv','sony'],
+    'Aha':        ['aha'],
+    'Sun NXT':    ['sun nxt','sunnxt'],
+    'Hoichoi':    ['hoichoi'],
+    'MX Player':  ['mx player','mxplayer','mx'],
+    'ShemarooMe': ['shemaroome','shemaroo'],
+    'Apple TV+':  ['apple tv','appletv'],
+    'Crunchyroll':['crunchyroll','crunchy'],
+    'YouTube':    ['youtube','yt'],
+  },
+  light:  ['halka','halki','light','easy','fun','khush','happy','feel good','feelgood','timepass','comfort'],
+  heavy:  ['gahara','gehra','heavy','sad','rona','cry','emotional','dukhi','tragic','bhaavuk'],
+  alone:  ['akela','akeli','alone','solo','by myself','khud','akele'],
+  family: ['family','ghar','parents','maa','papa','mummy','bachche','kids','grandparents','dada','dadi','nani','sab ke saath'],
+  partner:['partner','wife','husband','girlfriend','boyfriend','pati','patni','date night','couple'],
+  friends:['friends','dost','yaar','gang','group','sang'],
+  shortTime: ['short','chhota','chhoti','kam time','time nahi','jaldi','under 2','2 ghante','90 min'],
+  longTime:  ['lambi','long','3 ghante','bada'],
+  freeWords: ['free','muft','mukt','bina paise'],
+  subsWords: ['subscription','paid','subscribe'],
+  kidsSafe:  ['kids','bachche','bachchon','baccho','bacche','children','family safe','clean','safe','sab ke saath'],
+  adultOnly: ['adult','18+','a-rated'],
+  seriesOnly:['series','web series','show','season','episodes','serial'],
+  movieOnly: ['movie','film','picture','cinema'],
+  dubbed:    ['dubbed','dub','hindi mein','hindi me'],
+  popular:   ['popular','famous','famous','hit','best','top rated','highest rated','sabse'],
+  newest:    ['new','latest','naya','nayi','recent','fresh','abhi'],
+  oldest:    ['old','purani','purana','classic','vintage','90s','80s','retro'],
+  upcoming:  ['upcoming','aane wali','release hone wali','soon'],
 };
+
 function crisisIn(txt){
   const t=String(txt||'').toLowerCase();
   return CRISIS.some(w=>t.indexOf(w)>=0);
@@ -1969,46 +2026,72 @@ function crisisCard(){
     + '<p class="gl">Yahan hum sirf film suggestions de sakte hain — hum doctor nahi hain.</p></div>';
 }
 function readTalk(txt){
-  const t=String(txt||'').toLowerCase();
-  const has=list=>list.some(w=>t.indexOf(w)>=0);
-  const out={situation:null, notes:[], apply:{}};
-  for(const [sit,words] of TALK.situations){
-    if(has(words)){ out.situation=sit; break; }
+  const t=' '+String(txt||'').toLowerCase().replace(/[^\w\s+]/g,' ')+' ';
+  const has=arr=>arr.some(w=>t.indexOf(' '+w)>=0 || t.indexOf(w+' ')>=0 || t.indexOf(w)>=0);
+  const num=/\+/.test(t) ? null : null;
+  const out={situation:null, notes:[], apply:{}, said:[]};
+  // situation
+  for(const [sit,words] of TALK.situations){ if(has(words)){ out.situation=sit; break; } }
+  // genre — collect every genre mentioned, not just the first
+  const gs=[];
+  for(const g of TALK.genres){ const w=TALK.genreWords[g]; if(w && has(w)) gs.push(g); }
+  if(gs.length) out.apply.genres=gs;
+  // language
+  for(const lang in TALK.langWords){ if(has(TALK.langWords[lang])){ out.apply.olang=lang; break; } }
+  // platform
+  for(const p in TALK.ottWords){ if(has(TALK.ottWords[p])){ out.apply.ott=p; break; } }
+  // how many — "top 5", "best 20", "top100"
+  const tn = /(?:top|best|sabse achh|sabse achhi|sabse best)\s*(\d{1,3})/.exec(t);
+  if(tn){ out.apply.topN = Math.min(100, Math.max(1, parseInt(tn[1],10))); out.apply.sort='rating'; }
+  else if(has(['top rated','highest rated','best of all','sabse best','best movies','best films'])){
+    out.apply.topN=10; out.apply.sort='rating';
   }
-  if(has(TALK.light))  out.notes.push('something light');
-  if(has(TALK.heavy))  out.notes.push('something heavy');
-  if(has(TALK.fast))   out.notes.push('fast and gripping');
-  if(has(TALK.slow))   out.notes.push('calm and slow');
-  if(has(TALK.alone))  out.apply.company='solo';
-  else if(has(TALK.family)) out.apply.company='family';
-  else if(has(TALK.partner)) out.apply.company='date';
-  else if(has(TALK.friends)) out.apply.company='friends';
-  if(has(TALK.short))  out.apply.rt='u120';
-  if(has(TALK.series)) out.apply.type='Series';
-  else if(has(TALK.movie)) out.apply.type='Movie';
-  if(has(TALK.korean)) out.apply.olang='Korean';
-  else if(has(TALK.tamil)) out.apply.olang='Tamil';
-  else if(has(TALK.telugu)) out.apply.olang='Telugu';
-  else if(has(TALK.malayalam)) out.apply.olang='Malayalam';
-  else if(has(TALK.kannada)) out.apply.olang='Kannada';
-  else if(has(TALK.bengali)) out.apply.olang='Bengali';
-  else if(has(TALK.marathi)) out.apply.olang='Marathi';
-  else if(has(TALK.punjabi)) out.apply.olang='Punjabi';
-  else if(has(TALK.gujarati)) out.apply.olang='Gujarati';
-  else if(has(TALK.hindi)) out.apply.olang='Hindi';
+  // rating — "8+", "8 se upar", "8 rating"
+  const rn = /(\d(?:\.\d)?)\s*(?:\+|se upar|se zyada|rating|rated)/.exec(t);
+  if(rn){ const v=parseFloat(rn[1]); if(v>=1 && v<=10) out.apply.minRating=v; }
+  else if(has(['highly rated','high rating','achhi rating','acchi rating','top rated'])) out.apply.minRating=8;
+  // era
+  const dec = /(19[2-9]0|20[0-2]0)s/.exec(t);
+  if(dec){ out.apply.era = dec[1]==='2020' ? 'modern' : (parseInt(dec[1],10)<2000 ? 'classic' : 'modern'); }
+  if(has(TALK.oldest)) out.apply.era='classic';
+  if(has(TALK.newest) && !out.apply.era) out.apply.sort='new';
+  // age / safety
+  if(has(TALK.kidsSafe)) { out.apply.company='family'; out.apply.cert='U'; }
+  if(has(TALK.adultOnly)) out.apply.cert='A';
+  // who with
+  if(!out.apply.company){
+    if(has(TALK.alone)) out.apply.company='solo';
+    else if(has(TALK.family)) out.apply.company='family';
+    else if(has(TALK.partner)) out.apply.company='date';
+    else if(has(TALK.friends)) out.apply.company='friends';
+  }
+  // length
+  if(has(TALK.shortTime)) out.apply.rt='u120';
+  else if(has(TALK.longTime)) out.apply.rt='p120';
+  // availability
+  if(has(TALK.freeWords)) out.apply.free=true;
+  else if(has(TALK.subsWords)) out.apply.subs=true;
+  // type
+  if(has(TALK.seriesOnly)) out.apply.type='Series';
+  else if(has(TALK.movieOnly)) out.apply.type='Movie';
   if(has(TALK.dubbed)) out.apply.dub=true;
+  // sort
+  if(has(TALK.popular) && !out.apply.sort) out.apply.sort='pop';
+  if(has(TALK.upcoming)) out.apply.rel='upcoming';
+  // mood / vibe
   if(has(TALK.light)) out.apply.vibe=['Comedy','Family','Music'];
-  if(has(TALK.fast))  out.apply.vibe=['Action','Adventure','Crime'];
-  if(has(TALK.heavy)) out.apply.vibe=['Drama','Romance','Biography'];
+  else if(has(TALK.heavy)) out.apply.vibe=['Drama','Romance','Biography'];
+  if(has(TALK.heavy)) out.notes.push('something heavy');
+  if(has(TALK.light)) out.notes.push('something light');
   return out;
 }
+
 function runTalk(txt){
   const box=document.getElementById('talkRead');
   if(!txt || !txt.trim()){ if(box) box.innerHTML=''; return; }
   if(crisisIn(txt)){                       // safety first: no films at all, only the helpline
     clearAllFilters();
-    const host=document.getElementById('talkRead');
-    if(host) host.innerHTML=crisisCard();
+    if(box) box.innerHTML=crisisCard();
     const g=document.getElementById('sitGuard'); if(g) g.innerHTML=crisisCard();
     const gr=document.getElementById('grid'); if(gr) gr.innerHTML='';
     const rc=document.getElementById('resCount'); if(rc) rc.textContent='';
@@ -2018,29 +2101,64 @@ function runTalk(txt){
   }
   window._crisis=false;
   const r=readTalk(txt);
+  const a=r.apply;
   clearAllFilters();
-  if(r.situation){
-    const spec=SITUATIONS[r.situation];
-    if(spec){ state.situation=spec.titles.map(t=>String(t).toLowerCase()); state.situationKey=r.situation; }
+  // situation
+  if(r.situation && SITUATIONS[r.situation]){
+    state.situation=SITUATIONS[r.situation].titles.map(t=>String(t).toLowerCase());
+    state.situationKey=r.situation;
   }
-  if(r.apply.company) state.company=r.apply.company;
-  if(r.apply.rt) state.rt=r.apply.rt;
-  if(r.apply.type) state.type=new Set([r.apply.type]);
-  if(r.apply.olang) state.olang=new Set([r.apply.olang]);
-  if(r.apply.dub) state.dub=true;
-  if(r.apply.vibe) state.vibe=r.apply.vibe;
-  state.rel='all';
+  // everything else, one line each — this is the whole point of the box
+  if(a.genres && a.genres.length) state.genres=new Set(a.genres);
+  if(a.olang)  state.olang=new Set([a.olang]);
+  if(a.ott)    state.ott=new Set([a.ott]);
+  if(a.type)   state.type=new Set([a.type]);
+  if(a.company) state.company=a.company;
+  if(a.rt)     state.rt=a.rt;
+  if(a.cert)   state.cert=new Set([a.cert]);
+  if(a.free)   state.freeOnly=true;
+  if(a.subs)   state.subsOnly=true;
+  if(a.dub)    state.dub=true;
+  if(a.vibe)   state.vibe=a.vibe;
+  if(a.era)    state.era=a.era;
+  if(a.minRating) state.minRating=a.minRating;
+  if(a.topN)   state.topN=a.topN;
+  if(a.sort)   state.sort=a.sort;
+  if(a.rel)    state.rel=a.rel; else state.rel='all';
+  // the rail should show what the box just did
+  try{
+    setPillRow('relRow','rel',state.rel); setPillRow('sortRow','sort',state.sort);
+    setPillRow('rtRow','rt',state.rt); setPillRow('compRow','comp',state.company);
+    setPillRow('eraRow','era',state.era); setPillRow('catRow','cat','all');
+    setPillRow('typeRow','type','all'); setPillRow('ottRow','ott','all');
+  }catch(e){}
+  // and say so in words
   const said=[];
-  if(r.situation) said.push('situation: <b>'+esc(r.situation)+'</b>');
-  if(r.apply.olang) said.push('language: <b>'+esc(r.apply.olang)+'</b>');
-  if(r.apply.type) said.push('type: <b>'+esc(r.apply.type)+'</b>');
-  if(r.apply.company) said.push('watching: <b>'+esc({solo:'alone',family:'with family',date:'with your partner',friends:'with friends'}[r.apply.company]||r.apply.company)+'</b>');
-  if(r.apply.rt) said.push('<b>under 2 hours</b>');
-  if(r.apply.dub) said.push('<b>Hindi dub</b>');
+  if(r.situation) said.push('situation <b>'+esc(r.situation)+'</b>');
+  if(a.genres && a.genres.length) said.push('genre <b>'+a.genres.map(esc).join(' + ')+'</b>');
+  if(a.olang) said.push('language <b>'+esc(a.olang)+'</b>');
+  if(a.ott) said.push('on <b>'+esc(a.ott)+'</b>');
+  if(a.type) said.push('<b>'+esc(a.type)+'</b> only');
+  if(a.company) said.push('watching <b>'+esc({solo:'alone',family:'with family',date:'with your partner',friends:'with friends'}[a.company]||a.company)+'</b>');
+  if(a.rt) said.push(a.rt==='u120'?'<b>under 2 hours</b>':'<b>over 2 hours</b>');
+  if(a.cert) said.push('rated <b>'+esc(a.cert)+'</b>');
+  if(a.free) said.push('<b>free to watch</b>');
+  if(a.subs) said.push('<b>on subscription</b>');
+  if(a.dub) said.push('<b>Hindi dub</b>');
+  if(a.era) said.push(a.era==='classic'?'<b>pre-2000</b>':'<b>2000s onwards</b>');
+  if(a.minRating) said.push('<b>★'+a.minRating+'+</b>');
+  if(a.topN) said.push('<b>top '+a.topN+'</b>');
+  if(a.sort==='pop') said.push('most popular');
+  if(a.rel==='upcoming') said.push('<b>upcoming</b>');
   if(r.notes.length) said.push(r.notes.map(esc).join(' + '));
-  if(box) box.innerHTML = said.length ? ('Samajh gaya — '+said.join(' · ')+'.') : 'Samajh nahi aaya. Try: "breakup ke baad kuch halka".';
+  if(box){
+    box.innerHTML = said.length
+      ? ('Samajh gaya — '+said.join(' · ')+'.<br><span style="color:var(--faint);font-size:11.5px">Filters khud lag gaye hain, upar dekh lo. Kuch badalna ho to "Clear all".</span>')
+      : 'Samajh nahi aaya. Try: <b>"top 5"</b>, <b>"gujarati comedy"</b>, <b>"netflix thriller"</b>, <b>"akela hoon kuch calm"</b>, ya <b>"8+ rating wali hindi film"</b>.';
+  }
   render();
 }
+
 /* the button and the panel sit at the end of <body>, after this script has already run, so the
    wiring has to wait for the DOM instead of looking for them now */
 function wireFab(){
@@ -2061,7 +2179,7 @@ else wireFab();
   if(go) go.addEventListener('click',()=>runTalk(b?b.value:''));
   if(b) b.addEventListener('keydown',e=>{ if(e.key==='Enter') runTalk(b.value); });
   if(eg){
-    ['breakup ke baad kuch halka dekhna hai','akela hoon, kuch calm chahiye','family ke saath comedy','korean drama hindi mein','2 ghante se chhota thriller']
+    ['top 5','gujarati comedy','netflix thriller','akela hoon kuch calm','8+ rating wali hindi film','family ke saath comedy','korean drama hindi mein','90s ki purani film']
       .forEach(x=>{ const t=document.createElement('button'); t.type='button'; t.textContent=x;
         t.addEventListener('click',()=>{ if(b) b.value=x; runTalk(x); }); eg.appendChild(t); });
   }
