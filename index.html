@@ -1422,7 +1422,11 @@ const TREND_PICKS = [
   row.addEventListener('click',e=>{
     const b=e.target.closest('.qp'); if(!b) return;
     const id=b.dataset.tp;
-    const src = id==='trend' ? TRENDING : REELS;
+    let src = id==='trend' ? TRENDING : REELS;
+    if(id==='trend'){
+      const mine = computeTrending(120).map(x=>x.t);      // our own ranking, no TMDB needed
+      if(mine.length) src = mine;
+    }
     if(!src || !src.length){
       b.textContent = (id==='trend'?'\u{1F4C8} Trending (loading…)':'\u{1F4F1} Reels (loading…)');
       return;
@@ -2081,6 +2085,32 @@ function renderDiary(){
     + (top? 'Sabse zyada aapne <b>'+(feelLabel[top[0]]||esc(top[0]))+'</b> feel kiya ('+top[1]+' baar).' : '')
     + ' Kuch bhi kahin nahi bhejа jaata.</p>'
     + '<p style="font-size:12px">'+keys.slice(-8).map(k=>esc(k)+' — '+esc(feelLabel[d[k].feel]||d[k].feel||'')).join('<br>')+'</p></div>';
+}
+
+/* ---- trending, without asking TMDB ----
+   TMDB's trending endpoint is convenient but it is their opinion and it is not licensed for
+   commercial use. This is ours, and it is explainable: how good, how many people cared, and
+   how recently. Rating is weighted by a log of the vote count so a 9.0 from 40 people cannot
+   beat an 8.4 from 400,000, and recent releases get a lift that fades over about three years. */
+function trendScore(d, nowYear){
+  const r = Number(d.irt||d.rtg||0);
+  const v = Number(d.ivot||d.vot||0);
+  const y = Number(d.y||0);
+  if(!r || !v) return 0;
+  const quality = r * Math.log10(v + 10);          // 8.4 with 400k votes beats 9.0 with 40
+  const age = Math.max(0, (nowYear||CUR_YEAR) - y);
+  const freshness = age <= 1 ? 1.35 : age <= 3 ? 1.15 : age <= 8 ? 1.0 : 0.85;
+  return quality * freshness;
+}
+function computeTrending(limit){
+  const nowY = CUR_YEAR;
+  return (DATA||[])
+    .filter(d => d.src!=='youtube' && d.status!=='upcoming' && Number(d.y||0) <= nowY)
+    .map(d => [trendScore(d, nowY), d])
+    .filter(x => x[0] > 0)
+    .sort((a,b) => b[0]-a[0])
+    .slice(0, limit||60)
+    .map(x => x[1]);
 }
 /* ---- questions to talk about after the film ----
    Almost no catalogue does this. Three prompts, written per situation, so a film turns into a
