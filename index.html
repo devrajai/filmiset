@@ -237,7 +237,50 @@
   .talkpop .talkegs{margin-top:9px}
   .talkpop .talkegs button{font-size:11px;padding:5px 9px}
   .talkpop .talkread{margin-top:10px;font-size:12.5px}
-  /* one-tap filter suggestions */
+  /* ---------------- mobile polish ---------------- */
+  @media (max-width: 620px){
+    body{padding:16px 12px 90px}
+    .wrap{padding:0}
+    header{gap:10px}
+    .brand .wordmark{font-size:19px}
+    .topbar-in{padding:10px 12px;gap:9px}
+    .search{flex:1 1 100%;order:3}
+    .search input{font-size:15px;padding:12px 13px}
+    .hbtn{font-size:12.5px;padding:9px 12px}
+    .resultbar h3{font-size:20px}
+    .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+    .card{border-radius:14px}
+    .cardbody{padding:11px 12px 12px}
+    .card h4{font-size:15.5px}
+    .card .meta{font-size:10.5px;line-height:1.5}
+    .card .sum{font-size:12.5px;-webkit-line-clamp:2}
+    .modal{padding:10px}
+    .modal .box{padding:15px;border-radius:16px;max-height:88vh}
+    .modal h3{font-size:20px}
+    .modal .box > img{max-height:230px}
+    .recs{grid-template-columns:1fr;gap:7px}
+    .rec{padding:7px}
+    .vakeel{padding:9px 11px}
+    .vkrow{font-size:12px;gap:8px}
+    .vkrow b{flex:0 0 62px}
+    .streamrow .sbtn{font-size:11px;padding:7px 10px}
+    .talkpop{right:10px;left:10px;width:auto;bottom:78px}
+    .fab{right:13px;bottom:14px;width:50px;height:50px;font-size:21px}
+    .talkrow input{font-size:16px}          /* 16px stops iOS zooming on focus */
+    .quickpicks{gap:6px}
+    .qp{font-size:12px;padding:8px 11px}
+    .about{padding:15px}
+    .resultbar{flex-wrap:wrap;gap:6px}
+  }
+  @media (max-width: 380px){
+    .grid{grid-template-columns:1fr}
+  }
+  /* keep the floating button clear of the keyboard and the home bar */
+  @supports (padding: max(0px)){
+    .fab{bottom:max(14px, env(safe-area-inset-bottom))}
+    .talkpop{bottom:calc(78px + env(safe-area-inset-bottom))}
+  }
+  /* ---------------- one-tap filter suggestions ---------------- */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
   .qp{white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 13px;font-size:12.5px;cursor:pointer;font-family:inherit}
@@ -356,7 +399,12 @@
   .modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:18px;background:rgba(0,0,0,.55)}
   .modal .box{background:var(--bg);border:1px solid var(--line);border-radius:18px;max-width:520px;width:100%;
     max-height:86vh;overflow:auto;padding:18px}
-  .modal .box img{width:100%;max-height:300px;object-fit:cover;border-radius:12px}
+  .modal .box > img{width:100%;max-height:300px;object-fit:cover;border-radius:12px}
+  /* the recommendation thumbnails live inside the modal too, and the rule above was stretching
+     them to full width with the title sitting behind them */
+  .modal .box .rec img{width:38px;height:54px;max-height:none;object-fit:cover;border-radius:6px;flex:0 0 auto}
+  .rec span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px}
+  .rec i{display:block;color:var(--muted);font-style:normal;font-size:11px;margin-top:1px}
   .modal h3{font-family:var(--font-display);font-size:22px;margin:12px 0 4px}
   .modal .m{font-family:var(--font-mono);font-size:11px;color:var(--faint)}
   .modal p{font-size:14px;color:var(--muted);margin-top:10px}
@@ -1566,6 +1614,9 @@ function pickSugg(title){
   inp.addEventListener('focus',()=>{ if(state.q && state.q.length>=2) drawSugg(state.q); });
 })();
 
+document.getElementById('q').addEventListener('focus',()=>{
+  const mm=document.getElementById('modal'); if(mm && !mm.hidden) closeModal();
+});
 document.getElementById('q').addEventListener('keydown',e=>{
   if(e.key==='Enter'){ const box=document.getElementById('sugg'); if(box) box.classList.remove('on'); showResults(); }
 });
