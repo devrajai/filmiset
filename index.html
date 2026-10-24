@@ -88,9 +88,7 @@
      wash runs behind it and only the content sits on top. */
   .topbar{position:sticky;top:0;z-index:150;background:transparent;border-bottom:0}
   /* a soft gradient fade instead of a slab — the header stays part of the page */
-  /* no background, ever — a wash of --bg is still a dark band in dark mode */
-  .topbar.scrolled{background:transparent}
-  .topbar, .topbar.scrolled{box-shadow:none;border-bottom:0}
+  .topbar.scrolled{background:linear-gradient(to bottom, var(--bg) 62%, transparent)}
   .topbar-in{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:13px 22px}
   .brand{display:flex;align-items:center;gap:10px;margin-right:auto}
   .logo{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--accent-ink);
@@ -99,7 +97,7 @@
   .wordmark{font-family:var(--font-display);font-weight:900;font-size:20px;letter-spacing:-0.02em}
   .search{position:relative;flex:1 1 240px;max-width:400px}
   .search input{width:100%;padding:11px 42px 11px 40px;border-radius:999px;
-    border:1px solid var(--line);background:var(--surface);color:var(--ink);
+    border:1px solid var(--line);background:var(--surface-2);color:var(--ink);
     font-family:var(--font-body);font-size:14px;outline:none;transition:.15s}
   .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
   .search input::placeholder{color:var(--faint)}
@@ -345,10 +343,9 @@
   .pill .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:6px;vertical-align:middle}
 
   /* hero */
-  .hero{padding:12px 0 4px}
-  .hero-center{text-align:center;width:100%;max-width:640px;margin:16px auto 8px;
-    scroll-margin-top:110px;display:flex;flex-direction:column;align-items:center}
-  .hero-center h2{margin:0 auto;width:100%;text-align:center;text-wrap:balance}
+  .hero{padding:18px 0 2px}
+  .hero-center{text-align:center;max-width:660px;margin:26px auto 6px;
+    scroll-margin-top:110px}
   /* the header is sticky, so anchor the page so content never starts underneath it */
   html{scroll-padding-top:110px}
   .hero-center h2{margin-left:auto;margin-right:auto}
@@ -584,7 +581,7 @@
 
   <main class="content">
     <section class="hero hero-center">
-      <h2>Kya dekhein? Mood bolo, <em>hum dikha denge.</em></h2>
+      <h2>Kya dekhein? Mood bolo,<br><em>hum dikha denge.</em></h2>
       <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Mood, festival ya weekend — apne mauke ke hisaab se pick karo. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
     </section>
 
