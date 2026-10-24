@@ -70,6 +70,8 @@ jobs:
           pids="$pids $!"
           run "Actors"        python3 scripts/fetch_actors.py --limit 400000 &
           pids="$pids $!"
+          run "Filmography"   python3 scripts/build_filmography.py --top 8000 &
+          pids="$pids $!"
           run "IMDb ratings"  python3 scripts/fetch_imdb.py &
           pids="$pids $!"
           fail=0
