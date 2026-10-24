@@ -1,0 +1,219 @@
+{
+ "Self growth": {
+  "titles": [
+   "Udaan",
+   "Wake Up Sid",
+   "12th Fail",
+   "Soorarai Pottru",
+   "The Pursuit of Happyness",
+   "Soul"
+  ],
+  "lessons": {
+   "Udaan": "Chase the sky, not permission.",
+   "Wake Up Sid": "Growing up is deciding for yourself.",
+   "12th Fail": "Effort outlasts talent.",
+   "Soorarai Pottru": "Build for the people who cannot pay.",
+   "The Pursuit of Happyness": "Protect your hope when everything else is gone."
+  }
+ },
+ "Breakup / move on": {
+  "titles": [
+   "Queen",
+   "Tamasha",
+   "Break Ke Baad",
+   "Rockstar",
+   "Eternal Sunshine of the Spotless Mind"
+  ],
+  "lessons": {
+   "Queen": "The trip you take alone is the one that returns you to yourself."
+  }
+ },
+ "Healing": {
+  "titles": [
+   "Dear Zindagi",
+   "Piku",
+   "The Lunchbox",
+   "Karwaan",
+   "Charlie",
+   "Ted Lasso"
+  ],
+  "lessons": {
+   "Dear Zindagi": "Therapy is a conversation, not a weakness.",
+   "Piku": "Caring for a parent is love with chores attached.",
+   "The Lunchbox": "Small kindnesses travel further than we think."
+  }
+ },
+ "Life lessons": {
+  "titles": [
+   "3 Idiots",
+   "Taare Zameen Par",
+   "Chhichhore",
+   "Good Will Hunting"
+  ],
+  "lessons": {
+   "3 Idiots": "Chase excellence, not marks.",
+   "Taare Zameen Par": "Every child learns differently.",
+   "Chhichhore": "Losing is a chapter, not the ending.",
+   "Good Will Hunting": "It is not your fault."
+  }
+ },
+ "Sci-fi / Space": {
+  "titles": [
+   "Interstellar",
+   "The Martian",
+   "Arrival",
+   "Mission Mangal",
+   "Rocket Boys",
+   "Dark",
+   "Kalki 2898 AD"
+  ],
+  "lessons": {
+   "Interstellar": "Love and time do not obey the same rules.",
+   "Arrival": "Language shapes what you can feel."
+  }
+ },
+ "Mind hit": {
+  "titles": [
+   "Inception",
+   "Memento",
+   "The Prestige",
+   "Andhadhun",
+   "Kahaani",
+   "Black Mirror"
+  ],
+  "lessons": {
+   "Inception": "An idea is the hardest thing to remove.",
+   "Memento": "Memory is the story you tell yourself."
+  }
+ },
+ "Sex education": {
+  "titles": [
+   "Sex Education",
+   "Padman",
+   "Pink",
+   "OMG 2",
+   "Chhatriwali"
+  ],
+  "lessons": {
+   "Padman": "One person's stubbornness can change a village.",
+   "Pink": "No means no, every time."
+  }
+ },
+ "Doctor life": {
+  "titles": [
+   "Munna Bhai M.B.B.S.",
+   "Anand",
+   "Doctor G",
+   "Dr. Arora",
+   "Grey's Anatomy",
+   "House"
+  ],
+  "lessons": {
+   "Munna Bhai M.B.B.S.": "Kindness is a treatment.",
+   "Anand": "Life should be big, not long."
+  }
+ },
+ "Student life": {
+  "titles": [
+   "3 Idiots",
+   "Kota Factory",
+   "Aspirants",
+   "Chhichhore",
+   "Silicon Valley"
+  ],
+  "lessons": {
+   "3 Idiots": "Chase excellence, not marks.",
+   "Kota Factory": "The pressure is real; so is surviving it.",
+   "Aspirants": "The attempt matters more than the result.",
+   "Chhichhore": "Losing is a chapter, not the ending."
+  }
+ },
+ "College life": {
+  "titles": [
+   "Hostel Daze",
+   "College Romance",
+   "Kai Po Che!",
+   "Happy Days",
+   "Autograph",
+   "Premam"
+  ],
+  "lessons": {}
+ },
+ "Job life": {
+  "titles": [
+   "Corporate",
+   "Rocket Singh: Salesman of the Year",
+   "Panchayat",
+   "Scam 1992"
+  ],
+  "lessons": {
+   "Panchayat": "Doing a small job well is its own ambition.",
+   "Scam 1992": "Ambition without a floor is a fall waiting to happen."
+  }
+ },
+ "Lawyer life": {
+  "titles": [
+   "Jolly LLB",
+   "Jolly LLB 2",
+   "Section 375",
+   "Criminal Justice",
+   "Better Call Saul",
+   "Suits"
+  ],
+  "lessons": {
+   "Section 375": "Consent is the whole case."
+  }
+ },
+ "Couple life": {
+  "titles": [
+   "Thappad",
+   "Ki & Ka",
+   "Little Things",
+   "Made in Heaven",
+   "Marriage Story"
+  ],
+  "lessons": {
+   "Thappad": "A slap is never a small thing."
+  }
+ },
+ "Long distance": {
+  "titles": [
+   "Sita Ramam",
+   "Veer-Zaara",
+   "Jab Tak Hai Jaan",
+   "Dear John",
+   "Hridayam"
+  ],
+  "lessons": {
+   "Sita Ramam": "Letters outlast distance."
+  }
+ },
+ "Friendship": {
+  "titles": [
+   "Dil Chahta Hai",
+   "Zindagi Na Milegi Dobara",
+   "Ae Dil Hai Mushkil",
+   "Bangalore Days"
+  ],
+  "lessons": {
+   "Dil Chahta Hai": "Friendship survives growing up differently.",
+   "Zindagi Na Milegi Dobara": "You get one life; live it deliberately."
+  }
+ },
+ "Hindi TV classics": {
+  "titles": [
+   "Sarabhai vs Sarabhai",
+   "Khichdi",
+   "Office Office",
+   "Dekh Bhai Dekh",
+   "Hum Paanch",
+   "Zabaan Sambhalke",
+   "Flop Show",
+   "Shrimaan Shrimati",
+   "F.I.R.",
+   "Bhabiji Ghar Par Hain",
+   "Taarak Mehta Ka Ooltah Chashmah"
+  ],
+  "lessons": {}
+ }
+}

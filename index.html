@@ -149,6 +149,10 @@
   .adv>summary:before{content:'\25B8 ';display:inline-block;transition:.15s}
   .adv[open]>summary:before{transform:rotate(90deg)}
   .adv[open]{display:flex;flex-direction:column;gap:22px}
+  .vakeel{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:10px 0 4px;background:var(--surface-2)}
+  .vkrow{display:flex;gap:10px;font-size:12.5px;line-height:1.55;margin:3px 0}
+  .vkrow b{flex:0 0 74px;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);padding-top:2px}
+  .vkverdict{color:#fff;border-radius:6px;padding:2px 8px;font-weight:700;font-size:11.5px}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -348,6 +352,7 @@
     <div class="rail-block"><h6>Trending &amp; reels</h6><div class="quickpicks" id="trendPicks"></div></div>
     <div class="rail-block"><h6>Quick picks</h6><div class="quickpicks" id="quickPicks"></div></div>
     <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
+    <div class="rail-block"><h6>Life situation</h6><div class="quickpicks" id="sitPicks"></div></div>
     <div class="rail-block"><h6>Genre</h6><div class="chips" id="genreRow"></div></div>
     <div class="rail-block"><h6>Original language</h6><div class="chips" id="olangRow"></div></div>
     <div class="rail-block"><h6>Age rating</h6><div class="chips" id="certRow"></div></div>
@@ -609,7 +614,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -1583,6 +1588,7 @@ function openModal(d, fromPop){
     + '<h3>'+dispTitle(d.t)+'</h3>'
     + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(lengthLabel(d)?' · '+lengthLabel(d):'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
     + '<div class="m" style="margin-top:6px">'+[gList(d).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
+    + vakeelHtml(d)
     + (d.ov? '<p>'+d.ov+'</p>':(d.note? '<p>'+d.note+'</p>':''))
     + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
         + [d.dir?'Director: '+d.dir:'', d.prod?'Studio: '+d.prod:'',
@@ -1741,7 +1747,7 @@ function clearAllFilters(){
   state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
-  state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false; state.vibe=null; state.genres=new Set(); state.olang=new Set(); state.cert=new Set(); state.freeOnly=false; state.subsOnly=false;
+  state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false; state.vibe=null; state.genres=new Set(); state.olang=new Set(); state.cert=new Set(); state.freeOnly=false; state.subsOnly=false; state.situation=null; state.situationKey=null;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
   setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
@@ -1757,6 +1763,83 @@ function clearAllFilters(){
 }
 
 
+
+
+/* ---- Life situation: people rarely ask for a genre, they ask for what they are going through ---- */
+let SITUATIONS={};
+function buildSitPicks(){
+  const row=document.getElementById('sitPicks'); if(!row) return;
+  const keys=Object.keys(SITUATIONS);
+  if(!keys.length) return;
+  row.innerHTML = keys.map(function(k){
+    return '<button class="qp" data-sit="'+esc(k)+'" type="button">'+esc(k)+'</button>';
+  }).join('');
+  row.addEventListener('click',function(e){
+    const b=e.target.closest('.qp'); if(!b) return;
+    const k=b.dataset.sit;
+    const spec=SITUATIONS[k]||{};
+    const set=(spec.titles||[]).map(function(t){ return String(t).toLowerCase(); });
+    if(state.situation && state.situation.length===set.length && state.situation.every(function(x){ return set.indexOf(x)>=0; })){
+      state.situation=null; state.situationKey=null; b.classList.remove('on');
+    } else {
+      state.situation=set; state.situationKey=k;
+      row.querySelectorAll('.qp').forEach(function(p){ p.classList.remove('on'); });
+      b.classList.add('on');
+    }
+    if(state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+    render(); closeRailIfMobile();
+  });
+}
+fetch('data/situations.json').then(r=>r.ok?r.json():null).then(m=>{
+  if(!m) return; SITUATIONS=m; buildSitPicks();
+}).catch(()=>{});
+
+/* ---- Vakeel mode: argue the pick instead of just showing it ----
+   Case (why it fits), Evidence (what backs it up), Objection (who should skip it), Verdict. */
+function vakeel(d){
+  const out={case:'', evidence:[], objection:[], verdict:'Maybe'};
+  // Case — the lesson if we have one, otherwise the reason it fits
+  let lesson=null;
+  const sitKey=(state.situationKey||'');
+  if(SITUATIONS[sitKey] && SITUATIONS[sitKey].lessons) lesson=SITUATIONS[sitKey].lessons[d.t];
+  if(!lesson){
+    for(const k in SITUATIONS){
+      const L=SITUATIONS[k].lessons||{};
+      if(L[d.t]){ lesson=L[d.t]; break; }
+    }
+  }
+  out.case = lesson ? lesson : ('Fits '+(sitKey?('"'+sitKey+'"'):'this mood')+' through '+(gList(d).slice(0,2).join(' + ')||'its tone')+'.');
+  // Evidence
+  const r=Number(d.irt||d.rtg||0), v=Number(d.ivot||d.vot||0);
+  if(r) out.evidence.push('Rated '+r+'/10'+(v?(' by '+v.toLocaleString('en-IN')+' people'):''));
+  if(d.y) out.evidence.push(String(d.y));
+  if(lengthLabel(d)) out.evidence.push(lengthLabel(d));
+  if(d.cert) out.evidence.push('Rated '+d.cert);
+  if((d.o||[]).length) out.evidence.push('On '+d.o.slice(0,2).join(', '));
+  // Objection
+  const up=(d.status==='upcoming'||Number(d.y||0)>CUR_YEAR);
+  if(up) out.objection.push('Not out yet');
+  if(String(d.cert||'').toUpperCase().replace(/\s/g,'')==='A') out.objection.push('A-rated — not a family watch');
+  const rt=Number(d.rt||0);
+  if(rt>150) out.objection.push('Long watch ('+rt+' min)');
+  // Verdict
+  if(up) out.verdict='Skip for now';
+  else if(r>=7.5 && !out.objection.length) out.verdict='Watch';
+  else if(r>=7.5) out.verdict='Watch';
+  else if(r>=6.5) out.verdict='Maybe';
+  else if(r) out.verdict='Maybe';
+  return out;
+}
+function vakeelHtml(d){
+  const v=vakeel(d);
+  const colour = v.verdict==='Watch' ? '#2f7d4f' : (v.verdict==='Maybe' ? '#b07a1e' : '#a33');
+  return '<div class="vakeel">'
+    + '<div class="vkrow"><b>Case</b><span>'+esc(v.case)+'</span></div>'
+    + (v.evidence.length? '<div class="vkrow"><b>Evidence</b><span>'+esc(v.evidence.join(' \u00b7 '))+'</span></div>' : '')
+    + (v.objection.length? '<div class="vkrow"><b>Objection</b><span>'+esc(v.objection.join(' \u00b7 '))+'</span></div>' : '')
+    + '<div class="vkrow"><b>Verdict</b><span class="vkverdict" style="background:'+colour+'">'+esc(v.verdict)+'</span></div>'
+    + '</div>';
+}
 
 /* ---- the four filters that matter most: Genre, Original language, Age rating, Availability ---- */
 const GENRES = ['Comedy','Thriller','Horror','Romance','Crime','Drama','Sci-Fi','Biopic','Sports',
@@ -1854,6 +1937,7 @@ function renderActiveChips(){
   [...state.olang].forEach(x=>c.push([x, ()=>state.olang.delete(x)]));
   [...state.cert].forEach(x=>c.push(['Rated '+x, ()=>state.cert.delete(x)]));
   if(state.freeOnly) c.push(['Free to watch', ()=>state.freeOnly=false]);
+  if(state.situationKey) c.push(['Life: '+state.situationKey, ()=>{ state.situation=null; state.situationKey=null; }]);
   if(state.subsOnly) c.push(['Subscription', ()=>state.subsOnly=false]);
   if(state.rel!=='all' && state.rel!=='month') c.push([REL_LABEL[state.rel]||state.rel, ()=>state.rel='month']);
   if(state.era!=='all') c.push([state.era==='classic'?'Pre-2000':'2000s onwards', ()=>state.era='all']);
@@ -1908,6 +1992,9 @@ function render(){
       const m=state.vibe.filter(v=>g.some(x=>x.indexOf(String(v).toLowerCase())>=0)).length;
       const r=Number(d.irt||d.rtg||0);
       if(!(m>=2 || (m>=1 && r>=7.8))) return false;      // two tag hits, or one plus a high rating
+    }
+    if(state.situation && state.situation.length){
+      if(state.situation.indexOf(String(d.t||'').toLowerCase())<0) return false;
     }
     if(state.genres.size){
       const gl=gList(d).map(x=>String(x).toLowerCase());
@@ -2017,7 +2104,7 @@ function render(){
   resTitle.textContent = label;
   const _es=document.getElementById('emptyState'); if(_es) _es.hidden = out.length>0;
   renderActiveChips();
-  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe,[...state.genres].sort(),[...state.olang].sort(),[...state.cert].sort(),state.freeOnly,state.subsOnly]);
+  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe,[...state.genres].sort(),[...state.olang].sort(),[...state.cert].sort(),state.freeOnly,state.subsOnly,(state.situation||[]).length]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
   resCount.textContent = (state.topN ? 'Top '+shown.length : (shown.length<out.length ? shown.length+' of '+out.length : out.length))+' title'+(out.length===1?'':'s');
