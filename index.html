@@ -289,6 +289,8 @@
   .qp{white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 13px;font-size:12.5px;cursor:pointer;font-family:inherit}
   .qp:hover{border-color:var(--accent)}
   .qp.on{border-color:var(--accent);background:var(--accent-dim)}
+  .rail-actions .railbtns{display:flex;flex-wrap:wrap;gap:7px}
+  .rail-actions .hbtn{flex:1 1 auto;text-align:center;white-space:nowrap}
   .rail-block{contain:layout style}
   .rail-block h6{font-family:var(--font-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
     color:var(--faint);margin-bottom:9px}
@@ -470,19 +472,24 @@
     </div>
     <div class="search">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
-      <input id="q" type="text" placeholder="Search a title — 3 Idiots, RRR, Bluffmaster…" autocomplete="off">
+      <input id="q" type="text" placeholder="Search a film…" autocomplete="off" aria-label="Search titles">
       <button id="qclear" class="qclear" aria-label="Clear search" hidden>×</button>
       <div id="sugg" role="listbox" aria-label="Suggestions"></div>
     </div>
     <button id="filtersBtn" class="hbtn only-mobile" title="Filters">Filters <b id="filterCount"></b></button>
-    <button id="savedBtn" class="hbtn" title="Watchlist">Saved <b id="savedCount">0</b></button>
-    <button id="shareBtn" class="hbtn" title="Share this view">Share</button>
-    <button id="surpriseBtn" class="hbtn" title="Random pick">Surprise me</button>
   </div>
 </header>
 
 <div class="wrap layout">
   <aside class="rail" id="rail">
+    <div class="rail-block rail-actions">
+      <h6>Your list</h6>
+      <div class="railbtns">
+        <button id="savedBtn" class="hbtn" title="Watchlist">♡ Saved <b id="savedCount">0</b></button>
+        <button id="shareBtn" class="hbtn" title="Share this view">↪ Share</button>
+        <button id="surpriseBtn" class="hbtn" title="Random pick">⚄ Surprise me</button>
+      </div>
+    </div>
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
     <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
     <div class="rail-block"><h6>OTT par dekho</h6><div class="quickpicks" id="ottPicks"></div></div>
@@ -575,6 +582,29 @@
 
 
 <script>
+/* ---- the search hint cycles through real examples, so the bar teaches by showing ----
+   One long clipped sentence told nobody anything. Four short lines, each a thing the site can
+   actually answer, rotate while the box is empty. */
+const SEARCH_HINTS = [
+  'Search a film… try "3 Idiots"',
+  'Try "top 5 hindi"',
+  'Try "gujarati comedy"',
+  'Try "netflix thriller"',
+  'Try "akela hoon kuch calm"',
+  'Try "8+ rating wali film"',
+];
+(function rotateHints(){
+  const q=document.getElementById('q'); if(!q) return;
+  let i=0;
+  const tick=()=>{
+    if(document.activeElement===q || q.value){ setTimeout(tick,2600); return; }
+    q.setAttribute('placeholder', SEARCH_HINTS[i % SEARCH_HINTS.length]);
+    i++;
+    setTimeout(tick, 2600);
+  };
+  setTimeout(tick, 1200);
+})();
+
 /* ---- a small cache so a repeat visit does not re-download the little files ----
    Only files under ~400 KB are kept: localStorage is about 5 MB in total, and the poster map
    alone would blow through it. The version comes from the page itself, so a new build always
@@ -2269,6 +2299,10 @@ function runTalk(txt){
   if(a.sort==='pop') said.push('most popular');
   if(a.rel==='upcoming') said.push('<b>upcoming</b>');
   if(r.notes.length) said.push(r.notes.map(esc).join(' + '));
+  // close the panel: leaving it open hid the very results the user just asked for
+  const _pop=document.getElementById('talkPop'); if(_pop) _pop.hidden=true;
+  const _fab=document.getElementById('talkFab'); if(_fab) _fab.classList.remove('open');
+  showResults();
   if(box){
     box.innerHTML = said.length
       ? ('Samajh gaya — '+said.join(' · ')+'.<br><span style="color:var(--faint);font-size:11.5px">Filters khud lag gaye hain, upar dekh lo. Kuch badalna ho to "Clear all".</span>')
