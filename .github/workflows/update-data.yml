@@ -87,14 +87,47 @@ jobs:
         run: python3 scripts/download_posters.py --workers 2 --delay 0.35
       - name: Build Excel backup
         run: python3 scripts/make_backup.py --out data/filmiset-backup.xlsx
+      # GitHub rejects any single file over 100 MB, and the poster map is now large enough to
+      # cross that line. Compress the big JSON files, keep only a small sample of the downloaded
+      # images, and say plainly what was dropped rather than letting the push fail silently.
+      - name: Compress the big data files
+        run: |
+          python3 - <<'EOF'
+          import gzip, json, os, shutil
+          for name in ("imdb_posters.json","actors.json","title_cast.json","boxoffice.json","wikidata_posters.json"):
+              p = os.path.join("data", name)
+              if not os.path.exists(p): continue
+              raw = os.path.getsize(p)
+              if raw < 8_000_000:            # small enough to leave alone
+                  print(f"  {name}: {raw/1e6:.1f} MB — kept as is"); continue
+              with open(p,"rb") as fh, gzip.open(p+".gz","wb",compresslevel=9) as out:
+                  shutil.copyfileobj(fh, out)
+              gz = os.path.getsize(p+".gz")
+              os.remove(p)
+              print(f"  {name}: {raw/1e6:.1f} MB -> {gz/1e6:.1f} MB gzipped")
+          EOF
+
       - name: Commit if changed
         run: |
           git config user.name "filmiset-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # never let a stray giant file block the whole refresh
+          find . -path ./.git -prune -o -type f -size +90M -print | while read -r f; do
+            echo "::warning::skipping $f — over the 100 MB GitHub file limit"
+            rm -f "$f"
+          done
+          # keep only a sample of locally downloaded posters, or the repo balloons
+          if [ -d posters ]; then
+            COUNT=$(find posters -type f | wc -l)
+            if [ "$COUNT" -gt 4000 ]; then
+              echo "::warning::posters/ has $COUNT files — keeping the first 4000"
+              find posters -type f | tail -n +4001 | xargs -r rm -f
+            fi
+          fi
           git add -A
           if git diff --staged --quiet; then
             echo "no changes today"
           else
-            git commit -m "chore: refresh catalog + posters (Wikidata)"
+            git commit -m "chore: refresh catalog + posters"
             git push
           fi

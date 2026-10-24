@@ -2599,8 +2599,12 @@ let IMDB_POSTERS = null;
 function loadPosters(){
   if(IMDB_POSTERS !== null) return;
   IMDB_POSTERS = {};
+  // the poster map may arrive plain or gzipped, depending on how big it got
   fetch('data/imdb_posters.json').then(r => r.ok ? r.json() : null)
-    .then(m => { if(m){ IMDB_POSTERS = m; render(); } })   // posters arrive -> refresh the grid
+    .then(m => {
+      if(m){ IMDB_POSTERS = m; render(); return; }
+      return gunzipJson('data/imdb_posters.json.gz').then(g => { if(g){ IMDB_POSTERS = g; render(); } });
+    })
     .catch(() => {});
 }
 /* at boot, pull the most-voted titles from every shard, so the popular shows and films
