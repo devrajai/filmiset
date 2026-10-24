@@ -36,7 +36,7 @@
   :root{
     /* rose pink, and the surfaces are translucent so the gradient behind shows through */
     --bg:#fff2f7; --bg-2:#ffe6f0;
-    --surface:rgba(255,255,255,0.62); --surface-2:rgba(255,255,255,0.40);
+    --surface:rgba(255,255,255,0.90); --surface-2:rgba(255,255,255,0.72);
     --ink:#3d0f26; --muted:#8b5a72; --faint:#bb8ba2;
     --line:rgba(190,70,120,0.16); --line-2:rgba(190,70,120,0.30);
     --accent:#e0407a; --accent-ink:#ffffff; --accent-dim:rgba(224,64,122,0.14);
@@ -51,7 +51,7 @@
   @media (prefers-color-scheme: dark){
     :root{
       --bg:#150a11; --bg-2:#22101c;
-      --surface:rgba(74,30,54,0.46); --surface-2:rgba(96,40,70,0.36);
+      --surface:rgba(46,18,34,0.94); --surface-2:rgba(62,26,46,0.88);
       --ink:#ffeef6; --muted:#d8a8c0; --faint:#ac7e96;
       --line:rgba(255,175,210,0.16); --line-2:rgba(255,175,210,0.30);
       --accent:#ff6f9c; --accent-ink:#2b0716; --accent-dim:rgba(255,111,156,0.18);
@@ -87,8 +87,8 @@
   /* the header used to be an opaque dark slab across the top. It is transparent now, so the pink
      wash runs behind it and only the content sits on top. */
   .topbar{position:sticky;top:0;z-index:150;background:transparent;border-bottom:0}
-  .topbar.scrolled{background:color-mix(in srgb,var(--bg) 78%,transparent);
-    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--glass-line)}
+  /* a soft gradient fade instead of a slab — the header stays part of the page */
+  .topbar.scrolled{background:linear-gradient(to bottom, var(--bg) 62%, transparent)}
   .topbar-in{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:13px 22px}
   .brand{display:flex;align-items:center;gap:10px;margin-right:auto}
   .logo{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--accent-ink);
@@ -97,9 +97,8 @@
   .wordmark{font-family:var(--font-display);font-weight:900;font-size:20px;letter-spacing:-0.02em}
   .search{position:relative;flex:1 1 240px;max-width:400px}
   .search input{width:100%;padding:11px 42px 11px 40px;border-radius:999px;
-    border:1px solid var(--glass-line);background:transparent;color:var(--ink);
-    font-family:var(--font-body);font-size:14px;outline:none;transition:.15s;
-    backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%)}
+    border:1px solid var(--line);background:var(--surface-2);color:var(--ink);
+    font-family:var(--font-body);font-size:14px;outline:none;transition:.15s}
   .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
   .search input::placeholder{color:var(--faint)}
   .search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.5;
@@ -197,27 +196,23 @@
      Translucent panels that blur whatever sits behind them, a 1px light edge, and a soft
      highlight along the top. Everything degrades to a plain surface if backdrop-filter is
      unsupported, because the surface colour is already a solid fallback. */
-  .rail{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur)}
-  .card{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);background:var(--surface);
+  .card{background:var(--surface);
     border:1px solid var(--glass-line);
     box-shadow:0 10px 34px -18px rgba(160,40,95,.42), inset 0 1px 0 rgba(255,255,255,.55)}
   .card:hover{box-shadow:0 20px 46px -20px rgba(160,40,95,.55), inset 0 1px 0 rgba(255,255,255,.65)}
-  .modal .box{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  .modal .box{-webkit-
     border:1px solid var(--glass-line);box-shadow:0 30px 70px -24px rgba(90,10,50,.6), inset 0 1px 0 rgba(255,255,255,.5)}
-  .hbtn,.pill,.qp,.mini,.sbtn,.achip{backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%)}
+  /* deliberately NO backdrop-filter here — see the note below */
   .hbtn,.pill,.qp{border-color:var(--glass-line);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.42)}
   .pill.on,.qp.on,.hbtn.on{box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 6px 18px -10px var(--accent)}
-  .rail-head{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur)}
-  .empty{border-style:solid;border-color:var(--glass-line);
-    backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur)}
   .vakeel,.guard{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
   .poster{box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
   @media (prefers-reduced-transparency: reduce){
     .topbar,.rail,.card,.modal .box,.empty{backdrop-filter:none;-webkit-backdrop-filter:none}
   }
   .talk{margin:16px 0 4px;border:1px solid var(--glass-line);border-radius:16px;padding:14px;
-    background:var(--surface);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+    background:var(--surface);-webkit-
     box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
   .talk label{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;
     text-transform:uppercase;color:var(--faint);margin-bottom:8px}
@@ -266,7 +261,7 @@
   .fab.open{background:var(--surface);color:var(--ink)}
   .talkpop{position:fixed;right:14px;bottom:82px;z-index:301;width:min(360px,calc(100vw - 28px));
     border:1px solid var(--glass-line);border-radius:18px;background:var(--surface);
-    backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+    -webkit-
     box-shadow:0 30px 70px -22px rgba(90,10,50,.6), inset 0 1px 0 rgba(255,255,255,.5);overflow:hidden}
   .tphead{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;
     border-bottom:1px solid var(--line);font-family:var(--font-display);font-size:15px;font-weight:600}
@@ -383,7 +378,7 @@
   .poster-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
   .type-badge,.lang-badge{position:absolute;top:9px;z-index:3;font-family:var(--font-mono);font-size:9px;
     letter-spacing:.05em;text-transform:uppercase;background:rgba(0,0,0,.6);color:#fff;padding:3px 7px;
-    border-radius:5px;backdrop-filter:blur(4px)}
+    border-radius:5px}
   .type-badge{left:9px}
   .lang-badge{right:9px;text-transform:none}
   .classic-badge{position:absolute;bottom:9px;left:9px;z-index:3;font-family:var(--font-mono);font-size:9px;
@@ -398,7 +393,7 @@
   .watch.yt{background:#c4302b;color:#fff}
   .save-btn{position:absolute;bottom:9px;right:9px;z-index:4;width:30px;height:30px;border-radius:8px;
     cursor:pointer;border:1px solid rgba(255,255,255,.32);background:rgba(0,0,0,.5);color:#fff;font-size:14px;
-    display:grid;place-items:center;backdrop-filter:blur(4px);transition:.15s}
+    display:grid;place-items:center;transition:.15s}
   .save-btn:hover{background:rgba(0,0,0,.72)}
   .save-btn.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 
@@ -481,8 +476,8 @@
       z-index:80;box-shadow:0 -12px 40px rgba(0,0,0,.28)}
     body.filters-open .rail{transform:translateY(0)}
     body.filters-open{overflow:hidden}
-    .rail-head{position:sticky;top:0;z-index:5;background:var(--surface);padding:10px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;
-      position:sticky;top:-16px;background:var(--bg);padding:6px 0 12px;margin-top:-6px;z-index:2}
+    .rail-head{position:sticky;top:-16px;z-index:6;background:var(--bg);padding:6px 0 12px;margin-top:-6px;
+      display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
     .rail-head span{font-family:var(--font-display);font-size:17px;font-weight:600}
     .backdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:70;
       opacity:0;pointer-events:none;transition:opacity .26s}
