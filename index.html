@@ -79,8 +79,11 @@
   .more-wrap{grid-column:1/-1;display:flex;justify-content:center;padding:14px 0 0}
 
   /* top bar */
-  .topbar{position:sticky;top:0;z-index:150;background:color-mix(in srgb,var(--bg) 86%,transparent);
-    backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  /* the header used to be an opaque dark slab across the top. It is transparent now, so the pink
+     wash runs behind it and only the content sits on top. */
+  .topbar{position:sticky;top:0;z-index:150;background:transparent;border-bottom:0}
+  .topbar.scrolled{background:color-mix(in srgb,var(--bg) 78%,transparent);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--glass-line)}
   .topbar-in{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:13px 22px}
   .brand{display:flex;align-items:center;gap:10px;margin-right:auto}
   .logo{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--accent-ink);
@@ -180,14 +183,15 @@
   .guard p{margin:0 0 6px}
   .guard .gl{font-size:12px}
   .guard a{color:var(--accent)}
+  .castrow{margin:10px 0 4px}
+  .castrow h6{font-family:var(--font-mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+  .castrow .ap-item{display:inline-block;width:auto;margin:0 5px 5px 0;padding:6px 11px;font-size:12.5px;border-radius:999px}
   .feels{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 2px;font-size:12px;color:var(--muted)}
   .feels .hbtn{font-size:11.5px;padding:6px 10px}
   /* ---------------- liquid glass ----------------
      Translucent panels that blur whatever sits behind them, a 1px light edge, and a soft
      highlight along the top. Everything degrades to a plain surface if backdrop-filter is
      unsupported, because the surface colour is already a solid fallback. */
-  .topbar{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
-    border-bottom:1px solid var(--glass-line)}
   .rail{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur)}
   .card{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);background:var(--surface);
     border:1px solid var(--glass-line);
@@ -222,6 +226,32 @@
   .talkegs button:hover{border-color:var(--accent);color:var(--ink)}
   .talkread{font-size:12.5px;color:var(--muted);margin-top:10px}
   .talkread b{color:var(--ink)}
+  .actpop{position:fixed;inset:auto 0 0 0;z-index:302;max-height:86vh;overflow:auto;
+    border-radius:18px 18px 0 0;border:1px solid var(--glass-line);background:var(--bg);
+    box-shadow:0 -20px 60px -20px rgba(90,10,50,.7);padding:0 0 18px}
+  @media (min-width:760px){ .actpop{inset:auto 0 0 0;max-width:620px;margin:0 auto;border-radius:18px 18px 0 0} }
+  .actpop .tphead{padding:14px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;
+    background:var(--bg);font-family:var(--font-display);font-size:17px}
+  .ap-body{padding:14px 16px}
+  .ap-load{color:var(--muted)}
+  .ap-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+  .ap-stats>div{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:9px;text-align:center}
+  .ap-stats b{display:block;font-family:var(--font-display);font-size:17px}
+  .ap-stats span{font-size:10.5px;color:var(--muted)}
+  .ap-h{font-family:var(--font-mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--faint);margin:14px 0 7px}
+  .ap-bar{display:flex;align-items:center;gap:8px;margin-bottom:4px;font-size:11.5px}
+  .ap-bar i{width:44px;color:var(--muted);font-style:normal}
+  .ap-bar span{height:9px;border-radius:5px;background:var(--accent);opacity:.75}
+  .ap-bar em{color:var(--faint);font-style:normal;font-size:10.5px}
+  .ap-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .ap-list{display:grid;gap:5px;max-height:280px;overflow:auto}
+  .ap-item{display:flex;justify-content:space-between;gap:10px;width:100%;text-align:left;
+    border:1px solid var(--line);background:var(--surface-2);color:var(--ink);border-radius:10px;
+    padding:9px 11px;font-family:inherit;font-size:13px;cursor:pointer}
+  .ap-item:hover{border-color:var(--accent)}
+  .ap-y{color:var(--muted);font-size:11.5px;white-space:nowrap}
+  .ap-note{font-size:11.5px;color:var(--faint);margin-top:12px}
   /* the talk widget: a floating button, like a chat bubble */
   .fab{position:fixed;right:16px;bottom:18px;z-index:300;width:54px;height:54px;border-radius:50%;
     border:1px solid var(--glass-line);background:var(--accent);color:#fff;font-size:23px;cursor:pointer;
@@ -473,7 +503,7 @@
 <div class="backdrop" id="backdrop"></div>
 <div class="modal" id="modal" hidden></div>
 
-<header class="topbar">
+<header class="topbar" id="topbar">
   <div class="wrap topbar-in">
     <div class="brand">
       <span class="logo">F</span>
@@ -497,6 +527,12 @@
         <button id="savedBtn" class="hbtn" title="Watchlist">♡ Saved <b id="savedCount">0</b></button>
         <button id="shareBtn" class="hbtn" title="Share this view">↪ Share</button>
         <button id="surpriseBtn" class="hbtn" title="Random pick">⚄ Surprise me</button>
+      </div>
+      <h6 style="margin-top:14px">Discover</h6>
+      <div class="railbtns">
+        <button class="hbtn" data-coll="floved" title="Well rated, not widely seen">⭐ Flopped, then loved</button>
+        <button class="hbtn" data-coll="under" title="High rating, few votes">💎 Underrated gems</button>
+        <button class="hbtn" data-plan-open="1" title="Fit picks into your evening">🕑 Plan my evening</button>
       </div>
     </div>
     <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
@@ -591,6 +627,153 @@
 
 
 <script>
+/* the header only picks up a background once you scroll, so it never sits as a slab on the hero */
+(function topbarScroll(){
+  const tb=document.getElementById('topbar'); if(!tb) return;
+  const on=()=>{ if(window.pageYOffset>12) tb.classList.add('scrolled'); else tb.classList.remove('scrolled'); };
+  window.addEventListener('scroll', on, {passive:true}); on();
+})();
+
+
+/* ================= actor pages =================
+   Built from data/filmography.json, which comes from IMDb's own bulk files — no API, no key,
+   and it keeps working after TMDB is switched off. */
+let FILMO = null, FILMO_LOADING = false;
+function loadFilmography(){
+  if(FILMO || FILMO_LOADING) return Promise.resolve(FILMO);
+  FILMO_LOADING = true;
+  return fetch('data/filmography.json').then(r=>r.ok?r.json():null)
+    .then(m=>{ FILMO = m || {}; FILMO_LOADING=false; return FILMO; }).catch(()=>{ FILMO={}; FILMO_LOADING=false; return FILMO; });
+}
+function actorHref(name){ return 'actor.html?a=' + encodeURIComponent(name); }
+/* a small inline view for people who are already on the page */
+function showActor(name){
+  const pop=document.getElementById('actorPop');
+  if(!pop) return;
+  pop.hidden=false; pop.dataset.who=name;
+  try{ history.pushState({panel:'actor'}, '', '#a=' + encodeURIComponent(name)); }catch(e){}
+  pop.querySelector('.ap-name').textContent = name;
+  pop.querySelector('.ap-body').innerHTML = '<p class="ap-load">Loading…</p>';
+  loadFilmography().then(map=>{
+    const a=map && map[name];
+    if(!a){
+      pop.querySelector('.ap-body').innerHTML =
+        '<p>Is actor ki filmography abhi load nahi hui. Data collection chal raha hai — thodi der baad try kijiye.</p>'
+        + '<p class="ap-note">Ye list IMDb ke public bulk files se aati hai, kisi API se nahi.</p>';
+      return;
+    }
+    const decades={};
+    a.films.forEach(f=>{ if(f.y) { const d=Math.floor(f.y/10)*10; decades[d]=(decades[d]||0)+1; } });
+    const topGenres=Object.entries(a.genres||{}).slice(0,6);
+    const maxD=Math.max(1,...Object.values(decades));
+    pop.querySelector('.ap-body').innerHTML =
+      '<div class="ap-stats">'
+      + '<div><b>'+(a.n||0)+'</b><span>titles</span></div>'
+      + '<div><b>'+(a.first||'—')+'–'+(a.last||'—')+'</b><span>years</span></div>'
+      + '<div><b>'+(a.avg||'—')+'</b><span>avg rating</span></div>'
+      + '<div><b>'+(a.range||0)+'</b><span>genres (range)</span></div>'
+      + '</div>'
+      + '<h6 class="ap-h">Timeline</h6>'
+      + Object.keys(decades).sort().map(d=>'<div class="ap-bar"><i>'+d+'s</i>'
+          + '<span style="width:'+Math.round(decades[d]/maxD*100)+'%"></span><em>'+decades[d]+'</em></div>').join('')
+      + '<h6 class="ap-h">Genres played</h6>'
+      + '<div class="ap-chips">'+topGenres.map(([g,n])=>'<span class="pill">'+esc(g)+' <b>'+n+'</b></span>').join('')+'</div>'
+      + '<h6 class="ap-h">Kinds of role</h6>'
+      + '<div class="ap-chips">'+Object.entries(a.kinds||{}).map(([k,n])=>'<span class="pill">'+esc(k)+' <b>'+n+'</b></span>').join('')+'</div>'
+      + (a.best?'<h6 class="ap-h">Best rated</h6><p>'+esc(a.best)+'</p>':'')
+      + ((a.under&&a.under.length)?'<h6 class="ap-h">Underrated (well rated, few votes)</h6><p>'+a.under.map(esc).join(' · ')+'</p>':'')
+      + '<h6 class="ap-h">All titles</h6>'
+      + '<div class="ap-list">'+a.films.slice(0,60).map(f=>
+          '<button class="ap-item" data-open-title="'+esc(f.t)+'">'
+          + '<span class="ap-t">'+esc(f.t)+'</span>'
+          + '<span class="ap-y">'+(f.y||'')+(f.irt?' · ★'+f.irt:'')+'</span></button>').join('')+'</div>'
+      + '<p class="ap-note">Data: IMDb bulk files. Hit/flop figures, where shown, are estimates.</p>';
+  });
+}
+document.addEventListener('click',e=>{
+  const a=e.target.closest('[data-actor]');
+  if(a){ e.preventDefault(); showActor(a.dataset.actor); return; }
+  const o=e.target.closest('[data-open-title]');
+  if(o){ const t=o.dataset.openTitle;
+    const d=(DATA||[]).find(x=>String(x.t).toLowerCase()===String(t).toLowerCase());
+    if(d){ const ap=document.getElementById('actorPop'); if(ap) ap.hidden=true; openModal(d); }
+    return; }
+  const c=e.target.closest('#actorClose');
+  if(c){ const ap=document.getElementById('actorPop'); if(ap) ap.hidden=true; return; }
+});
+
+/* ================= smart collections =================
+   Two lists the data can honestly support. Anything needing critic scores or a hand tag is not
+   here, because we do not have those. */
+function collectionFloppedLoved(){
+  return (DATA||[]).filter(d=>{
+    const r=Number(d.irt||0), v=Number(d.ivot||0);
+    return r>=7.5 && v>=500 && v<25000;      // loved, but not widely seen
+  }).sort((a,b)=>(b.irt||0)-(a.irt||0));
+}
+function collectionUnderrated(){
+  return (DATA||[]).filter(d=>{
+    const r=Number(d.irt||0), v=Number(d.ivot||0);
+    return r>=7.0 && v>=200 && v<5000;
+  }).sort((a,b)=>(b.irt||0)-(a.irt||0));
+}
+
+/* ================= plan my evening =================
+   The user gives a window and gets titles that actually fit, with the leftover time stated. */
+function planEvening(minutes){
+  const pool=(DATA||[]).filter(d=>d.rt && d.rt>=40 && d.status!=='upcoming');
+  if(!pool.length) return {plan:[], left:minutes};
+  const plan=[]; let left=minutes;
+  const shorts=pool.filter(d=>d.rt<=45).sort((a,b)=>b.rt-a.rt);
+  const longs =pool.filter(d=>d.rt>45 && d.rt<=left).sort((a,b)=>b.rt-a.rt);
+  // a short first if one fits alongside a feature, else the longest feature that fits
+  const bestShort = shorts.find(s=>left-s.rt>=70);
+  if(bestShort){ plan.push(bestShort); left-=bestShort.rt; }
+  const feat = longs.filter(d=>d.rt<=left).sort((a,b)=>b.rt-a.rt)[0];
+  if(feat){ plan.push(feat); left-=feat.rt; }
+  if(!plan.length){ const any=pool.filter(d=>d.rt<=minutes).sort((a,b)=>b.rt-a.rt)[0]; if(any){ plan.push(any); left-=any.rt; } }
+  return {plan, left};
+}
+function icsFor(d){
+  const dt=new Date(); dt.setDate(dt.getDate()+((5-dt.getDay()+7)%7));   // next Friday
+  dt.setHours(20,0,0,0);
+  const end=new Date(dt.getTime()+(Number(d.rt||120)+15)*60000);
+  const f=x=>x.toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+  const body=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//FilmiSet//EN','BEGIN:VEVENT',
+    'UID:'+Date.now()+'@filmiset','DTSTAMP:'+f(new Date()),'DTSTART:'+f(dt),'DTEND:'+f(end),
+    'SUMMARY:'+String(d.t||'').replace(/[,;]/g,' '),
+    'DESCRIPTION:FilmiSet pick'+(d.y?' ('+d.y+')':''),
+    'END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const url=URL.createObjectURL(new Blob([body],{type:'text/calendar'}));
+  const a=document.createElement('a'); a.href=url; a.download='filmiset-'+(String(d.t||'pick').toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'.ics';
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),4000);
+}
+function topTenCard(){
+  const picks=(DATA||[]).slice(0,10);
+  if(!picks.length) return;
+  const W=1080,H=1350, c=document.createElement('canvas'); c.width=W; c.height=H;
+  const x=c.getContext('2d');
+  x.fillStyle='#150a11'; x.fillRect(0,0,W,H);
+  const g=x.createLinearGradient(0,0,W,H); g.addColorStop(0,'rgba(255,105,165,.35)'); g.addColorStop(1,'rgba(190,110,255,.18)');
+  x.fillStyle=g; x.fillRect(0,0,W,H);
+  x.fillStyle='#ffeef6'; x.font='bold 62px Georgia,serif'; x.fillText('My Top 10',60,110);
+  x.fillStyle='#ff6f9c'; x.font='30px Georgia,serif'; x.fillText('FilmiSet',60,160);
+  x.font='30px system-ui,sans-serif';
+  picks.forEach((d,i)=>{
+    const y=250+i*105;
+    x.fillStyle='rgba(255,255,255,.06)'; x.fillRect(50,y-46,W-100,88);
+    x.fillStyle='#ff9ec4'; x.font='bold 34px Georgia,serif'; x.fillText(String(i+1).padStart(2,'0'),72,y+8);
+    x.fillStyle='#ffeef6'; x.font='32px system-ui,sans-serif';
+    let t=String(d.t||''); if(t.length>34) t=t.slice(0,33)+'…';
+    x.fillText(t,150,y+8);
+    x.fillStyle='#d8a8c0'; x.font='22px system-ui,sans-serif';
+    x.fillText([d.y,(d.irt?'★'+d.irt:'')].filter(Boolean).join(' · '),W-260,y+8);
+  });
+  x.fillStyle='#ac7e96'; x.font='22px system-ui,sans-serif'; x.fillText('devrajai.github.io/filmiset',60,H-50);
+  c.toBlob(b=>{ const url=URL.createObjectURL(b); const a=document.createElement('a');
+    a.href=url; a.download='filmiset-top10.png'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),5000); });
+}
 /* ---- the search hint cycles through real examples, so the bar teaches by showing ----
    One long clipped sentence told nobody anything. Four short lines, each a thing the site can
    actually answer, rotate while the box is empty. */
@@ -1838,6 +2021,10 @@ function openModal(d, fromPop){
     + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(lengthLabel(d)?' · '+lengthLabel(d):'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
     + '<div class="m" style="margin-top:6px">'+[gList(d).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
     + guardHtml(d)
+    + '<div class="ap-chips" style="margin:10px 0"><button class="pill" data-ics="'+esc(d.t)+'">📅 Add to calendar</button></div>'
+    + ((d.cast&&d.cast.length)? '<div class="castrow"><h6>Cast</h6>'
+        + d.cast.slice(0,8).map(c=>'<button class="ap-item" data-actor="'+esc(c)+'">'+esc(c)+'</button>').join('')
+        + '</div>' : '')
     + noticeHtml(d)
     + vakeelHtml(d)
     + (d.ov? '<p>'+d.ov+'</p>':(d.note? '<p>'+d.note+'</p>':''))
@@ -1876,6 +2063,8 @@ function closeModal(fromPop){
 window.addEventListener('popstate',ev=>{
   const st=ev.state||{};
   // a panel was open -> close it and stay on the page
+  const ap=document.getElementById('actorPop');
+  if(ap && !ap.hidden){ ap.hidden=true; return; }
   const tp=document.getElementById('talkPop');
   if(tp && !tp.hidden){ tp.hidden=true; const f=document.getElementById('talkFab'); if(f) f.classList.remove('open'); return; }
   const rail=document.getElementById('rail');
@@ -2017,6 +2206,7 @@ function clearAllFilters(){
   state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott.clear();
   state.coll='all'; state.fr='all'; state.sort='new'; state.rt='all'; state.gems=false; state.safe=false;
   state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
+  state.trendOnly=null; state.only=null; state.gemsMode=false; state.topN=0; state.minRating=0; state.genres&&state.genres.clear(); state.cert&&state.cert.clear(); state.freeOnly=false; state.subsOnly=false; state.olang&&state.olang.clear(); state.era='all'; state.rel='month';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
   state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false; state.vibe=null; state.genres=new Set(); state.olang=new Set(); state.cert=new Set(); state.freeOnly=false; state.subsOnly=false; state.situation=null; state.situationKey=null;
@@ -2434,6 +2624,54 @@ function applyPosters(){
 let LOCAL_POSTERS = {};
 fetch('data/poster_index.json').then(r=>r.ok?r.json():null)
   .then(m=>{ if(m){ LOCAL_POSTERS=m; applyPosters(); render(); } }).catch(()=>{});
+/* ---- smart collections, wired to the quick picks ---- */
+function applyCollection(kind){
+  const list = kind==='floved' ? collectionFloppedLoved() : collectionUnderrated();
+  if(!list.length){ state.only=null; render(); return; }
+  state.only = new Set(list.map(d=>String(d.t).toLowerCase()));   // the filter expects a Set
+  state.trendOnly = kind==='floved' ? 'Flopped, then loved' : 'Underrated gems';
+  state.rel='all'; state.sort='rating';
+  render();
+  showResults();
+}
+/* ---- planning tools, wired to buttons in the rail ---- */
+function openPlanner(){
+  const pop=document.getElementById('actorPop');
+  if(!pop) return;
+  pop.hidden=false;
+  pop.querySelector('.ap-name').textContent='Plan my evening';
+  pop.querySelector('.ap-body').innerHTML =
+    '<p>Kitna time hai? Hum usi mein fit hone wale picks nikaal denge.</p>'
+    + '<div class="ap-chips" style="margin:10px 0">'
+    + [90,120,180,240,300].map(m=>'<button class="pill" data-plan="'+m+'">'+(m<120?m+' min':(m/60)+' hrs')+'</button>').join('')
+    + '</div><div id="planOut"></div>'
+    + '<h6 class="ap-h">More</h6>'
+    + '<div class="ap-chips"><button class="pill" data-maketop10="1">\u2b07 My Top 10 card</button></div>';
+}
+document.addEventListener('click',e=>{
+  if(e.target.closest('[data-plan-open]')){ openPlanner(); return; }
+  const c=e.target.closest('[data-coll]');
+  if(c){ applyCollection(c.dataset.coll); return; }
+  const p=e.target.closest('[data-plan]');
+  if(p){
+    const mins=parseInt(p.dataset.plan,10);
+    const r=planEvening(mins);
+    const out=document.getElementById('planOut');
+    if(!out) return;
+    out.innerHTML = r.plan.length
+      ? '<h6 class="ap-h">Aapka plan ('+mins+' min)</h6>'
+        + r.plan.map((d,i)=>'<div class="ap-item" style="cursor:default"><span>'
+            + (i+1)+'. '+esc(d.t)+'</span><span class="ap-y">'+d.rt+' min</span></div>').join('')
+        + '<p class="ap-note">'+(r.left>0? r.left+' min bacha — break ke liye kaafi hai.' : 'Poora time bhar gaya.')+'</p>'
+      : '<p class="ap-note">Itne time mein kuch nahi mila. Thoda badha kar dekhiye.</p>';
+    return;
+  }
+  const t10=e.target.closest('[data-maketop10]');
+  if(t10){ topTenCard(); return; }
+  const ic=e.target.closest('[data-ics]');
+  if(ic){ const d=(DATA||[]).find(x=>String(x.t).toLowerCase()===String(ic.dataset.ics).toLowerCase()); if(d) icsFor(d); return; }
+});
+
 /* ---- trending, without asking TMDB ----
    TMDB's trending endpoint is convenient but it is their opinion and it is not licensed for
    commercial use. This is ours, and it is explainable: how good, how many people cared, and
@@ -2816,6 +3054,7 @@ function render(){
   if(state.rel!=='all') label = (REL_LABEL[state.rel]||'') + (state.cat.size ? ' · '+label : ' releases');
   if(state.coll!=='all'){ const co=COLLECTIONS.find(c=>c.k===state.coll); if(co) label = (state.coll==='popular' ? 'Most Popular' : 'Top '+co.label); }
   if(state.fr!=='all') label = state.fr + (WATCH_ORDER[state.fr] ? ' — watch order' : ' — in sequence');
+  if(state.trendOnly) label = state.trendOnly;      // named collections announce themselves
   if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
@@ -2849,6 +3088,13 @@ function render(){
       ? 'Active filters: <strong>'+act.join(' · ')+'</strong>. Inhe hata ke dekhiye — search saare titles par chalta hai, sirf active category par nahi.'
       : 'Is search ke liye kuch nahi mila. Spelling check kijiye ya doosra naam try kijiye.';
     const guess = state.q ? closestTitle(state.q) : '';
+    // data has not arrived yet -> show the shimmer, never a "nothing found" message
+    if(!DATA || !DATA.length){
+      grid.setAttribute('data-loading','1');
+      grid.innerHTML='';
+      const rc0=document.getElementById('resCount'); if(rc0) rc0.textContent='';
+      return;
+    }
     grid.innerHTML='<div class="empty"><b>Kuch nahi mila</b>'+why
       + (guess && guess.toLowerCase() !== state.q ? '<br>Shayad aap <b>'+esc(guess)+'</b> chahte the? <button class="hbtn" id="didYouMeanBtn">'+esc(guess)+'</button>' : '')
       + (act.length ? '<br><button class="hbtn" id="clearAllBtn">Saare filters clear karein</button>' : '')+'</div>';
@@ -3164,6 +3410,10 @@ Promise.all([
     <div class="talkegs" id="talkEgs"></div>
     <div id="talkRead" class="talkread"></div>
   </div>
+</div>
+<div id="actorPop" class="actpop" hidden role="dialog" aria-label="Actor">
+  <div class="tphead"><span class="ap-name">Actor</span><button id="actorClose" aria-label="Close">×</button></div>
+  <div class="ap-body"></div>
 </div>
 </body>
 </html>
