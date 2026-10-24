@@ -195,6 +195,21 @@
   @media (prefers-reduced-transparency: reduce){
     .topbar,.rail,.card,.modal .box,.empty{backdrop-filter:none;-webkit-backdrop-filter:none}
   }
+  .talk{margin:16px 0 4px;border:1px solid var(--glass-line);border-radius:16px;padding:14px;
+    background:var(--surface);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+  .talk label{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+  .talkrow{display:flex;gap:8px}
+  .talkrow input{flex:1;min-width:0;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);
+    border-radius:12px;padding:12px 14px;font-size:14.5px;font-family:inherit}
+  .talkrow input:focus{outline:2px solid var(--accent);outline-offset:1px}
+  .talkegs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .talkegs button{border:1px solid var(--line);background:var(--surface-2);color:var(--muted);
+    border-radius:999px;padding:6px 11px;font-size:11.5px;cursor:pointer;font-family:inherit}
+  .talkegs button:hover{border-color:var(--accent);color:var(--ink)}
+  .talkread{font-size:12.5px;color:var(--muted);margin-top:10px}
+  .talkread b{color:var(--ink)}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -294,6 +309,9 @@
   .sum{font-size:11.5px;color:var(--muted);line-height:1.45;margin-top:6px;
     display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
   .card{cursor:pointer}
+  /* off-screen cards are skipped by the browser entirely — with thousands of cards this is
+     the single biggest scrolling win */
+  .card{content-visibility:auto;contain-intrinsic-size:320px 320px}
   .card .poster-img{transition:.2s}
   .card:hover .poster-img{transform:scale(1.03)}
   .cardacts{display:flex;gap:6px;margin-top:8px}
@@ -425,6 +443,17 @@
       <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Mood, festival ya weekend — apne mauke ke hisaab se pick karo. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
     </section>
 
+    <div class="talk">
+      <label for="talkBox">Talk to the site — Hindi, Hinglish or English</label>
+      <div class="talkrow">
+        <input id="talkBox" type="text" autocomplete="off"
+               placeholder="breakup ke baad kuch halka dekhna hai…">
+        <button id="talkGo" class="hbtn">Find</button>
+        <button id="talkMic" class="hbtn" title="Speak instead">🎤</button>
+      </div>
+      <div class="talkegs" id="talkEgs"></div>
+    </div>
+    <div id="talkRead" class="talkread"></div>
     <div class="vibe" id="vibe" hidden></div>
 
     <div class="resultbar">
@@ -1626,6 +1655,7 @@ function openModal(d, fromPop){
     + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(lengthLabel(d)?' · '+lengthLabel(d):'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
     + '<div class="m" style="margin-top:6px">'+[gList(d).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
     + guardHtml(d)
+    + noticeHtml(d)
     + vakeelHtml(d)
     + (d.ov? '<p>'+d.ov+'</p>':(d.note? '<p>'+d.note+'</p>':''))
     + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
@@ -1642,7 +1672,9 @@ function openModal(d, fromPop){
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
       + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
       + '<button class="hbtn" data-mclose="1">Close</button>'
-    + '</div></div>';
+    + '</div>'
+    + talkAboutHtml(d)
+    + '</div>';
   m.hidden=false;
   setOg(d);
   if(!fromPop) pushTitle(d);
@@ -1833,6 +1865,158 @@ fetch('data/situations.json').then(r=>r.ok?r.json():null).then(m=>{
 }).catch(()=>{});
 
 
+
+/* ---- talk to the site ----
+   A plain word list, no AI and no key. The user writes the way they actually speak — "breakup ke
+   baad kuch halka dekhna hai" — and we read it into filters. The crisis check runs FIRST and, if
+   it fires, nothing else on this page matters. */
+const CRISIS = ['jeena nahi','nahi jeena','marna chahta','marna chahti','khudkhushi','suicide',
+  'end my life','kill myself','want to die','jaan de','zindagi khatam','mujhe marna','self harm',
+  'hurt myself','nahi rehna','jeene ka mann nahi','khatam kar'];
+const TALK = {
+  situations: [
+    ['Breakup / move on', ['breakup','break up','toot','alag ho','move on','dumped','dhokha','bewafa']],
+    ['Healing',          ['heal','sukoon','calm','shant','relax','thak gaya','stress','burnout','pareshan']],
+    ['Self growth',      ['motivat','grow','improve','khud ko','better person','seekh','career badal']],
+    ['Life lessons',     ['life lesson','sikh','zindagi ka','meaning of life','philosoph']],
+    ['Sci-fi / Space',   ['sci-fi','scifi','space','future','robots','antariks']],
+    ['Mind hit',         ['mind','twist','brain','confus','sochna','puzzle','mystery']],
+    ['Doctor life',      ['doctor','hospital','medical','nurse']],
+    ['Student life',     ['student','exam','padhai','study','college exam','iit','neet']],
+    ['College life',     ['college','hostel','campus','friends in college']],
+    ['Job life',         ['job','office','boss','corporate','naukri','career','startup']],
+    ['Lawyer life',      ['lawyer','court','vakeel','case','legal']],
+    ['Couple life',      ['couple','marriage','shadi','pati','patni','wife','husband','relationship']],
+    ['Long distance',    ['long distance','door','separation','videsh','abroad']],
+    ['Friendship',       ['friend','dost','yaar','gang','buddies']],
+    ['Hindi TV classics',['sitcom','tv show','purana show','khichdi','comedy show','doordarshan']],
+  ],
+  light:   ['halka','halki','light','easy','fun','comedy','hasa','smile','khush','happy','mazedaar','timepass'],
+  heavy:   ['gahara','gehra','heavy','sad','rona','cry','emotional','dukhi','tragic'],
+  fast:    ['fast','thrill','action','edge of seat','suspense','josh','dhamaka'],
+  slow:    ['slow','calm','shant','peaceful','aaram','relaxing'],
+  alone:   ['akela','akeli','alone','solo','by myself','khud'],
+  family:  ['family','ghar','parents','maa','papa','mummy','papa','bachche','kids','grandparents','dada','dadi','nani'],
+  partner: ['partner','wife','husband','girlfriend','boyfriend','pati','patni','date night','couple'],
+  friends: ['friends','dost','yaar','gang','group'],
+  short:   ['short','chhota','kam time','2 hours','jaldi','time nahi'],
+  hindi:   ['hindi','bollywood','desi'],
+  gujarati:['gujarati','gujrati'],
+  korean:  ['korean','kdrama','k-drama','korea'],
+  tamil:   ['tamil'], telugu: ['telugu'], malayalam: ['malayalam'], kannada: ['kannada'],
+  bengali: ['bengali','bangla'], marathi: ['marathi'], punjabi: ['punjabi'],
+  dubbed:  ['dubbed','dub','hindi mein'],
+  series:  ['series','web series','show','season','episodes'],
+  movie:   ['movie','film','picture'],
+};
+function crisisIn(txt){
+  const t=String(txt||'').toLowerCase();
+  return CRISIS.some(w=>t.indexOf(w)>=0);
+}
+function crisisCard(){
+  return '<div class="guard crisis"><div class="gt">Pehle ye padho</div>'
+    + '<p>Jo aapne likha hai, wo kisi film se badi baat hai. Aap akele nahi hain, aur baat karne se madad milti hai. '
+    + 'Please kisi se baat karein — kisi apne se, ya in numbers par.</p>'
+    + '<p class="gl"><b>Tele-MANAS (Govt. of India, free, 24x7)</b> — <a href="tel:14416">14416</a><br>'
+    + '<b>KIRAN mental health helpline (free)</b> — <a href="tel:1800005990019">1800-599-0019</a></p>'
+    + '<p class="gl">Emergency mein <b><a href="tel:112">112</a></b> par call karein.</p>'
+    + '<p class="gl">Yahan hum sirf film suggestions de sakte hain — hum doctor nahi hain.</p></div>';
+}
+function readTalk(txt){
+  const t=String(txt||'').toLowerCase();
+  const has=list=>list.some(w=>t.indexOf(w)>=0);
+  const out={situation:null, notes:[], apply:{}};
+  for(const [sit,words] of TALK.situations){
+    if(has(words)){ out.situation=sit; break; }
+  }
+  if(has(TALK.light))  out.notes.push('something light');
+  if(has(TALK.heavy))  out.notes.push('something heavy');
+  if(has(TALK.fast))   out.notes.push('fast and gripping');
+  if(has(TALK.slow))   out.notes.push('calm and slow');
+  if(has(TALK.alone))  out.apply.company='solo';
+  else if(has(TALK.family)) out.apply.company='family';
+  else if(has(TALK.partner)) out.apply.company='date';
+  else if(has(TALK.friends)) out.apply.company='friends';
+  if(has(TALK.short))  out.apply.rt='u120';
+  if(has(TALK.series)) out.apply.type='Series';
+  else if(has(TALK.movie)) out.apply.type='Movie';
+  if(has(TALK.korean)) out.apply.olang='Korean';
+  else if(has(TALK.tamil)) out.apply.olang='Tamil';
+  else if(has(TALK.telugu)) out.apply.olang='Telugu';
+  else if(has(TALK.malayalam)) out.apply.olang='Malayalam';
+  else if(has(TALK.kannada)) out.apply.olang='Kannada';
+  else if(has(TALK.bengali)) out.apply.olang='Bengali';
+  else if(has(TALK.marathi)) out.apply.olang='Marathi';
+  else if(has(TALK.punjabi)) out.apply.olang='Punjabi';
+  else if(has(TALK.gujarati)) out.apply.olang='Gujarati';
+  else if(has(TALK.hindi)) out.apply.olang='Hindi';
+  if(has(TALK.dubbed)) out.apply.dub=true;
+  if(has(TALK.light)) out.apply.vibe=['Comedy','Family','Music'];
+  if(has(TALK.fast))  out.apply.vibe=['Action','Adventure','Crime'];
+  if(has(TALK.heavy)) out.apply.vibe=['Drama','Romance','Biography'];
+  return out;
+}
+function runTalk(txt){
+  const box=document.getElementById('talkRead');
+  if(!txt || !txt.trim()){ if(box) box.innerHTML=''; return; }
+  if(crisisIn(txt)){                       // safety first: no films at all, only the helpline
+    clearAllFilters();
+    const host=document.getElementById('talkRead');
+    if(host) host.innerHTML=crisisCard();
+    const g=document.getElementById('sitGuard'); if(g) g.innerHTML=crisisCard();
+    const gr=document.getElementById('grid'); if(gr) gr.innerHTML='';
+    const rc=document.getElementById('resCount'); if(rc) rc.textContent='';
+    const rt=document.getElementById('resTitle'); if(rt) rt.textContent='';
+    window._crisis=true;
+    return;
+  }
+  window._crisis=false;
+  const r=readTalk(txt);
+  clearAllFilters();
+  if(r.situation){
+    const spec=SITUATIONS[r.situation];
+    if(spec){ state.situation=spec.titles.map(t=>String(t).toLowerCase()); state.situationKey=r.situation; }
+  }
+  if(r.apply.company) state.company=r.apply.company;
+  if(r.apply.rt) state.rt=r.apply.rt;
+  if(r.apply.type) state.type=new Set([r.apply.type]);
+  if(r.apply.olang) state.olang=new Set([r.apply.olang]);
+  if(r.apply.dub) state.dub=true;
+  if(r.apply.vibe) state.vibe=r.apply.vibe;
+  state.rel='all';
+  const said=[];
+  if(r.situation) said.push('situation: <b>'+esc(r.situation)+'</b>');
+  if(r.apply.olang) said.push('language: <b>'+esc(r.apply.olang)+'</b>');
+  if(r.apply.type) said.push('type: <b>'+esc(r.apply.type)+'</b>');
+  if(r.apply.company) said.push('watching: <b>'+esc({solo:'alone',family:'with family',date:'with your partner',friends:'with friends'}[r.apply.company]||r.apply.company)+'</b>');
+  if(r.apply.rt) said.push('<b>under 2 hours</b>');
+  if(r.apply.dub) said.push('<b>Hindi dub</b>');
+  if(r.notes.length) said.push(r.notes.map(esc).join(' + '));
+  if(box) box.innerHTML = said.length ? ('Samajh gaya — '+said.join(' · ')+'.') : 'Samajh nahi aaya. Try: "breakup ke baad kuch halka".';
+  render();
+}
+(function wireTalk(){
+  const b=document.getElementById('talkBox'), go=document.getElementById('talkGo'),
+        mic=document.getElementById('talkMic'), eg=document.getElementById('talkEgs');
+  if(go) go.addEventListener('click',()=>runTalk(b?b.value:''));
+  if(b) b.addEventListener('keydown',e=>{ if(e.key==='Enter') runTalk(b.value); });
+  if(eg){
+    ['breakup ke baad kuch halka dekhna hai','akela hoon, kuch calm chahiye','family ke saath comedy','korean drama hindi mein','2 ghante se chhota thriller']
+      .forEach(x=>{ const t=document.createElement('button'); t.type='button'; t.textContent=x;
+        t.addEventListener('click',()=>{ if(b) b.value=x; runTalk(x); }); eg.appendChild(t); });
+  }
+  if(mic){
+    const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+    if(!SR){ mic.style.display='none'; }
+    else mic.addEventListener('click',()=>{
+      const r=new SR(); r.lang='hi-IN'; r.interimResults=false;
+      r.onresult=e=>{ const txt=e.results[0][0].transcript; if(b) b.value=txt; runTalk(txt); };
+      r.onerror=()=>{ mic.textContent='🎤'; };
+      mic.textContent='…'; r.start();
+    });
+  }
+})();
+
 /* ---- sensitive topic guard ----
    Some of these lists are about breakups, grief and mental health. A film can be a comfort,
    but a film is not care. Where the subject is that close to the bone we show a short, plain
@@ -1860,6 +2044,43 @@ function guardHtml(d){
       }).join('<br>') + '</p>'
     + '<p class="gl">In an emergency, call <b>112</b>.</p>'
     + '</div>';
+}
+
+/* ---- questions to talk about after the film ----
+   Almost no catalogue does this. Three prompts, written per situation, so a film turns into a
+   conversation instead of a scroll. Kept short on purpose. */
+const TALK_ABOUT = {
+  'Breakup / move on': ['Kya uska/uski decision sahi tha? Aap kya karte?','Aapne khud kabhi aisa feel kiya? Kya madad ki?','Film ke baad kya aap thoda halka feel hue?'],
+  'Healing': ['Kaunsa scene aapko sabse zyada chhua?','Aap apne liye kya karte ho jab mann udaas ho?','Is film ne aapko kya sikhaya?'],
+  'Self growth': ['Kya aapne kabhi apna sapna chhoda? Kyun?','Ek cheez jo kal se badalna chahenge?','Usne kya kiya jo aap nahi kar paate?'],
+  'Couple life': ['Aap in dono mein se kaun ho?','Kya aapke rishte mein bhi aisa hua?','Kya ye film rishte ke baare mein sach bolti hai?'],
+  'Friendship': ['Aapke group mein kaun in jaisa hai?','Aapne kitne dost khoye, kitne bache?','Sach ke liye dost ko kitna daant sakte ho?'],
+  'Student life': ['Kya aapko bhi aisa pressure tha?','Marks vs seekhna — aap kya chunenge?','Kis teacher ne aapko sabse zyada sikhaya?'],
+  'Job life': ['Aap apne kaam se khush ho?','Kya aapne kabhi asaan raasta chuna?','Boss ya kaam — kya badalna chahenge?'],
+  'Lawyer life': ['Kanoon sahi tha ya insaaf?','Aap kis side par khade hote?','Kya ek case poora sach dikhata hai?'],
+  'Family': ['Aapke ghar mein bhi aisa hota hai?','Kis character se aap sabse zyada mile?','Family ke saath ye dekhne layak tha?'],
+  'Horror': ['Aap kis scene par chillaye?','Kya aap raat mein akele dekh paate?','Sach mein aisa hota hai kya?'],
+  'Thriller': ['Aapne kab samjha ki asli sach kya hai?','Kya ending sahi thi?','Aap kya karte uski jagah?'],
+  'Hindi TV classics': ['Ye show aapne pehli baar kab dekha?','Kaunsa character aapke ghar jaisa hai?','Kaunsa episode sabse funny tha?'],
+};
+function talkAboutHtml(d){
+  const key = state.situationKey && TALK_ABOUT[state.situationKey] ? state.situationKey
+            : (d && d.cat==='hindi' && d.type==='Series' ? 'Hindi TV classics' : null);
+  const qs = (key && TALK_ABOUT[key]) ? TALK_ABOUT[key].slice(0,3)
+           : ['Is film ka sabse yaadgaar scene kaunsa tha?','Kis character se aap sabse zyada mile?','Aap kya karte uski jagah?'];
+  return '<div class="vakeel" style="margin-top:10px"><div class="vkrow"><b>Baad mein</b><span>'
+    + qs.map(q=>'• '+esc(q)).join('<br>') + '</span></div></div>';
+}
+/* one line to watch FOR, before you press play */
+function noticeHtml(d){
+  const g=(d.g||[]).map(x=>String(x).toLowerCase());
+  let line='';
+  if(g.some(x=>x.includes('drama'))) line='Dekhiye ki wo bade faisle kaise lete hain — chhoti reactions par dhyan dijiye.';
+  else if(g.some(x=>x.includes('thriller')||x.includes('crime'))) line='Har scene mein ek chhota detail chhoot jaata hai — usse pakadne ki koshish kijiye.';
+  else if(g.some(x=>x.includes('comedy'))) line='Dialogue par dhyan dijiye — punchline se pehle ka silence bhi kaam karta hai.';
+  else if(g.some(x=>x.includes('romance'))) line='Dono kaise sunte hain ek doosre ko — wahi asli kahani hai.';
+  else line='Kaunsi cheez badalti hai shuru se aakhir tak — usi par dhyan dijiye.';
+  return '<div class="talkread" style="margin-top:8px"><b>Dekhne se pehle:</b> '+esc(line)+'</div>';
 }
 /* ---- Vakeel mode: argue the pick instead of just showing it ----
    Case (why it fits), Evidence (what backs it up), Objection (who should skip it), Verdict. */
@@ -1922,7 +2143,8 @@ function langOf(d){
     'sindhi':'Sindhi','urdu':'Urdu','maithili':'Maithili','manipuri':'Manipuri','kashmiri':'Kashmiri',
     'nepali':'Nepali','rajasthani':'Rajasthani','haryanvi':'Haryanvi','chhattisgarhi':'Chhattisgarhi',
     'tulu':'Tulu','bodo':'Bodo','garhwali':'Garhwali','dogri':'Dogri','khasi':'Khasi',
-    'hollywood':'English','korean':'Korean','anime':'Japanese','south-dubbed':'Telugu',
+    'hollywood':'English','korean':'Korean','korean-dubbed':'Korean','anime':'Japanese',
+    'south-dubbed':'Telugu','english-dubbed':'English','world-dubbed':'English','animation':'English',
     'world-dubbed':'English','documentary':'English','regional':'Regional'};
   if(m[c]) return m[c];
   const a=(d.a||[]).map(x=>String(x));
@@ -1948,7 +2170,7 @@ function buildSimpleRow(id, values, key, isSet){
     if(!state[key].size) row.querySelector('[data-k="all"]').classList.add('on');
     else row.querySelectorAll('.pill').forEach(p=>{ if(state[key].has(p.dataset.k)) p.classList.add('on'); });
     if(state[key].size && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
-    render(); 
+    debouncedRender();
   });
 }
 buildSimpleRow('genreRow', GENRES, 'genres', true);
@@ -2027,6 +2249,7 @@ document.addEventListener('click',e=>{
   if(u){ const f=(box._undos||[])[Number(u.dataset.undo)]; if(f){ f(); afterChipChange(); } return; }
   if(e.target.closest('[data-clearall]')){ clearAllFilters(); afterChipChange(); }
 });
+function debouncedRender(){ clearTimeout(window._dbr); window._dbr=setTimeout(render,140); }
 function afterChipChange(){
   if(typeof setPillRow==='function'){
     setPillRow('relRow','rel',state.rel); setPillRow('sortRow','sort',state.sort);
@@ -2169,6 +2392,7 @@ function render(){
   (function(){ const g=document.getElementById('sitGuard'); if(g) g.innerHTML = (state.situationKey && SENSITIVE_SITUATIONS.indexOf(state.situationKey)>=0) ? guardHtml(null) : ''; })();
   const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe,[...state.genres].sort(),[...state.olang].sort(),[...state.cert].sort(),state.freeOnly,state.subsOnly,(state.situation||[]).length]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
+  if(window._crisis){ out.length = 0; }
   const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
   /* The default view is "this month". A hand-curated row often has no release date at all, so
      that window can be empty on a fresh visit — which looked like a broken site. Fall back to
