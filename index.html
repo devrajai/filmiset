@@ -3,19 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FilmiSet — Kya Dekhein?</title>
-<meta name="description" content="Mood bolo, hum dikha denge — Bollywood, Hollywood, South, Korean, Anime aur web series, sab ek jagah. OTT availability, IMDb rating aur trailer ke saath.">
+<title>FilmiSet — Movies, Web Series &amp; Natak by Mood (Hindi, Gujarati, South)</title>
+<meta name="description" content="Kya dekhein? Pick a mood and see movies, web series and Gujarati natak worth watching — Bollywood, Hollywood, South Indian, Korean and anime in one place. Filter by OTT platform, language, era and rating, and find the trailer or where to watch.">
 <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://devrajai.github.io/filmiset/">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta property="og:site_name" content="FilmiSet">
 <meta property="og:type" content="website">
 <meta property="og:title" content="FilmiSet — Kya Dekhein?">
 <meta property="og:description" content="Mood bolo, hum dikha denge — Bollywood, Hollywood, South, Korean, Anime aur web series, sab ek jagah.">
 <meta property="og:url" content="https://devrajai.github.io/filmiset/">
+<meta property="og:image" content="https://devrajai.github.io/filmiset/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FilmiSet — Kya dekhein? Movies, web series and natak by mood">
+<meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FilmiSet — Movies, Web Series &amp; Natak by Mood">
+<meta name="twitter:description" content="Pick a mood, see something worth watching. Bollywood, Hollywood, South Indian, Korean, anime and Gujarati natak in one place.">
+<meta name="twitter:image" content="https://devrajai.github.io/filmiset/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -118,6 +128,20 @@
   .rbox{background:var(--surface);border:1px solid var(--accent);border-radius:16px;padding:26px 30px;text-align:center;max-width:380px}
   .rbox h3{margin-bottom:12px;color:var(--accent)}
   .rdisp{font-size:1.1rem;font-weight:700;min-height:52px;display:flex;align-items:center;justify-content:center}
+  .activechips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+  .activechips:empty{display:none}
+  .achip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-2);background:var(--surface-2);
+    border-radius:999px;padding:6px 10px;font-size:12px;color:var(--ink)}
+  .achip b{font-weight:600}
+  .achip button{background:none;border:0;cursor:pointer;color:var(--muted);font-size:14px;line-height:1;padding:0}
+  .achip button:hover{color:var(--accent)}
+  .achip.clear{border-color:var(--accent);color:var(--accent);cursor:pointer}
+  .empty{padding:44px 20px;text-align:center;border:1px dashed var(--line-2);border-radius:16px}
+  .empty h4{font-family:var(--font-display);font-size:20px;margin-bottom:6px}
+  .empty p{color:var(--muted);font-size:13.5px;margin-bottom:16px}
+  .about{margin-top:46px;border-top:1px solid var(--line);padding-top:22px;color:var(--muted);font-size:12.5px;line-height:1.7}
+  .about h5{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:16px 0 6px}
+  .about a{color:var(--accent)}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -347,8 +371,25 @@
       <h3 id="resTitle">All titles</h3>
       <div class="count" id="resCount"></div>
     </div>
+    <div class="activechips" id="activeChips"></div>
 
     <section class="grid" id="grid"></section>
+    <div class="empty" id="emptyState" hidden>
+      <h4>Kuch nahi mila</h4>
+      <p>Try fewer filters, or let us pick for you.</p>
+      <button class="hbtn" id="emptySurprise">🎲 Surprise me</button>
+      <button class="hbtn" id="emptyClear">Clear all filters</button>
+    </div>
+    <section class="about" id="about">
+      <h5>What this is</h5>
+      <p>FilmiSet is a free way to answer one question: <b>kya dekhein?</b> Pick a mood, a language or a platform and see what is worth your evening — films, web series and Gujarati, Marathi and Bengali natak, all in one list. Nothing is hosted here and nothing is streamed here; every title links out to the service that has it.</p>
+      <h5>Where the data comes from</h5>
+      <p>Title, year, genre and rating data comes from <a href="https://www.imdb.com/" target="_blank" rel="noopener">IMDb</a> bulk datasets, <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a>, <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> and <a href="https://www.tvmaze.com/" target="_blank" rel="noopener">TVmaze</a>, plus a hand-checked set of lists for regional cinema. Posters and OTT availability are provided by TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+      <h5>Disclaimer</h5>
+      <p>Availability changes constantly — a title can leave a platform the day after we list it. Always treat the platform shown as a hint and confirm on the service itself (every title has a "search each service" row for exactly this reason). We do not link to, host or encourage any unlicensed source. Spotted something wrong? Use the <b>Report wrong info</b> link on a title and we will fix it.</p>
+      <h5>Privacy</h5>
+      <p>Your watchlist, star ratings and filters are stored only in your own browser. There are no accounts, no cookies and no analytics scripts on this page.</p>
+    </section>
   </main>
 </div>
 
@@ -1702,6 +1743,56 @@ function clearAllFilters(){
   render();
 }
 
+
+/* ---- what is actually switched on, as removable chips ----
+   With this many filter groups it is easy to forget what you turned on, so every active filter
+   gets a chip you can drop individually, plus one Clear all. */
+function renderActiveChips(){
+  const box=document.getElementById('activeChips'); if(!box) return;
+  const L=k=>(CATS[k]&&CATS[k].label)||k;
+  const c=[];
+  if(state.q) c.push(['Search: '+state.q, ()=>{ state.q=''; const q=document.getElementById('q'); if(q) q.value=''; const qc=document.getElementById('qclear'); if(qc) qc.hidden=true; }]);
+  [...state.cat].forEach(x=>c.push([L(x), ()=>state.cat.delete(x)]));
+  [...state.type].forEach(x=>c.push([x, ()=>state.type.delete(x)]));
+  [...state.moods].forEach(x=>c.push(['Mood: '+x, ()=>state.moods.delete(x)]));
+  [...state.ott].forEach(x=>c.push([x, ()=>state.ott.delete(x)]));
+  if(state.vibe) c.push(['Vibe: '+state.vibe.join(' + '), ()=>state.vibe=null]);
+  if(state.rel!=='all' && state.rel!=='month') c.push([REL_LABEL[state.rel]||state.rel, ()=>state.rel='month']);
+  if(state.era!=='all') c.push([state.era==='classic'?'Pre-2000':'2000s onwards', ()=>state.era='all']);
+  if(state.rt!=='all') c.push([{u90:'Under 1½ hr',u120:'Under 2 hrs',p120:'2 hrs +'}[state.rt]||state.rt, ()=>state.rt='all']);
+  if(state.company!=='all') c.push([{solo:'Solo',family:'Family',date:'Date night',friends:'Friends',kids:'With kids'}[state.company]||state.company, ()=>state.company='all']);
+  if(state.minRating) c.push(['★ '+state.minRating+'+', ()=>state.minRating=0]);
+  if(state.topN) c.push(['Top '+state.topN, ()=>state.topN=0]);
+  if(state.gemsMode) c.push(['Hidden gems', ()=>state.gemsMode=false]);
+  if(state.only) c.push([state.trendOnly||'Picked list', ()=>state.only=null]);
+  if(state.savedOnly) c.push(['Watchlist only', ()=>state.savedOnly=false]);
+  if(state.dub) c.push(['Hindi dub', ()=>state.dub=false]);
+  if(!c.length){ box.innerHTML=''; return; }
+  box.innerHTML = c.map((x,i)=>'<span class="achip"><b>'+esc(x[0])+'</b><button data-undo="'+i+'" aria-label="Remove">\u00d7</button></span>').join('')
+    + '<span class="achip clear" data-clearall="1">Clear all</span>';
+  box._undos = c.map(x=>x[1]);
+}
+document.addEventListener('click',e=>{
+  const box=document.getElementById('activeChips'); if(!box) return;
+  const u=e.target.closest('[data-undo]');
+  if(u){ const f=(box._undos||[])[Number(u.dataset.undo)]; if(f){ f(); afterChipChange(); } return; }
+  if(e.target.closest('[data-clearall]')){ clearAllFilters(); afterChipChange(); }
+});
+function afterChipChange(){
+  if(typeof setPillRow==='function'){
+    setPillRow('relRow','rel',state.rel); setPillRow('sortRow','sort',state.sort);
+    setPillRow('rtRow','rt',state.rt); setPillRow('compRow','comp',state.company);
+    setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
+    setPillRow('eraRow','era','all'); setPillRow('ottRow','ott','all');
+  }
+  document.querySelectorAll('#qualRow .pill,#moodRow .pill').forEach(p=>p.classList.remove('on'));
+  render();
+}
+(function wireEmpty(){
+  const s=document.getElementById('emptySurprise'); if(s) s.addEventListener('click',()=>{ clearAllFilters(); runMovieRoulette(); });
+  const c=document.getElementById('emptyClear'); if(c) c.addEventListener('click',()=>{ clearAllFilters(); render(); });
+})();
+
 /* ---- render ---- */
 const grid=document.getElementById('grid');
 const resCount=document.getElementById('resCount');
@@ -1809,6 +1900,8 @@ function render(){
   if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
+  const _es=document.getElementById('emptyState'); if(_es) _es.hidden = out.length>0;
+  renderActiveChips();
   const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
