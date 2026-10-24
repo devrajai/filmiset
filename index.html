@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="FilmiSet">
 <meta property="og:type" content="website">
 <meta property="og:title" content="FilmiSet — Kya Dekhein?">
-<meta property="og:description" content="Mood bolo, hum dikha denge — Bollywood, Hollywood, South, Korean, Anime aur web series, sab ek jagah.">
+<meta property="og:description" content="Mood bolo, aa jao, dikha dunga — Bollywood, Hollywood, South, Korean, Anime aur web series, sab ek jagah.">
 <meta property="og:url" content="https://devrajai.github.io/filmiset/">
 <meta property="og:image" content="https://devrajai.github.io/filmiset/og.png">
 <meta property="og:image:width" content="1200">
@@ -370,14 +370,15 @@
   .pill .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:6px;vertical-align:middle}
 
   /* hero */
-  .hero{padding:14px 0 22px}
-  .hero-center{width:100%;max-width:620px;margin:20px auto 14px;scroll-margin-top:110px;
-    display:grid;place-items:center;text-align:center;justify-items:center}
+  .hero{display:block;width:100%;padding:14px 0 20px;text-align:center}
+  /* the plainest centring there is: a full-width block with centred text */
+  .hero-center{display:block;width:100%;max-width:none;text-align:center;
+    margin:18px 0 12px;padding:0 14px}
   /* the header is sticky, so anchor the page so content never starts underneath it */
   html{scroll-padding-top:110px}
-  .hero-center h2{margin:0 auto;width:100%;text-align:center;line-height:1.24;
-    font-size:clamp(22px,6.4vw,34px);padding:0 6px;text-wrap:balance}
-  .hero-center p{margin-left:auto;margin-right:auto;max-width:560px}
+  .hero-center h2{display:block;width:100%;text-align:center;
+    margin:0;padding:0;font-size:26px;line-height:1.3;font-weight:600}
+  .hero-center p{display:block;width:100%;text-align:center;margin:10px 0 0;padding:0}
   .eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
     color:var(--accent);display:inline-block;margin-bottom:14px}
   .hero h2{font-family:var(--font-display);font-weight:900;font-size:clamp(32px,4.6vw,54px);
@@ -616,7 +617,7 @@
 
   <main class="content">
     <section class="hero hero-center">
-      <h2>Kya dekhein? Mood bolo,<br><em>hum dikha denge.</em></h2>
+      <h2>Kya dekhein? Mood bolo,<br><em>aa jao, dikha dunga.</em></h2>
       <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Mood, festival ya weekend — apne mauke ke hisaab se pick karo. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
     </section>
 
@@ -2076,7 +2077,7 @@ function setMeta(prop, val){
 }
 function setOg(d){
   setMeta('og:title', d ? dispTitle(d.t)+(d.y?' ('+d.y+')':'')+' \u2014 FilmiSet' : 'FilmiSet \u2014 Kya Dekhein?');
-  setMeta('og:description', d ? (d.ov || gList(d).join(', ') || 'FilmiSet') : 'Mood bolo, hum dikha denge.');
+  setMeta('og:description', d ? (d.ov || gList(d).join(', ') || 'FilmiSet') : 'Mood bolo, aa jao, dikha dunga.');
   try{ setMeta('og:url', location.href.split('#')[0]); }catch(e){}
   let img='';
   try{ img = (d && d.poster) ? new URL(d.poster, location.href).href : ''; }catch(e){}
