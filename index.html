@@ -269,7 +269,8 @@
     border:1px solid var(--glass-line);background:var(--accent);color:#fff;font-size:23px;cursor:pointer;
     box-shadow:0 14px 34px -12px rgba(160,40,95,.75), inset 0 1px 0 rgba(255,255,255,.45);
     backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .16s}
-  .fab:hover{transform:scale(1.06)}
+  .fab:hover{transform:scale(1.05)}
+  @media (prefers-reduced-motion: reduce){*{transition:none !important;animation:none !important}}
   .fab.open{background:var(--surface);color:var(--ink)}
   .talkpop{position:fixed;right:14px;bottom:82px;z-index:301;width:min(360px,calc(100vw - 28px));
     border:1px solid var(--glass-line);border-radius:18px;background:var(--surface);
@@ -485,14 +486,23 @@
     .layout{grid-template-columns:1fr;gap:20px;padding-top:16px}
     .foot{grid-template-columns:1fr}
     .only-mobile{display:inline-flex}
-    .rail{will-change:transform;position:fixed;left:0;right:0;bottom:0;top:auto;max-height:82vh;overflow-y:auto;
-      background:var(--bg);border-top:1px solid var(--line);border-radius:18px 18px 0 0;
-      padding:16px 18px 30px;gap:18px;transform:translateY(112%);transition:transform .26s ease;
-      z-index:80;box-shadow:0 -12px 40px rgba(0,0,0,.28)}
-    body.filters-open .rail{transform:translateY(0)}
+    /* a full-screen sheet: covers the header too, so the search bar is not in the way */
+    /* shown/hidden with display rather than a transform — a transform on a fixed, full-screen,
+       scrolling panel is fragile across mobile browsers, and it kept measuring off-screen */
+    .rail{position:fixed;inset:0;max-height:none;overflow-y:auto;
+      background:var(--bg);border:0;border-radius:0;
+      padding:0 16px 40px;gap:16px;display:none;
+      z-index:190;box-shadow:none;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
+      flex-direction:column}
+    body.filters-open .rail{display:flex}
+    body.filters-open .topbar{display:none}
     body.filters-open{overflow:hidden}
-    .rail-head{position:sticky;top:-16px;z-index:6;background:var(--bg);padding:6px 0 12px;margin-top:-6px;
-      display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+    .rail-head{position:sticky;top:0;z-index:6;background:var(--bg);
+      padding:14px 0 12px;margin:0;display:flex;align-items:center;justify-content:space-between;gap:10px;
+      border-bottom:1px solid var(--line)}
+    .rail-head span{font-family:var(--font-display);font-size:21px;font-weight:600}
+    .railclose{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);
+      background:var(--surface-2);color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
     .rail-head span{font-family:var(--font-display);font-size:17px;font-weight:600}
     .backdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:70;
       opacity:0;pointer-events:none;transition:opacity .26s}
@@ -540,6 +550,10 @@
 
 <div class="wrap layout">
   <aside class="rail" id="rail">
+    <div class="rail-head">
+      <span>Filters</span>
+      <button id="filtersClose" class="railclose" aria-label="Close filters">×</button>
+    </div>
     <div class="rail-block rail-actions">
       <h6>Your list</h6>
       <div class="railbtns">
@@ -550,16 +564,9 @@
       <h6 style="margin-top:14px">Discover</h6>
       <div class="railbtns">
         <button class="hbtn" data-coll="floved" title="Well rated, not widely seen">⭐ Flopped, then loved</button>
-        <button class="hbtn" data-coll="under" title="High rating, few votes">💎 Underrated gems</button>
         <button class="hbtn" data-plan-open="1" title="Fit picks into your evening">🕑 Plan my evening</button>
         <button class="hbtn" id="themeBtn" title="Switch between pink and dark">🌙 Theme</button>
       </div>
-    </div>
-    <div class="rail-head">
-      <button id="railBack" class="hbtn navbtn" title="Back to the list">← Back</button>
-      <span>Filters</span>
-      <button id="railHome" class="hbtn navbtn" title="Home">⌂ Home</button>
-      <button id="filtersClose" class="hbtn" title="Close filters">Done</button>
     </div>
     <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
     <div class="rail-block"><h6>OTT par dekho</h6><div class="quickpicks" id="ottPicks"></div></div>
@@ -1743,8 +1750,12 @@ function streamRowHtml(title){
 
 /* ---- movie roulette: a short spin before the pick is revealed ---- */
 function runMovieRoulette(){
-  const pool=(DATA||[]).filter(d=>d.src!=='youtube' && Number(d.irt||d.rtg||0)>=7.0);
-  if(!pool.length) return;
+  const srcPool=(DATA||[]).filter(d=>d.src!=='youtube' && Number(d.irt||d.rtg||0)>=7.0);
+  if(!srcPool.length) return;
+  // prefer a title that has a poster — landing on a blank card looks broken
+  const withPoster = srcPool.filter(function(d){ return d.poster && d.status!=='upcoming'; });
+  const anyGood    = srcPool.filter(function(d){ return d.status!=='upcoming'; });
+  const use = withPoster.length ? withPoster : (anyGood.length ? anyGood : srcPool);
   const ov=document.createElement('div');
   ov.className='roulette';
   ov.innerHTML='<div class="rbox"><h3>\u{1F3B0} Deciding movie night\u2026</h3>'
@@ -1752,12 +1763,12 @@ function runMovieRoulette(){
   document.body.appendChild(ov);
   let ticks=0; const max=18;
   const t=setInterval(function(){
-    const p=pool[Math.floor(Math.random()*pool.length)];
+    const p=srcPool[Math.floor(Math.random()*srcPool.length)];
     const el=document.getElementById('rlDisp');
     if(el) el.textContent=dispTitle(p.t)+' ('+(p.y||'')+')';
     if(++ticks>=max){
       clearInterval(t);
-      const p=pool[Math.floor(Math.random()*pool.length)];
+      const p=use[Math.floor(Math.random()*use.length)];   // land on something with a poster
       setTimeout(function(){ ov.remove(); openModal(p); }, 420);
     }
   }, 95);
