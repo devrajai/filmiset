@@ -11,6 +11,7 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -65,7 +66,9 @@ jobs:
           pids="$pids $!"
           run "TMDB full"     python3 scripts/fetch_tmdb_full.py &
           pids="$pids $!"
-          run "IMDb cast"     python3 scripts/fetch_imdb_cast.py --limit 300000 &
+          run "IMDb cast"     python3 scripts/fetch_imdb_cast.py --limit 2500000 &
+          pids="$pids $!"
+          run "Actors"        python3 scripts/fetch_actors.py --limit 400000 &
           pids="$pids $!"
           run "IMDb ratings"  python3 scripts/fetch_imdb.py &
           pids="$pids $!"
@@ -76,7 +79,7 @@ jobs:
       - name: Posters for the IMDb rows (rolling, TMDB by IMDb id)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_posters_tmdb.py --limit 900000 --per-run 120000 --workers 16
+        run: python3 scripts/fetch_posters_tmdb.py --limit 2500000 --per-run 900000 --workers 16
       - name: Download + compress posters locally
         run: python3 scripts/download_posters.py --workers 2 --delay 0.35
       - name: Build Excel backup
