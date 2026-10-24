@@ -31,11 +31,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#faf7f2; --bg-2:#f1ebdf; --surface:#ffffff; --surface-2:#f5efe5;
-    --ink:#17140f; --muted:#6f665a; --faint:#9a9084;
-    --line:rgba(23,20,15,0.10); --line-2:rgba(23,20,15,0.22);
-    --accent:#d6451f; --accent-ink:#fff7f3; --accent-dim:rgba(214,69,31,0.10);
-    --teal:#0f5c56;
+    /* rose pink, and the surfaces are translucent so the gradient behind shows through */
+    --bg:#fff2f7; --bg-2:#ffe6f0;
+    --surface:rgba(255,255,255,0.62); --surface-2:rgba(255,255,255,0.40);
+    --ink:#3d0f26; --muted:#8b5a72; --faint:#bb8ba2;
+    --line:rgba(190,70,120,0.16); --line-2:rgba(190,70,120,0.30);
+    --accent:#e0407a; --accent-ink:#ffffff; --accent-dim:rgba(224,64,122,0.14);
+    --teal:#b0436f;
+    --glass:rgba(255,255,255,0.50); --glass-line:rgba(255,255,255,0.85);
+    --glass-blur:blur(26px) saturate(190%);
     --radius:16px;
     --font-display:"Fraunces",Georgia,serif;
     --font-body:"Space Grotesk",system-ui,-apple-system,sans-serif;
@@ -43,11 +47,13 @@
   }
   @media (prefers-color-scheme: dark){
     :root{
-      --bg:#141210; --bg-2:#1b1815; --surface:#1e1b18; --surface-2:#262119;
-      --ink:#f4eee5; --muted:#b0a597; --faint:#877d70;
-      --line:rgba(255,255,255,0.10); --line-2:rgba(255,255,255,0.22);
-      --accent:#f0663c; --accent-ink:#1a1207; --accent-dim:rgba(240,102,60,0.14);
-      --teal:#5cbdaf;
+      --bg:#150a11; --bg-2:#22101c;
+      --surface:rgba(74,30,54,0.46); --surface-2:rgba(96,40,70,0.36);
+      --ink:#ffeef6; --muted:#d8a8c0; --faint:#ac7e96;
+      --line:rgba(255,175,210,0.16); --line-2:rgba(255,175,210,0.30);
+      --accent:#ff6f9c; --accent-ink:#2b0716; --accent-dim:rgba(255,111,156,0.18);
+      --teal:#ff9ec4;
+      --glass:rgba(70,28,50,0.40); --glass-line:rgba(255,190,215,0.16);
     }
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -55,9 +61,12 @@
   body{
     font-family:var(--font-body); color:var(--ink); line-height:1.5;
     background:
-      radial-gradient(1000px 520px at 88% -8%, var(--accent-dim), transparent 62%),
-      radial-gradient(700px 420px at 0% 4%, rgba(15,92,86,0.06), transparent 60%),
+      radial-gradient(620px 420px at 92% -6%, rgba(255,105,165,0.55), transparent 60%),
+      radial-gradient(520px 380px at -4% 10%, rgba(255,175,110,0.38), transparent 58%),
+      radial-gradient(560px 440px at 46% 112%, rgba(190,110,255,0.34), transparent 60%),
+      radial-gradient(420px 320px at 20% 52%, rgba(255,150,200,0.30), transparent 62%),
       var(--bg);
+    background-attachment:fixed;
     min-height:100vh; -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:1300px;margin:0 auto}
@@ -159,6 +168,33 @@
   .guard p{margin:0 0 6px}
   .guard .gl{font-size:12px}
   .guard a{color:var(--accent)}
+  /* ---------------- liquid glass ----------------
+     Translucent panels that blur whatever sits behind them, a 1px light edge, and a soft
+     highlight along the top. Everything degrades to a plain surface if backdrop-filter is
+     unsupported, because the surface colour is already a solid fallback. */
+  .topbar{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+    border-bottom:1px solid var(--glass-line)}
+  .rail{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur)}
+  .card{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);background:var(--surface);
+    border:1px solid var(--glass-line);
+    box-shadow:0 10px 34px -18px rgba(160,40,95,.42), inset 0 1px 0 rgba(255,255,255,.55)}
+  .card:hover{box-shadow:0 20px 46px -20px rgba(160,40,95,.55), inset 0 1px 0 rgba(255,255,255,.65)}
+  .modal .box{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+    border:1px solid var(--glass-line);box-shadow:0 30px 70px -24px rgba(90,10,50,.6), inset 0 1px 0 rgba(255,255,255,.5)}
+  .hbtn,.pill,.qp,.mini,.sbtn,.achip{backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%)}
+  .hbtn,.pill,.qp{border-color:var(--glass-line);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.42)}
+  .pill.on,.qp.on,.hbtn.on{box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 6px 18px -10px var(--accent)}
+  .search{border-radius:999px}
+  .search input{background:transparent}
+  .rail-head{backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur)}
+  .empty{border-style:solid;border-color:var(--glass-line);
+    backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur)}
+  .vakeel,.guard{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .poster{box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
+  @media (prefers-reduced-transparency: reduce){
+    .topbar,.rail,.card,.modal .box,.empty{backdrop-filter:none;-webkit-backdrop-filter:none}
+  }
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
