@@ -142,6 +142,13 @@
   .about{margin-top:46px;border-top:1px solid var(--line);padding-top:22px;color:var(--muted);font-size:12.5px;line-height:1.7}
   .about h5{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:16px 0 6px}
   .about a{color:var(--accent)}
+  .adv{margin:0}
+  .adv>summary{cursor:pointer;font-family:var(--font-mono);font-size:10px;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--accent);padding:8px 0;list-style:none}
+  .adv>summary::-webkit-details-marker{display:none}
+  .adv>summary:before{content:'\25B8 ';display:inline-block;transition:.15s}
+  .adv[open]>summary:before{transform:rotate(90deg)}
+  .adv[open]{display:flex;flex-direction:column;gap:22px}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -341,6 +348,11 @@
     <div class="rail-block"><h6>Trending &amp; reels</h6><div class="quickpicks" id="trendPicks"></div></div>
     <div class="rail-block"><h6>Quick picks</h6><div class="quickpicks" id="quickPicks"></div></div>
     <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
+    <div class="rail-block"><h6>Genre</h6><div class="chips" id="genreRow"></div></div>
+    <div class="rail-block"><h6>Original language</h6><div class="chips" id="olangRow"></div></div>
+    <div class="rail-block"><h6>Age rating</h6><div class="chips" id="certRow"></div></div>
+    <div class="rail-block"><h6>Availability</h6><div class="chips" id="freeRow"></div></div>
+    <details class="adv"><summary>Advanced filters</summary>
     <div class="rail-block"><h6>Category</h6><div class="chips" id="catRow"></div></div>
     <div class="rail-block"><h6>OTT Platform</h6><div class="chips" id="ottRow"></div></div>
     <div class="rail-block"><h6>Collections</h6><div class="chips" id="collRow"></div></div>
@@ -356,6 +368,7 @@
     <div class="rail-block"><h6>How much time</h6><div class="chips" id="rtRow"></div></div>
     <div class="rail-block"><h6>Quality</h6><div class="chips" id="qualRow"></div></div>
     <div class="rail-block"><h6>Library</h6><div class="chips" id="libRow"></div></div>
+    </details>
   </aside>
 
   <main class="content">
@@ -596,7 +609,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -1728,7 +1741,7 @@ function clearAllFilters(){
   state.company='all'; state.gq=''; state.savedOnly=false; state.q='';
   const q=document.getElementById('q'); if(q) q.value='';
   const qc=document.getElementById('qclear'); if(qc) qc.hidden=true;
-  state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false; state.vibe=null;
+  state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false; state.vibe=null; state.genres=new Set(); state.olang=new Set(); state.cert=new Set(); state.freeOnly=false; state.subsOnly=false;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
   setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
@@ -1744,6 +1757,86 @@ function clearAllFilters(){
 }
 
 
+
+/* ---- the four filters that matter most: Genre, Original language, Age rating, Availability ---- */
+const GENRES = ['Comedy','Thriller','Horror','Romance','Crime','Drama','Sci-Fi','Biopic','Sports',
+                'Mythology','Action','Mystery','Documentary','Animation','Musical','Family'];
+const LANGS_SHOWN = ['Hindi','Gujarati','Tamil','Telugu','Malayalam','Kannada','Bengali','Marathi',
+                     'Punjabi','English','Korean','Japanese','Odia','Assamese','Bhojpuri'];
+const CERTS = ['U','U/A','A'];
+function langOf(d){
+  const c=String(d.cat||'');
+  const m={'hindi':'Hindi','gujarati-movie':'Gujarati','gujarati-natak':'Gujarati','tamil':'Tamil',
+    'telugu':'Telugu','malayalam':'Malayalam','kannada':'Kannada','bengali':'Bengali','marathi':'Marathi',
+    'punjabi':'Punjabi','odia':'Odia','assamese':'Assamese','bhojpuri':'Bhojpuri','konkani':'Konkani',
+    'sindhi':'Sindhi','urdu':'Urdu','maithili':'Maithili','manipuri':'Manipuri','kashmiri':'Kashmiri',
+    'nepali':'Nepali','rajasthani':'Rajasthani','haryanvi':'Haryanvi','chhattisgarhi':'Chhattisgarhi',
+    'tulu':'Tulu','bodo':'Bodo','garhwali':'Garhwali','dogri':'Dogri','khasi':'Khasi',
+    'hollywood':'English','korean':'Korean','anime':'Japanese','south-dubbed':'Telugu',
+    'world-dubbed':'English','documentary':'English','regional':'Regional'};
+  if(m[c]) return m[c];
+  const a=(d.a||[]).map(x=>String(x));
+  for(const k of ['Hindi','Gujarati','Tamil','Telugu','Malayalam','Kannada','Bengali','Marathi','Punjabi'])
+    if(a.some(x=>x.indexOf(k)>=0)) return k;
+  return 'Other';
+}
+function buildSimpleRow(id, values, key, isSet){
+  const row=document.getElementById(id); if(!row) return;
+  const b0=document.createElement('button');
+  b0.className='pill on'; b0.dataset.k='all'; b0.textContent='All'; row.appendChild(b0);
+  values.forEach(v=>{
+    const b=document.createElement('button');
+    b.className='pill'; b.dataset.k=v; b.textContent=v; row.appendChild(b);
+  });
+  row.addEventListener('click',e=>{
+    const b=e.target.closest('.pill'); if(!b) return;
+    const k=b.dataset.k;
+    if(k==='all'){ state[key].clear(); }
+    else if(state[key].has(k)) state[key].delete(k);
+    else state[key].add(k);
+    row.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+    if(!state[key].size) row.querySelector('[data-k="all"]').classList.add('on');
+    else row.querySelectorAll('.pill').forEach(p=>{ if(state[key].has(p.dataset.k)) p.classList.add('on'); });
+    if(state[key].size && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+    render(); 
+  });
+}
+buildSimpleRow('genreRow', GENRES, 'genres', true);
+buildSimpleRow('olangRow', LANGS_SHOWN, 'olang', true);
+buildSimpleRow('certRow', CERTS, 'cert', true);
+(function buildFreeRow(){
+  const row=document.getElementById('freeRow'); if(!row) return;
+  row.innerHTML='<button class="pill on" data-free="0">Any</button>'
+    + '<button class="pill" data-free="1">\u25B6 Free to watch</button>'
+    + '<button class="pill" data-free="2">Subscription</button>';
+  row.addEventListener('click',e=>{
+    const b=e.target.closest('.pill'); if(!b) return;
+    const v=b.dataset.free;
+    state.freeOnly = (v==='1'); state.subsOnly = (v==='2');
+    row.querySelectorAll('.pill').forEach(p=>p.classList.remove('on')); b.classList.add('on');
+    if(v!=='0' && state.rel==='month'){ state.rel='all'; setPillRow('relRow','rel','all'); }
+    render();
+  });
+})();
+
+/* ---- mood tags from the hand-written mood lists ----
+   Applied after the catalogue is loaded, not when this file runs, or it would tag an empty list. */
+let MOOD_TAGS={};
+function applyMoodTags(){
+  if(!DATA || !DATA.length) return;
+  DATA.forEach(d=>{
+    const extra=MOOD_TAGS[String(d.t||'').toLowerCase()];
+    if(!extra || !extra.length) return;
+    if(!Array.isArray(d.m)) d.m=[];
+    extra.forEach(x=>{ if(d.m.indexOf(x)<0) d.m.push(x); });
+  });
+}
+fetch('data/mood_tags.json').then(r=>r.ok?r.json():null).then(m=>{
+  if(!m) return;
+  const low={}; Object.keys(m).forEach(k=>{ low[String(k).toLowerCase()]=m[k]; });
+  MOOD_TAGS=low; applyMoodTags(); render();
+}).catch(()=>{});
+
 /* ---- what is actually switched on, as removable chips ----
    With this many filter groups it is easy to forget what you turned on, so every active filter
    gets a chip you can drop individually, plus one Clear all. */
@@ -1757,6 +1850,11 @@ function renderActiveChips(){
   [...state.moods].forEach(x=>c.push(['Mood: '+x, ()=>state.moods.delete(x)]));
   [...state.ott].forEach(x=>c.push([x, ()=>state.ott.delete(x)]));
   if(state.vibe) c.push(['Vibe: '+state.vibe.join(' + '), ()=>state.vibe=null]);
+  [...state.genres].forEach(x=>c.push(['Genre: '+x, ()=>state.genres.delete(x)]));
+  [...state.olang].forEach(x=>c.push([x, ()=>state.olang.delete(x)]));
+  [...state.cert].forEach(x=>c.push(['Rated '+x, ()=>state.cert.delete(x)]));
+  if(state.freeOnly) c.push(['Free to watch', ()=>state.freeOnly=false]);
+  if(state.subsOnly) c.push(['Subscription', ()=>state.subsOnly=false]);
   if(state.rel!=='all' && state.rel!=='month') c.push([REL_LABEL[state.rel]||state.rel, ()=>state.rel='month']);
   if(state.era!=='all') c.push([state.era==='classic'?'Pre-2000':'2000s onwards', ()=>state.era='all']);
   if(state.rt!=='all') c.push([{u90:'Under 1½ hr',u120:'Under 2 hrs',p120:'2 hrs +'}[state.rt]||state.rt, ()=>state.rt='all']);
@@ -1810,6 +1908,23 @@ function render(){
       const m=state.vibe.filter(v=>g.some(x=>x.indexOf(String(v).toLowerCase())>=0)).length;
       const r=Number(d.irt||d.rtg||0);
       if(!(m>=2 || (m>=1 && r>=7.8))) return false;      // two tag hits, or one plus a high rating
+    }
+    if(state.genres.size){
+      const gl=gList(d).map(x=>String(x).toLowerCase());
+      if(![...state.genres].some(g=>gl.some(x=>x.indexOf(g.toLowerCase())>=0))) return false;
+    }
+    if(state.olang.size && !state.olang.has(langOf(d))) return false;
+    if(state.cert.size){
+      const c=String(d.cert||'').toUpperCase().replace(/\s/g,'');
+      if(![...state.cert].some(x=>c.indexOf(x.toUpperCase().replace(/\s/g,''))>=0)) return false;
+    }
+    if(state.freeOnly){
+      const o=(d.o||[]).map(x=>String(x).toLowerCase());
+      if(!o.some(x=>x==='youtube'||x==='mx player'||x.indexOf('free')>=0)) return false;
+    }
+    if(state.subsOnly){
+      const o=(d.o||[]).map(x=>String(x).toLowerCase());
+      if(!o.some(x=>x && x!=='youtube' && x!=='mx player' && x!=='theatrical')) return false;
     }
     if(state.gemsMode){
       const r=Number(d.irt||d.rtg||0), v=Number(d.ivot||d.vot||0);
@@ -1902,7 +2017,7 @@ function render(){
   resTitle.textContent = label;
   const _es=document.getElementById('emptyState'); if(_es) _es.hidden = out.length>0;
   renderActiveChips();
-  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe]);
+  const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe,[...state.genres].sort(),[...state.olang].sort(),[...state.cert].sort(),state.freeOnly,state.subsOnly]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
   resCount.textContent = (state.topN ? 'Top '+shown.length : (shown.length<out.length ? shown.length+' of '+out.length : out.length))+' title'+(out.length===1?'':'s');
@@ -2175,6 +2290,7 @@ Promise.all([
   mergeSets(ytFree);                 // YouTube Free Master Edition — 64 titles free to watch on YouTube
   mergeSets(ytFree2);                // YouTube Free Master Edition Volume 2 — 74 more
   mergeSets(indianStarter);          // Indian titles starter list — 523 rows that matched IMDb
+  applyMoodTags();                   // hand-written mood tags, applied once the catalogue exists
   /* these 64 are free to watch on YouTube. Many already exist in the catalogue from another
      source, so instead of adding a duplicate, tag the existing row: it gains the category and
      YouTube is added to its platform list. */
