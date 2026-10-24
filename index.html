@@ -153,6 +153,12 @@
   .vkrow{display:flex;gap:10px;font-size:12.5px;line-height:1.55;margin:3px 0}
   .vkrow b{flex:0 0 74px;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);padding-top:2px}
   .vkverdict{color:#fff;border-radius:6px;padding:2px 8px;font-weight:700;font-size:11.5px}
+  .guard{border:1px solid var(--line-2);border-left:3px solid var(--accent);border-radius:10px;
+    padding:11px 13px;margin:10px 0;background:var(--surface-2);font-size:12.5px;line-height:1.65;color:var(--muted)}
+  .guard .gt{font-family:var(--font-mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
+  .guard p{margin:0 0 6px}
+  .guard .gl{font-size:12px}
+  .guard a{color:var(--accent)}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -390,6 +396,7 @@
       <div class="count" id="resCount"></div>
     </div>
     <div class="activechips" id="activeChips"></div>
+    <div id="sitGuard"></div>
 
     <section class="grid" id="grid"></section>
     <div class="empty" id="emptyState" hidden>
@@ -667,7 +674,7 @@ catRow.appendChild(allPill);
 Object.entries(CATS).forEach(([k,v])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.cat.has(k)?' on':''); b.dataset.cat=k;
-  b.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
+  b.innerHTML='<span class="dot" style="background:'+(v.color||'#6b6255')+'"></span>'+v.label;
   catRow.appendChild(b);
 });
 catRow.addEventListener('click',e=>{
@@ -1491,7 +1498,7 @@ const legend=document.getElementById('legend');
 if(legend) Object.values(CATS).forEach(v=>{
   const s=document.createElement('span');
   s.className='pill';
-  s.innerHTML='<span class="dot" style="background:'+v.color+'"></span>'+v.label;
+  s.innerHTML='<span class="dot" style="background:'+(v.color||'#6b6255')+'"></span>'+v.label;
   legend.appendChild(s);
 });
 
@@ -1588,6 +1595,7 @@ function openModal(d, fromPop){
     + '<h3>'+dispTitle(d.t)+'</h3>'
     + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(lengthLabel(d)?' · '+lengthLabel(d):'')+(d.irt?' · IMDb '+d.irt+' ('+d.ivot+' votes)':(d.rtg?' · \u2605 '+d.rtg+' ('+d.vot+' votes)':''))+(d.cert?' · '+d.cert:'')+(up?' · Upcoming':'')+'</div>'
     + '<div class="m" style="margin-top:6px">'+[gList(d).join(', '),(d.a||[]).join(', '),avail].filter(Boolean).join('  ·  ')+'</div>'
+    + guardHtml(d)
     + vakeelHtml(d)
     + (d.ov? '<p>'+d.ov+'</p>':(d.note? '<p>'+d.note+'</p>':''))
     + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
@@ -1794,6 +1802,35 @@ fetch('data/situations.json').then(r=>r.ok?r.json():null).then(m=>{
   if(!m) return; SITUATIONS=m; buildSitPicks();
 }).catch(()=>{});
 
+
+/* ---- sensitive topic guard ----
+   Some of these lists are about breakups, grief and mental health. A film can be a comfort,
+   but a film is not care. Where the subject is that close to the bone we show a short, plain
+   note and the national helplines, and we say clearly that this site is not therapy. */
+const SENSITIVE_SITUATIONS = ['Breakup / move on','Healing','Life lessons','Sex education','Mind hit'];
+const SENSITIVE_MOODS = ['Sad','Heartbroken'];
+const HELPLINES = [
+  ['Tele-MANAS (Govt. of India, free, 24x7)','14416'],
+  ['KIRAN mental health helpline (free)','1800-599-0019'],
+];
+function isSensitive(d){
+  if(state.situationKey && SENSITIVE_SITUATIONS.indexOf(state.situationKey)>=0) return true;
+  const m=(d && d.m) || [];
+  return m.some(x=>SENSITIVE_MOODS.indexOf(x)>=0);
+}
+function guardHtml(d){
+  if(!isSensitive(d)) return '';
+  return '<div class="guard">'
+    + '<div class="gt">A gentle note</div>'
+    + '<p>This one sits close to real feelings. Watch it if it helps, skip it if it does not \u2014 '
+    + 'both are fine. If you are going through a hard time, talking to someone helps more than a film can. '
+    + 'This site is not therapy and cannot help in an emergency.</p>'
+    + '<p class="gl">' + HELPLINES.map(function(x){
+        return '<b>'+esc(x[0])+'</b> \u2014 <a href="tel:'+x[1].replace(/[^0-9+]/g,'')+'">'+esc(x[1])+'</a>';
+      }).join('<br>') + '</p>'
+    + '<p class="gl">In an emergency, call <b>112</b>.</p>'
+    + '</div>';
+}
 /* ---- Vakeel mode: argue the pick instead of just showing it ----
    Case (why it fits), Evidence (what backs it up), Objection (who should skip it), Verdict. */
 function vakeel(d){
@@ -2104,6 +2141,7 @@ function render(){
   resTitle.textContent = label;
   const _es=document.getElementById('emptyState'); if(_es) _es.hidden = out.length>0;
   renderActiveChips();
+  (function(){ const g=document.getElementById('sitGuard'); if(g) g.innerHTML = (state.situationKey && SENSITIVE_SITUATIONS.indexOf(state.situationKey)>=0) ? guardHtml(null) : ''; })();
   const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe,[...state.genres].sort(),[...state.olang].sort(),[...state.cert].sort(),state.freeOnly,state.subsOnly,(state.situation||[]).length]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
@@ -2128,12 +2166,14 @@ function render(){
   }
 
   grid.innerHTML = shown.map((d,i)=>{
-    const c=CATS[d.cat];
+    // never assume a row has a known category, an audio list or a mood list — one bad row
+    // used to take the whole grid down
+    const c = CATS[d.cat] || {label:d.cat||'Other', color:'#6b6255'};
     const isUp = d.status==='upcoming';
     const isYT = d.src==='youtube';
     const grad='linear-gradient(150deg,'+c.color+' 0%, color-mix(in srgb,'+c.color+' 45%, #120c07) 100%)';
-    const audio = d.a.map(x=>'<span class="tag audio">'+x+'</span>').join('');
-    const moods = d.m.slice(0,3).map(x=>'<span class="tag mood">'+x+'</span>').join('');
+    const audio = (d.a||[]).map(x=>'<span class="tag audio">'+x+'</span>').join('');
+    const moods = (d.m||[]).slice(0,3).map(x=>'<span class="tag mood">'+x+'</span>').join('');
     return '<article class="card" data-title="'+esc(d.t)+'" style="animation-delay:'+(Math.min(i,12)*35)+'ms">'
       + '<div class="poster" style="background:'+grad+'">'
         + (d.poster ? '<img class="poster-img" src="'+d.poster+'" alt="" loading="lazy" onerror="this.remove()">' : '')
