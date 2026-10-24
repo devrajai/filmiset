@@ -399,12 +399,6 @@
     <div id="sitGuard"></div>
 
     <section class="grid" id="grid"></section>
-    <div class="empty" id="emptyState" hidden>
-      <h4>Kuch nahi mila</h4>
-      <p>Try fewer filters, or let us pick for you.</p>
-      <button class="hbtn" id="emptySurprise">🎲 Surprise me</button>
-      <button class="hbtn" id="emptyClear">Clear all filters</button>
-    </div>
     <section class="about" id="about">
       <h5>What this is</h5>
       <p>FilmiSet is a free way to answer one question: <b>kya dekhein?</b> Pick a mood, a language or a platform and see what is worth your evening — films, web series and Gujarati, Marathi and Bengali natak, all in one list. Nothing is hosted here and nothing is streamed here; every title links out to the service that has it.</p>
@@ -2007,10 +2001,6 @@ function afterChipChange(){
   document.querySelectorAll('#qualRow .pill,#moodRow .pill').forEach(p=>p.classList.remove('on'));
   render();
 }
-(function wireEmpty(){
-  const s=document.getElementById('emptySurprise'); if(s) s.addEventListener('click',()=>{ clearAllFilters(); runMovieRoulette(); });
-  const c=document.getElementById('emptyClear'); if(c) c.addEventListener('click',()=>{ clearAllFilters(); render(); });
-})();
 
 /* ---- render ---- */
 const grid=document.getElementById('grid');
@@ -2139,12 +2129,22 @@ function render(){
   if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
-  const _es=document.getElementById('emptyState'); if(_es) _es.hidden = out.length>0;
   renderActiveChips();
   (function(){ const g=document.getElementById('sitGuard'); if(g) g.innerHTML = (state.situationKey && SENSITIVE_SITUATIONS.indexOf(state.situationKey)>=0) ? guardHtml(null) : ''; })();
   const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe,[...state.genres].sort(),[...state.olang].sort(),[...state.cert].sort(),state.freeOnly,state.subsOnly,(state.situation||[]).length]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
+  /* The default view is "this month". A hand-curated row often has no release date at all, so
+     that window can be empty on a fresh visit — which looked like a broken site. Fall back to
+     the whole catalogue instead, once, and say so. */
+  if(!out.length && state.rel==='month' && !state.q && !activeFilters().length && !state._fellBack){
+    state._fellBack = true;
+    state.rel = 'all';
+    try{ setPillRow('relRow','rel','all'); }catch(e){}
+    render();
+    return;
+  }
+  state._fellBack = false;
   resCount.textContent = (state.topN ? 'Top '+shown.length : (shown.length<out.length ? shown.length+' of '+out.length : out.length))+' title'+(out.length===1?'':'s');
   syncUrl();
   updateSavedBtn();
