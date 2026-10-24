@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="build" content="2026-10-24d">
 <title>FilmiSet — Movies, Web Series &amp; Natak by Mood (Hindi, Gujarati, South)</title>
 <meta name="description" content="Kya dekhein? Pick a mood and see movies, web series and Gujarati natak worth watching — Bollywood, Hollywood, South Indian, Korean and anime in one place. Filter by OTT platform, language, era and rating, and find the trailer or where to watch.">
 <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
@@ -27,6 +28,8 @@
 <meta name="twitter:description" content="Pick a mood, see something worth watching. Bollywood, Hollywood, South Indian, Korean, anime and Gujarati natak in one place.">
 <meta name="twitter:image" content="https://devrajai.github.io/filmiset/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://image.tmdb.org" crossorigin>
+<link rel="dns-prefetch" href="https://image.tmdb.org">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -572,6 +575,34 @@
 
 
 <script>
+/* ---- a small cache so a repeat visit does not re-download the little files ----
+   Only files under ~400 KB are kept: localStorage is about 5 MB in total, and the poster map
+   alone would blow through it. The version comes from the page itself, so a new build always
+   re-fetches. */
+const CACHE_VER = '2026-10-24d';   /* bump this when the data shape changes */
+function cachedJson(url){
+  const small = /mood_tags|situations|reel_favourites|poster_index|watch_order|yt_channels|free_youtube/.test(url);
+  if(!small) return null;
+  try{
+    const raw = localStorage.getItem('fs:'+CACHE_VER+':'+url);
+    if(raw) return JSON.parse(raw);
+  }catch(e){}
+  return null;
+}
+function rememberJson(url, data){
+  const small = /mood_tags|situations|reel_favourites|poster_index|watch_order|yt_channels|free_youtube/.test(url);
+  if(!small) return;
+  try{ localStorage.setItem('fs:'+CACHE_VER+':'+url, JSON.stringify(data)); }catch(e){}
+  try{  // and clear out older versions so the quota does not creep up
+    for(let i=localStorage.length-1;i>=0;i--){
+      const k=localStorage.key(i);
+      if(k && k.indexOf('fs:')===0 && k.indexOf('fs:'+CACHE_VER+':')!==0) localStorage.removeItem(k);
+    }
+  }catch(e){}
+}
+
+
+
 const CATS = {
   'gujarati-movie':  {label:'Gujarati Movies',        color:'#e8a33d'},
   'gujarati-natak':  {label:'Gujarati Natak',          color:'#d97706'},
@@ -1992,7 +2023,8 @@ function buildSitPicks(){
     render(); closeRailIfMobile();
   });
 }
-fetch('data/situations.json').then(r=>r.ok?r.json():null).then(m=>{
+const _sCache=cachedJson('data/situations.json');
+(_sCache?Promise.resolve(_sCache):fetch('data/situations.json').then(r=>r.ok?r.json():null).then(m=>{ if(m) rememberJson('data/situations.json',m); return m; })).then(m=>{
   if(!m) return; SITUATIONS=m; buildSitPicks();
 }).catch(()=>{});
 
@@ -2547,7 +2579,8 @@ function applyMoodTags(){
     extra.forEach(x=>{ if(d.m.indexOf(x)<0) d.m.push(x); });
   });
 }
-fetch('data/mood_tags.json').then(r=>r.ok?r.json():null).then(m=>{
+const _mCache=cachedJson('data/mood_tags.json');
+(_mCache?Promise.resolve(_mCache):fetch('data/mood_tags.json').then(r=>r.ok?r.json():null).then(m=>{ if(m) rememberJson('data/mood_tags.json',m); return m; })).then(m=>{
   if(!m) return;
   const low={}; Object.keys(m).forEach(k=>{ low[String(k).toLowerCase()]=m[k]; });
   MOOD_TAGS=low; applyMoodTags(); render();
@@ -2863,6 +2896,7 @@ function mergeSets(list){
 let SHEET_SHARDS = [], liveResults = [], liveQuery = '', liveTimer = null;
 let IMDB_POSTERS = null;
 /* the poster map is only loaded the first time someone searches, so it costs nothing otherwise */
+function loadPostersSoon(){ afterPaint(loadPosters); }
 function loadPosters(){
   if(IMDB_POSTERS !== null) return;
   IMDB_POSTERS = {};
@@ -2878,7 +2912,7 @@ function loadPosters(){
    (Game of Thrones, Breaking Bad, Squid Game …) are browsable straight away, not only via search */
 function loadPopular(){
   if(!SHEET_SHARDS.length) return;
-  loadPosters();
+  loadPostersSoon();
   Promise.all(SHEET_SHARDS.map(s => gviz(s, 'select A,B,C,E,G,H order by H desc limit 200')))
     .then(lists => {
       const seen = new Set(DATA.map(x => x.t.toLowerCase()));

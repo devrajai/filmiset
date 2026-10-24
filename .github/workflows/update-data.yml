@@ -124,10 +124,21 @@ jobs:
               find posters -type f | tail -n +4001 | xargs -r rm -f
             fi
           fi
+          # a stray IMDb dump landed in the repo root once and got committed — never again
+          rm -f title.crew.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz name.basics.tsv.gz title.principals.tsv.gz title.akas.tsv.gz title.episode.tsv.gz
           git add -A
           if git diff --staged --quiet; then
             echo "no changes today"
           else
             git commit -m "chore: refresh catalog + posters"
-            git push
+            # The push was failing with "fetch first" because a person and this job can commit at
+            # the same moment. Rebase onto whatever landed while we were collecting, then retry.
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase --autostash origin main && git push; then
+                echo "pushed on attempt $attempt"; break
+              fi
+              echo "::warning::push attempt $attempt rejected — rebasing and retrying"
+              git rebase --abort 2>/dev/null || true
+              sleep 12
+            done
           fi
