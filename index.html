@@ -343,8 +343,11 @@
   .pill .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:6px;vertical-align:middle}
 
   /* hero */
-  .hero{padding:6px 0 2px}
-  .hero-center{text-align:center;max-width:660px;margin:22px auto 4px}
+  .hero{padding:18px 0 2px}
+  .hero-center{text-align:center;max-width:660px;margin:26px auto 6px;
+    scroll-margin-top:110px}
+  /* the header is sticky, so anchor the page so content never starts underneath it */
+  html{scroll-padding-top:110px}
   .hero-center h2{margin-left:auto;margin-right:auto}
   .hero-center p{margin-left:auto;margin-right:auto;max-width:560px}
   .eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
@@ -2549,7 +2552,7 @@ function wireFab(){
   const fab=document.getElementById('talkFab'), pop=document.getElementById('talkPop'),
         close=document.getElementById('talkClose');
   if(!fab || !pop) return;
-  const open=()=>{ pop.hidden=false; fab.classList.add('open'); if(typeof pushPanel==='function') pushPanel('talk'); const b=document.getElementById('talkBox'); if(b) b.focus(); };
+  const open=()=>{ pop.hidden=false; fab.classList.add('open'); if(typeof pushPanel==='function') pushPanel('talk'); const b=document.getElementById('talkBox'); if(b){ try{ b.focus({preventScroll:true}); }catch(e){ b.focus(); } } };
   const shut=()=>{ pop.hidden=true; fab.classList.remove('open'); };
   fab.addEventListener('click',()=>pop.hidden?open():shut());
   if(close) close.addEventListener('click',shut);
@@ -2557,9 +2560,10 @@ function wireFab(){
 }
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wireFab);
 else wireFab();
-(function wireTalk(){
+function wireTalk(){
   const b=document.getElementById('talkBox'), go=document.getElementById('talkGo'),
         mic=document.getElementById('talkMic'), eg=document.getElementById('talkEgs');
+  if(!b && !go){ return; }   // panel not in the DOM yet — wireTalk will be called again on ready
   if(go) go.addEventListener('click',()=>runTalk(b?b.value:''));
   if(b) b.addEventListener('keydown',e=>{ if(e.key==='Enter') runTalk(b.value); });
   if(eg){
@@ -2577,7 +2581,10 @@ else wireFab();
       mic.textContent='…'; r.start();
     });
   }
-})();
+}
+/* the panel lives after this script, so wait for the DOM before wiring it */
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wireTalk);
+else wireTalk();
 
 /* ---- sensitive topic guard ----
    Some of these lists are about breakups, grief and mental health. A film can be a comfort,
