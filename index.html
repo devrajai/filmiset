@@ -45,8 +45,8 @@
 <style>
   :root{
     /* rose pink, and the surfaces are translucent so the gradient behind shows through */
-    --bg:#fff2f7; --bg-2:#ffe6f0;
-    --surface:rgba(255,255,255,0.90); --surface-2:rgba(255,255,255,0.72);
+    --bg:#ffeef5; --bg-2:#ffe0ec;
+    --surface:rgba(255,235,244,0.72); --surface-2:rgba(255,222,236,0.60);
     --ink:#3d0f26; --muted:#8b5a72; --faint:#bb8ba2;
     --line:rgba(190,70,120,0.16); --line-2:rgba(190,70,120,0.30);
     --accent:#e0407a; --accent-ink:#ffffff; --accent-dim:rgba(224,64,122,0.14);
@@ -59,15 +59,13 @@
     --font-mono:"JetBrains Mono",ui-monospace,monospace;
   }
   [data-theme="dark"]{
-    :root{
-      --bg:#150a11; --bg-2:#22101c;
-      --surface:rgba(46,18,34,0.94); --surface-2:rgba(62,26,46,0.88);
+      --bg:#2a0c1c; --bg-2:#3a1128;
+      --surface:rgba(92,32,62,0.62); --surface-2:rgba(120,44,80,0.50);
       --ink:#ffeef6; --muted:#d8a8c0; --faint:#ac7e96;
       --line:rgba(255,175,210,0.16); --line-2:rgba(255,175,210,0.30);
       --accent:#ff6f9c; --accent-ink:#2b0716; --accent-dim:rgba(255,111,156,0.18);
       --teal:#ff9ec4;
       --glass:rgba(70,28,50,0.40); --glass-line:rgba(255,190,215,0.16);
-    }
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -264,6 +262,22 @@
   .ap-item:hover{border-color:var(--accent)}
   .ap-y{color:var(--muted);font-size:11.5px;white-space:nowrap}
   .ap-note{font-size:11.5px;color:var(--faint);margin-top:12px}
+  /* ---------------- glass ----------------
+     Blur on the few large surfaces where it shows. Never on the pills and buttons: that was
+     350-odd GPU layers on one screen, which made the site crawl and made Android paint the pills
+     blank. The translucent pink underneath gives the same look everywhere else, for free. */
+  .topbar.scrolled{backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%)}
+  .rail{backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%)}
+  .modal .box{backdrop-filter:blur(22px) saturate(170%);-webkit-backdrop-filter:blur(22px) saturate(170%)}
+  .talkpop,.actpop{backdrop-filter:blur(20px) saturate(165%);-webkit-backdrop-filter:blur(20px) saturate(165%)}
+  .card{border:1px solid var(--glass-line);
+    box-shadow:0 12px 34px -20px rgba(190,60,120,.40), inset 0 1px 0 rgba(255,255,255,.55)}
+  .card:hover{box-shadow:0 20px 44px -22px rgba(190,60,120,.52), inset 0 1px 0 rgba(255,255,255,.65)}
+  .vibe,.about,.vakeel{border:1px solid var(--glass-line);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.45)}
+  @media (prefers-reduced-transparency: reduce){
+    .topbar.scrolled,.rail,.modal .box,.talkpop,.actpop{backdrop-filter:none;-webkit-backdrop-filter:none}
+  }
   /* the talk widget: a floating button, like a chat bubble */
   .fab{position:fixed;right:16px;bottom:18px;z-index:300;width:54px;height:54px;border-radius:50%;
     border:1px solid var(--glass-line);background:var(--accent);color:#fff;font-size:23px;cursor:pointer;
@@ -566,7 +580,7 @@
       <div class="railbtns">
         <button class="hbtn" data-coll="floved" title="Well rated, not widely seen">⭐ Flopped, then loved</button>
         <button class="hbtn" data-plan-open="1" title="Fit picks into your evening">🕑 Plan my evening</button>
-        <button class="hbtn" id="themeBtn" title="Switch between pink and dark">🌙 Theme</button>
+        <button class="hbtn" id="themeBtn" title="Switch between light pink and dark pink">🌙 Theme</button>
       </div>
     </div>
     <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
@@ -1477,10 +1491,13 @@ function closeFilters(){ document.body.classList.remove('filters-open'); }
       if(dark) document.documentElement.setAttribute('data-theme','dark');
       else document.documentElement.removeAttribute('data-theme');
       try{ localStorage.setItem('filmiset_theme', dark ? 'dark' : 'light'); }catch(e){}
-      b.textContent = dark ? '\u2600 Pink' : '\u{1F319} Theme';
+      b.textContent = dark ? '\u2600 Light pink' : '\u{1F319} Dark pink';
     };
     var isDark = function(){ return document.documentElement.getAttribute('data-theme') === 'dark'; };
-    set(isDark());
+    // label it for the theme we are actually in, and watch for outside changes
+    var sync = function(){ b.textContent = isDark() ? '\u2600 Light pink' : '\u{1F319} Dark pink'; };
+    sync();
+    new MutationObserver(sync).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
     b.addEventListener('click', function(){ set(!isDark()); });
   };
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bind);
