@@ -212,6 +212,26 @@
   .talkegs button:hover{border-color:var(--accent);color:var(--ink)}
   .talkread{font-size:12.5px;color:var(--muted);margin-top:10px}
   .talkread b{color:var(--ink)}
+  /* the talk widget: a floating button, like a chat bubble */
+  .fab{position:fixed;right:16px;bottom:18px;z-index:300;width:54px;height:54px;border-radius:50%;
+    border:1px solid var(--glass-line);background:var(--accent);color:#fff;font-size:23px;cursor:pointer;
+    box-shadow:0 14px 34px -12px rgba(160,40,95,.75), inset 0 1px 0 rgba(255,255,255,.45);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .16s}
+  .fab:hover{transform:scale(1.06)}
+  .fab.open{background:var(--surface);color:var(--ink)}
+  .talkpop{position:fixed;right:14px;bottom:82px;z-index:301;width:min(360px,calc(100vw - 28px));
+    border:1px solid var(--glass-line);border-radius:18px;background:var(--surface);
+    backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+    box-shadow:0 30px 70px -22px rgba(90,10,50,.6), inset 0 1px 0 rgba(255,255,255,.5);overflow:hidden}
+  .tphead{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;
+    border-bottom:1px solid var(--line);font-family:var(--font-display);font-size:15px;font-weight:600}
+  .tphead button{background:none;border:0;color:var(--muted);font-size:20px;cursor:pointer;line-height:1}
+  .tpbody{padding:13px 14px 15px}
+  .tphint{font-size:12px;color:var(--muted);margin-bottom:9px}
+  .talkpop .talkrow input{border-radius:10px;padding:10px 12px;font-size:14px}
+  .talkpop .talkegs{margin-top:9px}
+  .talkpop .talkegs button{font-size:11px;padding:5px 9px}
+  .talkpop .talkread{margin-top:10px;font-size:12.5px}
   /* one-tap filter suggestions */
   .quickpicks{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
   .quickpicks::-webkit-scrollbar{display:none}
@@ -415,16 +435,6 @@
     <div class="rail-block"><h6>Trending &amp; reels</h6><div class="quickpicks" id="trendPicks"></div></div>
     <div class="rail-block"><h6>Quick picks</h6><div class="quickpicks" id="quickPicks"></div></div>
     <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
-    <div class="rail-block" id="talkRailBlock">
-      <h6>Talk to the site</h6>
-      <div class="talkrow" style="gap:6px">
-        <input id="talkBoxRail" type="text" autocomplete="off" placeholder="breakup ke baad halka…"
-               style="flex:1;min-width:0;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);
-                      border-radius:10px;padding:9px 11px;font-size:13px;font-family:inherit">
-        <button id="talkGoRail" class="hbtn" style="padding:9px 12px">Go</button>
-      </div>
-      <div class="talkread" id="talkReadRail" style="margin-top:8px;font-size:12px"></div>
-    </div>
     <div class="rail-block"><h6>Life situation</h6><div class="quickpicks" id="sitPicks"></div></div>
     <div class="rail-block"><h6>Genre</h6><div class="chips" id="genreRow"></div></div>
     <div class="rail-block"><h6>Original language</h6><div class="chips" id="olangRow"></div></div>
@@ -456,17 +466,7 @@
       <p>Gujarati movies aur natak se lekar Hindi, South aur Korean titles tak — sab ek jagah. Mood, festival ya weekend — apne mauke ke hisaab se pick karo. Har title par genre, mood, available audio (Hindi dub included) aur legal "where to watch" link.</p>
     </section>
 
-    <div class="talk">
-      <label for="talkBox">Talk to the site — Hindi, Hinglish or English</label>
-      <div class="talkrow">
-        <input id="talkBox" type="text" autocomplete="off"
-               placeholder="breakup ke baad kuch halka dekhna hai…">
-        <button id="talkGo" class="hbtn">Find</button>
-        <button id="talkMic" class="hbtn" title="Speak instead">🎤</button>
-      </div>
-      <div class="talkegs" id="talkEgs"></div>
-    </div>
-    <div id="talkRead" class="talkread"></div>
+    
     <div class="vibe" id="vibe" hidden></div>
 
     <div class="resultbar">
@@ -2041,21 +2041,20 @@ function runTalk(txt){
   if(box) box.innerHTML = said.length ? ('Samajh gaya — '+said.join(' · ')+'.') : 'Samajh nahi aaya. Try: "breakup ke baad kuch halka".';
   render();
 }
-(function wireTalkRail(){
-  const b=document.getElementById('talkBoxRail'), go=document.getElementById('talkGoRail');
-  if(!b || !go) return;
-  const run=()=>{
-    const v=b.value;
-    const main=document.getElementById('talkBox'); if(main) main.value=v;
-    runTalk(v);
-    const out=document.getElementById('talkReadRail');
-    const src=document.getElementById('talkRead');
-    if(out && src) out.innerHTML = src.innerHTML;
-    closeRailIfMobile();
-  };
-  go.addEventListener('click', run);
-  b.addEventListener('keydown', e=>{ if(e.key==='Enter') run(); });
-})();
+/* the button and the panel sit at the end of <body>, after this script has already run, so the
+   wiring has to wait for the DOM instead of looking for them now */
+function wireFab(){
+  const fab=document.getElementById('talkFab'), pop=document.getElementById('talkPop'),
+        close=document.getElementById('talkClose');
+  if(!fab || !pop) return;
+  const open=()=>{ pop.hidden=false; fab.classList.add('open'); const b=document.getElementById('talkBox'); if(b) b.focus(); };
+  const shut=()=>{ pop.hidden=true; fab.classList.remove('open'); };
+  fab.addEventListener('click',()=>pop.hidden?open():shut());
+  if(close) close.addEventListener('click',shut);
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape' && !pop.hidden) shut(); });
+}
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wireFab);
+else wireFab();
 (function wireTalk(){
   const b=document.getElementById('talkBox'), go=document.getElementById('talkGo'),
         mic=document.getElementById('talkMic'), eg=document.getElementById('talkEgs');
@@ -2850,5 +2849,22 @@ Promise.all([
   boot();
 }).catch(boot);
 </script>
+<button id="talkFab" class="fab" aria-label="Talk to the site" title="Talk to the site">✨</button>
+<div id="talkPop" class="talkpop" hidden role="dialog" aria-label="Talk to the site">
+  <div class="tphead">
+    <span>Talk to the site</span>
+    <button id="talkClose" aria-label="Close">×</button>
+  </div>
+  <div class="tpbody">
+    <p class="tphint">Hindi, Hinglish ya English mein likho — jaise asli baat karte ho.</p>
+    <div class="talkrow">
+      <input id="talkBox" type="text" autocomplete="off" placeholder="breakup ke baad kuch halka dekhna hai…">
+      <button id="talkGo" class="hbtn">Find</button>
+      <button id="talkMic" class="hbtn" title="Speak instead">🎤</button>
+    </div>
+    <div class="talkegs" id="talkEgs"></div>
+    <div id="talkRead" class="talkread"></div>
+  </div>
+</div>
 </body>
 </html>
