@@ -2348,7 +2348,8 @@ Promise.all([
   fetch('data/curated_youtube_free.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_youtube_free2.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_indian_starter.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog, sonylivZee5, gujaratiCat, multiOtt, canons, shortfilms, india1, india2, indiaAll, ytFree, ytFree2, indianStarter]) => {
+  fetch('data/curated_situations.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+]).then(([curated, auto, tmdbRows, jikanRows, indianRows, classicsHindi, hollywoodHindi, hindiSeries, hollywoodSeries, animeHindi, netflixHindi, netflixSeries, netflixHollywood, primeCatalog, hotstarCatalog, sonylivZee5, gujaratiCat, multiOtt, canons, shortfilms, india1, india2, indiaAll, ytFree, ytFree2, indianStarter, sitTitles]) => {
   mergeSets(curated);
   mergeSets(auto);
   mergeSets(tmdbRows);
@@ -2377,6 +2378,7 @@ Promise.all([
   mergeSets(ytFree);                 // YouTube Free Master Edition — 64 titles free to watch on YouTube
   mergeSets(ytFree2);                // YouTube Free Master Edition Volume 2 — 74 more
   mergeSets(indianStarter);          // Indian titles starter list — 523 rows that matched IMDb
+  mergeSets(sitTitles);              // the life-situation lists, IMDb-verified
   applyMoodTags();                   // hand-written mood tags, applied once the catalogue exists
   /* these 64 are free to watch on YouTube. Many already exist in the catalogue from another
      source, so instead of adding a duplicate, tag the existing row: it gains the category and

@@ -1,0 +1,843 @@
+[
+ {
+  "t": "Wake Up Sid",
+  "y": 2009,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.6,
+  "ivot": 38060.0,
+  "note": "Situation: Self growth",
+  "lesson": "Growing up is deciding for yourself.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Pursuit of Happyness",
+  "y": 2006,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.0,
+  "ivot": 633922.0,
+  "note": "Situation: Self growth",
+  "lesson": "Protect your hope when everything else is gone.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Soul",
+  "y": 2020,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Animation",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.0,
+  "ivot": 460084.0,
+  "note": "Situation: Self growth",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Break Ke Baad",
+  "y": 2010,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 5.2,
+  "ivot": 4928.0,
+  "note": "Situation: Breakup / move on",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Rockstar",
+  "y": 2011,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Music",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.8,
+  "ivot": 56550.0,
+  "note": "Situation: Breakup / move on",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Eternal Sunshine of the Spotless Mind",
+  "y": 2004,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance",
+   "Sci-Fi"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.3,
+  "ivot": 1200291.0,
+  "note": "Situation: Breakup / move on",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Lunchbox",
+  "y": 2013,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.8,
+  "ivot": 70366.0,
+  "note": "Situation: Healing",
+  "lesson": "Small kindnesses travel further than we think.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Karwaan",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.6,
+  "ivot": 21009.0,
+  "note": "Situation: Healing",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Good Will Hunting",
+  "y": 1997,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.4,
+  "ivot": 1249414.0,
+  "note": "Situation: Life lessons",
+  "lesson": "It is not your fault.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Mission Mangal",
+  "y": 2019,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 6.6,
+  "ivot": 21104.0,
+  "note": "Situation: Sci-fi / Space",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dark",
+  "y": 2017,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.7,
+  "ivot": 565956.0,
+  "note": "Situation: Sci-fi / Space",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Memento",
+  "y": 2000,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.4,
+  "ivot": 1464140.0,
+  "note": "Situation: Mind hit",
+  "lesson": "Memory is the story you tell yourself.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "The Prestige",
+  "y": 2006,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Mystery",
+   "Sci-Fi"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.5,
+  "ivot": 1635660.0,
+  "note": "Situation: Mind hit",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Padman",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.8,
+  "ivot": 33217.0,
+  "note": "Situation: Sex education",
+  "lesson": "One person's stubbornness can change a village.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Doctor G",
+  "y": 2022,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 6.6,
+  "ivot": 19779.0,
+  "note": "Situation: Doctor life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dr. Arora",
+  "y": 2022,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.1,
+  "ivot": 2044.0,
+  "note": "Situation: Doctor life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "House",
+  "y": 2004,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.7,
+  "ivot": 602759.0,
+  "note": "Situation: Doctor life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Silicon Valley",
+  "y": 2014,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.5,
+  "ivot": 184989.0,
+  "note": "Situation: Student life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Kai Po Che!",
+  "y": 2013,
+  "cat": "regional",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.8,
+  "ivot": 40367.0,
+  "note": "Situation: College life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Happy Days",
+  "y": 1974,
+  "cat": "regional",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Family",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.4,
+  "ivot": 23560.0,
+  "note": "Situation: College life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Corporate",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.8,
+  "ivot": 4704.0,
+  "note": "Situation: Job life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Rocket Singh: Salesman of the Year",
+  "y": 2009,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.5,
+  "ivot": 25488.0,
+  "note": "Situation: Job life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jolly LLB",
+  "y": 2013,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.5,
+  "ivot": 25727.0,
+  "note": "Situation: Lawyer life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jolly LLB 2",
+  "y": 2017,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.2,
+  "ivot": 31424.0,
+  "note": "Situation: Lawyer life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Section 375",
+  "y": 2019,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.0,
+  "ivot": 21883.0,
+  "note": "Situation: Lawyer life",
+  "lesson": "Consent is the whole case.",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Better Call Saul",
+  "y": 2015,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 9.0,
+  "ivot": 872543.0,
+  "note": "Situation: Lawyer life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Suits",
+  "y": 2011,
+  "cat": "hollywood",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.4,
+  "ivot": 551915.0,
+  "note": "Situation: Lawyer life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ki & Ka",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 5.7,
+  "ivot": 6789.0,
+  "note": "Situation: Couple life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Marriage Story",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.9,
+  "ivot": 376550.0,
+  "note": "Situation: Couple life",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Jab Tak Hai Jaan",
+  "y": 2012,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 6.7,
+  "ivot": 63307.0,
+  "note": "Situation: Long distance",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Dear John",
+  "y": 2010,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance",
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 6.3,
+  "ivot": 165263.0,
+  "note": "Situation: Long distance",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Ae Dil Hai Mushkil",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 5.9,
+  "ivot": 29578.0,
+  "note": "Situation: Friendship",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Khichdi",
+  "y": 2002,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.6,
+  "ivot": 3559.0,
+  "note": "Situation: Hindi TV classics",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Office Office",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.8,
+  "ivot": 2656.0,
+  "note": "Situation: Hindi TV classics",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Hum Paanch",
+  "y": 1995,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 8.1,
+  "ivot": 1752.0,
+  "note": "Situation: Hindi TV classics",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Zabaan Sambhalke",
+  "y": 1993,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 4.9,
+  "ivot": 4817.0,
+  "note": "Situation: Hindi TV classics",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "Flop Show",
+  "y": 1989,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 9.2,
+  "ivot": 2084.0,
+  "note": "Situation: Hindi TV classics",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ },
+ {
+  "t": "F.I.R.",
+  "y": 2006,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "irt": 7.8,
+  "ivot": 2119.0,
+  "note": "Situation: Hindi TV classics",
+  "lesson": "",
+  "src": "curated",
+  "status": "released"
+ }
+]
