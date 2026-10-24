@@ -24,7 +24,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0335592",
+  "irt": 3.1,
+  "ivot": 121.0
  },
  {
   "t": "Mughal-e-Azam",
@@ -51,7 +54,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0054098",
+  "irt": 8.1,
+  "ivot": 9788.0
  },
  {
   "t": "Sholay",
@@ -78,7 +84,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0073707",
+  "irt": 8.1,
+  "ivot": 64144.0
  },
  {
   "t": "Dangal",
@@ -105,7 +114,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt5074352",
+  "irt": 8.3,
+  "ivot": 249410.0
  },
  {
   "t": "Sacred Games",
@@ -134,7 +146,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt6077448",
+  "irt": 8.5,
+  "ivot": 99274.0
  },
  {
   "t": "The Family Man",
@@ -164,7 +179,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0218967",
+  "irt": 6.9,
+  "ivot": 132248.0
  },
  {
   "t": "Panchayat",
@@ -193,7 +211,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt12004706",
+  "irt": 9.0,
+  "ivot": 120384.0
  },
  {
   "t": "Ahalya",
@@ -219,7 +240,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt4876528",
+  "irt": 7.9,
+  "ivot": 1647.0
  },
  {
   "t": "Andha Yug",
@@ -245,7 +269,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt8772898"
  },
  {
   "t": "An Insignificant Man",
@@ -271,7 +296,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 1 (hindi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt3917908",
+  "irt": 8.5,
+  "ivot": 2354.0
  },
  {
   "t": "Sant Tukaram",
@@ -297,7 +325,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 2 (marathi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0028217",
+  "irt": 6.5,
+  "ivot": 322.0
  },
  {
   "t": "Pinjra",
@@ -323,7 +354,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 2 (marathi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0316406",
+  "irt": 8.7,
+  "ivot": 376.0
  },
  {
   "t": "Sinhasan",
@@ -349,7 +383,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 2 (marathi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0230786"
  },
  {
   "t": "Shwaas",
@@ -375,7 +410,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 2 (marathi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt28290937",
+  "irt": 8.5,
+  "ivot": 8.0
  },
  {
   "t": "Sairat",
@@ -401,7 +439,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 2 (marathi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt5312232",
+  "irt": 8.3,
+  "ivot": 16653.0
  },
  {
   "t": "Samantar",
@@ -427,7 +468,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 2 (marathi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt11977528",
+  "irt": 8.2,
+  "ivot": 6768.0
  },
  {
   "t": "RaanBaazaar",
@@ -453,7 +497,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 2 (marathi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt20252648",
+  "irt": 7.6,
+  "ivot": 601.0
  },
  {
   "t": "Natasamrat",
@@ -529,7 +576,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0048473",
+  "irt": 8.2,
+  "ivot": 42469.0
  },
  {
   "t": "Meghe Dhaka Tara",
@@ -555,7 +605,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt39116985"
  },
  {
   "t": "Charulata",
@@ -581,7 +632,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0057935",
+  "irt": 8.1,
+  "ivot": 8148.0
  },
  {
   "t": "Bhuvan Shome",
@@ -607,7 +661,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0064086",
+  "irt": 7.2,
+  "ivot": 636.0
  },
  {
   "t": "Chotushkone",
@@ -633,7 +690,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt4115752",
+  "irt": 8.2,
+  "ivot": 4473.0
  },
  {
   "t": "Byomkesh",
@@ -659,7 +719,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt7605494",
+  "irt": 8.2,
+  "ivot": 1544.0
  },
  {
   "t": "Taqdeer",
@@ -685,7 +748,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt13582638",
+  "irt": 8.6,
+  "ivot": 8460.0
  },
  {
   "t": "Two",
@@ -709,7 +775,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt12358104",
+  "irt": 4.3,
+  "ivot": 5867.0
  },
  {
   "t": "Nabanna",
@@ -760,7 +829,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 3 (bengali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0055351",
+  "irt": 7.2,
+  "ivot": 465.0
  },
  {
   "t": "Parasakthi",
@@ -786,7 +858,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 4 (tamil)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt35019998",
+  "irt": 6.5,
+  "ivot": 8525.0
  },
  {
   "t": "16 Vayathinile",
@@ -838,7 +913,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 4 (tamil)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0093603",
+  "irt": 8.6,
+  "ivot": 28341.0
  },
  {
   "t": "Thalapathi",
@@ -864,7 +942,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 4 (tamil)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0101649",
+  "irt": 8.5,
+  "ivot": 16308.0
  },
  {
   "t": "Pariyerum Perumal",
@@ -890,7 +971,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 4 (tamil)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt8176054",
+  "irt": 8.6,
+  "ivot": 20834.0
  },
  {
   "t": "Suzhal: The Vortex",
@@ -916,7 +1000,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 4 (tamil)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt20873118",
+  "irt": 8.1,
+  "ivot": 11767.0
  },
  {
   "t": "Maa",
@@ -941,7 +1028,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 4 (tamil)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt30496762",
+  "irt": 4.9,
+  "ivot": 19129.0
  },
  {
   "t": "Thanneer Thanneer",
@@ -967,7 +1057,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 4 (tamil)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt6802008"
  },
  {
   "t": "Mayabazar",
@@ -994,7 +1085,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0249795",
+  "irt": 9.0,
+  "ivot": 7083.0
  },
  {
   "t": "Shankarabharanam",
@@ -1046,7 +1140,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0086231",
+  "irt": 8.7,
+  "ivot": 6632.0
  },
  {
   "t": "Shiva",
@@ -1072,7 +1169,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0248428",
+  "irt": 8.0,
+  "ivot": 4475.0
  },
  {
   "t": "Baahubali: The Beginning",
@@ -1099,7 +1199,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt2631186",
+  "irt": 8.0,
+  "ivot": 157383.0
  },
  {
   "t": "C/o Kancharapalem",
@@ -1125,7 +1228,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt7391996",
+  "irt": 8.8,
+  "ivot": 11189.0
  },
  {
   "t": "Kudi Yedamaithe",
@@ -1151,7 +1257,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt14932842",
+  "irt": 8.1,
+  "ivot": 1452.0
  },
  {
   "t": "Dhootha",
@@ -1177,7 +1286,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt19868374",
+  "irt": 7.7,
+  "ivot": 7114.0
  },
  {
   "t": "Kanyasulkam",
@@ -1202,7 +1314,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0252590",
+  "irt": 8.5,
+  "ivot": 118.0
  },
  {
   "t": "Maa Ooru",
@@ -1226,7 +1341,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 5 (telugu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0261030"
  },
  {
   "t": "Chemmeen",
@@ -1253,7 +1369,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 6 (malayalam)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0059028",
+  "irt": 7.8,
+  "ivot": 588.0
  },
  {
   "t": "Swayamvaram",
@@ -1279,7 +1398,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 6 (malayalam)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt1612059",
+  "irt": 6.9,
+  "ivot": 153.0
  },
  {
   "t": "Elippathayam",
@@ -1332,7 +1454,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 6 (malayalam)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0237376",
+  "irt": 8.9,
+  "ivot": 9997.0
  },
  {
   "t": "Manichitrathazhu",
@@ -1359,7 +1484,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 6 (malayalam)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0214915",
+  "irt": 8.7,
+  "ivot": 14752.0
  },
  {
   "t": "Kumbalangi Nights",
@@ -1386,7 +1514,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 6 (malayalam)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt8413338",
+  "irt": 8.5,
+  "ivot": 22417.0
  },
  {
   "t": "Kerala Crime Files",
@@ -1412,7 +1543,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 6 (malayalam)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt27128638",
+  "irt": 7.3,
+  "ivot": 3132.0
  },
  {
   "t": "Midnight Run",
@@ -1437,7 +1571,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 6 (malayalam)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0095631",
+  "irt": 7.5,
+  "ivot": 105684.0
  },
  {
   "t": "Ningalenne Communistakki",
@@ -1489,7 +1626,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 7 (kannada)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0066324",
+  "irt": 7.3,
+  "ivot": 161.0
  },
  {
   "t": "Bangarada Manushya",
@@ -1516,7 +1656,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 7 (kannada)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0315255",
+  "irt": 8.9,
+  "ivot": 1147.0
  },
  {
   "t": "Chomana Dudi",
@@ -1541,7 +1684,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 7 (kannada)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0072781",
+  "irt": 8.2,
+  "ivot": 105.0
  },
  {
   "t": "Ghatashraddha",
@@ -1593,7 +1739,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 7 (kannada)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt3189256",
+  "irt": 8.9,
+  "ivot": 4796.0
  },
  {
   "t": "Lucia",
@@ -1619,7 +1768,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 7 (kannada)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt2358592",
+  "irt": 8.3,
+  "ivot": 14042.0
  },
  {
   "t": "Thithi",
@@ -1645,7 +1797,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 7 (kannada)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt4881362",
+  "irt": 8.0,
+  "ivot": 2952.0
  },
  {
   "t": "Kantara",
@@ -1671,7 +1826,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 7 (kannada)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt15327088",
+  "irt": 8.1,
+  "ivot": 119016.0
  },
  {
   "t": "Hayavadana",
@@ -1722,7 +1880,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 7 (kannada)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt9866708",
+  "irt": 8.6,
+  "ivot": 767.0
  },
  {
   "t": "Nanak Nam Jahaz Hai",
@@ -1803,7 +1964,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 8 (punjabi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0308158",
+  "irt": 7.9,
+  "ivot": 101.0
  },
  {
   "t": "Waris Shah: Ishq Daa Waaris",
@@ -1829,7 +1993,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 8 (punjabi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0892113",
+  "irt": 7.7,
+  "ivot": 273.0
  },
  {
   "t": "Anhe Ghore Da Daan",
@@ -1907,7 +2074,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 8 (punjabi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt27853283",
+  "irt": 7.5,
+  "ivot": 12674.0
  },
  {
   "t": "Nooran",
@@ -1933,7 +2103,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 8 (punjabi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt4952766"
  },
  {
   "t": "Loha Kutt",
@@ -1984,7 +2155,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 9 (gujarati)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0266681",
+  "irt": 7.5,
+  "ivot": 17.0
  },
  {
   "t": "Jesal Toral",
@@ -2010,7 +2184,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 9 (gujarati)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0213019",
+  "irt": 7.1,
+  "ivot": 39.0
  },
  {
   "t": "Bhavni Bhavai",
@@ -2036,7 +2213,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 9 (gujarati)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0080435",
+  "irt": 7.1,
+  "ivot": 171.0
  },
  {
   "t": "Chhello Divas",
@@ -2088,7 +2268,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 9 (gujarati)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt10469118",
+  "irt": 8.5,
+  "ivot": 1881.0
  },
  {
   "t": "Vash",
@@ -2114,7 +2297,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 9 (gujarati)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt26331750",
+  "irt": 7.8,
+  "ivot": 3036.0
  },
  {
   "t": "Vaat Vaat Ma",
@@ -2139,7 +2325,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 9 (gujarati)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt14593324",
+  "irt": 7.5,
+  "ivot": 245.0
  },
  {
   "t": "Gujjubhai Banya Khalnayak",
@@ -2243,7 +2432,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 10 (odia)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0060679",
+  "irt": 8.4,
+  "ivot": 42.0
  },
  {
   "t": "Maya Miriga",
@@ -2295,7 +2487,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 10 (odia)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0309652",
+  "irt": 8.6,
+  "ivot": 34.0
  },
  {
   "t": "Sala Budha",
@@ -2320,7 +2515,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 10 (odia)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt2831172",
+  "irt": 9.1,
+  "ivot": 93.0
  },
  {
   "t": "Daman",
@@ -2345,7 +2543,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 10 (odia)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt17592606",
+  "irt": 8.5,
+  "ivot": 14335.0
  },
  {
   "t": "Ganga",
@@ -2370,7 +2571,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 10 (odia)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0929754",
+  "irt": 4.8,
+  "ivot": 94.0
  },
  {
   "t": "Joymoti",
@@ -2422,7 +2626,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 11 (assamese)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0093136",
+  "irt": 8.6,
+  "ivot": 120.0
  },
  {
   "t": "Firingoti",
@@ -2447,7 +2654,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 11 (assamese)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0104276",
+  "irt": 8.5,
+  "ivot": 30.0
  },
  {
   "t": "Xagoroloi Bohudoor",
@@ -2499,7 +2709,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 11 (assamese)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt7297966",
+  "irt": 7.2,
+  "ivot": 1147.0
  },
  {
   "t": "Aamis",
@@ -2551,7 +2764,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 11 (assamese)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt14558168",
+  "irt": 8.9,
+  "ivot": 20.0
  },
  {
   "t": "A Path",
@@ -2576,7 +2792,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 11 (assamese)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt4789576",
+  "irt": 7.2,
+  "ivot": 9755.0
  },
  {
   "t": "Ganga Maiyya Tohe Piyari",
@@ -2628,7 +2847,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 12 (bhojpuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0230020",
+  "irt": 4.8,
+  "ivot": 28.0
  },
  {
   "t": "Nadiya Ke Paar",
@@ -2654,7 +2876,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 12 (bhojpuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0256951",
+  "irt": 8.2,
+  "ivot": 1618.0
  },
  {
   "t": "Sasura Bada Paisawala",
@@ -2680,7 +2905,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 12 (bhojpuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt33647762",
+  "irt": 6.0,
+  "ivot": 7.0
  },
  {
   "t": "Purvanchal",
@@ -2705,7 +2933,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 12 (bhojpuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt15576930"
  },
  {
   "t": "Bidesiya",
@@ -2729,7 +2958,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 12 (bhojpuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0290463",
+  "irt": 5.7,
+  "ivot": 36.0
  },
  {
   "t": "Mirza Ghalib",
@@ -2755,7 +2987,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 13 (urdu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0216000",
+  "irt": 9.2,
+  "ivot": 742.0
  },
  {
   "t": "Garm Hava",
@@ -2781,7 +3016,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 13 (urdu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0073034",
+  "irt": 8.0,
+  "ivot": 946.0
  },
  {
   "t": "Umrao Jaan",
@@ -2807,7 +3045,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 13 (urdu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0485522",
+  "irt": 5.4,
+  "ivot": 2188.0
  },
  {
   "t": "Bazaar",
@@ -2834,7 +3075,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 13 (urdu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0246456",
+  "irt": 7.3,
+  "ivot": 683.0
  },
  {
   "t": "Salim Langde Pe Mat Ro",
@@ -2886,7 +3130,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 13 (urdu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt13129104",
+  "irt": 7.2,
+  "ivot": 513.0
  },
  {
   "t": "Agra Bazar",
@@ -2962,7 +3209,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 14 (konkani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt1736628",
+  "irt": 9.2,
+  "ivot": 20.0
  },
  {
   "t": "Paltadacho Munis",
@@ -3014,7 +3264,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 14 (konkani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt12003716"
  },
  {
   "t": "Nachom-ia Kumpasar",
@@ -3040,7 +3291,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 14 (konkani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt4742102",
+  "irt": 8.0,
+  "ivot": 152.0
  },
  {
   "t": "Amori",
@@ -3066,7 +3320,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 14 (konkani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0203296"
  },
  {
   "t": "A Rainy Day",
@@ -3091,7 +3346,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 14 (konkani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt3527068",
+  "irt": 4.9,
+  "ivot": 28.0
  },
  {
   "t": "Paral Ko Aago",
@@ -3117,7 +3375,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 15 (nepali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0888045",
+  "irt": 8.3,
+  "ivot": 35.0
  },
  {
   "t": "Kagbeni",
@@ -3143,7 +3404,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 15 (nepali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt1729652",
+  "irt": 7.4,
+  "ivot": 690.0
  },
  {
   "t": "Bato Muni Ko Phool",
@@ -3170,7 +3434,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 15 (nepali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt6704098",
+  "irt": 7.1,
+  "ivot": 32.0
  },
  {
   "t": "Kalo Pothi",
@@ -3221,7 +3488,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 15 (nepali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt3638644",
+  "irt": 7.2,
+  "ivot": 1525.0
  },
  {
   "t": "The Flute",
@@ -3245,7 +3515,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 15 (nepali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt26224194",
+  "irt": 7.2,
+  "ivot": 55.0
  },
  {
   "t": "Sirumarani",
@@ -3296,7 +3569,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 16 (sindhi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0213391",
+  "irt": 8.2,
+  "ivot": 19.0
  },
  {
   "t": "Jhulelal",
@@ -3346,7 +3622,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 16 (sindhi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0151282"
  },
  {
   "t": "The Lost Roots",
@@ -3370,7 +3647,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 16 (sindhi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt45381674"
  },
  {
   "t": "Kanyadan",
@@ -3396,7 +3674,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 17 (maithili)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt1591003",
+  "irt": 7.0,
+  "ivot": 15.0
  },
  {
   "t": "Mamta Gave Geet",
@@ -3422,7 +3703,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 17 (maithili)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt2628906"
  },
  {
   "t": "Mithila Makhaan",
@@ -3448,7 +3730,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 17 (maithili)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt5344460",
+  "irt": 9.1,
+  "ivot": 414.0
  },
  {
   "t": "Gamak Ghar",
@@ -3474,7 +3759,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 17 (maithili)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt10518934",
+  "irt": 7.7,
+  "ivot": 576.0
  },
  {
   "t": "Dhuin",
@@ -3524,7 +3812,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 17 (maithili)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt31599160",
+  "irt": 5.6,
+  "ivot": 152.0
  },
  {
   "t": "Matamgi Manipur",
@@ -3550,7 +3841,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 18 (manipuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0156774",
+  "irt": 8.6,
+  "ivot": 33.0
  },
  {
   "t": "Imagi Ningthem",
@@ -3576,7 +3870,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 18 (manipuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0285614",
+  "irt": 8.6,
+  "ivot": 38.0
  },
  {
   "t": "Paokhum Ama",
@@ -3601,7 +3898,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 18 (manipuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt1573880",
+  "irt": 5.8,
+  "ivot": 12.0
  },
  {
   "t": "Ishanou",
@@ -3626,7 +3926,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 18 (manipuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0175776",
+  "irt": 7.7,
+  "ivot": 91.0
  },
  {
   "t": "Sanabi",
@@ -3700,7 +4003,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 18 (manipuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt27881398",
+  "irt": 6.6,
+  "ivot": 8.0
  },
  {
   "t": "AFSPA 1958",
@@ -3724,7 +4030,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 18 (manipuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0832848",
+  "irt": 8.6,
+  "ivot": 20.0
  },
  {
   "t": "Chakravyuha",
@@ -3748,7 +4057,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 18 (manipuri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt5349428",
+  "irt": 6.7,
+  "ivot": 1142.0
  },
  {
   "t": "Shayar-e-Kashmir Mahjoor",
@@ -3774,7 +4086,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 19 (kashmiri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0316592"
  },
  {
   "t": "Habba Khatoon",
@@ -3799,7 +4112,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 19 (kashmiri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt14928670"
  },
  {
   "t": "Bub",
@@ -3825,7 +4139,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 19 (kashmiri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0066867",
+  "irt": 6.3,
+  "ivot": 278.0
  },
  {
   "t": "Harud",
@@ -3877,7 +4194,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 19 (kashmiri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt9603216",
+  "irt": 5.5,
+  "ivot": 248.0
  },
  {
   "t": "The Window",
@@ -3901,7 +4221,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 19 (kashmiri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0042046",
+  "irt": 7.4,
+  "ivot": 5533.0
  },
  {
   "t": "Laila Majnu",
@@ -3926,7 +4249,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 19 (kashmiri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt8011276",
+  "irt": 7.6,
+  "ivot": 10513.0
  },
  {
   "t": "Dhola Maru",
@@ -3951,7 +4277,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 20 (rajasthani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0233565",
+  "irt": 6.5,
+  "ivot": 23.0
  },
  {
   "t": "Supattar Binani",
@@ -3976,7 +4305,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 20 (rajasthani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0310185",
+  "irt": 8.3,
+  "ivot": 11.0
  },
  {
   "t": "Bai Chali Sasariye",
@@ -4026,7 +4358,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 20 (rajasthani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt4401880",
+  "irt": 6.1,
+  "ivot": 18.0
  },
  {
   "t": "Chidi Balla",
@@ -4052,7 +4387,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 20 (rajasthani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt10341190",
+  "irt": 7.9,
+  "ivot": 44.0
  },
  {
   "t": "Desert Tears",
@@ -4076,7 +4414,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 20 (rajasthani)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt16533346"
  },
  {
   "t": "Amar Singh Rathore",
@@ -4125,7 +4464,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 21 (haryanvi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt1904875",
+  "irt": 7.3,
+  "ivot": 424.0
  },
  {
   "t": "Chandrawal",
@@ -4151,7 +4493,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 21 (haryanvi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0319165",
+  "irt": 8.9,
+  "ivot": 97.0
  },
  {
   "t": "Laado",
@@ -4177,7 +4522,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 21 (haryanvi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0382792",
+  "irt": 7.9,
+  "ivot": 43.0
  },
  {
   "t": "Pagdi: The Honour",
@@ -4203,7 +4551,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 21 (haryanvi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt3828724",
+  "irt": 6.2,
+  "ivot": 41.0
  },
  {
   "t": "Satrangi",
@@ -4228,7 +4579,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 21 (haryanvi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt1333920",
+  "irt": 7.9,
+  "ivot": 65.0
  },
  {
   "t": "Dada Lakhmi",
@@ -4254,7 +4608,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 21 (haryanvi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt14677728",
+  "irt": 8.4,
+  "ivot": 590.0
  },
  {
   "t": "Mere Yaar Ki Shaadi",
@@ -4279,7 +4636,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 21 (haryanvi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt15122462",
+  "irt": 9.5,
+  "ivot": 25.0
  },
  {
   "t": "Mor Chhainha Bhuinya",
@@ -4305,7 +4665,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 22 (chhattisgarhi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0277162",
+  "irt": 9.2,
+  "ivot": 83.0
  },
  {
   "t": "Maya",
@@ -4330,7 +4693,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 22 (chhattisgarhi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0133295",
+  "irt": 6.7,
+  "ivot": 5097.0
  },
  {
   "t": "Bhulan The Maze",
@@ -4356,7 +4722,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 22 (chhattisgarhi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt7520640",
+  "irt": 8.2,
+  "ivot": 288.0
  },
  {
   "t": "Charandas Chor",
@@ -4383,7 +4752,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 22 (chhattisgarhi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt6685014",
+  "irt": 7.5,
+  "ivot": 109.0
  },
  {
   "t": "Koti Chennaya",
@@ -4434,7 +4806,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 23 (tulu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt43602828"
  },
  {
   "t": "Chaali Polilu",
@@ -4460,7 +4833,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 23 (tulu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt4511480",
+  "irt": 7.1,
+  "ivot": 45.0
  },
  {
   "t": "Madipu",
@@ -4486,7 +4862,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 23 (tulu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt38732461"
  },
  {
   "t": "Paddayi",
@@ -4512,7 +4889,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 23 (tulu)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt7838260",
+  "irt": 7.6,
+  "ivot": 66.0
  },
  {
   "t": "Hagramayao Jinahari",
@@ -4537,7 +4917,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 24 (bodo)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0305623",
+  "irt": 8.0,
+  "ivot": 13.0
  },
  {
   "t": "Gharjawai",
@@ -4563,7 +4946,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 26 (garhwali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0231647"
  },
  {
   "t": "Kauthig",
@@ -4588,7 +4972,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 26 (garhwali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt25178184"
  },
  {
   "t": "Banta",
@@ -4613,7 +4998,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 26 (garhwali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt7031878"
  },
  {
   "t": "Yaad Aali Tehri",
@@ -4638,7 +5024,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 26 (garhwali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt25180030"
  },
  {
   "t": "Kamli",
@@ -4663,7 +5050,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 26 (garhwali)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt19355940",
+  "irt": 7.6,
+  "ivot": 714.0
  },
  {
   "t": "Geetiyan",
@@ -4689,7 +5079,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 27 (dogri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt38834793"
  },
  {
   "t": "Lakeer",
@@ -4714,7 +5105,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 27 (dogri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt26769313"
  },
  {
   "t": "Lok Gatha",
@@ -4739,7 +5131,8 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 27 (dogri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0156219"
  },
  {
   "t": "Tawaif",
@@ -4763,7 +5156,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 27 (dogri)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0090138",
+  "irt": 6.7,
+  "ivot": 144.0
  },
  {
   "t": "Manik Raitong",
@@ -4788,7 +5184,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 28 (khasi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0156768",
+  "irt": 8.3,
+  "ivot": 9.0
  },
  {
   "t": "Ri: Homeland of Uncertainty",
@@ -4813,7 +5212,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 28 (khasi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt3499982",
+  "irt": 8.3,
+  "ivot": 19.0
  },
  {
   "t": "Onaatah: Of the Earth",
@@ -4838,7 +5240,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 28 (khasi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt5751836",
+  "irt": 8.8,
+  "ivot": 46.0
  },
  {
   "t": "Ma.Ama",
@@ -4863,7 +5268,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 28 (khasi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt10433378",
+  "irt": 9.0,
+  "ivot": 29.0
  },
  {
   "t": "Rapture",
@@ -4888,7 +5296,10 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 28 (khasi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt0102757",
+  "irt": 6.3,
+  "ivot": 6502.0
  },
  {
   "t": "Because We Did Not Choose",
@@ -4912,6 +5323,7 @@
   "src": "curated",
   "status": "released",
   "note": "India Complete Catalog · section 28 (khasi)",
-  "verify": "imdb"
+  "verify": "imdb",
+  "id": "tt39308005"
  }
 ]

@@ -18,7 +18,10 @@
   "poster": "",
   "ov": "Robert Downey Jr. introduces Tony Stark; established Marvel's Indian theatrical footprint.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0371746",
+  "irt": 7.9,
+  "ivot": 1255696.0
  },
  {
   "t": "The Incredible Hulk",
@@ -39,7 +42,10 @@
   "poster": "",
   "ov": "Bruce Banner's origin battle through Harlem.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0800080",
+  "irt": 6.6,
+  "ivot": 580527.0
  },
  {
   "t": "Iron Man 2",
@@ -60,7 +66,10 @@
   "poster": "",
   "ov": "Whiplash arrives and Black Widow makes her tactical debut.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1228705",
+  "irt": 6.9,
+  "ivot": 962038.0
  },
  {
   "t": "Thor",
@@ -81,7 +90,10 @@
   "poster": "",
   "ov": "Kenneth Branagh’s mythological Norse fantasy introducing the God of Thunder.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0800369",
+  "irt": 7.0,
+  "ivot": 988178.0
  },
  {
   "t": "Captain America: The First Avenger",
@@ -102,7 +114,10 @@
   "poster": "",
   "ov": "Steve Rogers takes up the vibranium shield in WWII.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0458339",
+  "irt": 6.9,
+  "ivot": 992016.0
  },
  {
   "t": "The Avengers",
@@ -123,7 +138,10 @@
   "poster": "",
   "ov": "Earth’s Mightiest Heroes assemble in New York; shattered Indian box office records.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0848228",
+  "irt": 8.0,
+  "ivot": 1588684.0
  },
  {
   "t": "Iron Man 3",
@@ -144,7 +162,10 @@
   "poster": "",
   "ov": "Tony Stark faces the Mandarin and his personal panic attacks.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1300854",
+  "irt": 7.1,
+  "ivot": 988282.0
  },
  {
   "t": "Thor: The Dark World",
@@ -165,7 +186,10 @@
   "poster": "",
   "ov": "Thor and Loki form an uneasy alliance against Malekith.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1981115",
+  "irt": 6.7,
+  "ivot": 795837.0
  },
  {
   "t": "Captain America: The Winter Soldier",
@@ -189,7 +213,10 @@
   "poster": "",
   "ov": "High-stakes political espionage thriller with Bucky Barnes.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1843866",
+  "irt": 7.7,
+  "ivot": 994120.0
  },
  {
   "t": "Guardians of the Galaxy",
@@ -210,7 +237,10 @@
   "poster": "",
   "ov": "James Gunn's cosmic space-opera filled with retro tunes.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2015381",
+  "irt": 8.0,
+  "ivot": 1389620.0
  },
  {
   "t": "Avengers: Age of Ultron",
@@ -231,7 +261,10 @@
   "poster": "",
   "ov": "Tony Stark’s AI defense program turns rogue.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2395427",
+  "irt": 7.3,
+  "ivot": 1027367.0
  },
  {
   "t": "Ant-Man",
@@ -250,7 +283,10 @@
   "poster": "",
   "ov": "Scott Lang's heist-comedy subatomic adventure.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0478970",
+  "irt": 7.2,
+  "ivot": 798477.0
  },
  {
   "t": "Captain America: Civil War",
@@ -271,7 +307,10 @@
   "poster": "",
   "ov": "The Sokovia Accords fracture the Avengers (Varun Dhawan voiced Cap in Hindi).",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3498820",
+  "irt": 7.8,
+  "ivot": 954287.0
  },
  {
   "t": "Doctor Strange",
@@ -292,7 +331,10 @@
   "poster": "",
   "ov": "Mind-bending mystic dimensions and mirror realities.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1211837",
+  "irt": 7.5,
+  "ivot": 901894.0
  },
  {
   "t": "Guardians of the Galaxy Vol. 2",
@@ -313,7 +355,10 @@
   "poster": "",
   "ov": "Star-Lord discovers the dark truth about his celestial father, Ego.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3896198",
+  "irt": 7.6,
+  "ivot": 850854.0
  },
  {
   "t": "Spider-Man: Homecoming",
@@ -334,7 +379,10 @@
   "poster": "",
   "ov": "Peter Parker balances high school and Vulture (voiced by Tiger Shroff in Hindi).",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2250912",
+  "irt": 7.4,
+  "ivot": 843828.0
  },
  {
   "t": "Thor: Ragnarok",
@@ -356,7 +404,10 @@
   "poster": "",
   "ov": "Taika Waititi’s colorful arena gladiator comedy on Sakaar.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3501632",
+  "irt": 7.9,
+  "ivot": 917760.0
  },
  {
   "t": "Black Panther",
@@ -377,7 +428,10 @@
   "poster": "",
   "ov": "T'Challa defends Wakanda against Erik Killmonger.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1825683",
+  "irt": 7.3,
+  "ivot": 930609.0
  },
  {
   "t": "Avengers: Infinity War",
@@ -398,7 +452,10 @@
   "poster": "",
   "ov": "Thanos wipes out half the universe; historic box-office run across India.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4154756",
+  "irt": 8.4,
+  "ivot": 1419066.0
  },
  {
   "t": "Ant-Man and the Wasp",
@@ -419,7 +476,10 @@
   "poster": "",
   "ov": "Quantum realm rescue mission with Hope van Dyne.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5095030",
+  "irt": 7.0,
+  "ivot": 509684.0
  },
  {
   "t": "Captain Marvel",
@@ -440,7 +500,10 @@
   "poster": "",
   "ov": "Carol Danvers unlocks cosmic binary power amidst the Kree-Skrull war.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4154664",
+  "irt": 6.7,
+  "ivot": 676366.0
  },
  {
   "t": "Avengers: Endgame",
@@ -461,7 +524,10 @@
   "poster": "",
   "ov": "The ultimate conclusion to the Infinity Saga; highest-grossing Hollywood film in India for years.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4154796",
+  "irt": 8.4,
+  "ivot": 1502068.0
  },
  {
   "t": "Spider-Man: Far From Home",
@@ -482,7 +548,10 @@
   "poster": "",
   "ov": "Peter Parker encounters Mysterio and drone warfare across Europe.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6320628",
+  "irt": 7.3,
+  "ivot": 681329.0
  },
  {
   "t": "Black Widow",
@@ -503,7 +572,10 @@
   "poster": "",
   "ov": "Natasha Romanoff confronts the Red Room and Taskmaster.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3480822",
+  "irt": 6.6,
+  "ivot": 492686.0
  },
  {
   "t": "Shang-Chi and the Legend of the Ten Rings",
@@ -524,7 +596,10 @@
   "poster": "",
   "ov": "Martial arts fantasy spectacle rooted in Chinese folklore.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9376612",
+  "irt": 7.3,
+  "ivot": 505839.0
  },
  {
   "t": "Eternals",
@@ -545,7 +620,10 @@
   "poster": "",
   "ov": "Chloé Zhao's multi-millennium celestial mythology.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9032400",
+  "irt": 6.2,
+  "ivot": 439195.0
  },
  {
   "t": "Spider-Man: No Way Home",
@@ -566,7 +644,10 @@
   "poster": "",
   "ov": "Multiversal crossover uniting Tobey Maguire, Andrew Garfield, and Tom Holland.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10872600",
+  "irt": 8.1,
+  "ivot": 1083377.0
  },
  {
   "t": "Doctor Strange in the Multiverse of Madness",
@@ -587,7 +668,10 @@
   "poster": "",
   "ov": "Scarlet Witch's rampage through parallel realities.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9419884",
+  "irt": 6.8,
+  "ivot": 564078.0
  },
  {
   "t": "Thor: Love and Thunder",
@@ -608,7 +692,10 @@
   "poster": "",
   "ov": "Thor battles Gorr the God Butcher alongside Mighty Thor.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10648342",
+  "irt": 6.1,
+  "ivot": 477762.0
  },
  {
   "t": "Black Panther: Wakanda Forever",
@@ -629,7 +716,10 @@
   "poster": "",
   "ov": "Shuri rises against Namor and the underwater kingdom of Talokan.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9114286",
+  "irt": 6.6,
+  "ivot": 404671.0
  },
  {
   "t": "Ant-Man and the Wasp: Quantumania",
@@ -650,7 +740,10 @@
   "poster": "",
   "ov": "Kang the Conqueror's conquest in the Quantum Realm.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10954600",
+  "irt": 6.0,
+  "ivot": 281376.0
  },
  {
   "t": "Guardians of the Galaxy Vol. 3",
@@ -671,7 +764,10 @@
   "poster": "",
   "ov": "Rocket Raccoon's tragic backstory and the High Evolutionary.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6791350",
+  "irt": 7.9,
+  "ivot": 491448.0
  },
  {
   "t": "The Marvels",
@@ -692,7 +788,10 @@
   "poster": "",
   "ov": "Carol Danvers, Monica Rambeau, and Kamala Khan tangle powers.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10676048",
+  "irt": 5.4,
+  "ivot": 172745.0
  },
  {
   "t": "Deadpool & Wolverine",
@@ -713,7 +812,10 @@
   "poster": "",
   "ov": "Ryan Reynolds and Hugh Jackman team up in the MCU multiverse.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6263850",
+  "irt": 7.5,
+  "ivot": 599111.0
  },
  {
   "t": "Spider-Man",
@@ -734,7 +836,10 @@
   "poster": "",
   "ov": "Sam Raimi and Tobey Maguire's foundational superhero classic.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0145487",
+  "irt": 7.5,
+  "ivot": 1001767.0
  },
  {
   "t": "Spider-Man 2",
@@ -755,7 +860,10 @@
   "poster": "",
   "ov": "Peter Parker’s existential burden facing Doctor Octopus.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0316654",
+  "irt": 7.5,
+  "ivot": 812336.0
  },
  {
   "t": "Spider-Man 3",
@@ -776,7 +884,10 @@
   "poster": "",
   "ov": "The black alien symbiote, Sandman, and New Goblin.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0413300",
+  "irt": 6.3,
+  "ivot": 723052.0
  },
  {
   "t": "The Amazing Spider-Man",
@@ -797,7 +908,10 @@
   "poster": "",
   "ov": "Andrew Garfield takes on the Lizard in Marc Webb's reboot.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0948470",
+  "irt": 7.0,
+  "ivot": 791535.0
  },
  {
   "t": "The Amazing Spider-Man 2",
@@ -818,7 +932,10 @@
   "poster": "",
   "ov": "Electro, the Green Goblin, and Gwen Stacy's clock tower tragedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1872181",
+  "irt": 6.6,
+  "ivot": 611654.0
  },
  {
   "t": "Venom",
@@ -839,7 +956,10 @@
   "poster": "",
   "ov": "Tom Hardy and the alien symbiote form a chaotic anti-hero bond.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1270797",
+  "irt": 6.6,
+  "ivot": 619681.0
  },
  {
   "t": "Venom: Let There Be Carnage",
@@ -860,7 +980,10 @@
   "poster": "",
   "ov": "Woody Harrelson unleashes Carnage.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7097896",
+  "irt": 5.9,
+  "ivot": 313208.0
  },
  {
   "t": "Venom: The Last Dance",
@@ -881,7 +1004,10 @@
   "poster": "",
   "ov": "Eddie and Venom's final cross-country road survival run.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt16366836",
+  "irt": 6.0,
+  "ivot": 166631.0
  },
  {
   "t": "Morbius",
@@ -902,7 +1028,10 @@
   "poster": "",
   "ov": "Jared Leto’s living vampire transformation.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5108870",
+  "irt": 5.1,
+  "ivot": 175436.0
  },
  {
   "t": "Madame Web",
@@ -924,7 +1053,10 @@
   "poster": "",
   "ov": "Clairvoyant suspense thriller set in 2003 New York.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11057302",
+  "irt": 4.1,
+  "ivot": 119297.0
  },
  {
   "t": "Deadpool",
@@ -945,7 +1077,10 @@
   "poster": "",
   "ov": "The fourth-wall-breaking, R-rated mercenary origin.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1431045",
+  "irt": 8.0,
+  "ivot": 1276407.0
  },
  {
   "t": "Deadpool 2",
@@ -966,7 +1101,10 @@
   "poster": "",
   "ov": "The Merc with a Mouth forms X-Force (featuring Ranveer Singh's iconic Hindi dub).",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5463162",
+  "irt": 7.6,
+  "ivot": 761275.0
  },
  {
   "t": "X-Men",
@@ -987,7 +1125,10 @@
   "poster": "",
   "ov": "Bryan Singer's grounded mutant civil rights allegory.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0120903",
+  "irt": 7.3,
+  "ivot": 708143.0
  },
  {
   "t": "X2: X-Men United",
@@ -1008,7 +1149,10 @@
   "poster": "",
   "ov": "Mutants and humans unite against Colonel William Stryker.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0290334",
+  "irt": 7.4,
+  "ivot": 622802.0
  },
  {
   "t": "X-Men: The Last Stand",
@@ -1029,7 +1173,10 @@
   "poster": "",
   "ov": "The Dark Phoenix emerges against the mutant cure.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0376994",
+  "irt": 6.6,
+  "ivot": 582445.0
  },
  {
   "t": "X-Men Origins: Wolverine",
@@ -1050,7 +1197,10 @@
   "poster": "",
   "ov": "Logan’s adamantium bonding and feud with Sabretooth.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0458525",
+  "irt": 6.5,
+  "ivot": 577939.0
  },
  {
   "t": "X-Men: First Class",
@@ -1071,7 +1221,10 @@
   "poster": "",
   "ov": "Magneto and Professor X's brotherhood set during the Cuban Missile Crisis.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1270798",
+  "irt": 7.7,
+  "ivot": 776091.0
  },
  {
   "t": "The Wolverine",
@@ -1092,7 +1245,10 @@
   "poster": "",
   "ov": "Logan’s mortal battle against yakuza and Silver Samurai in Japan.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1430132",
+  "irt": 6.7,
+  "ivot": 532388.0
  },
  {
   "t": "X-Men: Days of Future Past",
@@ -1113,7 +1269,10 @@
   "poster": "",
   "ov": "Wolverine travels back in time to alter dystopian Sentinel futures.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1877832",
+  "irt": 7.9,
+  "ivot": 800346.0
  },
  {
   "t": "X-Men: Apocalypse",
@@ -1134,7 +1293,10 @@
   "poster": "",
   "ov": "En Sabah Nur awakens to cleanse humanity.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3385516",
+  "irt": 6.8,
+  "ivot": 501547.0
  },
  {
   "t": "Logan",
@@ -1155,7 +1317,10 @@
   "poster": "",
   "ov": "An aging Wolverine and Charles Xavier protect Laura in a gritty neo-western masterpiece.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3315342",
+  "irt": 8.1,
+  "ivot": 944433.0
  },
  {
   "t": "Dark Phoenix",
@@ -1197,7 +1362,10 @@
   "poster": "",
   "ov": "Christopher Nolan’s grounded reboot of the Caped Crusader.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0372784",
+  "irt": 8.2,
+  "ivot": 1750543.0
  },
  {
   "t": "The Dark Knight",
@@ -1218,7 +1386,10 @@
   "poster": "",
   "ov": "Heath Ledger's Joker tests Gotham's moral compass.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0468569",
+  "irt": 9.1,
+  "ivot": 3242251.0
  },
  {
   "t": "The Dark Knight Rises",
@@ -1239,7 +1410,10 @@
   "poster": "",
   "ov": "Bane breaks Batman and isolates Gotham City.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1345836",
+  "irt": 8.4,
+  "ivot": 2034281.0
  },
  {
   "t": "Man of Steel",
@@ -1260,7 +1434,10 @@
   "poster": "",
   "ov": "Zack Snyder's grand, destructive rebirth of Superman.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0770828",
+  "irt": 7.1,
+  "ivot": 879156.0
  },
  {
   "t": "Batman v Superman: Dawn of Justice",
@@ -1281,7 +1458,10 @@
   "poster": "",
   "ov": "Ideological clash between Gotham’s vigilante and Metropolis’s god.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2975590",
+  "irt": 6.4,
+  "ivot": 801109.0
  },
  {
   "t": "Suicide Squad",
@@ -1302,7 +1482,10 @@
   "poster": "",
   "ov": "Task Force X takes on Enchantress in Midway City.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1386697",
+  "irt": 5.9,
+  "ivot": 768762.0
  },
  {
   "t": "Wonder Woman",
@@ -1323,7 +1506,10 @@
   "poster": "",
   "ov": "Diana Prince enters WWI to battle Ares.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0451279",
+  "irt": 7.3,
+  "ivot": 743478.0
  },
  {
   "t": "Justice League",
@@ -1344,7 +1530,10 @@
   "poster": "",
   "ov": "Joss Whedon's theatrical assembly against Steppenwolf.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0974015",
+  "irt": 6.0,
+  "ivot": 511339.0
  },
  {
   "t": "Zack Snyder's Justice League",
@@ -1365,7 +1554,10 @@
   "poster": "",
   "ov": "Four-hour restored epic restoring Darkseid and Cyborg's arc.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt12361974",
+  "irt": 7.9,
+  "ivot": 481939.0
  },
  {
   "t": "Aquaman",
@@ -1386,7 +1578,10 @@
   "poster": "",
   "ov": "James Wan’s colorful, visual underwater fantasy blockbuster.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1477834",
+  "irt": 6.8,
+  "ivot": 561370.0
  },
  {
   "t": "Shazam!",
@@ -1407,7 +1602,10 @@
   "poster": "",
   "ov": "Billy Batson gains the wisdom, strength, and lightning of ancients.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0448115",
+  "irt": 7.0,
+  "ivot": 419794.0
  },
  {
   "t": "Birds of Prey",
@@ -1428,7 +1626,10 @@
   "poster": "",
   "ov": "Margot Robbie’s Harley Quinn breaks free of the Joker.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0312098",
+  "irt": 6.4,
+  "ivot": 6049.0
  },
  {
   "t": "Wonder Woman 1984",
@@ -1449,7 +1650,10 @@
   "poster": "",
   "ov": "Diana encounters the Dreamstone, Cheetah, and Maxwell Lord.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7126948",
+  "irt": 5.3,
+  "ivot": 316045.0
  },
  {
   "t": "The Suicide Squad",
@@ -1470,7 +1674,10 @@
   "poster": "",
   "ov": "James Gunn’s bloody, comedic Corto Maltese mission.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1386697",
+  "irt": 5.9,
+  "ivot": 768762.0
  },
  {
   "t": "Black Adam",
@@ -1491,7 +1698,10 @@
   "poster": "",
   "ov": "Dwayne Johnson unleashes ancient Kahndaq fury.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6443346",
+  "irt": 6.1,
+  "ivot": 309966.0
  },
  {
   "t": "Shazam! Fury of the Gods",
@@ -1512,7 +1722,10 @@
   "poster": "",
   "ov": "The Shazamily confronts the Daughters of Atlas.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10151854",
+  "irt": 5.9,
+  "ivot": 149072.0
  },
  {
   "t": "The Flash",
@@ -1533,7 +1746,10 @@
   "poster": "",
   "ov": "Barry Allen resets timelines, bringing back Michael Keaton's Batman.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3107288",
+  "irt": 7.4,
+  "ivot": 389569.0
  },
  {
   "t": "Blue Beetle",
@@ -1554,7 +1770,10 @@
   "poster": "",
   "ov": "Jaime Reyes bonds with an alien bio-technological scarab.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9362930",
+  "irt": 5.9,
+  "ivot": 120687.0
  },
  {
   "t": "Aquaman and the Lost Kingdom",
@@ -1575,7 +1794,10 @@
   "poster": "",
   "ov": "Arthur Curry and Orm team up against Black Manta's Black Trident.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9663764",
+  "irt": 5.6,
+  "ivot": 122669.0
  },
  {
   "t": "The Batman",
@@ -1596,7 +1818,10 @@
   "poster": "",
   "ov": "Matt Reeves and Robert Pattinson deliver a gritty detective neo-noir.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1877830",
+  "irt": 7.8,
+  "ivot": 954262.0
  },
  {
   "t": "Joker",
@@ -1617,7 +1842,10 @@
   "poster": "",
   "ov": "Joaquin Phoenix’s Oscar-winning descent into madness and societal decay.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7286456",
+  "irt": 8.3,
+  "ivot": 1732413.0
  },
  {
   "t": "Joker: Folie à Deux",
@@ -1640,7 +1868,10 @@
   "poster": "",
   "ov": "Musical psychological courtroom drama inside Arkham.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11315808",
+  "irt": 5.2,
+  "ivot": 189728.0
  },
  {
   "t": "Constantine",
@@ -1661,7 +1892,10 @@
   "poster": "",
   "ov": "Keanu Reeves hunts demons and negotiates with Lucifer.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0360486",
+  "irt": 7.0,
+  "ivot": 414932.0
  },
  {
   "t": "Hellboy",
@@ -1683,7 +1917,10 @@
   "poster": "",
   "ov": "Guillermo del Toro's dark occult superhero fantasy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0167190",
+  "irt": 6.9,
+  "ivot": 374021.0
  },
  {
   "t": "Hellboy II: The Golden Army",
@@ -1704,7 +1941,10 @@
   "poster": "",
   "ov": "Del Toro’s mythical fairy-realm spectacle.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0411477",
+  "irt": 7.0,
+  "ivot": 300979.0
  },
  {
   "t": "Blade",
@@ -1727,7 +1967,10 @@
   "poster": "",
   "ov": "Wesley Snipes’ daywalking vampire hunter action thriller.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0120611",
+  "irt": 7.1,
+  "ivot": 337594.0
  },
  {
   "t": "Blade II",
@@ -1748,7 +1991,10 @@
   "poster": "",
   "ov": "Guillermo del Toro pits Blade against the mutated Reapers.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0187738",
+  "irt": 6.7,
+  "ivot": 256447.0
  },
  {
   "t": "Ghost Rider",
@@ -1769,7 +2015,10 @@
   "poster": "",
   "ov": "Nicolas Cage's flaming-skull motorcycle stuntman anti-hero.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0259324",
+  "irt": 5.3,
+  "ivot": 275142.0
  },
  {
   "t": "Hancock",
@@ -1790,7 +2039,10 @@
   "poster": "",
   "ov": "Will Smith's reckless, immortal superhero seeking public redemption.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0448157",
+  "irt": 6.4,
+  "ivot": 545159.0
  },
  {
   "t": "Avatar",
@@ -1809,7 +2061,10 @@
   "poster": "",
   "ov": "James Cameron's groundbreaking visual journey to Pandora.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0499549",
+  "irt": 7.9,
+  "ivot": 1519350.0
  },
  {
   "t": "Avatar: The Way of Water",
@@ -1830,7 +2085,10 @@
   "poster": "",
   "ov": "The Sully family explores the oceanic Metkayina reefs.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1630029",
+  "irt": 7.5,
+  "ivot": 650439.0
  },
  {
   "t": "The Matrix",
@@ -1851,7 +2109,10 @@
   "poster": "",
   "ov": "The Wachowskis redefine action cinema and cyber-philosophical reality.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0133093",
+  "irt": 8.7,
+  "ivot": 2288326.0
  },
  {
   "t": "The Matrix Reloaded",
@@ -1872,7 +2133,10 @@
   "poster": "",
   "ov": "The highway chase and the revelation of the Architect.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0234215",
+  "irt": 7.2,
+  "ivot": 678504.0
  },
  {
   "t": "The Matrix Revolutions",
@@ -1893,7 +2157,10 @@
   "poster": "",
   "ov": "Zion’s defense against the machine swarms and the final Smith clash.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0242653",
+  "irt": 6.8,
+  "ivot": 581669.0
  },
  {
   "t": "The Matrix Resurrections",
@@ -1914,7 +2181,10 @@
   "poster": "",
   "ov": "Lana Wachowski’s meta-commentary on legacy and free will.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10838180",
+  "irt": 5.6,
+  "ivot": 307867.0
  },
  {
   "t": "Inception",
@@ -1935,7 +2205,10 @@
   "poster": "",
   "ov": "Christopher Nolan’s multi-layered subconscious dream heist.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1375666",
+  "irt": 8.8,
+  "ivot": 2881959.0
  },
  {
   "t": "Interstellar",
@@ -1954,7 +2227,10 @@
   "poster": "",
   "ov": "Cooper’s journey through a wormhole to save human civilization.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0816692",
+  "irt": 8.7,
+  "ivot": 2623872.0
  },
  {
   "t": "Tenet",
@@ -1976,7 +2252,10 @@
   "poster": "",
   "ov": "Nolan’s time-inverting espionage thriller across global operations.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6723592",
+  "irt": 7.3,
+  "ivot": 714309.0
  },
  {
   "t": "The Terminator",
@@ -1997,7 +2276,10 @@
   "poster": "",
   "ov": "Arnold Schwarzenegger’s relentless cybernetic assassin.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0088247",
+  "irt": 8.1,
+  "ivot": 1022213.0
  },
  {
   "t": "Terminator 2: Judgment Day",
@@ -2018,7 +2300,10 @@
   "poster": "",
   "ov": "T-800 protects John Connor from the liquid-metal T-1000.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0103064",
+  "irt": 8.6,
+  "ivot": 1307424.0
  },
  {
   "t": "Terminator 3: Rise of the Machines",
@@ -2039,7 +2324,10 @@
   "poster": "",
   "ov": "The T-X arrives as Judgment Day proves inevitable.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0181852",
+  "irt": 6.3,
+  "ivot": 441757.0
  },
  {
   "t": "Terminator Salvation",
@@ -2060,7 +2348,10 @@
   "poster": "",
   "ov": "Christian Bale fights the post-apocalyptic machine war.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0438488",
+  "irt": 6.5,
+  "ivot": 396191.0
  },
  {
   "t": "Terminator Genisys",
@@ -2081,7 +2372,10 @@
   "poster": "",
   "ov": "Altered timelines and a nanotech-infected John Connor.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1340138",
+  "irt": 6.3,
+  "ivot": 310807.0
  },
  {
   "t": "Terminator: Dark Fate",
@@ -2102,7 +2396,10 @@
   "poster": "",
   "ov": "Linda Hamilton and Arnold reunite to protect Dani Ramos.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6450804",
+  "irt": 6.2,
+  "ivot": 215866.0
  },
  {
   "t": "Transformers",
@@ -2123,7 +2420,10 @@
   "poster": "",
   "ov": "Michael Bay brings Optimus Prime and Megatron to Earth.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0418279",
+  "irt": 7.1,
+  "ivot": 728954.0
  },
  {
   "t": "Transformers: Revenge of the Fallen",
@@ -2144,7 +2444,10 @@
   "poster": "",
   "ov": "The ancient Decepticon Fallen threatens the Sun.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1055369",
+  "irt": 6.0,
+  "ivot": 459921.0
  },
  {
   "t": "Transformers: Dark of the Moon",
@@ -2167,7 +2470,10 @@
   "poster": "",
   "ov": "Secret lunar Apollo history and the battle for Chicago.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1399103",
+  "irt": 6.2,
+  "ivot": 461638.0
  },
  {
   "t": "Transformers: Age of Extinction",
@@ -2188,7 +2494,10 @@
   "poster": "",
   "ov": "Dinobots charge into Hong Kong alongside Mark Wahlberg.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2109248",
+  "irt": 5.6,
+  "ivot": 354578.0
  },
  {
   "t": "Transformers: The Last Knight",
@@ -2209,7 +2518,10 @@
   "poster": "",
   "ov": "Arthurian legend meets cybertronian planetary collision.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3371366",
+  "irt": 5.2,
+  "ivot": 190235.0
  },
  {
   "t": "Bumblebee",
@@ -2228,7 +2540,10 @@
   "poster": "",
   "ov": "Travis Knight’s tender, character-focused 1980s origin adventure.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4701182",
+  "irt": 6.7,
+  "ivot": 212962.0
  },
  {
   "t": "Transformers: Rise of the Beasts",
@@ -2249,7 +2564,10 @@
   "poster": "",
   "ov": "The Maximals and Terrorcons battle in 1990s Peru.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5090568",
+  "irt": 6.0,
+  "ivot": 134763.0
  },
  {
   "t": "Rise of the Planet of the Apes",
@@ -2270,7 +2588,10 @@
   "poster": "",
   "ov": "Andy Serkis’s Caesar develops human intelligence via ALZ-112.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1318514",
+  "irt": 7.6,
+  "ivot": 611358.0
  },
  {
   "t": "Dawn of the Planet of the Apes",
@@ -2291,7 +2612,10 @@
   "poster": "",
   "ov": "Frail peace shatters between apes and human survivors.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2103281",
+  "irt": 7.6,
+  "ivot": 516334.0
  },
  {
   "t": "War for the Planet of the Apes",
@@ -2312,7 +2636,10 @@
   "poster": "",
   "ov": "Caesar leads his species to freedom against the Colonel.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3450958",
+  "irt": 7.4,
+  "ivot": 331185.0
  },
  {
   "t": "Kingdom of the Planet of the Apes",
@@ -2333,7 +2660,10 @@
   "poster": "",
   "ov": "Generations later, Noa defies the tyrant Proximus Caesar.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11389872",
+  "irt": 6.8,
+  "ivot": 173305.0
  },
  {
   "t": "Edge of Tomorrow",
@@ -2354,7 +2684,10 @@
   "poster": "",
   "ov": "Tom Cruise and Emily Blunt live, die, and repeat against Mimics.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1631867",
+  "irt": 7.9,
+  "ivot": 819192.0
  },
  {
   "t": "I, Robot",
@@ -2375,7 +2708,10 @@
   "poster": "",
   "ov": "Will Smith investigates robot ethics and VIKI's synthetic uprising.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0343818",
+  "irt": 7.1,
+  "ivot": 623907.0
  },
  {
   "t": "I Am Legend",
@@ -2396,7 +2732,10 @@
   "poster": "",
   "ov": "The last man standing in a deserted, vampire-plagued Manhattan.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0480249",
+  "irt": 7.2,
+  "ivot": 891214.0
  },
  {
   "t": "Minority Report",
@@ -2418,7 +2757,10 @@
   "poster": "",
   "ov": "Steven Spielberg’s pre-crime psychic murder prevention thriller.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0181689",
+  "irt": 7.6,
+  "ivot": 629008.0
  },
  {
   "t": "War of the Worlds",
@@ -2439,7 +2781,10 @@
   "poster": "",
   "ov": "Alien tripod death rays decimate Earth's cities.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0407304",
+  "irt": 6.6,
+  "ivot": 516001.0
  },
  {
   "t": "Total Recall",
@@ -2460,7 +2805,10 @@
   "poster": "",
   "ov": "Arnold Schwarzenegger’s Martian memory implant conspiracy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0100802",
+  "irt": 7.5,
+  "ivot": 385949.0
  },
  {
   "t": "Total Recall",
@@ -2481,7 +2829,10 @@
   "poster": "",
   "ov": "Colin Farrell navigates The Fall and futuristic chemical colony warfare.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0100802",
+  "irt": 7.5,
+  "ivot": 385949.0
  },
  {
   "t": "District 9",
@@ -2502,7 +2853,10 @@
   "poster": "",
   "ov": "Neill Blomkamp’s apartheid allegory featuring extraterrestrial Prawns.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1136608",
+  "irt": 7.9,
+  "ivot": 759217.0
  },
  {
   "t": "Elysium",
@@ -2523,7 +2877,10 @@
   "poster": "",
   "ov": "Matt Damon equips an exoskeleton to breach an elitist space habitat.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1535108",
+  "irt": 6.6,
+  "ivot": 496269.0
  },
  {
   "t": "Chappie",
@@ -2546,7 +2903,10 @@
   "poster": "",
   "ov": "A sentient police robot learns about consciousness and family.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1823672",
+  "irt": 6.8,
+  "ivot": 286581.0
  },
  {
   "t": "Lucy",
@@ -2567,7 +2927,10 @@
   "poster": "",
   "ov": "Scarlett Johansson unlocks 100% of her human brain capacity.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2872732",
+  "irt": 6.4,
+  "ivot": 587394.0
  },
  {
   "t": "Ready Player One",
@@ -2586,7 +2949,10 @@
   "poster": "",
   "ov": "Spielberg’s pop-culture virtual-reality OASIS treasure hunt.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1677720",
+  "irt": 7.4,
+  "ivot": 553691.0
  },
  {
   "t": "Alita: Battle Angel",
@@ -2607,7 +2973,10 @@
   "poster": "",
   "ov": "Robert Rodriguez’s cyborg martial-arts bounty hunter epic.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0437086",
+  "irt": 7.3,
+  "ivot": 328325.0
  },
  {
   "t": "Dune",
@@ -2630,7 +2999,10 @@
   "poster": "",
   "ov": "Denis Villeneuve’s majestic space political saga on Arrakis.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1160419",
+  "irt": 8.0,
+  "ivot": 1096968.0
  },
  {
   "t": "Dune: Part Two",
@@ -2651,7 +3023,10 @@
   "poster": "",
   "ov": "Paul Atreides embraces the Fremen prophecy against the Harkonnens.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt15239678",
+  "irt": 8.4,
+  "ivot": 800732.0
  },
  {
   "t": "The Fifth Element",
@@ -2673,7 +3048,10 @@
   "poster": "",
   "ov": "Luc Besson’s colorful 23rd-century flying-cab space adventure.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0119116",
+  "irt": 7.6,
+  "ivot": 553533.0
  },
  {
   "t": "Oblivion",
@@ -2694,7 +3072,10 @@
   "poster": "",
   "ov": "Drone repairman Jack Harper discovers clones and the Tet deception.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1483013",
+  "irt": 7.0,
+  "ivot": 592456.0
  },
  {
   "t": "Real Steel",
@@ -2715,7 +3096,10 @@
   "poster": "",
   "ov": "Hugh Jackman coaches an underdog sparring robot in the ring.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0433035",
+  "irt": 7.1,
+  "ivot": 385858.0
  },
  {
   "t": "Gravity",
@@ -2736,7 +3120,10 @@
   "poster": "",
   "ov": "Sandra Bullock’s breathtaking, terrifying orbital debris survival tale.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1454468",
+  "irt": 7.7,
+  "ivot": 908350.0
  },
  {
   "t": "The Martian",
@@ -2757,7 +3144,10 @@
   "poster": "",
   "ov": "Matt Damon sciences his way into surviving alone on the Red Planet.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3659388",
+  "irt": 8.0,
+  "ivot": 1034266.0
  },
  {
   "t": "Arrival",
@@ -2778,7 +3168,10 @@
   "poster": "",
   "ov": "Amy Adams deciphers non-linear alien linguistics to alter time perception.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2543164",
+  "irt": 7.9,
+  "ivot": 883932.0
  },
  {
   "t": "Prometheus",
@@ -2797,7 +3190,10 @@
   "poster": "",
   "ov": "Ridley Scott’s atmospheric quest to find human creators, the Engineers.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1446714",
+  "irt": 7.0,
+  "ivot": 709009.0
  },
  {
   "t": "Alien: Covenant",
@@ -2818,7 +3214,10 @@
   "poster": "",
   "ov": "Synthetic David conducts xenomorph breeding experiments.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2316204",
+  "irt": 6.4,
+  "ivot": 350316.0
  },
  {
   "t": "Alien: Romulus",
@@ -2839,7 +3238,10 @@
   "poster": "",
   "ov": "Scavengers board an abandoned space station housing facehuggers.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt18412256",
+  "irt": 7.1,
+  "ivot": 296947.0
  },
  {
   "t": "Predator",
@@ -2861,7 +3263,10 @@
   "poster": "",
   "ov": "Arnold Schwarzenegger’s jungle commando unit hunted by an alien hunter.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0093773",
+  "irt": 7.8,
+  "ivot": 508148.0
  },
  {
   "t": "Predator 2",
@@ -2882,7 +3287,10 @@
   "poster": "",
   "ov": "Danny Glover fights an urban Predator in heatwave Los Angeles.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0100403",
+  "irt": 6.3,
+  "ivot": 204963.0
  },
  {
   "t": "Predators",
@@ -2903,7 +3311,10 @@
   "poster": "",
   "ov": "Elite mercenaries dropped onto an extraterrestrial game preserve planet.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1424381",
+  "irt": 6.4,
+  "ivot": 265354.0
  },
  {
   "t": "The Predator",
@@ -2924,7 +3335,10 @@
   "poster": "",
   "ov": "Genetically upgraded super-predators invade suburban America.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0093773",
+  "irt": 7.8,
+  "ivot": 508148.0
  },
  {
   "t": "Prey",
@@ -2945,7 +3359,10 @@
   "poster": "",
   "ov": "A Comanche warrior takes on a feral Predator in 1719 North America.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11866324",
+  "irt": 7.1,
+  "ivot": 278869.0
  },
  {
   "t": "AVP: Alien vs. Predator",
@@ -2987,7 +3404,10 @@
   "poster": "",
   "ov": "The Predalien causes mayhem in a small Colorado town.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0758730",
+  "irt": 4.6,
+  "ivot": 148694.0
  },
  {
   "t": "Source Code",
@@ -3008,7 +3428,10 @@
   "poster": "",
   "ov": "Jake Gyllenhaal relives an eight-minute commuter train bombing.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0945513",
+  "irt": 7.5,
+  "ivot": 589847.0
  },
  {
   "t": "Looper",
@@ -3029,7 +3452,10 @@
   "poster": "",
   "ov": "Joseph Gordon-Levitt must execute his future self, Bruce Willis.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1276104",
+  "irt": 7.4,
+  "ivot": 634149.0
  },
  {
   "t": "RoboCop",
@@ -3050,7 +3476,10 @@
   "poster": "",
   "ov": "Modernized reboot of Alex Murphy's corporate cyborg lawman.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0093870",
+  "irt": 7.6,
+  "ivot": 313690.0
  },
  {
   "t": "The Island",
@@ -3071,7 +3500,10 @@
   "poster": "",
   "ov": "Clones discover they are organ-harvesting spare parts for the wealthy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0399201",
+  "irt": 6.8,
+  "ivot": 345970.0
  },
  {
   "t": "The Maze Runner",
@@ -3092,7 +3524,10 @@
   "poster": "",
   "ov": "Gladers solve an enormous shifting mechanical maze.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1790864",
+  "irt": 6.8,
+  "ivot": 574629.0
  },
  {
   "t": "Maze Runner: The Scorch Trials",
@@ -3113,7 +3548,10 @@
   "poster": "",
   "ov": "Escapees traverse desolate wastelands infected by the Flare.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4046784",
+  "irt": 6.3,
+  "ivot": 314265.0
  },
  {
   "t": "Maze Runner: The Death Cure",
@@ -3134,7 +3572,10 @@
   "poster": "",
   "ov": "Final raid into WICKED's Last City.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4500922",
+  "irt": 6.3,
+  "ivot": 197665.0
  },
  {
   "t": "Divergent",
@@ -3155,7 +3596,10 @@
   "poster": "",
   "ov": "Tris Prior challenges faction-based dystopian societal conformity.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1840309",
+  "irt": 6.6,
+  "ivot": 524393.0
  },
  {
   "t": "Harry Potter and the Sorcerer's Stone",
@@ -3176,7 +3620,10 @@
   "poster": "",
   "ov": "The Boy Who Lived enters Hogwarts.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0241527",
+  "irt": 7.7,
+  "ivot": 971297.0
  },
  {
   "t": "Harry Potter and the Chamber of Secrets",
@@ -3197,7 +3644,10 @@
   "poster": "",
   "ov": "The Basilisk petrifies students beneath the castle.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0295297",
+  "irt": 7.5,
+  "ivot": 781049.0
  },
  {
   "t": "Harry Potter and the Prisoner of Azkaban",
@@ -3218,7 +3668,10 @@
   "poster": "",
   "ov": "Alfonso Cuarón introduces Dementors and Sirius Black.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0304141",
+  "irt": 8.0,
+  "ivot": 782219.0
  },
  {
   "t": "Harry Potter and the Goblet of Fire",
@@ -3239,7 +3692,10 @@
   "poster": "",
   "ov": "The Triwizard Tournament and Lord Voldemort's rebirth.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0330373",
+  "irt": 7.7,
+  "ivot": 767980.0
  },
  {
   "t": "Harry Potter and the Order of the Phoenix",
@@ -3260,7 +3716,10 @@
   "poster": "",
   "ov": "Dumbledore's Army resists Umbridge and the Ministry.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0373889",
+  "irt": 7.5,
+  "ivot": 714364.0
  },
  {
   "t": "Harry Potter and the Half-Blood Prince",
@@ -3281,7 +3740,10 @@
   "poster": "",
   "ov": "Voldemort's Horcruxes and Snape's shocking betrayal.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0417741",
+  "irt": 7.6,
+  "ivot": 673528.0
  },
  {
   "t": "Harry Potter and the Deathly Hallows – Part 1",
@@ -3302,7 +3764,10 @@
   "poster": "",
   "ov": "The trio searches across Britain on the run.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0926084",
+  "irt": 7.7,
+  "ivot": 677768.0
  },
  {
   "t": "Harry Potter and the Deathly Hallows – Part 2",
@@ -3323,7 +3788,10 @@
   "poster": "",
   "ov": "The epic final Battle of Hogwarts.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1201607",
+  "irt": 8.1,
+  "ivot": 1066906.0
  },
  {
   "t": "Fantastic Beasts and Where to Find Them",
@@ -3344,7 +3812,10 @@
   "poster": "",
   "ov": "Newt Scamander's magical briefcase opens in New York.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3183660",
+  "irt": 7.2,
+  "ivot": 547061.0
  },
  {
   "t": "Fantastic Beasts: The Crimes of Grindelwald",
@@ -3365,7 +3836,10 @@
   "poster": "",
   "ov": "Grindelwald gathers followers in 1920s Paris.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4123430",
+  "irt": 6.5,
+  "ivot": 336226.0
  },
  {
   "t": "Fantastic Beasts: The Secrets of Dumbledore",
@@ -3386,7 +3860,10 @@
   "poster": "",
   "ov": "Qilin selection and the fight against Grindelwald.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4123432",
+  "irt": 6.2,
+  "ivot": 196331.0
  },
  {
   "t": "The Lord of the Rings: The Fellowship of the Ring",
@@ -3405,7 +3882,10 @@
   "poster": "",
   "ov": "Peter Jackson launches Frodo’s quest to Mordor.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0120737",
+  "irt": 8.9,
+  "ivot": 2246810.0
  },
  {
   "t": "The Lord of the Rings: The Two Towers",
@@ -3426,7 +3906,10 @@
   "poster": "",
   "ov": "The defense of Helm's Deep and Gollum's double-nature.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0167261",
+  "irt": 8.8,
+  "ivot": 1992378.0
  },
  {
   "t": "The Lord of the Rings: The Return of the King",
@@ -3447,7 +3930,10 @@
   "poster": "",
   "ov": "The siege of Minas Tirith; won 11 Oscars.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0167260",
+  "irt": 9.0,
+  "ivot": 2202648.0
  },
  {
   "t": "The Hobbit: An Unexpected Journey",
@@ -3468,7 +3954,10 @@
   "poster": "",
   "ov": "Bilbo Baggins joins Thorin’s dwarf company.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0903624",
+  "irt": 7.8,
+  "ivot": 939666.0
  },
  {
   "t": "The Hobbit: The Desolation of Smaug",
@@ -3489,7 +3978,10 @@
   "poster": "",
   "ov": "Bilbo confronts the golden dragon inside Erebor.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1170358",
+  "irt": 7.8,
+  "ivot": 763598.0
  },
  {
   "t": "The Hobbit: The Battle of the Five Armies",
@@ -3510,7 +4002,10 @@
   "poster": "",
   "ov": "Grand clash of armies beneath the Lonely Mountain.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2310332",
+  "irt": 7.4,
+  "ivot": 627477.0
  },
  {
   "t": "Pirates of the Caribbean: The Curse of the Black Pearl",
@@ -3531,7 +4026,10 @@
   "poster": "",
   "ov": "Johnny Depp's iconic Captain Jack Sparrow.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0325980",
+  "irt": 8.1,
+  "ivot": 1350323.0
  },
  {
   "t": "Pirates of the Caribbean: Dead Man's Chest",
@@ -3552,7 +4050,10 @@
   "poster": "",
   "ov": "Davy Jones, the Flying Dutchman, and the Kraken.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0383574",
+  "irt": 7.4,
+  "ivot": 839391.0
  },
  {
   "t": "Pirates of the Caribbean: At World's End",
@@ -3573,7 +4074,10 @@
   "poster": "",
   "ov": "Maelstrom whirlpool battle of the Pirate Lords.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0449088",
+  "irt": 7.2,
+  "ivot": 755152.0
  },
  {
   "t": "Pirates of the Caribbean: On Stranger Tides",
@@ -3594,7 +4098,10 @@
   "poster": "",
   "ov": "Search for the Fountain of Youth with Blackbeard.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1298650",
+  "irt": 6.6,
+  "ivot": 616387.0
  },
  {
   "t": "Pirates of the Caribbean: Dead Men Tell No Tales",
@@ -3615,7 +4122,10 @@
   "poster": "",
   "ov": "Ghostly Captain Salazar seeks pirate vengeance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1790809",
+  "irt": 6.5,
+  "ivot": 393395.0
  },
  {
   "t": "Raiders of the Lost Ark",
@@ -3636,7 +4146,10 @@
   "poster": "",
   "ov": "Harrison Ford races Nazis to recover the Ark of the Covenant.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0082971",
+  "irt": 8.4,
+  "ivot": 1123973.0
  },
  {
   "t": "Indiana Jones and the Temple of Doom",
@@ -3655,7 +4168,10 @@
   "poster": "",
   "ov": "Indy's India adventure featuring Amrish Puri as Mola Ram.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0087469",
+  "irt": 7.5,
+  "ivot": 575385.0
  },
  {
   "t": "Indiana Jones and the Last Crusade",
@@ -3676,7 +4192,10 @@
   "poster": "",
   "ov": "Sean Connery and Harrison Ford seek the Holy Grail.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0097576",
+  "irt": 8.2,
+  "ivot": 873927.0
  },
  {
   "t": "Indiana Jones and the Kingdom of the Crystal Skull",
@@ -3698,7 +4217,10 @@
   "poster": "",
   "ov": "Soviet agents, jungle chases, and alien relics.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0367882",
+  "irt": 6.2,
+  "ivot": 519041.0
  },
  {
   "t": "Indiana Jones and the Dial of Destiny",
@@ -3719,7 +4241,10 @@
   "poster": "",
   "ov": "Archimedes' time-shifting Antikythera mechanism.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1462764",
+  "irt": 6.5,
+  "ivot": 237938.0
  },
  {
   "t": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
@@ -3742,7 +4267,10 @@
   "poster": "",
   "ov": "Children enter Narnia to battle the White Witch.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0363771",
+  "irt": 6.9,
+  "ivot": 463897.0
  },
  {
   "t": "The Chronicles of Narnia: Prince Caspian",
@@ -3763,7 +4291,10 @@
   "poster": "",
   "ov": "The Pevensies help Caspian reclaim his throne.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0499448",
+  "irt": 6.5,
+  "ivot": 242450.0
  },
  {
   "t": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
@@ -3784,7 +4315,10 @@
   "poster": "",
   "ov": "High-seas voyage to Aslan's country.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0980970",
+  "irt": 6.3,
+  "ivot": 180064.0
  },
  {
   "t": "Jumanji",
@@ -3805,7 +4339,10 @@
   "poster": "",
   "ov": "Robin Williams emerges from the enchanted board game with stampeding beasts.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0113497",
+  "irt": 7.1,
+  "ivot": 421084.0
  },
  {
   "t": "Jumanji: Welcome to the Jungle",
@@ -3826,7 +4363,10 @@
   "poster": "",
   "ov": "Four teens trapped in video game avatars (The Rock, Kevin Hart).",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2283362",
+  "irt": 6.9,
+  "ivot": 514258.0
  },
  {
   "t": "Jumanji: The Next Level",
@@ -3847,7 +4387,10 @@
   "poster": "",
   "ov": "Swapped avatars, desert ostriches, and freezing mountain fortresses.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7975244",
+  "irt": 6.6,
+  "ivot": 326711.0
  },
  {
   "t": "Zathura: A Space Adventure",
@@ -3868,7 +4411,10 @@
   "poster": "",
   "ov": "Board game catapults a suburban house into meteor showers and Zorgons.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0406375",
+  "irt": 6.3,
+  "ivot": 128668.0
  },
  {
   "t": "The Mummy",
@@ -3889,7 +4435,10 @@
   "poster": "",
   "ov": "Brendan Fraser awakens the cursed high priest Imhotep in Hamunaptra.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0120616",
+  "irt": 7.1,
+  "ivot": 511035.0
  },
  {
   "t": "The Mummy Returns",
@@ -3910,7 +4459,10 @@
   "poster": "",
   "ov": "The Scorpion King's army and the bracelet of Anubis.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0209163",
+  "irt": 6.4,
+  "ivot": 372424.0
  },
  {
   "t": "The Mummy: Tomb of the Dragon Emperor",
@@ -3931,7 +4483,10 @@
   "poster": "",
   "ov": "Jet Li's terracotta army rises in ancient China.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0859163",
+  "irt": 5.3,
+  "ivot": 182860.0
  },
  {
   "t": "The Scorpion King",
@@ -3952,7 +4507,10 @@
   "poster": "",
   "ov": "Dwayne Johnson’s sword-and-sorcery desert warrior origin.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0277296",
+  "irt": 5.5,
+  "ivot": 153186.0
  },
  {
   "t": "The Mummy",
@@ -3973,7 +4531,10 @@
   "poster": "",
   "ov": "Tom Cruise unearths the dark tomb of Princess Ahmanet.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0120616",
+  "irt": 7.1,
+  "ivot": 511035.0
  },
  {
   "t": "Clash of the Titans",
@@ -3994,7 +4555,10 @@
   "poster": "",
   "ov": "Perseus takes on Medusa and the Kraken.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0800320",
+  "irt": 5.8,
+  "ivot": 308428.0
  },
  {
   "t": "Wrath of the Titans",
@@ -4015,7 +4579,10 @@
   "poster": "",
   "ov": "Perseus journeys to the Underworld to stop Kronos.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1646987",
+  "irt": 5.7,
+  "ivot": 205448.0
  },
  {
   "t": "Prince of Persia: The Sands of Time",
@@ -4036,7 +4603,10 @@
   "poster": "",
   "ov": "Dastan wields the dagger that rewinds time.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0473075",
+  "irt": 6.5,
+  "ivot": 320468.0
  },
  {
   "t": "Percy Jackson & the Olympians: The Lightning Thief",
@@ -4057,7 +4627,10 @@
   "poster": "",
   "ov": "Poseidon's son discovers Mount Olympus.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0814255",
+  "irt": 5.9,
+  "ivot": 218743.0
  },
  {
   "t": "Percy Jackson: Sea of Monsters",
@@ -4076,7 +4649,10 @@
   "poster": "",
   "ov": "Quest to retrieve the magical Golden Fleece.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1854564",
+  "irt": 5.7,
+  "ivot": 136268.0
  },
  {
   "t": "Night at the Museum",
@@ -4097,7 +4673,10 @@
   "poster": "",
   "ov": "Exhibits come alive via an Egyptian tablet at sundown.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0477347",
+  "irt": 6.5,
+  "ivot": 418053.0
  },
  {
   "t": "Night at the Museum: Battle of the Smithsonian",
@@ -4120,7 +4699,10 @@
   "poster": "",
   "ov": "Historical icons battle inside Smithsonian archives.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1078912",
+  "irt": 6.0,
+  "ivot": 233209.0
  },
  {
   "t": "Night at the Museum: Secret of the Tomb",
@@ -4139,7 +4721,10 @@
   "poster": "",
   "ov": "Journey to London’s British Museum to restore the tablet.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2692250",
+  "irt": 6.2,
+  "ivot": 152892.0
  },
  {
   "t": "Journey to the Center of the Earth",
@@ -4160,7 +4745,10 @@
   "poster": "",
   "ov": "Brendan Fraser enters subterranean prehistoric caverns.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0373051",
+  "irt": 5.8,
+  "ivot": 143587.0
  },
  {
   "t": "Journey 2: The Mysterious Island",
@@ -4181,7 +4769,10 @@
   "poster": "",
   "ov": "Dwayne Johnson discovers miniature elephants and giant bees.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1397514",
+  "irt": 5.7,
+  "ivot": 123005.0
  },
  {
   "t": "Eragon",
@@ -4202,7 +4793,10 @@
   "poster": "",
   "ov": "A farm boy bonds with the blue dragon Saphira against King Galbatorix.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0449010",
+  "irt": 5.1,
+  "ivot": 135567.0
  },
  {
   "t": "The Golden Compass",
@@ -4223,7 +4817,10 @@
   "poster": "",
   "ov": "Armored polar bears and spirit daemons in an alternate universe.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0385752",
+  "irt": 6.1,
+  "ivot": 205144.0
  },
  {
   "t": "Warcraft",
@@ -4244,7 +4841,10 @@
   "poster": "",
   "ov": "Duncan Jones pits orc clans against human kingdoms of Azeroth.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0803096",
+  "irt": 6.7,
+  "ivot": 298930.0
  },
  {
   "t": "Dungeons & Dragons: Honor Among Thieves",
@@ -4265,7 +4865,10 @@
   "poster": "",
   "ov": "Chris Pine leads a ragtag party heist.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2906216",
+  "irt": 7.2,
+  "ivot": 279571.0
  },
  {
   "t": "Jungle Cruise",
@@ -4286,7 +4889,10 @@
   "poster": "",
   "ov": "Dwayne Johnson and Emily Blunt navigate Amazonian supernatural waters.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0870154",
+  "irt": 6.5,
+  "ivot": 230470.0
  },
  {
   "t": "Maleficent",
@@ -4307,7 +4913,10 @@
   "poster": "",
   "ov": "Angelina Jolie reframes the fairy godmother and Sleeping Beauty curse.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1587310",
+  "irt": 6.9,
+  "ivot": 429026.0
  },
  {
   "t": "Maleficent: Mistress of Evil",
@@ -4328,7 +4937,10 @@
   "poster": "",
   "ov": "War erupts between the dark fey and Queen Ingrith.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4777008",
+  "irt": 6.6,
+  "ivot": 134774.0
  },
  {
   "t": "Snow White and the Huntsman",
@@ -4349,6 +4961,9 @@
   "poster": "",
   "ov": "Kristen Stewart and Chris Hemsworth chal",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1735898",
+  "irt": 6.1,
+  "ivot": 317511.0
  }
 ]

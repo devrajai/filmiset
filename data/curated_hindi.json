@@ -17,7 +17,10 @@
   "poster": "",
   "ov": "India’s first sound film.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3087842",
+  "irt": 5.6,
+  "ivot": 17.0
  },
  {
   "t": "Devdas",
@@ -37,7 +40,10 @@
   "poster": "",
   "ov": "P.C. Barua’s pioneering adaptation starring K.L. Saigal.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0238936",
+  "irt": 7.6,
+  "ivot": 53061.0
  },
  {
   "t": "Achhut Kannya",
@@ -77,7 +83,10 @@
   "poster": "",
   "ov": "India's first blockbuster featuring a charismatic anti-hero.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0048260",
+  "irt": 6.3,
+  "ivot": 1862.0
  },
  {
   "t": "Neecha Nagar",
@@ -97,7 +106,10 @@
   "poster": "",
   "ov": "Social realist drama; won the Grand Prix at Cannes.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0154942",
+  "irt": 6.5,
+  "ivot": 324.0
  },
  {
   "t": "Kalpana",
@@ -117,7 +129,10 @@
   "poster": "",
   "ov": "Uday Shankar’s experimental dance-drama masterpiece.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0311384",
+  "irt": 6.4,
+  "ivot": 200.0
  },
  {
   "t": "Chandralekha",
@@ -137,7 +152,10 @@
   "poster": "",
   "ov": "Spectacular drum dance and visual grandeur.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0289893",
+  "irt": 7.6,
+  "ivot": 1570.0
  },
  {
   "t": "Andaz",
@@ -157,7 +175,10 @@
   "poster": "",
   "ov": "Mehboob Khan's romantic triangle starring Dilip Kumar, Nargis, and Raj Kapoor.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0041123",
+  "irt": 6.7,
+  "ivot": 654.0
  },
  {
   "t": "Mahal",
@@ -180,7 +201,10 @@
   "poster": "",
   "ov": "Kamal Amrohi's atmospheric, reincarnation gothic romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0041619",
+  "irt": 6.8,
+  "ivot": 574.0
  },
  {
   "t": "Barsaat",
@@ -202,7 +226,10 @@
   "poster": "",
   "ov": "The template for classic RK Films romantic drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0112459",
+  "irt": 5.6,
+  "ivot": 1606.0
  },
  {
   "t": "Babul",
@@ -222,7 +249,10 @@
   "poster": "",
   "ov": "Dilip Kumar and Nargis in a poignant melodrama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0962716",
+  "irt": 6.6,
+  "ivot": 21.0
  },
  {
   "t": "Jogan",
@@ -242,7 +272,10 @@
   "poster": "",
   "ov": "Kidar Sharma’s philosophical romantic tragedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0141441",
+  "irt": 6.7,
+  "ivot": 131.0
  },
  {
   "t": "Awaara",
@@ -262,7 +295,10 @@
   "poster": "",
   "ov": "Raj Kapoor's socialist tramp archetype.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0043306",
+  "irt": 7.8,
+  "ivot": 5025.0
  },
  {
   "t": "Baazi",
@@ -284,7 +320,10 @@
   "poster": "",
   "ov": "Guru Dutt’s stylish noir crime drama starring Dev Anand.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0121989",
+  "irt": 6.3,
+  "ivot": 2824.0
  },
  {
   "t": "Aan",
@@ -304,7 +343,8 @@
   "poster": "",
   "ov": "India’s first technicolor film release.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt21945174"
  },
  {
   "t": "Baiju Bawra",
@@ -324,7 +364,10 @@
   "poster": "",
   "ov": "Classical musical conflict starring Meena Kumari and Bharat Bhushan.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0044392",
+  "irt": 7.4,
+  "ivot": 473.0
  },
  {
   "t": "Jaal",
@@ -346,7 +389,10 @@
   "poster": "",
   "ov": "Coastal noir romance directed by Guru Dutt.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0239495",
+  "irt": 5.2,
+  "ivot": 198.0
  },
  {
   "t": "Do Bigha Zamin",
@@ -366,7 +412,10 @@
   "poster": "",
   "ov": "Bimal Roy’s neorealist agrarian tragedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0045693",
+  "irt": 8.3,
+  "ivot": 2568.0
  },
  {
   "t": "Parineeta",
@@ -386,7 +435,10 @@
   "poster": "",
   "ov": "Ashok Kumar and Meena Kumari in Sarat Chandra's adaptation.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0437407",
+  "irt": 7.2,
+  "ivot": 10166.0
  },
  {
   "t": "Boot Polish",
@@ -406,7 +458,10 @@
   "poster": "",
   "ov": "Uplifting neorealist story of orphan siblings.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0046799",
+  "irt": 7.9,
+  "ivot": 942.0
  },
  {
   "t": "Mirza Ghalib",
@@ -426,7 +481,10 @@
   "poster": "",
   "ov": "Sohrab Modi’s biopic of the legendary Urdu poet.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0216000",
+  "irt": 9.2,
+  "ivot": 742.0
  },
  {
   "t": "Jagte Raho",
@@ -465,7 +523,10 @@
   "poster": "",
   "ov": "Raj Khosla's crisp urban detective thriller.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0401916",
+  "irt": 7.1,
+  "ivot": 5910.0
  },
  {
   "t": "Chori Chori",
@@ -488,7 +549,10 @@
   "poster": "",
   "ov": "Classic romantic comedy adapted from It Happened One Night.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0326805",
+  "irt": 4.8,
+  "ivot": 1034.0
  },
  {
   "t": "Shree 420",
@@ -508,7 +572,10 @@
   "poster": "",
   "ov": "Rural innocence corrupted by urban greed.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0048613",
+  "irt": 7.9,
+  "ivot": 3358.0
  },
  {
   "t": "Devdas",
@@ -528,7 +595,10 @@
   "poster": "",
   "ov": "Bimal Roy’s definitive adaptation with Dilip Kumar.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0238936",
+  "irt": 7.6,
+  "ivot": 53061.0
  },
  {
   "t": "Munimji",
@@ -548,7 +618,10 @@
   "poster": "",
   "ov": "Dev Anand and Nalini Jaywant romantic entertainer.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0048395",
+  "irt": 6.7,
+  "ivot": 139.0
  },
  {
   "t": "Pyaasa",
@@ -568,7 +641,10 @@
   "poster": "",
   "ov": "Guru Dutt's critique of materialistic society and forgotten poets.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0335592",
+  "irt": 3.1,
+  "ivot": 121.0
  },
  {
   "t": "Mother India",
@@ -588,7 +664,10 @@
   "poster": "",
   "ov": "India's Oscar-nominated national epic of resilience.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0050188",
+  "irt": 7.8,
+  "ivot": 10526.0
  },
  {
   "t": "Naya Daur",
@@ -608,7 +687,10 @@
   "poster": "",
   "ov": "Man versus machine rural drama starring Dilip Kumar.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0050758",
+  "irt": 7.9,
+  "ivot": 1420.0
  },
  {
   "t": "Do Aankhen Barah Haath",
@@ -651,7 +733,10 @@
   "poster": "",
   "ov": "Ritwik Ghatak and Bimal Roy’s ghost/reincarnation romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0050665",
+  "irt": 7.7,
+  "ivot": 1767.0
  },
  {
   "t": "Chalti Ka Naam Gaadi",
@@ -672,7 +757,10 @@
   "poster": "",
   "ov": "The Ganguly brothers' comedy masterpiece.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0128985",
+  "irt": 8.0,
+  "ivot": 2099.0
  },
  {
   "t": "Kala Pani",
@@ -690,7 +778,10 @@
   "poster": "",
   "ov": "Dev Anand’s quest to exonerate his wrongfully imprisoned father.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0051806",
+  "irt": 7.1,
+  "ivot": 426.0
  },
  {
   "t": "Sadhna",
@@ -710,7 +801,10 @@
   "poster": "",
   "ov": "B.R. Chopra's progressive rehabilitation drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0052154",
+  "irt": 7.5,
+  "ivot": 111.0
  },
  {
   "t": "Kaagaz Ke Phool",
@@ -750,7 +844,10 @@
   "poster": "",
   "ov": "Bimal Roy's exploration of caste discrimination.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0053319",
+  "irt": 7.5,
+  "ivot": 453.0
  },
  {
   "t": "Anari",
@@ -770,7 +867,10 @@
   "poster": "",
   "ov": "Hrishikesh Mukherjee’s simple man facing city deception.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0052560",
+  "irt": 7.6,
+  "ivot": 1030.0
  },
  {
   "t": "Navrang",
@@ -790,7 +890,10 @@
   "poster": "",
   "ov": "V. Shantaram’s tribute to poetry, dance, and music.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0298078",
+  "irt": 6.9,
+  "ivot": 186.0
  },
  {
   "t": "Mughal-e-Azam",
@@ -812,7 +915,10 @@
   "poster": "",
   "ov": "K. Asif’s monumental historical romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0054098",
+  "irt": 8.1,
+  "ivot": 9788.0
  },
  {
   "t": "Kanoon",
@@ -835,7 +941,10 @@
   "poster": "",
   "ov": "B.R. Chopra’s taut, songless courtroom murder mystery.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0053985",
+  "irt": 7.9,
+  "ivot": 594.0
  },
  {
   "t": "Chaudhvin Ka Chand",
@@ -855,7 +964,10 @@
   "poster": "",
   "ov": "Poetic exploration of friendship and courtly Lucknow love.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0053706",
+  "irt": 6.9,
+  "ivot": 652.0
  },
  {
   "t": "Jis Desh Mein Ganga Behti Hai",
@@ -897,7 +1009,10 @@
   "poster": "",
   "ov": "Archetypal rural brothers on opposite sides of the law.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0054910",
+  "irt": 7.4,
+  "ivot": 761.0
  },
  {
   "t": "Hum Dono",
@@ -917,7 +1032,10 @@
   "poster": "",
   "ov": "Dev Anand in an introspective wartime double-role drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0225961",
+  "irt": 7.5,
+  "ivot": 559.0
  },
  {
   "t": "Kabuliwala",
@@ -937,7 +1055,10 @@
   "poster": "",
   "ov": "Heartwarming adaptation of Tagore’s story of paternal affection.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt28541110",
+  "irt": 7.7,
+  "ivot": 529.0
  },
  {
   "t": "Sahib Bibi Aur Ghulam",
@@ -957,7 +1078,10 @@
   "poster": "",
   "ov": "Decline of Bengali feudal aristocracy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0056436",
+  "irt": 8.1,
+  "ivot": 2043.0
  },
  {
   "t": "Bees Saal Baad",
@@ -978,7 +1102,10 @@
   "poster": "",
   "ov": "Spooky thriller loosely inspired by The Hound of the Baskervilles.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0055783",
+  "irt": 7.0,
+  "ivot": 474.0
  },
  {
   "t": "Bandini",
@@ -998,7 +1125,10 @@
   "poster": "",
   "ov": "Bimal Roy and Nutan’s female-led prison drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0056850",
+  "irt": 7.6,
+  "ivot": 959.0
  },
  {
   "t": "Gumrah",
@@ -1018,7 +1148,10 @@
   "poster": "",
   "ov": "B.R. Chopra’s adult drama tackling marital infidelity.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0107060",
+  "irt": 6.1,
+  "ivot": 1167.0
  },
  {
   "t": "Mere Mehboob",
@@ -1040,7 +1173,10 @@
   "poster": "",
   "ov": "Grand Muslim social romance set in Aligarh.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0266765",
+  "irt": 7.0,
+  "ivot": 255.0
  },
  {
   "t": "Woh Kaun Thi?",
@@ -1061,7 +1197,10 @@
   "poster": "",
   "ov": "Raj Khosla’s iconic psychological mystery.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0232960",
+  "irt": 7.5,
+  "ivot": 1483.0
  },
  {
   "t": "Sangam",
@@ -1081,7 +1220,10 @@
   "poster": "",
   "ov": "Raj Kapoor’s technicolor melodrama of triangular friendship.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0058547",
+  "irt": 7.3,
+  "ivot": 2157.0
  },
  {
   "t": "Dosti",
@@ -1101,7 +1243,10 @@
   "poster": "",
   "ov": "Heartfelt chronicle of friendship between two disabled youth.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0146645",
+  "irt": 8.5,
+  "ivot": 2056.0
  },
  {
   "t": "Haqeeqat",
@@ -1123,7 +1268,10 @@
   "poster": "",
   "ov": "Chetan Anand’s stark, realistic 1962 war drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0154565",
+  "irt": 7.8,
+  "ivot": 629.0
  },
  {
   "t": "Guide",
@@ -1143,7 +1291,10 @@
   "poster": "",
   "ov": "Vijay Anand’s philosophical, spiritual exploration of liberation.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0059246",
+  "irt": 8.4,
+  "ivot": 13174.0
  },
  {
   "t": "Waqt",
@@ -1163,7 +1314,10 @@
   "poster": "",
   "ov": "Yash Chopra's foundational lost-and-found multi-starrer.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0059893",
+  "irt": 7.6,
+  "ivot": 1722.0
  },
  {
   "t": "Teesri Manzil",
@@ -1186,7 +1340,10 @@
   "poster": "",
   "ov": "Stylish musical whodunit directed by Vijay Anand.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0061073",
+  "irt": 7.5,
+  "ivot": 1417.0
  },
  {
   "t": "Phool Aur Patthar",
@@ -1206,7 +1363,10 @@
   "poster": "",
   "ov": "Dharmendra’s breakthrough action-melodrama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0139525",
+  "irt": 6.7,
+  "ivot": 338.0
  },
  {
   "t": "Mamta",
@@ -1226,7 +1386,10 @@
   "poster": "",
   "ov": "Suchitra Sen’s powerhouse courtroom-melodrama dual role.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0060659",
+  "irt": 7.1,
+  "ivot": 159.0
  },
  {
   "t": "Teesri Kasam",
@@ -1244,7 +1407,10 @@
   "poster": "",
   "ov": "Basu Bhattacharya’s rustic, bittersweet bullock-cart journey.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0061072",
+  "irt": 7.8,
+  "ivot": 917.0
  },
  {
   "t": "Jewel Thief",
@@ -1265,7 +1431,10 @@
   "poster": "",
   "ov": "Dev Anand’s slick caper and doppelgänger mystery.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0061842",
+  "irt": 7.9,
+  "ivot": 2293.0
  },
  {
   "t": "Upkar",
@@ -1285,7 +1454,10 @@
   "poster": "",
   "ov": "Manoj Kumar's patriotic salute to farmers and soldiers.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0146335",
+  "irt": 7.6,
+  "ivot": 684.0
  },
  {
   "t": "Milan",
@@ -1308,7 +1480,10 @@
   "poster": "",
   "ov": "Sunil Dutt and Nutan in a classical reincarnation drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0398198",
+  "irt": 7.2,
+  "ivot": 230.0
  },
  {
   "t": "Ram Aur Shyam",
@@ -1328,7 +1503,10 @@
   "poster": "",
   "ov": "Dilip Kumar’s defining identical-twin comedy-drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0062177",
+  "irt": 7.2,
+  "ivot": 1137.0
  },
  {
   "t": "Padosan",
@@ -1350,7 +1528,10 @@
   "poster": "",
   "ov": "Evergreen musical comedy with Kishore Kumar and Mehmood.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0063404",
+  "irt": 8.1,
+  "ivot": 10445.0
  },
  {
   "t": "Aankhen",
@@ -1372,7 +1553,10 @@
   "poster": "",
   "ov": "Ramanand Sagar’s exotic, globe-trotting spy thriller.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0306434",
+  "irt": 7.4,
+  "ivot": 15010.0
  },
  {
   "t": "Saraswatichandra",
@@ -1392,7 +1576,10 @@
   "poster": "",
   "ov": "Govind Saraiya’s lyrical, black-and-white Gujarati adaptation.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2764752",
+  "irt": 6.4,
+  "ivot": 1039.0
  },
  {
   "t": "Aradhana",
@@ -1412,7 +1599,10 @@
   "poster": "",
   "ov": "The start of Rajesh Khanna hysteria.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0065416",
+  "irt": 7.6,
+  "ivot": 2275.0
  },
  {
   "t": "Ittefaq",
@@ -1433,7 +1623,10 @@
   "poster": "",
   "ov": "Yash Chopra’s edge-of-the-seat, songless single-night thriller.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6692354",
+  "irt": 7.2,
+  "ivot": 17472.0
  },
  {
   "t": "Bhuvan Shome",
@@ -1453,7 +1646,10 @@
   "poster": "",
   "ov": "Mrinal Sen’s minimalist catalyst for the Indian New Wave.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0064086",
+  "irt": 7.2,
+  "ivot": 636.0
  },
  {
   "t": "Anand",
@@ -1473,7 +1669,10 @@
   "poster": "",
   "ov": "Hrishikesh Mukherjee’s celebration of life facing mortality.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0066763",
+  "irt": 8.1,
+  "ivot": 38058.0
  },
  {
   "t": "Mera Naam Joker",
@@ -1493,7 +1692,10 @@
   "poster": "",
   "ov": "Raj Kapoor’s ambitious, melancholic circus opus.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0282736",
+  "irt": 5.6,
+  "ivot": 24.0
  },
  {
   "t": "Kati Patang",
@@ -1513,7 +1715,10 @@
   "poster": "",
   "ov": "Shakti Samanta’s Rajesh Khanna-Asha Parekh hit drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0065936",
+  "irt": 7.2,
+  "ivot": 1327.0
  },
  {
   "t": "Johny Mera Naam",
@@ -1533,7 +1738,10 @@
   "poster": "",
   "ov": "Vijay Anand’s sleek quintessential masala entertainer.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0154685",
+  "irt": 7.4,
+  "ivot": 1083.0
  },
  {
   "t": "Khilona",
@@ -1553,7 +1761,10 @@
   "poster": "",
   "ov": "Sanjeev Kumar and Mumtaz in an intense psychological romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0148375",
+  "irt": 7.1,
+  "ivot": 440.0
  },
  {
   "t": "Purab Aur Paschim",
@@ -1573,7 +1784,8 @@
   "poster": "",
   "ov": "Manoj Kumar's cultural values clash.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5216628"
  },
  {
   "t": "Chetna",
@@ -1593,7 +1805,10 @@
   "poster": "",
   "ov": "B.R. Ishara’s bold, taboo-shattering independent feature.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0230079",
+  "irt": 6.6,
+  "ivot": 34.0
  },
  {
   "t": "Haathi Mere Saathi",
@@ -1615,7 +1830,10 @@
   "poster": "",
   "ov": "Salim-Javed’s enduring animal-human family drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt14852412",
+  "irt": 6.3,
+  "ivot": 611.0
  },
  {
   "t": "Amar Prem",
@@ -1635,7 +1853,10 @@
   "poster": "",
   "ov": "Shakti Samanta’s poignant story of courtesan compassion.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0066758",
+  "irt": 8.1,
+  "ivot": 2231.0
  },
  {
   "t": "Pakeezah",
@@ -1655,7 +1876,10 @@
   "poster": "",
   "ov": "Kamal Amrohi’s 14-year tribute to courtesan aesthetics and sorrow.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0067546",
+  "irt": 7.2,
+  "ivot": 2047.0
  },
  {
   "t": "Bawarchi",
@@ -1675,7 +1899,10 @@
   "poster": "",
   "ov": "Rajesh Khanna uniting a fractured joint family.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0068257",
+  "irt": 8.1,
+  "ivot": 4897.0
  },
  {
   "t": "Seeta Aur Geeta",
@@ -1696,7 +1923,10 @@
   "poster": "",
   "ov": "Hema Malini’s separated-twin comedy tour de force.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0078222",
+  "irt": 6.9,
+  "ivot": 2423.0
  },
  {
   "t": "Koshish",
@@ -1716,7 +1946,10 @@
   "poster": "",
   "ov": "Gulzar’s sensitive chronicle of a deaf-mute couple.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0215911",
+  "irt": 8.4,
+  "ivot": 1907.0
  },
  {
   "t": "Victoria No. 203",
@@ -1737,7 +1970,10 @@
   "poster": "",
   "ov": "Hilarious diamond-heist buddy comedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0158331",
+  "irt": 7.2,
+  "ivot": 289.0
  },
  {
   "t": "Anubhav",
@@ -1757,7 +1993,10 @@
   "poster": "",
   "ov": "Basu Bhattacharya’s intimate marital chamber piece.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0395453",
+  "irt": 6.8,
+  "ivot": 230.0
  },
  {
   "t": "Piya Ka Ghar",
@@ -1777,7 +2016,10 @@
   "poster": "",
   "ov": "Jaya Bhaduri dealing with congested Mumbai apartment living.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0158092",
+  "irt": 7.0,
+  "ivot": 284.0
  },
  {
   "t": "Zanjeer",
@@ -1797,7 +2039,10 @@
   "poster": "",
   "ov": "Birth of the ‘Angry Young Man’ via Vijay Khanna.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0070947",
+  "irt": 7.5,
+  "ivot": 4583.0
  },
  {
   "t": "Abhimaan",
@@ -1817,7 +2062,10 @@
   "poster": "",
   "ov": "Marital rivalry when the wife outshines the husband’s fame.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0069671",
+  "irt": 7.8,
+  "ivot": 3311.0
  },
  {
   "t": "Bobby",
@@ -1837,7 +2085,10 @@
   "poster": "",
   "ov": "Raj Kapoor’s vibrant youth-rebellion romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0308055",
+  "irt": 6.9,
+  "ivot": 44102.0
  },
  {
   "t": "Yaadon Ki Baaraat",
@@ -1877,7 +2128,10 @@
   "poster": "",
   "ov": "Class conflict between factory owner and union worker.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0070434",
+  "irt": 7.2,
+  "ivot": 1979.0
  },
  {
   "t": "Dharmatma",
@@ -1897,7 +2151,10 @@
   "poster": "",
   "ov": "Feroz Khan’s stylized Afghan adaptation of The Godfather.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0361505",
+  "irt": 6.7,
+  "ivot": 452.0
  },
  {
   "t": "Garam Hawa",
@@ -1917,7 +2174,8 @@
   "poster": "",
   "ov": "M.S. Sathyu’s heartbreaking look at post-Partition Muslim identity.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt39295725"
  },
  {
   "t": "Rajnigandha",
@@ -1937,7 +2195,10 @@
   "poster": "",
   "ov": "Basu Chatterjee’s gentle middle-class romantic realism.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0072064",
+  "irt": 7.3,
+  "ivot": 979.0
  },
  {
   "t": "Ankur",
@@ -1957,7 +2218,10 @@
   "poster": "",
   "ov": "Shyam Benegal’s arrival; feudal exploitation and caste defiance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0071145",
+  "irt": 7.7,
+  "ivot": 1874.0
  },
  {
   "t": "Roti Kapda Aur Makaan",
@@ -1997,7 +2261,10 @@
   "poster": "",
   "ov": "Gulzar’s political and personal reconciliation drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0178186",
+  "irt": 7.9,
+  "ivot": 1768.0
  },
  {
   "t": "Chupke Chupke",
@@ -2018,7 +2285,10 @@
   "poster": "",
   "ov": "Hrishikesh Mukherjee’s evergreen linguistic-prank comedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0072783",
+  "irt": 8.3,
+  "ivot": 14159.0
  },
  {
   "t": "Deewaar",
@@ -2038,7 +2308,10 @@
   "poster": "",
   "ov": "Salim-Javed’s clash of morality, state, and mother.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0072860",
+  "irt": 8.0,
+  "ivot": 13365.0
  },
  {
   "t": "Sholay",
@@ -2058,7 +2331,10 @@
   "poster": "",
   "ov": "Ramesh Sippy’s legendary curry-western blockbuster.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0073707",
+  "irt": 8.1,
+  "ivot": 64144.0
  },
  {
   "t": "Chhoti Si Baat",
@@ -2078,7 +2354,10 @@
   "poster": "",
   "ov": "Amol Palekar learning confidence from Ashok Kumar.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0072777",
+  "irt": 8.2,
+  "ivot": 5059.0
  },
  {
   "t": "Nishant",
@@ -2098,7 +2377,10 @@
   "poster": "",
   "ov": "Shyam Benegal’s brutal study of rural feudal tyranny.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0073458",
+  "irt": 7.6,
+  "ivot": 843.0
  },
  {
   "t": "Mili",
@@ -2118,7 +2400,10 @@
   "poster": "",
   "ov": "Heartbreaking tale of terminal illness and second chances.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt15257644",
+  "irt": 6.7,
+  "ivot": 11845.0
  },
  {
   "t": "Kabhie Kabhie",
@@ -2138,7 +2423,10 @@
   "poster": "",
   "ov": "Yash Chopra’s multi-generational romantic poetry.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0307763",
+  "irt": 4.9,
+  "ivot": 24.0
  },
  {
   "t": "Manthan",
@@ -2158,7 +2446,10 @@
   "poster": "",
   "ov": "Benegal's crowdfunded story of India's white revolution.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0074858",
+  "irt": 7.6,
+  "ivot": 1033.0
  },
  {
   "t": "Kalicharan",
@@ -2179,7 +2470,10 @@
   "poster": "",
   "ov": "Subhash Ghai’s breakthrough cop thriller with Shatrughan Sinha.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0214832",
+  "irt": 6.7,
+  "ivot": 361.0
  },
  {
   "t": "Hera Pheri",
@@ -2199,7 +2493,10 @@
   "poster": "",
   "ov": "Amitabh and Vinod Khanna in a classic con-artist caper.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0242519",
+  "irt": 8.2,
+  "ivot": 82326.0
  },
  {
   "t": "Amar Akbar Anthony",
@@ -2219,7 +2516,10 @@
   "poster": "",
   "ov": "Manmohan Desai’s peak secular masala delight.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0075669",
+  "irt": 7.4,
+  "ivot": 9146.0
  },
  {
   "t": "Bhumika",
@@ -2239,7 +2539,10 @@
   "poster": "",
   "ov": "Smita Patil’s complex portrayal of actress Hansa Wadkar.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0075747",
+  "irt": 7.3,
+  "ivot": 782.0
  },
  {
   "t": "Gharaonda",
@@ -2259,7 +2562,10 @@
   "poster": "",
   "ov": "Mumbai’s harsh housing market testing a young relationship.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0150718",
+  "irt": 7.2,
+  "ivot": 288.0
  },
  {
   "t": "Inkaar",
@@ -2280,7 +2586,10 @@
   "poster": "",
   "ov": "Raj Sippy’s kidnapping thriller based on Kurosawa's High and Low.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2094854",
+  "irt": 6.1,
+  "ivot": 2806.0
  },
  {
   "t": "Don",
@@ -2302,7 +2611,10 @@
   "poster": "",
   "ov": "Chandra Barot’s sharp underworld doppelgänger thriller.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0461936",
+  "irt": 7.2,
+  "ivot": 45150.0
  },
  {
   "t": "Trishul",
@@ -2322,7 +2634,10 @@
   "poster": "",
   "ov": "Yash Chopra and Salim-Javed’s illegitimate son revenge saga.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0078418",
+  "irt": 7.6,
+  "ivot": 2864.0
  },
  {
   "t": "Satyam Shivam Sundaram",
@@ -2342,7 +2657,10 @@
   "poster": "",
   "ov": "Raj Kapoor’s meditation on inner versus outer beauty.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0282139",
+  "irt": 5.7,
+  "ivot": 256.0
  },
  {
   "t": "Muqaddar Ka Sikandar",
@@ -2362,7 +2680,10 @@
   "poster": "",
   "ov": "Tragic Devdas archetype reframed for 70s Bombay.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0079590",
+  "irt": 7.4,
+  "ivot": 3403.0
  },
  {
   "t": "Junoon",
@@ -2384,7 +2705,10 @@
   "poster": "",
   "ov": "Shyam Benegal’s 1857 Mutiny period romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0156658",
+  "irt": 5.6,
+  "ivot": 780.0
  },
  {
   "t": "Gol Maal",
@@ -2404,7 +2728,10 @@
   "poster": "",
   "ov": "Hrishikesh Mukherjee and Amol Palekar’s mustache masquerade.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0079221",
+  "irt": 8.5,
+  "ivot": 22373.0
  },
  {
   "t": "Kaala Patthar",
@@ -2424,7 +2751,10 @@
   "poster": "",
   "ov": "Yash Chopra’s Chasnala-inspired coal mine catastrophe.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0079386",
+  "irt": 7.5,
+  "ivot": 3233.0
  },
  {
   "t": "Mr. Natwarlal",
@@ -2444,7 +2774,10 @@
   "poster": "",
   "ov": "Amitabh Bachchan’s family-friendly robin hood con-artist film.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0079584",
+  "irt": 6.5,
+  "ivot": 1637.0
  },
  {
   "t": "Noorie",
@@ -2464,7 +2797,10 @@
   "poster": "",
   "ov": "Tragic rural romance set in the valleys of Bhaderwah.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0309926",
+  "irt": 6.2,
+  "ivot": 380.0
  },
  {
   "t": "Aakrosh",
@@ -2484,7 +2820,10 @@
   "poster": "",
   "ov": "Govind Nihalani’s searing courtroom/tribal exploitation drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1708453",
+  "irt": 7.0,
+  "ivot": 4618.0
  },
  {
   "t": "Karz",
@@ -2506,7 +2845,10 @@
   "poster": "",
   "ov": "Subhash Ghai’s reincarnation musical-action revenge vehicle.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0214841",
+  "irt": 7.4,
+  "ivot": 2656.0
  },
  {
   "t": "Dostana",
@@ -2526,7 +2868,10 @@
   "poster": "",
   "ov": "Friendship fractured by love, starring Amitabh and Shatrughan.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1185420",
+  "irt": 6.4,
+  "ivot": 17543.0
  },
  {
   "t": "Shaan",
@@ -2546,7 +2891,10 @@
   "poster": "",
   "ov": "James Bond-scale ambitious action spectacle with villain Shakaal.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0081491",
+  "irt": 7.0,
+  "ivot": 3443.0
  },
  {
   "t": "Khubsoorat",
@@ -2566,7 +2914,10 @@
   "poster": "",
   "ov": "Rekha brings warmth to a strictly governed household.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0244585",
+  "irt": 7.6,
+  "ivot": 2104.0
  },
  {
   "t": "Insaf Ka Tarazu",
@@ -2586,7 +2937,10 @@
   "poster": "",
   "ov": "B.R. Chopra's grim legal examination of sexual assault.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0080926",
+  "irt": 6.4,
+  "ivot": 313.0
  },
  {
   "t": "Silsila",
@@ -2606,7 +2960,10 @@
   "poster": "",
   "ov": "Yash Chopra’s poetic exploration of extra-marital love.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0083081",
+  "irt": 7.1,
+  "ivot": 3593.0
  },
  {
   "t": "Umrao Jaan",
@@ -2626,7 +2983,10 @@
   "poster": "",
   "ov": "Muzaffar Ali’s authentic, melancholic courtesan portrait.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0485522",
+  "irt": 5.4,
+  "ivot": 2188.0
  },
  {
   "t": "Chashme Buddoor",
@@ -2647,7 +3007,10 @@
   "poster": "",
   "ov": "Sai Paranjpye’s lighthearted Delhi student comedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0082162",
+  "irt": 7.9,
+  "ivot": 2929.0
  },
  {
   "t": "Kalyug",
@@ -2667,7 +3030,10 @@
   "poster": "",
   "ov": "Shyam Benegal’s modern corporate retelling of the Mahabharata.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0499041",
+  "irt": 6.5,
+  "ivot": 3750.0
  },
  {
   "t": "Ek Duuje Ke Liye",
@@ -2687,7 +3053,10 @@
   "poster": "",
   "ov": "K. Balachander’s tragic cross-cultural romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0082314",
+  "irt": 7.5,
+  "ivot": 4934.0
  },
  {
   "t": "Laawaris",
@@ -2709,7 +3078,10 @@
   "poster": "",
   "ov": "Prakash Mehra’s orphan-identity action melodrama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0082644",
+  "irt": 7.0,
+  "ivot": 2720.0
  },
  {
   "t": "Kaalia",
@@ -2729,7 +3101,10 @@
   "poster": "",
   "ov": "Tinu Anand’s prison-to-powerhouse action vehicle.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0082594",
+  "irt": 6.7,
+  "ivot": 1955.0
  },
  {
   "t": "Angoor",
@@ -2750,7 +3125,10 @@
   "poster": "",
   "ov": "Gulzar’s comedy of errors adapted from Shakespeare.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0215517",
+  "irt": 8.3,
+  "ivot": 6389.0
  },
  {
   "t": "Bazaar",
@@ -2770,7 +3148,10 @@
   "poster": "",
   "ov": "Sagar Sarhadi’s expose of Gulf bride-buying in Hyderabad.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0246456",
+  "irt": 7.3,
+  "ivot": 683.0
  },
  {
   "t": "Arth",
@@ -2790,7 +3171,10 @@
   "poster": "",
   "ov": "Mahesh Bhatt’s raw, personal breakdown of marriage and independence.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0083578",
+  "irt": 7.8,
+  "ivot": 1736.0
  },
  {
   "t": "Namak Halaal",
@@ -2810,7 +3194,10 @@
   "poster": "",
   "ov": "Prakash Mehra’s laugh-out-loud comedy-actioner.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0084385",
+  "irt": 7.2,
+  "ivot": 3174.0
  },
  {
   "t": "Shakti",
@@ -2830,7 +3217,10 @@
   "poster": "",
   "ov": "Dilip Kumar and Amitabh Bachchan’s ideological father-son faceoff.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0084667",
+  "irt": 7.6,
+  "ivot": 2660.0
  },
  {
   "t": "Vijeta",
@@ -2850,7 +3240,10 @@
   "poster": "",
   "ov": "Nihalani’s coming-of-age fighter pilot drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0153545",
+  "irt": 7.7,
+  "ivot": 361.0
  },
  {
   "t": "Jaane Bhi Do Yaaro",
@@ -2871,7 +3264,10 @@
   "poster": "",
   "ov": "Kundan Shah’s legendary, nihilistic black comedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0085743",
+  "irt": 8.3,
+  "ivot": 18140.0
  },
  {
   "t": "Ardh Satya",
@@ -2891,7 +3287,10 @@
   "poster": "",
   "ov": "Om Puri as an honest cop suffocated by systemic decay.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0085178",
+  "irt": 8.1,
+  "ivot": 2491.0
  },
  {
   "t": "Masoom",
@@ -2911,7 +3310,10 @@
   "poster": "",
   "ov": "Shekhar Kapur’s gentle study of infidelity and a child’s arrival.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0085913",
+  "irt": 8.3,
+  "ivot": 4814.0
  },
  {
   "t": "Mandi",
@@ -2932,7 +3334,10 @@
   "poster": "",
   "ov": "Shyam Benegal’s satirical, politically charged brothel comedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0085896",
+  "irt": 7.5,
+  "ivot": 1104.0
  },
  {
   "t": "Coolie",
@@ -2952,7 +3357,10 @@
   "poster": "",
   "ov": "Manmohan Desai’s union-worker epic marked by Bachchan’s near-fatal injury.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt27441481",
+  "irt": 6.0,
+  "ivot": 25159.0
  },
  {
   "t": "Sadma",
@@ -2972,7 +3380,10 @@
   "poster": "",
   "ov": "Balu Mahendra’s tragic romance of amnesia and heartbreak.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0086230",
+  "irt": 8.3,
+  "ivot": 3955.0
  },
  {
   "t": "Sparsh",
@@ -2992,7 +3403,10 @@
   "poster": "",
   "ov": "Naseeruddin Shah and Shabana Azmi in a sensitive romance of dignity.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7022188",
+  "irt": 7.1,
+  "ivot": 146.0
  },
  {
   "t": "Paar",
@@ -3012,7 +3426,10 @@
   "poster": "",
   "ov": "Goutam Ghose’s brutal survival piece with an iconic river-crossing scene.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0087868",
+  "irt": 7.6,
+  "ivot": 629.0
  },
  {
   "t": "Saaransh",
@@ -3032,7 +3449,10 @@
   "poster": "",
   "ov": "Anupam Kher’s heartbreaking debut as an aging father fighting grief.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0088031",
+  "irt": 8.1,
+  "ivot": 2135.0
  },
  {
   "t": "Sharaabi",
@@ -3052,7 +3472,10 @@
   "poster": "",
   "ov": "Amitabh Bachchan and Pran in an emotional alcoholic redemption tale.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0088099",
+  "irt": 7.3,
+  "ivot": 3480.0
  },
  {
   "t": "Jaag Utha Insan",
@@ -3074,7 +3497,10 @@
   "poster": "",
   "ov": "K. Vishwanath's exploration of caste and classical dance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0087492",
+  "irt": 5.4,
+  "ivot": 135.0
  },
  {
   "t": "Damul",
@@ -3094,7 +3520,10 @@
   "poster": "",
   "ov": "Prakash Jha’s stark portrayal of bonded labor in Bihar.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0088986",
+  "irt": 7.7,
+  "ivot": 172.0
  },
  {
   "t": "Ram Teri Ganga Maili",
@@ -3114,7 +3543,10 @@
   "poster": "",
   "ov": "Raj Kapoor’s ecological and moral allegory.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0152139",
+  "irt": 6.5,
+  "ivot": 1319.0
  },
  {
   "t": "Mirch Masala",
@@ -3134,7 +3566,10 @@
   "poster": "",
   "ov": "Ketan Mehta’s feminist defiance set in a colonial chili factory.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0089599",
+  "irt": 7.8,
+  "ivot": 1734.0
  },
  {
   "t": "Naam",
@@ -3154,7 +3589,10 @@
   "poster": "",
   "ov": "Mahesh Bhatt’s cautionary tale of illegal migration and underworld traps.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0091598",
+  "irt": 7.3,
+  "ivot": 1281.0
  },
  {
   "t": "Chameli Ki Shaadi",
@@ -3177,7 +3615,10 @@
   "poster": "",
   "ov": "Basu Chatterjee’s small-town romantic satire.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0090812",
+  "irt": 7.5,
+  "ivot": 1909.0
  },
  {
   "t": "Mr. India",
@@ -3199,7 +3640,10 @@
   "poster": "",
   "ov": "Shekhar Kapur’s seamless sci-fi superhero family fantasy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0093578",
+  "irt": 7.7,
+  "ivot": 20862.0
  },
  {
   "t": "Ijaazat",
@@ -3219,7 +3663,8 @@
   "poster": "",
   "ov": "Gulzar’s mature reflection on divorce, memory, and closure.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9173008"
  },
  {
   "t": "Hero Hiralal",
@@ -3239,7 +3684,10 @@
   "poster": "",
   "ov": "Ketan Mehta’s quirky romance between an auto driver and starlet.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0093182",
+  "irt": 6.0,
+  "ivot": 353.0
  },
  {
   "t": "Qayamat Se Qayamat Tak",
@@ -3259,7 +3707,10 @@
   "poster": "",
   "ov": "Mansoor Khan resets Bollywood romance for a new generation.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0095936",
+  "irt": 7.4,
+  "ivot": 12014.0
  },
  {
   "t": "Salaam Bombay!",
@@ -3279,7 +3730,10 @@
   "poster": "",
   "ov": "Mira Nair’s Oscar-nominated street children chronicle.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0096028",
+  "irt": 7.9,
+  "ivot": 11377.0
  },
  {
   "t": "Tezaab",
@@ -3301,7 +3755,10 @@
   "poster": "",
   "ov": "N. Chandra’s high-octane romantic action smash.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0096252",
+  "irt": 6.9,
+  "ivot": 2836.0
  },
  {
   "t": "Shahenshah",
@@ -3321,7 +3778,10 @@
   "poster": "",
   "ov": "Amitabh Bachchan’s iconic dual-identity vigilante film.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0093949",
+  "irt": 6.3,
+  "ivot": 2832.0
  },
  {
   "t": "Parinda",
@@ -3341,7 +3801,10 @@
   "poster": "",
   "ov": "Vidhu Vinod Chopra’s gritty realism redefining Mumbai underworld cinema.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0102636",
+  "irt": 7.8,
+  "ivot": 4212.0
  },
  {
   "t": "Maine Pyar Kiya",
@@ -3363,7 +3826,10 @@
   "poster": "",
   "ov": "Sooraj Barjatya revitalizes family entertainment and pure romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0100095",
+  "irt": 7.3,
+  "ivot": 14168.0
  },
  {
   "t": "Chandni",
@@ -3383,7 +3849,10 @@
   "poster": "",
   "ov": "Yash Chopra returns to romance, swiss landscapes, and lilting melodies.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0097045",
+  "irt": 6.7,
+  "ivot": 2406.0
  },
  {
   "t": "Salim Langde Pe Mat Ro",
@@ -3423,7 +3892,10 @@
   "poster": "",
   "ov": "Basu Chatterjee’s deep dive into societal guilt and suicide.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0157882",
+  "irt": 7.4,
+  "ivot": 308.0
  },
  {
   "t": "Agneepath",
@@ -3445,7 +3917,10 @@
   "poster": "",
   "ov": "Mukul Anand’s operatic underworld revenge thriller.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1849718",
+  "irt": 6.9,
+  "ivot": 29187.0
  },
  {
   "t": "Aashiqui",
@@ -3467,7 +3942,10 @@
   "poster": "",
   "ov": "Musical romance that set unprecedented cassette sales records.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0149573",
+  "irt": 6.3,
+  "ivot": 2357.0
  },
  {
   "t": "Ghayal",
@@ -3487,7 +3965,10 @@
   "poster": "",
   "ov": "Rajkumar Santoshi and Sunny Deol’s angry anti-corruption actioner.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0099652",
+  "irt": 7.7,
+  "ivot": 5703.0
  },
  {
   "t": "Dil",
@@ -3507,7 +3988,10 @@
   "poster": "",
   "ov": "High-voltage college romance starring Aamir Khan and Madhuri Dixit.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0099429",
+  "irt": 6.6,
+  "ivot": 6231.0
  },
  {
   "t": "Lamhe",
@@ -3527,7 +4011,10 @@
   "poster": "",
   "ov": "Yash Chopra’s ahead-of-its-time exploration of cross-generational love.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0102258",
+  "irt": 7.2,
+  "ivot": 3494.0
  },
  {
   "t": "Saudagar",
@@ -3547,7 +4034,10 @@
   "poster": "",
   "ov": "Subhash Ghai’s clash of cinematic titans: Dilip Kumar and Raaj Kumar.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0102844",
+  "irt": 6.7,
+  "ivot": 1819.0
  },
  {
   "t": "Sadak",
@@ -3570,7 +4060,10 @@
   "poster": "",
   "ov": "Mahesh Bhatt’s dark romantic thriller featuring Maharani.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0156985",
+  "irt": 6.4,
+  "ivot": 3152.0
  },
  {
   "t": "Jo Jeeta Wohi Sikandar",
@@ -3590,7 +4083,10 @@
   "poster": "",
   "ov": "Mansoor Khan’s quintessential sports and coming-of-age classic.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0104561",
+  "irt": 8.1,
+  "ivot": 27881.0
  },
  {
   "t": "Roja",
@@ -3615,7 +4111,10 @@
   "poster": "",
   "ov": "Mani Ratnam’s political romantic thriller featuring A.R. Rahman’s debut.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0105271",
+  "irt": 8.1,
+  "ivot": 14958.0
  },
  {
   "t": "Raju Ban Gaya Gentleman",
@@ -3635,7 +4134,10 @@
   "poster": "",
   "ov": "Early Shah Rukh Khan navigating cutthroat Mumbai ambition.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0173102",
+  "irt": 6.7,
+  "ivot": 8966.0
  },
  {
   "t": "Khiladi",
@@ -3656,7 +4158,10 @@
   "poster": "",
   "ov": "Abbas-Mustan’s suspense thriller that spawned Akshay Kumar’s moniker.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0104605",
+  "irt": 7.1,
+  "ivot": 9029.0
  },
  {
   "t": "Damini",
@@ -3678,7 +4183,10 @@
   "poster": "",
   "ov": "Rajkumar Santoshi’s blistering courtroom battle for justice.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0106655",
+  "irt": 7.8,
+  "ivot": 4543.0
  },
  {
   "t": "Baazigar",
@@ -3699,7 +4207,10 @@
   "poster": "",
   "ov": "Abbas-Mustan’s high-stakes thriller casting SRK as an unapologetic anti-hero.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0106333",
+  "irt": 7.6,
+  "ivot": 32326.0
  },
  {
   "t": "Darr",
@@ -3720,7 +4231,10 @@
   "poster": "",
   "ov": "Yash Chopra’s psychological obsession thriller.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0109555",
+  "irt": 7.6,
+  "ivot": 27425.0
  },
  {
   "t": "Gardish",
@@ -3740,7 +4254,10 @@
   "poster": "",
   "ov": "Priyadarshan’s tragedy of a son dragged into street violence.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0106986",
+  "irt": 7.6,
+  "ivot": 1084.0
  },
  {
   "t": "Kabhi Haan Kabhi Naa",
@@ -3760,7 +4277,10 @@
   "poster": "",
   "ov": "Kundan Shah’s tender ode to the lovable loser, Sunil.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0110222",
+  "irt": 7.6,
+  "ivot": 20564.0
  },
  {
   "t": "Andaz Apna Apna",
@@ -3781,7 +4301,10 @@
   "poster": "",
   "ov": "Rajkumar Santoshi’s cult slapstick masterpiece.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0109117",
+  "irt": 8.0,
+  "ivot": 58434.0
  },
  {
   "t": "Hum Aapke Hain Koun..!",
@@ -3801,7 +4324,10 @@
   "poster": "",
   "ov": "Barjatya’s cultural phenomenon that revived theatrical distribution.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0110076",
+  "irt": 7.5,
+  "ivot": 24648.0
  },
  {
   "t": "1942: A Love Story",
@@ -3821,7 +4347,10 @@
   "poster": "",
   "ov": "R.D. Burman’s swan song set against the freedom struggle.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0109010",
+  "irt": 7.2,
+  "ivot": 3933.0
  },
  {
   "t": "Bandit Queen",
@@ -3841,7 +4370,10 @@
   "poster": "",
   "ov": "Shekhar Kapur’s raw, unflinching biopic of Phoolan Devi.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0109206",
+  "irt": 7.5,
+  "ivot": 5964.0
  },
  {
   "t": "Karan Arjun",
@@ -3862,7 +4394,10 @@
   "poster": "",
   "ov": "Rakesh Roshan’s blockbuster reincarnation masala saga.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0113526",
+  "irt": 6.8,
+  "ivot": 17961.0
  },
  {
   "t": "Bombay",
@@ -3882,7 +4417,10 @@
   "poster": "",
   "ov": "Mani Ratnam’s harrowing look at interfaith love during the 1992-93 riots.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0112553",
+  "irt": 8.1,
+  "ivot": 15376.0
  },
  {
   "t": "Dilwale Dulhania Le Jayenge",
@@ -3902,7 +4440,10 @@
   "poster": "",
   "ov": "Aditya Chopra’s record-shattering NRI romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0112870",
+  "irt": 8.0,
+  "ivot": 87111.0
  },
  {
   "t": "Rangeela",
@@ -3922,7 +4463,10 @@
   "poster": "",
   "ov": "Ram Gopal Varma’s vibrant, technical cinematic revolution.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0114234",
+  "irt": 7.4,
+  "ivot": 11254.0
  },
  {
   "t": "Maachis",
@@ -3942,7 +4486,10 @@
   "poster": "",
   "ov": "Gulzar’s haunting study of alienation and Punjab militancy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0116950",
+  "irt": 7.7,
+  "ivot": 2627.0
  },
  {
   "t": "Khamoshi: The Musical",
@@ -3962,7 +4509,10 @@
   "poster": "",
   "ov": "Sanjay Leela Bhansali’s delicate debut about a deaf-mute family.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0116763",
+  "irt": 7.4,
+  "ivot": 5044.0
  },
  {
   "t": "Raja Hindustani",
@@ -3982,7 +4532,10 @@
   "poster": "",
   "ov": "Small-town cab driver and heiress melodrama blockbuster.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0117437",
+  "irt": 6.1,
+  "ivot": 9477.0
  },
  {
   "t": "Border",
@@ -4002,7 +4555,10 @@
   "poster": "",
   "ov": "J.P. Dutta’s definitive 1971 Longewala war epic.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5501104",
+  "irt": 7.0,
+  "ivot": 37934.0
  },
  {
   "t": "Judaai",
@@ -4022,7 +4578,10 @@
   "poster": "",
   "ov": "Greed, marriage, and moral compromise starring Sridevi.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0119427",
+  "irt": 6.1,
+  "ivot": 3299.0
  },
  {
   "t": "Virasat",
@@ -4042,7 +4601,10 @@
   "poster": "",
   "ov": "Priyadarshan’s rich adaptation of rural feudal cycles and duty.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0120456",
+  "irt": 7.4,
+  "ivot": 3255.0
  },
  {
   "t": "Gupt",
@@ -4065,7 +4627,10 @@
   "poster": "",
   "ov": "Rajiv Rai’s stylish musical whodunit with an iconic twist.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt21475768",
+  "irt": 9.1,
+  "ivot": 22.0
  },
  {
   "t": "Chachi 420",
@@ -4085,7 +4650,10 @@
   "poster": "",
   "ov": "Kamal Haasan’s delightful adaptation of Mrs. Doubtfire.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0233422",
+  "irt": 7.4,
+  "ivot": 14204.0
  },
  {
   "t": "Dil To Pagal Hai",
@@ -4105,7 +4673,10 @@
   "poster": "",
   "ov": "Yash Chopra’s glossy musical celebrating musical soulmates.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0118983",
+  "irt": 7.0,
+  "ivot": 27375.0
  },
  {
   "t": "Pardes",
@@ -4125,7 +4696,10 @@
   "poster": "",
   "ov": "Subhash Ghai’s traditional values versus westernization drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0119861",
+  "irt": 6.9,
+  "ivot": 17400.0
  },
  {
   "t": "Satya",
@@ -4145,7 +4719,10 @@
   "poster": "",
   "ov": "Ram Gopal Varma’s gritty underworld revolution that spawned indie Mumbai cinema.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0195231",
+  "irt": 8.2,
+  "ivot": 18848.0
  },
  {
   "t": "Kuch Kuch Hota Hai",
@@ -4165,7 +4742,10 @@
   "poster": "",
   "ov": "Karan Johar’s candy-colored pop-culture defining college romance.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0172684",
+  "irt": 7.5,
+  "ivot": 63656.0
  },
  {
   "t": "Dil Se..",
@@ -4185,7 +4765,10 @@
   "poster": "",
   "ov": "Mani Ratnam’s poetic, political tragedy set against borderland unrest.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0164538",
+  "irt": 7.5,
+  "ivot": 33879.0
  },
  {
   "t": "Zakhm",
@@ -4205,7 +4788,10 @@
   "poster": "",
   "ov": "Mahesh Bhatt’s poignant semi-autobiographical communal drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0211126",
+  "irt": 7.8,
+  "ivot": 3842.0
  },
  {
   "t": "Ghulam",
@@ -4225,7 +4811,10 @@
   "poster": "",
   "ov": "Vikram Bhatt and Aamir Khan’s boxing and local intimidation drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0190419",
+  "irt": 7.2,
+  "ivot": 12833.0
  },
  {
   "t": "Sarfarosh",
@@ -4245,7 +4834,10 @@
   "poster": "",
   "ov": "John Matthew Matthan’s procedural combat against cross-border smuggling.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0200087",
+  "irt": 8.1,
+  "ivot": 29098.0
  },
  {
   "t": "Hum Dil De Chuke Sanam",
@@ -4285,7 +4877,10 @@
   "poster": "",
   "ov": "Subhash Ghai and A.R. Rahman’s audio-visual musical treat.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0152836",
+  "irt": 6.7,
+  "ivot": 6590.0
  },
  {
   "t": "Vaastav",
@@ -4305,7 +4900,10 @@
   "poster": "",
   "ov": "Mahesh Manjrekar’s brutal tragedy of an innocent chawl boy turning gangster.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11384886",
+  "irt": 8.4,
+  "ivot": 8.0
  },
  {
   "t": "Shool",
@@ -4325,7 +4923,10 @@
   "poster": "",
   "ov": "E. Nivas and Anurag Kashyap’s gritty Bihar cop tragedy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0220757",
+  "irt": 7.7,
+  "ivot": 4494.0
  },
  {
   "t": "Biwi No.1",
@@ -4346,7 +4947,10 @@
   "poster": "",
   "ov": "David Dhawan’s blockbuster comedy of marital errors.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0207341",
+  "irt": 5.7,
+  "ivot": 7141.0
  },
  {
   "t": "Kaho Naa... Pyaar Hai",
@@ -4366,7 +4970,10 @@
   "poster": "",
   "ov": "Hrithik Roshan’s sensational dual-role debut.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0234000",
+  "irt": 6.9,
+  "ivot": 18924.0
  },
  {
   "t": "Hera Pheri",
@@ -4387,7 +4994,10 @@
   "poster": "",
   "ov": "Priyadarshan’s cult comedy of three broke misfits and a ransom call.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0242519",
+  "irt": 8.2,
+  "ivot": 82326.0
  },
  {
   "t": "Mohabbatein",
@@ -4409,7 +5019,10 @@
   "poster": "",
   "ov": "Aditya Chopra’s battle between tradition and love.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0213890",
+  "irt": 7.1,
+  "ivot": 38064.0
  },
  {
   "t": "Astitva",
@@ -4429,7 +5042,10 @@
   "poster": "",
   "ov": "Mahesh Manjrekar’s feminist critique of patriarchal hypocrisy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0261545",
+  "irt": 7.3,
+  "ivot": 889.0
  },
  {
   "t": "Fiza",
@@ -4449,7 +5065,10 @@
   "poster": "",
   "ov": "Khalid Mohamed’s nuanced post-riots sibling search.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0248012",
+  "irt": 6.0,
+  "ivot": 4820.0
  },
  {
   "t": "Lagaan",
@@ -4489,7 +5108,10 @@
   "poster": "",
   "ov": "Farhan Akhtar rewrites conversational Hindi dialogue and youth cinema.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0292490",
+  "irt": 8.0,
+  "ivot": 80743.0
  },
  {
   "t": "Gadar: Ek Prem Katha",
@@ -4509,7 +5131,10 @@
   "poster": "",
   "ov": "Anil Sharma’s raw emotional partition phenomenon.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0284137",
+  "irt": 7.3,
+  "ivot": 16958.0
  },
  {
   "t": "Kabhi Khushi Kabhie Gham...",
@@ -4529,7 +5154,10 @@
   "poster": "",
   "ov": "Karan Johar’s ultimate joint-family extravaganza.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0248126",
+  "irt": 7.5,
+  "ivot": 64100.0
  },
  {
   "t": "Chandni Bar",
@@ -4549,7 +5177,10 @@
   "poster": "",
   "ov": "Madhur Bhandarkar’s gritty look at Mumbai’s dance bar underbelly.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0267363",
+  "irt": 7.6,
+  "ivot": 2970.0
  },
  {
   "t": "Monsoon Wedding",
@@ -4569,7 +5200,10 @@
   "poster": "",
   "ov": "Mira Nair’s vibrant, layered Punjabi wedding drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0265343",
+  "irt": 7.3,
+  "ivot": 26818.0
  },
  {
   "t": "Company",
@@ -4589,7 +5223,10 @@
   "poster": "",
   "ov": "Ram Gopal Varma’s sleek, boardroom-style underworld breakdown.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0296574",
+  "irt": 7.9,
+  "ivot": 17417.0
  },
  {
   "t": "Devdas",
@@ -4609,7 +5246,10 @@
   "poster": "",
   "ov": "Bhansali’s lavish, high-voltage Cannes-premiered adaptation.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0238936",
+  "irt": 7.6,
+  "ivot": 53061.0
  },
  {
   "t": "Saathiya",
@@ -4629,7 +5269,10 @@
   "poster": "",
   "ov": "Shaad Ali’s authentic look at young marriage after elopement.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0330843",
+  "irt": 6.8,
+  "ivot": 9727.0
  },
  {
   "t": "The Legend of Bhagat Singh",
@@ -4651,7 +5294,10 @@
   "poster": "",
   "ov": "Rajkumar Santoshi’s fiery historical freedom biopic.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0319736",
+  "irt": 8.2,
+  "ivot": 18593.0
  },
  {
   "t": "Aankhen",
@@ -4673,7 +5319,10 @@
   "poster": "",
   "ov": "Vipul Shah’s heist thriller featuring three blind bank robbers.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0306434",
+  "irt": 7.4,
+  "ivot": 15010.0
  },
  {
   "t": "Munna Bhai M.B.B.S.",
@@ -4693,7 +5342,10 @@
   "poster": "",
   "ov": "Rajkumar Hirani’s feel-good medical humanism.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0374887",
+  "irt": 8.2,
+  "ivot": 100065.0
  },
  {
   "t": "Kal Ho Naa Ho",
@@ -4713,7 +5365,10 @@
   "poster": "",
   "ov": "Nikhil Advani and Karan Johar’s bittersweet New York weepie.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0347304",
+  "irt": 7.9,
+  "ivot": 82881.0
  },
  {
   "t": "Gangaajal",
@@ -4733,7 +5388,10 @@
   "poster": "",
   "ov": "Prakash Jha’s raw exploration of mob justice and police ethics.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0373856",
+  "irt": 7.8,
+  "ivot": 19305.0
  },
  {
   "t": "Koi... Mil Gaya",
@@ -4754,7 +5412,10 @@
   "poster": "",
   "ov": "Rakesh Roshan’s alien sci-fi fantasy that launched Krrish.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0254481",
+  "irt": 7.2,
+  "ivot": 32204.0
  },
  {
   "t": "Haasil",
@@ -4774,7 +5435,10 @@
   "poster": "",
   "ov": "Tigmanshu Dhulia’s gritty student politics in Allahabad.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0362696",
+  "irt": 7.6,
+  "ivot": 3393.0
  },
  {
   "t": "Pinjar",
@@ -4794,7 +5458,10 @@
   "poster": "",
   "ov": "Chandra Prakash Dwivedi’s wrenching Partition abduction drama.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0347779",
+  "irt": 7.9,
+  "ivot": 3176.0
  },
  {
   "t": "Maqbool",
@@ -4814,6 +5481,9 @@
   "poster": "",
   "ov": "Vishal Bhardwaj sets Shakesp",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0379370",
+  "irt": 8.0,
+  "ivot": 16468.0
  }
 ]

@@ -27,7 +27,10 @@
   "src": "curated",
   "status": "released",
   "note": "Netflix Hindi Web Series Directory",
-  "nf": "80115328"
+  "nf": "80115328",
+  "id": "tt6077448",
+  "irt": 8.5,
+  "ivot": 99274.0
  },
  {
   "t": "Delhi Crime",
@@ -57,7 +60,10 @@
   "src": "curated",
   "status": "released",
   "note": "Netflix Hindi Web Series Directory",
-  "nf": "81076756"
+  "nf": "81076756",
+  "id": "tt9398466",
+  "irt": 8.4,
+  "ivot": 31407.0
  },
  {
   "t": "Kohrra",
@@ -86,7 +92,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt27853283",
+  "irt": 7.5,
+  "ivot": 12674.0
  },
  {
   "t": "Khakee: The Bihar Chapter",
@@ -115,7 +124,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt23037654",
+  "irt": 8.1,
+  "ivot": 14871.0
  },
  {
   "t": "Jamtara: Sabka Number Ayega",
@@ -144,7 +156,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt11150912",
+  "irt": 7.3,
+  "ivot": 11167.0
  },
  {
   "t": "She",
@@ -173,7 +188,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt11905720",
+  "irt": 6.4,
+  "ivot": 7196.0
  },
  {
   "t": "Rana Naidu",
@@ -202,7 +220,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt15471900",
+  "irt": 7.1,
+  "ivot": 14510.0
  },
  {
   "t": "Guns & Gulaabs",
@@ -231,7 +252,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt17524566",
+  "irt": 7.6,
+  "ivot": 20229.0
  },
  {
   "t": "IC 814: The Kandahar Hijack",
@@ -261,7 +285,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt28106741",
+  "irt": 5.8,
+  "ivot": 23707.0
  },
  {
   "t": "Killer Soup",
@@ -290,7 +317,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt22297290",
+  "irt": 6.3,
+  "ivot": 5149.0
  },
  {
   "t": "Tribhuvan Mishra CA Topper",
@@ -320,7 +350,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt32832648",
+  "irt": 7.0,
+  "ivot": 4597.0
  },
  {
   "t": "Aranyak",
@@ -349,7 +382,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt14167344",
+  "irt": 7.7,
+  "ivot": 12156.0
  },
  {
   "t": "Mai: A Mother's Rage",
@@ -407,7 +443,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt14160712",
+  "irt": 7.0,
+  "ivot": 10796.0
  },
  {
   "t": "Heeramandi: The Diamond Bazaar",
@@ -436,7 +475,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt15204292",
+  "irt": 6.3,
+  "ivot": 29387.0
  },
  {
   "t": "The Railway Men",
@@ -467,7 +509,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt9643450",
+  "irt": 7.7,
+  "ivot": 25.0
  },
  {
   "t": "Scoop",
@@ -496,7 +541,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt0457513",
+  "irt": 6.6,
+  "ivot": 91216.0
  },
  {
   "t": "Bard of Blood",
@@ -525,7 +573,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt8069036",
+  "irt": 6.7,
+  "ivot": 13081.0
  },
  {
   "t": "Ghoul",
@@ -555,7 +606,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt5909930",
+  "irt": 7.0,
+  "ivot": 16327.0
  },
  {
   "t": "Betaal",
@@ -584,7 +638,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt10651790",
+  "irt": 5.5,
+  "ivot": 10233.0
  },
  {
   "t": "Typewriter",
@@ -614,7 +671,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt9310372",
+  "irt": 6.5,
+  "ivot": 4672.0
  },
  {
   "t": "Tooth Pari: When Love Bites",
@@ -643,7 +703,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt27191658",
+  "irt": 6.9,
+  "ivot": 3440.0
  },
  {
   "t": "Ray",
@@ -673,7 +736,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt0350258",
+  "irt": 7.7,
+  "ivot": 167657.0
  },
  {
   "t": "The Fame Game",
@@ -703,7 +769,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt9447956",
+  "irt": 6.6,
+  "ivot": 22429.0
  },
  {
   "t": "Decoupled",
@@ -732,7 +801,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt14167338",
+  "irt": 7.9,
+  "ivot": 9063.0
  },
  {
   "t": "A Suitable Boy",
@@ -763,7 +835,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt10795574",
+  "irt": 6.2,
+  "ivot": 6062.0
  },
  {
   "t": "Selection Day",
@@ -794,7 +869,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt8004628",
+  "irt": 7.3,
+  "ivot": 2584.0
  },
  {
   "t": "Taj Mahal 1989",
@@ -823,7 +901,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt11725706",
+  "irt": 7.4,
+  "ivot": 1819.0
  },
  {
   "t": "Bhaag Beanie Bhaag",
@@ -852,7 +933,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt12775836",
+  "irt": 3.5,
+  "ivot": 6807.0
  },
  {
   "t": "Kota Factory",
@@ -881,7 +965,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt9432978",
+  "irt": 9.0,
+  "ivot": 93861.0
  },
  {
   "t": "Mismatched",
@@ -909,7 +996,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt12719250",
+  "irt": 6.0,
+  "ivot": 7798.0
  },
  {
   "t": "Class",
@@ -938,7 +1028,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt1068646",
+  "irt": 7.5,
+  "ivot": 37684.0
  },
  {
   "t": "Little Things",
@@ -966,7 +1059,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt10016180",
+  "irt": 6.3,
+  "ivot": 148132.0
  },
  {
   "t": "Masaba Masaba",
@@ -994,7 +1090,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt10655506",
+  "irt": 6.6,
+  "ivot": 2410.0
  },
  {
   "t": "Feels Like Ishq",
@@ -1023,7 +1122,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt14163838",
+  "irt": 6.5,
+  "ivot": 1806.0
  },
  {
   "t": "House of Secrets: The Burari Deaths",
@@ -1050,7 +1152,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt14167390",
+  "irt": 7.4,
+  "ivot": 14798.0
  },
  {
   "t": "The Hunt for Veerappan",
@@ -1077,7 +1182,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt28306965",
+  "irt": 7.9,
+  "ivot": 3240.0
  },
  {
   "t": "Indian Predator: The Butcher of Delhi",
@@ -1104,7 +1212,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt14178824",
+  "irt": 6.1,
+  "ivot": 2976.0
  },
  {
   "t": "Indian Predator: Diary of a Serial Killer",
@@ -1131,7 +1242,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt21811888",
+  "irt": 6.2,
+  "ivot": 2410.0
  },
  {
   "t": "The Romantics",
@@ -1158,7 +1272,10 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt1403988",
+  "irt": 5.0,
+  "ivot": 12907.0
  },
  {
   "t": "Bad Boy Billionaires: India",
@@ -1187,6 +1304,9 @@
   "prod": "",
   "src": "curated",
   "status": "released",
-  "note": "Netflix Hindi Web Series Directory"
+  "note": "Netflix Hindi Web Series Directory",
+  "id": "tt12923630",
+  "irt": 7.8,
+  "ivot": 3769.0
  }
 ]

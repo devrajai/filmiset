@@ -49,7 +49,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt0137685",
+  "irt": 7.0,
+  "ivot": 98.0
  },
  {
   "t": "Natasamrat",
@@ -97,7 +100,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt9437594",
+  "irt": 4.5,
+  "ivot": 8.0
  },
  {
   "t": "Sakharam Binder",
@@ -121,7 +127,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt3368384",
+  "irt": 9.1,
+  "ivot": 46.0
  },
  {
   "t": "Ashrunchi Zali Phule",
@@ -170,7 +179,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt0192566",
+  "irt": 8.3,
+  "ivot": 170.0
  },
  {
   "t": "Jait Re Jait",
@@ -195,7 +207,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt0251151",
+  "irt": 8.3,
+  "ivot": 199.0
  },
  {
   "t": "Sinhasan",
@@ -220,7 +235,8 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt0230786"
  },
  {
   "t": "Umbartha",
@@ -245,7 +261,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt0084840",
+  "irt": 7.5,
+  "ivot": 184.0
  },
  {
   "t": "Chaukat Raja",
@@ -269,7 +288,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt0436165",
+  "irt": 7.9,
+  "ivot": 273.0
  },
  {
   "t": "Shwaas",
@@ -294,7 +316,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt28290937",
+  "irt": 8.5,
+  "ivot": 8.0
  },
  {
   "t": "Harishchandrachi Factory",
@@ -318,7 +343,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt1524539",
+  "irt": 8.4,
+  "ivot": 5234.0
  },
  {
   "t": "Natarang",
@@ -343,7 +371,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt1590129",
+  "irt": 8.5,
+  "ivot": 2557.0
  },
  {
   "t": "Kaksparsh",
@@ -368,7 +399,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt2400377",
+  "irt": 8.1,
+  "ivot": 1077.0
  },
  {
   "t": "Sairat",
@@ -393,7 +427,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 1"
+  "note": "Seven Canons Compendium · section 1",
+  "id": "tt5312232",
+  "irt": 8.3,
+  "ivot": 16653.0
  },
  {
   "t": "Pather Panchali",
@@ -418,7 +455,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0048473",
+  "irt": 8.2,
+  "ivot": 42469.0
  },
  {
   "t": "Meghe Dhaka Tara",
@@ -443,7 +483,8 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt39116985"
  },
  {
   "t": "Charulata",
@@ -467,7 +508,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0057935",
+  "irt": 8.1,
+  "ivot": 8148.0
  },
  {
   "t": "Nayakan",
@@ -493,7 +537,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0093603",
+  "irt": 8.6,
+  "ivot": 28341.0
  },
  {
   "t": "Thalapathi",
@@ -518,7 +565,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0101649",
+  "irt": 8.5,
+  "ivot": 16308.0
  },
  {
   "t": "Iruvar",
@@ -543,7 +593,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0119385",
+  "irt": 8.4,
+  "ivot": 9095.0
  },
  {
   "t": "Mayabazar",
@@ -569,7 +622,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0249795",
+  "irt": 9.0,
+  "ivot": 7083.0
  },
  {
   "t": "Shankarabharanam",
@@ -618,7 +674,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt7391996",
+  "irt": 8.8,
+  "ivot": 11189.0
  },
  {
   "t": "Baahubali: The Beginning",
@@ -643,7 +702,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt2631186",
+  "irt": 8.0,
+  "ivot": 157383.0
  },
  {
   "t": "Chemmeen",
@@ -669,7 +731,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0059028",
+  "irt": 7.8,
+  "ivot": 588.0
  },
  {
   "t": "Kireedam",
@@ -694,7 +759,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0237376",
+  "irt": 8.9,
+  "ivot": 9997.0
  },
  {
   "t": "Manichitrathazhu",
@@ -719,7 +787,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0214915",
+  "irt": 8.7,
+  "ivot": 14752.0
  },
  {
   "t": "Kumbalangi Nights",
@@ -744,7 +815,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt8413338",
+  "irt": 8.5,
+  "ivot": 22417.0
  },
  {
   "t": "Marhi Da Deeva",
@@ -769,7 +843,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 2"
+  "note": "Seven Canons Compendium · section 2",
+  "id": "tt0308158",
+  "irt": 7.9,
+  "ivot": 101.0
  },
  {
   "t": "Anhe Ghore Da Daan",
@@ -846,7 +923,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt24485052",
+  "irt": 8.0,
+  "ivot": 31469.0
  },
  {
   "t": "Rangbaaz",
@@ -873,7 +953,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt9420618",
+  "irt": 7.7,
+  "ivot": 6458.0
  },
  {
   "t": "Sunflower",
@@ -901,7 +984,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt13304410",
+  "irt": 7.4,
+  "ivot": 25448.0
  },
  {
   "t": "Kudi Yedamaithe",
@@ -928,7 +1014,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt14932842",
+  "irt": 8.1,
+  "ivot": 1452.0
  },
  {
   "t": "Locked",
@@ -954,7 +1043,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt26671996",
+  "irt": 5.7,
+  "ivot": 27710.0
  },
  {
   "t": "11th Hour",
@@ -981,7 +1073,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt0492931",
+  "irt": 7.2,
+  "ivot": 6084.0
  },
  {
   "t": "Jailer",
@@ -1008,7 +1103,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt11663228",
+  "irt": 7.2,
+  "ivot": 47841.0
  },
  {
   "t": "Raayan",
@@ -1036,7 +1134,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt26233598",
+  "irt": 6.5,
+  "ivot": 14159.0
  },
  {
   "t": "Byomkesh",
@@ -1062,7 +1163,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt7605494",
+  "irt": 8.2,
+  "ivot": 1544.0
  },
  {
   "t": "Taqdeer",
@@ -1088,7 +1192,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt13582638",
+  "irt": 8.6,
+  "ivot": 8460.0
  },
  {
   "t": "Karagar",
@@ -1114,7 +1221,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt21481210",
+  "irt": 8.2,
+  "ivot": 4745.0
  },
  {
   "t": "Aashram",
@@ -1141,7 +1251,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt12805346",
+  "irt": 6.6,
+  "ivot": 59207.0
  },
  {
   "t": "Bhaukaal",
@@ -1168,7 +1281,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt9359338",
+  "irt": 7.7,
+  "ivot": 15927.0
  },
  {
   "t": "Matsya Kaand",
@@ -1195,7 +1311,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt15516446",
+  "irt": 8.5,
+  "ivot": 7083.0
  },
  {
   "t": "Severance",
@@ -1222,7 +1341,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt11280740",
+  "irt": 8.6,
+  "ivot": 412755.0
  },
  {
   "t": "Silo",
@@ -1249,7 +1371,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt14688458",
+  "irt": 8.1,
+  "ivot": 251174.0
  },
  {
   "t": "Slow Horses",
@@ -1276,7 +1401,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 3"
+  "note": "Seven Canons Compendium · section 3",
+  "id": "tt5875444",
+  "irt": 8.4,
+  "ivot": 165160.0
  },
  {
   "t": "Pyaasa",
@@ -1301,7 +1429,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0335592",
+  "irt": 3.1,
+  "ivot": 121.0
  },
  {
   "t": "Mother India",
@@ -1326,7 +1457,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0050188",
+  "irt": 7.8,
+  "ivot": 10526.0
  },
  {
   "t": "Mughal-e-Azam",
@@ -1352,7 +1486,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0054098",
+  "irt": 8.1,
+  "ivot": 9788.0
  },
  {
   "t": "Guide",
@@ -1377,7 +1514,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0059246",
+  "irt": 8.4,
+  "ivot": 13174.0
  },
  {
   "t": "Waqt",
@@ -1402,7 +1542,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0059893",
+  "irt": 7.6,
+  "ivot": 1722.0
  },
  {
   "t": "Teesri Manzil",
@@ -1427,7 +1570,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0061073",
+  "irt": 7.5,
+  "ivot": 1417.0
  },
  {
   "t": "Ankur",
@@ -1452,7 +1598,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0071145",
+  "irt": 7.7,
+  "ivot": 1874.0
  },
  {
   "t": "Nishant",
@@ -1477,7 +1626,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0073458",
+  "irt": 7.6,
+  "ivot": 843.0
  },
  {
   "t": "Manthan",
@@ -1502,7 +1654,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0074858",
+  "irt": 7.6,
+  "ivot": 1033.0
  },
  {
   "t": "Aakrosh",
@@ -1527,7 +1682,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt1708453",
+  "irt": 7.0,
+  "ivot": 4618.0
  },
  {
   "t": "Ardh Satya",
@@ -1552,7 +1710,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0085178",
+  "irt": 8.1,
+  "ivot": 2491.0
  },
  {
   "t": "Jaane Bhi Do Yaaro",
@@ -1577,7 +1738,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0085743",
+  "irt": 8.3,
+  "ivot": 18140.0
  },
  {
   "t": "Maine Pyar Kiya",
@@ -1603,7 +1767,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0100095",
+  "irt": 7.3,
+  "ivot": 14168.0
  },
  {
   "t": "Aashiqui",
@@ -1628,7 +1795,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0149573",
+  "irt": 6.3,
+  "ivot": 2357.0
  },
  {
   "t": "Dilwale Dulhania Le Jayenge",
@@ -1653,7 +1823,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0112870",
+  "irt": 8.0,
+  "ivot": 87111.0
  },
  {
   "t": "Dil To Pagal Hai",
@@ -1679,7 +1852,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0118983",
+  "irt": 7.0,
+  "ivot": 27375.0
  },
  {
   "t": "Kuch Kuch Hota Hai",
@@ -1704,7 +1880,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 4"
+  "note": "Seven Canons Compendium · section 4",
+  "id": "tt0172684",
+  "irt": 7.5,
+  "ivot": 63656.0
  },
  {
   "t": "Mahal",
@@ -1729,7 +1908,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt0041619",
+  "irt": 6.8,
+  "ivot": 574.0
  },
  {
   "t": "Raat",
@@ -1754,7 +1936,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt0266875",
+  "irt": 7.0,
+  "ivot": 1604.0
  },
  {
   "t": "Tumbbad",
@@ -1780,7 +1965,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt8239946",
+  "irt": 8.2,
+  "ivot": 78067.0
  },
  {
   "t": "Stree",
@@ -1806,7 +1994,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt8108202",
+  "irt": 7.5,
+  "ivot": 48839.0
  },
  {
   "t": "Kanoon",
@@ -1831,7 +2022,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt0053985",
+  "irt": 7.9,
+  "ivot": 594.0
  },
  {
   "t": "Damini",
@@ -1856,7 +2050,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt0106655",
+  "irt": 7.8,
+  "ivot": 4543.0
  },
  {
   "t": "Shahid",
@@ -1881,7 +2078,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt2181831",
+  "irt": 8.2,
+  "ivot": 21844.0
  },
  {
   "t": "Pink",
@@ -1906,7 +2106,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt5571734",
+  "irt": 8.0,
+  "ivot": 52888.0
  },
  {
   "t": "Lagaan",
@@ -1956,7 +2159,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt0871510",
+  "irt": 8.1,
+  "ivot": 92998.0
  },
  {
   "t": "Dangal",
@@ -1981,7 +2187,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt5074352",
+  "irt": 8.3,
+  "ivot": 249410.0
  },
  {
   "t": "Paan Singh Tomar",
@@ -2007,7 +2216,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt1620933",
+  "irt": 8.2,
+  "ivot": 40641.0
  },
  {
   "t": "Bhaag Milkha Bhaag",
@@ -2032,7 +2244,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt2356180",
+  "irt": 8.2,
+  "ivot": 80292.0
  },
  {
   "t": "Sardar Udham",
@@ -2057,7 +2272,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt10280296",
+  "irt": 8.3,
+  "ivot": 51509.0
  },
  {
   "t": "Jewel Thief",
@@ -2082,7 +2300,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt0061842",
+  "irt": 7.9,
+  "ivot": 2293.0
  },
  {
   "t": "Aankhen",
@@ -2107,7 +2328,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt0306434",
+  "irt": 7.4,
+  "ivot": 15010.0
  },
  {
   "t": "Special 26",
@@ -2132,7 +2356,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 5"
+  "note": "Seven Canons Compendium · section 5",
+  "id": "tt2377938",
+  "irt": 8.0,
+  "ivot": 63155.0
  },
  {
   "t": "Naruto",
@@ -2159,7 +2386,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt0409591",
+  "irt": 8.4,
+  "ivot": 176198.0
  },
  {
   "t": "Jujutsu Kaisen",
@@ -2186,7 +2416,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt12343534",
+  "irt": 8.5,
+  "ivot": 224610.0
  },
  {
   "t": "Solo Leveling",
@@ -2212,7 +2445,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt21209876",
+  "irt": 8.5,
+  "ivot": 123339.0
  },
  {
   "t": "SPY x FAMILY",
@@ -2238,7 +2474,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt13706018",
+  "irt": 8.2,
+  "ivot": 65928.0
  },
  {
   "t": "Squid Game",
@@ -2267,7 +2506,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt10919420",
+  "irt": 7.9,
+  "ivot": 780801.0
  },
  {
   "t": "Crash Landing on You",
@@ -2296,7 +2538,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt10850932",
+  "irt": 8.7,
+  "ivot": 61742.0
  },
  {
   "t": "All of Us Are Dead",
@@ -2324,7 +2569,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt14169960",
+  "irt": 7.6,
+  "ivot": 95857.0
  },
  {
   "t": "Vincenzo",
@@ -2352,7 +2600,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt13433812",
+  "irt": 8.4,
+  "ivot": 42685.0
  },
  {
   "t": "The Promise (Yemin)",
@@ -2408,7 +2659,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt7134908",
+  "irt": 7.1,
+  "ivot": 103820.0
  },
  {
   "t": "Society of the Snow",
@@ -2436,7 +2690,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt16277242",
+  "irt": 7.8,
+  "ivot": 178997.0
  },
  {
   "t": "Through My Window",
@@ -2464,7 +2721,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt14463484",
+  "irt": 5.5,
+  "ivot": 26586.0
  },
  {
   "t": "Chainsaw Man",
@@ -2490,7 +2750,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 6"
+  "note": "Seven Canons Compendium · section 6",
+  "id": "tt13616990",
+  "irt": 8.3,
+  "ivot": 113666.0
  },
  {
   "t": "The Elephant Whisperers",
@@ -2518,7 +2781,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt23628262",
+  "irt": 7.5,
+  "ivot": 11050.0
  },
  {
   "t": "All That Breathes",
@@ -2545,7 +2811,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt16377862",
+  "irt": 7.0,
+  "ivot": 5531.0
  },
  {
   "t": "The Hunt for Veerappan",
@@ -2572,7 +2841,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt28306965",
+  "irt": 7.9,
+  "ivot": 3240.0
  },
  {
   "t": "The Romantics",
@@ -2600,7 +2872,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt1403988",
+  "irt": 5.0,
+  "ivot": 12907.0
  },
  {
   "t": "While We Watched",
@@ -2626,7 +2901,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt21818816",
+  "irt": 8.5,
+  "ivot": 2902.0
  },
  {
   "t": "An Insignificant Man",
@@ -2653,7 +2931,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt3917908",
+  "irt": 8.5,
+  "ivot": 2354.0
  },
  {
   "t": "Katiyabaaz (Powerless)",
@@ -2706,7 +2987,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt13630174",
+  "irt": 7.3,
+  "ivot": 1877.0
  },
  {
   "t": "To Kill a Tiger",
@@ -2733,7 +3017,10 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt21688772",
+  "irt": 7.7,
+  "ivot": 3244.0
  },
  {
   "t": "Wild Karnataka",
@@ -2758,6 +3045,9 @@
   ],
   "src": "curated",
   "status": "released",
-  "note": "Seven Canons Compendium · section 7"
+  "note": "Seven Canons Compendium · section 7",
+  "id": "tt9866708",
+  "irt": 8.6,
+  "ivot": 767.0
  }
 ]

@@ -21,7 +21,10 @@
   "poster": "",
   "ov": "The God of Mischief slips through time anomalies working with the Time Variance Authority.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9140554",
+  "irt": 8.2,
+  "ivot": 492794.0
  },
  {
   "t": "WandaVision",
@@ -46,7 +49,10 @@
   "poster": "",
   "ov": "Wanda Maximoff traps a suburban town in classic sitcom decades to process unbearable grief.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9140560",
+  "irt": 7.9,
+  "ivot": 428229.0
  },
  {
   "t": "The Falcon and the Winter Soldier",
@@ -67,7 +73,10 @@
   "poster": "",
   "ov": "Sam Wilson and Bucky Barnes face the Flag Smashers to honor Captain America’s shield.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9208876",
+  "irt": 7.1,
+  "ivot": 288236.0
  },
  {
   "t": "Hawkeye",
@@ -88,7 +97,10 @@
   "poster": "",
   "ov": "Clint Barton mentors Kate Bishop in New York during Christmas while confronting his Ronin past.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10160804",
+  "irt": 7.4,
+  "ivot": 250575.0
  },
  {
   "t": "Moon Knight",
@@ -109,7 +121,10 @@
   "poster": "",
   "ov": "Gift shop clerk Steven Grant discovers his dissociative identity disorder and ancient Egyptian avatar Marc Spector.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10234724",
+  "irt": 7.3,
+  "ivot": 321860.0
  },
  {
   "t": "Ms. Marvel",
@@ -133,7 +148,10 @@
   "poster": "",
   "ov": "Jersey City teen Kamala Khan gains cosmic hard-light powers connected to her South Asian ancestry.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10857164",
+  "irt": 6.2,
+  "ivot": 134726.0
  },
  {
   "t": "She",
@@ -155,7 +173,10 @@
   "poster": "",
   "ov": "Hulk: Attorney at Law – Jennifer Walters balances superhuman legal defense cases with her 6-foot-7 green persona.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11905720",
+  "irt": 6.4,
+  "ivot": 7196.0
  },
  {
   "t": "Secret Invasion",
@@ -176,7 +197,10 @@
   "poster": "",
   "ov": "Nick Fury uncovers a faction of shape-shifting Skrulls infiltrating Earth's highest defense offices.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt13157618",
+  "irt": 5.8,
+  "ivot": 93639.0
  },
  {
   "t": "Echo",
@@ -195,7 +219,10 @@
   "poster": "",
   "ov": "Maya Lopez returns to her Oklahoma roots while pursued by Wilson Fisk's criminal syndicate.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt13966962",
+  "irt": 5.9,
+  "ivot": 51416.0
  },
  {
   "t": "Agatha All Along",
@@ -217,7 +244,10 @@
   "poster": "",
   "ov": "Agatha Harkness navigates the perilous Witches' Road to reclaim her stripped magic.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt15571732",
+  "irt": 7.2,
+  "ivot": 94224.0
  },
  {
   "t": "Daredevil",
@@ -238,7 +268,10 @@
   "poster": "",
   "ov": "Blind lawyer Matt Murdock fights Wilson Fisk and the Hand in Hell's Kitchen as a masked vigilante.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3322312",
+  "irt": 8.6,
+  "ivot": 544567.0
  },
  {
   "t": "Jessica Jones",
@@ -257,7 +290,10 @@
   "poster": "",
   "ov": "A cynical private investigator with superhuman strength confronts her mind-controlling tormentor, Kilgrave.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2357547",
+  "irt": 7.8,
+  "ivot": 242847.0
  },
  {
   "t": "Luke Cage",
@@ -279,7 +315,10 @@
   "poster": "",
   "ov": "A bulletproof ex-con defends Harlem against corrupt politicians and street crime lords.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3322314",
+  "irt": 7.2,
+  "ivot": 150912.0
  },
  {
   "t": "Iron Fist",
@@ -298,7 +337,10 @@
   "poster": "",
   "ov": "Danny Rand returns to New York after 15 years armed with the glowing mystical power of the Iron Fist.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3322310",
+  "irt": 6.4,
+  "ivot": 151810.0
  },
  {
   "t": "The Defenders",
@@ -317,7 +359,10 @@
   "poster": "",
   "ov": "Daredevil, Jessica Jones, Luke Cage, and Iron Fist unite to save New York from destruction.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4230076",
+  "irt": 7.2,
+  "ivot": 130218.0
  },
  {
   "t": "The Punisher",
@@ -341,7 +386,10 @@
   "poster": "",
   "ov": "Frank Castle wages an unrelenting military-grade crusade to avenge the murder of his family.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5675620",
+  "irt": 8.4,
+  "ivot": 316513.0
  },
  {
   "t": "Daredevil: Born Again",
@@ -363,7 +411,10 @@
   "poster": "",
   "ov": "Matt Murdock and Mayor Wilson Fisk clash anew over the legal and criminal soul of New York.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt18923754",
+  "irt": 8.1,
+  "ivot": 118367.0
  },
  {
   "t": "Agents of S.H.I.E.L.D.",
@@ -382,7 +433,10 @@
   "poster": "",
   "ov": "Phil Coulson leads a mobile tactical team investigating classified global superhuman phenomena.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2364582",
+  "irt": 7.5,
+  "ivot": 237691.0
  },
  {
   "t": "Agent Carter",
@@ -401,7 +455,10 @@
   "poster": "",
   "ov": "Peggy Carter balances administrative post-war SSR tasks with covert operations for Howard Stark.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3475734",
+  "irt": 7.8,
+  "ivot": 97029.0
  },
  {
   "t": "Runaways",
@@ -420,7 +477,10 @@
   "poster": "",
   "ov": "Six teenagers discover their wealthy parents belong to a villainous occult syndicate called the Pride.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1017451",
+  "irt": 6.5,
+  "ivot": 52999.0
  },
  {
   "t": "Cloak & Dagger",
@@ -439,7 +499,10 @@
   "poster": "",
   "ov": "Two teens from different walks of life discover their newly awakened complementary powers.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5614844",
+  "irt": 6.6,
+  "ivot": 24954.0
  },
  {
   "t": "Inhumans",
@@ -461,7 +524,10 @@
   "poster": "",
   "ov": "Royal superhuman family members are exiled from their lunar city to Hawaii following a military coup.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4154858",
+  "irt": 4.9,
+  "ivot": 31795.0
  },
  {
   "t": "Legion",
@@ -480,7 +546,10 @@
   "poster": "",
   "ov": "David Haller uncovers that his diagnosed schizophrenia is actually world-altering psychic power.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1038686",
+  "irt": 5.3,
+  "ivot": 121553.0
  },
  {
   "t": "The Gifted",
@@ -502,7 +571,10 @@
   "poster": "",
   "ov": "An ordinary family goes on the run after discovering their children possess active mutant genes.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4481414",
+  "irt": 7.6,
+  "ivot": 162755.0
  },
  {
   "t": "The Boys",
@@ -523,7 +595,10 @@
   "poster": "",
   "ov": "Corrupt corporate superheroes owned by Vought are countered by a raw, unhinged civilian black-ops squad.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1190634",
+  "irt": 8.5,
+  "ivot": 1032434.0
  },
  {
   "t": "Gen V",
@@ -544,7 +619,10 @@
   "poster": "",
   "ov": "College-age supes at Godolkin University uncover sinister laboratory experiments inside The Woods.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt13159924",
+  "irt": 7.6,
+  "ivot": 157910.0
  },
  {
   "t": "Invincible",
@@ -568,7 +646,10 @@
   "poster": "",
   "ov": "Mark Grayson discovers his superhero father Omni-Man hides a brutal alien conquest secret.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6741278",
+  "irt": 8.7,
+  "ivot": 355298.0
  },
  {
   "t": "Peacemaker",
@@ -592,7 +673,10 @@
   "poster": "",
   "ov": "Christopher Smith joins Project Butterfly to eliminate parasitic alien invaders threatening the world.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt13146488",
+  "irt": 8.2,
+  "ivot": 201353.0
  },
  {
   "t": "Watchmen",
@@ -614,7 +698,10 @@
   "poster": "",
   "ov": "Masked police officers and white supremacists clash in Tulsa under the legacy of Dr. Manhattan.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0409459",
+  "irt": 7.6,
+  "ivot": 617818.0
  },
  {
   "t": "The Sandman",
@@ -635,7 +722,10 @@
   "poster": "",
   "ov": "Morpheus, the King of Dreams, escapes a century of imprisonment to restore his decaying realm.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1751634",
+  "irt": 7.6,
+  "ivot": 212930.0
  },
  {
   "t": "Dead Boy Detectives",
@@ -657,7 +747,10 @@
   "poster": "",
   "ov": "Two teenage ghosts and a psychic medium solve supernatural murders on Earth.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt15358446",
+  "irt": 7.5,
+  "ivot": 24271.0
  },
  {
   "t": "Sweet Tooth",
@@ -676,7 +769,10 @@
   "poster": "",
   "ov": "A half-human, half-deer hybrid boy journeys across a post-pandemic ruined world to find his mother.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt12809988",
+  "irt": 7.7,
+  "ivot": 79976.0
  },
  {
   "t": "The Umbrella Academy",
@@ -697,7 +793,10 @@
   "poster": "",
   "ov": "Estranged adopted sibling superheroes reunite to solve their father's death and stop the apocalypse.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1312171",
+  "irt": 7.8,
+  "ivot": 319110.0
  },
  {
   "t": "Lucifer",
@@ -719,7 +818,10 @@
   "poster": "",
   "ov": "The bored Lord of Hell abandons his throne to run a Los Angeles piano bar and assist LAPD homicides.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4052886",
+  "irt": 8.0,
+  "ivot": 399312.0
  },
  {
   "t": "Gotham",
@@ -741,7 +843,10 @@
   "poster": "",
   "ov": "Detective Jim Gordon navigates a corrupt city as young Bruce Wayne witnesses his parents' murder.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3749900",
+  "irt": 7.8,
+  "ivot": 253815.0
  },
  {
   "t": "Arrow",
@@ -760,7 +865,10 @@
   "poster": "",
   "ov": "Oliver Queen returns from five years stranded on a hostile island to clean up Starling City as a hooded archer.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2193021",
+  "irt": 7.5,
+  "ivot": 463931.0
  },
  {
   "t": "The Flash",
@@ -779,7 +887,10 @@
   "poster": "",
   "ov": "Forensic scientist Barry Allen gains superhuman speed, battling metahumans across Central City.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3107288",
+  "irt": 7.4,
+  "ivot": 389569.0
  },
  {
   "t": "Supergirl",
@@ -798,7 +909,10 @@
   "poster": "",
   "ov": "Superman's cousin Kara Zor-El embraces her Kryptonian abilities to protect National City.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4016454",
+  "irt": 6.2,
+  "ivot": 136425.0
  },
  {
   "t": "DC's Legends of Tomorrow",
@@ -839,7 +953,10 @@
   "poster": "",
   "ov": "A retired superhero high school principal puts on his electrical suit again to save his neighborhood.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt6045840",
+  "irt": 6.1,
+  "ivot": 29458.0
  },
  {
   "t": "Batwoman",
@@ -858,7 +975,10 @@
   "poster": "",
   "ov": "Armed with military training and bat-gear, Ryan Wilder defends Gotham's vulnerable streets.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8712204",
+  "irt": 3.6,
+  "ivot": 48840.0
  },
  {
   "t": "Superman & Lois",
@@ -877,7 +997,10 @@
   "poster": "",
   "ov": "Clark Kent and Lois Lane navigate modern parenting stress and small-town living in Smallville.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11192306",
+  "irt": 7.8,
+  "ivot": 51632.0
  },
  {
   "t": "Titans",
@@ -896,7 +1019,10 @@
   "poster": "",
   "ov": "Dick Grayson steps out of Batman's shadow to lead a team of traumatized young meta heroes.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1043813",
+  "irt": 7.4,
+  "ivot": 121318.0
  },
  {
   "t": "Doom Patrol",
@@ -915,7 +1041,10 @@
   "poster": "",
   "ov": "Disfigured social outcasts with bizarre superpowers investigate bizarre cosmic anomalies.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8416494",
+  "irt": 7.7,
+  "ivot": 64333.0
  },
  {
   "t": "Swamp Thing",
@@ -934,7 +1063,10 @@
   "poster": "",
   "ov": "CDC doctor Abby Arcane investigates a deadly swamp-borne virus in Louisiana harboring an avatar of nature.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8362852",
+  "irt": 7.3,
+  "ivot": 29960.0
  },
  {
   "t": "Pennyworth",
@@ -953,7 +1085,10 @@
   "poster": "",
   "ov": "Alfred Pennyworth establishes a private security firm in 1960s London before serving Bruce Wayne.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8425532",
+  "irt": 7.8,
+  "ivot": 20300.0
  },
  {
   "t": "Krypton",
@@ -972,7 +1107,10 @@
   "poster": "",
   "ov": "Superman’s grandfather Seg-El fights to restore honor to the House of El and save his world.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4276624",
+  "irt": 6.8,
+  "ivot": 18822.0
  },
  {
   "t": "Constantine",
@@ -991,7 +1129,10 @@
   "poster": "",
   "ov": "Demon hunter John Constantine balances his damned soul while protecting humanity from rising darkness.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0360486",
+  "irt": 7.0,
+  "ivot": 414932.0
  },
  {
   "t": "Preacher",
@@ -1010,7 +1151,10 @@
   "poster": "",
   "ov": "A West Texas preacher possessed by an otherworldly entity travels across America to literally find God.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5016504",
+  "irt": 7.9,
+  "ivot": 87808.0
  },
  {
   "t": "The Boys Presents: Diabolical",
@@ -1048,7 +1192,10 @@
   "poster": "",
   "ov": "First-generation aging superheroes struggle to pass the moral torch to their disillusioned children.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5774002",
+  "irt": 6.7,
+  "ivot": 43158.0
  },
  {
   "t": "Locke & Key",
@@ -1070,7 +1217,10 @@
   "poster": "",
   "ov": "Three siblings unlock reality-bending magical keys inside their ancestral family manor.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3007572",
+  "irt": 7.3,
+  "ivot": 109934.0
  },
  {
   "t": "Raising Dion",
@@ -1089,7 +1239,10 @@
   "poster": "",
   "ov": "A single mother protects her young son as he develops unpredictable superhero telekinesis.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7826108",
+  "irt": 7.1,
+  "ivot": 18331.0
  },
  {
   "t": "Warrior Nun",
@@ -1108,7 +1261,10 @@
   "poster": "",
   "ov": "An orphaned quadriplegic girl wakes up in a morgue with a divine angel's halo embedded in her back.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9059350",
+  "irt": 7.0,
+  "ivot": 59918.0
  },
  {
   "t": "I Am Not Okay with This",
@@ -1127,7 +1283,10 @@
   "poster": "",
   "ov": "A teenage girl navigates high-school anxieties alongside sudden, volatile telekinetic outbursts.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9446688",
+  "irt": 7.5,
+  "ivot": 84408.0
  },
  {
   "t": "Extraordinary",
@@ -1146,7 +1305,10 @@
   "poster": "",
   "ov": "In a world where everyone gets a superpower at 18, a 25-year-old struggles with having none.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt14531842",
+  "irt": 7.7,
+  "ivot": 21254.0
  },
  {
   "t": "Powers",
@@ -1165,7 +1327,10 @@
   "poster": "",
   "ov": "Homicide detectives investigate crimes involving humans with superhuman abilities called \"Powers\".",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1851040",
+  "irt": 6.6,
+  "ivot": 6986.0
  },
  {
   "t": "Heroes",
@@ -1184,7 +1349,10 @@
   "poster": "",
   "ov": "Ordinary people across the globe discover they have abilities and unite to save a cheerleader and the world.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0813715",
+  "irt": 7.5,
+  "ivot": 267274.0
  },
  {
   "t": "Heroes Reborn",
@@ -1203,7 +1371,10 @@
   "poster": "",
   "ov": "A new generation of extraordinary beings goes into hiding as government agencies hunt them down.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3556944",
+  "irt": 6.6,
+  "ivot": 29979.0
  },
  {
   "t": "Marvel's Hit",
@@ -1248,7 +1419,10 @@
   "poster": "",
   "ov": "Noble families feud for the Iron Throne of Westeros while an ancient icy menace marches south.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0944947",
+  "irt": 9.2,
+  "ivot": 2676466.0
  },
  {
   "t": "House of the Dragon",
@@ -1271,7 +1445,10 @@
   "poster": "",
   "ov": "The Targaryen civil war, known as the Dance of the Dragons, fractures royal dynasty rule.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11198330",
+  "irt": 8.2,
+  "ivot": 575717.0
  },
  {
   "t": "The Lord of the Rings: The Rings of Power",
@@ -1294,7 +1471,10 @@
   "poster": "",
   "ov": "The forging of the Rings of Power during Middle-earth’s Second Age against rising Sauron.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7631058",
+  "irt": 6.8,
+  "ivot": 446162.0
  },
  {
   "t": "The Witcher",
@@ -1317,7 +1497,10 @@
   "poster": "",
   "ov": "Geralt of Rivia, a mutated monster hunter, navigates a continent where humans often prove more beastly.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5180504",
+  "irt": 7.8,
+  "ivot": 626768.0
  },
  {
   "t": "The Witcher: Blood Origin",
@@ -1338,7 +1521,10 @@
   "poster": "",
   "ov": "The creation of the first prototype Witcher and the celestial Conjunction of the Spheres.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt12785720",
+  "irt": 5.0,
+  "ivot": 49068.0
  },
  {
   "t": "The Wheel of Time",
@@ -1361,7 +1547,10 @@
   "poster": "",
   "ov": "Moiraine guides five young villagers, one of whom is the reincarnated Dragon Reborn.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7462410",
+  "irt": 7.2,
+  "ivot": 166349.0
  },
  {
   "t": "Shadow and Bone",
@@ -1382,7 +1571,10 @@
   "poster": "",
   "ov": "Orphan mapmaker Alina Starkov unleashes radiant sun-summoning power capable of cleaving the Shadow Fold.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2403776",
+  "irt": 7.5,
+  "ivot": 126492.0
  },
  {
   "t": "Carnival Row",
@@ -1405,7 +1597,10 @@
   "poster": "",
   "ov": "A human detective and a refugee fae rekindle a dangerous affair amid Victorian fantasy serial killings.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0489974",
+  "irt": 7.6,
+  "ivot": 89802.0
  },
  {
   "t": "His Dark Materials",
@@ -1426,7 +1621,10 @@
   "poster": "",
   "ov": "Lyra's search for a kidnapped friend uncovers cosmic Dust and parallel multiverse worlds.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5607976",
+  "irt": 7.7,
+  "ivot": 96174.0
  },
  {
   "t": "Percy Jackson and the Olympians",
@@ -1447,7 +1645,10 @@
   "poster": "",
   "ov": "A modern demigod son of Poseidon is accused of stealing Zeus’s master lightning bolt.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt12324366",
+  "irt": 7.0,
+  "ivot": 54928.0
  },
  {
   "t": "One Piece (Live Action)",
@@ -1510,7 +1711,10 @@
   "poster": "",
   "ov": "A novice knight is entrusted with carrying a secret letter to the monarch to prevent catastrophe.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8741648",
+  "irt": 6.0,
+  "ivot": 9109.0
  },
  {
   "t": "Cursed",
@@ -1531,7 +1735,10 @@
   "poster": "",
   "ov": "Nimue embraces her destiny to wield the ancestral sword Excalibur before Arthurian legend emerges.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0257516",
+  "irt": 5.1,
+  "ivot": 37906.0
  },
  {
   "t": "The Shannara Chronicles",
@@ -1552,7 +1759,10 @@
   "poster": "",
   "ov": "Elves and humans embark on a perilous quest to protect the ancient Ellcrys tree from demons.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1051220",
+  "irt": 7.1,
+  "ivot": 66684.0
  },
  {
   "t": "Fate: The Winx Saga",
@@ -1573,7 +1783,10 @@
   "poster": "",
   "ov": "Fairies at Alfea boarding school master elemental magic while facing ancient Burned Ones.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8179402",
+  "irt": 6.8,
+  "ivot": 65632.0
  },
  {
   "t": "Willow",
@@ -1594,7 +1807,10 @@
   "poster": "",
   "ov": "An aspiring sorcerer leads an unlikely group of young heroes on a rescue mission beyond the Shattered Dunes.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0096446",
+  "irt": 7.2,
+  "ivot": 139797.0
  },
  {
   "t": "American Gods",
@@ -1615,7 +1831,10 @@
   "poster": "",
   "ov": "Shadow Moon is released from prison and hired as bodyguard to Mr. Wednesday, an incarnation of Odin.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1898069",
+  "irt": 7.6,
+  "ivot": 99348.0
  },
  {
   "t": "Good Omens",
@@ -1636,7 +1855,10 @@
   "poster": "",
   "ov": "An angel and a demon who enjoy their comfortable Earthly lifestyle team up to stop Armageddon.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1869454",
+  "irt": 8.0,
+  "ivot": 128014.0
  },
  {
   "t": "Britannia",
@@ -1657,7 +1879,10 @@
   "poster": "",
   "ov": "Roman legions invade the mystical shores of Britain ruled by wild Celtic warrior queens and Druids.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5932548",
+  "irt": 6.9,
+  "ivot": 19492.0
  },
  {
   "t": "The Outpost",
@@ -1680,7 +1905,10 @@
   "poster": "",
   "ov": "Talon, the sole survivor of the Blackblood race, tracks her family’s killers to a lawless frontier fortress.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3833480",
+  "irt": 6.9,
+  "ivot": 48987.0
  },
  {
   "t": "Merlin",
@@ -1701,7 +1929,10 @@
   "poster": "",
   "ov": "Young wizard Merlin conceals his magical arts while serving the stubborn Prince Arthur in Camelot.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1199099",
+  "irt": 7.9,
+  "ivot": 94963.0
  },
  {
   "t": "Atlantis",
@@ -1722,7 +1953,10 @@
   "poster": "",
   "ov": "A modern man washed ashore in ancient mythological Atlantis encounters Hercules and Pythagoras.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2705602",
+  "irt": 6.5,
+  "ivot": 13014.0
  },
  {
   "t": "Robin Hood (BBC)",
@@ -1764,7 +1998,10 @@
   "poster": "",
   "ov": "Woodsman Richard Cypher is guided by a wizard to wield the Sword of Truth against a tyrant.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0844653",
+  "irt": 7.6,
+  "ivot": 37984.0
  },
  {
   "t": "Once Upon a Time",
@@ -1785,7 +2022,10 @@
   "poster": "",
   "ov": "Fairy-tale characters are trapped in our real-world Maine town with their memories wiped by a curse.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1843230",
+  "irt": 7.6,
+  "ivot": 249876.0
  },
  {
   "t": "The Magicians",
@@ -1806,7 +2046,10 @@
   "poster": "",
   "ov": "Students admitted to Brakebills University discover the secret magical kingdom from childhood books is real and deadly.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4254242",
+  "irt": 7.6,
+  "ivot": 60973.0
  },
  {
   "t": "A Discovery of Witches",
@@ -1829,7 +2072,10 @@
   "poster": "",
   "ov": "A historian witch discovers an enchanted alchemical manuscript, partnering with a geneticist vampire.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2177461",
+  "irt": 7.7,
+  "ivot": 76218.0
  },
  {
   "t": "The Nevers",
@@ -1852,7 +2098,10 @@
   "poster": "",
   "ov": "Victorian women suddenly gifted with abnormal supernatural abilities champion London's outcasts.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8697870",
+  "irt": 7.4,
+  "ivot": 30093.0
  },
  {
   "t": "Emerald City",
@@ -1875,7 +2124,10 @@
   "poster": "",
   "ov": "A modern police officer is swept by a tornado into a dark, technologically divided land of Oz.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3579018",
+  "irt": 7.1,
+  "ivot": 14675.0
  },
  {
   "t": "Beowulf: Return to the Shieldlands",
@@ -1896,7 +2148,10 @@
   "poster": "",
   "ov": "The legendary mercenary warrior defends the Great Hall of Herot from Grendel creatures.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4520906",
+  "irt": 5.8,
+  "ivot": 3906.0
  },
  {
   "t": "Camelot",
@@ -1919,7 +2174,10 @@
   "poster": "",
   "ov": "King Arthur ascends to the throne amid political manipulation by the sorceress Morgan le Fay.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1672189",
+  "irt": 6.5,
+  "ivot": 25860.0
  },
  {
   "t": "Troy: Fall of a City",
@@ -1940,7 +2198,10 @@
   "poster": "",
   "ov": "Paris and Helen’s forbidden love triggers the ten-year Greek military siege of Troy.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5103758",
+  "irt": 4.2,
+  "ivot": 16854.0
  },
  {
   "t": "Hercules: The Legendary Journeys",
@@ -1961,7 +2222,10 @@
   "poster": "",
   "ov": "The mythical Greek demigod travels ancient landscapes defending mortals from monsters.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0111999",
+  "irt": 6.5,
+  "ivot": 34034.0
  },
  {
   "t": "Xena: Warrior Princess",
@@ -1982,7 +2246,10 @@
   "poster": "",
   "ov": "A reformed warrior woman and her companion Gabrielle seek redemption across mythical lands.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0112230",
+  "irt": 6.8,
+  "ivot": 52752.0
  },
  {
   "t": "Spartacus: Blood and Sand",
@@ -2024,7 +2291,10 @@
   "poster": "",
   "ov": "The rise of the House of Batiatus and arena champion Gannicus before Spartacus's arrival.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt39020004",
+  "irt": 8.4,
+  "ivot": 4112.0
  },
  {
   "t": "Spartacus: Vengeance",
@@ -2087,7 +2357,10 @@
   "poster": "",
   "ov": "Soldiers Lucius Vorenus and Titus Pullo witness the death of the Roman Republic and Caesar's rise.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0384766",
+  "irt": 8.7,
+  "ivot": 208043.0
  },
  {
   "t": "Domina",
@@ -2110,7 +2383,10 @@
   "poster": "",
   "ov": "Livia Drusilla navigates political assassinations and blood feuds to become Rome’s most influential empress.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11694186",
+  "irt": 7.3,
+  "ivot": 8277.0
  },
  {
   "t": "Knightfall",
@@ -2131,7 +2407,10 @@
   "poster": "",
   "ov": "The Knights Templar search for the lost Holy Grail as King Philip IV plots their downfall.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4555364",
+  "irt": 6.8,
+  "ivot": 23552.0
  },
  {
   "t": "The Last Kingdom",
@@ -2152,7 +2431,10 @@
   "poster": "",
   "ov": "Saxon-born Uhtred of Bebbanburg, raised by Danish Vikings, fights to reclaim his ancestral birthright.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4179452",
+  "irt": 8.5,
+  "ivot": 193911.0
  },
  {
   "t": "The Last Kingdom: Seven Kings Must Die",
@@ -2173,7 +2455,10 @@
   "poster": "",
   "ov": "Uhtred fights to unite England following the death of King Edward.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt15767808",
+  "irt": 6.9,
+  "ivot": 45155.0
  },
  {
   "t": "Vikings",
@@ -2196,7 +2481,10 @@
   "poster": "",
   "ov": "Ragnar Lothbrok rises from simple farmer to legendary Norse king raiding England and France.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2306299",
+  "irt": 8.5,
+  "ivot": 652275.0
  },
  {
   "t": "Vikings: Valhalla",
@@ -2217,7 +2505,10 @@
   "poster": "",
   "ov": "Leif Erikson, Freydís Eiríksdóttir, and Harald Hardrada forge legendary paths as the Viking Age wanes.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11311302",
+  "irt": 7.4,
+  "ivot": 72884.0
  },
  {
   "t": "Norsemen",
@@ -2243,7 +2534,8 @@
   "poster": "",
   "ov": "Deadpan dark-comedy everyday life and political schemes of an 8th-century Viking village.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt10333302"
  },
  {
   "t": "Frontier",
@@ -2264,7 +2556,10 @@
   "poster": "",
   "ov": "Declan Harp campaigns against the Hudson's Bay Company's corrupt fur trade monopoly in 1700s Canada.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4686698",
+  "irt": 7.1,
+  "ivot": 26874.0
  },
  {
   "t": "Black Sails",
@@ -2285,7 +2580,10 @@
   "poster": "",
   "ov": "Captain Flint and John Silver fight for the survival of New Providence Island during piracy's golden age.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2375692",
+  "irt": 8.2,
+  "ivot": 127677.0
  },
  {
   "t": "Crossbones",
@@ -2308,7 +2606,10 @@
   "poster": "",
   "ov": "Legendary pirate Blackbeard commands an outlaw haven on Santa Campana using high-seas espionage.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2400631",
+  "irt": 6.5,
+  "ivot": 7302.0
  },
  {
   "t": "Our Flag Means Death",
@@ -2329,7 +2630,10 @@
   "poster": "",
   "ov": "Aristocrat Stede Bonnet abandons high society to become an eccentric gentleman pirate alongside Blackbeard.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11000902",
+  "irt": 7.7,
+  "ivot": 48341.0
  },
  {
   "t": "Marco Polo",
@@ -2352,7 +2656,10 @@
   "poster": "",
   "ov": "The young Italian merchant navigates Kublai Khan's imperial court, martial arts, and Chinese conquests.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2189461",
+  "irt": 7.9,
+  "ivot": 85075.0
  },
  {
   "t": "Outlander",
@@ -2374,7 +2681,10 @@
   "poster": "",
   "ov": "A WWII combat nurse is mysteriously swept back in time to 1743 Scotland, meeting Highland warrior Jamie Fraser.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3006802",
+  "irt": 8.3,
+  "ivot": 205534.0
  },
  {
   "t": "Poldark",
@@ -2395,7 +2705,10 @@
   "poster": "",
   "ov": "Ross Poldark returns from the American War of Independence to rebuild his ruined Cornish tin-mining estate.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3636060",
+  "irt": 8.2,
+  "ivot": 41776.0
  },
  {
   "t": "Sanditon",
@@ -2416,7 +2729,10 @@
   "poster": "",
   "ov": "Charlotte Heywood moves to a developing seaside resort town in this adaptation of Jane Austen's final unfinished work.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8685324",
+  "irt": 7.6,
+  "ivot": 20786.0
  },
  {
   "t": "The Bastard Executioner",
@@ -2437,7 +2753,10 @@
   "poster": "",
   "ov": "A 14th-century knight vows to lay down his sword, but is forced to take up the bloody executioner's axe.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4218618",
+  "irt": 6.2,
+  "ivot": 9910.0
  },
  {
   "t": "Da Vinci's Demons",
@@ -2458,7 +2777,10 @@
   "poster": "",
   "ov": "Young Leonardo da Vinci uses innovative engineering and inventions amid Renaissance Vatican politics.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2094262",
+  "irt": 7.9,
+  "ivot": 81780.0
  },
  {
   "t": "The Borgias",
@@ -2479,7 +2801,10 @@
   "poster": "",
   "ov": "Rodrigo Borgia schemes and bribes his way into becoming Pope Alexander VI, building a dynastic empire.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1582457",
+  "irt": 7.9,
+  "ivot": 57063.0
  },
  {
   "t": "Medici: Masters of Florence",
@@ -2523,7 +2848,10 @@
   "poster": "",
   "ov": "Three ruthless women fight for the English throne during the turbulent Wars of the Roses.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2372220",
+  "irt": 7.7,
+  "ivot": 34677.0
  },
  {
   "t": "The White Princess",
@@ -2544,7 +2872,10 @@
   "poster": "",
   "ov": "The union of Elizabeth of York and King Henry VII aims to bridge fractured House divisions.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5705956",
+  "irt": 7.5,
+  "ivot": 18417.0
  },
  {
   "t": "The Spanish Princess",
@@ -2565,7 +2896,10 @@
   "poster": "",
   "ov": "Catherine of Aragon arrives in England determined to secure her royal destiny as queen.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8417308",
+  "irt": 7.0,
+  "ivot": 12831.0
  },
  {
   "t": "Kaos",
@@ -2586,7 +2920,10 @@
   "poster": "",
   "ov": "Zeus grows paranoid over a wrinkle on his forehead as humans realize the Greek gods are self-absorbed tyrants.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8550732",
+  "irt": 7.4,
+  "ivot": 49745.0
  },
  {
   "t": "Nautilus",
@@ -2607,7 +2944,10 @@
   "poster": "",
   "ov": "Jules Verne’s Captain Nemo escapes colonial imprisonment to build his legendary high-tech submarine.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt15286302",
+  "irt": 6.8,
+  "ivot": 6419.0
  },
  {
   "t": "Barbarians",
@@ -2628,7 +2968,10 @@
   "poster": "",
   "ov": "A Germanic officer torn between Roman legions and his tribal roots leads the Battle of the Teutoburg Forest.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9184986",
+  "irt": 7.2,
+  "ivot": 34035.0
  },
  {
   "t": "Stranger Things",
@@ -2651,7 +2994,10 @@
   "poster": "",
   "ov": "The disappearance of a young boy uncovers secret lab experiments and the dark Upside Down.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt4574334",
+  "irt": 8.6,
+  "ivot": 1748855.0
  },
  {
   "t": "Fallout",
@@ -2672,7 +3018,10 @@
   "poster": "",
   "ov": "A vault dweller leaves her underground nuclear bunker to traverse the bizarre, violent California wasteland.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt12637874",
+  "irt": 8.3,
+  "ivot": 406201.0
  },
  {
   "t": "Halo",
@@ -2693,7 +3042,10 @@
   "poster": "",
   "ov": "Master Chief John-117 battles the alien Covenant while discovering his humanity through an ancient artifact.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2934286",
+  "irt": 7.3,
+  "ivot": 111907.0
  },
  {
   "t": "Westworld",
@@ -2716,7 +3068,10 @@
   "poster": "",
   "ov": "Synthetic android theme park hosts awaken to sentience and revolt against their human creators.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0475784",
+  "irt": 8.4,
+  "ivot": 562451.0
  },
  {
   "t": "The Last of Us",
@@ -2741,7 +3096,10 @@
   "poster": "",
   "ov": "Smuggler Joel escorts immune teen Ellie across a ruined America infected by fungal cordyceps.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3581920",
+  "irt": 8.4,
+  "ivot": 754357.0
  },
  {
   "t": "Silo",
@@ -2762,7 +3120,10 @@
   "poster": "",
   "ov": "Thousands live inside a massive 144-floor subterranean silo bound by strict rules regarding the toxic outside world.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt14688458",
+  "irt": 8.1,
+  "ivot": 251174.0
  },
  {
   "t": "Foundation",
@@ -2783,7 +3144,10 @@
   "poster": "",
   "ov": "Mathematician Hari Seldon uses psychohistory to predict the fall of the Galactic Empire and preserve knowledge.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0804484",
+  "irt": 7.6,
+  "ivot": 129925.0
  },
  {
   "t": "3 Body Problem",
@@ -2804,7 +3168,10 @@
   "poster": "",
   "ov": "Scientists across continents confront an extraterrestrial threat triggered by a 1960s secret Chinese transmission.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt13016388",
+  "irt": 7.5,
+  "ivot": 186429.0
  },
  {
   "t": "Black Mirror",
@@ -2825,7 +3192,10 @@
   "poster": "",
   "ov": "Twilight Zone-style standalone anthologies examining the disturbing, unintended consequences of modern technologies.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2085059",
+  "irt": 8.7,
+  "ivot": 752449.0
  },
  {
   "t": "Altered Carbon",
@@ -2848,7 +3218,10 @@
   "poster": "",
   "ov": "Takeshi Kovacs is resleeved into a new body 250 years later to solve a wealthy immortal’s murder.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2261227",
+  "irt": 7.9,
+  "ivot": 204851.0
  },
  {
   "t": "See",
@@ -2869,7 +3242,10 @@
   "poster": "",
   "ov": "Centuries after a virus blinded humanity, twin infants born with the mythic gift of sight cause tribal warfare.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7949218",
+  "irt": 7.6,
+  "ivot": 113061.0
  },
  {
   "t": "Lost in Space",
@@ -2890,7 +3266,10 @@
   "poster": "",
   "ov": "The Robinson family's exploratory spacecraft crashes on an uncharted alien world alongside an alien robot.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5232792",
+  "irt": 7.3,
+  "ivot": 115028.0
  },
  {
   "t": "The Expanse",
@@ -2913,7 +3292,10 @@
   "poster": "",
   "ov": "A hardened detective and a rogue ship crew uncover an alien protomolecule threatening Solar System politics.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt3230854",
+  "irt": 8.5,
+  "ivot": 195815.0
  },
  {
   "t": "The Mandalorian",
@@ -2936,7 +3318,10 @@
   "poster": "",
   "ov": "A lone bounty hunter traverses the outer reaches of the galaxy protecting the Force-sensitive Child, Grogu.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8111088",
+  "irt": 8.6,
+  "ivot": 668461.0
  },
  {
   "t": "Star Wars: Andor",
@@ -3003,7 +3388,10 @@
   "poster": "",
   "ov": "Wan Kenobi – In hiding on Tatooine, Obi-Wan embarks on a dangerous rescue mission pursued by Darth Vader and Inquisitors.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5727500",
+  "irt": 8.1,
+  "ivot": 17.0
  },
  {
   "t": "The Book of Boba Fett",
@@ -3026,7 +3414,10 @@
   "poster": "",
   "ov": "The legendary armored bounty hunter takes over the Tatooine criminal empire once run by Jabba the Hutt.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt13668894",
+  "irt": 7.1,
+  "ivot": 214106.0
  },
  {
   "t": "Star Wars: Skeleton Crew",
@@ -3093,7 +3484,10 @@
   "poster": "",
   "ov": "Genetically mutated Clone Force 99 takes on mercenary missions across the newly formed Empire.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt12708542",
+  "irt": 7.8,
+  "ivot": 69120.0
  },
  {
   "t": "For All Mankind",
@@ -3114,7 +3508,10 @@
   "poster": "",
   "ov": "Alternate timeline history where the Soviet Union beats America to the Moon, fueling an endless space race.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt7772588",
+  "irt": 8.1,
+  "ivot": 94403.0
  },
  {
   "t": "Monarch: Legacy of Monsters",
@@ -3137,7 +3534,10 @@
   "poster": "",
   "ov": "Siblings follow their father’s footsteps to uncover their family’s connection to Godzilla and Monarch.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt17220216",
+  "irt": 7.0,
+  "ivot": 64148.0
  },
  {
   "t": "Invasion",
@@ -3158,7 +3558,10 @@
   "poster": "",
   "ov": "An extraterrestrial invasion unfolds in real time through the perspectives of ordinary people across five continents.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt0427392",
+  "irt": 5.9,
+  "ivot": 89865.0
  },
  {
   "t": "Dark Matter (2024)",
@@ -3202,7 +3605,10 @@
   "poster": "",
   "ov": "Employees undergo a medical procedure separating their work memories from their personal non-work memories.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt11280740",
+  "irt": 8.6,
+  "ivot": 412755.0
  },
  {
   "t": "The Peripheral",
@@ -3223,7 +3629,10 @@
   "poster": "",
   "ov": "A young woman testing a futuristic VR headset discovers she is piloting a physical avatar in 2099 London.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8291284",
+  "irt": 7.5,
+  "ivot": 93172.0
  },
  {
   "t": "Night Sky",
@@ -3244,7 +3653,10 @@
   "poster": "",
   "ov": "An elderly couple keeps a secret underground chamber that inexplicably opens onto a deserted alien planet.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt13361448",
+  "irt": 7.3,
+  "ivot": 27073.0
  },
  {
   "t": "Colony",
@@ -3267,7 +3679,10 @@
   "poster": "",
   "ov": "A family in occupied Los Angeles must choose between collaborating with alien transitional authorities or resisting.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1160996",
+  "irt": 5.3,
+  "ivot": 49803.0
  },
  {
   "t": "Falling Skies",
@@ -3288,7 +3703,10 @@
   "poster": "",
   "ov": "History professor Tom Mason leads civilian resistance fighters following a catastrophic extraterrestrial invasion.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt1462059",
+  "irt": 7.1,
+  "ivot": 99979.0
  },
  {
   "t": "The 100",
@@ -3309,7 +3727,10 @@
   "poster": "",
   "ov": "A century after a nuclear apocalypse, 100 juvenile delinquents are sent back to Earth to test its habitability.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2661044",
+  "irt": 7.5,
+  "ivot": 309082.0
  },
  {
   "t": "Revolution",
@@ -3330,7 +3751,10 @@
   "poster": "",
   "ov": "Fifteen years after an unexplained worldwide blackout disables all electricity, survivors battle regional militias.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2070791",
+  "irt": 6.6,
+  "ivot": 88553.0
  },
  {
   "t": "Manifest",
@@ -3351,7 +3775,10 @@
   "poster": "",
   "ov": "Passengers aboard Montego Air Flight 828 land safely, only to discover five and a half years have passed.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt8421350",
+  "irt": 7.0,
+  "ivot": 107490.0
  },
  {
   "t": "Travelers",
@@ -3372,7 +3799,10 @@
   "poster": "",
   "ov": "Operatives send their consciousness back to the 21st century into host bodies to prevent human extinction.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt5651844",
+  "irt": 8.0,
+  "ivot": 73568.0
  },
  {
   "t": "Sense8",
@@ -3393,7 +3823,10 @@
   "poster": "",
   "ov": "Eight strangers across different global cities discover they are mentally and emotionally linked telepathically.",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt2431438",
+  "irt": 8.2,
+  "ivot": 173236.0
  },
  {
   "t": "1899",
@@ -3414,6 +3847,9 @@
   "poster": "",
   "ov": "European migrants sailing to New York aboard the Kerberos encounter a deserted",
   "src": "curated",
-  "status": "released"
+  "status": "released",
+  "id": "tt9319668",
+  "irt": 7.3,
+  "ivot": 126084.0
  }
 ]
