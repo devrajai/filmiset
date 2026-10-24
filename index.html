@@ -286,7 +286,7 @@
   .qp{white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 13px;font-size:12.5px;cursor:pointer;font-family:inherit}
   .qp:hover{border-color:var(--accent)}
   .qp.on{border-color:var(--accent);background:var(--accent-dim)}
-  .rail-block{content-visibility:auto;contain-intrinsic-size:120px}
+  .rail-block{contain:layout style}
   .rail-block h6{font-family:var(--font-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
     color:var(--faint);margin-bottom:9px}
   .chips{display:flex;flex-wrap:wrap;gap:6px}
@@ -1733,11 +1733,20 @@ function setOg(d){
   document.title = d ? d.t+(d.y?' ('+d.y+')':'')+' \u2014 FilmiSet' : 'FilmiSet \u2014 Kya Dekhein?';
 }
 function pushTitle(d){
+  /* Back must close whatever is open, never drop the visitor out of the site. A hash is used
+     because it always pushes a history entry, even in contexts where searchParams throws. */
   try{
-    const u=new URL(location.href);
-    if(d) u.searchParams.set('t', titleSlug(d)); else u.searchParams.delete('t');
-    history.pushState({t: d?titleSlug(d):null}, '', u);
-  }catch(e){ /* file:// or sandboxed context — ignore */ }
+    const slug = d ? titleSlug(d) : null;
+    if(d){
+      history.pushState({ modal: 1, t: slug }, '', '#t=' + encodeURIComponent(slug));
+    }else if(history.state && history.state.modal){
+      history.back();                       // let the browser unwind our own entry
+    }
+  }catch(e){ /* sandboxed context — ignore */ }
+}
+/* open/close the filter rail and the talk panel also get an entry, so Back closes them first */
+function pushPanel(name){
+  try{ history.pushState({ panel: name }, '', '#p=' + name); }catch(e){}
 }
 
 /* how long the thing is: a film shows minutes, a series shows seasons + episode count
@@ -1775,6 +1784,7 @@ function openModal(d, fromPop){
       + '</div>'
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
       + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
+      + '<button class="hbtn" data-mhome="1">\u2302 Home</button>'
       + '<button class="hbtn" data-mclose="1">Close</button>'
     + '</div>'
     + '<div class="feels"><span>Dekhne ke baad kaisa laga?</span>'
@@ -1793,9 +1803,18 @@ function closeModal(fromPop){
   if(!fromPop) pushTitle(null);
 }
 /* browser Back / Forward follows the ?t= parameter */
-window.addEventListener('popstate',()=>{
-  let s=null;
-  try{ s=new URL(location.href).searchParams.get('t'); }catch(e){}
+window.addEventListener('popstate',ev=>{
+  const st=ev.state||{};
+  // a panel was open -> close it and stay on the page
+  const tp=document.getElementById('talkPop');
+  if(tp && !tp.hidden){ tp.hidden=true; const f=document.getElementById('talkFab'); if(f) f.classList.remove('open'); return; }
+  const rail=document.getElementById('rail');
+  if(rail && rail.classList.contains('open') && window.matchMedia('(max-width:980px)').matches){
+    if(typeof closeFilters==='function') closeFilters(); return;
+  }
+  if(st.modal && st.t){ const d=findBySlug(st.t); if(d){ openModal(d, true); return; } }
+  // fall back to the old ?t= style for links that were shared before this change
+  let s=null; try{ s=new URL(location.href).searchParams.get('t'); }catch(e){}
   if(s){ const d=findBySlug(s); if(d){ openModal(d, true); return; } }
   closeModal(true);
 });
@@ -1811,6 +1830,11 @@ document.getElementById('modal').addEventListener('click',e=>{
           const v=Number(rt.dataset.rate); [].slice.call(box.querySelectorAll('.st')).forEach(function(s,i){ s.classList.toggle('on', i<v); }); return; }
   const rc=e.target.closest('[data-rec]');
   if(rc){ const t=rc.dataset.rec; const hit=DATA.find(x=>x.t===t); if(hit) openModal(hit, true); return; }
+  if(e.target.closest('[data-mhome]')){
+    closeModal();
+    try{ const bar=document.querySelector('.resultbar'); if(bar){ const top=bar.getBoundingClientRect().top+window.pageYOffset-84; if(top>0) window.scrollTo({top:top,behavior:'smooth'}); } }catch(err){}
+    return;
+  }
   if(e.target.closest('[data-mclose]')) closeModal();
 });
 document.getElementById('surpriseBtn').addEventListener('click',()=>{
@@ -2227,7 +2251,7 @@ function wireFab(){
   const fab=document.getElementById('talkFab'), pop=document.getElementById('talkPop'),
         close=document.getElementById('talkClose');
   if(!fab || !pop) return;
-  const open=()=>{ pop.hidden=false; fab.classList.add('open'); const b=document.getElementById('talkBox'); if(b) b.focus(); };
+  const open=()=>{ pop.hidden=false; fab.classList.add('open'); if(typeof pushPanel==='function') pushPanel('talk'); const b=document.getElementById('talkBox'); if(b) b.focus(); };
   const shut=()=>{ pop.hidden=true; fab.classList.remove('open'); };
   fab.addEventListener('click',()=>pop.hidden?open():shut());
   if(close) close.addEventListener('click',shut);
