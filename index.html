@@ -74,7 +74,12 @@
   }
   .wrap{max-width:1300px;margin:0 auto}
   .only-mobile{display:none}
-  .rail-head{display:none}
+  .navbtn{font-size:12px;padding:7px 11px;white-space:nowrap}
+  .rail-head{display:flex;align-items:center;gap:8px;justify-content:space-between;
+    position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 12px;border-bottom:1px solid var(--line)}
+  .rail-head>span{font-family:var(--font-display);font-size:16px;font-weight:600;flex:1;text-align:center}
+  .tphead .navbtn{margin-right:auto}
+  .rail-head-old{display:none}
   .backdrop{display:none}
   .more-wrap{grid-column:1/-1;display:flex;justify-content:center;padding:14px 0 0}
 
@@ -328,9 +333,9 @@
   .qp{white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 13px;font-size:12.5px;cursor:pointer;font-family:inherit}
   .qp:hover{border-color:var(--accent)}
   .qp.on{border-color:var(--accent);background:var(--accent-dim)}
+  .rail-block{contain:none}
   .rail-actions .railbtns{display:flex;flex-wrap:wrap;gap:7px}
   .rail-actions .hbtn{flex:1 1 auto;text-align:center;white-space:nowrap}
-  .rail-block{contain:layout style}
   .rail-block h6{font-family:var(--font-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
     color:var(--faint);margin-bottom:9px}
   .chips{display:flex;flex-wrap:wrap;gap:6px}
@@ -466,7 +471,7 @@
     .layout{grid-template-columns:1fr;gap:20px;padding-top:16px}
     .foot{grid-template-columns:1fr}
     .only-mobile{display:inline-flex}
-    .rail{position:fixed;left:0;right:0;bottom:0;top:auto;max-height:82vh;overflow-y:auto;
+    .rail{will-change:transform;position:fixed;left:0;right:0;bottom:0;top:auto;max-height:82vh;overflow-y:auto;
       background:var(--bg);border-top:1px solid var(--line);border-radius:18px 18px 0 0;
       padding:16px 18px 30px;gap:18px;transform:translateY(112%);transition:transform .26s ease;
       z-index:80;box-shadow:0 -12px 40px rgba(0,0,0,.28)}
@@ -535,7 +540,12 @@
         <button class="hbtn" data-plan-open="1" title="Fit picks into your evening">🕑 Plan my evening</button>
       </div>
     </div>
-    <div class="rail-head"><span>Filters</span><button id="filtersClose" class="hbtn">Done</button></div>
+    <div class="rail-head">
+      <button id="railBack" class="hbtn navbtn" title="Back to the list">← Back</button>
+      <span>Filters</span>
+      <button id="railHome" class="hbtn navbtn" title="Home">⌂ Home</button>
+      <button id="filtersClose" class="hbtn" title="Close filters">Done</button>
+    </div>
     <div class="rail-block"><h6>Best of all time</h6><div class="quickpicks" id="topPicks"></div></div>
     <div class="rail-block"><h6>OTT par dekho</h6><div class="quickpicks" id="ottPicks"></div></div>
     <div class="rail-block"><h6>Aaj ka vibe</h6><div class="quickpicks" id="vibePicks"></div></div>
@@ -1434,8 +1444,33 @@ srcRow.addEventListener('click',e=>{
 /* mobile filter drawer */
 function openFilters(){ document.body.classList.add('filters-open'); }
 function closeFilters(){ document.body.classList.remove('filters-open'); }
+
+function goHome(){
+  try{ closeFilters(); }catch(e){}
+  const a=document.getElementById('actorPop'); if(a) a.hidden=true;
+  const t=document.getElementById('talkPop'); if(t) t.hidden=true;
+  const f=document.getElementById('talkFab'); if(f) f.classList.remove('open');
+  const m=document.getElementById('modal'); if(m && !m.hidden && typeof closeModal==='function') closeModal();
+  clearAllFilters(); state.rel='all'; render();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+function goBack(){
+  const a=document.getElementById('actorPop'); if(a && !a.hidden){ a.hidden=true; return; }
+  const t=document.getElementById('talkPop'); if(t && !t.hidden){ t.hidden=true; const f=document.getElementById('talkFab'); if(f) f.classList.remove('open'); return; }
+  const m=document.getElementById('modal'); if(m && !m.hidden){ if(typeof closeModal==='function') closeModal(); return; }
+  if(document.body.classList.contains('filters-open')){ closeFilters(); return; }
+  try{ history.back(); }catch(e){}
+}
 document.getElementById('filtersBtn').addEventListener('click',openFilters);
 document.getElementById('filtersClose').addEventListener('click',closeFilters);
+(function wireNav(){
+  var bind=function(id,fn){ var el=document.getElementById(id); if(el) el.addEventListener('click',fn); };
+  bind('railBack',function(){ closeFilters(); window.scrollTo({top:0,behavior:'smooth'}); });
+  bind('railHome',goHome);
+  bind('talkBack',function(){ var t=document.getElementById('talkPop'); if(t) t.hidden=true; var f=document.getElementById('talkFab'); if(f) f.classList.remove('open'); });
+  bind('actorBack',function(){ var a=document.getElementById('actorPop'); if(a) a.hidden=true; });
+  bind('actorHome',goHome);
+})();
 document.getElementById('backdrop').addEventListener('click',closeFilters);
 function updateFilterCount(){
   const n = activeFilters().length;
@@ -3148,6 +3183,7 @@ function render(){
 }
 
 let DATA = [];
+let RAIL_BUILT = false;
 
 function boot(){
   const st=document.getElementById('s-total'); if(st) st.textContent = DATA.length;
@@ -3397,6 +3433,7 @@ Promise.all([
 <button id="talkFab" class="fab" aria-label="Talk to the site" title="Talk to the site">✨</button>
 <div id="talkPop" class="talkpop" hidden role="dialog" aria-label="Talk to the site">
   <div class="tphead">
+    <button id="talkBack" class="hbtn navbtn" title="Back">← Back</button>
     <span>Talk to the site</span>
     <button id="talkClose" aria-label="Close">×</button>
   </div>
@@ -3412,7 +3449,12 @@ Promise.all([
   </div>
 </div>
 <div id="actorPop" class="actpop" hidden role="dialog" aria-label="Actor">
-  <div class="tphead"><span class="ap-name">Actor</span><button id="actorClose" aria-label="Close">×</button></div>
+  <div class="tphead">
+    <button id="actorBack" class="hbtn navbtn" title="Back">← Back</button>
+    <span class="ap-name">Actor</span>
+    <button id="actorHome" class="hbtn navbtn" title="Home">⌂</button>
+    <button id="actorClose" aria-label="Close">×</button>
+  </div>
   <div class="ap-body"></div>
 </div>
 </body>
