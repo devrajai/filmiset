@@ -1522,7 +1522,7 @@ function lengthLabel(d){
 
 function openModal(d, fromPop){
   const up=d.status==='upcoming';
-  const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t, d) : 'OTT info not listed';
+  const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t, d) : '';
   const m=document.getElementById('modal');
   m.innerHTML='<div class="box">'
     + (d.poster? '<img src="'+d.poster+'" alt="" onerror="this.remove()">':'')
@@ -1860,7 +1860,7 @@ function render(){
               ? '<div class="watch soon">Releasing '+(d.date?fmtDate(d.date):'soon')+'</div>'
               : ((d.o && d.o.length)
                 ? '<div class="watch avail">Available on '+ottLinks(d.o, d.t, d)+'</div>'
-                : '<div class="watch none">OTT info not listed \u00b7 <a class="ottl" target="_blank" rel="noopener" href="'+freeOnYouTube(d.t)+'">try YouTube</a></div>')))
+                : '<div class="watch none"><a class="ottl" target="_blank" rel="noopener" href="'+(d.tr ? 'https://www.youtube.com/watch?v='+d.tr : ytSearchUrl(dispTitle(d.t)+' trailer'))+'">\u25B6 Trailer</a></div>')))
         + '<div class="cardacts">'
           + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>' : '')
           + '<button class="mini'+(watched.has(d.t)?' on':'')+'" data-seen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
