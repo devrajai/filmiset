@@ -1,0 +1,11624 @@
+[
+ {
+  "t": "Mother India",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 10526.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mughal-E-Azam",
+  "y": 1960,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance",
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 9788.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pyaasa",
+  "y": 1957,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 3.1,
+  "ivot": 121.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Awaara",
+  "y": 1951,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 5025.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Shree 420",
+  "y": 1955,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 3358.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Do Bigha Zamin",
+  "y": 1953,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 2568.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Guide",
+  "y": 1965,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 13174.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Anand",
+  "y": 1971,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 38058.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Zanjeer",
+  "y": 1973,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 4583.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sholay",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 64144.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Deewaar",
+  "y": 1975,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 13365.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Amar Akbar Anthony",
+  "y": 1977,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 9146.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Don",
+  "y": 1978,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 45150.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Silsila",
+  "y": 1981,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 3593.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mr. India",
+  "y": 1987,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 20862.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Qayamat Se Qayamat Tak",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 12014.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Maine Pyar Kiya",
+  "y": 1989,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 14168.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dil",
+  "y": 1990,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.6,
+  "ivot": 6231.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Hum Aapke Hain Koun..!",
+  "y": 1994,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 24648.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rangeela",
+  "y": 1995,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 11254.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dilwale Dulhania Le Jayenge",
+  "y": 1995,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 87111.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Border",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 37934.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kuch Kuch Hota Hai",
+  "y": 1998,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 63656.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Satya",
+  "y": 1998,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 18848.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Hera Pheri",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 82326.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Lagaan: Once Upon a Time in India",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "Dil Chahta Hai",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 80743.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kabhi Khushi Kabhie Gham",
+  "y": 2001,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 64100.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Devdas",
+  "y": 2002,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 53061.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Koi... Mil Gaya",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 32204.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Munna Bhai M.B.B.S.",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 100065.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kal Ho Naa Ho",
+  "y": 2003,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 82881.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Swades",
+  "y": 2004,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 107622.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Veer-Zaara",
+  "y": 2004,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 67553.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dhoom",
+  "y": 2004,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 25181.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Black",
+  "y": 2005,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 37825.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bunty Aur Babli",
+  "y": 2005,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.3,
+  "ivot": 9367.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rang De Basanti",
+  "y": 2006,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 127619.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Lage Raho Munna Bhai",
+  "y": 2006,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 54165.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Krrish",
+  "y": 2006,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Sci-Fi"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 29106.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chak De! India",
+  "y": 2007,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 92998.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Taare Zameen Par",
+  "y": 2007,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Game-Show",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.9,
+  "ivot": 56.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jab We Met",
+  "y": 2007,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 66700.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Om Shanti Om",
+  "y": 2007,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.8,
+  "ivot": 57442.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "A Wednesday!",
+  "y": 2008,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 512637.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ghajini",
+  "y": 2008,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 73016.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "3 Idiots",
+  "y": 2009,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 491505.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dev.D",
+  "y": 2009,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 34853.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "My Name Is Khan",
+  "y": 2010,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 124629.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dabangg",
+  "y": 2010,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.3,
+  "ivot": 37787.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Zindagi Na Milegi Dobara",
+  "y": 2011,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 97966.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "The Dirty Picture",
+  "y": 2011,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 11448.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Barfi!",
+  "y": 2012,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 95230.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kahaani",
+  "y": 2012,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 70718.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gangs of Wasseypur",
+  "y": 2012,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 116020.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Queen",
+  "y": 2013,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 120408.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chennai Express",
+  "y": 2013,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.3,
+  "ivot": 74111.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dhoom 3",
+  "y": 2013,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.5,
+  "ivot": 54228.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "PK",
+  "y": 2014,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 227031.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Haider",
+  "y": 2014,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 61816.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bajrangi Bhaijaan",
+  "y": 2015,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 114302.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Piku",
+  "y": 2015,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 37490.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bajirao Mastani",
+  "y": 2015,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 43191.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Tamasha",
+  "y": 2015,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 37239.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Drishyam",
+  "y": 2015,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 112181.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dangal",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 249410.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Udta Punjab",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 34569.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pink",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 52888.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Neerja",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 25411.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Airlift",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 61922.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kapoor & Sons",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 34228.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dear Zindagi",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 48060.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sultan",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 60486.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "M.S. Dhoni: The Untold Story",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 77737.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Newton",
+  "y": 2017,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 22653.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Secret Superstar",
+  "y": 2017,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Music"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 32819.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sanju",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 68461.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Andhadhun",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 118844.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Badhaai Ho",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 41337.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Stree",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 48839.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Raazi",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 37930.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Padmaavat",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "History",
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 41920.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Tumbbad",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Fantasy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 78067.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Simmba",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.5,
+  "ivot": 24074.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Article 15",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 42089.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gully Boy",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Music",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 48161.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Uri: The Surgical Strike",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 85870.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Super 30",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 43215.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kabir Singh",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 46537.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "War",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.2,
+  "ivot": 102377.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chhichhore",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 74912.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Thappad",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 28047.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Tanhaji: The Unsung Warrior",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "Dil Bechara",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 138948.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Shershaah",
+  "y": 2021,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 137833.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sooryavanshi",
+  "y": 2021,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 81752.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sardar Udham",
+  "y": 2021,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 51509.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mimi",
+  "y": 2021,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 46790.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gangubai Kathiawadi",
+  "y": 2022,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 68105.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "The Kashmir Files",
+  "y": 2022,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 580124.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Brahmastra Part One: Shiva",
+  "y": 2022,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.6,
+  "ivot": 116550.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Drishyam 2",
+  "y": 2022,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 54299.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhool Bhulaiyaa 2",
+  "y": 2022,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.7,
+  "ivot": 36628.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vikram Vedha",
+  "y": 2022,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 56356.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pathaan",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 167562.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jawan",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.9,
+  "ivot": 113153.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Animal",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.2,
+  "ivot": 118680.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gadar 2",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.1,
+  "ivot": 25747.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "12th Fail",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.7,
+  "ivot": 178948.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rocky Aur Rani Kii Prem Kahaani",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 51542.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dunki",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 86716.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Tiger 3",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.6,
+  "ivot": 57032.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "OMG 2",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 48141.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sam Bahadur",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama",
+   "War"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 22168.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Stree 2",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.9,
+  "ivot": 47735.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Crew",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 39911.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kill",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 48205.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Fighter",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 412132.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Article 370",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 29148.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Munjya",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.3,
+  "ivot": 29251.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhool Bhulaiyaa 3",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Fantasy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 4.6,
+  "ivot": 79429.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Singham Again",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 4.3,
+  "ivot": 76596.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chhaava",
+  "y": 2025,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 45737.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sikandar",
+  "y": 2025,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 3.6,
+  "ivot": 54019.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Saiyaara",
+  "y": 2025,
+  "cat": "hindi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.3,
+  "ivot": 60447.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sacred Games",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 99274.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mirzapur",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 95602.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "The Family Man",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.9,
+  "ivot": 132248.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Panchayat",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.0,
+  "ivot": 120384.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Scam 1992: The Harshad Mehta Story",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "Paatal Lok",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 76673.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Delhi Crime",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 31407.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Made in Heaven",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 15644.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kota Factory",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.0,
+  "ivot": 93861.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Special Ops",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 44652.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Asur",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 1739.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Aspirants",
+  "y": 2021,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.1,
+  "ivot": 320199.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gullak",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.1,
+  "ivot": 32053.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "TVF Pitchers",
+  "y": 2015,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.0,
+  "ivot": 80327.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Criminal Justice",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 36961.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bandish Bandits",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Music",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 20813.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rocket Boys",
+  "y": 2022,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Biography",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.8,
+  "ivot": 20840.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Farzi",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 57621.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jubilee",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 5687.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kohrra",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 12674.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dahaad",
+  "y": 2023,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 15703.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Heeramandi: The Diamond Bazaar",
+  "y": 2024,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "Aarya",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 17158.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Hostel Daze",
+  "y": 2019,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 23802.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rangbaaz",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Biography",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 6458.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jamtara: Sabka Number Ayega",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "Undekhi",
+  "y": 2020,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 12620.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Inside Edge",
+  "y": 2017,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 13224.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Breathe",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Biography",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 26921.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bombay Begums",
+  "y": 2021,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.1,
+  "ivot": 5187.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Tandav",
+  "y": 2021,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 4.8,
+  "ivot": 65851.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Permanent Roommates",
+  "y": 2014,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.6,
+  "ivot": 27622.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Tripling",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Black Warrant",
+  "y": 2025,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 8796.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Hum Log",
+  "y": 1984,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 205.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Buniyaad",
+  "y": 1986,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.6,
+  "ivot": 308.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nukkad",
+  "y": 1986,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 291.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Malgudi Days",
+  "y": 1986,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.4,
+  "ivot": 4573.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ramayan",
+  "y": 1987,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Adventure",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.0,
+  "ivot": 28396.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mahabharat",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.9,
+  "ivot": 28002.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Fauji",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 3132.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bharat Ek Khoj",
+  "y": 1988,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.9,
+  "ivot": 956.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chanakya",
+  "y": 1991,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.3,
+  "ivot": 3031.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Byomkesh Bakshi",
+  "y": 1993,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Adventure",
+   "Crime",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.2,
+  "ivot": 3413.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Shaktimaan",
+  "y": 1997,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Adventure",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 5904.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "CID",
+  "y": 1998,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Action",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 5910.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kaun Banega Crorepati",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Game-Show"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 4653.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kyunki Saas Bhi Kabhi Bahu Thi",
+  "y": 2000,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 1.8,
+  "ivot": 2268.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sarabhai vs Sarabhai",
+  "y": 2004,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.8,
+  "ivot": 20116.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Taarak Mehta Ka Ooltah Chashmah",
+  "y": 2008,
+  "cat": "hindi",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 15289.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chutney",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Short",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Short"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 1105.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Juice",
+  "y": 2017,
+  "cat": "hindi",
+  "type": "Short",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 34006.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kriti",
+  "y": 2016,
+  "cat": "hindi",
+  "type": "Short",
+  "g": [
+   "Mystery",
+   "Short",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 1044.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ahalya",
+  "y": 2015,
+  "cat": "hindi",
+  "type": "Short",
+  "g": [
+   "Short",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 1647.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Period. End of Sentence.",
+  "y": 2018,
+  "cat": "hindi",
+  "type": "Short",
+  "g": [
+   "Documentary",
+   "Short"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 6987.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kanku",
+  "y": 1969,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 17.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jesal Toral",
+  "y": 1971,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 39.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mena Gurjari",
+  "y": 1975,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 7.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kashi No Dikro",
+  "y": 1979,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 13.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhavni Bhavai",
+  "y": 1980,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 171.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "The Good Road",
+  "y": 2013,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.1,
+  "ivot": 582.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bey Yaar",
+  "y": 2014,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 3237.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kevi Rite Jaish",
+  "y": 2012,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 978.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gujjubhai the Great",
+  "y": 2015,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 1692.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chhello Divas: A New Beginning",
+  "y": 2015,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "Wrong Side Raju",
+  "y": 2016,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 1184.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Shubh Aarambh",
+  "y": 2017,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 144.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Carry on Kesar",
+  "y": 2017,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.9,
+  "ivot": 101.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Reva",
+  "y": 2018,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 1019.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gujjubhai Most Wanted",
+  "y": 2018,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 694.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Premji: Rise of a Warrior",
+  "y": 2018,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 76.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Hellaro",
+  "y": 2019,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 1881.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Golkeri",
+  "y": 2019,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.9,
+  "ivot": 634.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gujarat 11",
+  "y": 2019,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.1,
+  "ivot": 199.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dhh",
+  "y": 2022,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 588.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Fakt Mahilao Maate",
+  "y": 2022,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "Kehvatlal Parivar",
+  "y": 2022,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 600.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Naadi Dosh",
+  "y": 2022,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 1624.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Love Ni Bhavai",
+  "y": 2022,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 2267.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nayika Devi: The Warrior Queen",
+  "y": 2022,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 707.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Laalo: Krishna Sada Sahaayate",
+  "y": 2022,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 2949.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vash",
+  "y": 2023,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 3036.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "3 Ekka",
+  "y": 2023,
+  "cat": "gujarati-movie",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.6,
+  "ivot": 783.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nayakan",
+  "y": 1987,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.6,
+  "ivot": 28341.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Thalapathi",
+  "y": 1991,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 16308.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Roja",
+  "y": 1992,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 14958.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bombay",
+  "y": 1995,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 15376.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Indian",
+  "y": 1996,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 16313.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mudhalvan",
+  "y": 1999,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 9562.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Alaipayuthey",
+  "y": 2000,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 9143.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Anniyan",
+  "y": 2005,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 27154.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Paruthiveeran",
+  "y": 2007,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 4627.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Billa",
+  "y": 2007,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 8802.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Subramaniapuram",
+  "y": 2008,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 2752.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Enthiran",
+  "y": 2010,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 34282.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Aadukalam",
+  "y": 2011,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 8057.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mankatha",
+  "y": 2011,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 17877.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pizza",
+  "y": 2012,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 9922.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Soodhu Kavvum",
+  "y": 2013,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 13739.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Madras",
+  "y": 2014,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 5494.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jigarthanda",
+  "y": 2014,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 15029.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Thani Oruvan",
+  "y": 2015,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 24545.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vedalam",
+  "y": 2015,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.4,
+  "ivot": 9526.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kabali",
+  "y": 2016,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.1,
+  "ivot": 15748.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Theri",
+  "y": 2016,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 27009.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Aruvi",
+  "y": 2016,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 15257.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mersal",
+  "y": 2017,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 42760.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Maanagaram",
+  "y": 2017,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 9026.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pariyerum Perumal",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.6,
+  "ivot": 20834.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vada Chennai",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 25021.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "96",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 46873.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kanaa",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 4736.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sarkar",
+  "y": 2018,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 24227.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kaithi",
+  "y": 2019,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 53088.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Asuran",
+  "y": 2019,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 37947.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Super Deluxe",
+  "y": 2019,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 20464.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bigil",
+  "y": 2019,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 27713.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Petta",
+  "y": 2019,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 15398.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Soorarai Pottru",
+  "y": 2020,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.6,
+  "ivot": 133290.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Oh My Kadavule",
+  "y": 2020,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Fantasy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 6326.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Master",
+  "y": 2021,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 204130.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Karnan",
+  "y": 2021,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 25419.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jai Bhim",
+  "y": 2021,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.6,
+  "ivot": 237034.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vikram",
+  "y": 2022,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 91575.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Love Today",
+  "y": 2022,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 18938.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kadaisi Vivasayi",
+  "y": 2022,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.7,
+  "ivot": 11292.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Leo",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 75370.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jailer",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 47841.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Varisu",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.9,
+  "ivot": 41747.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Thunivu",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.1,
+  "ivot": 30923.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mark Antony",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.6,
+  "ivot": 6634.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Maamannan",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 6459.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Viduthalai Part 1",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 12295.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jigarthanda DoubleX",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 12200.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Maharaja",
+  "y": 2024,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 86639.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Amaran",
+  "y": 2024,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 24675.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Lubber Pandhu",
+  "y": 2024,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 8984.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vaazhai",
+  "y": 2024,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 5770.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Meiyazhagan",
+  "y": 2024,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 24665.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vettaiyan",
+  "y": 2024,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.8,
+  "ivot": 41515.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Raayan",
+  "y": 2024,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 14159.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "The GOAT",
+  "y": 2024,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Animation",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.6,
+  "ivot": 32731.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dragon",
+  "y": 2025,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 19596.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Tourist Family",
+  "y": 2025,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 16647.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Coolie",
+  "y": 2025,
+  "cat": "tamil",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.0,
+  "ivot": 25159.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Paava Kadhaigal",
+  "y": 2020,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 6315.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Putham Pudhu Kaalai",
+  "y": 2020,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.8,
+  "ivot": 1917.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Navarasa",
+  "y": 2021,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 4015.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "November Story",
+  "y": 2021,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 7500.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Suzhal: The Vortex",
+  "y": 2022,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 11767.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vilangu",
+  "y": 2022,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 5670.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ayali",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 1582.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Modern Love Chennai",
+  "y": 2023,
+  "cat": "tamil",
+  "type": "Series",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 1066.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "The Elephant Whisperers",
+  "y": 2022,
+  "cat": "tamil",
+  "type": "Short",
+  "g": [
+   "Documentary",
+   "Short"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 11050.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mayabazar",
+  "y": 1957,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.0,
+  "ivot": 7083.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sagara Sangamam",
+  "y": 1983,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Music",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.7,
+  "ivot": 6632.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Siva",
+  "y": 1989,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.9,
+  "ivot": 120.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gharana Mogudu",
+  "y": 1992,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 719.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pelli Sandadi",
+  "y": 1996,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 182.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Okkadu",
+  "y": 2003,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 11826.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sye",
+  "y": 2004,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 3028.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chatrapathi",
+  "y": 2005,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 6865.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Athadu",
+  "y": 2005,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 16674.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bommarillu",
+  "y": 2006,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 11121.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pokiri",
+  "y": 2006,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 17270.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Magadheera",
+  "y": 2009,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 28784.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Julayi",
+  "y": 2012,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 7721.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Eega",
+  "y": 2012,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 31231.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gabbar Singh",
+  "y": 2012,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 8035.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Attarintiki Daredi",
+  "y": 2013,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 10798.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Temper",
+  "y": 2015,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 8976.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Srimanthudu",
+  "y": 2015,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 14612.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Baahubali: The Beginning",
+  "y": 2015,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 157383.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kshanam",
+  "y": 2016,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 6684.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pelli Choopulu",
+  "y": 2016,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 12727.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Baahubali 2: The Conclusion",
+  "y": 2017,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 137369.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Arjun Reddy",
+  "y": 2017,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 30610.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Fidaa",
+  "y": 2017,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 6792.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Khaidi No. 150",
+  "y": 2017,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 4530.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rangasthalam",
+  "y": 2018,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 31737.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mahanati",
+  "y": 2018,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 16949.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Geetha Govindam",
+  "y": 2018,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 18147.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ee Nagaraniki Emaindi",
+  "y": 2018,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 5038.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "C/o Kancharapalem",
+  "y": 2018,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.8,
+  "ivot": 11189.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Awe",
+  "y": 2018,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Fantasy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 6624.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Goodachari",
+  "y": 2018,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 13122.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jersey",
+  "y": 2019,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 30772.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Maharshi",
+  "y": 2019,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 11542.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Agent Sai Srinivasa Athreya",
+  "y": 2019,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 22639.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Evaru",
+  "y": 2019,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 10257.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mathu Vadalara",
+  "y": 2019,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 6137.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Brochevarevarura",
+  "y": 2019,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 5364.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ala Vaikunthapurramuloo",
+  "y": 2020,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 27303.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sarileru Neekevvaru",
+  "y": 2020,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 10306.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Uppena",
+  "y": 2021,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 4744.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jathi Ratnalu",
+  "y": 2021,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 8999.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pushpa: The Rise - Part 1",
+  "y": 2021,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "RRR",
+  "y": 2022,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 228154.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sita Ramam",
+  "y": 2022,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 86292.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Major",
+  "y": 2022,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Biography",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 34716.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Karthikeya 2",
+  "y": 2022,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 65394.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dasara",
+  "y": 2023,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.6,
+  "ivot": 12689.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Baby",
+  "y": 2023,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 63780.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhagavanth Kesari",
+  "y": 2023,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.7,
+  "ivot": 5661.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "HanuMan",
+  "y": 2024,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 30931.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kalki 2898 AD",
+  "y": 2024,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 78099.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Guntur Kaaram",
+  "y": 2024,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.4,
+  "ivot": 25591.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Lucky Baskhar",
+  "y": 2024,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 44155.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Devara: Part 1",
+  "y": 2024,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.0,
+  "ivot": 24054.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gangs of Godavari",
+  "y": 2024,
+  "cat": "telugu",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 4.9,
+  "ivot": 974.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Loser",
+  "y": 2020,
+  "cat": "telugu",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.4,
+  "ivot": 31147.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Aha Naa Pellanta!",
+  "y": 2020,
+  "cat": "telugu",
+  "type": "Series",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.9,
+  "ivot": 3616.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pitta Kathalu",
+  "y": 2021,
+  "cat": "telugu",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.2,
+  "ivot": 894.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Modern Love Hyderabad",
+  "y": 2022,
+  "cat": "telugu",
+  "type": "Series",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.1,
+  "ivot": 457.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "9 Hours",
+  "y": 2022,
+  "cat": "telugu",
+  "type": "Series",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 25.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dhootha",
+  "y": 2023,
+  "cat": "telugu",
+  "type": "Series",
+  "g": [
+   "Drama",
+   "Horror",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 7114.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Paruvu",
+  "y": 2023,
+  "cat": "telugu",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 205.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chemmeen",
+  "y": 1965,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 588.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kodiyettam",
+  "y": 1978,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 144.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Manichitrathazhu",
+  "y": 1993,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.7,
+  "ivot": 14752.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Thanmathra",
+  "y": 2005,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 5564.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ustad Hotel",
+  "y": 2012,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 19271.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bangalore Days",
+  "y": 2014,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 28961.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Premam",
+  "y": 2015,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 29223.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Charlie",
+  "y": 2015,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 15495.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Maheshinte Prathikaaram",
+  "y": 2016,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 12150.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pulimurugan",
+  "y": 2016,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 10522.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Angamaly Diaries",
+  "y": 2017,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 7168.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sudani from Nigeria",
+  "y": 2018,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Sport"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 5806.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kumbalangi Nights",
+  "y": 2019,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 22417.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jallikattu",
+  "y": 2019,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 9733.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Uyare",
+  "y": 2019,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 4478.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Lucifer",
+  "y": 2019,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 399312.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Virus",
+  "y": 2019,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Horror",
+   "Sci-Fi"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.1,
+  "ivot": 32532.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Driving Licence",
+  "y": 2019,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 4970.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ayyappanum Koshiyum",
+  "y": 2020,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 12790.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kappela",
+  "y": 2020,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 4079.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sufiyum Sujatayum",
+  "y": 2020,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.5,
+  "ivot": 1736.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Anjaam Pathiraa",
+  "y": 2020,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb-subtitle"
+ },
+ {
+  "t": "Minnal Murali",
+  "y": 2021,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 35628.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Joji",
+  "y": 2021,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 13072.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "The Great Indian Kitchen",
+  "y": 2021,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 11414.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nayattu",
+  "y": 2021,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 10682.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Malik",
+  "y": 2021,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Biography",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 15399.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kurup",
+  "y": 2021,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 18550.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Home",
+  "y": 2021,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Animation",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 123358.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kala",
+  "y": 2021,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 4256.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bheeshma Parvam",
+  "y": 2022,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 15893.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jana Gana Mana",
+  "y": 2022,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 22525.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Hridayam",
+  "y": 2022,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 21762.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Thallumaala",
+  "y": 2022,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 8287.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nanpakal Nerathu Mayakkam",
+  "y": 2022,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 5870.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "2018",
+  "y": 2023,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 17246.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Romancham",
+  "y": 2023,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 11964.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kaathal - The Core",
+  "y": 2023,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 4922.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Neru",
+  "y": 2023,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 11487.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Manjummel Boys",
+  "y": 2024,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 35523.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Aavesham",
+  "y": 2024,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 34255.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Premalu",
+  "y": 2024,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 25172.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bramayugam",
+  "y": 2024,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Horror",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 18922.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ullozhukku",
+  "y": 2024,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 2358.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "ARM",
+  "y": 2024,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 10361.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kishkindha Kaandam",
+  "y": 2024,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 18041.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Marco",
+  "y": 2024,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 26292.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "L2: Empuraan",
+  "y": 2025,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.1,
+  "ivot": 14454.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Thudarum",
+  "y": 2025,
+  "cat": "malayalam",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 15831.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kerala Crime Files",
+  "y": 2023,
+  "cat": "malayalam",
+  "type": "Series",
+  "g": [
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 3132.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Samskara",
+  "y": 1970,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 161.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bangarada Manushya",
+  "y": 1972,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.9,
+  "ivot": 1147.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pushpaka Vimana",
+  "y": 1987,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.6,
+  "ivot": 4481.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Om",
+  "y": 1995,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.9,
+  "ivot": 4796.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jogi",
+  "y": 2005,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 7642.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mungaru Male",
+  "y": 2006,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Music",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 4391.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Duniya",
+  "y": 2007,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.3,
+  "ivot": 368.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gaalipata",
+  "y": 2008,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Musical",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 1633.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Lucia",
+  "y": 2013,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 14042.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ulidavaru Kandanthe",
+  "y": 2014,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 10400.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ugramm",
+  "y": 2014,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 7752.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ramachari",
+  "y": 2014,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 68.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Thithi",
+  "y": 2015,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 2952.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rangi Taranga",
+  "y": 2015,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 16185.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Godhi Banna Sadharana Mykattu",
+  "y": 2016,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.6,
+  "ivot": 4011.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "U Turn",
+  "y": 2016,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 58174.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kirik Party",
+  "y": 2016,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 8681.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mufti",
+  "y": 2017,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 3283.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "K.G.F: Chapter 1",
+  "y": 2018,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 114508.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mookajjiya Kanasugalu",
+  "y": 2019,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 41.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dia",
+  "y": 2020,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 8363.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Act 1978",
+  "y": 2020,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 806.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "French Biriyani",
+  "y": 2020,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.7,
+  "ivot": 1146.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Roberrt",
+  "y": 2021,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.9,
+  "ivot": 4270.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Garuda Gamana Vrishabha Vahana",
+  "y": 2021,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 9557.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "K.G.F: Chapter 2",
+  "y": 2022,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 173547.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kantara",
+  "y": 2022,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 119016.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Vikrant Rona",
+  "y": 2022,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.9,
+  "ivot": 29825.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gandhada Gudi",
+  "y": 2022,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Documentary",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.9,
+  "ivot": 3147.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sapta Sagaradaache Ello - Side B",
+  "y": 2023,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 6107.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kaatera",
+  "y": 2023,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 3827.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bagheera",
+  "y": 2024,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 8838.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bheema",
+  "y": 2024,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.6,
+  "ivot": 1053.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Su From So",
+  "y": 2025,
+  "cat": "kannada",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 8118.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pather Panchali",
+  "y": 1955,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 42469.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Aparajito",
+  "y": 1956,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 20462.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jalsaghar",
+  "y": 1958,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Meghe Dhaka Tara",
+  "y": 1960,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Devi",
+  "y": 1960,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.2,
+  "ivot": 1318.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Teen Kanya",
+  "y": 1961,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.5,
+  "ivot": 100.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Saptapadi",
+  "y": 1961,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 556.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Subarnarekha",
+  "y": 1962,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 1493.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mahanagar",
+  "y": 1963,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Charulata",
+  "y": 1964,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 8148.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nayak",
+  "y": 1966,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 44.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pratidwandi",
+  "y": 1970,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.2,
+  "ivot": 736.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Padatik",
+  "y": 1973,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Biography"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 229.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ghare Baire",
+  "y": 1984,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Agantuk",
+  "y": 1991,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 18.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Unishe April",
+  "y": 1994,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 664.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dahan",
+  "y": 1997,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 959.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chokher Bali",
+  "y": 2003,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.9,
+  "ivot": 14.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Antaheen",
+  "y": 2009,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 1969.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Autograph",
+  "y": 2010,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 2751.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Abohomaan",
+  "y": 2010,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 785.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Baishe Srabon",
+  "y": 2011,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 6.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhooter Bhabishyat",
+  "y": 2012,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Fantasy",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 4753.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Hemlock Society",
+  "y": 2012,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 4074.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chotushkone",
+  "y": 2014,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 4473.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bela Seshe",
+  "y": 2015,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Short"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Praktan",
+  "y": 2016,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 2736.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Zulfiqar",
+  "y": 2016,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 1649.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Gumnaami",
+  "y": 2019,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 3010.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Belashuru",
+  "y": 2022,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 1103.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kishmish",
+  "y": 2022,
+  "cat": "bengali",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.7,
+  "ivot": 1991.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Charitraheen",
+  "y": 2018,
+  "cat": "bengali",
+  "type": "Series",
+  "g": [
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.0,
+  "ivot": 620.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Shyamchi Aai",
+  "y": 1953,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Biography"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 192.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pinjra",
+  "y": 1973,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.7,
+  "ivot": 376.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sinhasan",
+  "y": 1979,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "verify": "imdb"
+ },
+ {
+  "t": "Ashi Hi Banwa Banwi",
+  "y": 1988,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.0,
+  "ivot": 2413.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ek Hota Vidushak",
+  "y": 1992,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 145.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Zapatlela",
+  "y": 1993,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Horror"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 1466.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Shwaas",
+  "y": 2004,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 8.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Harishchandrachi Factory",
+  "y": 2009,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Biography",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.4,
+  "ivot": 5234.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mee Shivajiraje Bhosale Boltoy",
+  "y": 2009,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 2866.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mumbai Pune Mumbai",
+  "y": 2010,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Adventure",
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 2384.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Shala",
+  "y": 2012,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 2100.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kaksparsh",
+  "y": 2012,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 1077.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Fandry",
+  "y": 2013,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 3035.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Duniyadari",
+  "y": 2013,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 2422.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Court",
+  "y": 2014,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 5840.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Killa",
+  "y": 2014,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 2107.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Timepass",
+  "y": 2014,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Fantasy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.6,
+  "ivot": 1877.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rege",
+  "y": 2014,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 570.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Lai Bhaari",
+  "y": 2014,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Comedy",
+   "Crime"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.2,
+  "ivot": 1353.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Katyar Kaljat Ghusali",
+  "y": 2015,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.7,
+  "ivot": 2868.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sairat",
+  "y": 2016,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 16653.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Natsamrat",
+  "y": 2016,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.8,
+  "ivot": 8348.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ventilator",
+  "y": 2016,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 1156.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Naal",
+  "y": 2018,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 1440.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mauli",
+  "y": 2018,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.6,
+  "ivot": 518.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jhimma",
+  "y": 2021,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 3072.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ved",
+  "y": 2022,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 5837.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Pawankhind",
+  "y": 2022,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 8373.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Har Har Mahadev",
+  "y": 2022,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 2395.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sher Shivraj",
+  "y": 2022,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Drama",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 2986.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Baipan Bhari Deva",
+  "y": 2023,
+  "cat": "marathi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 1205.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Samantar",
+  "y": 2020,
+  "cat": "marathi",
+  "type": "Series",
+  "g": [
+   "Mystery"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 6768.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ghashiram Kotwal",
+  "y": 1972,
+  "cat": "marathi",
+  "type": "Natak",
+  "g": [
+   "Biography",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.0,
+  "ivot": 98.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sakharam Binder",
+  "y": 1972,
+  "cat": "marathi",
+  "type": "Natak",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 9.1,
+  "ivot": 46.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chaar Sahibzaade",
+  "y": 2014,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Animation",
+   "History"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 8327.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Carry on Jatta",
+  "y": 2012,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 4010.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jatt & Juliet",
+  "y": 2012,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 3160.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Bhaji in Problem",
+  "y": 2013,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 1205.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Angrej",
+  "y": 2015,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.5,
+  "ivot": 4110.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ardaas",
+  "y": 2016,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.3,
+  "ivot": 2691.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Channo Kamli Yaar Di",
+  "y": 2016,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 234.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nikka Zaildar",
+  "y": 2016,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.4,
+  "ivot": 1469.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Manje Bistre",
+  "y": 2017,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.6,
+  "ivot": 1226.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Lahoriye",
+  "y": 2017,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 2241.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Rabb Da Radio",
+  "y": 2017,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 1959.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Qismat",
+  "y": 2018,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.1,
+  "ivot": 3851.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Laung Laachi",
+  "y": 2018,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 508.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Mar Gaye Oye Loko",
+  "y": 2018,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Fantasy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.5,
+  "ivot": 345.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Puaada",
+  "y": 2018,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Musical"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.9,
+  "ivot": 835.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Chal Mera Putt",
+  "y": 2019,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.5,
+  "ivot": 3349.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Kala Shah Kala",
+  "y": 2019,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 829.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Daaka",
+  "y": 2019,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Action"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.0,
+  "ivot": 293.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Sufna",
+  "y": 2020,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.0,
+  "ivot": 2495.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Honsla Rakh",
+  "y": 2021,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.3,
+  "ivot": 8949.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Godday Godday Chaa",
+  "y": 2022,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.1,
+  "ivot": 688.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Moh",
+  "y": 2022,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.9,
+  "ivot": 1208.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Saunkan Saunkne",
+  "y": 2022,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.3,
+  "ivot": 2091.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jodi",
+  "y": 2023,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.8,
+  "ivot": 638.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Carry On Jatta 3",
+  "y": 2023,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.8,
+  "ivot": 11892.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Jatt & Juliet 3",
+  "y": 2024,
+  "cat": "punjabi",
+  "type": "Movie",
+  "g": [
+   "Comedy",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 5.3,
+  "ivot": 1959.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Village Rockstars",
+  "y": 2017,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.2,
+  "ivot": 1147.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Ganga Maiyya Tohe Piyari Chadhaibo",
+  "y": 1963,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Mystery",
+   "Thriller"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.1,
+  "ivot": 48.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nadiya Ke Paar",
+  "y": 1982,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Drama",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 8.2,
+  "ivot": 1618.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Dulhan Ganga Paar Ke",
+  "y": 2013,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Family"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 7.7,
+  "ivot": 49.0,
+  "verify": "imdb"
+ },
+ {
+  "t": "Nirahua Hindustani",
+  "y": 2014,
+  "cat": "assamese",
+  "type": "Movie",
+  "g": [
+   "Action",
+   "Romance"
+  ],
+  "m": [],
+  "a": [
+   "Hindi"
+  ],
+  "o": [],
+  "poster": "",
+  "src": "curated",
+  "status": "released",
+  "note": "Indian titles starter list (memory-written, IMDb-verified)",
+  "irt": 6.5,
+  "ivot": 173.0,
+  "verify": "imdb"
+ }
+]
