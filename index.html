@@ -168,6 +168,8 @@
   .guard p{margin:0 0 6px}
   .guard .gl{font-size:12px}
   .guard a{color:var(--accent)}
+  .feels{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 2px;font-size:12px;color:var(--muted)}
+  .feels .hbtn{font-size:11.5px;padding:6px 10px}
   /* ---------------- liquid glass ----------------
      Translucent panels that blur whatever sits behind them, a 1px light edge, and a soft
      highlight along the top. Everything degrades to a plain surface if backdrop-filter is
@@ -462,6 +464,7 @@
     </div>
     <div class="activechips" id="activeChips"></div>
     <div id="sitGuard"></div>
+    <div id="diaryBox"></div>
 
     <section class="grid" id="grid"></section>
     <section class="about" id="about">
@@ -471,6 +474,8 @@
       <p>Title, year, genre and rating data comes from <a href="https://www.imdb.com/" target="_blank" rel="noopener">IMDb</a> bulk datasets, <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a>, <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> and <a href="https://www.tvmaze.com/" target="_blank" rel="noopener">TVmaze</a>, plus a hand-checked set of lists for regional cinema. Posters and OTT availability are provided by TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
       <h5>Disclaimer</h5>
       <p>Availability changes constantly — a title can leave a platform the day after we list it. Always treat the platform shown as a hint and confirm on the service itself (every title has a "search each service" row for exactly this reason). We do not link to, host or encourage any unlicensed source. Spotted something wrong? Use the <b>Report wrong info</b> link on a title and we will fix it.</p>
+      <h5>How we pick</h5>
+      <p>No title on this page is paid for, and ranking is never for sale. Nothing is promoted because a platform wants it promoted. A pick rises for one reason only: how well it fits what you told us you want right now — your mood, your language, your time, and what you would rather avoid. When we do not know something, we say so instead of guessing, and when a filter has to be loosened to find anything at all, we tell you it was loosened.</p>
       <h5>Privacy</h5>
       <p>Your watchlist, star ratings and filters are stored only in your own browser. There are no accounts, no cookies and no analytics scripts on this page.</p>
     </section>
@@ -1673,6 +1678,10 @@ function openModal(d, fromPop){
       + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
       + '<button class="hbtn" data-mclose="1">Close</button>'
     + '</div>'
+    + '<div class="feels"><span>Dekhne ke baad kaisa laga?</span>'
+    + [['lighter','halka'],['moved','bhaavuk'],['thinking','sochne wala'],['waste','time waste']]
+        .map(x=>'<button class="hbtn" data-feel="'+esc(d.t)+'" data-how="'+x[0]+'">'+x[1]+'</button>').join('')
+    + '</div>'
     + talkAboutHtml(d)
     + '</div>';
   m.hidden=false;
@@ -2046,6 +2055,33 @@ function guardHtml(d){
     + '</div>';
 }
 
+
+/* ---- private diary ----
+   Nothing leaves the device. After a title is marked seen we ask one question, and over time the
+   answers say something about the viewer that no platform bothers to learn. */
+function diaryLoad(){ try{ return JSON.parse(localStorage.getItem('filmiset_diary')||'{}')||{}; }catch(e){ return {}; } }
+function diarySave(o){ try{ localStorage.setItem('filmiset_diary', JSON.stringify(o)); }catch(e){} }
+function diaryNote(title, feel){
+  if(!title) return;
+  const d=diaryLoad();
+  d[title]={feel:feel, at:new Date().toISOString().slice(0,10)};
+  diarySave(d); renderDiary();
+}
+function renderDiary(){
+  const host=document.getElementById('diaryBox'); if(!host) return;
+  const d=diaryLoad(); const keys=Object.keys(d);
+  if(!keys.length){ host.innerHTML=''; return; }
+  const tally={};
+  keys.forEach(k=>{ const f=d[k].feel; if(f) tally[f]=(tally[f]||0)+1; });
+  const top=Object.entries(tally).sort((a,b)=>b[1]-a[1])[0];
+  const feelLabel={lighter:'halka',moved:'bhaavuk',thinking:'sochne wala',waste:'time waste'};
+  host.innerHTML='<div class="about" style="margin-top:0;border:0;padding-top:0">'
+    + '<h5>Aapki diary (sirf aapke phone par)</h5>'
+    + '<p>'+keys.length+' titles. '
+    + (top? 'Sabse zyada aapne <b>'+(feelLabel[top[0]]||esc(top[0]))+'</b> feel kiya ('+top[1]+' baar).' : '')
+    + ' Kuch bhi kahin nahi bhejа jaata.</p>'
+    + '<p style="font-size:12px">'+keys.slice(-8).map(k=>esc(k)+' — '+esc(feelLabel[d[k].feel]||d[k].feel||'')).join('<br>')+'</p></div>';
+}
 /* ---- questions to talk about after the film ----
    Almost no catalogue does this. Three prompts, written per situation, so a film turns into a
    conversation instead of a scroll. Kept short on purpose. */
@@ -2389,6 +2425,7 @@ function render(){
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
   renderActiveChips();
+  renderDiary();
   (function(){ const g=document.getElementById('sitGuard'); if(g) g.innerHTML = (state.situationKey && SENSITIVE_SITUATIONS.indexOf(state.situationKey)>=0) ? guardHtml(null) : ''; })();
   const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe,[...state.genres].sort(),[...state.olang].sort(),[...state.cert].sort(),state.freeOnly,state.subsOnly,(state.situation||[]).length]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }

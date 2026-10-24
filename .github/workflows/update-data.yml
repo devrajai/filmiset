@@ -18,54 +18,65 @@ jobs:
           python-version: "3.12"
       - name: Install deps
         run: pip install pillow openpyxl ijson
-      - name: Fetch free movie data (Wikidata, no API key)
-        run: python3 scripts/fetch_data.py --out data/catalog.json
-      - name: Collect from YouTube channels (RSS, no key)
-        run: python3 scripts/fetch_youtube.py
-      - name: Enrich with TMDB (OTT, runtime, rating, age cert, trailer)
+      # ---- everything below writes to its own file, so it can all run at once ----
+      # Before this, these eight fetchers ran one after another; now they share one machine
+      # and finish in the time of the slowest single one.
+      - name: Collect (8 fetchers in parallel)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_tmdb.py --region IN
-      - name: TMDB discover (trending / popular / per-language)
-        env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_tmdb_discover.py --region IN --pages 2 --indian-pages 5
-      - name: Add IMDb ratings (free IMDb datasets)
-        run: python3 scripts/fetch_imdb.py
-      - name: TMDB full catalogue sweep (movies + TV, year by year)
-        env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_tmdb_full.py --start-year 1950 --end-year 2026 --max-pages 50
-      - name: IMDb full catalogue (11.6M titles, free datasets)
-        run: python3 scripts/fetch_imdb_catalog.py --top 2500000
-      - name: IMDb Indian titles (region/language from the akas dump)
-        run: python3 scripts/fetch_imdb_indian.py --top 20000
-      - name: Free full films on YouTube (official uploaders only)
-        env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY || secrets.YT_API_KEY }}
-        run: python3 scripts/fetch_youtube_free.py --min-minutes 20 --per-channel 12
-      - name: Trending now (TMDB, for the Trending chip)
+        run: |
+          set -u
+          run() { echo "::group::$1"; shift; "$@"; code=$?; echo "::endgroup::"; return $code; }
+          pids=""
+          run "Wikidata"        python3 scripts/fetch_data.py &
+          pids="$pids $!"
+          run "IMDb catalogue"  python3 scripts/fetch_imdb_catalog.py &
+          pids="$pids $!"
+          run "IMDb Indian"     python3 scripts/fetch_imdb_indian.py &
+          pids="$pids $!"
+          run "TMDB exports"    python3 scripts/fetch_tmdb_exports.py &
+          pids="$pids $!"
+          run "TVmaze"          python3 scripts/fetch_tvmaze.py &
+          pids="$pids $!"
+          run "Trending"        python3 scripts/fetch_trending.py --region IN &
+          pids="$pids $!"
+          run "YouTube free"    python3 scripts/fetch_youtube_free.py --min-minutes 20 --per-channel 12 &
+          pids="$pids $!"
+          run "Watch providers" python3 scripts/fetch_watch_providers.py &
+          pids="$pids $!"
+          run "YouTube RSS"     python3 scripts/fetch_youtube.py &
+          pids="$pids $!"
+          fail=0
+          for p in $pids; do wait "$p" || fail=1; done
+          exit $fail
+
+      # ---- these all talk to TMDB and share a rate limit, so they run in a second wave ----
+      - name: Enrich (TMDB + IMDb bulk, in parallel)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_trending.py --region IN
-      - name: TMDB daily ID exports (full catalogue, no key needed)
-        run: python3 scripts/fetch_tmdb_exports.py --min-popularity 1
-      - name: Watch providers — where each title streams in India (TMDB)
-        env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_watch_providers.py
-      - name: TVmaze — seasons, episodes and network per series (no key needed)
-        run: python3 scripts/fetch_tvmaze.py
-      - name: Cast + director for every title (IMDb bulk files — no API, no rate limit)
-        run: python3 scripts/fetch_imdb_cast.py --limit 300000
-      - name: Metadata for the IMDb rows (cast, director, overview)
-        env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_tmdb_details.py --limit 300000 --per-run 20000 --workers 12
+        run: |
+          set -u
+          run() { echo "::group::$1"; shift; "$@"; code=$?; echo "::endgroup::"; return $code; }
+          pids=""
+          run "TMDB enrich"   python3 scripts/fetch_tmdb.py &
+          pids="$pids $!"
+          run "TMDB discover" python3 scripts/fetch_tmdb_discover.py --indian-pages 5 &
+          pids="$pids $!"
+          run "TMDB full"     python3 scripts/fetch_tmdb_full.py &
+          pids="$pids $!"
+          run "IMDb cast"     python3 scripts/fetch_imdb_cast.py --limit 300000 &
+          pids="$pids $!"
+          run "IMDb ratings"  python3 scripts/fetch_imdb.py &
+          pids="$pids $!"
+          fail=0
+          for p in $pids; do wait "$p" || fail=1; done
+          exit $fail
+
       - name: Posters for the IMDb rows (rolling, TMDB by IMDb id)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_posters_tmdb.py --limit 600000 --per-run 50000 --workers 12
+        run: python3 scripts/fetch_posters_tmdb.py --limit 900000 --per-run 120000 --workers 16
       - name: Download + compress posters locally
         run: python3 scripts/download_posters.py --workers 2 --delay 0.35
       - name: Build Excel backup
