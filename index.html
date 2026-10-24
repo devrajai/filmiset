@@ -88,7 +88,9 @@
      wash runs behind it and only the content sits on top. */
   .topbar{position:sticky;top:0;z-index:150;background:transparent;border-bottom:0}
   /* a soft gradient fade instead of a slab — the header stays part of the page */
-  .topbar.scrolled{background:linear-gradient(to bottom, var(--bg) 62%, transparent)}
+  /* no background, ever — a wash of --bg is still a dark band in dark mode */
+  .topbar.scrolled{background:transparent}
+  .topbar, .topbar.scrolled{box-shadow:none;border-bottom:0}
   .topbar-in{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:13px 22px}
   .brand{display:flex;align-items:center;gap:10px;margin-right:auto}
   .logo{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--accent-ink);
@@ -97,7 +99,7 @@
   .wordmark{font-family:var(--font-display);font-weight:900;font-size:20px;letter-spacing:-0.02em}
   .search{position:relative;flex:1 1 240px;max-width:400px}
   .search input{width:100%;padding:11px 42px 11px 40px;border-radius:999px;
-    border:1px solid var(--line);background:var(--surface-2);color:var(--ink);
+    border:1px solid var(--line);background:var(--surface);color:var(--ink);
     font-family:var(--font-body);font-size:14px;outline:none;transition:.15s}
   .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
   .search input::placeholder{color:var(--faint)}
