@@ -79,3 +79,38 @@ That is the product. The rest is raw material, and raw material can be bought by
 
 **Free: keep the data, keep the attribution. Commercial: change the data, or buy the licence.**
 There is no third option, and no amount of re-collecting changes which licence a file arrived under.
+
+## About the disclaimer — what it can and cannot do
+
+This is the part people get wrong, so it is worth being blunt.
+
+**A disclaimer is not a licence.** It describes the position you are taking. It does not grant you
+any right you did not already have. No wording — in any language, however carefully written —
+turns "personal and non-commercial use only" into permission to sell something. If a rights holder
+disagrees with you, a paragraph on your About page is not a defence; it is at best evidence of
+good faith.
+
+**What the disclaimer on this site does do, and does do usefully:**
+
+| It does | Why it matters |
+|---|---|
+| States plainly that the project is free and non-commercial | This is the *only* thing that keeps the current setup defensible. It is also the honest description of what the site is today |
+| Credits IMDb, TMDB, Wikidata and TVmaze by name | TMDB **requires** attribution. Without it you are in breach regardless of everything else |
+| Says TMDB does not endorse or certify the site | The exact wording their terms ask for |
+| Says the site is not affiliated with any platform | Stops a trademark complaint before it starts |
+| Says nothing is hosted, streamed or downloaded here | Distinguishes a catalogue from a piracy site. This is the single most important line on the page |
+| Says the data may be wrong and gives a correction route | Limits liability and satisfies the notice-and-takedown expectation |
+| Offers removal on request | Shows good faith, and is usually enough to resolve a complaint quietly |
+
+**What no disclaimer can do:**
+
+- It cannot make commercial use of IMDb data legal. No licence for that exists at any price.
+- It cannot remove the licence attached to copies already on disk.
+- It cannot stop a takedown notice, a platform ban, or an ad network rejecting the site.
+- It cannot convert TMDB's free tier into a commercial one. Only a paid plan does that.
+
+So: keep the disclaimer, keep it accurate, and understand it as **a fair-dealing position for a
+free site** — not as a workaround. The moment the site earns money, the disclaimer stops being the
+relevant document and the licence becomes it again.
+
+**The rule to remember:** a disclaimer protects a free project. A licence protects a paid one.
