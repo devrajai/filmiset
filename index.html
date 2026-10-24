@@ -253,7 +253,14 @@
     .search input{font-size:15px;padding:12px 40px 12px 42px}
     .hbtn{font-size:12.5px;padding:9px 12px}
     .resultbar h3{font-size:20px}
-    .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+    .grid[data-loading="1"]::before,
+  .grid[data-loading="1"]::after{content:'';display:block;height:240px;border-radius:14px;
+    background:linear-gradient(100deg,var(--surface-2) 30%,var(--surface) 50%,var(--surface-2) 70%);
+    background-size:200% 100%;animation:shimmer 1.3s linear infinite}
+  .grid[data-loading="1"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+  @keyframes shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+  @media (prefers-reduced-motion: reduce){ .grid[data-loading="1"]::before,.grid[data-loading="1"]::after{animation:none} }
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
     .card{border-radius:14px}
     .cardbody{padding:11px 12px 12px}
     .card h4{font-size:15.5px}
@@ -2818,6 +2825,7 @@ function render(){
   const key = JSON.stringify([[...state.cat].sort(),[...state.moods].sort(),[...state.type].sort(),state.era,state.occasion,state.rel,state.dub,state.src,[...state.ott].sort(),state.coll,state.fr,state.sort,state.savedOnly,state.q,state.topN,state.gemsMode,state.vibe,[...state.genres].sort(),[...state.olang].sort(),[...state.cert].sort(),state.freeOnly,state.subsOnly,(state.situation||[]).length]);
   if(key!==lastKey){ lastKey=key; shownLimit=PAGE; }
   if(window._crisis){ out.length = 0; }
+  const gr0=document.getElementById('grid'); if(gr0) gr0.removeAttribute('data-loading');
   const shown = out.slice(0, state.topN ? Math.min(state.topN, out.length) : shownLimit);
   /* The default view is "this month". A hand-curated row often has no release date at all, so
      that window can be empty on a fresh visit — which looked like a broken site. Fall back to
@@ -2893,7 +2901,7 @@ function render(){
       : '');
 }
 
-let DATA = DEMO.slice();
+let DATA = [];
 
 function boot(){
   const st=document.getElementById('s-total'); if(st) st.textContent = DATA.length;
@@ -2932,15 +2940,21 @@ function mergeSets(list){
 let SHEET_SHARDS = [], liveResults = [], liveQuery = '', liveTimer = null;
 let IMDB_POSTERS = null;
 /* the poster map is only loaded the first time someone searches, so it costs nothing otherwise */
-function loadPostersSoon(){ afterPaint(loadPosters); }
+function loadPostersSoon(){
+  // it used to wait for an idle moment, which meant the posters always arrived late. Kick it off
+  // alongside the catalogue instead, a beat later so the first paint still wins.
+  setTimeout(loadPosters, 120);
+}
 function loadPosters(){
   if(IMDB_POSTERS !== null) return;
   IMDB_POSTERS = {};
   // the poster map may arrive plain or gzipped, depending on how big it got
-  fetch('data/imdb_posters.json').then(r => r.ok ? r.json() : null)
-    .then(m => {
-      if(m){ IMDB_POSTERS = m; applyPosters(); render(); return; }
-      return gunzipJson('data/imdb_posters.json.gz').then(g => { if(g){ IMDB_POSTERS = g; applyPosters(); render(); } });
+  // the plain file is ~1.9 MB; the gzipped one is roughly a quarter of that, so try it first
+  gunzipJson('data/imdb_posters.json.gz')
+    .then(g => {
+      if(g){ IMDB_POSTERS = g; applyPosters(); render(); return true; }
+      return fetch('data/imdb_posters.json').then(r => r.ok ? r.json() : null)
+        .then(m => { if(m){ IMDB_POSTERS = m; applyPosters(); render(); } });
     })
     .catch(() => {});
 }
