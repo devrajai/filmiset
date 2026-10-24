@@ -356,12 +356,13 @@
   .pill .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:6px;vertical-align:middle}
 
   /* hero */
-  .hero{padding:18px 0 2px}
-  .hero-center{text-align:center;width:100%;max-width:640px;margin:16px auto 8px;
-    scroll-margin-top:110px;display:flex;flex-direction:column;align-items:center}
+  .hero{padding:14px 0 22px}
+  .hero-center{width:100%;max-width:620px;margin:20px auto 14px;scroll-margin-top:110px;
+    display:grid;place-items:center;text-align:center;justify-items:center}
   /* the header is sticky, so anchor the page so content never starts underneath it */
   html{scroll-padding-top:110px}
-  .hero-center h2{margin:0 auto;width:100%;text-align:center;line-height:1.22}
+  .hero-center h2{margin:0 auto;width:100%;text-align:center;line-height:1.24;
+    font-size:clamp(22px,6.4vw,34px);padding:0 6px;text-wrap:balance}
   .hero-center p{margin-left:auto;margin-right:auto;max-width:560px}
   .eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
     color:var(--accent);display:inline-block;margin-bottom:14px}
