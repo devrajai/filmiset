@@ -28,7 +28,17 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY || secrets.YT_API_KEY }}
         run: |
           set -u
-          run() { echo "::group::$1"; shift; "$@"; code=$?; echo "::endgroup::"; return $code; }
+          run() {
+            echo "::group::$1"; shift
+            if [ -z "${TMDB_API_KEY:-}" ] && [ "$1" = "python3" ]; then
+              case "$2" in
+                *posters*|*watch_providers*|*trending*|*tmdb*)
+                  echo "::error::TMDB_API_KEY is not set — $2 will skip its work entirely"
+                  echo "::endgroup::"; return 1 ;;
+              esac
+            fi
+            "$@"; code=$?; echo "::endgroup::"; return $code
+          }
           pids=""
           run "Wikidata"        python3 scripts/fetch_data.py &
           pids="$pids $!"
@@ -108,6 +118,38 @@ jobs:
               os.remove(p)
               print(f"  {name}: {raw/1e6:.1f} MB -> {gz/1e6:.1f} MB gzipped")
           EOF
+
+      # Nothing ever verified that the run produced anything. This does, and it fails loudly,
+      # because a green tick on a step that silently skipped its work is worse than a red one.
+      - name: Check what was actually produced
+        if: always()
+        run: |
+          echo "=== files this run should have produced ==="
+          missing=0
+          for f in data/imdb_posters.json data/imdb_posters.json.gz data/poster_index.json \
+                   data/catalog.json data/imdb_indian.json data/mood_tags.json data/situations.json; do
+            if [ -f "$f" ]; then
+              echo "  OK      $f ($(du -h "$f" | cut -f1))"
+            else
+              echo "::error file=$f::$f was not produced"
+              missing=$((missing+1))
+            fi
+          done
+          echo "=== these come from a key or a source that may be off ==="
+          for f in data/watch_providers.json data/tvmaze.json data/trending.json \
+                   data/wikidata_posters.json data/actors.json data/filmography.json \
+                   data/boxoffice.json data/youtube_free.json; do
+            if [ -f "$f" ]; then
+              echo "  OK      $f ($(du -h "$f" | cut -f1))"
+            else
+              echo "::warning file=$f::$f missing — a source was skipped or failed"
+            fi
+          done
+          echo "poster count: $(python3 -c "import json;print(len(json.load(open('data/imdb_posters.json'))))" 2>/dev/null || echo 0)"
+          if [ "$missing" -gt 0 ]; then
+            echo "::error::$missing required file(s) missing — the site is running on stale data"
+            exit 1
+          fi
 
       - name: Commit if changed
         run: |
