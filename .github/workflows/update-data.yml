@@ -158,6 +158,18 @@ jobs:
             exit 1
           fi
 
+      - name: Stop tracking the bulk data
+        run: |
+          # These are pipeline inputs, not site assets. .gitignore excludes them and this removes
+          # the copies already tracked, so the repository stops carrying about 86 MB of IMDb and
+          # TMDB bulk files that the site never fetches.
+          for f in data/imdb_all.json.gz data/imdb_top.json data/tmdb_full.json.gz \
+                   data/tmdb_cache.json data/ott_cache.json data/youtube.json \
+                   data/filmiset-backup.xlsx; do
+            git rm --cached --ignore-unmatch "$f" >/dev/null 2>&1 || true
+          done
+          echo "untracked the bulk inputs"
+
       - name: Commit if changed
         run: |
           git config user.name "filmiset-bot"
