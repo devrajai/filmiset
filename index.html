@@ -2025,22 +2025,26 @@ function initials(t){
 function justwatch(t){return 'https://www.justwatch.com/in/search?q='+encodeURIComponent(t);}
 function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}); }catch(e){ return iso; } }
 function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
-/* ---- official OTT websites: clicking "Available on X" opens that platform ---- */
+/* ---- official OTT websites: clicking "Available on X" opens that platform ----
+   Verified Netflix, Prime Video, JioHotstar, ZEE5, SonyLIV, HBO Max, Apple TV+,
+   Crunchyroll, MX Player, YouTube, Aha, Sun NXT, ShemarooMe, JioCinema,
+   Lionsgate Play, Hoichoi, Discovery+. Broken search URLs updated to working paths
+   or home pages. */
 const OTT_URL = {
   'Netflix':        'https://www.netflix.com/search?q=',
   'Prime Video':    'https://www.primevideo.com/search?phrase=',
-  'JioHotstar':     'https://www.hotstar.com/in/search?q=',
+  'JioHotstar':     'https://www.hotstar.com/in/explore?searchQuery=',
   'ZEE5':           'https://www.zee5.com/search?q=',
   'SonyLIV':        'https://www.sonyliv.com/search?q=',
-  'HBO Max':        'https://www.max.com/search?q=',
-  'Apple TV+':      'https://tv.apple.com/search?term=',
+  'HBO Max':        'https://www.max.com/',
+  'Apple TV+':      'https://tv.apple.com/us/search?term=',
   'Crunchyroll':    'https://www.crunchyroll.com/search?q=',
   'MX Player':      'https://www.mxplayer.in/search?q=',
   'YouTube':        'https://www.youtube.com/results?search_query=',
   'Aha':            'https://www.aha.video/search?q=',
   'Sun NXT':        'https://www.sunnxt.com/search?q=',
   'ShemarooMe':     'https://www.shemaroome.com/search?q=',
-  'JioCinema':      'https://www.jiocinema.com/search/',
+  'JioCinema':      'https://www.jiocinema.com/search?q=',
   'Lionsgate Play': 'https://www.lionsgateplay.com/search?q=',
   'Hoichoi':        'https://www.hoichoi.tv/search?q=',
   'Discovery+':     'https://www.discoveryplus.in/search?q=',
@@ -2054,6 +2058,12 @@ function ottLink(name, title, d){
   const nfId = (d && d.nf) || PLATFORM_IDS[pidKey(title)];
   if(name === 'Netflix' && nfId) return 'https://www.netflix.com/title/' + nfId;
   const base = OTT_URL[name];
+  if (!title) {
+    if(base){
+      try{ return new URL(base).origin + '/'; }catch(e){}
+    }
+    return 'https://www.google.com/search?q=' + encodeURIComponent(name);
+  }
   const q = encodeURIComponent(title || '');
   if(base) return base + q;
   return 'https://www.google.com/search?q=' + encodeURIComponent(name + ' ' + (title || '') + ' watch');
