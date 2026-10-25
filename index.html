@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FilmiSet — Kya Dekhein?</title>
+<link rel="canonical" href="https://devrajai.github.io/filmiset/">
+<meta property="og:title" content="FilmiSet — Kya Dekhein?">
+<meta property="og:description" content="Discover movies and web-series.">
+<meta property="og:image" content="">
+<meta property="og:url" content="https://devrajai.github.io/filmiset/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -750,7 +755,32 @@ function fmtDate(iso){ try{ return new Date(iso+'T00:00:00').toLocaleDateString(
 function esc(s){ return String(s==null?'':s).replace(/"/g,'&quot;'); }
 
 /* ---- title modal (Surprise me / Aaj ka vibe / details) ---- */
-function openModal(d){
+let origOg = null;
+function openModal(d, skipPush){
+  if (!origOg) {
+    origOg = {
+      t: document.title,
+      c: document.querySelector('link[rel="canonical"]')?.href,
+      ot: document.querySelector('meta[property="og:title"]')?.content,
+      od: document.querySelector('meta[property="og:description"]')?.content,
+      oi: document.querySelector('meta[property="og:image"]')?.content,
+      ou: document.querySelector('meta[property="og:url"]')?.content
+    };
+  }
+  const slug = toSlug(d.t, d.y);
+  document.title = d.t + ' (' + (d.y||'') + ') — FilmiSet';
+  const c = document.querySelector('link[rel="canonical"]'); if(c) c.href = location.origin + location.pathname + '?t=' + slug;
+  const ot = document.querySelector('meta[property="og:title"]'); if(ot) ot.content = d.t;
+  const od = document.querySelector('meta[property="og:description"]'); if(od) od.content = d.ov || '';
+  const oi = document.querySelector('meta[property="og:image"]'); if(oi && d.poster) oi.content = d.poster.startsWith('http') ? d.poster : (location.origin + location.pathname + d.poster);
+  const ou = document.querySelector('meta[property="og:url"]'); if(ou) ou.content = location.origin + location.pathname + '?t=' + slug;
+
+  if (!skipPush) {
+    const u = new URL(location.href);
+    u.searchParams.set('t', slug);
+    history.pushState({modal: true}, '', u.toString());
+  }
+
   const up=d.status==='upcoming';
   const avail=(d.o&&d.o.length)? 'Available on '+d.o.join(' · ') : 'OTT info not listed';
   const m=document.getElementById('modal');
@@ -771,7 +801,32 @@ function openModal(d){
     + '</div></div>';
   m.hidden=false;
 }
-function closeModal(){ document.getElementById('modal').hidden=true; }
+function closeModal(skipPush){
+  document.getElementById('modal').hidden=true;
+  if (origOg) {
+    document.title = origOg.t;
+    const c = document.querySelector('link[rel="canonical"]'); if(c) c.href = origOg.c || '';
+    const ot = document.querySelector('meta[property="og:title"]'); if(ot) ot.content = origOg.ot || '';
+    const od = document.querySelector('meta[property="og:description"]'); if(od) od.content = origOg.od || '';
+    const oi = document.querySelector('meta[property="og:image"]'); if(oi) oi.content = origOg.oi || '';
+    const ou = document.querySelector('meta[property="og:url"]'); if(ou) ou.content = origOg.ou || '';
+  }
+  if (!skipPush) {
+    const u = new URL(location.href);
+    u.searchParams.delete('t');
+    history.pushState(null, '', u.toString());
+  }
+}
+window.addEventListener('popstate', e => {
+  const p = new URLSearchParams(location.search);
+  const tParam = p.get('t');
+  if (!tParam) closeModal(true);
+  else {
+    const title = DATA.find(d => toSlug(d.t, d.y) === tParam);
+    if (title) openModal(title, true);
+    else closeModal(true);
+  }
+});
 document.getElementById('modal').addEventListener('click',e=>{
   const m=document.getElementById('modal');
   if(e.target===m){ closeModal(); return; }
@@ -845,6 +900,11 @@ function syncUrl(){
   if(state.q) p.set('q',state.q);
   if(state.moods.size) p.set('moods',[...state.moods].join('|'));
   if(state.savedOnly) p.set('saved','1');
+
+  const currentP = new URLSearchParams(location.search);
+  const tParam = currentP.get('t');
+  if(tParam) p.set('t', tParam);
+
   const qs=p.toString();
   history.replaceState(null,'',qs?('?'+qs):location.pathname);
 }
@@ -1042,11 +1102,22 @@ function render(){
 
 let DATA = DEMO.slice();
 
+function toSlug(t, y) {
+  return (t||'').toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + (y||'');
+}
+
 function boot(){
   const st=document.getElementById('s-total'); if(st) st.textContent = DATA.length;
   const sc=document.getElementById('s-classic'); if(sc) sc.textContent = DATA.filter(d => Number(d.y) < 2000).length;
   render();
   renderVibe();
+
+  const p = new URLSearchParams(location.search);
+  const tParam = p.get('t');
+  if (tParam) {
+    const title = DATA.find(d => toSlug(d.t, d.y) === tParam);
+    if (title) openModal(title, true);
+  }
 }
 
 function normKey(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]/g,''); }
