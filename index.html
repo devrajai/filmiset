@@ -8,7 +8,7 @@
 <meta name="description" content="Kya dekhein? Pick a mood and see movies, web series and Gujarati natak worth watching — Bollywood, Hollywood, South Indian, Korean and anime in one place. Filter by OTT platform, language, era and rating, and find the trailer or where to watch.">
 <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
-<link rel="canonical" href="https://devrajai.github.io/filmiset/">
+<link rel="canonical" href="https://filmiset.vercel.app/">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
@@ -17,8 +17,8 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="FilmiSet — Kya Dekhein?">
 <meta property="og:description" content="Mood bolo, aa jao, dikha dunga — Bollywood, Hollywood, South, Korean, Anime aur web series, sab ek jagah.">
-<meta property="og:url" content="https://devrajai.github.io/filmiset/">
-<meta property="og:image" content="https://devrajai.github.io/filmiset/og.png">
+<meta property="og:url" content="https://filmiset.vercel.app/">
+<meta property="og:image" content="https://filmiset.vercel.app/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="FilmiSet — Kya dekhein? Movies, web series and natak by mood">
@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="FilmiSet — Movies, Web Series &amp; Natak by Mood">
 <meta name="twitter:description" content="Pick a mood, see something worth watching. Bollywood, Hollywood, South Indian, Korean, anime and Gujarati natak in one place.">
-<meta name="twitter:image" content="https://devrajai.github.io/filmiset/og.png">
+<meta name="twitter:image" content="https://filmiset.vercel.app/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 <link rel="dns-prefetch" href="https://image.tmdb.org">
@@ -816,7 +816,7 @@ function topTenCard(){
     x.fillStyle='#d8a8c0'; x.font='22px system-ui,sans-serif';
     x.fillText([d.y,(d.irt?'★'+d.irt:'')].filter(Boolean).join(' · '),W-260,y+8);
   });
-  x.fillStyle='#ac7e96'; x.font='22px system-ui,sans-serif'; x.fillText('devrajai.github.io/filmiset',60,H-50);
+  x.fillStyle='#ac7e96'; x.font='22px system-ui,sans-serif'; x.fillText(location.host + location.pathname.replace(/\/$/,''), 60, H-50);
   c.toBlob(b=>{ const url=URL.createObjectURL(b); const a=document.createElement('a');
     a.href=url; a.download='filmiset-top10.png'; document.body.appendChild(a); a.click(); a.remove();
     setTimeout(()=>URL.revokeObjectURL(url),5000); });
@@ -2720,13 +2720,13 @@ function applyPosters(){
     if(id && IMDB_POSTERS[id]){ d.poster = IMDB_POSTERS[id]; filled++; continue; }
     // last resort: a poster downloaded into the repo, matched on a slug of the title
     const slug = String(d.t||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-    if(slug && LOCAL_POSTERS && LOCAL_POSTERS[slug]){ d.poster = LOCAL_POSTERS[slug]; filled++; }
+    /* no local fallback any more — see the note above */
   }
   return filled;
 }
+/* the locally downloaded posters/ folder is no longer shipped: it was 5,000 images,
+   far too big for the repository, and the host would 404 every one of them. */
 let LOCAL_POSTERS = {};
-fetch('data/poster_index.json').then(r=>r.ok?r.json():null)
-  .then(m=>{ if(m){ LOCAL_POSTERS=m; applyPosters(); render(); } }).catch(()=>{});
 /* ---- smart collections, wired to the quick picks ---- */
 function applyCollection(kind){
   const list = kind==='floved' ? collectionFloppedLoved() : collectionUnderrated();
