@@ -33,8 +33,9 @@ jobs:
             if [ -z "${TMDB_API_KEY:-}" ] && [ "$1" = "python3" ]; then
               case "$2" in
                 *posters*|*watch_providers*|*trending*|*tmdb*)
-                  echo "::error::TMDB_API_KEY is not set — $2 will skip its work entirely"
-                  echo "::endgroup::"; return 1 ;;
+                  echo "::warning::TMDB_API_KEY is not set — $2 will skip its work entirely"
+                  echo "::notice::the free sources (IMDb bulk, TVmaze, Wikidata) still run"
+                  ;;
               esac
             fi
             "$@"; code=$?; echo "::endgroup::"; return $code
@@ -150,6 +151,17 @@ jobs:
             echo "::error::$missing required file(s) missing — the site is running on stale data"
             exit 1
           fi
+
+      - name: Stop tracking the bulk data
+        run: |
+          # these are pipeline inputs, not site assets. .gitignore now excludes them, and this
+          # removes the copies already tracked so the public repo shrinks by about 86 MB.
+          for f in data/imdb_all.json.gz data/imdb_top.json data/tmdb_full.json.gz \
+                   data/tmdb_cache.json data/ott_cache.json data/youtube.json \
+                   data/filmiset-backup.xlsx; do
+            git rm --cached --ignore-unmatch "$f" >/dev/null 2>&1 || true
+          done
+          echo "untracked the bulk inputs"
 
       - name: Commit if changed
         run: |

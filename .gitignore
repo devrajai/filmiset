@@ -1,0 +1,20 @@
+# ---- bulk data that the workflow uses but the site never fetches ----
+# These are inputs for the pipeline, regenerated on every run. Keeping them out of a public
+# repository shrinks it by about 86 MB and removes a lot of redistributed source data that the
+# site does not need anyway.
+imdb_all.json.gz
+imdb_top.json
+tmdb_full.json.gz
+tmdb_cache.json
+ott_cache.json
+youtube.json
+filmiset-backup.xlsx
+
+# downloaded poster images — the map in data/imdb_posters.json is what the site uses
+posters/
+
+# runner leftovers
+*.tsv
+*.tsv.gz
+__pycache__/
+*.pyc
