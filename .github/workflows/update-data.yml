@@ -128,6 +128,24 @@ jobs:
 
       # Nothing ever verified that the run produced anything. This does, and it fails loudly,
       # because a green tick on a step that silently skipped its work is worse than a red one.
+      # a manifest so the site can ask once what exists instead of paying for 404s every load
+      - name: Write the data manifest
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          files = {}
+          for n in sorted(os.listdir("data")):
+              p = os.path.join("data", n)
+              if os.path.isfile(p) and (n.endswith(".json") or n.endswith(".json.gz")):
+                  files[n] = os.path.getsize(p)
+          out = {"generated": __import__("datetime").datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                 "count": len(files), "files": files}
+          json.dump(out, open("data/manifest.json", "w"), separators=(",", ":"))
+          print(f"manifest: {len(files)} files")
+          for k in ("filmography.json","tvmaze.json","watch_providers.json","trending.json","imdb_cast.json.gz","imdb_details.json.gz"):
+              print(f"  {'present' if k in files else 'absent '} {k}")
+          EOF
+
       - name: Check what was actually produced
         if: always()
         run: |

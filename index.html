@@ -2707,6 +2707,36 @@ function renderDiary(){
 }
 
 
+
+/* ---- ask the manifest first ----
+   The workflow writes data/manifest.json listing the files it actually produced. Without it the
+   site requested six files that do not exist unless a TMDB key is present, and every load paid
+   for six 404s. The wrapper waits for the manifest once, then answers instantly for anything that
+   is not in it. If the manifest is missing or unreadable, every request goes through as before —
+   so this can only ever save work, never block it. */
+let DATA_MANIFEST = null;
+const _manifestReady = (function(){
+  try{
+    return fetch('data/manifest.json').then(r => r.ok ? r.json() : null)
+      .then(m => { DATA_MANIFEST = (m && m.files) ? m.files : null; return DATA_MANIFEST; })
+      .catch(() => { DATA_MANIFEST = null; return null; });
+  }catch(e){ return Promise.resolve(null); }
+})();
+(function manifestFetch(){
+  const orig = window.fetch.bind(window);
+  window.fetch = function(input, init){
+    const url = String(input && input.url ? input.url : input);
+    const m = url.match(/data\/([A-Za-z0-9_\-\.]+\.json(?:\.gz)?)/);
+    if(!m) return orig(input, init);
+    return _manifestReady.then(function(files){
+      if(files && !(m[1] in files)){
+        return { ok:false, status:404, json:function(){ return Promise.resolve(null); } };
+      }
+      return orig(input, init);
+    });
+  };
+})();
+
 /* ---- posters, applied after the map arrives ----
    The rows were built before the poster map finished downloading, so every row was left with an
    empty poster and re-rendering could not help — the field was already blank. This walks the
