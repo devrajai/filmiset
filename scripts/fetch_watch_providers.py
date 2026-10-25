@@ -80,6 +80,22 @@ def lookup(title, year, is_series, key):
     return {"p": plats, "jw": block.get("link") or "", "tmdb": tid}
 
 
+
+def _verify_key(key):
+    """Prove the key works before doing thousands of lookups. A key that is present but rejected
+    looks exactly like a key that is missing, and that is how this step stayed broken for days:
+    the run reported success while producing nothing."""
+    try:
+        req = urllib.request.Request(f"{TMDB}/configuration?api_key={key}",
+                                     headers={"Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            json.loads(r.read().decode("utf-8"))
+        print("TMDB key verified \u2713")
+        return True
+    except Exception as e:
+        print(f"::error::TMDB_API_KEY is present but the call failed: {type(e).__name__} {str(e)[:120]}")
+        return False
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--delay", type=float, default=0.06)
@@ -87,6 +103,8 @@ def main():
     args = ap.parse_args()
 
     key = (os.environ.get("TMDB_API_KEY") or os.environ.get("TMDBKEY") or "").strip()
+    if not _verify_key(key):
+        sys.exit(1)
     if not key:
         print("TMDB_API_KEY not set — skipping watch providers (site keeps working).")
         return
