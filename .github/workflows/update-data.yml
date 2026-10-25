@@ -1,8 +1,11 @@
 name: Refresh catalog data
 
 on:
+  # Weekly, not daily. This repository is private, so every minute counts against the 2,000
+  # free Actions minutes a month, and the other repositories on this account already use about
+  # 1,500 of them. One run a week at roughly 35 minutes is about 150 minutes a month.
   schedule:
-    - cron: "30 2 * * *"   # 02:30 UTC = 08:00 IST, daily
+    - cron: "30 2 * * 1"   # Monday 02:30 UTC = 08:00 IST
   workflow_dispatch:
 
 permissions:
@@ -11,7 +14,7 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -76,9 +79,9 @@ jobs:
           pids="$pids $!"
           run "TMDB full"     python3 scripts/fetch_tmdb_full.py &
           pids="$pids $!"
-          run "IMDb cast"     python3 scripts/fetch_imdb_cast.py --limit 2500000 &
+          run "IMDb cast"     python3 scripts/fetch_imdb_cast.py --limit 300000 &
           pids="$pids $!"
-          run "Actors"        python3 scripts/fetch_actors.py --limit 400000 &
+          run "Actors"        python3 scripts/fetch_actors.py --limit 200000 &
           pids="$pids $!"
           run "Filmography"   python3 scripts/build_filmography.py --top 8000 &
           pids="$pids $!"
@@ -90,15 +93,15 @@ jobs:
 
       # keyless first: this one always runs, whatever the TMDB key situation is
       - name: Posters from Wikipedia (no key needed)
-        run: python3 scripts/fetch_posters_free.py --limit 15000
+        run: python3 scripts/fetch_posters_free.py --limit 4000
 
       - name: Posters for the IMDb rows (rolling, TMDB by IMDb id)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
-        run: python3 scripts/fetch_posters_tmdb.py --limit 2500000 --per-run 900000 --workers 16
+        run: python3 scripts/fetch_posters_tmdb.py --limit 600000 --per-run 120000 --workers 16
       # a second, TMDB-free source for posters and short descriptions (Wikidata is CC0)
       - name: Posters + descriptions from Wikidata (no key, CC0)
-        run: python3 scripts/fetch_posters_wikidata.py --limit 20000
+        run: python3 scripts/fetch_posters_wikidata.py --limit 4000
       - name: Download + compress posters locally
         run: python3 scripts/download_posters.py --workers 2 --delay 0.35
       - name: Build Excel backup
