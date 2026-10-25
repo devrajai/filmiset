@@ -571,9 +571,8 @@
       <button id="filtersClose" class="railclose" aria-label="Close filters">×</button>
     </div>
     <div class="rail-block rail-actions">
-      <h6>Your list</h6>
+      <h6>Quick actions</h6>
       <div class="railbtns">
-        <button id="savedBtn" class="hbtn" title="Watchlist">♡ Saved <b id="savedCount">0</b></button>
         <button id="shareBtn" class="hbtn" title="Share this view">↪ Share</button>
         <button id="surpriseBtn" class="hbtn" title="Random pick">⚄ Surprise me</button>
       </div>
@@ -1986,7 +1985,8 @@ document.getElementById('qclear').addEventListener('click',()=>{
 });
 
 /* watchlist toggle + save buttons (delegated) */
-document.getElementById('savedBtn').addEventListener('click',()=>{ state.savedOnly=!state.savedOnly; render(); });
+/* the Saved shortcut is gone from the panel; the watchlist itself still works via the
+   heart on each card and the Save button in the detail view */
 document.addEventListener('click',e=>{
   const b=e.target.closest('.save-btn'); if(!b) return;
   const t=b.dataset.title;
@@ -2263,8 +2263,8 @@ function syncUrl(){
   history.replaceState(null,'',qs?('?'+qs):location.pathname);
 }
 function updateSavedBtn(){
-  document.getElementById('savedCount').textContent = watchlist.size;
-  document.getElementById('savedBtn').classList.toggle('on', state.savedOnly);
+  const c = document.getElementById('savedCount'); if(c) c.textContent = watchlist.size;
+  const b = document.getElementById('savedBtn');  if(b) b.classList.toggle('on', state.savedOnly);
 }
 function activeFilters(){
   const a=[];
