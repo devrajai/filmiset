@@ -1,6 +1,9 @@
-name: Jules daily maintenance
+name: Jules weekly maintenance
 
-# Wakes Jules up once a day to keep the site healthy.
+# Wakes Jules up once a week to keep the site healthy.
+#
+# Weekly, not daily: this repository is private, so Actions minutes are capped at 2,000 a month
+# and the other repositories on this account already use about 1,500.
 #
 # One-time setup (5 minutes):
 #   1. jules.google.com -> sign in with GitHub -> Settings -> create an API key
@@ -10,7 +13,7 @@ name: Jules daily maintenance
 
 on:
   schedule:
-    - cron: '30 2 * * *'      # 08:00 IST every day
+    - cron: '0 4 * * 1'      # Mondays 09:30 IST — weekly, see the budget note
   workflow_dispatch:
 
 jobs:
@@ -32,10 +35,13 @@ jobs:
           include_commit_log: true
           prompt: |
             You are the FilmiSet maintenance agent. FilmiSet is a free, static movie and
-            web-series discovery site served by GitHub Pages from this repo. Read
-            docs/JULES_TASKS.md first — it is the full brief (file map, data shapes, rules).
+            web-series discovery site served by Vercel from this repo. Read
+            docs/JULES_TASKS.md first — it is the full brief: file map, data shapes, the rules, and what is actually worth doing.
 
-            Every day, do this:
+            Branch from origin/main and rebase before opening a pull request. Two pull requests here
+            were cut from a base days old and would have reverted the site rather than fixing it.
+
+            Every week, do this:
 
             1. HEALTH CHECK — report, and only then act:
                - Is the latest CI run on main green? (workflow ci.yml)
