@@ -1,0 +1,225 @@
+name: Refresh catalog data
+
+on:
+  # Weekly, not daily. This repository is private, so every minute counts against the 2,000
+  # free Actions minutes a month, and the other repositories on this account already use about
+  # 1,500 of them. One run a week at roughly 35 minutes is about 150 minutes a month.
+  schedule:
+    - cron: "30 2 * * 1"   # Monday 02:30 UTC = 08:00 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install pillow openpyxl ijson
+      # ---- everything below writes to its own file, so it can all run at once ----
+      # Before this, these eight fetchers ran one after another; now they share one machine
+      # and finish in the time of the slowest single one.
+      - name: Collect (8 fetchers in parallel)
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY || secrets.YT_API_KEY }}
+        run: |
+          set -u
+          run() {
+            echo "::group::$1"; shift
+            if [ -z "${TMDB_API_KEY:-}" ] && [ "$1" = "python3" ]; then
+              case "$2" in
+                *posters*|*watch_providers*|*trending*|*tmdb*)
+                  echo "::error::TMDB_API_KEY is not set — $2 will skip its work entirely"
+                  echo "::endgroup::"; return 1 ;;
+              esac
+            fi
+            "$@"; code=$?; echo "::endgroup::"; return $code
+          }
+          pids=""
+          run "Wikidata"        python3 scripts/fetch_data.py &
+          pids="$pids $!"
+          run "IMDb catalogue"  python3 scripts/fetch_imdb_catalog.py &
+          pids="$pids $!"
+          run "IMDb Indian"     python3 scripts/fetch_imdb_indian.py &
+          pids="$pids $!"
+          run "TMDB exports"    python3 scripts/fetch_tmdb_exports.py &
+          pids="$pids $!"
+          run "TVmaze"          python3 scripts/fetch_tvmaze.py &
+          pids="$pids $!"
+          run "Trending"        python3 scripts/fetch_trending.py --region IN &
+          pids="$pids $!"
+          run "YouTube free"    python3 scripts/fetch_youtube_free.py --min-minutes 20 --per-channel 12 &
+          pids="$pids $!"
+          run "Watch providers" python3 scripts/fetch_watch_providers.py &
+          pids="$pids $!"
+          run "YouTube RSS"     python3 scripts/fetch_youtube.py &
+          pids="$pids $!"
+          fail=0
+          for p in $pids; do wait "$p" || fail=1; done
+          exit $fail
+
+      # ---- these all talk to TMDB and share a rate limit, so they run in a second wave ----
+      - name: Enrich (TMDB + IMDb bulk, in parallel)
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
+        run: |
+          set -u
+          run() { echo "::group::$1"; shift; "$@"; code=$?; echo "::endgroup::"; return $code; }
+          pids=""
+          run "TMDB enrich"   python3 scripts/fetch_tmdb.py &
+          pids="$pids $!"
+          run "TMDB discover" python3 scripts/fetch_tmdb_discover.py --indian-pages 5 &
+          pids="$pids $!"
+          run "TMDB full"     python3 scripts/fetch_tmdb_full.py &
+          pids="$pids $!"
+          run "IMDb cast"     python3 scripts/fetch_imdb_cast.py --limit 300000 &
+          pids="$pids $!"
+          run "Actors"        python3 scripts/fetch_actors.py --limit 200000 &
+          pids="$pids $!"
+          run "Filmography"   python3 scripts/build_filmography.py --top 8000 &
+          pids="$pids $!"
+          run "IMDb ratings"  python3 scripts/fetch_imdb.py &
+          pids="$pids $!"
+          fail=0
+          for p in $pids; do wait "$p" || fail=1; done
+          exit $fail
+
+      # keyless first: this one always runs, whatever the TMDB key situation is
+      - name: Posters from Wikipedia (no key needed)
+        run: python3 scripts/fetch_posters_free.py --limit 4000
+
+      - name: Posters for the IMDb rows (rolling, TMDB by IMDb id)
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || secrets.TMDBKEY }}
+        run: python3 scripts/fetch_posters_tmdb.py --limit 600000 --per-run 120000 --workers 16
+      # a second, TMDB-free source for posters and short descriptions (Wikidata is CC0)
+      - name: Posters + descriptions from Wikidata (no key, CC0)
+        run: python3 scripts/fetch_posters_wikidata.py --limit 4000
+      - name: Download + compress posters locally
+        run: python3 scripts/download_posters.py --workers 2 --delay 0.35
+      - name: Build Excel backup
+        run: python3 scripts/make_backup.py --out data/filmiset-backup.xlsx
+      # GitHub rejects any single file over 100 MB, and the poster map is now large enough to
+      # cross that line. Compress the big JSON files, keep only a small sample of the downloaded
+      # images, and say plainly what was dropped rather than letting the push fail silently.
+      - name: Compress the big data files
+        run: |
+          python3 - <<'EOF'
+          import gzip, json, os, shutil
+          for name in ("imdb_posters.json","actors.json","title_cast.json","boxoffice.json","wikidata_posters.json"):
+              p = os.path.join("data", name)
+              if not os.path.exists(p): continue
+              raw = os.path.getsize(p)
+              if raw < 8_000_000:            # small enough to leave alone
+                  print(f"  {name}: {raw/1e6:.1f} MB — kept as is"); continue
+              with open(p,"rb") as fh, gzip.open(p+".gz","wb",compresslevel=9) as out:
+                  shutil.copyfileobj(fh, out)
+              gz = os.path.getsize(p+".gz")
+              os.remove(p)
+              print(f"  {name}: {raw/1e6:.1f} MB -> {gz/1e6:.1f} MB gzipped")
+          EOF
+
+      # Nothing ever verified that the run produced anything. This does, and it fails loudly,
+      # because a green tick on a step that silently skipped its work is worse than a red one.
+      # a manifest so the site can ask once what exists instead of paying for 404s every load
+      - name: Write the data manifest
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          files = {}
+          for n in sorted(os.listdir("data")):
+              p = os.path.join("data", n)
+              if os.path.isfile(p) and (n.endswith(".json") or n.endswith(".json.gz")):
+                  files[n] = os.path.getsize(p)
+          out = {"generated": __import__("datetime").datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                 "count": len(files), "files": files}
+          json.dump(out, open("data/manifest.json", "w"), separators=(",", ":"))
+          print(f"manifest: {len(files)} files")
+          for k in ("filmography.json","tvmaze.json","watch_providers.json","trending.json","imdb_cast.json.gz","imdb_details.json.gz"):
+              print(f"  {'present' if k in files else 'absent '} {k}")
+          EOF
+
+      - name: Check what was actually produced
+        if: always()
+        run: |
+          echo "=== files this run should have produced ==="
+          missing=0
+          for f in data/imdb_posters.json data/imdb_posters.json.gz data/poster_index.json \
+                   data/catalog.json data/imdb_indian.json data/mood_tags.json data/situations.json; do
+            if [ -f "$f" ]; then
+              echo "  OK      $f ($(du -h "$f" | cut -f1))"
+            else
+              echo "::error file=$f::$f was not produced"
+              missing=$((missing+1))
+            fi
+          done
+          echo "=== these come from a key or a source that may be off ==="
+          for f in data/watch_providers.json data/tvmaze.json data/trending.json \
+                   data/wikidata_posters.json data/actors.json data/filmography.json \
+                   data/boxoffice.json data/youtube_free.json; do
+            if [ -f "$f" ]; then
+              echo "  OK      $f ($(du -h "$f" | cut -f1))"
+            else
+              echo "::warning file=$f::$f missing — a source was skipped or failed"
+            fi
+          done
+          echo "poster count: $(python3 -c "import json;print(len(json.load(open('data/imdb_posters.json'))))" 2>/dev/null || echo 0)"
+          if [ "$missing" -gt 0 ]; then
+            echo "::error::$missing required file(s) missing — the site is running on stale data"
+            exit 1
+          fi
+
+      - name: Stop tracking the bulk data
+        run: |
+          # These are pipeline inputs, not site assets. .gitignore excludes them and this removes
+          # the copies already tracked, so the repository stops carrying about 86 MB of IMDb and
+          # TMDB bulk files that the site never fetches.
+          for f in data/imdb_all.json.gz data/imdb_top.json data/tmdb_full.json.gz \
+                   data/tmdb_cache.json data/ott_cache.json data/youtube.json \
+                   data/filmiset-backup.xlsx; do
+            git rm --cached --ignore-unmatch "$f" >/dev/null 2>&1 || true
+          done
+          echo "untracked the bulk inputs"
+
+      - name: Commit if changed
+        run: |
+          git config user.name "filmiset-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # never let a stray giant file block the whole refresh
+          find . -path ./.git -prune -o -type f -size +90M -print | while read -r f; do
+            echo "::warning::skipping $f — over the 100 MB GitHub file limit"
+            rm -f "$f"
+          done
+          # keep only a sample of locally downloaded posters, or the repo balloons
+          if [ -d posters ]; then
+            COUNT=$(find posters -type f | wc -l)
+            if [ "$COUNT" -gt 4000 ]; then
+              echo "::warning::posters/ has $COUNT files — keeping the first 4000"
+              find posters -type f | tail -n +4001 | xargs -r rm -f
+            fi
+          fi
+          # a stray IMDb dump landed in the repo root once and got committed — never again
+          rm -f title.crew.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz name.basics.tsv.gz title.principals.tsv.gz title.akas.tsv.gz title.episode.tsv.gz
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no changes today"
+          else
+            git commit -m "chore: refresh catalog + posters"
+            # The push was failing with "fetch first" because a person and this job can commit at
+            # the same moment. Rebase onto whatever landed while we were collecting, then retry.
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase --autostash origin main && git push; then
+                echo "pushed on attempt $attempt"; break
+              fi
+              echo "::warning::push attempt $attempt rejected — rebasing and retrying"
+              git rebase --abort 2>/dev/null || true
+              sleep 12
+            done
+          fi
