@@ -1744,32 +1744,12 @@ const VIBE_PICKS = [
   });
 })();
 
-/* ---- where to look for a title: one search link per service ----
-   These are search links, not deep links, because a deep link goes stale the day a licence
-   changes. The label says "Search", so nobody is told the title is definitely there.
-   YouTube is a plain title search: it used to append "+full movie", which pulled up compilations,
-   reaction videos and outright fakes far more often than the film itself. And there is no
-   "Available on YouTube" link any more, because claiming availability from a search result was
-   the same mistake in a stronger form. */
-function streamLinks(title){
-  const q=encodeURIComponent(title||'');
-  return [
-    ['Netflix',     'https://www.netflix.com/search?q='+q,                        '#e50914'],
-    ['Prime Video', 'https://www.primevideo.com/search?phrase='+q,                 '#00a8e1'],
-    ['JioHotstar',  'https://www.hotstar.com/in/explore?search_query='+q,          '#1b3a6b'],
-    ['ZEE5',        'https://www.zee5.com/search?q='+q,                            '#82368c'],
-    ['SonyLIV',     'https://www.sonyliv.com/search?searchTerm='+q,                '#2b2b2b'],
-    ['YouTube',     'https://www.youtube.com/results?search_query='+q,                '#cc0000'],
-  ];
-}
-function streamRowHtml(title){
-  return '<div class="m" style="margin-top:10px">Where to look \u2014 search each service</div>'
-    + '<div class="streamrow">'
-    + streamLinks(title).map(function(x){
-        return '<a class="sbtn" style="background:'+x[2]+'" target="_blank" rel="noopener" href="'+x[1]+'">'+x[0]+'</a>';
-      }).join('')
-    + '</div>';
-}
+/* ---- the six-service "where to look" row is gone ----
+   It offered Netflix, Prime Video, JioHotstar, ZEE5, SonyLIV and YouTube on every title, whether
+   or not the film was on any of them. Six buttons that are all guesses are worse than one that is
+   right: Money Heist is on Netflix, so it should say Netflix and nothing else. The platforms we
+   actually know come from ottLinks() above; when we know none, we now say nothing. */
+
 
 /* ---- movie roulette: a short spin before the pick is revealed ---- */
 function runMovieRoulette(){
@@ -2161,7 +2141,7 @@ function openModal(d, fromPop){
     + '<div class="row">'
       + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+esc(safeUrl('https://www.youtube.com/watch?v='+d.tr).replace('https://www.youtube.com/watch?v=',''))+'">Watch trailer</a>' : '')
       /* no Free on YouTube button: it pointed at a search, not at the film */
-      + (up ? '' : streamRowHtml(d.t))
+      /* no row of six guessed platforms: only the ones we actually know, above */
       + '<div class="rate"><span>My rating</span>'
       + [1,2,3,4,5].map(function(n){ return '<button class="st'+(RATINGS[d.t]>=n?' on':'')+'" data-rate="'+n+'" data-rt="'+esc(d.t)+'">★</button>'; }).join('')
       + '</div>'
