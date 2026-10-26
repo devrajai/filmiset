@@ -3528,11 +3528,11 @@ function normImdbRows(rows){
   }));
 }
 Promise.all([
-  fetch('data/movies.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  Promise.resolve(null),   // movies.json is loaded after the first paint, see below
   fetch('data/catalog.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-  fetch('data/tmdb.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-  fetch('data/jikan.json').then(r => r.ok ? r.json() : null).catch(()=>null),
-  fetch('data/imdb_indian.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+  Promise.resolve(null),   // tmdb.json is loaded after the first paint, see below
+  Promise.resolve(null),   // jikan.json is loaded after the first paint, see below
+  Promise.resolve(null),   // imdb_indian.json is loaded after the first paint, see below
   fetch('data/curated_hindi.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_hollywood.json').then(r => r.ok ? r.json() : null).catch(()=>null),
   fetch('data/curated_series.json').then(r => r.ok ? r.json() : null).catch(()=>null),
@@ -3609,6 +3609,34 @@ Promise.all([
   applyExternalData();               // TMDB watch providers + TVmaze, when those files exist
   boot();
 }).catch(boot);
+
+/* ---- wave two: the heavy sets, after the first paint ----
+   imdb_indian.json alone is 3.4 MB; with tmdb.json, jikan.json and movies.json the four are about
+   5.9 MB of the 9.63 MB the site used to fetch before drawing anything. They widen the catalogue
+   rather than start it, so they load once the landing page is on screen. requestIdleCallback waits
+   for a quiet moment; the timeout makes sure it still happens on a busy page. */
+(function loadWaveTwo(){
+  const go = window.requestIdleCallback
+    ? function(fn){ requestIdleCallback(fn, {timeout: 1500}); }
+    : function(fn){ setTimeout(fn, 300); };
+  go(function(){
+    Promise.all([
+      fetch('data/movies.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+      fetch('data/tmdb.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+      fetch('data/jikan.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+      fetch('data/imdb_indian.json').then(r => r.ok ? r.json() : null).catch(()=>null),
+    ]).then(function(w2){
+      const [movies, tmdb, jikan, indian] = w2;
+      if(movies)  mergeSets(movies);
+      if(tmdb)    mergeSets(tmdb);
+      if(jikan)   mergeSets(jikan);
+      if(indian && typeof normImdbRows === 'function') mergeSets(normImdbRows(indian));
+      render();
+      if(typeof renderVibe === 'function') renderVibe();
+      if(typeof patchPosters === 'function') patchPosters();
+    }).catch(function(){});
+  });
+})();
 </script>
 <button id="talkFab" class="fab" aria-label="Talk to the site" title="Talk to the site">✨</button>
 <div id="talkPop" class="talkpop" hidden role="dialog" aria-label="Talk to the site">
