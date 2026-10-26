@@ -2748,6 +2748,36 @@ const _manifestReady = (function(){
    The rows were built before the poster map finished downloading, so every row was left with an
    empty poster and re-rendering could not help — the field was already blank. This walks the
    catalogue once when the map lands and fills in what it can. */
+/* ---- fill in posters without rebuilding the grid ----
+   The map arrives long after the cards do, and the old code answered that by calling render() —
+   a full rebuild of every card, which is what made the page freeze for seconds after it had
+   already looked ready. This inserts only the missing <img> into each card's poster div. */
+function patchPosters(){
+  if(!IMDB_POSTERS) return 0;
+  const byTitle = new Map();
+  for(const d of (DATA || [])) byTitle.set(String(d.t).toLowerCase(), d);
+  let added = 0;
+  document.querySelectorAll('#grid .card').forEach(function(card){
+    if(card.querySelector('.poster-img')) return;
+    const title = card.getAttribute('data-title');
+    if(!title) return;
+    const row = byTitle.get(String(title).toLowerCase());
+    if(!row || !row.poster) return;
+    const holder = card.querySelector('.poster');
+    if(!holder) return;
+    const img = document.createElement('img');
+    img.className = 'poster-img';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.alt = '';
+    img.src = row.poster;
+    img.onerror = function(){ this.remove(); };
+    holder.insertBefore(img, holder.firstChild);
+    added++;
+  });
+  return added;
+}
+
 function applyPosters(){
   if(!IMDB_POSTERS || !DATA || !DATA.length) return 0;
   let filled = 0;
@@ -3373,9 +3403,9 @@ let SHEET_SHARDS = [], liveResults = [], liveQuery = '', liveTimer = null;
 let IMDB_POSTERS = null;
 /* the poster map is only loaded the first time someone searches, so it costs nothing otherwise */
 function loadPostersSoon(){
-  // it used to wait for an idle moment, which meant the posters always arrived late. Kick it off
-  // alongside the catalogue instead, a beat later so the first paint still wins.
-  setTimeout(loadPosters, 120);
+  // no setTimeout here: the fetch is async, so the first paint wins the race on its own, and the
+  // 120ms that used to sit here was pure delay before the request even started.
+  loadPosters();
 }
 function loadPosters(){
   if(IMDB_POSTERS !== null) return;
@@ -3384,9 +3414,9 @@ function loadPosters(){
   // the plain file is ~1.9 MB; the gzipped one is roughly a quarter of that, so try it first
   gunzipJson('data/imdb_posters.json.gz')
     .then(g => {
-      if(g){ IMDB_POSTERS = g; applyPosters(); render(); return true; }
+      if(g){ IMDB_POSTERS = g; applyPosters(); patchPosters(); return true; }
       return fetch('data/imdb_posters.json').then(r => r.ok ? r.json() : null)
-        .then(m => { if(m){ IMDB_POSTERS = m; applyPosters(); render(); } });
+        .then(m => { if(m){ IMDB_POSTERS = m; applyPosters(); patchPosters(); } });
     })
     .catch(() => {});
 }
