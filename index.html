@@ -1592,8 +1592,9 @@ function closeRailIfMobile(){
    Each chip opens a YouTube search scoped to that channel, so the link always lands on real
    content. No embeds and no piracy mirrors — only official uploaders and public-domain archives. */
 let FREE_YT=[];
-function ytSearchUrl(q){ return 'https://www.youtube.com/results?search_query='+encodeURIComponent(q); }
-function freeOnYouTube(title){ return ytSearchUrl(String(title||'')+' full movie'); }
+/* These two built YouTube *searches*, not links to the film, and a search for "X full movie"
+   lands on whatever YouTube thinks is closest — a remake, a compilation, a fake upload. A wrong
+   film is worse than no button. Removed; only links built from a real trailer id remain. */
 
 
 
@@ -2156,7 +2157,7 @@ function openModal(d, fromPop){
     + (function(){ const rs=recommendationsFor(d,4); return rs.length ? '<div class="m" style="margin-top:10px">You might also like</div><div class="recs">'+rs.map(function(r){ return '<button class="rec" data-rec="'+esc(r.t)+'">'+(r.poster?'<img src="'+esc(r.poster)+'" alt="" onerror="this.remove()">':'')+'<span>'+esc(dispTitle(r.t))+'</span><i>'+(r.y||'')+'</i></button>'; }).join('')+'</div>' : ''; })()
     + '<div class="row">'
       + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+esc(safeUrl('https://www.youtube.com/watch?v='+d.tr).replace('https://www.youtube.com/watch?v=',''))+'">Watch trailer</a>' : '')
-      + (up ? '' : '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="'+freeOnYouTube(d.t)+'">\u25B6 Free on YouTube</a>')
+      /* no Free on YouTube button: it pointed at a search, not at the film */
       + (up ? '' : streamRowHtml(d.t))
       + '<div class="rate"><span>My rating</span>'
       + [1,2,3,4,5].map(function(n){ return '<button class="st'+(RATINGS[d.t]>=n?' on':'')+'" data-rate="'+n+'" data-rt="'+esc(d.t)+'">★</button>'; }).join('')
@@ -3300,7 +3301,7 @@ function render(){
               ? '<div class="watch soon">Releasing '+esc(d.date?fmtDate(d.date):'soon')+'</div>'
               : ((d.o && d.o.length)
                 ? '<div class="watch avail">Available on '+ottLinks(d.o, d.t, d)+'</div>'
-                : '<div class="watch none"><a class="ottl" target="_blank" rel="noopener" href="'+(d.tr ? 'https://www.youtube.com/watch?v='+d.tr : ytSearchUrl(dispTitle(d.t)+' trailer'))+'">\u25B6 Trailer</a></div>')))
+                : (d.tr ? '<div class="watch none"><a class="ottl" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+esc(d.tr)+'">\u25B6 Trailer</a></div>' : '<div class="watch none"></div>'))))
         + '<div class="cardacts">'
           + (d.tr? '<a class="mini yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+d.tr+'">\u25b6 Trailer</a>' : '')
           + '<button class="mini'+(watched.has(d.t)?' on':'')+'" data-seen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
