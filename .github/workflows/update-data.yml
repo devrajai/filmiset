@@ -4,8 +4,12 @@ on:
   # Weekly, not daily. This repository is private, so every minute counts against the 2,000
   # free Actions minutes a month, and the other repositories on this account already use about
   # 1,500 of them. One run a week at roughly 35 minutes is about 150 minutes a month.
-  schedule:
-    - cron: "30 2 * * 1"   # Monday 02:30 UTC = 08:00 IST
+  # Schedule removed: the Actions quota is spent and every run was being cancelled at the
+  # Collect step after 35 minutes, burning minutes and producing nothing. Manual dispatch
+  # is kept so a run can still be triggered deliberately. Restore the cron below when the
+  # monthly quota resets, or run the enrichment in Colab instead.
+  # schedule:
+  #   - cron: "30 2 * * 1"
   workflow_dispatch:
 
 permissions:
