@@ -1746,7 +1746,11 @@ const VIBE_PICKS = [
 
 /* ---- where to look for a title: one search link per service ----
    These are search links, not deep links, because a deep link goes stale the day a licence
-   changes. The label says "Search", so nobody is told the title is definitely there. */
+   changes. The label says "Search", so nobody is told the title is definitely there.
+   YouTube is a plain title search: it used to append "+full movie", which pulled up compilations,
+   reaction videos and outright fakes far more often than the film itself. And there is no
+   "Available on YouTube" link any more, because claiming availability from a search result was
+   the same mistake in a stronger form. */
 function streamLinks(title){
   const q=encodeURIComponent(title||'');
   return [
@@ -1755,7 +1759,7 @@ function streamLinks(title){
     ['JioHotstar',  'https://www.hotstar.com/in/explore?search_query='+q,          '#1b3a6b'],
     ['ZEE5',        'https://www.zee5.com/search?q='+q,                            '#82368c'],
     ['SonyLIV',     'https://www.sonyliv.com/search?searchTerm='+q,                '#2b2b2b'],
-    ['YouTube',     'https://www.youtube.com/results?search_query='+q+'+full+movie','#cc0000'],
+    ['YouTube',     'https://www.youtube.com/results?search_query='+q,                '#cc0000'],
   ];
 }
 function streamRowHtml(title){
@@ -2055,7 +2059,6 @@ const OTT_URL = {
   'Apple TV+':      'https://tv.apple.com/search?term=',
   'Crunchyroll':    'https://www.crunchyroll.com/search?q=',
   'MX Player':      'https://www.mxplayer.in/search?q=',
-  'YouTube':        'https://www.youtube.com/results?search_query=',
   'Aha':            'https://www.aha.video/search?q=',
   'Sun NXT':        'https://www.sunnxt.com/search?q=',
   'ShemarooMe':     'https://www.shemaroome.com/search?q=',
