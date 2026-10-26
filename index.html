@@ -1899,7 +1899,7 @@ function drawSugg(q){
   box.innerHTML='<div class="hd">Suggestions</div>'+hits.map(d=>{
     const r=d.irt||d.rtg||'';
     return '<div class="sg" data-sg="'+esc(d.t)+'">'
-      + '<img class="ph" src="'+esc(d.poster||'')+'" alt="" onerror="this.style.visibility=\'hidden\'">'
+      + '<img class="ph" src="'+esc(safeUrl(d.poster||''))+'" alt="" onerror="this.style.visibility=\'hidden\'">'
       + '<div class="tx"><div class="t">'+esc(dispTitle(d.t))+'</div>'
       + '<div class="m">'+[d.y, lbl(d.cat), d.type].filter(Boolean).join(' \u00b7 ')+'</div></div>'
       + '<div class="k">'+(r?('\u2605 '+r):'')+'</div></div>';
@@ -2137,7 +2137,7 @@ function openModal(d, fromPop){
     + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
         + [d.dir?'Director: '+esc(d.dir):'', d.prod?'Studio: '+esc(d.prod):'',
            (d.cast&&d.cast.length)?'Cast: '+esc(d.cast.join(', ')):''].filter(Boolean).join('  ·  ') + '</div>' : '')
-    + (function(){ const rs=recommendationsFor(d,4); return rs.length ? '<div class="m" style="margin-top:10px">You might also like</div><div class="recs">'+rs.map(function(r){ return '<button class="rec" data-rec="'+esc(r.t)+'">'+(r.poster?'<img src="'+esc(r.poster)+'" alt="" onerror="this.remove()">':'')+'<span>'+esc(dispTitle(r.t))+'</span><i>'+(r.y||'')+'</i></button>'; }).join('')+'</div>' : ''; })()
+    + (function(){ const rs=recommendationsFor(d,4); return rs.length ? '<div class="m" style="margin-top:10px">You might also like</div><div class="recs">'+rs.map(function(r){ return '<button class="rec" data-rec="'+esc(r.t)+'">'+(r.poster?'<img src="'+esc(safeUrl(r.poster))+'" alt="" onerror="this.remove()">':'')+'<span>'+esc(dispTitle(r.t))+'</span><i>'+(r.y||'')+'</i></button>'; }).join('')+'</div>' : ''; })()
     + '<div class="row">'
       + (d.tr? '<a class="hbtn" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+esc(safeUrl('https://www.youtube.com/watch?v='+d.tr).replace('https://www.youtube.com/watch?v=',''))+'">Watch trailer</a>' : '')
       /* no Free on YouTube button: it pointed at a search, not at the film */
@@ -2218,7 +2218,7 @@ function renderVibe(){
   const d=pool[Math.floor(Date.now()/86400000) % pool.length];
   const el=document.getElementById('vibe');
   el.hidden=false;
-  el.innerHTML=(d.poster?'<img src="'+d.poster+'" alt="">':'')
+  el.innerHTML=(d.poster?'<img src="'+esc(safeUrl(d.poster))+'" alt="">':'')
     + '<div class="vt"><span>Aaj ka vibe</span><b>'+dispTitle(d.t)+'</b>'
     + '<p>'+[(d.date?fmtDate(d.date):d.y),gList(d).join(', '),(d.rtg?'\u2605 '+d.rtg:'')].filter(Boolean).join(' · ')+'</p></div>'
     + '<button class="hbtn" data-vibe="'+esc(d.t)+'">Details</button>';
@@ -2770,7 +2770,7 @@ function patchPosters(){
     img.loading = 'lazy';
     img.decoding = 'async';
     img.alt = '';
-    img.src = row.poster;
+    img.src = safeUrl(row.poster);
     img.onerror = function(){ this.remove(); };
     holder.insertBefore(img, holder.firstChild);
     added++;
@@ -3455,7 +3455,7 @@ function gviz(shard, tq){
                g: g.length ? g : ['Drama'], m: [], a: ['Hindi (dub)', 'English'], o: [],
                poster: (IMDB_POSTERS && IMDB_POSTERS[tconst]) || '',
                src: 'imdb', status: 'released', irt: v(4) || '', ivot: Number(v(5)) || 0, live: true };
-    }).filter(x => x.t);
+    }).map(sanitizeRow).filter(x => x && x.t);
   }).catch(() => []);
 }
 function fetchLive(q){
