@@ -63,11 +63,18 @@ jobs:
 
       # episodes are a lot of small files; only the manifest and a sample go in the repo commit,
       # the rest is uploaded as an artifact so the repository does not grow without bound
+      # 125,301 small files is past what the artifact action will take, so zip them first and
+      # upload one file. The zip is about 78 MB, which is well inside the limit.
+      - name: Zip the episode packs
+        run: |
+          cd data && zip -qr9 /tmp/episode-packs.zip ep && cd ..
+          ls -lh /tmp/episode-packs.zip
+
       - name: Upload the episode packs
         uses: actions/upload-artifact@v4
         with:
           name: episode-packs
-          path: data/ep
+          path: /tmp/episode-packs.zip
           retention-days: 14
 
       - name: Commit the manifest only
