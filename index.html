@@ -107,49 +107,23 @@
      border that only appears once the page has moved. The blur sits on this one element and
      nothing else — putting it on the pills and cards is what made the site crawl before. */
   .topbar{
-    position:sticky;top:0;z-index:150;
+    /* Option C: the header is part of the page. It scrolls up with the content instead of sitting
+       over it, so nothing can ever overlap and there is no panel to notice at any scroll position.
+       The background is transparent on purpose — body carries a gradient, so tinting the header
+       with --bg drew a flat rectangle over it and that was the box that kept showing. In the flow,
+       with nothing drawn, the gradient simply continues through. */
+    position:static;z-index:auto;
     background:transparent;
-    border-bottom:1px solid transparent;
-    transition:background .22s ease, border-color .22s ease, box-shadow .22s ease;
-  }
-  .topbar.scrolled{
-    /* The page's own colour, so there is no panel to see. Every attempt at glass left a visible
-       rectangle behind the logo and the search box; matching the background removes the rectangle
-       entirely. Content passes underneath and is hidden by it, which is what a header is for. */
-    background:var(--bg);
-    -webkit-backdrop-filter:none;
-    backdrop-filter:none;
     border-bottom:0;
     box-shadow:none;
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
   }
+  .topbar.scrolled{ background:transparent; border-bottom:0; box-shadow:none; }
   @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
     .topbar.scrolled{background:var(--bg)}
   }
-  [data-theme="dark"] .topbar.scrolled{
-    background:var(--bg);
-    border-bottom:0;
-    box-shadow:none;
-  }
-
-  /* ---- back button inside the detail view ----
-     Bottom right, above the talk button, because the top of a long detail page is a long way up
-     on a phone and the Close button at the bottom of the row was not where the thumb is. */
-  .modal-back{
-    position:fixed;right:14px;bottom:58px;z-index:101;
-    display:flex;align-items:center;gap:5px;
-    padding:7px 12px;border-radius:999px;cursor:pointer;
-    font-family:var(--font-body);font-size:12px;font-weight:600;letter-spacing:.01em;
-    /* liquid glass, not a solid pill: white at low opacity, the same idea as the header, so it sits
-       on the card rather than on top of it. The bright edge and the inner highlight are what stop
-       it reading as a grey blob against the pale pink. */
-    background:rgba(255,255,255,.18);
-    -webkit-backdrop-filter:blur(14px) saturate(180%) brightness(1.04);
-    backdrop-filter:blur(14px) saturate(180%) brightness(1.04);
-    border:1px solid rgba(255,255,255,.5);
-    color:var(--ink);
-    box-shadow:0 1px 0 rgba(255,255,255,.65) inset, 0 5px 16px rgba(120,40,80,.14);
-    transition:transform .12s ease, background .2s ease;
-  }
+  [data-theme="dark"] .topbar.scrolled{ background:transparent; }
   .modal-back:hover{background:rgba(255,255,255,.34)}
   .modal-back:active{transform:scale(.95)}
   [data-theme="dark"] .modal-back{
@@ -165,10 +139,28 @@
     box-shadow:0 6px 16px var(--accent-dim)}
   .wordmark{font-family:var(--font-display);font-weight:900;font-size:20px;letter-spacing:-0.02em}
   .search{position:relative;flex:1 1 240px;max-width:400px}
-  .search input{width:100%;padding:11px 42px 11px 40px;border-radius:999px;
-    background:rgba(255,255,255,.28);border:1px solid var(--line);
-    border:1px solid var(--line);background:var(--surface);color:var(--ink);
-    font-family:var(--font-body);font-size:14px;outline:none;transition:.15s}
+  .search input{
+    width:100%;padding:11px 42px 11px 40px;border-radius:999px;
+    /* transparent glass rather than a white chip: a low white wash, a hairline edge and a blur, so
+       the field reads as a field without drawing a box on the page. */
+    background:rgba(255,255,255,.16);
+    -webkit-backdrop-filter:blur(12px) saturate(170%);
+    backdrop-filter:blur(12px) saturate(170%);
+    border:1px solid rgba(255,255,255,.52);
+    box-shadow:0 1px 0 rgba(255,255,255,.5) inset;
+    color:var(--ink);font-family:var(--font-body);font-size:15px;
+    outline:none;transition:background .2s ease, border-color .2s ease;
+  }
+  .search input::placeholder{color:var(--faint)}
+  .search input:focus{
+    background:rgba(255,255,255,.30);
+    border-color:rgba(255,255,255,.8);
+  }
+  [data-theme="dark"] .search input{
+    background:rgba(255,255,255,.07);
+    border-color:rgba(255,255,255,.16);
+    box-shadow:0 1px 0 rgba(255,255,255,.08) inset;
+  }
   .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
   .search input::placeholder{color:var(--faint)}
   .search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.5;
