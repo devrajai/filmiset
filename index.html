@@ -94,11 +94,52 @@
   /* top bar */
   /* the header used to be an opaque dark slab across the top. It is transparent now, so the pink
      wash runs behind it and only the content sits on top. */
-  .topbar{position:sticky;top:0;z-index:150;background:transparent;border-bottom:0}
-  /* a soft gradient fade instead of a slab — the header stays part of the page */
-  /* no background, ever — a wash of --bg is still a dark band in dark mode */
-  .topbar.scrolled{background:transparent}
-  .topbar, .topbar.scrolled{box-shadow:none;border-bottom:0}
+/* ---- detail view: the header must not sit on top of the poster ----
+     The topbar was z-index 150 and the modal 100, so the logo, the search box and the Filters
+     button floated over the artwork and the title. The filter sheet already hid it; the detail
+     view now does the same. */
+  body.modal-open .topbar{display:none}
+  body.modal-open #talkFab{display:none}
+
+  /* ---- a proper glass header ----
+     It was fully transparent, so scrolling made the page text run straight through the logo and
+     the search box. This is a real frosted panel: a translucent fill, a blur, and a hairline
+     border that only appears once the page has moved. The blur sits on this one element and
+     nothing else — putting it on the pills and cards is what made the site crawl before. */
+  .topbar{
+    position:sticky;top:0;z-index:150;
+    background:transparent;
+    border-bottom:1px solid transparent;
+    transition:background .22s ease, border-color .22s ease, box-shadow .22s ease;
+  }
+  .topbar.scrolled{
+    background:color-mix(in srgb, var(--bg) 72%, transparent);
+    -webkit-backdrop-filter:blur(18px) saturate(150%);
+    backdrop-filter:blur(18px) saturate(150%);
+    border-bottom-color:var(--line);
+    box-shadow:0 6px 22px rgba(40,10,25,.08);
+  }
+  @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+    .topbar.scrolled{background:var(--bg)}
+  }
+  [data-theme="dark"] .topbar.scrolled{
+    background:color-mix(in srgb, var(--bg) 68%, transparent);
+    box-shadow:0 6px 22px rgba(0,0,0,.35);
+  }
+
+  /* ---- back button inside the detail view ----
+     Bottom right, above the talk button, because the top of a long detail page is a long way up
+     on a phone and the Close button at the bottom of the row was not where the thumb is. */
+  .modal-back{
+    position:fixed;right:18px;bottom:92px;z-index:101;
+    display:flex;align-items:center;gap:7px;
+    padding:11px 17px;border-radius:999px;border:0;cursor:pointer;
+    font-family:var(--font-body);font-size:14px;font-weight:700;
+    background:var(--accent);color:#fff;
+    box-shadow:0 8px 24px rgba(224,64,122,.42);
+  }
+  .modal-back:active{transform:scale(.96)}
+  @media (max-width:520px){ .modal-back{right:14px;bottom:86px;padding:10px 15px;font-size:13.5px} }
   .topbar-in{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:13px 22px}
   .brand{display:flex;align-items:center;gap:10px;margin-right:auto}
   .logo{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--accent-ink);
@@ -2165,11 +2206,26 @@ function openModal(d, fromPop){
     + '</div>'
     + talkAboutHtml(d)
     + '</div>';
+  /* a back button where the thumb already is, not only at the bottom of the button row */
+  let back = document.getElementById('modalBack');
+  if(!back){
+    back = document.createElement('button');
+    back.id = 'modalBack';
+    back.className = 'modal-back';
+    back.type = 'button';
+    back.innerHTML = '\u2190 Back';
+    back.onclick = function(){ closeModal(); };
+    document.body.appendChild(back);
+  }
+  back.hidden = false;
+  document.body.classList.add('modal-open');
   m.hidden=false;
   setOg(d);
   if(!fromPop) pushTitle(d);
 }
 function closeModal(fromPop){
+  document.body.classList.remove('modal-open');
+  const _b = document.getElementById('modalBack'); if(_b) _b.hidden = true;
   document.getElementById('modal').hidden=true;
   setOg(null);
   if(!fromPop) pushTitle(null);
