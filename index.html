@@ -2017,6 +2017,8 @@ document.getElementById('q').addEventListener('input',e=>{
   liveTimer=setTimeout(()=>fetchLive(state.q), 350);   // also search the sheet shards
   // and the full catalogue: one gzipped bucket, cached after the first time. The delay is a
   // little longer than the sheet lookup so a fast typist does not pull three buckets at once.
+  if(!IX_LANG) ixLoadLang();
+  if(!IX_NATIVE) ixLoadNative();
   clearTimeout(window.ixTimer);
   window.ixTimer=setTimeout(async ()=>{
     const asked = state.q;
@@ -3319,6 +3321,71 @@ function queryVariants(q){
   return [...out].map(function(x){ return ixNorm(x); }).filter(Boolean);
 }
 
+
+/* ---- language and native titles ----
+   Two files the refresh workflow produces from IMDb's title.akas:
+     lang.json.gz    {names: {code: label}, byId: {id: code}}  — 413,040 titles
+     native.json.gz  {id: the title in its own script}          — 177,704 titles
+   The first powers the language filter. The second lets someone type दिल or காதல் and find the
+   film, which the romanised catalogue alone cannot do.
+
+   Both load once, on first use. lang is 1.2 MB and native 2.9 MB, so neither is worth fetching for
+   a visitor who never searches or filters. */
+let IX_LANG = null, IX_NATIVE = null, _langP = null, _nativeP = null;
+
+function _gzText(buf){
+  if(buf[0] === 0x1f && buf[1] === 0x8b){
+    const st = new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'));
+    return new Response(st).text();
+  }
+  return Promise.resolve(new TextDecoder().decode(buf));
+}
+async function ixLoadLang(){
+  if(IX_LANG) return IX_LANG;
+  if(_langP) return _langP;
+  _langP = (async function(){
+    try{
+      const r = await fetch('data/lang.json.gz');
+      if(!r.ok) return null;
+      IX_LANG = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+      return IX_LANG;
+    }catch(e){ return null; }
+  })();
+  return _langP;
+}
+async function ixLoadNative(){
+  if(IX_NATIVE) return IX_NATIVE;
+  if(_nativeP) return _nativeP;
+  _nativeP = (async function(){
+    try{
+      const r = await fetch('data/native.json.gz');
+      if(!r.ok) return null;
+      IX_NATIVE = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+      return IX_NATIVE;
+    }catch(e){ return null; }
+  })();
+  return _nativeP;
+}
+function langLabel(code){
+  if(!code || !IX_LANG || !IX_LANG.names) return '';
+  return IX_LANG.names[code] || code;
+}
+function applyLanguages(){
+  if(!IX_LANG || !IX_LANG.byId || !DATA) return 0;
+  const byId = IX_LANG.byId;
+  let n = 0;
+  for(const d of DATA){
+    if(d.lang) continue;
+    const code = byId[String(d.id || d.imdb || '').replace(/^tt0*/, '')];
+    if(code){ d.lang = code; n++; }
+  }
+  return n;
+}
+function nativeOf(id){
+  if(!IX_NATIVE) return '';
+  return IX_NATIVE[String(id || '').replace(/^tt0*/, '')] || '';
+}
+
 async function ixSearch(q, limit){
   const variants = queryVariants(q);
   const k = variants[0] || ixNorm(q);
@@ -3340,6 +3407,16 @@ async function ixSearch(q, limit){
         if(a){ hit = true; break; }
       }
     }
+    if(!hit && IX_NATIVE){
+      /* the query may be in a script the romanised title does not carry: try the native name */
+      const nat = nativeOf('tt' + String(d.i[i]).padStart(7, '0'));
+      if(nat){
+        const nn = ixNorm(nat);
+        let nh = true;
+        for(const w of words){ if(nn.indexOf(w) < 0){ nh = false; break; } }
+        if(nh) hit = true;
+      }
+    }
     if(hit) out.push(i);
     if(out.length > 400) break;
   }
@@ -3351,7 +3428,8 @@ async function ixSearch(q, limit){
       type: (IX_TYPES && IX_TYPES[d.k[i]]) || 'Movie',
       g: ixGenres(d.g[i]), m: [], a: [], o: [],
       r: (d.r[i] || 0) / 10, irt: ((d.r[i] || 0) / 10) || '',
-      ivot: d.v[i] || 0, id: rid, src: 'imdb', status: 'released'
+      ivot: d.v[i] || 0, id: rid, src: 'imdb', status: 'released',
+      lang: (IX_LANG && IX_LANG.byId) ? (IX_LANG.byId[String(d.i[i])] || '') : ''
     };
   });
 }
