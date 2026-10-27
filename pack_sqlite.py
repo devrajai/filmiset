@@ -30,11 +30,19 @@ except ImportError:
 
 
 def find_col(cols, *names):
-    """Match a column name case-insensitively, and accept the usual aliases."""
-    low = {c.lower(): c for c in cols}
+    """Match a column name ignoring case and underscores, and accept the usual aliases.
+
+    The master database uses primary_title, release_year, runtime_mins, vote_count and media_type.
+    The first version looked for primaryTitle and missed it, which is why the packer kept saying
+    it could not find a title column. Comparing with underscores removed fixes that and still
+    accepts camelCase."""
+    def key(s):
+        return s.lower().replace("_", "").replace("-", "")
+    low = {key(c): c for c in cols}
     for n in names:
-        if n.lower() in low:
-            return low[n.lower()]
+        k = key(n)
+        if k in low:
+            return low[k]
     return None
 
 
@@ -43,14 +51,14 @@ def detect(cur):
     print("columns found:", cols)
     m = {
         "id":       find_col(cols, "imdb_id", "tconst", "id"),
-        "title":    find_col(cols, "title", "primaryTitle", "t", "name"),
-        "year":     find_col(cols, "year", "startYear", "y"),
-        "type":     find_col(cols, "type", "titleType", "kind"),
+        "title":    find_col(cols, "primary_title", "title", "primaryTitle", "original_title", "name"),
+        "year":     find_col(cols, "release_year", "year", "startYear"),
+        "type":     find_col(cols, "media_type", "type", "titleType", "kind"),
         "language": find_col(cols, "language", "lang", "primaryLanguage"),
-        "votes":    find_col(cols, "votes", "numVotes", "num_votes"),
-        "rating":   find_col(cols, "rating", "averageRating", "avg_rating"),
-        "genres":   find_col(cols, "genres", "genre", "g"),
-        "runtime":  find_col(cols, "runtime", "runtimeMinutes", "minutes"),
+        "votes":    find_col(cols, "vote_count", "votes", "numVotes"),
+        "rating":   find_col(cols, "rating", "averageRating"),
+        "genres":   find_col(cols, "genres", "genre"),
+        "runtime":  find_col(cols, "runtime_mins", "runtime", "runtimeMinutes", "minutes"),
     }
     # Only id and title are truly required. Everything else has a safe default, because the
     # column names in this database are not guaranteed and a missing genre column should not stop
