@@ -1,0 +1,82 @@
+name: Refresh episodes and languages
+
+# Attaches every episode to its series, and adds a language to every title, using IMDb's own files
+# rather than the master database — the database lives in Drive and a runner cannot reach it.
+#
+# Manual only. The Actions quota on this account is 2,000 minutes a month and the other
+# repositories already use about 1,500, so nothing here is on a schedule. Run it by hand when the
+# monthly quota resets.
+
+on:
+  workflow_dispatch:
+    inputs:
+      min_votes:
+        description: 'Skip episodes with fewer votes than this'
+        required: false
+        default: '0'
+
+permissions:
+  contents: write
+
+jobs:
+  episodes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # the three IMDb files the join needs
+      - name: Download IMDb episode, basics and ratings
+        run: |
+          set -e
+          for f in title.episode.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz; do
+            echo "downloading $f"
+            curl -sSfL "https://datasets.imdbws.com/$f" -o "$f"
+            ls -lh "$f"
+          done
+
+      - name: Build the episode packs
+        run: |
+          python3 scripts/build_episodes.py \
+            --basics title.basics.tsv.gz \
+            --ratings title.ratings.tsv.gz \
+            --episodes title.episode.tsv.gz \
+            --catalogue data \
+            --out data/ep \
+            --min-votes "${{ github.event.inputs.min_votes || '0' }}"
+
+      - name: How much came out
+        run: |
+          echo "series files: $(find data/ep -name '*.gz' | wc -l)"
+          du -sh data/ep
+          cat data/ep/_manifest.json
+
+      # episodes are a lot of small files; only the manifest and a sample go in the repo commit,
+      # the rest is uploaded as an artifact so the repository does not grow without bound
+      - name: Upload the episode packs
+        uses: actions/upload-artifact@v4
+        with:
+          name: episode-packs
+          path: data/ep
+          retention-days: 14
+
+      - name: Commit the manifest only
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ep/_manifest.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "Update the episode manifest: $(python3 -c "import json;print(json.load(open('data/ep/_manifest.json'))['episodes'])" ) episodes across $(python3 -c "import json;print(json.load(open('data/ep/_manifest.json'))['series'])" ) series"
+            git pull --rebase origin main || true
+            git push
+          fi
+
+      - name: Clean up the downloads
+        if: always()
+        run: rm -f title.episode.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz
