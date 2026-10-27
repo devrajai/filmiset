@@ -126,6 +126,15 @@
   [data-theme="dark"] .topbar.scrolled{ background:transparent; }
   .modal-back:hover{background:rgba(255,255,255,.34)}
   .modal-back:active{transform:scale(.95)}
+  .epwrap{margin:14px 0 6px;border-top:1px solid var(--line);padding-top:12px}
+  .epwrap h6{font-size:13px;margin:0 0 8px;display:flex;gap:8px;align-items:baseline}
+  .epseason{display:flex;gap:8px;align-items:baseline;margin:10px 0 4px}
+  .epseason b{font-size:13px}
+  .eplist{list-style:none;margin:0;padding:0}
+  .eplist li{display:flex;gap:9px;align-items:baseline;padding:5px 0;border-bottom:1px solid rgba(0,0,0,.05);font-size:13px}
+  .epn{color:var(--faint);font-size:11.5px;min-width:34px}
+  .ept{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .epr{color:var(--accent);font-weight:700;font-size:12px}
   [data-theme="dark"] .modal-back{
     background:rgba(255,255,255,.10);
     border-color:rgba(255,255,255,.18);
@@ -2180,6 +2189,59 @@ function lengthLabel(d){
   return '';
 }
 
+
+/* ---- episodes ----
+   The refresh workflow writes one bucket per hundred series, keyed by the last two digits of the
+   IMDb id, so a show's episodes are one request and the bucket is cached after the first open.
+   Each bucket holds {seriesId: [[season, episode, title, year, runtime, rating, votes], ...]}.
+   A series with no episodes simply has no entry, which is the common case for films. */
+const EP_CACHE = {};
+
+function epBucket(id){
+  const k = String(id || '').replace(/^tt0*/, '');
+  if(!/^\d+$/.test(k)) return null;
+  return ('0' + (parseInt(k, 10) % 100)).slice(-2);
+}
+async function epLoad(id){
+  const b = epBucket(id);
+  if(!b) return null;
+  if(EP_CACHE[b]) return EP_CACHE[b];
+  try{
+    const r = await fetch('data/ep/ep_' + b + '.json.gz');
+    if(!r.ok) return null;
+    EP_CACHE[b] = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+    return EP_CACHE[b];
+  }catch(e){ return null; }
+}
+async function epFor(id){
+  const m = await epLoad(id);
+  if(!m) return null;
+  return m[String(id || '').replace(/^tt0*/, '')] || null;
+}
+function epHtml(eps){
+  if(!eps || !eps.length) return '';
+  /* grouped by season: a flat list of two hundred rows is unreadable */
+  const bySeason = {};
+  for(const e of eps) (bySeason[e[0]] = bySeason[e[0]] || []).push(e);
+  const seasons = Object.keys(bySeason).sort((a,b) => Number(a) - Number(b));
+  let out = '<div class="epwrap"><h6>Episodes <span class="m">' + eps.length + '</span></h6>';
+  for(const s of seasons){
+    const list = bySeason[s];
+    out += '<div class="epseason"><b>' + (Number(s) ? 'Season ' + s : 'Specials') + '</b>'
+         + '<span class="m">' + list.length + '</span></div><ol class="eplist">';
+    for(const e of list){
+      const r = e[5] ? (e[5] / 10).toFixed(1) : '';
+      out += '<li><span class="epn">E' + (e[1] || '?') + '</span>'
+           + '<span class="ept">' + esc(e[2] || 'Untitled') + '</span>'
+           + (e[3] ? '<span class="m">' + esc(e[3]) + '</span>' : '')
+           + (r ? '<span class="epr">\u2605 ' + r + '</span>' : '')
+           + '</li>';
+    }
+    out += '</ol>';
+  }
+  return out + '</div>';
+}
+
 function openModal(d, fromPop){
   const up=d.status==='upcoming' || Number(d.y||0) > CUR_YEAR;   // nothing to watch yet
   const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t, d) : '';
@@ -2191,6 +2253,7 @@ function openModal(d, fromPop){
     + '<div class="m" style="margin-top:6px">'+[esc(gList(d).join(', ')),esc((d.a||[]).join(', ')),avail].filter(Boolean).join('  ·  ')+'</div>'
     + guardHtml(d)
     + '<div class="ap-chips" style="margin:10px 0"><button class="pill" data-ics="'+esc(d.t)+'">📅 Add to calendar</button></div>'
+    + '<div id="epBox"></div>'
     + ((d.cast&&d.cast.length)? '<div class="castrow"><h6>Cast</h6>'
         + d.cast.slice(0,8).map(c=>'<button class="ap-item" data-actor="'+esc(c)+'">'+esc(c)+'</button>').join('')
         + '</div>' : '')
@@ -2233,6 +2296,13 @@ function openModal(d, fromPop){
   back.hidden = false;
   document.body.classList.add('modal-open');
   m.hidden=false;
+  /* episodes are fetched only when a card is opened, and only if the bucket has this series */
+  (async function(){
+    const box = document.getElementById('epBox');
+    if(!box) return;
+    const eps = await epFor(d.id || d.imdb || '');
+    if(eps && eps.length){ box.innerHTML = epHtml(eps); }
+  })();
   setOg(d);
   if(!fromPop) pushTitle(d);
 }
