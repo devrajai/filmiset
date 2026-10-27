@@ -29,15 +29,21 @@ jobs:
         with:
           python-version: '3.12'
 
-      # the three IMDb files the join needs
-      - name: Download IMDb episode, basics and ratings
+      # the IMDb files the joins need
+      - name: Download IMDb episode, basics, ratings and akas
         run: |
           set -e
-          for f in title.episode.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz; do
+          for f in title.episode.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz title.akas.tsv.gz; do
             echo "downloading $f"
             curl -sSfL "https://datasets.imdbws.com/$f" -o "$f"
             ls -lh "$f"
           done
+
+      # language and the native-script name for every title, from the akas file
+      - name: Build languages and native titles
+        run: |
+          python3 scripts/build_languages.py --akas title.akas.tsv.gz --catalogue data --out data
+          ls -lh data/lang.json.gz data/native.json.gz
 
       - name: Build the episode packs
         run: |
@@ -68,15 +74,15 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ep/_manifest.json 2>/dev/null || true
+          git add data/ep/_manifest.json data/lang.json.gz data/native.json.gz 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "nothing to commit"
           else
-            git commit -m "Update the episode manifest: $(python3 -c "import json;print(json.load(open('data/ep/_manifest.json'))['episodes'])" ) episodes across $(python3 -c "import json;print(json.load(open('data/ep/_manifest.json'))['series'])" ) series"
+            git commit -m "Update episodes, languages and native titles: $(python3 -c "import json;print(json.load(open('data/ep/_manifest.json'))['episodes'])" ) episodes across $(python3 -c "import json;print(json.load(open('data/ep/_manifest.json'))['series'])" ) series"
             git pull --rebase origin main || true
             git push
           fi
 
       - name: Clean up the downloads
         if: always()
-        run: rm -f title.episode.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz
+        run: rm -f title.episode.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz title.akas.tsv.gz
