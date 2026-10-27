@@ -3105,6 +3105,93 @@ const grid=document.getElementById('grid');
 const resCount=document.getElementById('resCount');
 const resTitle=document.getElementById('resTitle');
 
+
+/* ---- search across all 832,677 titles ----
+   The site carries about twenty thousand curated rows, which is what the rails and the engine use.
+   Behind them sits the whole catalogue: fourteen gzipped buckets, split by the first letter of the
+   normalised title, each between 200 KB and 2.1 MB. A search fetches exactly one of them, so
+   typing "golden" costs one file and nothing after that — the bucket is cached.
+
+   The normalisation has to match the packer's exactly, including the article strip. The first
+   build of these buckets filed "The Golden Spoon" under "st" because of its "The", and a search
+   for "golden spoon" would have missed it entirely. */
+let IX_TYPES = null, IX_GENRES = null;
+const IX_GROUPS = ['ab','cd','ef','gh','ij','kl','mn','op','qr','st','uv','wx','yz'];
+const IX_CACHE = {};
+
+function ixNorm(t){
+  let s = String(t || '').toLowerCase().replace(/&/g, 'and');
+  s = s.replace(/[^a-z0-9]+/g, ' ');
+  s = s.replace(/\b(the|a|an)\b/g, ' ');
+  return s.replace(/\s+/g, ' ').trim();
+}
+function ixGroup(q){
+  const k = ixNorm(q);
+  if(!k || !/^[a-z0-9]/.test(k[0])) return 'num';
+  if(/[0-9]/.test(k[0])) return 'num';
+  for(const g of IX_GROUPS) if(g.indexOf(k[0]) >= 0) return g;
+  return 'num';
+}
+function ixGenres(mask){
+  if(!IX_GENRES || !mask) return [];
+  const out = [];
+  for(let b = 0; b < IX_GENRES.length; b++) if(Math.floor(mask / Math.pow(2, b)) % 2 === 1) out.push(IX_GENRES[b]);
+  return out;
+}
+async function ixLoad(q){
+  const g = ixGroup(q);
+  if(IX_CACHE[g]) return IX_CACHE[g];
+  try{
+    const r = await fetch('data/ix_' + g + '.json.gz');
+    if(!r.ok) return null;
+    const buf = new Uint8Array(await r.arrayBuffer());
+    let text;
+    if(buf[0] === 0x1f && buf[1] === 0x8b){
+      const st = new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'));
+      text = await new Response(st).text();
+    } else {
+      text = new TextDecoder().decode(buf);
+    }
+    IX_CACHE[g] = JSON.parse(text);
+    return IX_CACHE[g];
+  }catch(e){ return null; }
+}
+async function ixSearch(q, limit){
+  const k = ixNorm(q);
+  if(k.length < 2) return [];
+  const d = await ixLoad(k);
+  if(!d || !d.t) return [];
+  const words = k.split(' ');
+  const out = [];
+  for(let i = 0; i < d.t.length; i++){
+    const nt = ixNorm(d.t[i]);
+    let hit = true;
+    for(const w of words){ if(nt.indexOf(w) < 0){ hit = false; break; } }
+    if(hit) out.push(i);
+    if(out.length > 400) break;
+  }
+  out.sort((a, b) => (d.v[b] || 0) - (d.v[a] || 0));
+  return out.slice(0, limit || 60).map(function(i){
+    const rid = 'tt' + String(d.i[i]).padStart(7, '0');
+    return {
+      t: d.t[i], y: d.y[i] || '', cat: 'imdb',
+      type: (IX_TYPES && IX_TYPES[d.k[i]]) || 'Movie',
+      g: ixGenres(d.g[i]), m: [], a: [], o: [],
+      r: (d.r[i] || 0) / 10, irt: ((d.r[i] || 0) / 10) || '',
+      ivot: d.v[i] || 0, id: rid, src: 'imdb', status: 'released'
+    };
+  });
+}
+async function ixInit(){
+  try{
+    const r = await fetch('data/ix_manifest.json');
+    if(!r.ok) return;
+    const m = await r.json();
+    IX_TYPES = m.types || null;
+    IX_GENRES = m.genres || null;
+  }catch(e){}
+}
+
 function render(){
   const out=DATA.filter(d=>{
     if(d.src==='youtube') return false;            // YouTube is a knowledge source only, never in the feed
@@ -3425,6 +3512,7 @@ function loadPosters(){
 function loadPopular(){
   if(!SHEET_SHARDS.length) return;
   loadPostersSoon();
+  ixInit();
   Promise.all(SHEET_SHARDS.map(s => gviz(s, 'select A,B,C,E,G,H order by H desc limit 200')))
     .then(lists => {
       const seen = new Set(DATA.map(x => x.t.toLowerCase()));
