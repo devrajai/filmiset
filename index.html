@@ -2071,6 +2071,8 @@ document.getElementById('q').addEventListener('input',e=>{
   liveTimer=setTimeout(()=>fetchLive(state.q), 350);   // also search the sheet shards
   // and the full catalogue: one gzipped bucket, cached after the first time. The delay is a
   // little longer than the sheet lookup so a fast typist does not pull three buckets at once.
+  if(!IX_LANG) ixLoadLang();
+  if(!IX_NATIVE) ixLoadNative();
   clearTimeout(window.ixTimer);
   window.ixTimer=setTimeout(async ()=>{
     const asked = state.q;
@@ -3359,7 +3361,7 @@ async function ixLoad(q){
   const g = ixGroup(q);
   if(IX_CACHE[g]) return IX_CACHE[g];
   try{
-    const r = await fetch('data/ix_' + g + '.json.gz');
+    const r = await fetch(DATA_BASE + 'ix_' + g + '.json.gz');
     if(!r.ok) return null;
     const buf = new Uint8Array(await r.arrayBuffer());
     let text;
@@ -3460,6 +3462,55 @@ function queryVariants(q){
   return [...out].map(function(x){ return ixNorm(x); }).filter(Boolean);
 }
 
+
+/* ---- language and native titles ----
+   lang.json.gz carries a language code for 413,040 titles and the labels for 55 languages;
+   native.json.gz carries the original-script name for 177,704. Both come from Cloudflare and load
+   on first use, because between them they are 4 MB. */
+/* ---- where the data lives ----
+   Vercel's free tier counts every deployment against 10 GB of storage and it is full. The three
+   big files — fourteen title buckets at 13.9 MB, the language map at 1.2 MB and the native-title
+   map at 2.9 MB — are served from Cloudflare Pages, which has no such limit. Everything else is
+   small enough to stay here: the curated lists, the mood tags, the poster index. Episodes were
+   already on Cloudflare. If Cloudflare is unreachable these fetches fail and the site falls back
+   to its curated catalogue rather than breaking. */
+const DATA_BASE = 'https://filmiset-data.pages.dev/';
+let IX_LANG = null, IX_NATIVE = null, _langP = null, _nativeP = null;
+async function ixLoadLang(){
+  if(IX_LANG) return IX_LANG;
+  if(_langP) return _langP;
+  _langP = (async function(){
+    try{
+      const r = await fetch(DATA_BASE + 'lang.json.gz');
+      if(!r.ok) return null;
+      IX_LANG = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+      return IX_LANG;
+    }catch(e){ return null; }
+  })();
+  return _langP;
+}
+async function ixLoadNative(){
+  if(IX_NATIVE) return IX_NATIVE;
+  if(_nativeP) return _nativeP;
+  _nativeP = (async function(){
+    try{
+      const r = await fetch(DATA_BASE + 'native.json.gz');
+      if(!r.ok) return null;
+      IX_NATIVE = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+      return IX_NATIVE;
+    }catch(e){ return null; }
+  })();
+  return _nativeP;
+}
+function langLabel(code){
+  if(!code || !IX_LANG || !IX_LANG.names) return '';
+  return IX_LANG.names[code] || code;
+}
+function nativeOf(id){
+  if(!IX_NATIVE) return '';
+  return IX_NATIVE[String(id || '').replace(/^tt0*/, '')] || '';
+}
+
 async function ixSearch(q, limit){
   const variants = queryVariants(q);
   const k = variants[0] || ixNorm(q);
@@ -3479,6 +3530,15 @@ async function ixSearch(q, limit){
         let a = true;
         for(const w of alt){ if(nt.indexOf(w) < 0){ a = false; break; } }
         if(a){ hit = true; break; }
+      }
+    }
+    if(!hit && IX_NATIVE){
+      const nat = nativeOf('tt' + String(d.i[i]).padStart(7, '0'));
+      if(nat){
+        const nn = ixNorm(nat);
+        let nh = true;
+        for(const w of words){ if(nn.indexOf(w) < 0){ nh = false; break; } }
+        if(nh) hit = true;
       }
     }
     if(hit) out.push(i);
@@ -3512,7 +3572,7 @@ async function ixMerge(q){
 
 async function ixInit(){
   try{
-    const r = await fetch('data/ix_manifest.json');
+    const r = await fetch(DATA_BASE + 'ix_manifest.json');
     if(!r.ok) return;
     const m = await r.json();
     IX_TYPES = m.types || null;
