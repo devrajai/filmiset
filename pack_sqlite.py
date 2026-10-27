@@ -52,12 +52,19 @@ def detect(cur):
         "genres":   find_col(cols, "genres", "genre", "g"),
         "runtime":  find_col(cols, "runtime", "runtimeMinutes", "minutes"),
     }
-    missing = [k for k, v in m.items() if not v and k not in ("language", "votes", "rating", "runtime")]
+    # Only id and title are truly required. Everything else has a safe default, because the
+    # column names in this database are not guaranteed and a missing genre column should not stop
+    # the whole run.
     print("mapping:", m)
+    missing = [k for k in ("id", "title") if not m[k]]
     if missing:
-        print("could not find required column(s):", missing)
+        print("could not find:", missing)
+        print("available columns were:", cols)
         print("edit detect() and name them explicitly, then run again")
         sys.exit(1)
+    for k in ("year", "type", "language", "votes", "rating", "genres", "runtime"):
+        if not m[k]:
+            print("  no %s column — using a default" % k)
     return m, cols
 
 
@@ -78,8 +85,10 @@ def rows_from_db(db, limit=None):
         where.append("coalesce(%s,0) = 0" % find_col(cols, "adult", "isAdult"))
     clause = ("WHERE " + " AND ".join(where)) if where else ""
 
+    DEFAULTS = {"year": "0", "type": "'movie'", "language": "'und'",
+                "votes": "0", "rating": "0", "genres": "''", "runtime": "0"}
     sel = ", ".join(
-        "%s AS %s" % (m[k] or "NULL", k) for k in
+        "%s AS %s" % (m[k] or DEFAULTS[k], k) for k in
         ("id", "title", "year", "type", "language", "votes", "rating", "genres", "runtime"))
     q = "SELECT %s FROM all_world_media %s" % (sel, clause)
     if limit:
