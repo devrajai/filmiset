@@ -1963,6 +1963,15 @@ document.getElementById('q').addEventListener('input',e=>{
   render();
   clearTimeout(liveTimer);
   liveTimer=setTimeout(()=>fetchLive(state.q), 350);   // also search the sheet shards
+  // and the full catalogue: one gzipped bucket, cached after the first time. The delay is a
+  // little longer than the sheet lookup so a fast typist does not pull three buckets at once.
+  clearTimeout(window.ixTimer);
+  window.ixTimer=setTimeout(async ()=>{
+    const asked = state.q;
+    if(asked.length < 2) return;
+    const added = await ixMerge(asked);
+    if(added && state.q === asked){ render(); }
+  }, 450);
 });
 document.getElementById('qclear').addEventListener('click',()=>{
   var q=document.getElementById('q'); q.value=''; state.q='';
@@ -3182,6 +3191,20 @@ async function ixSearch(q, limit){
     };
   });
 }
+/* pull catalogue rows for a query into DATA so the existing render shows them */
+async function ixMerge(q){
+  let rows;
+  try{ rows = await ixSearch(q, 120); }catch(e){ return 0; }
+  if(!rows || !rows.length) return 0;
+  const have = new Set((DATA || []).map(function(d){ return ixNorm(d.t); }));
+  let added = 0;
+  for(const r of rows){
+    const k = ixNorm(r.t);
+    if(!have.has(k)){ have.add(k); DATA.push(r); added++; }
+  }
+  return added;
+}
+
 async function ixInit(){
   try{
     const r = await fetch('data/ix_manifest.json');
