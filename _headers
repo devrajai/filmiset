@@ -1,0 +1,31 @@
+# Vercel and Cloudflare both read this file. Cached files make returning visitors download almost
+# nothing; the manifest stays short-lived so an update is picked up within five minutes.
+
+/data/ix_*.json.gz
+  Cache-Control: public, max-age=31536000, immutable
+
+/data/imdb_posters.json.gz
+  Cache-Control: public, max-age=604800
+
+/data/imdb_posters.json
+  Cache-Control: public, max-age=604800
+
+/data/curated_*.json
+  Cache-Control: public, max-age=86400
+
+/data/ix_manifest.json
+  Cache-Control: public, max-age=300
+
+/data/manifest.json
+  Cache-Control: public, max-age=300
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
