@@ -141,26 +141,42 @@ def main():
             continue
         by_series.setdefault(pid, []).append([s, e, t, y, rt, rv[0], rv[1]])
 
-    total = 0
-    written = 0
+    # ---- write in buckets, not one file per series ----
+    # 125,301 series is seven times what Cloudflare Pages will hold in a deployment, and a site that
+    # fetched a single series would have to know its exact filename. Bucketing by the last two digits
+    # of the id gives about a hundred files, each a few hundred KB, and the site can work out which
+    # one it needs from the id alone.
+    buckets = {}
     for pid, eps in by_series.items():
         eps.sort(key=lambda x: (x[0], x[1]))
-        obj = {"n": len(eps), "e": eps}
-        p = os.path.join(a.out, f"{pid}.json.gz")
-        with gzip.open(p, "wt", encoding="utf-8", compresslevel=9) as f:
-            json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
-        total += os.path.getsize(p)
-        written += 1
+        key = ("%02d" % (int(pid) % 100)) if str(pid).isdigit() else "xx"
+        buckets.setdefault(key, {})[pid] = eps
 
-    # a small manifest so the site knows which series have episodes without probing each one
-    man = {"series": written, "episodes": sum(len(v) for v in by_series.values()),
-           "bytes": total, "generated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+    total = 0
+    meta = {}
+    for key, series_map in sorted(buckets.items()):
+        p = os.path.join(a.out, f"ep_{key}.json.gz")
+        with gzip.open(p, "wt", encoding="utf-8", compresslevel=9) as f:
+            json.dump(series_map, f, ensure_ascii=False, separators=(",", ":"))
+        sz = os.path.getsize(p)
+        total += sz
+        meta[key] = {"series": len(series_map),
+                     "episodes": sum(len(v) for v in series_map.values()),
+                     "bytes": sz}
+
+    man = {"series": len(by_series),
+           "episodes": sum(len(v) for v in by_series.values()),
+           "files": len(meta), "bytes": total, "buckets": meta,
+           "generated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
     json.dump(man, open(os.path.join(a.out, "_manifest.json"), "w"), separators=(",", ":"))
 
-    print(f"\nwrote {written:,} series files, {total/1024**2:.1f} MB in {time.time()-t0:.0f}s")
+    print(f"\nwrote {len(meta)} bucket files, {total/1024**2:.1f} MB in {time.time()-t0:.0f}s")
+    print(f"  series  : {man['series']:,}")
     print(f"  episodes: {man['episodes']:,}")
-    print(f"  average : {man['episodes']/max(1,written):.1f} per series")
-    print(f"  biggest : {max((os.path.getsize(os.path.join(a.out,f)) for f in os.listdir(a.out) if f.endswith('.gz')), default=0)/1024:.0f} KB")
+    print(f"  average : {man['episodes']/max(1,man['series']):.1f} per series")
+    sizes = sorted(v['bytes'] for v in meta.values())
+    print(f"  biggest : {sizes[-1]/1024:.0f} KB   median: {sizes[len(sizes)//2]/1024:.0f} KB")
+    print(f"  buckets : {', '.join(sorted(meta)[:12])}…")
 
 if __name__ == "__main__":
     main()
