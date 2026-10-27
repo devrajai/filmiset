@@ -55,6 +55,21 @@ jobs:
             --out data/ep \
             --min-votes "${{ github.event.inputs.min_votes || '0' }}"
 
+      # straight to Cloudflare, so 68 MB of episode buckets never has to sit in git
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE || secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+        run: |
+          set -e
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::warning::No Cloudflare token, skipping the upload. The packs are still in the artifact."
+            exit 0
+          fi
+          ACCT=$(curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"                  https://api.cloudflare.com/client/v4/accounts                  | python3 -c "import sys,json;d=json.load(sys.stdin);r=d.get('result') or [];print(r[0]['id'] if r else '')")
+          if [ -z "$ACCT" ]; then echo "::error::Token sees no account"; exit 1; fi
+          export CLOUDFLARE_ACCOUNT_ID="$ACCT"
+          npx --yes wrangler@3 pages deploy data --project-name filmiset-data --branch main --commit-dirty=true
+
       - name: How much came out
         run: |
           echo "series files: $(find data/ep -name '*.gz' | wc -l)"
