@@ -126,15 +126,6 @@
   [data-theme="dark"] .topbar.scrolled{ background:transparent; }
   .modal-back:hover{background:rgba(255,255,255,.34)}
   .modal-back:active{transform:scale(.95)}
-  .epwrap{margin:14px 0 6px;border-top:1px solid var(--line);padding-top:12px}
-  .epwrap h6{font-size:13px;margin:0 0 8px;display:flex;gap:8px;align-items:baseline}
-  .epseason{display:flex;gap:8px;align-items:baseline;margin:10px 0 4px}
-  .epseason b{font-size:13px}
-  .eplist{list-style:none;margin:0;padding:0}
-  .eplist li{display:flex;gap:9px;align-items:baseline;padding:5px 0;border-bottom:1px solid rgba(0,0,0,.05);font-size:13px}
-  .epn{color:var(--faint);font-size:11.5px;min-width:34px}
-  .ept{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .epr{color:var(--accent);font-weight:700;font-size:12px}
   [data-theme="dark"] .modal-back{
     background:rgba(255,255,255,.10);
     border-color:rgba(255,255,255,.18);
@@ -384,6 +375,42 @@
     .card h4{font-size:15.5px}
     .card .meta{font-size:10.5px;line-height:1.5}
     .card .sum{font-size:12.5px;-webkit-line-clamp:2}
+  /* ---- back button: pink liquid glass ----
+     Bottom right, above the talk button, because the top of a long detail page is a long way up on
+     a phone. The accent colour at low opacity over a blur, with a bright edge and a white inner
+     highlight along the top — the same recipe as the header, in pink, so it reads as a droplet
+     rather than a flat chip. */
+  .modal-back{
+    position:fixed;right:14px;bottom:58px;z-index:101;
+    display:flex;align-items:center;gap:5px;
+    padding:7px 13px;border-radius:999px;cursor:pointer;
+    font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:.01em;
+    background:linear-gradient(180deg,
+      rgba(224,64,122,.32) 0%,
+      rgba(224,64,122,.18) 100%);
+    -webkit-backdrop-filter:blur(16px) saturate(200%) brightness(1.05);
+    backdrop-filter:blur(16px) saturate(200%) brightness(1.05);
+    border:1px solid rgba(255,255,255,.65);
+    color:#fff;
+    text-shadow:0 1px 2px rgba(120,10,50,.35);
+    box-shadow:0 1px 0 rgba(255,255,255,.75) inset,
+               0 -1px 0 rgba(224,64,122,.35) inset,
+               0 6px 18px rgba(224,64,122,.30);
+    transition:transform .12s ease, background .2s ease;
+  }
+  .modal-back:hover{
+    background:linear-gradient(180deg,
+      rgba(224,64,122,.44) 0%,
+      rgba(224,64,122,.26) 100%);
+  }
+  .modal-back:active{transform:scale(.95)}
+  [data-theme="dark"] .modal-back{
+    background:linear-gradient(180deg,
+      rgba(224,64,122,.36) 0%,
+      rgba(224,64,122,.20) 100%);
+    border-color:rgba(255,255,255,.30);
+  }
+  @media (max-width:520px){ .modal-back{right:12px;bottom:52px;padding:6px 12px;font-size:11.5px} }
     .modal{padding:10px}
     .modal .box{padding:15px;border-radius:16px;max-height:88vh}
     .modal h3{font-size:20px}
@@ -2026,8 +2053,6 @@ document.getElementById('q').addEventListener('input',e=>{
   liveTimer=setTimeout(()=>fetchLive(state.q), 350);   // also search the sheet shards
   // and the full catalogue: one gzipped bucket, cached after the first time. The delay is a
   // little longer than the sheet lookup so a fast typist does not pull three buckets at once.
-  if(!IX_LANG) ixLoadLang();
-  if(!IX_NATIVE) ixLoadNative();
   clearTimeout(window.ixTimer);
   window.ixTimer=setTimeout(async ()=>{
     const asked = state.q;
@@ -2189,59 +2214,6 @@ function lengthLabel(d){
   return '';
 }
 
-
-/* ---- episodes ----
-   The refresh workflow writes one bucket per hundred series, keyed by the last two digits of the
-   IMDb id, so a show's episodes are one request and the bucket is cached after the first open.
-   Each bucket holds {seriesId: [[season, episode, title, year, runtime, rating, votes], ...]}.
-   A series with no episodes simply has no entry, which is the common case for films. */
-const EP_CACHE = {};
-
-function epBucket(id){
-  const k = String(id || '').replace(/^tt0*/, '');
-  if(!/^\d+$/.test(k)) return null;
-  return ('0' + (parseInt(k, 10) % 100)).slice(-2);
-}
-async function epLoad(id){
-  const b = epBucket(id);
-  if(!b) return null;
-  if(EP_CACHE[b]) return EP_CACHE[b];
-  try{
-    const r = await fetch('data/ep/ep_' + b + '.json.gz');
-    if(!r.ok) return null;
-    EP_CACHE[b] = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
-    return EP_CACHE[b];
-  }catch(e){ return null; }
-}
-async function epFor(id){
-  const m = await epLoad(id);
-  if(!m) return null;
-  return m[String(id || '').replace(/^tt0*/, '')] || null;
-}
-function epHtml(eps){
-  if(!eps || !eps.length) return '';
-  /* grouped by season: a flat list of two hundred rows is unreadable */
-  const bySeason = {};
-  for(const e of eps) (bySeason[e[0]] = bySeason[e[0]] || []).push(e);
-  const seasons = Object.keys(bySeason).sort((a,b) => Number(a) - Number(b));
-  let out = '<div class="epwrap"><h6>Episodes <span class="m">' + eps.length + '</span></h6>';
-  for(const s of seasons){
-    const list = bySeason[s];
-    out += '<div class="epseason"><b>' + (Number(s) ? 'Season ' + s : 'Specials') + '</b>'
-         + '<span class="m">' + list.length + '</span></div><ol class="eplist">';
-    for(const e of list){
-      const r = e[5] ? (e[5] / 10).toFixed(1) : '';
-      out += '<li><span class="epn">E' + (e[1] || '?') + '</span>'
-           + '<span class="ept">' + esc(e[2] || 'Untitled') + '</span>'
-           + (e[3] ? '<span class="m">' + esc(e[3]) + '</span>' : '')
-           + (r ? '<span class="epr">\u2605 ' + r + '</span>' : '')
-           + '</li>';
-    }
-    out += '</ol>';
-  }
-  return out + '</div>';
-}
-
 function openModal(d, fromPop){
   const up=d.status==='upcoming' || Number(d.y||0) > CUR_YEAR;   // nothing to watch yet
   const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t, d) : '';
@@ -2253,7 +2225,6 @@ function openModal(d, fromPop){
     + '<div class="m" style="margin-top:6px">'+[esc(gList(d).join(', ')),esc((d.a||[]).join(', ')),avail].filter(Boolean).join('  ·  ')+'</div>'
     + guardHtml(d)
     + '<div class="ap-chips" style="margin:10px 0"><button class="pill" data-ics="'+esc(d.t)+'">📅 Add to calendar</button></div>'
-    + '<div id="epBox"></div>'
     + ((d.cast&&d.cast.length)? '<div class="castrow"><h6>Cast</h6>'
         + d.cast.slice(0,8).map(c=>'<button class="ap-item" data-actor="'+esc(c)+'">'+esc(c)+'</button>').join('')
         + '</div>' : '')
@@ -2296,13 +2267,6 @@ function openModal(d, fromPop){
   back.hidden = false;
   document.body.classList.add('modal-open');
   m.hidden=false;
-  /* episodes are fetched only when a card is opened, and only if the bucket has this series */
-  (async function(){
-    const box = document.getElementById('epBox');
-    if(!box) return;
-    const eps = await epFor(d.id || d.imdb || '');
-    if(eps && eps.length){ box.innerHTML = epHtml(eps); }
-  })();
   setOg(d);
   if(!fromPop) pushTitle(d);
 }
@@ -3391,71 +3355,6 @@ function queryVariants(q){
   return [...out].map(function(x){ return ixNorm(x); }).filter(Boolean);
 }
 
-
-/* ---- language and native titles ----
-   Two files the refresh workflow produces from IMDb's title.akas:
-     lang.json.gz    {names: {code: label}, byId: {id: code}}  — 413,040 titles
-     native.json.gz  {id: the title in its own script}          — 177,704 titles
-   The first powers the language filter. The second lets someone type दिल or காதல் and find the
-   film, which the romanised catalogue alone cannot do.
-
-   Both load once, on first use. lang is 1.2 MB and native 2.9 MB, so neither is worth fetching for
-   a visitor who never searches or filters. */
-let IX_LANG = null, IX_NATIVE = null, _langP = null, _nativeP = null;
-
-function _gzText(buf){
-  if(buf[0] === 0x1f && buf[1] === 0x8b){
-    const st = new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'));
-    return new Response(st).text();
-  }
-  return Promise.resolve(new TextDecoder().decode(buf));
-}
-async function ixLoadLang(){
-  if(IX_LANG) return IX_LANG;
-  if(_langP) return _langP;
-  _langP = (async function(){
-    try{
-      const r = await fetch('data/lang.json.gz');
-      if(!r.ok) return null;
-      IX_LANG = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
-      return IX_LANG;
-    }catch(e){ return null; }
-  })();
-  return _langP;
-}
-async function ixLoadNative(){
-  if(IX_NATIVE) return IX_NATIVE;
-  if(_nativeP) return _nativeP;
-  _nativeP = (async function(){
-    try{
-      const r = await fetch('data/native.json.gz');
-      if(!r.ok) return null;
-      IX_NATIVE = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
-      return IX_NATIVE;
-    }catch(e){ return null; }
-  })();
-  return _nativeP;
-}
-function langLabel(code){
-  if(!code || !IX_LANG || !IX_LANG.names) return '';
-  return IX_LANG.names[code] || code;
-}
-function applyLanguages(){
-  if(!IX_LANG || !IX_LANG.byId || !DATA) return 0;
-  const byId = IX_LANG.byId;
-  let n = 0;
-  for(const d of DATA){
-    if(d.lang) continue;
-    const code = byId[String(d.id || d.imdb || '').replace(/^tt0*/, '')];
-    if(code){ d.lang = code; n++; }
-  }
-  return n;
-}
-function nativeOf(id){
-  if(!IX_NATIVE) return '';
-  return IX_NATIVE[String(id || '').replace(/^tt0*/, '')] || '';
-}
-
 async function ixSearch(q, limit){
   const variants = queryVariants(q);
   const k = variants[0] || ixNorm(q);
@@ -3477,16 +3376,6 @@ async function ixSearch(q, limit){
         if(a){ hit = true; break; }
       }
     }
-    if(!hit && IX_NATIVE){
-      /* the query may be in a script the romanised title does not carry: try the native name */
-      const nat = nativeOf('tt' + String(d.i[i]).padStart(7, '0'));
-      if(nat){
-        const nn = ixNorm(nat);
-        let nh = true;
-        for(const w of words){ if(nn.indexOf(w) < 0){ nh = false; break; } }
-        if(nh) hit = true;
-      }
-    }
     if(hit) out.push(i);
     if(out.length > 400) break;
   }
@@ -3498,8 +3387,7 @@ async function ixSearch(q, limit){
       type: (IX_TYPES && IX_TYPES[d.k[i]]) || 'Movie',
       g: ixGenres(d.g[i]), m: [], a: [], o: [],
       r: (d.r[i] || 0) / 10, irt: ((d.r[i] || 0) / 10) || '',
-      ivot: d.v[i] || 0, id: rid, src: 'imdb', status: 'released',
-      lang: (IX_LANG && IX_LANG.byId) ? (IX_LANG.byId[String(d.i[i])] || '') : ''
+      ivot: d.v[i] || 0, id: rid, src: 'imdb', status: 'released'
     };
   });
 }
