@@ -390,23 +390,32 @@
      highlight along the top — the same recipe as the header, in pink, so it reads as a droplet
      rather than a flat chip. */
   .modal-back{
-    position:fixed;right:14px;bottom:58px;z-index:101;
-    display:flex;align-items:center;gap:5px;
-    padding:7px 13px;border-radius:999px;cursor:pointer;
-    font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:.01em;
+    position:fixed;right:12px;bottom:44px;z-index:101;
+    display:inline-flex;align-items:center;gap:4px;
+    padding:5px 10px;border-radius:999px;cursor:pointer;
+    font-family:var(--font-body);font-size:11px;font-weight:700;letter-spacing:.01em;
+    line-height:1.35;width:auto;min-width:0;
     background:linear-gradient(180deg,
-      rgba(224,64,122,.32) 0%,
-      rgba(224,64,122,.18) 100%);
+      rgba(224,64,122,.34) 0%,
+      rgba(224,64,122,.20) 100%);
     -webkit-backdrop-filter:blur(16px) saturate(200%) brightness(1.05);
     backdrop-filter:blur(16px) saturate(200%) brightness(1.05);
-    border:1px solid rgba(255,255,255,.65);
+    border:1px solid rgba(255,255,255,.68);
     color:#fff;
     text-shadow:0 1px 2px rgba(120,10,50,.35);
-    box-shadow:0 1px 0 rgba(255,255,255,.75) inset,
-               0 -1px 0 rgba(224,64,122,.35) inset,
-               0 6px 18px rgba(224,64,122,.30);
+    box-shadow:0 1px 0 rgba(255,255,255,.78) inset,
+               0 -1px 0 rgba(224,64,122,.38) inset,
+               0 4px 14px rgba(224,64,122,.28);
     transition:transform .12s ease, background .2s ease;
   }
+  .modal-back:hover{background:linear-gradient(180deg,
+    rgba(224,64,122,.46) 0%, rgba(224,64,122,.28) 100%)}
+  .modal-back:active{transform:scale(.95)}
+  [data-theme="dark"] .modal-back{
+    background:linear-gradient(180deg, rgba(224,64,122,.38) 0%, rgba(224,64,122,.22) 100%);
+    border-color:rgba(255,255,255,.32);
+  }
+  @media (max-width:520px){ .modal-back{right:10px;bottom:40px;padding:4px 9px;font-size:10.5px} }
   .modal-back:hover{
     background:linear-gradient(180deg,
       rgba(224,64,122,.44) 0%,
@@ -2230,6 +2239,10 @@ function lengthLabel(d){
    resolve the title is looked up in the catalogue first and the episodes are fetched with whatever
    id comes back. That is why the top five shows were showing nothing. */
 const EP_CACHE = {};
+/* The episode buckets are not in the repo — 68 MB of them live on Cloudflare Pages, so this is the
+   one fetch on the site that goes somewhere other than its own origin. Everything else stays on
+   Vercel. If Cloudflare is unreachable the fetch simply fails and the modal shows no episodes. */
+const EP_BASE = 'https://filmiset-data.pages.dev/';
 
 function epBucket(id){
   const k = String(id || '').replace(/^tt0*/, '');
@@ -2248,7 +2261,7 @@ async function epLoad(id){
   if(!b) return null;
   if(EP_CACHE[b]) return EP_CACHE[b];
   try{
-    const r = await fetch('data/ep/ep_' + b + '.json.gz');
+    const r = await fetch(EP_BASE + 'ep/ep_' + b + '.json.gz');
     if(!r.ok) return null;
     EP_CACHE[b] = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
     return EP_CACHE[b];
@@ -2329,8 +2342,7 @@ function openModal(d, fromPop){
       + '</div>'
       + '<button class="hbtn" data-msave="'+esc(d.t)+'">'+(watchlist.has(d.t)?'\u2665 Saved':'\u2661 Save')+'</button>'
       + '<button class="hbtn" data-mseen="'+esc(d.t)+'">'+(watched.has(d.t)?'\u2713 Seen':'Mark seen')+'</button>'
-      + '<button class="hbtn" data-mhome="1">\u2302 Home</button>'
-      + '<button class="hbtn" data-mclose="1">Close</button>'
+
     + '</div>'
     + '<div class="feels"><span>Dekhne ke baad kaisa laga?</span>'
     + [['lighter','halka'],['moved','bhaavuk'],['thinking','sochne wala'],['waste','time waste']]
