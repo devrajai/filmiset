@@ -31,6 +31,19 @@ jobs:
         with:
           python-version: '3.12'
 
+      # The title buckets live on Cloudflare now — they were removed from the repository to keep
+      # Vercel's deployment storage down — so pull them back here before anything reads data/.
+      - name: Fetch the catalogue from Cloudflare
+        run: |
+          set -e
+          mkdir -p data
+          for b in ab cd ef gh ij kl mn num op qr st uv wx yz; do
+            curl -sSfL "https://filmiset-data.pages.dev/ix_${b}.json.gz" -o "data/ix_${b}.json.gz"
+          done
+          curl -sSfL "https://filmiset-data.pages.dev/ix_manifest.json" -o data/ix_manifest.json
+          echo "buckets: $(ls data/ix_*.json.gz | wc -l)"
+          du -sh data
+
       - name: Download IMDb principals and names
         run: |
           set -e
