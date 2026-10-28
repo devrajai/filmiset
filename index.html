@@ -710,6 +710,13 @@
     <div class="rail-block"><h6>Mood</h6><div class="chips" id="moodRow"></div></div>
     <div class="rail-block"><h6>Type</h6><div class="chips" id="typeRow"></div></div>
     <div class="rail-block"><h6>Era</h6><div class="chips" id="eraRow"></div></div>
+    <div class="rail-block"><h6>What's new</h6><div class="chips" id="freshRow">
+      <button class="pill on" data-fresh="all">All</button>
+      <button class="pill" data-fresh="cinema">🔥 In cinemas</button>
+      <button class="pill" data-fresh="ott">📺 New on OTT</button>
+      <button class="pill" data-fresh="upcoming">⏳ Coming soon</button>
+      <button class="pill" data-fresh="series">📺 New series</button>
+    </div></div>
     <div class="rail-block"><h6>Hit or flop</h6><div class="chips" id="hfRow"></div></div>
     <div class="rail-block"><h6>Festival / Occasion</h6><div class="chips" id="occRow"></div></div>
     <div class="rail-block"><h6>Audio</h6><div class="chips" id="audRow"></div></div>
@@ -1258,7 +1265,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, hitflop:'all', genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, hitflop:'all', fresh:'all', genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -1619,6 +1626,21 @@ typeRow.addEventListener('click',e=>{
     location.href = 'mailto:devraj.resume@gmail.com'
       + '?subject=' + encodeURIComponent('FilmiSet feedback' + ctx)
       + '&body=' + encodeURIComponent(body);
+  });
+})();
+
+
+/* the what's-new row */
+(function(){
+  const row = document.getElementById('freshRow');
+  if(!row) return;
+  row.addEventListener('click', async function(e){
+    const b = e.target.closest('.pill'); if(!b) return;
+    row.querySelectorAll('.pill').forEach(function(p){ p.classList.remove('on'); });
+    b.classList.add('on');
+    state.fresh = b.dataset.fresh;
+    if(state.fresh !== 'all'){ await loadFresh(); }
+    render();
   });
 })();
 
@@ -2520,6 +2542,56 @@ document.addEventListener('click', function(e){
   });
 });
 
+
+/* ---- what is new ----
+   fresh.json.gz is written weekly by the refresh-fresh workflow from TMDB: what is in Indian
+   cinemas, what is coming, and what arrived on each platform in the last month. The rows are shaped
+   like catalogue rows, so they go straight into DATA with a "fresh" tag and the existing filters and
+   cards work on them unchanged. */
+let FRESH = null, FRESH_LOADED = false;
+
+async function loadFresh(){
+  if(FRESH_LOADED) return FRESH;
+  FRESH_LOADED = true;
+  try{
+    let r = await fetch(DATA_BASE + 'fresh.json.gz');
+    if(!r.ok) r = await fetch('data/fresh.json.gz');
+    if(!r.ok) return null;
+    FRESH = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+  }catch(e){ return null; }
+
+  /* flatten into DATA, tagging where each row came from */
+  const add = function(list, tag, platform){
+    for(const d of (list || [])){
+      if(!d || !d.t) continue;
+      DATA.push({
+        t: d.t, y: d.y || '', date: d.date || '', ov: d.ov || '',
+        r: d.r || 0, rtg: d.r || '', vot: d.v || '', ivot: d.v || 0,
+        poster: d.poster || '', type: d.type || 'Movie', cat: 'fresh',
+        g: [], m: [], a: [], o: platform ? [platform] : [],
+        lang: d.lang || '', id: d.tmdb ? ('tmdb' + d.tmdb) : ('f' + Math.random().toString(36).slice(2,9)),
+        src: 'tmdb', status: tag === 'upcoming' ? 'upcoming' : 'released',
+        fresh: tag, platform: platform || ''
+      });
+    }
+  };
+  add(FRESH.cinema, 'cinema');
+  add(FRESH.upcoming, 'upcoming');
+  for(const [name, rows] of Object.entries(FRESH.ott || {})) add(rows, 'ott', name);
+  for(const [name, rows] of Object.entries(FRESH.series || {})) add(rows, 'series', name);
+  return FRESH;
+}
+function freshCount(tag, platform){
+  if(!FRESH) return 0;
+  if(tag === 'cinema') return (FRESH.cinema || []).length;
+  if(tag === 'upcoming') return (FRESH.upcoming || []).length;
+  if(tag === 'ott') return platform ? ((FRESH.ott || {})[platform] || []).length
+                                    : Object.values(FRESH.ott || {}).reduce(function(s, v){ return s + v.length; }, 0);
+  if(tag === 'series') return platform ? ((FRESH.series || {})[platform] || []).length
+                                       : Object.values(FRESH.series || {}).reduce(function(s, v){ return s + v.length; }, 0);
+  return 0;
+}
+
 function openModal(d, fromPop){
   const up=d.status==='upcoming' || Number(d.y||0) > CUR_YEAR;   // nothing to watch yet
   const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t, d) : '';
@@ -2737,7 +2809,7 @@ function syncRow(id, attr, set){
   });
 }
 function clearAllFilters(){
-  state.hitflop='all';
+  state.hitflop='all'; state.fresh='all';
   state.cat.clear(); state.moods.clear(); state.type.clear(); state.era='all';
   state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott.clear();
   state.coll='all'; state.fr='all'; state.sort='new'; state.rt='all'; state.gems=false; state.safe=false;
@@ -3879,6 +3951,9 @@ function render(){
     if(state.gemsMode){
       const r=Number(d.irt||d.rtg||0), v=Number(d.ivot||d.vot||0);
       if(!(r>=7.6 && v>=1000 && v<=50000)) return false;      // high rating, modest vote count
+    }
+    if(state.fresh && state.fresh !== 'all'){
+      if(d.fresh !== state.fresh) return false;
     }
     if(state.hitflop && state.hitflop !== 'all'){
       if(hitFlopOf(d) !== state.hitflop) return false;
