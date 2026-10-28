@@ -2698,8 +2698,22 @@ function crisisCard(){
     + '<p class="gl">Yahan hum sirf film suggestions de sakte hain — hum doctor nahi hain.</p></div>';
 }
 function readTalk(txt){
-  const t=' '+String(txt||'').toLowerCase().replace(/[^\w\s+]/g,' ')+' ';
-  const has=arr=>arr.some(w=>t.indexOf(' '+w)>=0 || t.indexOf(w+' ')>=0 || t.indexOf(w)>=0);
+  /* Devanagari, Tamil, Telugu and the rest have to be romanised before the punctuation strip below,
+     because \w is ASCII-only in JavaScript and would delete the whole query. "दिल वाली कॉमेडी"
+     becomes "dil wali comedy" and then the normal matchers take over. */
+  let src = String(txt || '');
+  if(typeof hasNativeScript === 'function' && hasNativeScript(src)){
+    src = transliterate(src);
+  }
+  const t=' '+src.toLowerCase().replace(/[^\w\s+]/g,' ')+' ';
+  /* Word boundaries, not substrings. The old check was t.indexOf(w)>=0, so the keyword "old" for
+     the pre-2000 era matched inside "golden" — typing a film called Golden Spoon quietly applied a
+     pre-2000 filter and returned nothing. Multi-word phrases still match as phrases. */
+  const has=arr=>arr.some(function(w){
+    const q = String(w).toLowerCase();
+    if(q.indexOf(' ') >= 0) return t.indexOf(q) >= 0;      // a phrase: substring is right
+    return new RegExp('(^|[^a-z0-9])' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z0-9]|$)').test(t);
+  });
   const num=/\+/.test(t) ? null : null;
   const out={situation:null, notes:[], apply:{}, said:[]};
   // situation
@@ -2797,6 +2811,34 @@ function runTalk(txt){
   if(a.topN)   state.topN=a.topN;
   if(a.sort)   state.sort=a.sort;
   if(a.rel)    state.rel=a.rel; else state.rel='all';
+  /* If nothing matched — no genre, no language, no platform, no era — the person probably typed a
+     title. Search the catalogue for it and show those rows, rather than leaving the grid empty. */
+  const matchedAny = (a.genres && a.genres.length) || a.olang || a.ott || a.type || a.company ||
+                     a.rt || a.cert || a.free || a.subs || a.dub || a.vibe || a.era ||
+                     a.minRating || a.topN || r.situation;
+  if(!matchedAny){
+    (async function(){
+      try{
+        const rows = await ixSearch(txt, 60);
+        if(rows && rows.length){
+          const have = new Set((DATA||[]).map(function(d){ return ixNorm(d.t); }));
+          let added = 0;
+          for(const r2 of rows){ const k = ixNorm(r2.t); if(!have.has(k)){ have.add(k); DATA.push(r2); added++; } }
+          if(added){
+            state.q = ixNorm(txt);
+            const qEl = document.getElementById('q'); if(qEl) qEl.value = txt;
+            render();
+            if(box) box.innerHTML = '<div class="said">Maine <b>' + esc(txt) + '</b> ko catalogue mein dhoondha \u2014 '
+              + added + ' title' + (added === 1 ? '' : 's') + ' mile.</div>';
+            return;
+          }
+        }
+      }catch(e){}
+      if(box) box.innerHTML = '<div class="said">Samajh nahi aaya. Koi genre, bhaasha, platform ya saal likho \u2014 '
+        + 'jaise <b>\"hindi comedy 2020 ke baad\"</b> ya <b>\"netflix thriller\"</b>.</div>';
+    })();
+  }
+
   // the rail should show what the box just did
   try{
     setPillRow('relRow','rel',state.rel); setPillRow('sortRow','sort',state.sort);
@@ -3394,7 +3436,7 @@ const DEVA = {
   'प':'p','फ':'ph','ब':'b','भ':'bh','म':'m',
   'य':'y','र':'r','ल':'l','व':'v','श':'sh','ष':'sh','स':'s','ह':'h','ळ':'l','क़':'q','ख़':'kh',
   'ग़':'g','ज़':'z','ड़':'r','ढ़':'rh','फ़':'f','य़':'y',
-  'ा':'a','ि':'i','ी':'i','ु':'u','ू':'u','ृ':'ri','े':'e','ै':'ai','ो':'o','ौ':'au',
+  'ा':'a','ि':'i','ी':'i','ु':'u','ू':'u','ृ':'ri','े':'e','ै':'ai','ो':'o','ौ':'au','ॉ':'o','ॅ':'e','ॆ':'e','ॊ':'o',
   'ं':'n','ँ':'n','ः':'h','्':'','़':'','ॐ':'om',
   '०':'0','१':'1','२':'2','३':'3','४':'4','५':'5','६':'6','७':'7','८':'8','९':'9'
 };
