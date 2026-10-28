@@ -710,6 +710,7 @@
     <div class="rail-block"><h6>Mood</h6><div class="chips" id="moodRow"></div></div>
     <div class="rail-block"><h6>Type</h6><div class="chips" id="typeRow"></div></div>
     <div class="rail-block"><h6>Era</h6><div class="chips" id="eraRow"></div></div>
+    <div class="rail-block"><h6>Hit or flop</h6><div class="chips" id="hfRow"></div></div>
     <div class="rail-block"><h6>Festival / Occasion</h6><div class="chips" id="occRow"></div></div>
     <div class="rail-block"><h6>Audio</h6><div class="chips" id="audRow"></div></div>
     <div class="rail-block"><h6>Source</h6><div class="chips" id="srcRow"></div></div>
@@ -1179,7 +1180,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, hitflop:'all', genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -1560,6 +1561,40 @@ eraRow.addEventListener('click',e=>{
   eraRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
   b.classList.add('on'); state.era=b.dataset.era; render();
 });
+
+/* ---- hit, flop, and the middle ----
+   Every row already carries a rating and a vote count, so this is arithmetic on data the catalogue
+   already has. The vote floor matters: a 9.4 from eleven people is not a hit, it is eleven people.
+   Thresholds are deliberately conservative — a "hit" is 7.5 or better from five thousand votes,
+   a "flop" is under 5.5 from a thousand, and everything else stays in the middle where most films
+   belong. */
+const HITFLOP = [
+  ['all',    'All'],
+  ['hit',    '\u2b06 Hits'],
+  ['flop',   '\u2b07 Flops'],
+  ['mid',    'In between'],
+];
+const hfRow = document.getElementById('hfRow');
+if(hfRow){
+  HITFLOP.forEach(([k,label])=>{
+    const b=document.createElement('button');
+    b.className='pill'+(state.hitflop===k?' on':''); b.dataset.hf=k; b.textContent=label;
+    hfRow.appendChild(b);
+  });
+  hfRow.addEventListener('click',e=>{
+    const b=e.target.closest('.pill'); if(!b)return;
+    hfRow.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+    b.classList.add('on'); state.hitflop=b.dataset.hf; render();
+  });
+}
+function hitFlopOf(d){
+  const r = Number(d.irt || d.rtg || 0);
+  const v = Number(d.ivot || d.vot || 0);
+  if(!r || !v) return 'unknown';
+  if(r >= 7.5 && v >= 5000) return 'hit';
+  if(r < 5.5 && v >= 1000) return 'flop';
+  return 'mid';
+}
 
 /* Occasion -> mood/genre mapping. Match if a title has ANY listed mood or genre. */
 const OCCASIONS = [
@@ -2563,6 +2598,7 @@ function syncRow(id, attr, set){
   });
 }
 function clearAllFilters(){
+  state.hitflop='all';
   state.cat.clear(); state.moods.clear(); state.type.clear(); state.era='all';
   state.occasion='all'; state.rel='month'; state.dub=false; state.src='all'; state.ott.clear();
   state.coll='all'; state.fr='all'; state.sort='new'; state.rt='all'; state.gems=false; state.safe=false;
@@ -2781,6 +2817,8 @@ function readTalk(txt){
     out.apply.era = Math.floor(yy/10)*10 + 's';
   }
   if(has(TALK.oldest)) out.apply.era='classic';
+  if(has(['hit','hits','superhit','blockbuster','acchi rating'])) out.apply.hitflop='hit';
+  if(has(['flop','flops','badi','bakwas','worst'])) out.apply.hitflop='flop';
   if(has(TALK.newest) && !out.apply.era) out.apply.sort='new';
   // age / safety
   if(has(TALK.kidsSafe)) { out.apply.company='family'; out.apply.cert='U'; }
@@ -2848,6 +2886,7 @@ function runTalk(txt){
   if(a.dub)    state.dub=true;
   if(a.vibe)   state.vibe=a.vibe;
   if(a.era)    state.era=a.era;
+  if(a.hitflop) state.hitflop=a.hitflop;
   if(a.minRating) state.minRating=a.minRating;
   if(a.topN)   state.topN=a.topN;
   if(a.sort)   state.sort=a.sort;
@@ -2884,7 +2923,7 @@ function runTalk(txt){
   try{
     setPillRow('relRow','rel',state.rel); setPillRow('sortRow','sort',state.sort);
     setPillRow('rtRow','rt',state.rt); setPillRow('compRow','comp',state.company);
-    setPillRow('eraRow','era',state.era); setPillRow('catRow','cat','all');
+    setPillRow('eraRow','era',state.era); setPillRow('hfRow','hf',state.hitflop||'all'); setPillRow('catRow','cat','all');
     setPillRow('typeRow','type','all'); setPillRow('ottRow','ott','all');
   }catch(e){}
   // and say so in words
@@ -2901,6 +2940,7 @@ function runTalk(txt){
   if(a.subs) said.push('<b>on subscription</b>');
   if(a.dub) said.push('<b>Hindi dub</b>');
   if(a.era) said.push(a.era==='classic'?'<b>pre-2000</b>':(a.era==='modern'?'<b>2000s onwards</b>':'<b>'+esc(a.era)+'</b>'));
+  if(a.hitflop) said.push(a.hitflop==='hit'?'<b>hits only</b>':'<b>flops only</b>');
   if(a.minRating) said.push('<b>★'+a.minRating+'+</b>');
   if(a.topN) said.push('<b>top '+a.topN+'</b>');
   if(a.sort==='pop') said.push('most popular');
@@ -3360,6 +3400,7 @@ function renderActiveChips(){
   if(state.subsOnly) c.push(['Subscription', ()=>state.subsOnly=false]);
   if(state.rel!=='all' && state.rel!=='month') c.push([REL_LABEL[state.rel]||state.rel, ()=>state.rel='month']);
   if(state.era!=='all') c.push([state.era==='classic'?'Pre-2000':(state.era==='modern'?'2000+':state.era), ()=>state.era='all']);
+  if(state.hitflop && state.hitflop!=='all') c.push([state.hitflop==='hit'?'Hits':(state.hitflop==='flop'?'Flops':'In between'), ()=>state.hitflop='all']);
   if(state.rt!=='all') c.push([{u90:'Under 1½ hr',u120:'Under 2 hrs',p120:'2 hrs +'}[state.rt]||state.rt, ()=>state.rt='all']);
   if(state.company!=='all') c.push([{solo:'Solo',family:'Family',date:'Date night',friends:'Friends',kids:'With kids'}[state.company]||state.company, ()=>state.company='all']);
   if(state.minRating) c.push(['★ '+state.minRating+'+', ()=>state.minRating=0]);
@@ -3699,6 +3740,9 @@ function render(){
     if(state.gemsMode){
       const r=Number(d.irt||d.rtg||0), v=Number(d.ivot||d.vot||0);
       if(!(r>=7.6 && v>=1000 && v<=50000)) return false;      // high rating, modest vote count
+    }
+    if(state.hitflop && state.hitflop !== 'all'){
+      if(hitFlopOf(d) !== state.hitflop) return false;
     }
     if(state.era !== 'all'){
       const y = Number(d.y) || 0;
