@@ -793,23 +793,101 @@
    Built from data/filmography.json, which comes from IMDb's own bulk files — no API, no key,
    and it keeps working after TMDB is switched off. */
 let FILMO = null, FILMO_LOADING = false;
-function loadFilmography(){
-  if(FILMO || FILMO_LOADING) return Promise.resolve(FILMO);
-  FILMO_LOADING = true;
-  return fetch('data/filmography.json').then(r=>r.ok?r.json():null)
-    .then(m=>{ FILMO = m || {}; FILMO_LOADING=false; return FILMO; }).catch(()=>{ FILMO={}; FILMO_LOADING=false; return FILMO; });
+/* ---- actors and cast ----
+   Two bucket sets on Cloudflare, keyed by the last two digits of the IMDb id, same as everything
+   else here:
+     act_<XX>.json.gz   {nconst: [name, birthYear, [[titleId, title, year, rating, votes], ...]]}
+     cast_<XX>.json.gz  {titleId: [[nconst, name, role], ...]}
+   A page fetches one of each, a few hundred KB, and both are cached after the first open. */
+const ACT_BASE = 'https://filmiset-data.pages.dev/';
+const ACT_CACHE = {}, CAST_CACHE = {};
+
+function idBucket(id){
+  const k = String(id || '').replace(/^(tt|nm)0*/, '');
+  if(!/^\d+$/.test(k)) return null;
+  return ('0' + (parseInt(k, 10) % 100)).slice(-2);
 }
+async function loadActBucket(id){
+  const b = idBucket(id);
+  if(!b) return null;
+  if(ACT_CACHE[b]) return ACT_CACHE[b];
+  try{
+    const r = await fetch(ACT_BASE + 'act/act_' + b + '.json.gz');
+    if(!r.ok) return null;
+    ACT_CACHE[b] = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+    return ACT_CACHE[b];
+  }catch(e){ return null; }
+}
+async function loadCastBucket(id){
+  const b = idBucket(id);
+  if(!b) return null;
+  if(CAST_CACHE[b]) return CAST_CACHE[b];
+  try{
+    const r = await fetch(ACT_BASE + 'cast/cast_' + b + '.json.gz');
+    if(!r.ok) return null;
+    CAST_CACHE[b] = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+    return CAST_CACHE[b];
+  }catch(e){ return null; }
+}
+/* the people in a title, as [{n, name, role}] */
+async function castFor(id){
+  const m = await loadCastBucket(id);
+  if(!m) return null;
+  const key = String(id || '').replace(/^tt0*/, '');
+  const rows = m[key];
+  if(!rows) return null;
+  return rows.map(function(r){ return {n: r[0], name: r[1], role: r[2]}; });
+}
+/* one person: name, birth year, and their films */
+async function actorFor(nconst){
+  const m = await loadActBucket(nconst);
+  if(!m) return null;
+  const key = String(nconst || '').replace(/^nm0*/, '');
+  const v = m[key];
+  if(!v) return null;
+  return {n: key, name: v[0], birth: v[1], films: v[2] || []};
+}
+
+/* ---- filmography, from the buckets instead of the old single file ---- */
+function filmoFromActor(a){
+  if(!a || !a.films || !a.films.length) return null;
+  const films = a.films.map(function(f){
+    return {t: f[1], y: f[2], r: (f[3] || 0) / 10, v: f[4] || 0, id: 'tt' + String(f[0]).padStart(7, '0')};
+  });
+  const years = films.map(function(f){ return f.y; }).filter(Boolean).sort(function(x, y){ return x - y; });
+  const rated = films.filter(function(f){ return f.r; });
+  const avg = rated.length ? (rated.reduce(function(s, f){ return s + f.r; }, 0) / rated.length) : 0;
+  const genres = {};
+  for(const f of films){
+    const row = (DATA || []).find(function(d){ return d.id === f.id; });
+    for(const g of (row && row.g) || []) genres[g] = (genres[g] || 0) + 1;
+  }
+  return {
+    n: films.length,
+    first: years[0] || '', last: years[years.length - 1] || '',
+    avg: avg ? avg.toFixed(1) : '',
+    range: Object.keys(genres).length,
+    genres: genres, films: films
+  };
+}
+
+function loadFilmography(){
+  if(FILMO) return Promise.resolve(FILMO);
+  return Promise.resolve({});
+}
+
 function actorHref(name){ return 'actor.html?a=' + encodeURIComponent(name); }
 /* a small inline view for people who are already on the page */
-function showActor(name){
+function showActor(name, nconst){
   const pop=document.getElementById('actorPop');
   if(!pop) return;
   pop.hidden=false; pop.dataset.who=name;
   try{ history.pushState({panel:'actor'}, '', '#a=' + encodeURIComponent(name)); }catch(e){}
   pop.querySelector('.ap-name').textContent = name;
   pop.querySelector('.ap-body').innerHTML = '<p class="ap-load">Loading…</p>';
-  loadFilmography().then(map=>{
-    const a=map && map[name];
+  (async function(){
+    const who = await actorFor(nconst || '');
+    const a = who ? filmoFromActor(who) : null;
     if(!a){
       pop.querySelector('.ap-body').innerHTML =
         '<p>Is actor ki filmography abhi load nahi hui. Data collection chal raha hai — thodi der baad try kijiye.</p>'
