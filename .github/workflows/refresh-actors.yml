@@ -1,0 +1,88 @@
+name: Refresh actors and cast
+
+# Builds two things the catalogue cannot answer on its own: clicking an actor to see their films,
+# and opening a film to see who is in it. Both come from two IMDb files.
+#
+# Manual only — the Actions quota is 2,000 minutes a month and the other repositories use about
+# 1,500. The downloads are about 750 MB and the build takes a few minutes.
+
+on:
+  workflow_dispatch:
+    inputs:
+      min_films:
+        description: Skip people with fewer than this many titles in the catalogue
+        required: false
+        default: '2'
+
+permissions:
+  contents: read
+
+env:
+  CF_TOKEN: ${{ secrets.CLOUDFLARE || secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+
+jobs:
+  actors:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Download IMDb principals and names
+        run: |
+          set -e
+          for f in title.principals.tsv.gz name.basics.tsv.gz; do
+            echo "downloading $f"
+            curl -sSfL "https://datasets.imdbws.com/$f" -o "$f"
+            ls -lh "$f"
+          done
+
+      - name: Build the actor and cast buckets
+        run: |
+          python3 scripts/build_actors.py \
+            --principals title.principals.tsv.gz \
+            --names name.basics.tsv.gz \
+            --catalogue data \
+            --out data/act \
+            --min-films "${{ github.event.inputs.min_films || '2' }}"
+
+      - name: How much came out
+        run: |
+          echo "actor files: $(find data/act -name 'act_*.gz' | wc -l)"
+          echo "cast files : $(find data/act -name 'cast_*.gz' | wc -l)"
+          du -sh data/act
+          cat data/act/_manifest.json
+
+      # straight to Cloudflare — the cast and actor buckets are tens of MB and have no business in git
+      - name: Deploy to Cloudflare Pages
+        run: |
+          set -e
+          if [ -z "$CF_TOKEN" ]; then
+            echo "::warning::No Cloudflare token, skipping the upload."
+            exit 0
+          fi
+          ACCT=$(curl -sS -H "Authorization: Bearer $CF_TOKEN" \
+                 https://api.cloudflare.com/client/v4/accounts \
+                 | python3 -c "import sys,json;d=json.load(sys.stdin);r=d.get('result') or [];print(r[0]['id'] if r else '')")
+          if [ -z "$ACCT" ]; then echo "::error::Token sees no account"; exit 1; fi
+          export CLOUDFLARE_ACCOUNT_ID="$ACCT"
+          export CLOUDFLARE_API_TOKEN="$CF_TOKEN"
+          npx --yes wrangler@3 pages deploy data --project-name filmiset-data --branch main --commit-dirty=true
+
+      - name: Commit the manifest only
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/act/_manifest.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "Update the actor manifest"
+            git pull --rebase origin main || true
+            git push
+          fi
+
+      - name: Clean up
+        if: always()
+        run: rm -f title.principals.tsv.gz name.basics.tsv.gz
