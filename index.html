@@ -2462,6 +2462,64 @@ function epHtml(eps){
   return out + '</div>';
 }
 
+
+/* ---- copy a ready-to-post caption ----
+   People share screenshots; giving them the words as well makes sharing a two-tap job. The text is
+   built from what we know about the title, and the hashtags are the ones an Indian film account
+   would actually use. Nothing is sent anywhere — navigator.clipboard writes to the device. */
+function captionFor(d){
+  const bits = [];
+  const y = d.y || '';
+  const g = (typeof gList === 'function' ? gList(d) : (d.g || [])).slice(0, 2).join(', ');
+  const r = d.irt || d.rtg || '';
+  bits.push('🎬 ' + (d.t || '') + (y ? ' (' + y + ')' : ''));
+  if(g) bits.push('• ' + g);
+  if(r) bits.push('• ⭐ ' + r + '/10');
+  if(d.lang && typeof langLabel === 'function'){
+    const l = langLabel(d.lang); if(l) bits.push('• ' + l);
+  }
+  const ott = (d.o && d.o.length) ? d.o.slice(0, 2).join(' / ') : '';
+  if(ott) bits.push('• 📺 ' + ott);
+  bits.push('');
+  bits.push('FilmiSet par 8 lakh titles — mood bolo, hum dikha denge.');
+  bits.push('https://filmiset.vercel.app');
+  bits.push('');
+  const tags = ['#FilmiSet', '#Movies', '#Bollywood'];
+  if(/hindi/i.test(String(d.lang || '') + ' ' + (d.a || []).join(' '))) tags.push('#HindiMovies');
+  if(/anime/i.test(String(d.cat || '') + ' ' + g)) tags.push('#Anime');
+  if(/hollywood|english/i.test(String(d.cat || ''))) tags.push('#Hollywood');
+  if(ott) tags.push('#' + ott.replace(/[^A-Za-z0-9]/g, ''));
+  bits.push(tags.join(' '));
+  return bits.filter(function(x, i, arr){ return !(x === '' && arr[i-1] === ''); }).join('\n');
+}
+function copyText(txt){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    return navigator.clipboard.writeText(txt).then(function(){ return true; }).catch(function(){ return false; });
+  }
+  /* older browsers and non-secure origins */
+  try{
+    const ta = document.createElement('textarea');
+    ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    const ok = document.execCommand('copy');
+    document.body.removeChild(ta);
+    return Promise.resolve(ok);
+  }catch(e){ return Promise.resolve(false); }
+}
+document.addEventListener('click', function(e){
+  const b = e.target.closest('[data-caption]');
+  if(!b) return;
+  e.preventDefault(); e.stopPropagation();
+  const title = b.getAttribute('data-caption');
+  const d = (DATA || []).find(function(x){ return x.t === title; }) || {t: title};
+  copyText(captionFor(d)).then(function(ok){
+    const was = b.textContent;
+    b.textContent = ok ? '✓ Copied' : '✗ Copy failed';
+    b.disabled = true;
+    setTimeout(function(){ b.textContent = was; b.disabled = false; }, 1600);
+  });
+});
+
 function openModal(d, fromPop){
   const up=d.status==='upcoming' || Number(d.y||0) > CUR_YEAR;   // nothing to watch yet
   const avail=(d.o&&d.o.length)? 'Available on '+ottLinks(d.o, d.t, d) : '';
@@ -2472,7 +2530,10 @@ function openModal(d, fromPop){
     + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(lengthLabel(d)?' · '+lengthLabel(d):'')+(d.irt?' · IMDb '+esc(d.irt)+' ('+esc(d.ivot)+' votes)':(d.rtg?' · \u2605 '+esc(d.rtg)+' ('+esc(d.vot)+' votes)':''))+(d.cert?' · '+esc(d.cert):'')+(up?' · Upcoming':'')+'</div>'
     + '<div class="m" style="margin-top:6px">'+[esc(gList(d).join(', ')),esc((d.a||[]).join(', ')),avail].filter(Boolean).join('  ·  ')+'</div>'
     + guardHtml(d)
-    + '<div class="ap-chips" style="margin:10px 0"><button class="pill" data-ics="'+esc(d.t)+'">📅 Add to calendar</button></div>'
+    + '<div class="ap-chips" style="margin:10px 0">'
+        + '<button class="pill" data-ics="'+esc(d.t)+'">📅 Add to calendar</button>'
+        + '<button class="pill" data-caption="'+esc(d.t)+'">📋 Copy caption</button>'
+      + '</div>'
     + '<div id="epBox"></div>'
     + ((d.cast&&d.cast.length)? '<div class="castrow"><h6>Cast</h6>'
         + d.cast.slice(0,8).map(c=>'<button class="ap-item" data-actor="'+esc(c)+'">'+esc(c)+'</button>').join('')
