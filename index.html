@@ -681,6 +681,7 @@
       <div class="railbtns">
         <button id="shareBtn" class="hbtn" title="Share this view">↪ Share</button>
         <button id="surpriseBtn" class="hbtn" title="Random pick">⚄ Surprise me</button>
+        <button id="feedbackBtn" class="hbtn" title="Tell us what is wrong or missing">✉ Feedback</button>
       </div>
       <h6 style="margin-top:14px">Discover</h6>
       <div class="railbtns">
@@ -1513,8 +1514,43 @@ typeRow.addEventListener('click',e=>{
   render();
 });
 
+
+/* ---- feedback ----
+   A mailto link rather than a form: no backend, no database, no third party, and it works on every
+   device. The subject carries the view the person was looking at, so a report about "no posters in
+   1990s Marathi" arrives with enough context to reproduce. */
+(function(){
+  const b = document.getElementById('feedbackBtn');
+  if(!b) return;
+  b.addEventListener('click', function(){
+    const bits = [];
+    if(state.q) bits.push('search: ' + state.q);
+    if(state.era && state.era !== 'all') bits.push('era: ' + state.era);
+    if(state.olang && state.olang.size) bits.push('language: ' + [...state.olang].join(','));
+    if(state.ott && state.ott.size) bits.push('ott: ' + [...state.ott].join(','));
+    if(state.genres && state.genres.size) bits.push('genre: ' + [...state.genres].join(','));
+    if(state.type && state.type.size) bits.push('type: ' + [...state.type].join(','));
+    const ctx = bits.length ? ' [' + bits.join(' | ') + ']' : '';
+    const body = 'What is wrong or missing?\n\n\n'
+      + '---\n'
+      + 'View: ' + location.href + '\n'
+      + 'Filters: ' + (bits.join(', ') || 'none') + '\n'
+      + 'Titles on screen: ' + (DATA ? DATA.length : 0) + '\n'
+      + 'Browser: ' + navigator.userAgent;
+    location.href = 'mailto:devraj.resume@gmail.com'
+      + '?subject=' + encodeURIComponent('FilmiSet feedback' + ctx)
+      + '&body=' + encodeURIComponent(body);
+  });
+})();
+
 const eraRow=document.getElementById('eraRow');
-[['all','All eras'],['classic','Classic (pre-2000)'],['modern','Modern (2000+)']].forEach(([k,label])=>{
+/* Decades as well as the two broad eras. The year is already on every row, so this needs no new
+   data — it is one comparison in the filter below. 1950s onwards, because anything earlier is a
+   handful of titles. */
+const ERAS = [['all','All eras'],['classic','Pre-2000'],['modern','2000+'],
+              ['2020s','2020s'],['2010s','2010s'],['2000s','2000s'],['1990s','1990s'],
+              ['1980s','1980s'],['1970s','1970s'],['1960s','1960s'],['1950s','1950s']];
+ERAS.forEach(([k,label])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.era===k?' on':''); b.dataset.era=k; b.textContent=label;
   eraRow.appendChild(b);
@@ -2497,7 +2533,7 @@ function activeFilters(){
   if(state.q) a.push('search "'+state.q+'"');
   if(state.cat.size) a.push([...state.cat].map(c=>CATS[c]?CATS[c].label:c).join(', '));
   if(state.type.size) a.push([...state.type].join(', '));
-  if(state.era!=='all') a.push(state.era==='classic' ? 'Classic (pre-2000)' : 'Modern (2000+)');
+  if(state.era!=='all') a.push(state.era==='classic' ? 'Pre-2000' : (state.era==='modern' ? '2000+' : state.era));
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) a.push(oc.label); }
   if(state.rel!=='all' && state.rel!=='month') a.push(REL_LABEL[state.rel]||state.rel);
   if(state.dub) a.push('Hindi Dubbed');
@@ -2738,7 +2774,12 @@ function readTalk(txt){
   else if(has(['highly rated','high rating','achhi rating','acchi rating','top rated'])) out.apply.minRating=8;
   // era
   const dec = /(19[2-9]0|20[0-2]0)s/.exec(t);
-  if(dec){ out.apply.era = dec[1]==='2020' ? 'modern' : (parseInt(dec[1],10)<2000 ? 'classic' : 'modern'); }
+  if(dec){
+    /* "90s" and "1995" both work: a bare decade maps to the decade pill, a specific year maps to
+       the decade it falls in, so "1995 ki film" shows the 1990s rather than nothing */
+    const yy = dec[1].length === 2 ? (parseInt(dec[1],10) > 30 ? 1900 + parseInt(dec[1],10) : 2000 + parseInt(dec[1],10)) : parseInt(dec[1],10);
+    out.apply.era = Math.floor(yy/10)*10 + 's';
+  }
   if(has(TALK.oldest)) out.apply.era='classic';
   if(has(TALK.newest) && !out.apply.era) out.apply.sort='new';
   // age / safety
@@ -2859,7 +2900,7 @@ function runTalk(txt){
   if(a.free) said.push('<b>free to watch</b>');
   if(a.subs) said.push('<b>on subscription</b>');
   if(a.dub) said.push('<b>Hindi dub</b>');
-  if(a.era) said.push(a.era==='classic'?'<b>pre-2000</b>':'<b>2000s onwards</b>');
+  if(a.era) said.push(a.era==='classic'?'<b>pre-2000</b>':(a.era==='modern'?'<b>2000s onwards</b>':'<b>'+esc(a.era)+'</b>'));
   if(a.minRating) said.push('<b>★'+a.minRating+'+</b>');
   if(a.topN) said.push('<b>top '+a.topN+'</b>');
   if(a.sort==='pop') said.push('most popular');
@@ -3318,7 +3359,7 @@ function renderActiveChips(){
   if(state.situationKey) c.push(['Life: '+state.situationKey, ()=>{ state.situation=null; state.situationKey=null; }]);
   if(state.subsOnly) c.push(['Subscription', ()=>state.subsOnly=false]);
   if(state.rel!=='all' && state.rel!=='month') c.push([REL_LABEL[state.rel]||state.rel, ()=>state.rel='month']);
-  if(state.era!=='all') c.push([state.era==='classic'?'Pre-2000':'2000s onwards', ()=>state.era='all']);
+  if(state.era!=='all') c.push([state.era==='classic'?'Pre-2000':(state.era==='modern'?'2000+':state.era), ()=>state.era='all']);
   if(state.rt!=='all') c.push([{u90:'Under 1½ hr',u120:'Under 2 hrs',p120:'2 hrs +'}[state.rt]||state.rt, ()=>state.rt='all']);
   if(state.company!=='all') c.push([{solo:'Solo',family:'Family',date:'Date night',friends:'Friends',kids:'With kids'}[state.company]||state.company, ()=>state.company='all']);
   if(state.minRating) c.push(['★ '+state.minRating+'+', ()=>state.minRating=0]);
@@ -3659,8 +3700,15 @@ function render(){
       const r=Number(d.irt||d.rtg||0), v=Number(d.ivot||d.vot||0);
       if(!(r>=7.6 && v>=1000 && v<=50000)) return false;      // high rating, modest vote count
     }
-    if(state.era==='classic' && !(Number(d.y) < 2000)) return false;
-    if(state.era==='modern' && !(Number(d.y) >= 2000)) return false;
+    if(state.era !== 'all'){
+      const y = Number(d.y) || 0;
+      if(state.era === 'classic'){ if(!(y && y < 2000)) return false; }
+      else if(state.era === 'modern'){ if(!(y >= 2000)) return false; }
+      else if(/^\d{4}s$/.test(state.era)){
+        const dec = parseInt(state.era, 10);
+        if(!(y >= dec && y < dec + 10)) return false;
+      }
+    }
     if(state.savedOnly && !watchlist.has(d.t)) return false;
     /* a search looks across the WHOLE catalogue — the release window must not hide old titles
        (searching "breaking bad" while "This month" is active used to return nothing) */
