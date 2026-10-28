@@ -1,0 +1,67 @@
+name: Refresh what is new
+
+# Keeps the "Aaj naya" shelf honest: what is in Indian cinemas this week, what is coming, and what
+# just landed on each platform. All of it from TMDB, which is the licensed source for release dates
+# and streaming availability — nothing here is scraped from a streaming or download site.
+#
+# Weekly, Monday 02:30 UTC (08:00 IST). One run is about ninety seconds, so roughly six minutes a
+# month against a 2,000-minute quota that the other repositories already use 1,500 of.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 2 * * 1'
+
+permissions:
+  contents: read
+
+env:
+  CF_TOKEN: ${{ secrets.CLOUDFLARE || secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+
+jobs:
+  fresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch what is new
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          mkdir -p data
+          python3 scripts/fetch_fresh.py --out data/fresh.json.gz --days 30 --region IN
+
+      - name: What came out
+        run: |
+          ls -lh data/fresh.json.gz
+          python3 -c "import gzip,json;d=json.loads(gzip.open('data/fresh.json.gz','rt',encoding='utf-8').read());print('cinema',len(d['cinema']),'| upcoming',len(d['upcoming']));[print(' ',k,len(v),'films') for k,v in list(d['ott'].items())[:6]];[print(' ',k,len(v),'series') for k,v in list(d['series'].items())[:6]]"
+
+      # the fresh file goes to Cloudflare with the rest of the data
+      - name: Deploy to Cloudflare Pages
+        run: |
+          set -e
+          if [ -z "$CF_TOKEN" ]; then echo "::warning::No Cloudflare token"; exit 0; fi
+          ACCT=$(curl -sS -H "Authorization: Bearer $CF_TOKEN" \
+                 https://api.cloudflare.com/client/v4/accounts \
+                 | python3 -c "import sys,json;d=json.load(sys.stdin);r=d.get('result') or [];print(r[0]['id'] if r else '')")
+          if [ -z "$ACCT" ]; then echo "::error::Token sees no account"; exit 1; fi
+          export CLOUDFLARE_ACCOUNT_ID="$ACCT"
+          export CLOUDFLARE_API_TOKEN="$CF_TOKEN"
+          npx --yes wrangler@3 pages deploy data --project-name filmiset-data --branch main --commit-dirty=true
+
+      # and a copy in the repo, because it is small and the site falls back to it
+      - name: Commit the file
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/fresh.json.gz 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "Refresh what is new: cinema, upcoming and platform arrivals"
+            git pull --rebase origin main || true
+            git push || echo "push skipped"
+          fi
