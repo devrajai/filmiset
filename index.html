@@ -2227,7 +2227,7 @@ document.getElementById('q').addEventListener('input',e=>{
     const asked = state.q;
     if(asked.length < 2) return;
     const added = await ixMerge(asked);
-    if(added && state.q === asked){ render(); }
+    if(added && state.q === asked){ render(); fillPostersFromBuckets(); }
   }, 450);
 });
 document.getElementById('qclear').addEventListener('click',()=>{
@@ -4168,6 +4168,53 @@ function loadPosters(){
     })
     .catch(() => {});
 }
+
+/* ---- poster buckets ----
+   imdb_posters.json covers about 24,000 titles. The rest come from the poster workflow, which writes
+   one bucket per hundred ids into Cloudflare: p_<XX>.json.gz mapping titleId to an image URL.
+   This fills whatever the first file missed, one bucket at a time, for the rows actually on screen —
+   not all 832,677. */
+const POSTER_BASE = 'https://filmiset-data.pages.dev/';
+const POSTER_CACHE = {};
+
+async function loadPosterBucket(id){
+  const b = (typeof idBucket === 'function') ? idBucket(id) : null;
+  if(!b) return null;
+  if(POSTER_CACHE[b]) return POSTER_CACHE[b];
+  try{
+    const r = await fetch(POSTER_BASE + 'posters/p_' + b + '.json.gz');
+    if(!r.ok) return null;
+    POSTER_CACHE[b] = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+    return POSTER_CACHE[b];
+  }catch(e){ return null; }
+}
+/* fill posters for whatever is in DATA and still has none */
+async function fillPostersFromBuckets(){
+  if(!DATA || !DATA.length) return 0;
+  const missing = DATA.filter(function(d){ return !d.poster && d.id; });
+  if(!missing.length) return 0;
+  const buckets = {};
+  for(const d of missing){
+    const b = (typeof idBucket === 'function') ? idBucket(d.id) : null;
+    if(b) (buckets[b] = buckets[b] || []).push(d);
+  }
+  let filled = 0;
+  const keys = Object.keys(buckets);
+  await Promise.all(keys.map(async function(b){
+    const m = await loadPosterBucket('tt' + String(buckets[b][0].id).replace(/^tt0*/, ''));
+    if(!m) return;
+    for(const d of buckets[b]){
+      const k = String(d.id).replace(/^tt0*/, '');
+      if(m[k] && !d.poster){ d.poster = m[k]; filled++; }
+    }
+  }));
+  if(filled){
+    try{ IMDB_POSTERS = Object.assign({}, IMDB_POSTERS || {}); }catch(e){}
+    applyPosters(); patchPosters();
+  }
+  return filled;
+}
+
 /* at boot, pull the most-voted titles from every shard, so the popular shows and films
    (Game of Thrones, Breaking Bad, Squid Game …) are browsable straight away, not only via search */
 function loadPopular(){
