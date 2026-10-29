@@ -190,7 +190,25 @@
   /* layout */
   .layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:30px;align-items:start;
     padding:26px 22px 60px}
-  .rail{position:sticky;top:80px;display:flex;flex-direction:column;gap:22px}
+  /* The filter column has twenty-odd blocks now — moods, genres, platforms, languages, eras,
+     decades, hit-or-flop, what's new — and on a laptop screen that is taller than the window. It had
+     no overflow of its own, so everything below the fold was simply unreachable: the page scrolled,
+     but the column stayed put. Giving it a viewport-bounded height and its own scrollbar fixes that
+     on every screen wide enough to show the sidebar. */
+  .rail{
+    position:sticky;top:80px;display:flex;flex-direction:column;gap:22px;
+    max-height:calc(100vh - 96px);
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    scrollbar-width:thin;
+    scrollbar-color:var(--line) transparent;
+    padding-right:4px;
+    margin-right:-4px;
+  }
+  .rail::-webkit-scrollbar{width:7px}
+  .rail::-webkit-scrollbar-track{background:transparent}
+  .rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+  .rail::-webkit-scrollbar-thumb:hover{background:var(--muted)}
   /* search suggestions */
   .search{position:relative}
   #sugg{background:var(--bg);isolation:isolate;position:absolute;top:calc(100% + 8px);left:0;right:0;border:1px solid var(--line);border-radius:14px;padding:6px;z-index:200;max-height:60vh;overflow:auto;display:none;box-shadow:0 24px 50px rgba(0,0,0,.5)}
@@ -611,7 +629,7 @@
     /* a full-screen sheet: covers the header too, so the search bar is not in the way */
     /* shown/hidden with display rather than a transform — a transform on a fixed, full-screen,
        scrolling panel is fragile across mobile browsers, and it kept measuring off-screen */
-    .rail{position:fixed;inset:0;max-height:none;overflow-y:auto;
+    .rail{position:fixed;inset:0;max-height:none;overflow-y:auto;padding-right:16px;margin-right:0;
       background:var(--bg);border:0;border-radius:0;
       padding:0 16px 40px;gap:16px;display:none;
       z-index:190;box-shadow:none;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
@@ -619,7 +637,7 @@
     body.filters-open .rail{display:flex}
     body.filters-open .topbar{display:none}
     body.filters-open{overflow:hidden}
-    .rail-head{position:sticky;top:0;z-index:6;background:var(--bg);
+    .rail-head{position:sticky;top:0;z-index:6;background:var(--bg);flex:0 0 auto;
       padding:14px 0 12px;margin:0;display:flex;align-items:center;justify-content:space-between;gap:10px;
       border-bottom:1px solid var(--line)}
     .rail-head span{font-family:var(--font-display);font-size:21px;font-weight:600}
