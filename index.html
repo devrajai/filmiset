@@ -622,6 +622,12 @@
   .legend{display:flex;flex-wrap:wrap;gap:7px}
   .legend .pill{cursor:default;font-size:11.5px;padding:5px 10px}
 
+
+  /* ---- desktop layout ----
+     On a laptop the filter column was a 250px sidebar that pushed the grid into the right two
+     thirds and then needed its own scrollbar because thirty blocks do not fit in a window. It is now
+     a slide-over panel on the right, opened from the Filters button in the header, which leaves the
+     whole width to the posters. Below 900px the existing full-screen sheet still takes over. */
   @media (max-width:900px){
     .layout{grid-template-columns:1fr;gap:20px;padding-top:16px}
     .foot{grid-template-columns:1fr}
@@ -1662,6 +1668,12 @@ typeRow.addEventListener('click',e=>{
   });
 })();
 
+/* the backdrop closes the panel */
+(function(){
+  const b = document.getElementById('backdrop');
+  if(b) b.addEventListener('click', function(){ if(typeof closeFilters === 'function') closeFilters(); });
+})();
+
 const eraRow=document.getElementById('eraRow');
 /* Decades as well as the two broad eras. The year is already on every row, so this needs no new
    data — it is one comparison in the filter below. 1950s onwards, because anything earlier is a
@@ -1773,8 +1785,37 @@ srcRow.addEventListener('click',e=>{
 });
 
 /* mobile filter drawer */
-function openFilters(){ document.body.classList.add('filters-open'); }
-function closeFilters(){ document.body.classList.remove('filters-open'); }
+document.addEventListener('click', function(e){
+  if(e.target.closest && e.target.closest('.railclose')){ if(typeof closeFilters === 'function') closeFilters(); }
+});
+
+function openFilters(){
+  document.body.classList.add('filters-open');
+  const r = document.querySelector('.rail');
+  if(r){
+    r.classList.add('open');
+    /* inline, because the stylesheet rules for this panel kept losing to something else in the
+       cascade — the panel would get .open and still sit off-screen at translateX(102%). Inline
+       styles win outright and the behaviour stops depending on rule order. */
+    if(window.innerWidth > 900){
+      r.style.transform = 'translateX(0)';
+    }
+  }
+  const b = document.getElementById('backdrop'); if(b) b.style.display = 'block';
+}
+function closeFilters(){
+  document.body.classList.remove('filters-open');
+  const r = document.querySelector('.rail');
+  if(r){
+    r.classList.remove('open');
+    if(window.innerWidth > 900){
+      r.style.transform = 'translateX(102%)';
+    } else {
+      r.style.transform = '';
+    }
+  }
+  const b = document.getElementById('backdrop'); if(b) b.style.display = 'none';
+}
 
 
 (function themeToggle(){
