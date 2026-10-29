@@ -3324,7 +3324,9 @@ const _manifestReady = (function(){
    a full rebuild of every card, which is what made the page freeze for seconds after it had
    already looked ready. This inserts only the missing <img> into each card's poster div. */
 function patchPosters(){
-  if(!IMDB_POSTERS) return 0;
+  /* it used to bail out when IMDB_POSTERS was missing, which meant the poster buckets — the 74,000
+     fetched from TMDB — could set d.poster and still never reach the card */
+  if(!DATA || !DATA.length) return 0;
   const byTitle = new Map();
   for(const d of (DATA || [])) byTitle.set(String(d.t).toLowerCase(), d);
   let added = 0;
@@ -3933,6 +3935,14 @@ async function ixInit(){
   }catch(e){}
 }
 
+let _posterTimer = null;
+function queuePosterFill(){
+  clearTimeout(_posterTimer);
+  _posterTimer = setTimeout(function(){
+    if(typeof fillPostersFromBuckets === 'function') fillPostersFromBuckets();
+  }, 350);
+}
+
 function render(){
   const out=DATA.filter(d=>{
     if(d.src==='youtube') return false;            // YouTube is a knowledge source only, never in the feed
@@ -4069,6 +4079,7 @@ function render(){
   if(state.gq) label = 'More like '+state.gq;
   if(state.occasion!=='all'){ const oc=OCCASIONS.find(o=>o.k===state.occasion); if(oc) label += ' · ' + oc.label; }
   resTitle.textContent = label;
+  if(typeof queuePosterFill === 'function') queuePosterFill();
   // the bar is only useful once the list has actually been narrowed
   (function(){
     const bar=document.querySelector('.resultbar'); if(!bar) return;
@@ -4314,6 +4325,7 @@ function loadPopular(){
   if(!SHEET_SHARDS.length) return;
   loadPostersSoon();
   ixInit();
+  setTimeout(function(){ if(typeof fillPostersFromBuckets === 'function') fillPostersFromBuckets(); }, 1200);
   Promise.all(SHEET_SHARDS.map(s => gviz(s, 'select A,B,C,E,G,H order by H desc limit 200')))
     .then(lists => {
       const seen = new Set(DATA.map(x => x.t.toLowerCase()));
