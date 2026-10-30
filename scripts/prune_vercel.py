@@ -41,20 +41,47 @@ def main():
         print(e.read().decode("utf-8", "ignore")[:300])
         sys.exit(1)
 
-    # collect every deployment, paging until the API stops giving more
+    # Deployments belong to a team, not a user. Querying without a team returns an empty list for
+    # anyone whose projects live under one — which is what happened first time: the token was valid,
+    # the user resolved, and the API said zero deployments. Find the teams, then ask within each.
+    teams = []
+    try:
+        t = call("/v2/teams", tok)
+        teams = [{"id": x.get("id"), "slug": x.get("slug"), "name": x.get("name")}
+                 for x in (t.get("teams") or [])]
+        print(f"teams: {len(teams)}")
+        for x in teams:
+            print(f"   {x['slug']:24s} {x['name']}")
+    except Exception as e:
+        print("teams lookup failed:", str(e)[:80])
+
+    scopes = [None] + [x["slug"] for x in teams] if teams else [None]
+
+    # collect every deployment from every scope, paging until the API stops giving more
     deps, until = [], None
-    for _ in range(20):
-        q = "/v6/deployments?limit=100"
-        if a.project: q += f"&projectId={a.project}"
-        if until: q += f"&until={until}"
-        d = call(q, tok)
-        batch = d.get("deployments") or []
-        if not batch: break
-        deps.extend(batch)
-        if len(batch) < 100: break
-        until = batch[-1].get("created")
-        if not until: break
-        time.sleep(0.3)
+    seen = set()
+    for scope in scopes:
+        until = None
+        for _ in range(20):
+            q = "/v6/deployments?limit=100"
+            if scope: q += f"&slug={scope}"
+            if a.project: q += f"&projectId={a.project}"
+            if until: q += f"&until={until}"
+            try:
+                d = call(q, tok)
+            except Exception as e:
+                print(f"  scope {scope or 'personal'}: {str(e)[:60]}")
+                break
+            batch = d.get("deployments") or []
+            if not batch: break
+            for x in batch:
+                if x.get("uid") and x["uid"] not in seen:
+                    seen.add(x["uid"]); deps.append(x)
+            if len(batch) < 100: break
+            until = batch[-1].get("created")
+            if not until: break
+            time.sleep(0.2)
+        print(f"  scope {scope or 'personal'}: running total {len(deps)}")
 
     deps.sort(key=lambda x: x.get("created", 0), reverse=True)
     print(f"found {len(deps)} deployments")
@@ -75,7 +102,9 @@ def main():
         uid = d.get("uid")
         if not uid: continue
         try:
-            call(f"/v13/deployments/{uid}", tok, method="DELETE")
+            sc = (d.get("teamId") and next((x["slug"] for x in teams if x["id"] == d["teamId"]), None)) or None
+            path = f"/v13/deployments/{uid}" + (f"?slug={sc}" if sc else "")
+            call(path, tok, method="DELETE")
             ok += 1
             if ok % 5 == 0: print(f"   deleted {ok}…")
         except urllib.error.HTTPError as e:

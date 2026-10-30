@@ -14,9 +14,9 @@ on:
         required: false
         default: '3'
       dry_run:
-        description: Set to 1 to only list what would be deleted
+        description: Set to 0 to actually delete (1 only lists)
         required: false
-        default: '0'
+        default: '1'
 
 permissions:
   contents: read
