@@ -2670,15 +2670,40 @@ async function loadFresh(){
   }catch(e){ return null; }
 
   /* flatten into DATA, tagging where each row came from */
+  /* TMDB carries duplicates and working titles: it lists "Jailer 3" as upcoming with a poster that
+     says JAILER 2, while the catalogue already has the real "Jailer 2" from IMDb with the right
+     rating and twelve thousand votes. Anything whose normalised title already exists, or whose title
+     differs from an existing one by a single trailing digit, is dropped — the catalogue row is the
+     better record and two cards for one film is worse than one. */
+  const haveTitles = new Set();
+  const haveStems = new Map();
+  for(const d of (DATA || [])){
+    const k = ixNorm(d.t);
+    haveTitles.add(k);
+    const stem = k.replace(/\s*\d+$/, '').trim();
+    if(stem) haveStems.set(stem, d.t);
+  }
+  const dup = function(t){
+    const k = ixNorm(t);
+    if(haveTitles.has(k)) return true;
+    const stem = k.replace(/\s*\d+$/, '').trim();
+    if(stem && haveStems.has(stem)){
+      const a = k.match(/\d+$/), b = String(haveStems.get(stem)).toLowerCase().match(/\d+$/);
+      if(a && b && Math.abs(parseInt(a[0],10) - parseInt(b[0],10)) <= 2) return true;
+    }
+    return false;
+  };
   const add = function(list, tag, platform){
     for(const d of (list || [])){
       if(!d || !d.t) continue;
+      if(tag !== 'upcoming' && dup(d.t)) continue;   // keep upcoming even if a similar title exists
       DATA.push({
         t: d.t, y: d.y || '', date: d.date || '', ov: d.ov || '',
         r: d.r || 0, rtg: d.r || '', vot: d.v || '', ivot: d.v || 0,
         poster: d.poster || '', type: d.type || 'Movie', cat: 'fresh',
         g: [], m: [], a: [], o: platform ? [platform] : [],
-        lang: d.lang || '', id: d.tmdb ? ('tmdb' + d.tmdb) : ('f' + Math.random().toString(36).slice(2,9)),
+        lang: d.lang || '',
+        id: d.tmdb ? ('tmdb' + d.tmdb) : ('f' + Math.random().toString(36).slice(2,9)),
         src: 'tmdb', status: tag === 'upcoming' ? 'upcoming' : 'released',
         fresh: tag, platform: platform || ''
       });
@@ -2708,7 +2733,7 @@ function openModal(d, fromPop){
   m.innerHTML='<div class="box">'
     + (d.poster? '<img src="'+esc(safeUrl(d.poster))+'" alt="" onerror="this.remove()">':'')
     + '<h3>'+esc(dispTitle(d.t))+'</h3>'
-    + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(lengthLabel(d)?' · '+lengthLabel(d):'')+(d.irt?' · IMDb '+esc(d.irt)+' ('+esc(d.ivot)+' votes)':(d.rtg?' · \u2605 '+esc(d.rtg)+' ('+esc(d.vot)+' votes)':''))+(d.cert?' · '+esc(d.cert):'')+(up?' · Upcoming':'')+'</div>'
+    + '<div class="m">'+((d.date?fmtDate(d.date):d.y)||'')+(lengthLabel(d)?' · '+lengthLabel(d):'')+(d.irt?' · IMDb '+esc(d.irt)+' ('+esc(d.ivot)+' votes)':(d.rtg?' · '+(d.src==='tmdb'?'TMDB':'\u2605')+' '+esc(d.rtg)+' ('+esc(d.vot)+' votes)':''))+(d.cert?' · '+esc(d.cert):'')+(up?' · Upcoming':'')+'</div>'
     + '<div class="m" style="margin-top:6px">'+[esc(gList(d).join(', ')),esc((d.a||[]).join(', ')),avail].filter(Boolean).join('  ·  ')+'</div>'
     + guardHtml(d)
     + '<div class="ap-chips" style="margin:10px 0">'
