@@ -1,0 +1,50 @@
+name: Prune old Vercel deployments
+
+# Vercel's free tier counts every deployment against 10 GB of storage and this project hit 100%.
+# Each deployment used to carry the whole data folder — 273 MB — before the data moved to Cloudflare,
+# and thirty of them filled the quota. This keeps the newest few and deletes the rest.
+#
+# Manual only: deleting deployments is destructive and should not happen on a timer.
+
+on:
+  workflow_dispatch:
+    inputs:
+      keep:
+        description: How many recent deployments to keep
+        required: false
+        default: '3'
+      dry_run:
+        description: Set to 1 to only list what would be deleted
+        required: false
+        default: '0'
+
+permissions:
+  contents: read
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Prune
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL || secrets.VERCEL_TOKEN || secrets.VERCEL_API_TOKEN }}
+        run: |
+          set -e
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::error::No Vercel token. Add a repository secret named VERCEL."
+            exit 1
+          fi
+          KEEP="${{ github.event.inputs.keep || '3' }}"
+          DRY="${{ github.event.inputs.dry_run || '0' }}"
+          if [ "$DRY" = "1" ]; then
+            python3 scripts/prune_vercel.py --keep "$KEEP" --dry-run
+          else
+            python3 scripts/prune_vercel.py --keep "$KEEP"
+          fi
