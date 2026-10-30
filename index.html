@@ -628,6 +628,46 @@
      thirds and then needed its own scrollbar because thirty blocks do not fit in a window. It is now
      a slide-over panel on the right, opened from the Filters button in the header, which leaves the
      whole width to the posters. Below 900px the existing full-screen sheet still takes over. */
+
+  /* ---- desktop: full-width grid, filters in a right-hand panel ----
+     The previous attempt slid the panel with a transform and it never moved — three different
+     approaches all left it at translateX(102%) after the open class was applied, and I never found
+     what was winning the cascade. So this uses display instead: none when closed, flex when open.
+     There is no transition to fight, no transform for anything else to override, and if it is
+     visible it is definitely open. */
+  @media (min-width:901px){
+    .layout{grid-template-columns:minmax(0,1fr);gap:0}
+    .rail{
+      position:fixed;top:0;right:0;bottom:0;left:auto;
+      width:400px;max-width:92vw;
+      max-height:none;margin:0;
+      padding:18px 18px 40px;
+      background:var(--bg);
+      border:0;border-left:1px solid var(--line);border-radius:0;
+      box-shadow:-24px 0 60px rgba(60,15,35,.16);
+      overflow-y:auto;
+      overscroll-behavior:contain;
+      scrollbar-width:thin;
+      z-index:190;
+      display:none;
+      flex-direction:column;gap:18px;
+    }
+    .rail.open{ display:flex; }
+    body.filters-open .rail{ display:flex; }
+    .rail-head{
+      position:sticky;top:0;z-index:6;background:var(--bg);flex:0 0 auto;
+      padding:2px 0 12px;margin:0 0 4px;
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      border-bottom:1px solid var(--line);
+    }
+    #backdrop{ display:none; position:fixed; inset:0; z-index:180;
+      background:rgba(40,10,25,.35);
+      -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px); }
+    body.filters-open #backdrop{ display:block; }
+    .topbar-in{flex-wrap:nowrap}
+    .search{flex:1 1 auto;max-width:none}
+  }
+
   @media (max-width:900px){
     .layout{grid-template-columns:1fr;gap:20px;padding-top:16px}
     .foot{grid-template-columns:1fr}
@@ -690,7 +730,7 @@
       <button id="qclear" class="qclear" aria-label="Clear search" hidden>×</button>
       <div id="sugg" role="listbox" aria-label="Suggestions"></div>
     </div>
-    <button id="filtersBtn" class="hbtn only-mobile" title="Filters">Filters <b id="filterCount"></b></button>
+    <button id="filtersBtn" class="hbtn" title="Filters">Filters <b id="filterCount"></b></button>
   </div>
 </header>
 
@@ -1791,29 +1831,12 @@ document.addEventListener('click', function(e){
 
 function openFilters(){
   document.body.classList.add('filters-open');
-  const r = document.querySelector('.rail');
-  if(r){
-    r.classList.add('open');
-    /* inline, because the stylesheet rules for this panel kept losing to something else in the
-       cascade — the panel would get .open and still sit off-screen at translateX(102%). Inline
-       styles win outright and the behaviour stops depending on rule order. */
-    if(window.innerWidth > 900){
-      r.style.transform = 'translateX(0)';
-    }
-  }
+  const r = document.querySelector('.rail'); if(r) r.classList.add('open');
   const b = document.getElementById('backdrop'); if(b) b.style.display = 'block';
 }
 function closeFilters(){
   document.body.classList.remove('filters-open');
-  const r = document.querySelector('.rail');
-  if(r){
-    r.classList.remove('open');
-    if(window.innerWidth > 900){
-      r.style.transform = 'translateX(102%)';
-    } else {
-      r.style.transform = '';
-    }
-  }
+  const r = document.querySelector('.rail'); if(r) r.classList.remove('open');
   const b = document.getElementById('backdrop'); if(b) b.style.display = 'none';
 }
 
@@ -3577,6 +3600,22 @@ const LANGS_SHOWN = ['Hindi','Gujarati','Tamil','Telugu','Malayalam','Kannada','
                      'Punjabi','English','Korean','Japanese','Odia','Assamese','Bhojpuri'];
 const CERTS = ['U','U/A','A'];
 function langOf(d){
+  /* The catalogue rows carry a real language code from lang.json.gz — 413,040 of them — and the
+     filter was ignoring it entirely, looking only at the curated category. So choosing "Hindi" showed
+     the 350 curated Hindi titles and none of the thousands of IMDb rows that are also Hindi. The code
+     wins; the category is the fallback for rows that predate it. */
+  if(d && d.lang && typeof langLabel === 'function'){
+    const label = langLabel(d.lang);
+    if(label) return label;
+  }
+  if(d && d.lang && d.lang.length === 2){
+    const two = {hi:'Hindi',en:'English',ta:'Tamil',te:'Telugu',ml:'Malayalam',kn:'Kannada',
+      bn:'Bengali',gu:'Gujarati',mr:'Marathi',pa:'Punjabi',or:'Odia',as:'Assamese',ur:'Urdu',
+      ne:'Nepali',si:'Sinhala',ko:'Korean',ja:'Japanese',zh:'Chinese',fr:'French',es:'Spanish',
+      de:'German',it:'Italian',pt:'Portuguese',ru:'Russian',ar:'Arabic',fa:'Persian',tr:'Turkish',
+      th:'Thai',id:'Indonesian',ms:'Malay',vi:'Vietnamese',he:'Hebrew',pl:'Polish',nl:'Dutch'};
+    if(two[d.lang]) return two[d.lang];
+  }
   const c=String(d.cat||'');
   const m={'hindi':'Hindi','gujarati-movie':'Gujarati','gujarati-natak':'Gujarati','tamil':'Tamil',
     'telugu':'Telugu','malayalam':'Malayalam','kannada':'Kannada','bengali':'Bengali','marathi':'Marathi',
@@ -3615,6 +3654,11 @@ function buildSimpleRow(id, values, key, isSet){
   });
 }
 buildSimpleRow('genreRow', GENRES, 'genres', true);
+/* the language row needs the code map, so load it when the panel first opens */
+(function(){
+  const row = document.getElementById('olangRow');
+  if(row) row.addEventListener('click', function(){ if(!IX_LANG && typeof ixLoadLang === 'function') ixLoadLang(); }, {once:true});
+})();
 buildSimpleRow('olangRow', LANGS_SHOWN, 'olang', true);
 buildSimpleRow('certRow', CERTS, 'cert', true);
 (function buildFreeRow(){
