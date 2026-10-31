@@ -1381,6 +1381,13 @@ function persistWatched(){ try{ localStorage.setItem('filmiset_watched', JSON.st
   if(p.get('cat')) p.get('cat').split(',').filter(Boolean).forEach(v=>state.cat.add(v));
   if(p.get('type')) p.get('type').split(',').filter(Boolean).forEach(v=>state.type.add(v));
   if(p.get('era')) state.era=p.get('era');
+  if(p.get('hf')) state.hitflop=p.get('hf');
+  if(p.get('fresh')) state.fresh=p.get('fresh');
+  if(p.get('lang')) p.get('lang').split(',').filter(Boolean).forEach(v=>state.olang.add(v));
+  if(p.get('g')) p.get('g').split(',').filter(Boolean).forEach(v=>state.genres.add(v));
+  if(p.get('min')) state.minRating=Number(p.get('min'))||0;
+  if(p.get('cert')) p.get('cert').split(',').filter(Boolean).forEach(v=>state.cert.add(v));
+  if(p.get('free')==='1') state.freeOnly=true;
   if(p.get('occ')) state.occasion=p.get('occ');
   if(p.get('rel')) state.rel=p.get('rel');
   if(p.get('dub')==='1') state.dub=true;
@@ -2885,6 +2892,13 @@ function syncUrl(){
   if(state.cat.size) p.set('cat',[...state.cat].join(','));
   if(state.type.size) p.set('type',[...state.type].join(','));
   if(state.era!=='all') p.set('era',state.era);
+  if(state.hitflop && state.hitflop!=='all') p.set('hf',state.hitflop);
+  if(state.fresh && state.fresh!=='all') p.set('fresh',state.fresh);
+  if(state.olang && state.olang.size) p.set('lang',[...state.olang].join(','));
+  if(state.genres && state.genres.size) p.set('g',[...state.genres].join(','));
+  if(state.minRating) p.set('min',String(state.minRating));
+  if(state.cert && state.cert.size) p.set('cert',[...state.cert].join(','));
+  if(state.freeOnly) p.set('free','1');
   if(state.occasion!=='all') p.set('occ',state.occasion);
   if(state.rel!=='month') p.set('rel',state.rel);
   if(state.dub) p.set('dub','1');
