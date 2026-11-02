@@ -13,6 +13,12 @@ on:
         description: Skip people with fewer than this many titles in the catalogue
         required: false
         default: '2'
+  # Weekly, Monday 08:15 IST — forty-five minutes after the episode job starts, so the two never
+  # compete for the same runners or the same Cloudflare deployment. About nine minutes a run, so
+  # thirty-six minutes a month; with episodes and the fresh shelf that is 120 of the 500 available
+  # minutes, which leaves the other repositories untouched.
+  schedule:
+    - cron: '45 2 * * 1'
 
 permissions:
   contents: read
