@@ -14,6 +14,12 @@ on:
         description: 'Skip episodes with fewer votes than this'
         required: false
         default: '0'
+  # Weekly, Monday 07:30 IST. About eighteen minutes a run, so roughly eighty minutes a month
+  # against the 2,000-minute quota that the other repositories use 1,500 of. This is what keeps the
+  # catalogue from ageing: IMDb adds tens of thousands of titles a year and without this the count
+  # would sit at 832,677 forever while the world moved on.
+  schedule:
+    - cron: '0 2 * * 1'
 
 permissions:
   contents: write
