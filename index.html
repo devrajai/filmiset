@@ -4476,6 +4476,12 @@ function loadPopular(){
   if(!SHEET_SHARDS.length) return;
   loadPostersSoon();
   ixInit();
+  /* Load the fresh shelf at boot, not just when its filter is tapped. It is fifteen kilobytes and it
+     is the only place a title released today exists — the search buckets are rebuilt weekly, so
+     without this a film that came out yesterday could not be found by name until Monday. Merging it
+     here puts the week's new releases into DATA, which means search, the filters and the cards all
+     see them immediately. */
+  if(typeof loadFresh === 'function') loadFresh().then(function(){ if(DATA && DATA.length) render(); }).catch(function(){});
   setTimeout(function(){ if(typeof fillPostersFromBuckets === 'function') fillPostersFromBuckets(); }, 1200);
   Promise.all(SHEET_SHARDS.map(s => gviz(s, 'select A,B,C,E,G,H order by H desc limit 200')))
     .then(lists => {

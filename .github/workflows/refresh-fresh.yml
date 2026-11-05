@@ -9,8 +9,13 @@ name: Refresh what is new
 
 on:
   workflow_dispatch:
+  # Daily, 08:00 IST. This is the one that has to run every day: a film released in cinemas today or
+  # added to a platform last night should be on the site tomorrow morning, not next Monday. Ninety
+  # seconds a run, so about forty-five minutes a month — the other three stay weekly because
+  # episodes, cast and posters do not change at that speed, and together that is 189 of the 500
+  # available minutes.
   schedule:
-    - cron: '30 2 * * 1'
+    - cron: '30 2 * * *'
 
 permissions:
   contents: read
