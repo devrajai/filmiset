@@ -85,7 +85,13 @@ def main():
     print(f"  {len(rat):,} rated titles")
 
     # ---- basics: keep the types the site shows ----
-    KEEP = {"movie", "tvSeries", "tvMiniSeries", "tvMovie", "short", "tvShort", "tvSpecial"}
+    # Everything IMDb calls a watchable thing except a single episode, which the episode buckets
+    # already carry eight million of. The first build listed only seven types and quietly dropped
+    # 87,554 titles — video games, direct-to-video releases, pilots — which is why the count came back
+    # 745,123 instead of the 832,677 the catalogue used to hold. Nothing on the site benefits from
+    # hiding those.
+    KEEP = {"movie", "tvSeries", "tvMiniSeries", "tvMovie", "short", "tvShort", "tvSpecial",
+            "videoGame", "video", "tvPilot"}
     buckets = defaultdict(lambda: {"i": [], "t": [], "y": [], "r": [], "v": []})
     seen = 0
     kept = 0

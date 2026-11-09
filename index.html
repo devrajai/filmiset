@@ -2700,9 +2700,28 @@ async function loadFresh(){
     }
     return false;
   };
+  /* TMDB returns the same film under several queries — a title in cinemas that is also on Netflix
+     arrives twice, once from cinema and once from ott, with different tags. Without this the grid
+     shows it twice. Keyed on the TMDB id, which is the only stable identity these rows have. */
+  const seenIds = new Set();
+  /* A release date in the past means released, whatever list it came from. TMDB keeps handing back
+     last month's premieres under "upcoming", so a film that opened three weeks ago still said
+     "Upcoming" and hid its watch links. The date decides, not the list. */
+  const today = new Date().toISOString().slice(0, 10);
+  const statusOf = function(d, tag){
+    if(tag === 'upcoming'){
+      return (d.date && d.date <= today) ? 'released' : 'upcoming';
+    }
+    return 'released';
+  };
+
   const add = function(list, tag, platform){
     for(const d of (list || [])){
       if(!d || !d.t) continue;
+      if(d.tmdb){
+        if(seenIds.has(d.tmdb)) continue;
+        seenIds.add(d.tmdb);
+      }
       if(tag !== 'upcoming' && dup(d.t)) continue;   // keep upcoming even if a similar title exists
       DATA.push({
         t: d.t, y: d.y || '', date: d.date || '', ov: d.ov || '',
@@ -2711,7 +2730,7 @@ async function loadFresh(){
         g: [], m: [], a: [], o: platform ? [platform] : [],
         lang: d.lang || '',
         id: d.tmdb ? ('tmdb' + d.tmdb) : ('f' + Math.random().toString(36).slice(2,9)),
-        src: 'tmdb', status: tag === 'upcoming' ? 'upcoming' : 'released',
+        src: 'tmdb', status: statusOf(d, tag),
         fresh: tag, platform: platform || ''
       });
     }
