@@ -76,18 +76,24 @@ jobs:
 
       # straight to Cloudflare, so 68 MB of episode buckets never has to sit in git
       - name: Deploy to Cloudflare Pages
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE || secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
         run: |
           set -e
-          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "::warning::No Cloudflare token, skipping the upload. The packs are still in the artifact."
-            exit 0
-          fi
-          ACCT=$(curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"                  https://api.cloudflare.com/client/v4/accounts                  | python3 -c "import sys,json;d=json.load(sys.stdin);r=d.get('result') or [];print(r[0]['id'] if r else '')")
+          if [ -z "$CF_TOKEN" ]; then echo "::warning::No Cloudflare token"; exit 0; fi
+          ACCT=$(curl -sS -H "Authorization: Bearer $CF_TOKEN" \
+                 https://api.cloudflare.com/client/v4/accounts \
+                 | python3 -c "import sys,json;d=json.load(sys.stdin);r=d.get('result') or [];print(r[0]['id'] if r else '')")
           if [ -z "$ACCT" ]; then echo "::error::Token sees no account"; exit 1; fi
+          # this data type has its own Pages project, so deploying it cannot delete the others
+          curl -sS -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCT/pages/projects" \
+            -H "Authorization: Bearer $CF_TOKEN" -H "Content-Type: application/json" \
+            -d '{"name":"filmiset-ep","production_branch":"main"}' > /dev/null || true
+          rm -rf dist && mkdir -p dist
+          cp -r data/ep dist/ 2>/dev/null || true
+          cp data/lang.json.gz data/native.json.gz dist/ 2>/dev/null || true
+          echo "uploading $(find dist -type f | wc -l) files, $(du -sh dist | cut -f1)"
           export CLOUDFLARE_ACCOUNT_ID="$ACCT"
-          npx --yes wrangler@3 pages deploy data --project-name filmiset-data --branch main --commit-dirty=true
+          export CLOUDFLARE_API_TOKEN="$CF_TOKEN"
+          npx --yes wrangler@3 pages deploy dist --project-name filmiset-ep --branch main --commit-dirty=true
 
       - name: How much came out
         run: |

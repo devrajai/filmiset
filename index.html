@@ -903,7 +903,11 @@ let FILMO = null, FILMO_LOADING = false;
      act_<XX>.json.gz   {nconst: [name, birthYear, [[titleId, title, year, rating, votes], ...]]}
      cast_<XX>.json.gz  {titleId: [[nconst, name, role], ...]}
    A page fetches one of each, a few hundred KB, and both are cached after the first open. */
-const ACT_BASE = 'https://filmiset-data.pages.dev/';
+/* Each kind of data lives in its own Cloudflare Pages project. A Pages deployment replaces the whole
+   site, so while every workflow deployed into one project, each run deleted the files the others had
+   just uploaded — episodes wiped actors, the catalogue rebuild wiped the posters, and the site slowly
+   emptied itself. Separate projects cannot touch each other. */
+const ACT_BASE = 'https://filmiset-act.pages.dev/';
 const ACT_CACHE = {}, CAST_CACHE = {};
 
 function idBucket(id){
@@ -2538,7 +2542,7 @@ async function loadOverviewBucket(id){
   if(!b) return null;
   if(OV_CACHE[b]) return OV_CACHE[b];
   try{
-    const r = await fetch(POSTER_BASE + 'ov/o_' + b + '.json.gz');
+    const r = await fetch(OV_BASE + 'o_' + b + '.json.gz');
     if(!r.ok) return null;
     OV_CACHE[b] = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
     return OV_CACHE[b];
@@ -2649,7 +2653,7 @@ const EP_CACHE = {};
 /* The episode buckets are not in the repo — 68 MB of them live on Cloudflare Pages, so this is the
    one fetch on the site that goes somewhere other than its own origin. Everything else stays on
    Vercel. If Cloudflare is unreachable the fetch simply fails and the modal shows no episodes. */
-const EP_BASE = 'https://filmiset-data.pages.dev/';
+const EP_BASE = 'https://filmiset-ep.pages.dev/';
 
 function epBucket(id){
   const k = String(id || '').replace(/^tt0*/, '');
@@ -2788,8 +2792,10 @@ async function loadFresh(){
   if(FRESH_LOADED) return FRESH;
   FRESH_LOADED = true;
   try{
-    let r = await fetch(DATA_BASE + 'fresh.json.gz');
-    if(!r.ok) r = await fetch('data/fresh.json.gz');
+    /* the repo copy first — refresh-fresh commits it on every run, so it is always the newest;
+       Cloudflare is only a fallback for the case where the commit step failed */
+    let r = await fetch('data/fresh.json.gz');
+    if(!r.ok) r = await fetch(DATA_BASE + 'fresh.json.gz');
     if(!r.ok) return null;
     FRESH = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
   }catch(e){ return null; }
@@ -4142,7 +4148,7 @@ async function ixLoadLang(){
   if(_langP) return _langP;
   _langP = (async function(){
     try{
-      const r = await fetch(DATA_BASE + 'lang.json.gz');
+      const r = await fetch(EP_BASE + 'lang.json.gz');
       if(!r.ok) return null;
       IX_LANG = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
       return IX_LANG;
@@ -4155,7 +4161,7 @@ async function ixLoadNative(){
   if(_nativeP) return _nativeP;
   _nativeP = (async function(){
     try{
-      const r = await fetch(DATA_BASE + 'native.json.gz');
+      const r = await fetch(EP_BASE + 'native.json.gz');
       if(!r.ok) return null;
       IX_NATIVE = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
       return IX_NATIVE;
@@ -4584,7 +4590,8 @@ function loadPosters(){
    one bucket per hundred ids into Cloudflare: p_<XX>.json.gz mapping titleId to an image URL.
    This fills whatever the first file missed, one bucket at a time, for the rows actually on screen —
    not all 832,677. */
-const POSTER_BASE = 'https://filmiset-data.pages.dev/';
+const POSTER_BASE = 'https://filmiset-poster.pages.dev/';
+const OV_BASE = 'https://filmiset-ov.pages.dev/';
 const POSTER_CACHE = {};
 
 async function loadPosterBucket(id){
