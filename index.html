@@ -813,6 +813,7 @@
       <button class="pill" data-fresh="ott">📺 New on OTT</button>
       <button class="pill" data-fresh="upcoming">⏳ Coming soon</button>
       <button class="pill" data-fresh="series">📺 New series</button>
+      <button class="pill" data-fresh="indian">🇮🇳 Indian new</button>
     </div></div>
     <div class="rail-block"><h6>Hit or flop</h6><div class="chips" id="hfRow"></div></div>
     <div class="rail-block"><h6>Festival / Occasion</h6><div class="chips" id="occRow"></div></div>
@@ -2863,6 +2864,10 @@ async function loadFresh(){
   add(FRESH.upcoming, 'upcoming');
   for(const [name, rows] of Object.entries(FRESH.ott || {})) add(rows, 'ott', name);
   for(const [name, rows] of Object.entries(FRESH.series || {})) add(rows, 'series', name);
+  /* series with an episode this week, and new Indian releases by language — the two lists that
+     matter most to an Indian viewer and were missing entirely */
+  for(const [name, rows] of Object.entries(FRESH.tvnow || {})) add(rows, 'series', '');
+  for(const [name, rows] of Object.entries(FRESH.bylang || {})) add(rows, 'indian', '');
   return FRESH;
 }
 function freshCount(tag, platform){
