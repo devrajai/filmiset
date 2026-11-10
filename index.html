@@ -621,6 +621,12 @@
   .foot .note{font-family:var(--font-mono);font-size:11.5px;color:var(--faint);margin-top:12px;line-height:1.6}
   .legend{display:flex;flex-wrap:wrap;gap:7px}
   .legend .pill{cursor:default;font-size:11.5px;padding:5px 10px}
+  .about{margin:12px 0 4px;padding:12px 14px;border-radius:14px;background:var(--surface-2);
+    border:1px solid var(--line)}
+  .about h6{margin:0 0 6px;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--accent)}
+  .about p{margin:0;font-size:14px;line-height:1.6;color:var(--ink)}
+  .about-src{display:block;margin-top:8px;font-size:11px;color:var(--faint);font-style:normal}
 
 
   /* ---- desktop layout ----
@@ -2514,6 +2520,118 @@ function pushPanel(name){
 
 /* how long the thing is: a film shows minutes, a series shows seasons + episode count
    (a series' runtimeMinutes from IMDb is per-episode and reads as nonsense next to a title) */
+/* ---- about this title ----
+   Two sources, in order. If the row carries a real synopsis — TMDB's overview, or a curated note —
+   that is shown as-is, because a human wrote it. Otherwise one is composed from what the catalogue
+   actually knows: genre, year, runtime, director, cast, rating with its standing, language, dub and
+   platform. Every clause is a fact from the record; nothing is invented, which matters when this
+   appears under eight hundred thousand titles and there is no editor to catch a wrong plot point.
+   The video-review depth some sites have is one person writing about one film — no dataset carries
+   that at this scale, and a made-up plot is worse than a plain one. */
+/* ---- real synopses ----
+   fetch-overviews writes o_<XX>.json.gz on Cloudflare, one bucket per hundred ids. The modal renders
+   the composed paragraph first, then this looks the id up and swaps in the written overview if TMDB
+   had one. Nothing waits on it: if the bucket is missing the composed text simply stays. */
+const OV_CACHE = {};
+async function loadOverviewBucket(id){
+  const b = (typeof idBucket === 'function') ? idBucket(id) : null;
+  if(!b) return null;
+  if(OV_CACHE[b]) return OV_CACHE[b];
+  try{
+    const r = await fetch(POSTER_BASE + 'ov/o_' + b + '.json.gz');
+    if(!r.ok) return null;
+    OV_CACHE[b] = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+    return OV_CACHE[b];
+  }catch(e){ return null; }
+}
+async function overviewFor(id){
+  const m = await loadOverviewBucket(id);
+  if(!m) return '';
+  const k = String(id || '').replace(/^tt0*/, '');
+  return m[k] || '';
+}
+
+function aboutFor(d){
+  if(d.ov && String(d.ov).trim().length > 40) return { text: String(d.ov).trim(), kind: 'synopsis' };
+
+  const g = gList(d);
+  const y = d.y || (d.date ? String(d.date).slice(0,4) : '');
+  const isSeries = /series/i.test(d.type || '') || d.fresh === 'series';
+  const noun = isSeries ? 'series' : 'film';
+  const parts = [];
+
+  /* what it is */
+  /* genres arrive capitalised for the pills, which reads wrong mid-sentence: "Action and Comedy
+     film" — so everything after the first word is lowercased here. */
+  const gs = g.slice(0,2).map(function(x, i){
+    const s = String(x);
+    return i === 0 ? s : s.toLowerCase();
+  }).join(' and ');
+  let s1 = '';
+  if(g.length && y)      s1 = gs + ' ' + noun + ' from ' + y + '.';
+  else if(g.length)      s1 = 'A ' + gs + ' ' + noun + '.';
+  else if(y)             s1 = 'A ' + noun + ' from ' + y + '.';
+  if(s1) parts.push(s1);
+
+  /* who made it */
+  const cast = (d.cast || []).slice(0,3).filter(Boolean);
+  if(d.dir && cast.length){
+    parts.push('Directed by ' + d.dir + ', with ' + cast.slice(0,2).join(', ')
+      + (cast.length > 2 ? ' and ' + cast[2] : '') + '.');
+  } else if(d.dir){
+    parts.push('Directed by ' + d.dir + '.');
+  } else if(cast.length){
+    parts.push('With ' + cast.slice(0,2).join(', ')
+      + (cast.length > 2 ? ' and ' + cast[2] : '') + '.');
+  }
+
+  /* how it stands — rating band, stated as a band rather than a rank we cannot verify */
+  const r = parseFloat(d.irt || d.rtg || 0);
+  const v = parseInt(d.ivot || d.vot || 0, 10) || 0;
+  if(r > 0 && v >= 50){
+    let band = '';
+    if(r >= 8.5 && v >= 25000)      band = 'one of the highest-rated titles here';
+    else if(r >= 8.0)               band = 'among the best-rated releases of its year';
+    else if(r >= 7.5)               band = 'well rated';
+    else if(r >= 7.0)               band = 'above average';
+    else if(r >= 6.0)               band = 'middling';
+    else if(r >= 5.0)               band = 'below average';
+    else                            band = 'poorly rated';
+    parts.push('Rated ' + r.toFixed(1) + ' by ' + v.toLocaleString('en-IN')
+      + ' people' + (band ? ' \u2014 ' + band : '') + '.');
+  } else if(d.fresh === 'upcoming'){
+    parts.push('Not released yet \u2014 no rating until it opens.');
+  } else {
+    parts.push('Too few votes for a rating to mean anything yet.');
+  }
+
+  /* language, dub, where */
+  const tail = [];
+  /* d.lang is often the two-letter ISO code, which langLabel does not know — it was built for the
+     longer codes in lang.json. Without this fallback "Tamil original" silently vanished from every
+     composed summary, leaving a bare "Hindi dub" with nothing it was a dub of. */
+  const L2 = {hi:'Hindi',en:'English',ta:'Tamil',te:'Telugu',ml:'Malayalam',kn:'Kannada',bn:'Bengali',
+    gu:'Gujarati',mr:'Marathi',pa:'Punjabi',or:'Odia',as:'Assamese',ur:'Urdu',ne:'Nepali',si:'Sinhala',
+    ko:'Korean',ja:'Japanese',zh:'Chinese',fr:'French',es:'Spanish',de:'German',it:'Italian',
+    pt:'Portuguese',ru:'Russian',ar:'Arabic',fa:'Persian',tr:'Turkish',th:'Thai',id:'Indonesian',
+    ms:'Malay',vi:'Vietnamese',he:'Hebrew',pl:'Polish',nl:'Dutch',sv:'Swedish',da:'Danish',
+    no:'Norwegian',fi:'Finnish',cs:'Czech',hu:'Hungarian',el:'Greek',uk:'Ukrainian',ro:'Romanian'};
+  let lang = '';
+  if(d.lang){
+    const code = String(d.lang).toLowerCase();
+    if(code.length === 2 && L2[code]) lang = L2[code];
+    else if(typeof langLabel === 'function') lang = langLabel(d.lang) || '';
+  }
+  if(lang) tail.push(lang + ' original');
+  const audio = (d.a || []).filter(function(x){ return /dub/i.test(String(x)); }).slice(0,2);
+  /* keep the case the data uses: lowercasing the whole list turned "Hindi (dub)" into "hindi dub" */
+  if(audio.length) tail.push(audio.map(function(x){ return String(x).replace(/ \(dub\)/i, ''); }).join(' and ') + ' dub');
+  if(d.o && d.o.length) tail.push('streaming on ' + d.o.slice(0,2).join(' and '));
+  if(tail.length) parts.push(tail.join(', ').replace(/^([a-z])/, function(m){ return m.toUpperCase(); }) + '.');
+
+  return { text: parts.join(' '), kind: 'composed' };
+}
+
 function lengthLabel(d){
   if(d.tv) return d.tv;
   const isSeries = /series/i.test(d.type || '');
@@ -2772,7 +2890,14 @@ function openModal(d, fromPop){
         + '</div>' : '')
     + noticeHtml(d)
     + vakeelHtml(d)
-    + (d.ov? '<p>'+esc(d.ov)+'</p>':(d.note? '<p>'+esc(d.note)+'</p>':''))
+    + (function(){
+        const ab = aboutFor(d);
+        if(!ab.text) return '';
+        return '<div class="about" data-about="'+esc(String(d.id||''))+'"><h6>About</h6>'
+          + '<p>'+esc(ab.text)+'</p>'
+          + (ab.kind === 'composed' ? '<i class="about-src">Composed from the catalogue record</i>' : '')
+          + '</div>';
+      })()
     + ((d.dir||d.prod||(d.cast&&d.cast.length)) ? '<div class="m" style="margin-top:8px">'
         + [d.dir?'Director: '+esc(d.dir):'', d.prod?'Studio: '+esc(d.prod):'',
            (d.cast&&d.cast.length)?'Cast: '+esc(d.cast.join(', ')):''].filter(Boolean).join('  ·  ') + '</div>' : '')
@@ -2815,6 +2940,17 @@ function openModal(d, fromPop){
     box.innerHTML = '<p class="m" style="margin:8px 0">Loading episodes…</p>';
     const eps = await epResolve(d);
     box.innerHTML = (eps && eps.length) ? epHtml(eps) : '';
+  })();
+  /* the written overview, if TMDB has one for this title. Rendered after the modal so nothing waits
+     on the fetch; if the bucket is missing or the film is not in it, the composed paragraph stays. */
+  (async function(){
+    const el = m.querySelector('.about[data-about]');
+    if(!el || !d.id) return;
+    const ov = await overviewFor(d.id);
+    if(!ov) return;
+    const p = el.querySelector('p'), src = el.querySelector('.about-src');
+    if(p) p.textContent = ov;
+    if(src) src.remove();
   })();
   setOg(d);
   if(!fromPop) pushTitle(d);

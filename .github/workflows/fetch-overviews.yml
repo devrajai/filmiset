@@ -1,0 +1,76 @@
+name: Fetch overviews
+
+# Real synopses from TMDB for the titles people actually open. The site composes a paragraph from the
+# catalogue record for all 808,547 titles, but a composed line says what a film is, not what happens
+# in it. This fills that gap where TMDB has written one.
+#
+# Re-runnable: it skips anything that already has an overview, so only new titles are looked up after
+# the first pass.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: How many titles to fetch this run
+        required: false
+        default: '100000'
+      workers:
+        description: Parallel requests
+        required: false
+        default: '16'
+
+permissions:
+  contents: read
+
+env:
+  CF_TOKEN: ${{ secrets.CLOUDFLARE || secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+
+jobs:
+  overviews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch the catalogue from Cloudflare
+        run: |
+          set -e
+          mkdir -p data
+          for b in ab cd ef gh ij kl mn num op qr st uv wx yz; do
+            curl -sSfL "https://filmiset-data.pages.dev/ix_${b}.json.gz" -o "data/ix_${b}.json.gz"
+          done
+          echo "buckets: $(ls data/ix_*.json.gz | wc -l)"
+
+      - name: Fetch overviews
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          python3 scripts/fetch_overviews.py \
+            --catalogue data --out data/ov \
+            --limit "${{ github.event.inputs.limit || '100000' }}" \
+            --workers "${{ github.event.inputs.workers || '16' }}"
+
+      - name: What came out
+        run: |
+          du -sh data/ov
+          cat data/ov/_manifest.json
+
+      - name: Deploy to Cloudflare Pages
+        run: |
+          set -e
+          if [ -z "$CF_TOKEN" ]; then echo "::warning::No Cloudflare token"; exit 0; fi
+          ACCT=$(curl -sS -H "Authorization: Bearer $CF_TOKEN" \
+                 https://api.cloudflare.com/client/v4/accounts \
+                 | python3 -c "import sys,json;d=json.load(sys.stdin);r=d.get('result') or [];print(r[0]['id'] if r else '')")
+          if [ -z "$ACCT" ]; then echo "::error::Token sees no account"; exit 1; fi
+          rm -rf dist && mkdir -p dist
+          cp data/ov/o_*.json.gz dist/ 2>/dev/null || true
+          cp data/ov/_manifest.json dist/ 2>/dev/null || true
+          echo "uploading $(ls dist | wc -l) files, $(du -sh dist | cut -f1)"
+          export CLOUDFLARE_ACCOUNT_ID="$ACCT"
+          export CLOUDFLARE_API_TOKEN="$CF_TOKEN"
+          npx --yes wrangler@3 pages deploy dist --project-name filmiset-data --branch main --commit-dirty=true
