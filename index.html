@@ -1391,7 +1391,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'month', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, hitflop:'all', fresh:'all', genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'latest', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, hitflop:'all', fresh:'all', genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -3250,7 +3250,7 @@ function clearAllFilters(){
   state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false; state.vibe=null; state.genres=new Set(); state.olang=new Set(); state.cert=new Set(); state.freeOnly=false; state.subsOnly=false; state.situation=null; state.situationKey=null;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
-  setPillRow('relRow','rel','month'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
+  setPillRow('relRow','rel','latest'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
   setPillRow('ottRow','ott','all'); setPillRow('collRow','coll','all');
   setPillRow('frRow','fr','all'); setPillRow('sortRow','sort','new');
   setPillRow('compRow','comp','all'); setPillRow('rtRow','rt','all');
