@@ -2585,6 +2585,29 @@ async function overviewFor(id){
   return m[k] || '';
 }
 
+/* A fresh row used to carry cat:'fresh', which the badge code did not know, so every card fell back
+   to Hollywood — Ramayana Part One showed as Hollywood. The language TMDB returns is a better label
+   than a placeholder, and it is what the category pills already mean. */
+function catOfLang(code){
+  const c = String(code || '').toLowerCase();
+  if(!c) return 'fresh';
+  if(c === 'en') return 'english-dubbed';
+  if(c === 'hi') return 'hindi';
+  if(c === 'ta') return 'tamil';
+  if(c === 'te') return 'telugu';
+  if(c === 'ml') return 'malayalam';
+  if(c === 'kn') return 'kannada';
+  if(c === 'bn') return 'bengali';
+  if(c === 'mr') return 'marathi';
+  if(c === 'pa') return 'punjabi';
+  if(c === 'gu') return 'gujarati-movie';
+  if(c === 'or') return 'odia';
+  if(c === 'as') return 'assamese';
+  if(c === 'ko') return 'korean-dubbed';
+  if(c === 'ja') return 'anime';
+  return 'fresh';
+}
+
 function aboutFor(d){
   if(d.ov && String(d.ov).trim().length > 40) return { text: String(d.ov).trim(), kind: 'synopsis' };
 
@@ -2880,7 +2903,7 @@ async function loadFresh(){
       DATA.push({
         t: d.t, y: d.y || '', date: d.date || '', ov: d.ov || '',
         r: d.r || 0, rtg: d.r || '', vot: d.v || '', ivot: d.v || 0,
-        poster: d.poster || '', type: d.type || 'Movie', cat: 'fresh',
+        poster: d.poster || '', type: d.type || 'Movie', cat: catOfLang(d.lang),
         g: [], m: [], a: [], o: platform ? [platform] : [],
         lang: d.lang || '',
         id: d.tmdb ? ('tmdb' + d.tmdb) : ('f' + Math.random().toString(36).slice(2,9)),
