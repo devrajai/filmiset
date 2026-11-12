@@ -5,8 +5,9 @@ name: Fetch release calendar
 # 2 and 3 theatrical, 4 digital — so each row is in a month because TMDB says it releases that month
 # in that country, not because it was popular that week.
 #
-# Weekly is enough: release dates do not change hourly, and the current month is always rebuilt from
-# the first day so a date that slips is corrected on the next run.
+# Daily, 08:50 IST. Release dates do not change hourly, but a date that slips or a film added to a
+# platform yesterday should be right this morning rather than next Monday. Four minutes a run, so
+# about 120 a month; with the other four workflows that is 309 of the 500 available minutes.
 
 on:
   workflow_dispatch:
@@ -16,7 +17,7 @@ on:
         required: false
         default: '4'
   schedule:
-    - cron: '20 3 * * 1'
+    - cron: '20 3 * * *'
 
 permissions:
   contents: read
