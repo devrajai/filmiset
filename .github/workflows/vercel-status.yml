@@ -1,0 +1,31 @@
+name: Vercel status
+
+# Reports what the Vercel token can see and what happened to the last deployments. Run this when a
+# push does not appear on the site — it says whether the problem is the token, the project scope, or
+# a failed build. A failed build leaves the previous version live, which looks exactly like "nothing
+# changed".
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Query Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL || secrets.VERCEL_TOKEN || secrets.VERCEL_API_TOKEN }}
+        run: |
+          set -e
+          if [ -z "$VERCEL_TOKEN" ]; then echo "::error::No VERCEL secret"; exit 1; fi
+          python3 scripts/vercel_status.py
