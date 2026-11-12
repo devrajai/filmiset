@@ -102,8 +102,7 @@ def main():
                             region=code, with_release_type=rtype,
                             sort_by="popularity.desc", page=page,
                             **{"primary_release_date.gte": first,
-                               "primary_release_date.lte": last,
-                               "vote_count.gte": 2})
+                               "primary_release_date.lte": last})
                     for r in (d or {}).get("results", []):
                         if r.get("id") in seen:
                             continue
@@ -116,13 +115,11 @@ def main():
                 # film's primary release date, which TMDB does know months ahead. The country is then
                 # approximate rather than exact, so the calendar labels those rows as "worldwide".
                 if not rows:
-                    for page in (1, 5):
+                    for page in (1, 2, 3):
                         d = get("/discover/movie", key,
-                                with_release_type=rtype,
                                 sort_by="popularity.desc", page=page,
                                 **{"primary_release_date.gte": first,
-                                   "primary_release_date.lte": last,
-                                   "vote_count.gte": 3})
+                                   "primary_release_date.lte": last})
                         for r in (d or {}).get("results", []):
                             if r.get("id") in seen:
                                 continue
