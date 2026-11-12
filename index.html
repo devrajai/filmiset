@@ -4434,11 +4434,21 @@ function render(){
     if(state.src!=='youtube' && state.rel!=='all' && !state.q){
       if(d.src==='youtube') return false;              // videos aren't movie releases
       const ym=(d.date||'').slice(0,7);
-      if(state.rel==='latest'){ if(!(ym===CUR_YM || ym===PREV_YM || d.status==='upcoming')) return false; }
-      else if(state.rel==='month'){ if(ym!==CUR_YM) return false; }
-      else if(state.rel==='lastmonth'){ if(ym!==PREV_YM) return false; }
-      else if(state.rel==='year'){ if(d.status==='upcoming' || !(Number(d.y) >= CUR_YEAR)) return false; }
-      else if(state.rel==='upcoming'){ if(d.status!=='upcoming') return false; }
+      /* The window decides, not the status. A film opening on the 25th of this month belongs in
+         "this month" — it is what the user means by recent. A film opening in February 2027 does
+         not, and used to, because "latest" admitted anything flagged upcoming regardless of date.
+         That is how Narnia 2027 and Avengers December sat in a feed headed "last two months". */
+      if(state.rel==='upcoming'){
+        if(d.status!=='upcoming') return false;
+      } else {
+        const inWindow =
+            state.rel==='latest'    ? (ym===CUR_YM || ym===PREV_YM)
+          : state.rel==='month'     ? (ym===CUR_YM)
+          : state.rel==='lastmonth' ? (ym===PREV_YM)
+          : state.rel==='year'      ? (Number(d.y) >= CUR_YEAR)
+          : false;
+        if(!inWindow) return false;
+      }
     }
     if(state.dub && !(d.a||[]).some(x=>/hindi \(dub\)/i.test(x))) return false;
     if(state.src==='youtube' && d.src!=='youtube') return false;
@@ -4534,12 +4544,19 @@ function render(){
   /* The default view is "this month". A hand-curated row often has no release date at all, so
      that window can be empty on a fresh visit — which looked like a broken site. Fall back to
      the whole catalogue instead, once, and say so. */
-  if(!out.length && state.rel==='month' && !state.q && !activeFilters().length && !state._fellBack){
-    state._fellBack = true;
-    state.rel = 'all';
-    try{ setPillRow('relRow','rel','all'); }catch(e){}
-    render();
-    return;
+  /* Nothing dated this month — which happens in the first days of a month, or when the catalogue
+     rows carry no release date at all. Widening straight to "all" is what filled a "this month" view
+     with 2019 titles and 2027 releases. Widen one step at a time, and stay inside released titles. */
+  if(!out.length && !state.q && !activeFilters().length && !state._fellBack){
+    const steps = { month: 'latest', latest: 'year' };
+    const next = steps[state.rel];
+    if(next){
+      state._fellBack = true;
+      state.rel = next;
+      try{ setPillRow('relRow','rel',next); }catch(e){}
+      render();
+      return;
+    }
   }
   state._fellBack = false;
   resCount.textContent = (state.topN ? 'Top '+shown.length : (shown.length<out.length ? shown.length+' of '+out.length : out.length))+' title'+(out.length===1?'':'s');
