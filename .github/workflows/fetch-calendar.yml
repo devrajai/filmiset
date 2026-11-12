@@ -1,0 +1,76 @@
+name: Fetch release calendar
+
+# A month-by-month release calendar for seven countries, split into cinema and streaming, with the
+# platform named for India's digital releases. TMDB carries release dates per country with a type —
+# 2 and 3 theatrical, 4 digital — so each row is in a month because TMDB says it releases that month
+# in that country, not because it was popular that week.
+#
+# Weekly is enough: release dates do not change hourly, and the current month is always rebuilt from
+# the first day so a date that slips is corrected on the next run.
+
+on:
+  workflow_dispatch:
+    inputs:
+      months:
+        description: How many months ahead to build
+        required: false
+        default: '4'
+  schedule:
+    - cron: '20 3 * * 1'
+
+permissions:
+  contents: read
+
+env:
+  CF_TOKEN: ${{ secrets.CLOUDFLARE || secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+
+jobs:
+  calendar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build the calendar
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          mkdir -p data
+          python3 scripts/fetch_calendar.py --out data/calendar.json.gz --months "${{ github.event.inputs.months || '4' }}"
+
+      - name: What came out
+        run: |
+          ls -lh data/calendar.json.gz
+          python3 -c "import gzip,json;d=json.loads(gzip.open('data/calendar.json.gz','rt',encoding='utf-8').read());[print(m, sum(len(v['theatre'])+len(v['digital']) for v in d['months'][m].values()), 'entries') for m in d['months']]"
+
+      - name: Deploy to Cloudflare Pages
+        run: |
+          set -e
+          if [ -z "$CF_TOKEN" ]; then echo "::warning::No Cloudflare token"; exit 0; fi
+          ACCT=$(curl -sS -H "Authorization: Bearer $CF_TOKEN" \
+                 https://api.cloudflare.com/client/v4/accounts \
+                 | python3 -c "import sys,json;d=json.load(sys.stdin);r=d.get('result') or [];print(r[0]['id'] if r else '')")
+          if [ -z "$ACCT" ]; then echo "::error::Token sees no account"; exit 1; fi
+          curl -sS -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCT/pages/projects" \
+            -H "Authorization: Bearer $CF_TOKEN" -H "Content-Type: application/json" \
+            -d '{"name":"filmiset-cal","production_branch":"main"}' > /dev/null || true
+          rm -rf dist && mkdir -p dist
+          cp data/calendar.json.gz dist/ 2>/dev/null || true
+          export CLOUDFLARE_ACCOUNT_ID="$ACCT"
+          export CLOUDFLARE_API_TOKEN="$CF_TOKEN"
+          npx --yes wrangler@3 pages deploy dist --project-name filmiset-cal --branch main --commit-dirty=true
+
+      - name: Commit a copy
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/calendar.json.gz 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "Refresh the release calendar"
+            git pull --rebase origin main || true
+            git push || echo "push skipped"
+          fi

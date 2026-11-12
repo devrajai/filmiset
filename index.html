@@ -627,6 +627,23 @@
     text-transform:uppercase;color:var(--accent)}
   .about p{margin:0;font-size:14px;line-height:1.6;color:var(--ink)}
   .about-src{display:block;margin-top:8px;font-size:11px;color:var(--faint);font-style:normal}
+  .cal-box{max-width:640px}
+  .cal-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+  .cal-filter{display:flex;gap:10px;align-items:center;margin:8px 0 12px}
+  .cal-sel{background:var(--surface-2);color:var(--ink);border:1px solid var(--line);
+    border-radius:10px;padding:7px 10px;font-size:13px}
+  .cal-h{margin:14px 0 8px;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--accent)}
+  .cal-row{display:flex;gap:10px;align-items:center;width:100%;text-align:left;
+    background:transparent;border:0;border-bottom:1px solid var(--line);
+    padding:7px 2px;cursor:pointer;color:var(--ink)}
+  .cal-row:hover{background:var(--surface-2)}
+  .cal-d{flex:0 0 42px;font-family:var(--font-mono);font-size:11px;color:var(--muted)}
+  .cal-row img,.cal-no{flex:0 0 34px;width:34px;height:48px;object-fit:cover;border-radius:5px;
+    background:var(--surface-2)}
+  .cal-t{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .cal-t b{font-size:13.5px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cal-t i{font-size:11px;color:var(--muted);font-style:normal}
 
 
   /* ---- desktop layout ----
@@ -815,7 +832,10 @@
       <button class="pill" data-fresh="series">📺 New series</button>
       <button class="pill" data-fresh="indian">🇮🇳 Indian new</button>
     </div></div>
-    <div class="rail-block"><h6>Hit or flop</h6><div class="chips" id="hfRow"></div></div>
+    <div class="rail-block"><h6>Release calendar</h6><div class="chips">
+      <button class="pill" id="calBtn">📅 Month by month</button>
+    </div></div>
+    <div class="rail-block"><h6>Audience verdict</h6><div class="chips" id="hfRow"></div></div>
     <div class="rail-block"><h6>Festival / Occasion</h6><div class="chips" id="occRow"></div></div>
     <div class="rail-block"><h6>Audio</h6><div class="chips" id="audRow"></div></div>
     <div class="rail-block"><h6>Source</h6><div class="chips" id="srcRow"></div></div>
@@ -857,6 +877,10 @@
       <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0) and
       <a href="https://www.tvmaze.com/" target="_blank" rel="noopener">TVmaze</a>. Posters and
       streaming availability are provided by TMDB.</p>
+      <p>Streaming availability is provided by <b>JustWatch</b> through TMDB. Where a title is not
+      listed on a platform, the "where to watch" link goes to
+      <a href="https://www.justwatch.com/in" target="_blank" rel="noopener">JustWatch India</a>,
+      which keeps its own up-to-date record.</p>
       <p>This product uses the TMDB API but is <b>not endorsed or certified by TMDB</b>. FilmiSet is
       <b>not affiliated with, endorsed by, or sponsored by</b> IMDb, TMDB, Wikidata, TVmaze, or any
       streaming service named on this page. All titles, names, images and marks belong to their
@@ -1783,11 +1807,14 @@ eraRow.addEventListener('click',e=>{
    Thresholds are deliberately conservative — a "hit" is 7.5 or better from five thousand votes,
    a "flop" is under 5.5 from a thousand, and everything else stays in the middle where most films
    belong. */
+/* Named for what it measures. "Hit or flop" reads as box office to anyone in India, but this is a
+   rating from IMDb voters — a film can be a flop at the box office and loved by the people who saw
+   it, and the old labels said otherwise. Loved and Disliked are what the numbers actually mean. */
 const HITFLOP = [
   ['all',    'All'],
-  ['hit',    '\u2b06 Hits'],
-  ['flop',   '\u2b07 Flops'],
-  ['mid',    'In between'],
+  ['hit',    '\u2b06 Loved'],
+  ['flop',   '\u2b07 Disliked'],
+  ['mid',    'Mixed'],
 ];
 const hfRow = document.getElementById('hfRow');
 if(hfRow){
@@ -2880,6 +2907,95 @@ function freshCount(tag, platform){
                                        : Object.values(FRESH.series || {}).reduce(function(s, v){ return s + v.length; }, 0);
   return 0;
 }
+
+/* ---- release calendar ----
+   Built weekly by fetch-calendar: four months ahead, seven countries, split into cinema and
+   streaming, with the platform named for India's digital entries. TMDB carries a release date per
+   country with a type — 2 and 3 theatrical, 4 digital — so a title sits in a month because TMDB says
+   it releases that month in that country, not because it was popular that week. */
+const CAL_BASE = 'https://filmiset-cal.pages.dev/';
+let CAL = null, CAL_LOADING = false, CAL_MONTH = null, CAL_COUNTRY = 'IN';
+
+async function loadCalendar(){
+  if(CAL) return CAL;
+  if(CAL_LOADING) return null;
+  CAL_LOADING = true;
+  try{
+    let r = await fetch(CAL_BASE + 'calendar.json.gz');
+    if(!r.ok) r = await fetch('data/calendar.json.gz');
+    if(!r.ok) return null;
+    CAL = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+    return CAL;
+  }catch(e){ return null; }
+  finally{ CAL_LOADING = false; }
+}
+
+function calRow(s){
+  const plat = s.platform ? ' · ' + esc(s.platform) : '';
+  const d = s.date ? s.date.slice(8,10) + ' ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][parseInt(s.date.slice(5,7),10)-1] : '';
+  return '<button class="cal-row" data-cal="' + esc(s.t) + '">'
+    + '<span class="cal-d">' + d + '</span>'
+    + (s.poster ? '<img src="' + esc(safeUrl(s.poster)) + '" alt="" loading="lazy" onerror="this.remove()">' : '<span class="cal-no"></span>')
+    + '<span class="cal-t"><b>' + esc(dispTitle(s.t)) + '</b>'
+      + '<i>' + esc(String(s.y || '')) + plat + '</i></span>'
+    + '</button>';
+}
+
+async function openCalendar(){
+  const m = document.getElementById('modal');
+  m.innerHTML = '<div class="box"><p class="m">Loading the calendar…</p></div>';
+  m.hidden = false; document.body.classList.add('modal-open');
+  const data = await loadCalendar();
+  if(!data){ m.innerHTML = '<div class="box"><p>Calendar abhi load nahi hua. Thodi der baad try kijiye.</p></div>'; return; }
+
+  const months = Object.keys(data.months).sort();
+  if(!CAL_MONTH || months.indexOf(CAL_MONTH) < 0) CAL_MONTH = months[0];
+  const countries = data.countries || {IN:'India'};
+
+  const tabs = months.map(function(k){
+    const [y, mo] = k.split('-');
+    const label = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][parseInt(mo,10)-1] + ' ' + y;
+    return '<button class="pill' + (k === CAL_MONTH ? ' on' : '') + '" data-calm="' + k + '">' + label + '</button>';
+  }).join('');
+
+  const csel = '<select id="calCountry" class="cal-sel">'
+    + Object.keys(countries).map(function(c){
+        return '<option value="' + c + '"' + (c === CAL_COUNTRY ? ' selected' : '') + '>' + esc(countries[c]) + '</option>';
+      }).join('')
+    + '</select>';
+
+  const month = data.months[CAL_MONTH] || {};
+  const entry = month[CAL_COUNTRY] || {theatre:[], digital:[]};
+  const th = entry.theatre || [], dg = entry.digital || [];
+
+  m.innerHTML = '<div class="box cal-box">'
+    + '<h3>Release calendar</h3>'
+    + '<div class="cal-tabs">' + tabs + '</div>'
+    + '<div class="cal-filter">' + csel + '<span class="m">' + (th.length + dg.length) + ' releases</span></div>'
+    + (th.length ? '<h6 class="cal-h">🎬 In cinemas</h6>' + th.map(calRow).join('') : '')
+    + (dg.length ? '<h6 class="cal-h">📺 On streaming</h6>' + dg.map(calRow).join('') : '')
+    + (!th.length && !dg.length ? '<p class="m">Is mahine ke liye koi release nahi mila.</p>' : '')
+    + '</div>';
+
+  m.querySelectorAll('[data-calm]').forEach(function(b){
+    b.onclick = function(){ CAL_MONTH = b.dataset.calm; openCalendar(); };
+  });
+  const sel = document.getElementById('calCountry');
+  if(sel) sel.onchange = function(){ CAL_COUNTRY = sel.value; openCalendar(); };
+  m.querySelectorAll('[data-cal]').forEach(function(b){
+    b.onclick = function(){
+      const t = b.dataset.cal;
+      const all = (th.concat(dg)).find(function(x){ return x.t === t; });
+      if(all){ closeModal(); openModal({ t: all.t, y: all.y, date: all.date, poster: all.poster,
+        rtg: all.r, vot: all.v, ov: all.ov, lang: all.lang, o: all.platform ? [all.platform] : [],
+        type: 'Movie', src: 'tmdb', id: all.tmdb ? ('tmdb' + all.tmdb) : undefined }); }
+    };
+  });
+}
+
+document.addEventListener('click', function(e){
+  if(e.target.closest && e.target.closest('#calBtn')){ e.preventDefault(); openCalendar(); }
+});
 
 function openModal(d, fromPop){
   const up=d.status==='upcoming' || Number(d.y||0) > CUR_YEAR;   // nothing to watch yet

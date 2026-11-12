@@ -1,0 +1,71 @@
+name: Alert on failure
+
+# The actor workflow sat red for a week and nobody noticed, because a failed scheduled run only shows
+# as a red cross on a tab nobody opens. This watches every data workflow and opens an issue the moment
+# one fails, so a broken pipeline is visible the same day instead of the same month.
+#
+# One file rather than an alert step in each workflow: a step added to nine workflows is nine places
+# to forget, and this covers any workflow listed below automatically.
+
+on:
+  workflow_run:
+    workflows:
+      - "Refresh what is new"
+      - "Refresh episodes and languages"
+      - "Refresh actors and cast"
+      - "Fetch posters"
+      - "Fetch overviews"
+      - "Rebuild catalogue"
+      - "Deploy to Cloudflare Pages"
+    types: [completed]
+
+permissions:
+  issues: write
+  actions: read
+
+jobs:
+  alert:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Open or update an issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            const name = run.name;
+            const title = `Data workflow failed: ${name}`;
+            const body = [
+              `**${name}** failed on ${new Date(run.created_at).toUTCString()}.`,
+              ``,
+              `- Run: ${run.html_url}`,
+              `- Branch: \`${run.head_branch}\``,
+              `- Commit: \`${(run.head_sha || '').slice(0, 7)}\``,
+              `- Event: ${run.event}`,
+              ``,
+              `Open the run log, find the failing step, fix it, then close this issue.`,
+              `The data on the site is unchanged until this workflow succeeds again — a failed`,
+              `build does not publish anything, so the previous data is still live.`,
+            ].join('\n');
+
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'data-pipeline', per_page: 100,
+            });
+            const hit = existing.data.find(i => i.title === title);
+
+            if (hit) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: hit.number,
+                body: `Failed again on ${new Date(run.created_at).toUTCString()} — ${run.html_url}`,
+              });
+              core.info(`commented on existing issue #${hit.number}`);
+            } else {
+              const created = await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['data-pipeline'],
+              });
+              core.info(`opened issue #${created.data.number}`);
+            }
