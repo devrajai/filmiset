@@ -858,9 +858,7 @@
 
     <div class="resultbar">
       <h3 id="resTitle">All titles</h3>
-      <div class="count" id="resCount"></div>
     </div>
-    <div class="activechips" id="activeChips"></div>
     <div id="sitGuard"></div>
     <div id="diaryBox"></div>
 
@@ -1861,7 +1859,7 @@ occRow.addEventListener('click',e=>{
 });
 
 const relRow=document.getElementById('relRow');
-[['month','This month'],['latest','Last 2 months'],['lastmonth','Last month'],['year','This year'],['upcoming','Upcoming'],['all','All']].forEach(([k,label])=>{
+[['thisweek','This week'],['lastweek','Last week'],['latest','Last 2 months'],['upcoming','Upcoming'],['all','All']].forEach(([k,label])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.rel===k?' on':''); b.dataset.rel=k; b.textContent=label;
   relRow.appendChild(b);
@@ -3500,7 +3498,7 @@ function runTalk(txt){
     if(box) box.innerHTML=crisisCard();
     const g=document.getElementById('sitGuard'); if(g) g.innerHTML=crisisCard();
     const gr=document.getElementById('grid'); if(gr) gr.innerHTML='';
-    const rc=document.getElementById('resCount'); if(rc) rc.textContent='';
+    /* the count element was removed; the heading carries the count when it matters */
     const rt=document.getElementById('resTitle'); if(rt) rt.textContent='';
     window._crisis=true;
     return;
@@ -4441,11 +4439,14 @@ function render(){
       if(state.rel==='upcoming'){
         if(d.status!=='upcoming') return false;
       } else {
+        /* Days, not calendar months, for the two week windows — "this week" means the last seven
+           days, which straddles a month boundary on the third of any month. */
+        const age = d.date ? Math.floor((Date.now() - new Date(d.date + 'T00:00:00').getTime()) / 86400000) : null;
         const inWindow =
-            state.rel==='latest'    ? (ym===CUR_YM || ym===PREV_YM)
-          : state.rel==='month'     ? (ym===CUR_YM)
-          : state.rel==='lastmonth' ? (ym===PREV_YM)
-          : state.rel==='year'      ? (Number(d.y) >= CUR_YEAR)
+            state.rel==='thisweek' ? (age !== null && age >= 0 && age <= 7)
+          : state.rel==='lastweek' ? (age !== null && age > 7 && age <= 14)
+          : state.rel==='latest'   ? (ym===CUR_YM || ym===PREV_YM)
+          : state.rel==='year'     ? (Number(d.y) >= CUR_YEAR)
           : false;
         if(!inWindow) return false;
       }
@@ -4548,7 +4549,7 @@ function render(){
      rows carry no release date at all. Widening straight to "all" is what filled a "this month" view
      with 2019 titles and 2027 releases. Widen one step at a time, and stay inside released titles. */
   if(!out.length && !state.q && !activeFilters().length && !state._fellBack){
-    const steps = { month: 'latest', latest: 'year' };
+    const steps = { thisweek: 'lastweek', lastweek: 'latest', latest: 'year' };
     const next = steps[state.rel];
     if(next){
       state._fellBack = true;
@@ -4559,7 +4560,7 @@ function render(){
     }
   }
   state._fellBack = false;
-  resCount.textContent = (state.topN ? 'Top '+shown.length : (shown.length<out.length ? shown.length+' of '+out.length : out.length))+' title'+(out.length===1?'':'s');
+  /* no "60 of 109 titles" line — the number told the user nothing they could act on */
   syncUrl();
   updateSavedBtn();
   updateFilterCount();
