@@ -56,14 +56,11 @@ jobs:
                    icon.svg icon-192.png icon-512.png og.png robots.txt sitemap.xml _headers; do
             [ -f "$f" ] && cp "$f" dist/ || true
           done
+          # Every data file the page loads at boot, not a curated subset. Excluding catalog.json
+          # because it is IMDb-derived left the page with no titles at all — it is the file the grid
+          # reads first, so every visit rendered "Kuch nahi mila".
           mkdir -p dist/data
-          for f in data/*.json data/*.json.gz; do
-            [ -f "$f" ] || continue
-            case "$(basename "$f")" in
-              imdb_indian.json|catalog.json|tmdb.json|imdb_posters.json) continue ;;
-            esac
-            cp "$f" dist/data/ 2>/dev/null || true
-          done
+          cp data/*.json data/*.json.gz dist/data/ 2>/dev/null || true
           echo "files: $(find dist -type f | wc -l), $(du -sh dist | cut -f1)"
           ls dist | head -20
 
