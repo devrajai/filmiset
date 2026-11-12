@@ -2931,7 +2931,7 @@ async function loadCalendar(){
 }
 
 function calRow(s){
-  const plat = s.platform ? ' · ' + esc(s.platform) : '';
+  const plat = (s.platform ? ' · ' + esc(s.platform) : '') + (s.approx ? ' · worldwide' : '');
   const d = s.date ? s.date.slice(8,10) + ' ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][parseInt(s.date.slice(5,7),10)-1] : '';
   return '<button class="cal-row" data-cal="' + esc(s.t) + '">'
     + '<span class="cal-d">' + d + '</span>'

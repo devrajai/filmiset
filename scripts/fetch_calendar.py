@@ -92,6 +92,11 @@ def main():
 
             for kind, rtype in KINDS:
                 rows, seen = [], set()
+
+                # First try the precise query: a release of this type in this country. That is the
+                # right answer and it works for the current month, but TMDB only has a per-country
+                # release entry once a distributor has filed one — so for a film opening in
+                # February it usually does not exist yet and the query returns nothing.
                 for page in (1, 2):
                     d = get("/discover/movie", key,
                             region=code, with_release_type=rtype,
@@ -106,7 +111,29 @@ def main():
                         s = shape(r, kind)
                         if s["date"]:
                             rows.append(s)
-                entry[kind] = rows
+
+                # If the precise query found nothing — which is every future month — fall back to the
+                # film's primary release date, which TMDB does know months ahead. The country is then
+                # approximate rather than exact, so the calendar labels those rows as "worldwide".
+                if not rows:
+                    for page in (1, 5):
+                        d = get("/discover/movie", key,
+                                with_release_type=rtype,
+                                sort_by="popularity.desc", page=page,
+                                **{"primary_release_date.gte": first,
+                                   "primary_release_date.lte": last,
+                                   "vote_count.gte": 3})
+                        for r in (d or {}).get("results", []):
+                            if r.get("id") in seen:
+                                continue
+                            seen.add(r.get("id"))
+                            s = shape(r, kind)
+                            if s["date"]:
+                                s["approx"] = True
+                                rows.append(s)
+
+                rows.sort(key=lambda x: (x["date"], -(x.get("v") or 0)))
+                entry[kind] = rows[:60]
 
             # which platform, for India's digital releases — that is the point of the calendar
             if code == "IN" and entry["digital"]:
