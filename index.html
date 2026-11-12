@@ -80,7 +80,12 @@
     background-attachment:fixed;
     min-height:100vh; -webkit-font-smoothing:antialiased;
   }
+  html,body{max-width:100%;overflow-x:hidden}
   .wrap{max-width:1300px;margin:0 auto}
+  /* Grid children default to min-width:auto, so the widest thing inside them — the horizontally
+     scrolling recency strip — stretched the column and pushed the hero, the search bar and the cards
+     past the right edge of a phone. min-width:0 lets them shrink and the strip scrolls in its box. */
+  .layout > *{min-width:0}
   .only-mobile{display:none}
   .navbtn{font-size:12px;padding:7px 11px;white-space:nowrap}
   .rail-head{display:flex;align-items:center;gap:8px;justify-content:space-between;
@@ -628,6 +633,7 @@
   .about p{margin:0;font-size:14px;line-height:1.6;color:var(--ink)}
   .about-src{display:block;margin-top:8px;font-size:11px;color:var(--faint);font-style:normal}
   .relrow{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin-top:-4px;
+    width:100%;max-width:100%;box-sizing:border-box;
     scrollbar-width:none;-ms-overflow-style:none;white-space:nowrap}
   .relrow::-webkit-scrollbar{display:none}
   .relrow .pill{flex:0 0 auto;font-size:13px;padding:8px 14px}
@@ -723,7 +729,11 @@
   }
 
   @media (max-width:900px){
-    .layout{grid-template-columns:1fr;gap:20px;padding-top:16px}
+    .layout{grid-template-columns:1fr;gap:20px;padding-top:16px;
+      padding-left:14px;padding-right:14px;box-sizing:border-box}
+    .hero h2{font-size:clamp(22px,7.2vw,34px);max-width:none;line-height:1.06}
+    .hero p{font-size:14px;max-width:none}
+    .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     .foot{grid-template-columns:1fr}
     .only-mobile{display:inline-flex}
     /* a full-screen sheet: covers the header too, so the search bar is not in the way */
