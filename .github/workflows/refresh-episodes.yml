@@ -19,7 +19,7 @@ on:
   # catalogue from ageing: IMDb adds tens of thousands of titles a year and without this the count
   # would sit at 832,677 forever while the world moved on.
   schedule:
-    - cron: '0 2 * * 1'
+    - cron: '0 4 * * *'
 
 permissions:
   contents: write

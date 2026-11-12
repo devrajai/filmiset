@@ -18,7 +18,7 @@ on:
   # thirty-six minutes a month; with episodes and the fresh shelf that is 120 of the 500 available
   # minutes, which leaves the other repositories untouched.
   schedule:
-    - cron: '45 2 * * 1'
+    - cron: '0 5 * * *'
 
 permissions:
   contents: read

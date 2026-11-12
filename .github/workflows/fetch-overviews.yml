@@ -18,6 +18,8 @@ on:
         description: Parallel requests
         required: false
         default: '16'
+  schedule:
+    - cron: '30 6 * * *'
 
 permissions:
   contents: read
