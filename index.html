@@ -627,6 +627,10 @@
     text-transform:uppercase;color:var(--accent)}
   .about p{margin:0;font-size:14px;line-height:1.6;color:var(--ink)}
   .about-src{display:block;margin-top:8px;font-size:11px;color:var(--faint);font-style:normal}
+  .relrow{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin-top:-4px;
+    scrollbar-width:none;-ms-overflow-style:none;white-space:nowrap}
+  .relrow::-webkit-scrollbar{display:none}
+  .relrow .pill{flex:0 0 auto;font-size:13px;padding:8px 14px}
   .cal-box{max-width:640px}
   .cal-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
   .cal-filter{display:flex;gap:10px;align-items:center;margin:8px 0 12px}
@@ -810,7 +814,6 @@
     <div class="rail-block"><h6>Kya mood hai?</h6><div class="quickpicks" id="moodPicks"></div></div>
     <div class="rail-block"><h6>Trending &amp; reels</h6><div class="quickpicks" id="trendPicks"></div></div>
     <div class="rail-block"><h6>Quick picks</h6><div class="quickpicks" id="quickPicks"></div></div>
-    <div class="rail-block"><h6>Release</h6><div class="chips" id="relRow"></div></div>
     <div class="rail-block"><h6>Life situation</h6><div class="quickpicks" id="sitPicks"></div></div>
     <div class="rail-block"><h6>Genre</h6><div class="chips" id="genreRow"></div></div>
     <div class="rail-block"><h6>Original language</h6><div class="chips" id="olangRow"></div></div>
@@ -859,6 +862,7 @@
     <div class="resultbar">
       <h3 id="resTitle">All titles</h3>
     </div>
+    <div class="relrow" id="relRow"></div>
     <div id="sitGuard"></div>
     <div id="diaryBox"></div>
 
