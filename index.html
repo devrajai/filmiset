@@ -775,6 +775,73 @@
     .wordmark{font-size:18px}
     .layout{padding:12px 16px 50px}
   }
+
+  /* ================= mobile =================
+     Everything here exists because a phone is not a narrow desktop. Three things matter that the
+     older rules did not handle: the notch and the home bar eat into the viewport, so content needs
+     safe-area padding or it hides under them; a flex row that fits on a laptop does not fit at 360px,
+     so the vibe card wraps instead of pushing its button off-screen; and a modal centred in a 900px
+     window is fine while a modal centred on a 390px phone wastes the screen, so it becomes a sheet
+     that rises from the bottom. */
+  @media (max-width:900px){
+    html{ -webkit-text-size-adjust:100% }
+
+    /* the notch and the home bar */
+    body{ padding-bottom:env(safe-area-inset-bottom) }
+    .topbar-in{
+      padding-left:max(14px, env(safe-area-inset-left));
+      padding-right:max(14px, env(safe-area-inset-right));
+    }
+    .layout{
+      padding-left:max(14px, env(safe-area-inset-left));
+      padding-right:max(14px, env(safe-area-inset-right));
+      padding-bottom:calc(56px + env(safe-area-inset-bottom));
+    }
+    .rail{ padding-left:max(16px, env(safe-area-inset-left));
+           padding-right:max(16px, env(safe-area-inset-right));
+           padding-bottom:calc(40px + env(safe-area-inset-bottom)) }
+
+    /* nothing may be wider than its box */
+    .vibe{ flex-wrap:wrap; gap:10px; padding:11px }
+    .vibe img{ width:46px; height:68px }
+    .vibe .vt{ flex:1 1 130px; min-width:0 }
+    .vibe .vt b{ font-size:15.5px; line-height:1.22; overflow-wrap:anywhere }
+    .vibe .vt p{ font-size:12px; line-height:1.4; overflow-wrap:anywhere }
+    .vibe > .hbtn, .vibe > button{ margin-left:auto; flex:0 0 auto }
+
+    /* the availability button said "Available on Netflix" inside a 170px card and wrapped mid-word */
+    .watch{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:11.5px; padding:8px 10px }
+    .watch.avail::before{ content:'' }
+    .cardacts .mini{ font-size:11.5px; padding:8px 6px }
+    .card, .card *{ overflow-wrap:anywhere }
+
+    /* the detail view becomes a sheet that rises from the bottom */
+    .modal{ padding:0; align-items:end }
+    .modal .box{
+      max-width:none; width:100%; max-height:92vh;
+      border-radius:20px 20px 0 0; border-bottom:0;
+      padding:16px 16px calc(26px + env(safe-area-inset-bottom));
+    }
+    .modal .box > img{ max-height:38vh }
+    .modal h3{ font-size:21px; line-height:1.2 }
+
+    /* fingers are not cursors */
+    .pill{ min-height:38px; display:inline-flex; align-items:center }
+    .hbtn{ min-height:38px; display:inline-flex; align-items:center }
+    .railclose{ width:42px; height:42px }
+    #q{ font-size:16px }   /* below 16px iOS zooms the page on focus */
+  }
+  @media (max-width:400px){
+    .grid{ gap:9px }
+    .hero h2{ font-size:20.5px; line-height:1.08 }
+    .hero{ padding-top:6px }
+    .topbar-in{ padding-top:8px; padding-bottom:8px; gap:7px }
+    .wordmark{ font-size:16.5px }
+    .logo{ width:30px; height:30px; font-size:16px }
+    .hbtn{ padding:6px 10px; font-size:11.5px }
+    .relrow .pill{ font-size:12.5px; padding:7px 12px }
+    .modal .box{ padding:14px 13px calc(24px + env(safe-area-inset-bottom)) }
+  }
 </style>
 </head>
 <body>
