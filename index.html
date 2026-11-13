@@ -1940,7 +1940,7 @@ occRow.addEventListener('click',e=>{
 });
 
 const relRow=document.getElementById('relRow');
-[['thisweek','This week'],['lastweek','Last week'],['latest','Last 2 months'],['upcoming','Upcoming'],['all','All']].forEach(([k,label])=>{
+[['thisweek','This week'],['lastweek','Last week'],['lastmonth','Last month'],['latest','Last 2 months'],['upcoming','Upcoming'],['all','All']].forEach(([k,label])=>{
   const b=document.createElement('button');
   b.className='pill'+(state.rel===k?' on':''); b.dataset.rel=k; b.textContent=label;
   relRow.appendChild(b);
@@ -4549,6 +4549,7 @@ function render(){
         const inWindow =
             state.rel==='thisweek' ? (age !== null && age >= 0 && age <= 7)
           : state.rel==='lastweek' ? (age !== null && age > 7 && age <= 14)
+          : state.rel==='lastmonth' ? (ym===PREV_YM)
           : state.rel==='latest'   ? (ym===CUR_YM || ym===PREV_YM)
           : state.rel==='year'     ? (Number(d.y) >= CUR_YEAR)
           : false;
