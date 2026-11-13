@@ -25,6 +25,13 @@ on:
       - 'data/*.json'
       - 'data/*.json.gz'
 
+  # Daily at 11:00 IST, after the fresh pull at 08:00 and the calendar at 08:50. The push
+  # trigger below does not fire when refresh-fresh commits fresh.json.gz, because a push made
+  # with the default GITHUB_TOKEN never triggers another workflow — so the repository had
+  # today's data and the site kept serving yesterday's. This schedule is what closes that gap.
+  schedule:
+    - cron: '30 5 * * *'
+
 permissions:
   contents: read
 
