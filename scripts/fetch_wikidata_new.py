@@ -64,13 +64,16 @@ def main():
     since = (datetime.date.today() - datetime.timedelta(days=a.days)).isoformat()
     print(f"asking Wikidata for Indian releases since {since}…")
 
-    query = f"""
-SELECT ?item ?itemLabel ?date ?imdb ?langLabel ?typeLabel ?sitelinks WHERE {{
-  VALUES ?type {{ {TYPES} }}
+    # Two lighter queries instead of one UNION. Country of origin (P495) and country (P17) are both
+    # used for Indian items depending on who created the entry, but asking for both in one query with
+    # eight item types pushed past Wikidata's sixty-second limit and came back 504. Each of these runs
+    # in a few seconds, and if one fails the other still returns titles.
+    base_types = "wd:Q11424 wd:Q5398426 wd:Q1259759 wd:Q63952888 wd:Q202866 wd:Q24856 wd:Q506240 wd:Q1261214"
+    variants = [
+        ("P495", f"""SELECT ?item ?itemLabel ?date ?imdb ?langLabel ?typeLabel ?sitelinks WHERE {{
+  VALUES ?type {{ {base_types} }}
   ?item wdt:P31 ?type .
-  # Country of origin is P495 and country is P17; Indian items use one or the other depending on
-  # who created the entry, and requiring P495 alone returned only forty-three titles for four months.
-  {{ ?item wdt:P495 {INDIA} }} UNION {{ ?item wdt:P17 {INDIA} }}
+  ?item wdt:P495 {INDIA} .
   ?item wdt:P577 ?date .
   FILTER(?date >= "{since}T00:00:00Z"^^xsd:dateTime)
   OPTIONAL {{ ?item wdt:P345 ?imdb . }}
@@ -78,15 +81,33 @@ SELECT ?item ?itemLabel ?date ?imdb ?langLabel ?typeLabel ?sitelinks WHERE {{
   OPTIONAL {{ ?item wikibase:sitelinks ?sitelinks . }}
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,hi,ta,te,ml,kn,bn,mr,gu,pa". }}
 }}
-LIMIT 2000
-"""
+LIMIT 1500"""),
+        ("P17", f"""SELECT ?item ?itemLabel ?date ?imdb ?langLabel ?typeLabel ?sitelinks WHERE {{
+  VALUES ?type {{ {base_types} }}
+  ?item wdt:P31 ?type .
+  ?item wdt:P17 {INDIA} .
+  ?item wdt:P577 ?date .
+  FILTER(?date >= "{since}T00:00:00Z"^^xsd:dateTime)
+  OPTIONAL {{ ?item wdt:P345 ?imdb . }}
+  OPTIONAL {{ ?item wdt:P364 ?lang . }}
+  OPTIONAL {{ ?item wikibase:sitelinks ?sitelinks . }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,hi,ta,te,ml,kn,bn,mr,gu,pa". }}
+}}
+LIMIT 1500"""),
+    ]
 
-    d = sparql(query)
-    if not d:
-        print("no data"); sys.exit(1)
+    rows = []
+    for label, q in variants:
+        print(f"  query {label}…")
+        d = sparql(q)
+        got = ((d or {}).get("results") or {}).get("bindings") or []
+        print(f"    {len(got)} rows")
+        rows.extend(got)
+        time.sleep(8)   # be kind to a free service shared by everyone
 
-    rows = (d.get("results") or {}).get("bindings") or []
-    print(f"  {len(rows)} rows")
+    if not rows:
+        print("no data from either query"); sys.exit(1)
+    print(f"  {len(rows)} rows total")
 
     seen, out = set(), []
     for r in rows:
