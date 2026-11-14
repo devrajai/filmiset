@@ -30,7 +30,7 @@ on:
   # with the default GITHUB_TOKEN never triggers another workflow — so the repository had
   # today's data and the site kept serving yesterday's. This schedule is what closes that gap.
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '0 7 * * *'
 
 permissions:
   contents: read

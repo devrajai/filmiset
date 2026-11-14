@@ -14,6 +14,14 @@ on:
         required: false
         default: '0'
 
+  # Daily, 07:00 IST, first in the chain — the other workflows read the catalogue this
+  # produces. IMDb's bulk files are updated every day and include Indian web series that
+  # TMDB does not carry, so this is what puts a JioHotstar or ZEE5 show into search within
+  # a day of it being listed. Twenty minutes a run, which costs nothing now that the
+  # repository is public.
+  schedule:
+    - cron: '30 1 * * *'
+
 permissions:
   contents: read
 
