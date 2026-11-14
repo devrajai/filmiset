@@ -21,7 +21,8 @@ ENDPOINT = "https://query.wikidata.org/sparql"
 UA = "FilmiSet/1.0 (https://filmiset.pages.dev; catalogue refresh) python-urllib"
 
 # Q11424 film, Q5398426 television series, Q1259759 miniseries, Q63952888 animated series
-TYPES = "wd:Q11424 wd:Q5398426 wd:Q1259759 wd:Q63952888"
+TYPES = ("wd:Q11424 wd:Q5398426 wd:Q1259759 wd:Q63952888 "
+         "wd:Q202866 wd:Q24856 wd:Q506240 wd:Q1261214")
 INDIA = "wd:Q668"
 
 
@@ -54,7 +55,9 @@ def main():
 SELECT ?item ?itemLabel ?date ?imdb ?langLabel ?typeLabel ?sitelinks WHERE {{
   VALUES ?type {{ {TYPES} }}
   ?item wdt:P31 ?type .
-  ?item wdt:P495 {INDIA} .
+  # Country of origin is P495 and country is P17; Indian items use one or the other depending on
+  # who created the entry, and requiring P495 alone returned only forty-three titles for four months.
+  {{ ?item wdt:P495 {INDIA} }} UNION {{ ?item wdt:P17 {INDIA} }}
   ?item wdt:P577 ?date .
   FILTER(?date >= "{since}T00:00:00Z"^^xsd:dateTime)
   OPTIONAL {{ ?item wdt:P345 ?imdb . }}
