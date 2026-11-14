@@ -15,7 +15,7 @@ Wikidata is CC0 and needs no key. It does require a User-Agent that identifies t
 
     python3 fetch_wikidata_new.py --out data/wd_new.json.gz --days 120
 """
-import argparse, datetime, gzip, json, os, sys, time, urllib.parse, urllib.request
+import argparse, datetime, gzip, json, os, sys, time, urllib.error, urllib.parse, urllib.request
 
 ENDPOINT = "https://query.wikidata.org/sparql"
 UA = "FilmiSet/1.0 (https://filmiset.pages.dev; catalogue refresh) python-urllib"
@@ -30,15 +30,28 @@ def sparql(query):
     url = ENDPOINT + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
     req = urllib.request.Request(url, headers={
         "User-Agent": UA, "Accept": "application/sparql-results+json"})
-    for attempt in range(3):
+    # Wikidata rate-limits the query service and answers 429 when it has had enough. Running the job
+    # twice within a minute is enough to trigger it, so a 429 is waited out rather than treated as a
+    # failure — a minute or two of sleep is far cheaper than a red run.
+    for attempt in range(5):
         try:
-            with urllib.request.urlopen(req, timeout=90) as r:
+            with urllib.request.urlopen(req, timeout=120) as r:
                 return json.loads(r.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                wait = 60 * (attempt + 1)
+                print(f"  rate limited, waiting {wait}s…")
+                time.sleep(wait)
+                continue
+            if attempt == 4:
+                print(f"  query failed: HTTP {e.code}")
+                return None
+            time.sleep(5 * (attempt + 1))
         except Exception as e:
-            if attempt == 2:
+            if attempt == 4:
                 print(f"  query failed: {str(e)[:140]}")
                 return None
-            time.sleep(3 * (attempt + 1))
+            time.sleep(5 * (attempt + 1))
     return None
 
 
