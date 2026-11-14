@@ -82,8 +82,9 @@ def main():
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,hi,ta,te,ml,kn,bn,mr,gu,pa". }}
 }}
 LIMIT 1500"""),
+        # the P17 variant carries only the two commonest types: eight was enough to time out
         ("P17", f"""SELECT ?item ?itemLabel ?date ?imdb ?langLabel ?typeLabel ?sitelinks WHERE {{
-  VALUES ?type {{ {base_types} }}
+  VALUES ?type {{ wd:Q11424 wd:Q5398426 }}
   ?item wdt:P31 ?type .
   ?item wdt:P17 {INDIA} .
   ?item wdt:P577 ?date .
