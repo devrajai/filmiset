@@ -2665,6 +2665,75 @@ async function overviewFor(id){
 /* A fresh row used to carry cat:'fresh', which the badge code did not know, so every card fell back
    to Hollywood — Ramayana Part One showed as Hollywood. The language TMDB returns is a better label
    than a placeholder, and it is what the category pills already mean. */
+/* ---- new Indian titles from Wikidata ----
+   TMDB's Indian television coverage is thin and IMDb can take days to index a brand-new Indian
+   series, so a show that started on JioHotstar this morning can be missing from both. Wikidata is
+   faster: a Wikipedia page appears within a day or two of a notable release and every such page
+   carries the IMDb id in P345. These rows are merged into DATA with the Indian tag, so they appear
+   in the feed and in search even when the catalogue has not caught up yet. Anything already present,
+   matched on the IMDb id or the normalised title, is skipped. */
+let WD_LOADED = false;
+
+async function loadWikidata(){
+  if(WD_LOADED) return 0;
+  WD_LOADED = true;
+  try{
+    const r = await fetch('data/wd_new.json.gz');
+    if(!r.ok) return 0;
+    const d = JSON.parse(await _gzText(new Uint8Array(await r.arrayBuffer())));
+    const items = (d && d.items) || [];
+    if(!items.length) return 0;
+
+    const haveId = new Set(), haveTitle = new Set();
+    for(const x of (DATA || [])){
+      if(x.id) haveId.add(String(x.id).replace(/^tt0*/, ''));
+      haveTitle.add(ixNorm(x.t));
+    }
+
+    const today = new Date().toISOString().slice(0, 10);
+    let added = 0;
+    for(const it of items){
+      if(!it.t) continue;
+      const key = it.imdb ? String(it.imdb).replace(/^tt0*/, '') : '';
+      if(key && haveId.has(key)) continue;
+      if(haveTitle.has(ixNorm(it.t))) continue;
+      haveTitle.add(ixNorm(it.t));
+
+      DATA.push({
+        t: it.t, y: it.y || '', date: it.date || '',
+        ov: '', r: 0, rtg: '', vot: '', ivot: 0,
+        poster: '', type: it.kind || 'Movie',
+        cat: catOfLang2(it.lang), g: [], m: [], a: [],
+        o: [], lang: '', id: it.imdb || ('wd' + (it.wd || '')),
+        src: 'wikidata',
+        status: (it.date && it.date > today) ? 'upcoming' : 'released',
+        fresh: 'indian'
+      });
+      added++;
+    }
+    return added;
+  }catch(e){ return 0; }
+}
+
+/* Wikidata gives a language name, not a code — "Hindi", "Tamil" — so map by name */
+function catOfLang2(name){
+  const n = String(name || '').toLowerCase();
+  if(!n) return 'hindi';
+  if(n.includes('hindi')) return 'hindi';
+  if(n.includes('tamil')) return 'tamil';
+  if(n.includes('telugu')) return 'telugu';
+  if(n.includes('malayalam')) return 'malayalam';
+  if(n.includes('kannada')) return 'kannada';
+  if(n.includes('bengali')) return 'bengali';
+  if(n.includes('marathi')) return 'marathi';
+  if(n.includes('punjabi')) return 'punjabi';
+  if(n.includes('gujarati')) return 'gujarati-movie';
+  if(n.includes('odia') || n.includes('oriya')) return 'odia';
+  if(n.includes('assamese')) return 'assamese';
+  if(n.includes('urdu')) return 'hindi';
+  return 'regional';
+}
+
 function catOfLang(code){
   const c = String(code || '').toLowerCase();
   if(!c) return 'fresh';
@@ -4887,7 +4956,12 @@ function loadPopular(){
      without this a film that came out yesterday could not be found by name until Monday. Merging it
      here puts the week's new releases into DATA, which means search, the filters and the cards all
      see them immediately. */
-  if(typeof loadFresh === 'function') loadFresh().then(function(){ if(DATA && DATA.length) render(); }).catch(function(){});
+  if(typeof loadFresh === 'function') loadFresh().then(function(){
+    if(typeof loadWikidata === 'function'){
+      loadWikidata().then(function(n){ if(n){ render(); } else if(DATA && DATA.length){ render(); } })
+                    .catch(function(){ if(DATA && DATA.length) render(); });
+    } else if(DATA && DATA.length){ render(); }
+  }).catch(function(){});
   setTimeout(function(){ if(typeof fillPostersFromBuckets === 'function') fillPostersFromBuckets(); }, 1200);
   Promise.all(SHEET_SHARDS.map(s => gviz(s, 'select A,B,C,E,G,H order by H desc limit 200')))
     .then(lists => {

@@ -1,0 +1,50 @@
+name: Fetch new Indian titles from Wikidata
+
+# TMDB's Indian television coverage is thin and IMDb can take days to index a brand-new Indian
+# series. Wikidata is faster for exactly this: a Wikipedia page appears within a day or two of a
+# notable release, and every such page is a Wikidata item carrying the IMDb id in P345. This asks for
+# Indian films and series published in the last four months, so the site can show them even before
+# the other two sources catch up. CC0, no key.
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: How far back to look
+        required: false
+        default: '120'
+  schedule:
+    - cron: '50 2 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  wikidata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Ask Wikidata
+        run: |
+          mkdir -p data
+          python3 scripts/fetch_wikidata_new.py --out data/wd_new.json.gz --days "${{ github.event.inputs.days || '120' }}"
+
+      - name: What came out
+        run: ls -lh data/wd_new.json.gz
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/wd_new.json.gz
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "Refresh new Indian titles from Wikidata"
+            git pull --rebase origin main || true
+            git push
+          fi
