@@ -1470,7 +1470,7 @@ const DEMO = [
   {t:'Money Heist: Korea',y:2022,cat:'korean-dubbed',type:'Series',g:['Crime','Thriller'],m:['Thriller','Action'],a:['Hindi (dub)','Korean'],o:['Netflix'],poster:'posters/money-heist-korea-joint-economic-area.jpg'},
 ];
 
-const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'latest', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, hitflop:'all', fresh:'all', genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
+const state = {cat:new Set(), moods:new Set(), type:new Set(), era:'all', occasion:'all', rel:'thisweek', dub:false, src:'all', ott:new Set(), coll:'all', fr:'all', sort:'new', rt:'all', gems:false, minRating:0, only:null, topN:0, gemsMode:false, vibe:null, hitflop:'all', fresh:'all', genres:new Set(), olang:new Set(), cert:new Set(), freeOnly:false, subsOnly:false, situation:null, safe:false, company:'all', hideWatched:true, gq:'', savedOnly:false, q:''};
 const FAMILY_CERTS = ['U','UA','U/A','U/A 7+','U/A 13+','G','PG','PG-13','TV-PG','TV-G','TV-Y7'];
 const CUR_YEAR = new Date().getFullYear();
 const _now = new Date();
@@ -1478,7 +1478,8 @@ const _ym = (y,m)=> y+'-'+String(m+1).padStart(2,'0');
 const CUR_YM = _ym(_now.getFullYear(), _now.getMonth());
 const _prevM = new Date(_now.getFullYear(), _now.getMonth()-1, 1);
 const PREV_YM = _ym(_prevM.getFullYear(), _prevM.getMonth());
-const REL_LABEL = {latest:'Last 2 months', month:'This month', lastmonth:'Last month', year:'This year', upcoming:'Upcoming'};
+const REL_LABEL = {thisweek:'This week', lastweek:'Last week', lastmonth:'Last month',
+                   latest:'Last 2 months', month:'This month', year:'This year', upcoming:'Upcoming'};
 const PAGE = 60;                 // render this many cards at a time (fast on mobile)
 let shownLimit = PAGE, lastKey = '';
 
@@ -2060,6 +2061,12 @@ const QUICK = [
   {id:'top',     label:'\u{1F525} Most popular',   apply:s=>{ s.rel='all'; s.sort='pop'; }},
   {id:'acclaim', label:'\u{1F3C6} 8+ rated',       apply:s=>{ s.minRating=8; s.rel='all'; }},
   {id:'hindi',   label:'\u{1F3AC} Hindi films',    apply:s=>{ s.cat=new Set(['hindi']); s.type=new Set(['Movie']); s.rel='all'; }},
+  /* Gujarati, split by time — the same three questions anyone asks about a regional film: what came
+     out this week, what is coming, and what exists already. A single "Gujarati" chip answered only
+     the third, and left the first two buried behind the recency pills. */
+  {id:'guj_now', label:'\u{1F3AC} Gujarati \u2014 this week',  apply:s=>{ s.cat=new Set(['gujarati-movie','gujarati-natak']); s.rel='thisweek'; s.sort='new'; }},
+  {id:'guj_up',  label:'\u{1F3AC} Gujarati \u2014 upcoming',   apply:s=>{ s.cat=new Set(['gujarati-movie','gujarati-natak']); s.rel='upcoming'; s.sort='new'; }},
+  {id:'guj_all', label:'\u{1F3AC} Gujarati \u2014 all films',  apply:s=>{ s.cat=new Set(['gujarati-movie','gujarati-natak']); s.rel='all'; s.sort='new'; }},
   {id:'series',  label:'\u{1F4FA} Web series',     apply:s=>{ s.type=new Set(['Series']); s.rel='all'; }},
   {id:'short',   label:'\u{1F39E}\uFE0F Short films',    apply:s=>{ s.type=new Set(['Short']); s.rel='all'; }},
   {id:'regional',label:'\u{1F30F} Regional',       apply:s=>{ s.cat=new Set(REGIONAL_CATS); s.rel='all'; }},
@@ -2735,8 +2742,19 @@ function catOfLang2(name){
 }
 
 function catOfLang(code){
-  const c = String(code || '').toLowerCase();
+  const c = String(code || '').toLowerCase().trim();
   if(!c) return 'fresh';
+  /* Accept both a two-letter code and the English language name. langOf() returns the label —
+     "Gujarati", "Hindi" — while TMDB and the language map return a code, and this only understood
+     codes, so every category filter built on a language silently matched nothing. */
+  const BY_NAME = {
+    'english':'english-dubbed', 'hindi':'hindi', 'tamil':'tamil', 'telugu':'telugu',
+    'malayalam':'malayalam', 'kannada':'kannada', 'bengali':'bengali', 'marathi':'marathi',
+    'punjabi':'punjabi', 'gujarati':'gujarati-movie', 'odia':'odia', 'oriya':'odia',
+    'assamese':'assamese', 'bhojpuri':'bhojpuri', 'urdu':'hindi',
+    'korean':'korean-dubbed', 'japanese':'anime', 'chinese':'anime'
+  };
+  if(BY_NAME[c]) return BY_NAME[c];
   if(c === 'en') return 'english-dubbed';
   if(c === 'hi') return 'hindi';
   if(c === 'ta') return 'tamil';
@@ -3421,7 +3439,7 @@ function clearAllFilters(){
   state.minRating=0; state.only=null; state.topN=0; state.gemsMode=false; state.vibe=null; state.genres=new Set(); state.olang=new Set(); state.cert=new Set(); state.freeOnly=false; state.subsOnly=false; state.situation=null; state.situationKey=null;
   setPillRow('catRow','cat','all'); setPillRow('typeRow','type','all');
   setPillRow('eraRow','era','all'); setPillRow('occRow','occ','all');
-  setPillRow('relRow','rel','latest'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
+  setPillRow('relRow','rel','thisweek'); setPillRow('audRow','aud','all'); setPillRow('srcRow','src','all');
   setPillRow('ottRow','ott','all'); setPillRow('collRow','coll','all');
   setPillRow('frRow','fr','all'); setPillRow('sortRow','sort','new');
   setPillRow('compRow','comp','all'); setPillRow('rtRow','rt','all');
@@ -4550,7 +4568,12 @@ function queuePosterFill(){
 function render(){
   const out=DATA.filter(d=>{
     if(d.src==='youtube') return false;            // YouTube is a knowledge source only, never in the feed
-    if(state.cat.size && ![...state.cat].some(c=>d.cat===c || (d.cats||[]).includes(c))) return false;
+    /* Match on the language too. The 832,000 catalogue rows carry no cat at all — only the curated
+       rows and the daily fresh rows do — so a category filter could never reach the catalogue. Asking
+       for Gujarati returned a dozen hand-picked films while the catalogue held thousands, because
+       nothing connected the two. catOfLang(langOf(d)) is that connection, and it fixes Hindi, Tamil,
+       Telugu and the rest at the same time. */
+    if(state.cat.size && ![...state.cat].some(c=>d.cat===c || (d.cats||[]).includes(c) || catOfLang(langOf(d))===c)) return false;
     if(state.type.size && !state.type.has(d.type)) return false;
     if(state.minRating && Number(d.irt||d.rtg||0) < state.minRating) return false;
     if(state.only && !state.only.has(String(d.t||'').toLowerCase())) return false;
