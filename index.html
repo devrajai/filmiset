@@ -810,7 +810,8 @@
     .vibe > .hbtn, .vibe > button{ margin-left:auto; flex:0 0 auto }
 
     /* the availability button said "Available on Netflix" inside a 170px card and wrapped mid-word */
-    .watch{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:11.5px; padding:8px 10px }
+    .watch{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      font-size:11.5px; padding:8px 8px; max-width:100%; box-sizing:border-box; display:block }
     .watch.avail::before{ content:'' }
     .cardacts .mini{ font-size:11.5px; padding:8px 6px }
     .card, .card *{ overflow-wrap:anywhere }
@@ -4787,7 +4788,11 @@ function render(){
   grid.innerHTML = shown.map((d,i)=>{
     // never assume a row has a known category, an audio list or a mood list — one bad row
     // used to take the whole grid down
-    const c = CATS[d.cat] || {label:d.cat||'Other', color:'#6b6255'};
+    /* Most catalogue rows carry no cat — only curated and fresh rows do — so every one of the
+       832,000 IMDb titles was badged "Other". The language is right there, and it is what the
+       category pills already mean, so it is the better fallback than a placeholder. */
+    const catKey = (d.cat && CATS[d.cat]) ? d.cat : (catOfLang(langOf(d)) || d.cat);
+    const c = CATS[catKey] || {label:d.cat||'Other', color:'#6b6255'};
     const isUp = d.status==='upcoming';
     const isYT = d.src==='youtube';
     const grad='linear-gradient(150deg,'+c.color+' 0%, color-mix(in srgb,'+c.color+' 45%, #120c07) 100%)';
