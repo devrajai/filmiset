@@ -63,10 +63,14 @@ jobs:
           bad = []
           for f in glob.glob(".github/workflows/*.yml"):
               t = open(f, encoding="utf-8").read()
-              head = t.split("jobs:", 1)[0]
+              # Only the on: block defines triggers. Matching the whole header also caught
+              # "issues: write" inside a permissions block, which is not a trigger at all and
+              # failed the alert workflow for a permission it legitimately needs.
+              m = re.search(r"^on:\s*$(.*?)(?=^\S)", t, re.M | re.S)
+              on_block = m.group(1) if m else ""
               for trig in ("issues:", "issue_comment:", "pull_request_target:"):
-                  if re.search(r"^\s*" + re.escape(trig), head, re.M):
-                      bad.append(f"{f}: uses {trig} — anyone could trigger it in a public repo")
+                  if re.search(r"^\s{2}" + re.escape(trig), on_block, re.M):
+                      bad.append(f"{f}: uses {trig} as a trigger — anyone could fire it in a public repo")
               for line in t.splitlines():
                   if not re.search(r"secrets\.[A-Za-z0-9_]", line):
                       continue          # only a real secrets.NAME reference counts
