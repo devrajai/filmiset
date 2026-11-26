@@ -3057,6 +3057,32 @@ async function loadFresh(){
     return 'released';
   };
 
+  /* A catalogue row and a fresh row are usually the same film, and the catalogue row has no release
+     date at all — only the fresh one does. Dropping the fresh row as a duplicate therefore threw away
+     the only date we had, and the title could never appear in This week: Dhindora is in the IMDb
+     catalogue from 2021 and its second season arrived on 20 November 2026, so the season was discarded
+     and the 2021 row sat dateless. The catalogue row is still the better record for rating and votes,
+     so the fresh row is merged into it rather than replacing it. */
+  const byTitle = new Map();
+  for(const d of (DATA || [])) byTitle.set(ixNorm(d.t), d);
+
+  const enrich = function(existing, d, platform){
+    if(!existing.date && d.date) existing.date = d.date;
+    if(!existing.y && d.y) existing.y = d.y;
+    if(!existing.poster && d.poster) existing.poster = d.poster;
+    if(!existing.ov && d.ov) existing.ov = d.ov;
+    if(!existing.lang && d.lang) existing.lang = d.lang;
+    if(!existing.tmdb && d.tmdb) existing.tmdb = d.tmdb;
+    if(platform){
+      existing.o = existing.o || [];
+      if(existing.o.indexOf(platform) < 0) existing.o.push(platform);
+    }
+    if(d.date){
+      const t = new Date().toISOString().slice(0,10);
+      existing.status = d.date > t ? 'upcoming' : 'released';
+    }
+  };
+
   const add = function(list, tag, platform){
     for(const d of (list || [])){
       if(!d || !d.t) continue;
@@ -3064,6 +3090,8 @@ async function loadFresh(){
         if(seenIds.has(d.tmdb)) continue;
         seenIds.add(d.tmdb);
       }
+      const existing = byTitle.get(ixNorm(d.t));
+      if(existing && tag !== 'upcoming'){ enrich(existing, d, platform); continue; }
       if(tag !== 'upcoming' && dup(d.t)) continue;   // keep upcoming even if a similar title exists
       DATA.push({
         t: d.t, y: d.y || '', date: d.date || '', ov: d.ov || '',
