@@ -17,6 +17,14 @@ on:
   schedule:
     - cron: '30 2 * * *'
 
+  # Also run when the script or this workflow changes, so a fix to the fetch can be seen
+  # the same day instead of waiting for the next morning.
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fetch_fresh.py'
+      - '.github/workflows/refresh-fresh.yml'
+
 permissions:
   contents: write
 
