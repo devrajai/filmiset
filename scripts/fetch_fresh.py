@@ -49,6 +49,34 @@ def get(path, key, **params):
     return None
 
 
+
+def tv_true_date(r, key):
+    """The date a show actually last aired. discover/tv does not return last_air_date, so a returning
+    series comes back stamped with the year it began — Dhindora as 2021 although season two arrived in
+    November 2026. One detail call per candidate fixes that; it is a few dozen calls a day."""
+    if not r.get("tmdb"):
+        return ""
+    det = get(f"/tv/{r['tmdb']}", key)
+    if not det:
+        return ""
+    return det.get("last_air_date") or ""
+
+
+def keep_in_window(rows, key, since, until, cap=12):
+    """Drop shows whose latest episode is not inside the window, and stamp the ones that are with the
+    date they aired. Without this the list filled with decades-old serials that happen to be running."""
+    out = []
+    for r in rows:
+        if len(out) >= cap:
+            break
+        real = tv_true_date(r, key)
+        if real and since <= real <= until:
+            r["date"] = real
+            r["y"] = int(real[:4]) if real[:4].isdigit() else r.get("y")
+            out.append(r)
+    return out
+
+
 def shape(r, kind, provider=None):
     title = r.get("title") or r.get("name") or ""
     # for a show, the date that matters is the latest episode — first_air_date puts a 2021 series
@@ -169,7 +197,8 @@ def main():
                     keep.append(r)
             return keep
 
-        films, shows = dedupe(films)[:30], in_window(dedupe(shows))[:30]
+        films = dedupe(films)[:30]
+        shows = keep_in_window(dedupe(shows), key, since, until, cap=12)
         if films:
             out["ott"][name] = films
         if shows:
@@ -195,7 +224,10 @@ def main():
                 sort_by="popularity.desc",
                 **{"air_date.gte": since, "air_date.lte": until})
         if dt and dt.get("results"):
-            rows = dedupe(rows + [shape(r, "tv") for r in dt["results"]])[:30]
+            shows = keep_in_window(dedupe([shape(r, "tv") for r in dt["results"]]),
+                                   key, since, until, cap=10)
+            rows = dedupe(rows + shows)[:30]
+            rows.sort(key=lambda x: x.get("date") or "9999")
         if rows:
             out["bylang"][label] = rows
         print(f"  {label:12s} {len(rows):>2}")
