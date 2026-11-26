@@ -21,8 +21,8 @@ problems, notes = [], []
 
 
 def age_hours(path):
-    ts = datetime.datetime.utcfromtimestamp(os.path.getmtime(path))
-    return (datetime.datetime.utcnow() - ts).total_seconds() / 3600
+    ts = datetime.datetime.fromtimestamp(os.path.getmtime(path), datetime.timezone.utc)
+    return (datetime.datetime.now(datetime.timezone.utc) - ts).total_seconds() / 3600
 
 
 for path, label in CHECKS:
