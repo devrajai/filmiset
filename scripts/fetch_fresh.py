@@ -50,16 +50,24 @@ def get(path, key, **params):
 
 
 
-def tv_true_date(r, key):
-    """The date a show actually last aired. discover/tv does not return last_air_date, so a returning
-    series comes back stamped with the year it began — Dhindora as 2021 although season two arrived in
-    November 2026. One detail call per candidate fixes that; it is a few dozen calls a day."""
+def tv_new_season(r, key):
+    """The air date of a show's newest season, or "" if it has not started one recently.
+
+    Two things had to be told apart. last_air_date is the date of the most recent *episode*, so a
+    weekly serial that has run for twenty years always looks fresh — Law & Order: SVU, Raw, Sesame
+    Street all came back dated this week. What makes a show a new release is a new *season*, so this
+    looks at the seasons array and returns the start date of the latest one. Dhindora's second season
+    began on 20 November 2026 and counts; SVU's current season began in September and does not."""
     if not r.get("tmdb"):
         return ""
     det = get(f"/tv/{r['tmdb']}", key)
     if not det:
         return ""
-    return det.get("last_air_date") or ""
+    seasons = [s for s in (det.get("seasons") or []) if (s.get("season_number") or 0) >= 1]
+    if not seasons:
+        return ""
+    latest = max(seasons, key=lambda s: s.get("season_number") or 0)
+    return latest.get("air_date") or ""
 
 
 def keep_in_window(rows, key, since, until, cap=12):
@@ -69,7 +77,7 @@ def keep_in_window(rows, key, since, until, cap=12):
     for r in rows:
         if len(out) >= cap:
             break
-        real = tv_true_date(r, key)
+        real = tv_new_season(r, key)
         if real and since <= real <= until:
             r["date"] = real
             r["y"] = int(real[:4]) if real[:4].isdigit() else r.get("y")
