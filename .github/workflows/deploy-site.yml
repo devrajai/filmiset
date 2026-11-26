@@ -32,6 +32,17 @@ on:
   schedule:
     - cron: '0 7 * * *'
 
+  # Publish as soon as the data workflows finish. The push trigger below never fires for
+  # them — a push made with the default GITHUB_TOKEN does not start another workflow — so a
+  # fresh.json.gz built at two in the afternoon sat unpublished until the next morning's
+  # schedule. workflow_run has no such restriction.
+  workflow_run:
+    workflows:
+      - "Refresh what is new"
+      - "Fetch new Indian titles from Wikidata"
+      - "Fetch release calendar"
+    types: [completed]
+
 permissions:
   contents: read
 
