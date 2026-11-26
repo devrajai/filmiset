@@ -51,7 +51,10 @@ def get(path, key, **params):
 
 def shape(r, kind, provider=None):
     title = r.get("title") or r.get("name") or ""
-    date = r.get("release_date") or r.get("first_air_date") or ""
+    # for a show, the date that matters is the latest episode — first_air_date puts a 2021 series
+    # that returned last week into 2021, where no recency window will ever find it
+    date = (r.get("release_date") or r.get("last_air_date")
+            or r.get("first_air_date") or "")
     poster = r.get("poster_path")
     return {
         "t": title,
@@ -139,13 +142,18 @@ def main():
             d = get("/discover/movie", key, with_watch_providers=pid, watch_region=a.region,
                     sort_by="primary_release_date.desc", page=page,
                     **{"primary_release_date.gte": since, "primary_release_date.lte": until,
-                       "with_watch_monetization_types": "flatrate", "vote_count.gte": 3})
+                       "with_watch_monetization_types": "flatrate"})
             if d and d.get("results"):
                 films += [shape(r, "movie", name) for r in d["results"]]
+        # air_date, not first_air_date. A returning series keeps its original first_air_date forever
+        # — Dhindora premiered in 2021 and its second season arrived on 20 November 2026, but the show
+        # still reports 2021 as when it began. Filtering on first_air_date therefore excluded every
+        # new season of every existing show, which is most of what a streaming platform releases in a
+        # given week. air_date matches the most recent episode instead, so a new season counts.
         d = get("/discover/tv", key, with_watch_providers=pid, watch_region=a.region,
-                sort_by="first_air_date.desc",
-                **{"first_air_date.gte": since, "first_air_date.lte": until,
-                   "with_watch_monetization_types": "flatrate", "vote_count.gte": 2})
+                sort_by="popularity.desc",
+                **{"air_date.gte": since, "air_date.lte": until,
+                   "with_watch_monetization_types": "flatrate"})
         if d and d.get("results"):
             shows = [shape(r, "tv", name) for r in d["results"]]
 
@@ -160,13 +168,22 @@ def main():
     # ---- new Indian releases by language, whether or not a platform is listed yet ----
     print("Indian languages…")
     for code, label in LANGS:
+        # No vote floor: a title released this week has no votes yet, and requiring two excluded
+        # exactly the releases this query exists to find.
         d = get("/discover/movie", key, with_original_language=code,
                 sort_by="primary_release_date.desc",
-                **{"primary_release_date.gte": since, "primary_release_date.lte": until,
-                   "vote_count.gte": 2})
+                **{"primary_release_date.gte": since, "primary_release_date.lte": until})
         rows = []
         if d and d.get("results"):
             rows = dedupe([shape(r, "movie") for r in d["results"]])[:24]
+
+        # series too, on air_date — an Indian show's new season is a new release even though the
+        # show itself may be years old, and this list only ever held films
+        dt = get("/discover/tv", key, with_original_language=code,
+                sort_by="popularity.desc",
+                **{"air_date.gte": since, "air_date.lte": until})
+        if dt and dt.get("results"):
+            rows = dedupe(rows + [shape(r, "tv") for r in dt["results"]])[:30]
         if rows:
             out["bylang"][label] = rows
         print(f"  {label:12s} {len(rows):>2}")
