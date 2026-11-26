@@ -1,0 +1,66 @@
+name: Data health check
+
+# A green tick is not evidence. Every workflow once reported success while publishing nothing: the
+# fresh pull built its file each morning and could not commit it, because the workflow declared
+# contents: read. Nobody noticed for weeks. This reads the artefacts themselves — present, written
+# within the last day and a half, non-empty, catalogue not shrunken — and goes red when they are not.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check the data files
+        id: check
+        continue-on-error: true
+        run: python3 scripts/check_health.py
+
+      - name: Report
+        if: steps.check.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Data health check failed';
+            const body = [
+              'The scheduled data check found a problem. A workflow can report success and still',
+              'publish nothing, so this reads the files themselves.',
+              '',
+              `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              '',
+              'Open the log for the failing item, then fix and close this issue.',
+            ].join('\n');
+            const open = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'data-pipeline', per_page: 100,
+            });
+            const hit = open.data.find(i => i.title === title);
+            if (hit) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: hit.number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['data-pipeline'],
+              });
+            }
+
+      - name: Fail the run if the check failed
+        if: steps.check.outcome == 'failure'
+        run: exit 1
