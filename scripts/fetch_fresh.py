@@ -157,7 +157,19 @@ def main():
         if d and d.get("results"):
             shows = [shape(r, "tv", name) for r in d["results"]]
 
-        films, shows = dedupe(films)[:30], dedupe(shows)[:30]
+        # air_date also matches long-running shows that happen to have an episode this week, and
+        # those come back stamped with the year they began — Law & Order: SVU as 1999, Sesame Street
+        # as 1969. Keep only rows whose own date lands inside the window we asked for, which drops
+        # the ongoing ones and leaves genuine new seasons.
+        def in_window(rows):
+            keep = []
+            for r in rows:
+                dt = r.get("date") or ""
+                if dt and since <= dt <= until:
+                    keep.append(r)
+            return keep
+
+        films, shows = dedupe(films)[:30], in_window(dedupe(shows))[:30]
         if films:
             out["ott"][name] = films
         if shows:
